@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-07-13T18:58:07Z",
+  "fetched_at": "2026-07-13T19:19:03Z",
   "window_days": 30,
   "totals": {
-    "views": 12288,
-    "watch_hours": 839.4,
-    "subs_gained": 99,
-    "subs_lost": 22,
-    "subs_net": 77,
-    "likes": 367,
+    "views": 12729,
+    "watch_hours": 878.4,
+    "subs_gained": 105,
+    "subs_lost": 24,
+    "subs_net": 81,
+    "likes": 375,
     "comments": 39,
-    "shares": 74
+    "shares": 75
   },
   "daily": [
     {
@@ -47,8 +47,8 @@
     },
     {
       "date": "2026-06-16",
-      "views": 330,
-      "watch_minutes": 897,
+      "views": 325,
+      "watch_minutes": 857,
       "avg_view_duration_sec": 173,
       "subs_gained": 0,
       "subs_lost": 0,
@@ -102,8 +102,8 @@
     },
     {
       "date": "2026-06-21",
-      "views": 299,
-      "watch_minutes": 1032,
+      "views": 297,
+      "watch_minutes": 1031,
       "avg_view_duration_sec": 238,
       "subs_gained": 2,
       "subs_lost": 1,
@@ -157,8 +157,8 @@
     },
     {
       "date": "2026-06-26",
-      "views": 350,
-      "watch_minutes": 1164,
+      "views": 346,
+      "watch_minutes": 1152,
       "avg_view_duration_sec": 214,
       "subs_gained": 4,
       "subs_lost": 0,
@@ -168,8 +168,8 @@
     },
     {
       "date": "2026-06-27",
-      "views": 357,
-      "watch_minutes": 995,
+      "views": 360,
+      "watch_minutes": 1053,
       "avg_view_duration_sec": 198,
       "subs_gained": 3,
       "subs_lost": 0,
@@ -180,7 +180,7 @@
     {
       "date": "2026-06-28",
       "views": 402,
-      "watch_minutes": 1172,
+      "watch_minutes": 1173,
       "avg_view_duration_sec": 193,
       "subs_gained": 2,
       "subs_lost": 1,
@@ -190,8 +190,8 @@
     },
     {
       "date": "2026-06-29",
-      "views": 469,
-      "watch_minutes": 1526,
+      "views": 468,
+      "watch_minutes": 1525,
       "avg_view_duration_sec": 227,
       "subs_gained": 2,
       "subs_lost": 0,
@@ -267,8 +267,8 @@
     },
     {
       "date": "2026-07-06",
-      "views": 504,
-      "watch_minutes": 2056,
+      "views": 501,
+      "watch_minutes": 2095,
       "avg_view_duration_sec": 278,
       "subs_gained": 3,
       "subs_lost": 1,
@@ -278,8 +278,8 @@
     },
     {
       "date": "2026-07-07",
-      "views": 410,
-      "watch_minutes": 1472,
+      "views": 406,
+      "watch_minutes": 1467,
       "avg_view_duration_sec": 241,
       "subs_gained": 2,
       "subs_lost": 3,
@@ -289,8 +289,8 @@
     },
     {
       "date": "2026-07-08",
-      "views": 396,
-      "watch_minutes": 1516,
+      "views": 394,
+      "watch_minutes": 1511,
       "avg_view_duration_sec": 256,
       "subs_gained": 4,
       "subs_lost": 2,
@@ -319,44 +319,55 @@
       "likes": 9,
       "comments": 2,
       "shares": 2
+    },
+    {
+      "date": "2026-07-11",
+      "views": 459,
+      "watch_minutes": 2308,
+      "avg_view_duration_sec": 342,
+      "subs_gained": 6,
+      "subs_lost": 2,
+      "likes": 8,
+      "comments": 0,
+      "shares": 1
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 3827
+      "views": 3928
     },
     {
       "source": "YT_SEARCH",
-      "views": 3786
+      "views": 3915
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1675
+      "views": 1742
     },
     {
       "source": "EXT_URL",
-      "views": 1540
+      "views": 1584
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 623
+      "views": 644
     },
     {
       "source": "YT_CHANNEL",
-      "views": 261
+      "views": 302
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 190
+      "views": 210
     },
     {
       "source": "SHORTS",
-      "views": 178
+      "views": 187
     },
     {
       "source": "PLAYLIST",
-      "views": 81
+      "views": 105
     },
     {
       "source": "NOTIFICATION",
@@ -364,11 +375,11 @@
     },
     {
       "source": "END_SCREEN",
-      "views": 29
+      "views": 30
     },
     {
       "source": "HASHTAGS",
-      "views": 2
+      "views": 4
     },
     {
       "source": "SHORTS_CONTENT_LINKS",
