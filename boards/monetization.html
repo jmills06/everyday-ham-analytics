@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Monetization</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   EVERYDAY HAM · MONETIZATION
+   1080x1920 portrait signage · non-interactive · DakBoard
+   Shares the Channel Pulse token block.
+   ============================================================ */
+:root {
+  --ink:        #1B1917;
+  --ink-soft:   #2A2724;
+  --signal:     #D84E2A;
+  --signal-dk:  #B83D1E;
+  --cream:      #F3EDE1;
+  --dim:        #A89F92;
+  --gold:       #E0A52E;
+  --up:         #7FA86B;
+  --down:       #B3564A;
+  --hairline:   rgba(243, 237, 225, 0.08);
+  --card-r:     14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1080px; height: 1920px;
+  overflow: hidden;
+  background: var(--ink);
+  font-family: 'Inter', sans-serif;
+  color: var(--cream);
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: radial-gradient(ellipse 900px 700px at 85% -5%,
+              rgba(216, 78, 42, 0.13), transparent 65%);
+  pointer-events: none;
+}
+
+.board {
+  position: relative; height: 100%;
+  display: flex; flex-direction: column;
+  padding: 36px 40px 28px;
+  gap: 24px;
+}
+
+/* ---------- Header ---------- */
+.hdr { display: flex; align-items: center; gap: 24px; }
+.hdr img { height: 104px; width: auto; }
+.hdr-name { flex: 1; }
+.hdr-name h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 54px; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.01em;
+}
+.kicker {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.22em;
+  color: var(--signal); white-space: nowrap;
+}
+.hdr-name .kicker { margin-top: 6px; }
+.hdr-time { text-align: right; }
+.hdr-time .clock {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300; font-size: 58px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.hdr-time .stamp {
+  margin-top: 6px; font-size: 15px; color: var(--dim);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.hdr-time .stamp.stale { color: var(--signal); font-weight: 600; }
+
+.eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+.eyebrow::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(to right, var(--hairline), transparent);
+}
+.eyebrow .note {
+  font-size: 13px; color: var(--dim);
+  letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;
+}
+
+.card {
+  background: var(--ink-soft);
+  border: 1px solid var(--hairline);
+  border-radius: var(--card-r);
+}
+
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 21px;
+  letter-spacing: 0.06em; white-space: nowrap;
+  padding: 4px 13px; border-radius: 999px;
+  border: 1px solid var(--hairline);
+  color: var(--dim);
+}
+.pill.up   { color: var(--up);   border-color: rgba(127,168,107,.35); }
+.pill.down { color: var(--down); border-color: rgba(179,86,74,.35); }
+.pill .lbl { font-size: 15px; color: var(--dim); letter-spacing: 0.12em; }
+
+/* ---------- Stat row ---------- */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.stat { padding: 24px 22px 20px; text-align: center; }
+.stat .lbl {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 19px;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--dim);
+}
+.stat .val {
+  margin-top: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 64px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat .val.gold { color: var(--gold); }
+.stat .pill { margin-top: 12px; }
+.stat .sub { margin-top: 12px; font-size: 13px; color: var(--dim); }
+
+/* ---------- Revenue trace ---------- */
+.rev-card { padding: 26px 30px 18px; }
+.rev-card svg { display: block; width: 100%; height: 230px; }
+.trace-line {
+  fill: none; stroke: var(--signal); stroke-width: 3;
+  stroke-linejoin: round; stroke-linecap: round;
+}
+.trace-fill { fill: url(#revGrad); opacity: .5; }
+.best-dot { fill: var(--gold); }
+.best-ring { fill: none; stroke: var(--gold); stroke-width: 2; opacity: .5; }
+.rev-foot {
+  display: flex; justify-content: space-between;
+  margin-top: 14px; font-size: 15px; color: var(--dim);
+}
+.rev-foot b { color: var(--cream); font-weight: 600; }
+.rev-foot .gold { color: var(--gold); font-weight: 600; }
+
+/* ---------- Two-column detail ---------- */
+.detail { display: grid; grid-template-columns: 4fr 5fr; gap: 20px; flex: 1; }
+.detail .card { padding: 24px 28px; display: flex; flex-direction: column; }
+
+.adlist { flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
+.adrow { display: flex; align-items: center; gap: 14px; padding: 8px 0; }
+.adrow .name {
+  width: 150px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 19px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.adrow .track {
+  flex: 1; height: 14px; border-radius: 999px;
+  background: rgba(243, 237, 225, 0.06); overflow: hidden;
+}
+.adrow .fill {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(to right, var(--signal-dk), var(--signal));
+}
+.adrow .amt {
+  flex-shrink: 0; width: 88px; text-align: right;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 23px;
+  font-variant-numeric: tabular-nums;
+}
+.ad-empty {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  text-align: center; font-size: 16px; color: var(--dim);
+  line-height: 1.6; padding: 0 20px;
+}
+
+.elist { flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
+.erow {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.erow:last-child { border-bottom: none; }
+.erow .title {
+  font-size: 18px; font-weight: 600; line-height: 1.3;
+  display: -webkit-box; -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.erow .row2 {
+  margin-top: 6px;
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+.erow .rev {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 27px; color: var(--signal);
+  font-variant-numeric: tabular-nums;
+}
+.erow .per {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 17px; color: var(--dim);
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Projection ---------- */
+.predict {
+  border-color: rgba(216, 78, 42, 0.45);
+  padding: 22px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.predict .lbl {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  color: var(--signal);
+}
+.predict .why { margin-top: 4px; font-size: 15px; color: var(--dim); }
+.predict .val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 76px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Footer ---------- */
+.foot {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 17px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--dim);
+}
+.foot .heart { color: var(--signal); }
+
+/* ---------- Milestone takeover ---------- */
+.mile {
+  position: fixed; inset: 0; z-index: 50;
+  background: var(--ink);
+  display: none;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 30px; text-align: center;
+}
+.mile.active { display: flex; }
+.mile::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 800px 800px at 50% 40%,
+              rgba(216, 78, 42, 0.22), transparent 70%);
+}
+.mile img { width: 560px; position: relative; }
+.mile .m-kicker {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 34px;
+  text-transform: uppercase; letter-spacing: 0.22em;
+  color: var(--signal); position: relative;
+}
+.mile .m-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 220px; line-height: 0.9;
+  color: var(--gold); position: relative;
+  font-variant-numeric: tabular-nums;
+}
+.mile .m-metric {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 64px;
+  text-transform: uppercase; position: relative;
+}
+.confetti {
+  position: absolute; top: -20px;
+  width: 12px; height: 12px;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to { transform: translateY(1960px) rotate(540deg); opacity: 0.1; }
+}
+@media (prefers-reduced-motion: reduce) { .confetti { animation: none; } }
+</style>
+</head>
+<body>
+
+<div class="board">
+
+  <header class="hdr">
+    <img src="assets/pig-header.png" alt="">
+    <div class="hdr-name">
+      <h1>Everyday Ham</h1>
+      <div class="kicker">Monetization</div>
+    </div>
+    <div class="hdr-time">
+      <div class="clock" id="clock">--:--</div>
+      <div class="stamp" id="stamp">Data as of --:--</div>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="card stat">
+      <div class="lbl">Revenue &middot; 30 Days</div>
+      <div class="val" id="revenue">--</div>
+      <div class="pill" id="revPill"><span>Tracking</span></div>
+    </div>
+    <div class="card stat">
+      <div class="lbl">RPM</div>
+      <div class="val" id="rpm">--</div>
+      <div class="pill" id="rpmPill"><span>Tracking</span></div>
+    </div>
+    <div class="card stat">
+      <div class="lbl">Best Day</div>
+      <div class="val gold" id="bestVal">--</div>
+      <div class="sub" id="bestDate">--</div>
+    </div>
+  </section>
+
+  <section class="card rev-card">
+    <div class="eyebrow"><span class="kicker">30-Day Revenue Trend</span></div>
+    <div id="revTrace"></div>
+    <div class="rev-foot">
+      <span>Daily avg <b id="dailyAvg">--</b></span>
+      <span>Monetized plays <b id="monPlays">--</b></span>
+      <span>Per 1k plays <b id="per1k">--</b></span>
+    </div>
+  </section>
+
+  <section class="detail">
+    <div class="card">
+      <div class="eyebrow"><span class="kicker">Revenue by Ad Type</span></div>
+      <div class="adlist" id="adList"></div>
+    </div>
+    <div class="card">
+      <div class="eyebrow"><span class="kicker">Top Earning Videos</span>
+        <span class="note">30 days</span></div>
+      <div class="elist" id="earnList"></div>
+    </div>
+  </section>
+
+  <section class="card predict">
+    <div>
+      <div class="lbl">Projected Monthly Revenue</div>
+      <div class="why" id="projWhy">Based on recent run rate</div>
+    </div>
+    <div class="val" id="projVal">--</div>
+  </section>
+
+  <footer class="foot">
+    <span>Everyday Ham Podcast &amp; YouTube</span>
+    <span>Recorded with <span class="heart">&#9829;</span> in Michigan</span>
+  </footer>
+
+</div>
+
+<div class="mile" id="mile">
+  <img src="assets/pig-full.png" alt="">
+  <div class="m-kicker">Congrats on reaching</div>
+  <div class="m-num" id="mileNum">--</div>
+  <div class="m-metric" id="mileMetric">--</div>
+</div>
+
+<script>
+/* ============================================================
+   Tuning constants
+   ============================================================ */
+const DATA_BASE       = '../data';
+const REFRESH_MINUTES = 15;
+const STALE_HOURS     = 26;
+const EARN_ROWS       = 4;
+
+let lastSignature = '';
+let secondsToRefresh = 0;
+const $ = id => document.getElementById(id);
+const fmt = n => Number(n).toLocaleString('en-US');
+const usd = n => '$' + Number(n).toFixed(2);
+
+async function getJSON(path) {
+  const r = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`${path}: ${r.status}`);
+  return r.json();
+}
+async function getJSONL(path) {
+  const r = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`${path}: ${r.status}`);
+  return (await r.text()).split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
+}
+
+/* Week-over-week comparison on any daily numeric series */
+function wow(rows, valueOf) {
+  if (rows.length < 8) return null;
+  const last7 = rows.slice(-7), prior7 = rows.slice(-14, -7);
+  if (!prior7.length) return null;
+  const a = last7.reduce((s, r) => s + valueOf(r), 0);
+  const b = prior7.reduce((s, r) => s + valueOf(r), 0);
+  if (!b) return null;
+  return Math.round((a - b) / b * 100);
+}
+
+function setWowPill(id, pct, label) {
+  const el = $(id);
+  if (pct == null) { el.className = 'pill'; el.innerHTML = '<span>Tracking</span>'; return; }
+  const up = pct > 0, flat = pct === 0;
+  el.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
+  const arrow = flat ? '&#8226;' : up ? '&#9650;' : '&#9660;';
+  el.innerHTML = `<span>${arrow} ${pct > 0 ? '+' : ''}${pct}%</span>` +
+                 `<span class="lbl">${label}</span>`;
+}
+
+/* ---------- revenue trace ---------- */
+function drawRevTrace(daily, best) {
+  const wrap = $('revTrace');
+  const W = 940, H = 230, PAD = 10;
+  const vals = daily.map(r => r.revenue);
+  if (vals.length < 2) { wrap.innerHTML = ''; return; }
+  const max = Math.max(...vals, 0.01);
+  const step = (W - PAD * 2) / (vals.length - 1);
+  const xy = vals.map((v, i) => [
+    PAD + i * step,
+    H - PAD - (v / max) * (H - PAD * 2 - 16)
+  ]);
+  const line = xy.map(p => p.join(',')).join(' ');
+  const fill = `${PAD},${H} ${line} ${xy[xy.length - 1][0]},${H}`;
+  let bestMark = '';
+  if (best) {
+    const bi = daily.findIndex(r => r.date === best.date);
+    if (bi >= 0) {
+      const [bx, by] = xy[bi];
+      bestMark = `<circle class="best-ring" cx="${bx}" cy="${by}" r="12"/>` +
+                 `<circle class="best-dot" cx="${bx}" cy="${by}" r="6"/>`;
+    }
+  }
+  wrap.innerHTML = `
+    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="revGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#D84E2A" stop-opacity=".28"/>
+          <stop offset="1" stop-color="#D84E2A" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <polygon class="trace-fill" points="${fill}"/>
+      <polyline class="trace-line" points="${line}"/>
+      ${bestMark}
+    </svg>`;
+}
+
+/* ---------- render ---------- */
+function render(mon, an, yt) {
+  const t = mon.totals;
+  const daily = mon.daily || [];
+
+  // Stat row
+  $('revenue').textContent = usd(t.revenue);
+  setWowPill('revPill', wow(daily, r => r.revenue), 'VS PRIOR WK');
+  $('rpm').textContent = usd(t.rpm);
+
+  // RPM week-over-week: weekly revenue over weekly views
+  const aDaily = an.daily || [];
+  let rpmWow = null;
+  if (daily.length >= 14 && aDaily.length >= 14) {
+    const rv = w => daily.slice(w[0], w[1]).reduce((s, r) => s + r.revenue, 0);
+    const vw = w => aDaily.slice(w[0], w[1]).reduce((s, r) => s + r.views, 0);
+    const rpmA = vw([-7, undefined]) ? rv([-7, undefined]) / vw([-7, undefined]) * 1000 : null;
+    const rpmB = vw([-14, -7]) ? rv([-14, -7]) / vw([-14, -7]) * 1000 : null;
+    if (rpmA != null && rpmB) rpmWow = Math.round((rpmA - rpmB) / rpmB * 100);
+  }
+  setWowPill('rpmPill', rpmWow, 'VS PRIOR WK');
+
+  if (mon.best_day) {
+    $('bestVal').textContent = usd(mon.best_day.revenue);
+    $('bestDate').textContent = new Date(mon.best_day.date + 'T00:00:00')
+      .toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+  }
+
+  // Trace + footline
+  drawRevTrace(daily, mon.best_day);
+  $('dailyAvg').textContent = usd(t.daily_avg) + '/day';
+  $('monPlays').textContent = fmt(t.monetized_plays);
+  $('per1k').textContent = t.monetized_plays
+    ? usd(t.revenue / t.monetized_plays * 1000) : '--';
+
+  // Ad types
+  const ads = mon.ad_types || [];
+  if (ads.length) {
+    const maxAd = Math.max(...ads.map(a => a.gross_revenue), 0.01);
+    $('adList').innerHTML = ads.map(a => {
+      const name = a.type.toLowerCase().replace(/_/g, ' ')
+        .replace(/\b\w/g, c => c.toUpperCase());
+      const w = Math.max(3, Math.round(a.gross_revenue / maxAd * 100));
+      return `<div class="adrow">
+        <div class="name">${name}</div>
+        <div class="track"><div class="fill" style="width:${w}%"></div></div>
+        <div class="amt">${usd(a.gross_revenue)}</div></div>`;
+    }).join('');
+  } else {
+    $('adList').innerHTML = `<div class="ad-empty">No ad type data reported yet.<br>
+      YouTube provides this once volume grows.</div>`;
+  }
+
+  // Top earners with titles joined from youtube.json
+  const titleById = {};
+  (yt.videos || []).forEach(v => { titleById[v.id] = v.title; });
+  $('earnList').innerHTML = (mon.top_earning_videos || []).slice(0, EARN_ROWS)
+    .map(e => {
+      const raw = titleById[e.video_id] || e.video_id;
+      const title = String(raw).split('|')[0].trim();
+      const per = e.views ? usd(e.revenue / e.views * 1000) + '/1K VIEWS' : '';
+      return `<div class="erow">
+        <div class="title">${esc(title)}</div>
+        <div class="row2"><span class="rev">${usd(e.revenue)}</span>
+        <span class="per">${fmt(e.views)} VIEWS &middot; ${per}</span></div></div>`;
+    }).join('');
+
+  // Projection
+  $('projVal').textContent = usd(t.projected_monthly);
+  $('projWhy').textContent = t.projection_basis_days
+    ? `Based on the last ${t.projection_basis_days} finalized days`
+    : 'Based on recent run rate';
+
+  // Freshness
+  const fetchedAt = new Date(Date.parse(mon.fetched_at));
+  const ageHours = (Date.now() - fetchedAt) / 3600000;
+  const stamp = $('stamp');
+  stamp.textContent = 'Data as of ' + fetchedAt.toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit' });
+  stamp.classList.toggle('stale', ageHours > STALE_HOURS);
+  if (ageHours > STALE_HOURS)
+    stamp.textContent = 'Data stale: ' + Math.round(ageHours) + 'h old';
+}
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/* ---------- milestone takeover ---------- */
+function checkMilestones(m) {
+  const mile = $('mile');
+  if (!m || !m.events || !m.events.length) { mile.classList.remove('active'); return; }
+  const windowMs = (m.display_hours || 72) * 3600000;
+  const active = m.events.filter(e =>
+    Date.now() - Date.parse(e.reached_at) < windowMs);
+  if (!active.length) {
+    mile.classList.remove('active');
+    mile.querySelectorAll('.confetti').forEach(c => c.remove());
+    return;
+  }
+  const e = active[active.length - 1];
+  $('mileNum').textContent = fmt(e.value);
+  $('mileMetric').textContent = e.metric;
+  if (!mile.classList.contains('active')) {
+    mile.classList.add('active');
+    const colors = ['#D84E2A', '#E0A52E', '#F3EDE1'];
+    for (let i = 0; i < 40; i++) {
+      const c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = Math.random() * 100 + '%';
+      c.style.background = colors[i % colors.length];
+      c.style.animationDuration = (3 + Math.random() * 3) + 's';
+      c.style.animationDelay = (Math.random() * 4) + 's';
+      mile.appendChild(c);
+    }
+  }
+}
+
+/* ---------- data cycle ---------- */
+async function refresh() {
+  try {
+    const [mon, an, yt, miles] = await Promise.all([
+      getJSON('latest/monetization.json'),
+      getJSON('latest/analytics.json'),
+      getJSON('latest/youtube.json'),
+      getJSON('milestones.json').catch(() => null),
+    ]);
+    const sig = JSON.stringify([mon.fetched_at, an.fetched_at, yt.fetched_at,
+      miles && miles.updated_at]);
+    if (sig !== lastSignature) {
+      lastSignature = sig;
+      render(mon, an, yt);
+    }
+    checkMilestones(miles);
+  } catch (err) {
+    console.error('refresh failed:', err);
+    $('stamp').classList.add('stale');
+  }
+  secondsToRefresh = REFRESH_MINUTES * 60;
+}
+
+setInterval(() => {
+  $('clock').textContent = new Date().toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit' });
+  if (--secondsToRefresh <= 0) refresh();
+}, 1000);
+
+refresh();
+</script>
+</body>
+</html>
