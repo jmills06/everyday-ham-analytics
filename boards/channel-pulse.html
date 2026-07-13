@@ -485,44 +485,158 @@ function drawTrace(rows) {
 }
 
 /* ---------- render ---------- */
-function render(yt, bz, ytHist, bzHist) {
+/* ---------- age-matched comparison helpers ---------- */
+const DAY_MS = 86400000;
+const LOCK_DAYS = 7;      // benchmark window once an item is old enough
+
+function ageDays(iso) {
+  return Math.max(0, Math.floor((Date.now() - Date.parse(iso)) / DAY_MS));
+}
+
+// Cumulative views through age d from a launch curve (needs d+1 complete days)
+function curveCumAt(curve, d) {
+  if (!curve || !curve.daily_views || curve.daily_views.length < d + 1) return null;
+  return curve.daily_views.slice(0, d + 1).reduce((a, b) => a + b, 0);
+}
+
+// Episode snapshot map: id -> { age(days at snapshot) -> cumulative plays }
+function buildEpAges(epSnaps, episodes) {
+  const pubById = {};
+  episodes.forEach(e => { pubById[e.id] = Date.parse(e.published_at); });
+  const byId = {};
+  for (const row of epSnaps) {
+    const pub = pubById[row.id];
+    if (pub == null) continue;
+    const age = Math.floor((Date.parse(row.date + 'T00:00:00Z') - pub) / DAY_MS);
+    if (age < 0) continue;
+    (byId[row.id] = byId[row.id] || {})[age] = row.plays;
+  }
+  return byId;
+}
+
+/* Decide the comparison phase and values.
+   Returns { pct, label, lockedVal } or null for lifetime fallback. */
+function agedComparison(d, latestVal, latestAt, priorAt, priorIds) {
+  if (d < LOCK_DAYS) {
+    // Sliding: latest's current total vs priors at the same age
+    const vals = priorIds.map(id => priorAt(id, d)).filter(v => v != null);
+    if (vals.length < 2) return null;
+    const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+    if (!avg) return null;
+    return { pct: Math.round((latestVal - avg) / avg * 100),
+             label: `VS AVG &middot; DAY ${d}`, lockedVal: null };
+  }
+  // Locked: first-7-day totals on both sides
+  const mine = latestAt(LOCK_DAYS - 1);
+  const vals = priorIds.map(id => priorAt(id, LOCK_DAYS - 1)).filter(v => v != null);
+  if (mine == null || vals.length < 2) return null;
+  const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+  if (!avg) return null;
+  return { pct: Math.round((mine - avg) / avg * 100),
+           label: 'VS AVG &middot; FIRST 7D', lockedVal: mine };
+}
+
+function setCompare(id, cmp, val, priorVals) {
+  const el = $(id);
+  if (cmp) {
+    const up = cmp.pct > 0, flat = cmp.pct === 0;
+    el.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
+    const arrow = flat ? '&#8226;' : up ? '&#9650;' : '&#9660;';
+    el.innerHTML = `<span>${arrow} ${cmp.pct > 0 ? '+' : ''}${cmp.pct}%</span>` +
+                   `<span class="lbl">${cmp.label}</span>`;
+    return;
+  }
+  // Lifetime fallback, honestly labeled
+  vsAvg(id, val, priorVals, 'VS AVG TOTAL');
+}
+
+/* Rebuild a daily subscriber series by anchoring the current total and
+   walking backwards through net daily changes from analytics history.
+   Gives the trace and trend pills a full window on day one. */
+function reconstructSubs(current, aDaily, maxDays = 30) {
+  const rows = aDaily.slice(-maxDays);
+  if (!rows.length) return [];
+  const series = new Array(rows.length);
+  let val = current;
+  for (let i = rows.length - 1; i >= 0; i--) {
+    series[i] = { date: rows[i].date, subscribers: val };
+    val -= (rows[i].subs_gained || 0) - (rows[i].subs_lost || 0);
+  }
+  return series;
+}
+
+function sumLast(aDaily, field, days) {
+  const rows = aDaily.slice(-days);
+  if (rows.length < 2) return null;
+  return { delta: rows.reduce((a, r) => a + (r[field] || 0), 0),
+           days: rows.length };
+}
+
+function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
   // Hero
   $('subs').textContent = fmt(yt.channel.subscribers);
-  const subsTrend = trendDelta(ytHist, 'subscribers');
-  setPill('subsPill', subsTrend);
-  $('subsSub').textContent = subsTrend
-    ? `Net change over the last ${subsTrend.days} day${subsTrend.days > 1 ? 's' : ''}`
+  const netSubs = aDaily.length >= 2
+    ? { delta: aDaily.slice(-TREND_DAYS).reduce(
+          (a, r) => a + (r.subs_gained || 0) - (r.subs_lost || 0), 0),
+        days: Math.min(TREND_DAYS, aDaily.length) }
+    : trendDelta(ytHist, 'subscribers');
+  setPill('subsPill', netSubs);
+  $('subsSub').textContent = netSubs
+    ? `Net change over the last ${netSubs.days} day${netSubs.days > 1 ? 's' : ''}`
     : 'History building. Trends appear after two days of data.';
-  drawTrace(ytHist.length ? ytHist : [{ subscribers: yt.channel.subscribers }]);
+  const series = reconstructSubs(yt.channel.subscribers, aDaily);
+  drawTrace(series.length >= 2 ? series
+    : (ytHist.length ? ytHist : [{ subscribers: yt.channel.subscribers }]));
 
   // Lifetime row
   $('views').textContent = fmt(yt.channel.views);
   $('videos').textContent = fmt(yt.channel.videos);
   $('downloads').textContent = fmt(bz.total_downloads);
-  setPill('viewsPill', trendDelta(ytHist, 'views'));
+  setPill('viewsPill',
+    sumLast(aDaily, 'views', TREND_DAYS) || trendDelta(ytHist, 'views'));
   setPill('videosPill', trendDelta(ytHist, 'videos'));
   setPill('downloadsPill', trendDelta(bzHist, 'total_downloads'));
 
   // Latest video
   const v = yt.videos[0];
   if (v) {
-    $('vidTitle').textContent = v.title;
-    $('vidMeta').textContent = 'Published ' + ago(v.published_at);
     $('vidViews').innerHTML = `${fmt(v.views)}<small>VIEWS</small>`;
     const prior = yt.videos.slice(1, 1 + AVG_WINDOW);
-    vsAvg('vidPill', v.views, prior.map(x => x.views));
+    const d = ageDays(v.published_at);
+    const cv = (curves && curves.videos) || {};
+    const cmp = agedComparison(
+      d, v.views,
+      dd => curveCumAt(cv[v.id], dd),
+      (id, dd) => curveCumAt(cv[id], dd),
+      prior.map(x => x.id));
+    setCompare('vidPill', cmp, v.views, prior.map(x => x.views));
+    $('vidTitle').textContent = v.title;
+    let meta = 'Published ' + ago(v.published_at);
+    if (cmp && cmp.lockedVal != null)
+      meta += ' \u00B7 First 7 days: ' + fmt(cmp.lockedVal) + ' views';
+    $('vidMeta').textContent = meta;
   }
 
   // Latest episode
   const e = bz.episodes[0];
   if (e) {
     $('epTitle').textContent = e.title;
-    $('epMeta').textContent = 'Published ' + ago(e.published_at);
     const priorEps = bz.episodes.slice(1, 1 + AVG_WINDOW);
     const isRecord = bz.episodes.slice(1).every(x => e.plays > x.plays) && bz.episodes.length > 1;
     $('epPlays').innerHTML = `${fmt(e.plays)}<small>DOWNLOADS</small>`;
     $('epPlays').classList.toggle('record', isRecord);
-    vsAvg('epPill', e.plays, priorEps.map(x => x.plays));
+    const epAges = buildEpAges(epSnaps, bz.episodes);
+    const d = ageDays(e.published_at);
+    const cmp = agedComparison(
+      d, e.plays,
+      dd => (epAges[e.id] || {})[dd] ?? null,
+      (id, dd) => (epAges[id] || {})[dd] ?? null,
+      priorEps.map(x => x.id));
+    setCompare('epPill', cmp, e.plays, priorEps.map(x => x.plays));
+    let meta = 'Published ' + ago(e.published_at);
+    if (cmp && cmp.lockedVal != null)
+      meta += ' \u00B7 First 7 days: ' + fmt(cmp.lockedVal) + ' downloads';
+    $('epMeta').textContent = meta;
   }
 
   // Chart: last N episodes, oldest to newest
@@ -565,7 +679,7 @@ function render(yt, bz, ytHist, bzHist) {
   }
 }
 
-function vsAvg(id, val, priorVals) {
+function vsAvg(id, val, priorVals, label = 'VS AVG') {
   const el = $(id);
   if (!priorVals.length) { el.className = 'pill'; el.innerHTML = '<span>First one</span>'; return; }
   const avg = priorVals.reduce((a, b) => a + b, 0) / priorVals.length;
@@ -573,7 +687,7 @@ function vsAvg(id, val, priorVals) {
   const up = pct > 0, flat = pct === 0;
   el.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
   const arrow = flat ? '&#8226;' : up ? '&#9650;' : '&#9660;';
-  el.innerHTML = `<span>${arrow} ${pct > 0 ? '+' : ''}${pct}%</span><span class="lbl">VS AVG</span>`;
+  el.innerHTML = `<span>${arrow} ${pct > 0 ? '+' : ''}${pct}%</span><span class="lbl">${label}</span>`;
 }
 
 function ago(iso) {
@@ -616,18 +730,22 @@ function checkMilestones(m) {
 /* ---------- data cycle ---------- */
 async function refresh() {
   try {
-    const [yt, bz, ytHist, bzHist, miles] = await Promise.all([
+    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily] = await Promise.all([
       getJSON('latest/youtube.json'),
       getJSON('latest/buzzsprout.json'),
       getJSONL('history/youtube_daily.jsonl'),
       getJSONL('history/buzzsprout_daily.jsonl'),
       getJSON('milestones.json').catch(() => null),
+      getJSON('history/videos/launch_curves.json').catch(() => null),
+      getJSONL('history/episodes_daily.jsonl').catch(() => []),
+      getJSONL('history/analytics_daily.jsonl').catch(() => []),
     ]);
     const sig = JSON.stringify([yt.fetched_at, bz.fetched_at,
-      ytHist.length, bzHist.length, miles && miles.updated_at]);
+      ytHist.length, bzHist.length, miles && miles.updated_at,
+      curves && curves.updated_at, epSnaps.length, aDaily.length]);
     if (sig !== lastSignature) {
       lastSignature = sig;
-      render(yt, bz, ytHist, bzHist);
+      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily);
     }
     checkMilestones(miles);
   } catch (err) {

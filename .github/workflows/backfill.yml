@@ -1,0 +1,50 @@
+name: Backfill video launch curves
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Backfill launch curves
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python collectors/backfill_video_curves.py
+
+      - name: Commit and push (rebase-retry)
+        run: |
+          git config user.name "everyday-ham-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "data: backfill video launch curves"
+          for i in 1 2 3 4 5; do
+            if git push origin main; then exit 0; fi
+            git pull --rebase --autostash -X theirs origin main
+            sleep $((i * 3))
+          done
+          exit 1
