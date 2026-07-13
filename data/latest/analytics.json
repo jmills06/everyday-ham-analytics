@@ -1,15 +1,18 @@
 {
-  "fetched_at": "2026-07-13T19:19:03Z",
+  "fetched_at": "2026-07-13T20:36:58Z",
   "window_days": 30,
   "totals": {
     "views": 12729,
     "watch_hours": 878.4,
+    "avg_view_pct": 26.5,
     "subs_gained": 105,
     "subs_lost": 24,
     "subs_net": 81,
     "likes": 375,
     "comments": 39,
-    "shares": 75
+    "shares": 75,
+    "subscribed_views": 1547,
+    "not_subscribed_views": 11182
   },
   "daily": [
     {
@@ -17,6 +20,7 @@
       "views": 506,
       "watch_minutes": 1911,
       "avg_view_duration_sec": 250,
+      "avg_view_pct": 25.1,
       "subs_gained": 4,
       "subs_lost": 0,
       "likes": 10,
@@ -28,6 +32,7 @@
       "views": 480,
       "watch_minutes": 1795,
       "avg_view_duration_sec": 249,
+      "avg_view_pct": 21.6,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 7,
@@ -39,6 +44,7 @@
       "views": 334,
       "watch_minutes": 965,
       "avg_view_duration_sec": 191,
+      "avg_view_pct": 19.3,
       "subs_gained": 6,
       "subs_lost": 0,
       "likes": 7,
@@ -50,6 +56,7 @@
       "views": 325,
       "watch_minutes": 857,
       "avg_view_duration_sec": 173,
+      "avg_view_pct": 18.1,
       "subs_gained": 0,
       "subs_lost": 0,
       "likes": 3,
@@ -61,6 +68,7 @@
       "views": 312,
       "watch_minutes": 1074,
       "avg_view_duration_sec": 231,
+      "avg_view_pct": 23.6,
       "subs_gained": 2,
       "subs_lost": 0,
       "likes": 5,
@@ -72,6 +80,7 @@
       "views": 335,
       "watch_minutes": 1157,
       "avg_view_duration_sec": 230,
+      "avg_view_pct": 27.4,
       "subs_gained": 6,
       "subs_lost": 0,
       "likes": 11,
@@ -83,6 +92,7 @@
       "views": 337,
       "watch_minutes": 1411,
       "avg_view_duration_sec": 274,
+      "avg_view_pct": 25.9,
       "subs_gained": 8,
       "subs_lost": 0,
       "likes": 0,
@@ -94,6 +104,7 @@
       "views": 331,
       "watch_minutes": 1020,
       "avg_view_duration_sec": 210,
+      "avg_view_pct": 23.7,
       "subs_gained": 3,
       "subs_lost": 1,
       "likes": 6,
@@ -105,6 +116,7 @@
       "views": 297,
       "watch_minutes": 1031,
       "avg_view_duration_sec": 238,
+      "avg_view_pct": 26.3,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 3,
@@ -116,6 +128,7 @@
       "views": 369,
       "watch_minutes": 1081,
       "avg_view_duration_sec": 211,
+      "avg_view_pct": 21.8,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 5,
@@ -127,6 +140,7 @@
       "views": 338,
       "watch_minutes": 1064,
       "avg_view_duration_sec": 214,
+      "avg_view_pct": 23.5,
       "subs_gained": 1,
       "subs_lost": 1,
       "likes": 9,
@@ -138,6 +152,7 @@
       "views": 318,
       "watch_minutes": 1049,
       "avg_view_duration_sec": 221,
+      "avg_view_pct": 26.1,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 7,
@@ -149,6 +164,7 @@
       "views": 464,
       "watch_minutes": 1848,
       "avg_view_duration_sec": 265,
+      "avg_view_pct": 27.2,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 21,
@@ -160,6 +176,7 @@
       "views": 346,
       "watch_minutes": 1152,
       "avg_view_duration_sec": 214,
+      "avg_view_pct": 21.8,
       "subs_gained": 4,
       "subs_lost": 0,
       "likes": 11,
@@ -171,6 +188,7 @@
       "views": 360,
       "watch_minutes": 1053,
       "avg_view_duration_sec": 198,
+      "avg_view_pct": 26.5,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 6,
@@ -182,6 +200,7 @@
       "views": 402,
       "watch_minutes": 1173,
       "avg_view_duration_sec": 193,
+      "avg_view_pct": 25.3,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 9,
@@ -193,6 +212,7 @@
       "views": 468,
       "watch_minutes": 1525,
       "avg_view_duration_sec": 227,
+      "avg_view_pct": 25.4,
       "subs_gained": 2,
       "subs_lost": 0,
       "likes": 9,
@@ -204,6 +224,7 @@
       "views": 349,
       "watch_minutes": 1623,
       "avg_view_duration_sec": 308,
+      "avg_view_pct": 29.5,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 7,
@@ -215,6 +236,7 @@
       "views": 343,
       "watch_minutes": 1220,
       "avg_view_duration_sec": 237,
+      "avg_view_pct": 23.5,
       "subs_gained": 1,
       "subs_lost": 1,
       "likes": 8,
@@ -226,6 +248,7 @@
       "views": 603,
       "watch_minutes": 3019,
       "avg_view_duration_sec": 318,
+      "avg_view_pct": 29.7,
       "subs_gained": 4,
       "subs_lost": 2,
       "likes": 34,
@@ -237,6 +260,7 @@
       "views": 939,
       "watch_minutes": 5243,
       "avg_view_duration_sec": 349,
+      "avg_view_pct": 36.1,
       "subs_gained": 9,
       "subs_lost": 0,
       "likes": 51,
@@ -248,6 +272,7 @@
       "views": 816,
       "watch_minutes": 4287,
       "avg_view_duration_sec": 341,
+      "avg_view_pct": 34.6,
       "subs_gained": 4,
       "subs_lost": 3,
       "likes": 48,
@@ -259,6 +284,7 @@
       "views": 668,
       "watch_minutes": 2644,
       "avg_view_duration_sec": 261,
+      "avg_view_pct": 27.4,
       "subs_gained": 7,
       "subs_lost": 2,
       "likes": 26,
@@ -270,6 +296,7 @@
       "views": 501,
       "watch_minutes": 2095,
       "avg_view_duration_sec": 278,
+      "avg_view_pct": 26.3,
       "subs_gained": 3,
       "subs_lost": 1,
       "likes": 15,
@@ -281,6 +308,7 @@
       "views": 406,
       "watch_minutes": 1467,
       "avg_view_duration_sec": 241,
+      "avg_view_pct": 23.6,
       "subs_gained": 2,
       "subs_lost": 3,
       "likes": 7,
@@ -292,6 +320,7 @@
       "views": 394,
       "watch_minutes": 1511,
       "avg_view_duration_sec": 256,
+      "avg_view_pct": 26.8,
       "subs_gained": 4,
       "subs_lost": 2,
       "likes": 10,
@@ -303,6 +332,7 @@
       "views": 508,
       "watch_minutes": 3648,
       "avg_view_duration_sec": 468,
+      "avg_view_pct": 25.1,
       "subs_gained": 4,
       "subs_lost": 0,
       "likes": 23,
@@ -314,6 +344,7 @@
       "views": 421,
       "watch_minutes": 2472,
       "avg_view_duration_sec": 374,
+      "avg_view_pct": 26.3,
       "subs_gained": 5,
       "subs_lost": 2,
       "likes": 9,
@@ -325,6 +356,7 @@
       "views": 459,
       "watch_minutes": 2308,
       "avg_view_duration_sec": 342,
+      "avg_view_pct": 25.0,
       "subs_gained": 6,
       "subs_lost": 2,
       "likes": 8,
@@ -388,6 +420,132 @@
     {
       "source": "ANNOTATION",
       "views": 1
+    }
+  ],
+  "top_videos": [
+    {
+      "video_id": "LIM0hjXez1Q",
+      "views": 1235,
+      "watch_hours": 42.8,
+      "likes": 13
+    },
+    {
+      "video_id": "CskulzdxXyc",
+      "views": 1064,
+      "watch_hours": 7.2,
+      "likes": 14
+    },
+    {
+      "video_id": "IEwwzO5Uf6Q",
+      "views": 1042,
+      "watch_hours": 39.6,
+      "likes": 13
+    },
+    {
+      "video_id": "ZYk8IUSeEHI",
+      "views": 1039,
+      "watch_hours": 51.0,
+      "likes": 14
+    },
+    {
+      "video_id": "hcXOOwiPnr0",
+      "views": 831,
+      "watch_hours": 81.7,
+      "likes": 55
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "ham radio",
+      "views": 70
+    },
+    {
+      "term": "wio tracker l1 pro",
+      "views": 57
+    },
+    {
+      "term": "spooltenna",
+      "views": 48
+    },
+    {
+      "term": "meshtastic",
+      "views": 43
+    },
+    {
+      "term": "icom",
+      "views": 38
+    },
+    {
+      "term": "icom x026",
+      "views": 33
+    },
+    {
+      "term": "icom x-026",
+      "views": 32
+    },
+    {
+      "term": "meshtastic solar node",
+      "views": 24
+    },
+    {
+      "term": "ftdx101mp",
+      "views": 21
+    },
+    {
+      "term": "ham radio 2026",
+      "views": 18
+    }
+  ],
+  "suggested_by": [
+    {
+      "video_id": "0oo2I7vziac",
+      "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
+      "views": 74
+    },
+    {
+      "video_id": "LIM0hjXez1Q",
+      "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
+      "views": 47
+    },
+    {
+      "video_id": "ZYk8IUSeEHI",
+      "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
+      "views": 46
+    },
+    {
+      "video_id": "hcXOOwiPnr0",
+      "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
+      "views": 37
+    },
+    {
+      "video_id": "IEwwzO5Uf6Q",
+      "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
+      "views": 29
+    },
+    {
+      "video_id": "lAjxGi-Ufa0",
+      "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
+      "views": 23
+    },
+    {
+      "video_id": "vGctp8_aAmE",
+      "title": "Is This the New ICOM X-026? First Look & Speculation",
+      "views": 20
+    },
+    {
+      "video_id": "HxiR-i_QUM0",
+      "title": "ICOMs 5200 and X-026 Mockup Hamvention Anouncement!",
+      "views": 19
+    },
+    {
+      "video_id": "X14fyVU64Wc",
+      "title": "ICOM 新型モービル機 ID-5200 まもなく発売へ。",
+      "views": 19
+    },
+    {
+      "video_id": "KWipDCzI9k8",
+      "title": "Getting hands on with the Icom ID-5200",
+      "views": 18
     }
   ]
 }
