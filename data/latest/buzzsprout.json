@@ -1,0 +1,182 @@
+{
+  "fetched_at": "2026-07-13T18:57:36Z",
+  "total_downloads": 20266,
+  "episode_count": 25,
+  "episodes": [
+    {
+      "id": 19466291,
+      "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
+      "episode_number": 19,
+      "published_at": "2026-07-09T08:00:00.000-04:00",
+      "plays": 603
+    },
+    {
+      "id": 19328548,
+      "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
+      "episode_number": 18,
+      "published_at": "2026-06-11T09:00:00.000-04:00",
+      "plays": 1159
+    },
+    {
+      "id": 19219333,
+      "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
+      "episode_number": null,
+      "published_at": "2026-05-22T09:00:00.000-04:00",
+      "plays": 1084
+    },
+    {
+      "id": 19138519,
+      "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
+      "episode_number": 17,
+      "published_at": "2026-05-07T10:00:00.000-04:00",
+      "plays": 902
+    },
+    {
+      "id": 18980854,
+      "title": "Returning to the Moon: Optimism & Technology that Moves Our Space Needle",
+      "episode_number": 16,
+      "published_at": "2026-04-09T09:00:00.000-04:00",
+      "plays": 924
+    },
+    {
+      "id": 18903785,
+      "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
+      "episode_number": null,
+      "published_at": "2026-03-26T10:00:00.000-04:00",
+      "plays": 854
+    },
+    {
+      "id": 18794950,
+      "title": "Are Radio Prices Going Up? Bouvet, Yaesu & HamClock",
+      "episode_number": 15,
+      "published_at": "2026-03-05T10:00:00.000-05:00",
+      "plays": 1015
+    },
+    {
+      "id": 18629581,
+      "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
+      "episode_number": 14,
+      "published_at": "2026-02-05T10:00:00.000-05:00",
+      "plays": 1192
+    },
+    {
+      "id": 18470399,
+      "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
+      "episode_number": 13,
+      "published_at": "2026-01-08T10:00:00.000-05:00",
+      "plays": 1220
+    },
+    {
+      "id": 18296133,
+      "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
+      "episode_number": 12,
+      "published_at": "2025-12-04T12:00:00.000-05:00",
+      "plays": 1112
+    },
+    {
+      "id": 18131359,
+      "title": "Can You Put Up An Antenna? The HOA Bill Fight & IC-7300 Mark II",
+      "episode_number": 11,
+      "published_at": "2025-11-06T14:00:00.000-05:00",
+      "plays": 885
+    },
+    {
+      "id": 17980624,
+      "title": "How Frustration Built the Best Portable Logger: Sebastián KI2D & Ham2K PoLo",
+      "episode_number": 10,
+      "published_at": "2025-10-09T16:00:00.000-04:00",
+      "plays": 914
+    },
+    {
+      "id": 17915090,
+      "title": "Flex Radio's new 200 Dollar SmartSDR Subscription, is this the Future of Ham Radio Software?",
+      "episode_number": null,
+      "published_at": "2025-09-27T12:00:00.000-04:00",
+      "plays": 725
+    },
+    {
+      "id": 17760784,
+      "title": "From Parks to Peaks: How SOTA Differs from POTA",
+      "episode_number": 9,
+      "published_at": "2025-09-04T17:00:00.000-04:00",
+      "plays": 924
+    },
+    {
+      "id": 17726132,
+      "title": "New ICOM Radios Steal the Show - Tokyo Ham Fair Reactions",
+      "episode_number": null,
+      "published_at": "2025-08-24T21:00:00.000-04:00",
+      "plays": 672
+    },
+    {
+      "id": 17625014,
+      "title": "Are We Losing Ham Radio Spectrum? 70cm Band Under Threat",
+      "episode_number": 8,
+      "published_at": "2025-08-07T17:00:00.000-04:00",
+      "plays": 716
+    },
+    {
+      "id": 17571459,
+      "title": "Special Episode: 30 Years in Ham Radio with Ray Novak N9JA",
+      "episode_number": null,
+      "published_at": "2025-07-28T12:00:00.000-04:00",
+      "plays": 644
+    },
+    {
+      "id": 17441669,
+      "title": "Field Day Disappointment? Why We Think ARRL Needs to Evolve (+ FTX1 Final Update)",
+      "episode_number": 7,
+      "published_at": "2025-07-03T12:00:00.000-04:00",
+      "plays": 777
+    },
+    {
+      "id": 17282578,
+      "title": "FTX1 Reality Check: Our Honest Review + SteppIR Exit",
+      "episode_number": 6,
+      "published_at": "2025-06-05T12:00:00.000-04:00",
+      "plays": 636
+    },
+    {
+      "id": 17198150,
+      "title": "Hamvention 2025 Breakdown: What We Saw, What We Loved",
+      "episode_number": null,
+      "published_at": "2025-05-20T15:00:00.000-04:00",
+      "plays": 555
+    },
+    {
+      "id": 17122535,
+      "title": "Is the Yaesu FTX1 a True Game Changer? Plus Dayton Hamvention 2025",
+      "episode_number": 5,
+      "published_at": "2025-05-08T09:00:00.000-04:00",
+      "plays": 518
+    },
+    {
+      "id": 16912708,
+      "title": "From Scanner to Transmitter: How Everyday Hobbies Lead to Ham Radio",
+      "episode_number": 4,
+      "published_at": "2025-04-03T20:00:00.000-04:00",
+      "plays": 629
+    },
+    {
+      "id": 16745714,
+      "title": "The Good, The Bad, and The Junk – Swap Meet Scores & DXpedition Drama",
+      "episode_number": 3,
+      "published_at": "2025-03-06T14:00:00.000-05:00",
+      "plays": 527
+    },
+    {
+      "id": 16574585,
+      "title": "Is Yaesu Changing the Game? Exploring the New Mobile Lineup",
+      "episode_number": 2,
+      "published_at": "2025-02-06T11:00:00.000-05:00",
+      "plays": 533
+    },
+    {
+      "id": 16408083,
+      "title": "Hams On the Air: Episode 1 – Every Ham Has a Story",
+      "episode_number": 1,
+      "published_at": "2025-01-09T11:00:00.000-05:00",
+      "plays": 546
+    }
+  ]
+}
