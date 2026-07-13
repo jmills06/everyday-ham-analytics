@@ -27,7 +27,10 @@ TIMEOUT = 30
 
 def fetch_episodes(token: str, podcast_id: str) -> list[dict]:
     url = f"https://www.buzzsprout.com/api/{podcast_id}/episodes.json"
-    headers = {"Authorization": f"Token token={token}"}
+    headers = {
+        "Authorization": f"Token token={token}",
+        "User-Agent": "everyday-ham-analytics (jmills06@gmail.com)",
+    }
     episodes, page = [], 1
     while True:
         r = requests.get(url, headers=headers,
