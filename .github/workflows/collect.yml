@@ -1,0 +1,82 @@
+name: Collect analytics data
+
+on:
+  workflow_dispatch:
+    inputs:
+      collectors:
+        description: "Which collectors to run (all | youtube | analytics | buzzsprout)"
+        required: false
+        default: "all"
+
+# Never let two collection runs race each other
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout (full history for rebase-retry push)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: YouTube Data API collector
+        if: ${{ inputs.collectors == 'all' || inputs.collectors == 'youtube' }}
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: python collectors/youtube_channel.py
+
+      - name: YouTube Analytics collector
+        if: ${{ inputs.collectors == 'all' || inputs.collectors == 'analytics' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python collectors/youtube_analytics.py
+
+      - name: Buzzsprout collector
+        if: ${{ inputs.collectors == 'all' || inputs.collectors == 'buzzsprout' }}
+        env:
+          BUZZSPROUT_TOKEN: ${{ secrets.BUZZSPROUT_TOKEN }}
+          BUZZSPROUT_PODCAST_ID: ${{ secrets.BUZZSPROUT_PODCAST_ID }}
+        run: python collectors/buzzsprout.py
+
+      - name: Compute milestones
+        if: ${{ inputs.collectors == 'all' }}
+        run: python collectors/compute_milestones.py
+
+      - name: Commit and push (rebase-retry)
+        run: |
+          git config user.name "everyday-ham-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "data: collect $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            if git push origin main; then
+              echo "Pushed on attempt $i"
+              exit 0
+            fi
+            echo "Push attempt $i failed, rebasing..."
+            git pull --rebase --autostash -X theirs origin main
+            sleep $((i * 3))
+          done
+          echo "ERROR: push failed after 5 attempts" >&2
+          exit 1
