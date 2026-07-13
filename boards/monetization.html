@@ -150,10 +150,10 @@ body::before {
 .adlist { flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
 .adrow { display: flex; align-items: center; gap: 14px; padding: 8px 0; }
 .adrow .name {
-  width: 150px;
+  width: 185px; flex-shrink: 0;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600; font-size: 19px;
-  text-transform: uppercase; letter-spacing: 0.06em;
+  text-transform: uppercase; letter-spacing: 0.04em;
 }
 .adrow .track {
   flex: 1; height: 14px; border-radius: 999px;
@@ -320,7 +320,8 @@ body::before {
 
   <section class="detail">
     <div class="card">
-      <div class="eyebrow"><span class="kicker">Revenue by Ad Type</span></div>
+      <div class="eyebrow"><span class="kicker">Revenue by Ad Type</span>
+        <span class="note">gross</span></div>
       <div class="adlist" id="adList"></div>
     </div>
     <div class="card">
@@ -471,16 +472,30 @@ function render(mon, an, yt) {
   $('per1k').textContent = t.monetized_plays
     ? usd(t.revenue / t.monetized_plays * 1000) : '--';
 
-  // Ad types
+  // Ad types (grossRevenue is before YouTube's revenue share, so these
+  // sum higher than the net 30-day total above; the note flags it)
+  const AD_NAMES = {
+    auctionTrueviewInstream: 'TrueView In-Stream',
+    auctionInstream: 'In-Stream',
+    auctionDisplay: 'Display',
+    auctionBumperInstream: 'Bumper',
+    reservedInstream: 'Reserved In-Stream',
+    reservedInstreamSelect: 'Reserved Select',
+    reservedBumperInstream: 'Reserved Bumper',
+    reservedDisplay: 'Reserved Display',
+    unknown: 'Unknown',
+  };
+  const adName = t => AD_NAMES[t] ||
+    String(t).replace(/([a-z])([A-Z])/g, '$1 $2')
+             .replace(/_/g, ' ')
+             .replace(/\b\w/g, c => c.toUpperCase());
   const ads = mon.ad_types || [];
   if (ads.length) {
     const maxAd = Math.max(...ads.map(a => a.gross_revenue), 0.01);
     $('adList').innerHTML = ads.map(a => {
-      const name = a.type.toLowerCase().replace(/_/g, ' ')
-        .replace(/\b\w/g, c => c.toUpperCase());
       const w = Math.max(3, Math.round(a.gross_revenue / maxAd * 100));
       return `<div class="adrow">
-        <div class="name">${name}</div>
+        <div class="name">${adName(a.type)}</div>
         <div class="track"><div class="fill" style="width:${w}%"></div></div>
         <div class="amt">${usd(a.gross_revenue)}</div></div>`;
     }).join('');
