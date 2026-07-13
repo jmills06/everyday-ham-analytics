@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Growth &amp; Audience</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   EVERYDAY HAM · GROWTH & AUDIENCE
+   1080x1920 portrait signage · non-interactive · DakBoard
+   Shares the Channel Pulse token block.
+   ============================================================ */
+:root {
+  --ink:        #1B1917;
+  --ink-soft:   #2A2724;
+  --signal:     #D84E2A;
+  --signal-dk:  #B83D1E;
+  --cream:      #F3EDE1;
+  --dim:        #A89F92;
+  --gold:       #E0A52E;
+  --up:         #7FA86B;
+  --down:       #B3564A;
+  --hairline:   rgba(243, 237, 225, 0.08);
+  --card-r:     14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1080px; height: 1920px;
+  overflow: hidden;
+  background: var(--ink);
+  font-family: 'Inter', sans-serif;
+  color: var(--cream);
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: radial-gradient(ellipse 900px 700px at 85% -5%,
+              rgba(216, 78, 42, 0.13), transparent 65%);
+  pointer-events: none;
+}
+
+.board {
+  position: relative; height: 100%;
+  display: flex; flex-direction: column;
+  padding: 36px 40px 28px;
+  gap: 22px;
+}
+
+/* ---------- Header ---------- */
+.hdr { display: flex; align-items: center; gap: 24px; }
+.hdr img { height: 104px; width: auto; }
+.hdr-name { flex: 1; }
+.hdr-name h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 54px; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.01em;
+}
+.kicker {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.22em;
+  color: var(--signal);
+}
+.hdr-name .kicker { margin-top: 6px; }
+.hdr-time { text-align: right; }
+.hdr-time .clock {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300; font-size: 58px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.hdr-time .stamp {
+  margin-top: 6px; font-size: 15px; color: var(--dim);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.hdr-time .stamp.stale { color: var(--signal); font-weight: 600; }
+
+.eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+.eyebrow::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(to right, var(--hairline), transparent);
+}
+.eyebrow .note {
+  font-size: 13px; color: var(--dim);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+
+.card {
+  background: var(--ink-soft);
+  border: 1px solid var(--hairline);
+  border-radius: var(--card-r);
+}
+
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 21px;
+  letter-spacing: 0.06em; white-space: nowrap;
+  padding: 4px 13px; border-radius: 999px;
+  border: 1px solid var(--hairline);
+  color: var(--dim);
+}
+.pill.up   { color: var(--up);   border-color: rgba(127,168,107,.35); }
+.pill.down { color: var(--down); border-color: rgba(179,86,74,.35); }
+.pill .lbl { font-size: 15px; color: var(--dim); letter-spacing: 0.12em; }
+
+/* ---------- Stat row ---------- */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.stat { padding: 20px 18px 18px; text-align: center; }
+.stat .lbl {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 18px;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--dim);
+}
+.stat .val {
+  margin-top: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 56px; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat .val small { font-size: 26px; color: var(--dim); font-weight: 600; }
+.stat .pill { margin-top: 10px; }
+.stat .sub { margin-top: 10px; font-size: 13px; color: var(--dim); }
+
+/* ---------- Subscriber growth ---------- */
+.subs-card { padding: 24px 30px 18px; }
+.subs-chart { display: flex; align-items: flex-end; gap: 4px; height: 150px; }
+.subs-chart .b {
+  flex: 1; border-radius: 3px 3px 0 0;
+  background: linear-gradient(to top, var(--signal-dk), var(--signal));
+  min-height: 2px;
+}
+.subs-chart .b.neg { background: var(--down); }
+.subs-chart .b.best { background: linear-gradient(to top, #9a6f1c, var(--gold)); }
+.subs-foot {
+  display: flex; justify-content: space-between;
+  margin-top: 14px; font-size: 15px; color: var(--dim);
+}
+.subs-foot b { color: var(--cream); font-weight: 600; }
+.subs-foot .gold { color: var(--gold); font-weight: 600; }
+
+/* ---------- Launch curves ---------- */
+.curves-card { padding: 24px 30px 16px; }
+.curves-card svg { display: block; width: 100%; height: 210px; }
+.curve { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.curve.prior  { stroke: rgba(243, 237, 225, 0.28); }
+.curve.latest { stroke: var(--signal); stroke-width: 4; }
+.curve-legend {
+  display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 17px; letter-spacing: 0.06em;
+  color: var(--dim); text-transform: uppercase;
+}
+.curve-legend .sw {
+  display: inline-block; width: 22px; height: 3px;
+  border-radius: 2px; vertical-align: middle; margin-right: 8px;
+  background: rgba(243, 237, 225, 0.28);
+}
+.curve-legend .latest { color: var(--cream); }
+.curve-legend .latest .sw { background: var(--signal); height: 4px; }
+.axis-lbl { font-size: 13px; color: var(--dim); }
+
+/* ---------- Discovery ---------- */
+.disc { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; flex: 1; }
+.disc .card { padding: 22px 26px; display: flex; flex-direction: column; }
+.dlist { display: flex; flex-direction: column; gap: 0; flex: 1; justify-content: space-around; }
+.drow {
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.drow:last-child { border-bottom: none; }
+.drow .txt {
+  flex: 1; font-size: 18px; font-weight: 600;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.drow .n {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 22px; color: var(--signal);
+  font-variant-numeric: tabular-nums;
+}
+.drow .n small { font-size: 14px; color: var(--dim); letter-spacing: 0.1em; }
+
+/* ---------- Traffic ---------- */
+.traffic-card { padding: 22px 30px 18px; }
+.trow { display: flex; align-items: center; gap: 16px; padding: 6px 0; }
+.trow .name {
+  width: 170px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 20px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.trow .track {
+  flex: 1; height: 16px; border-radius: 999px;
+  background: rgba(243, 237, 225, 0.06);
+  overflow: hidden;
+}
+.trow .fill {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(to right, var(--signal-dk), var(--signal));
+}
+.trow .pct {
+  width: 64px; text-align: right;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 24px;
+  font-variant-numeric: tabular-nums;
+}
+.trow .shift {
+  width: 86px; text-align: right;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 17px; letter-spacing: 0.05em;
+  color: var(--dim); white-space: nowrap;
+}
+.trow .shift.up { color: var(--up); }
+.trow .shift.down { color: var(--down); }
+
+.aud-split { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--hairline); }
+.aud-bar {
+  display: flex; height: 20px; border-radius: 999px; overflow: hidden;
+  margin-top: 10px;
+}
+.aud-bar .seg-sub { background: var(--signal); }
+.aud-bar .seg-new { background: rgba(243, 237, 225, 0.22); }
+.aud-lbls {
+  display: flex; justify-content: space-between; margin-top: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 17px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--dim);
+}
+.aud-lbls b { color: var(--cream); }
+
+/* ---------- Footer ---------- */
+.foot {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 17px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--dim);
+}
+.foot .heart { color: var(--signal); }
+
+/* ---------- Milestone takeover ---------- */
+.mile {
+  position: fixed; inset: 0; z-index: 50;
+  background: var(--ink);
+  display: none;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 30px; text-align: center;
+}
+.mile.active { display: flex; }
+.mile::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 800px 800px at 50% 40%,
+              rgba(216, 78, 42, 0.22), transparent 70%);
+}
+.mile img { width: 560px; position: relative; }
+.mile .m-kicker {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 34px;
+  text-transform: uppercase; letter-spacing: 0.22em;
+  color: var(--signal); position: relative;
+}
+.mile .m-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 220px; line-height: 0.9;
+  color: var(--gold); position: relative;
+  font-variant-numeric: tabular-nums;
+}
+.mile .m-metric {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 64px;
+  text-transform: uppercase; position: relative;
+}
+.confetti {
+  position: absolute; top: -20px;
+  width: 12px; height: 12px;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to { transform: translateY(1960px) rotate(540deg); opacity: 0.1; }
+}
+@media (prefers-reduced-motion: reduce) { .confetti { animation: none; } }
+</style>
+</head>
+<body>
+
+<div class="board">
+
+  <header class="hdr">
+    <img src="assets/pig-header.png" alt="">
+    <div class="hdr-name">
+      <h1>Everyday Ham</h1>
+      <div class="kicker">Growth &amp; Audience</div>
+    </div>
+    <div class="hdr-time">
+      <div class="clock" id="clock">--:--</div>
+      <div class="stamp" id="stamp">Data as of --:--</div>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="card stat">
+      <div class="lbl">Watch Hours</div>
+      <div class="val" id="watchHours">--</div>
+      <div class="sub">last 30 days</div>
+    </div>
+    <div class="card stat">
+      <div class="lbl">Avg Viewed</div>
+      <div class="val" id="avgPct">--<small>%</small></div>
+      <div class="sub">of each video</div>
+    </div>
+    <div class="card stat">
+      <div class="lbl">Net Subs</div>
+      <div class="val" id="netSubs">--</div>
+      <div class="sub">last 30 days</div>
+    </div>
+    <div class="card stat">
+      <div class="lbl">Views / Day</div>
+      <div class="val" id="viewsDay">--</div>
+      <div class="pill" id="momentumPill"><span>Tracking</span></div>
+    </div>
+  </section>
+
+  <section class="card subs-card">
+    <div class="eyebrow"><span class="kicker">Subscriber Growth</span>
+      <span class="note">net per day &middot; 30 days</span></div>
+    <div class="subs-chart" id="subsChart"></div>
+    <div class="subs-foot">
+      <span>Best day <span class="gold" id="bestDay">--</span></span>
+      <span>Daily avg <b id="dailyAvg">--</b></span>
+      <span>Videos launched <b id="launched">--</b></span>
+    </div>
+  </section>
+
+  <section class="card curves-card">
+    <div class="eyebrow"><span class="kicker">Launch Curves</span>
+      <span class="note">cumulative views &middot; first 14 days</span></div>
+    <div id="curves"></div>
+    <div class="curve-legend" id="curveLegend"></div>
+  </section>
+
+  <section class="disc">
+    <div class="card">
+      <div class="eyebrow"><span class="kicker">What People Search</span></div>
+      <div class="dlist" id="searchList"></div>
+    </div>
+    <div class="card">
+      <div class="eyebrow"><span class="kicker">Suggested Next To</span></div>
+      <div class="dlist" id="suggestList"></div>
+    </div>
+  </section>
+
+  <section class="card traffic-card">
+    <div class="eyebrow"><span class="kicker">Traffic Mix</span>
+      <span class="note">30 days &middot; shift vs prior week</span></div>
+    <div id="trafficRows"></div>
+    <div class="aud-split">
+      <div class="aud-lbls"><span>Viewers who subscribe</span><span>New reach</span></div>
+      <div class="aud-bar" id="audBar"></div>
+      <div class="aud-lbls">
+        <span><b id="subPct">--%</b> subscribed</span>
+        <span><b id="newPct">--%</b> not subscribed</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>Everyday Ham Podcast &amp; YouTube</span>
+    <span>Recorded with <span class="heart">&#9829;</span> in Michigan</span>
+  </footer>
+
+</div>
+
+<div class="mile" id="mile">
+  <img src="assets/pig-full.png" alt="">
+  <div class="m-kicker">Congrats on reaching</div>
+  <div class="m-num" id="mileNum">--</div>
+  <div class="m-metric" id="mileMetric">--</div>
+</div>
+
+<script>
+/* ============================================================
+   Tuning constants
+   ============================================================ */
+const DATA_BASE       = '../data';
+const REFRESH_MINUTES = 15;
+const STALE_HOURS     = 26;
+const CURVE_DAYS_SHOWN = 14;
+const CURVE_VIDEOS     = 5;
+const SEARCH_ROWS      = 6;
+const SUGGEST_ROWS     = 5;
+const TRAFFIC_ROWS     = 5;
+
+const SOURCE_NAMES = {
+  YT_SEARCH: 'Search', RELATED_VIDEO: 'Suggested', SUBSCRIBER: 'Subs Feed',
+  EXT_URL: 'External', YT_CHANNEL: 'Channel Page', PLAYLIST: 'Playlists',
+  NOTIFICATION: 'Notifications', SHORTS: 'Shorts', END_SCREEN: 'End Screens',
+  NO_LINK_OTHER: 'Direct/Other', YT_OTHER_PAGE: 'Browse/Other',
+  ADVERTISING: 'Ads', BROWSE: 'Browse',
+};
+const srcName = s => SOURCE_NAMES[s] ||
+  s.toLowerCase().replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+let lastSignature = '';
+let secondsToRefresh = 0;
+const $ = id => document.getElementById(id);
+const fmt = n => Number(n).toLocaleString('en-US');
+
+async function getJSON(path) {
+  const r = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`${path}: ${r.status}`);
+  return r.json();
+}
+async function getJSONL(path) {
+  const r = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`${path}: ${r.status}`);
+  return (await r.text()).split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
+}
+
+/* ---------- momentum ---------- */
+function momentum(aDaily) {
+  if (aDaily.length < 8) return null;
+  const last7 = aDaily.slice(-7), prior7 = aDaily.slice(-14, -7);
+  if (!prior7.length) return null;
+  const a = last7.reduce((s, r) => s + r.views, 0) / last7.length;
+  const b = prior7.reduce((s, r) => s + r.views, 0) / prior7.length;
+  if (!b) return null;
+  return { perDay: Math.round(a), pct: Math.round((a - b) / b * 100) };
+}
+
+/* ---------- traffic share shift (points, last 7 vs prior 7) ---------- */
+function shareShifts(traffic) {
+  const dates = [...new Set(traffic.map(r => r.date))].sort();
+  const last7 = new Set(dates.slice(-7)), prior7 = new Set(dates.slice(-14, -7));
+  if (!prior7.size) return {};
+  const tot = { a: 0, b: 0 }, by = {};
+  for (const r of traffic) {
+    const bucket = last7.has(r.date) ? 'a' : prior7.has(r.date) ? 'b' : null;
+    if (!bucket) continue;
+    tot[bucket] += r.views;
+    (by[r.source] = by[r.source] || { a: 0, b: 0 })[bucket] += r.views;
+  }
+  const out = {};
+  if (!tot.a || !tot.b) return out;
+  for (const s in by)
+    out[s] = Math.round((by[s].a / tot.a - by[s].b / tot.b) * 100);
+  return out;
+}
+
+/* ---------- render ---------- */
+function render(an, yt, aDaily, traffic, curves) {
+  const t = an.totals;
+
+  // Stat row
+  $('watchHours').textContent = fmt(Math.round(t.watch_hours));
+  $('avgPct').innerHTML = `${t.avg_view_pct}<small>%</small>`;
+  $('netSubs').textContent = (t.subs_net > 0 ? '+' : '') + fmt(t.subs_net);
+  const mo = momentum(aDaily);
+  if (mo) {
+    $('viewsDay').textContent = fmt(mo.perDay);
+    const el = $('momentumPill');
+    const up = mo.pct > 0, flat = mo.pct === 0;
+    el.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
+    const arrow = flat ? '&#8226;' : up ? '&#9650;' : '&#9660;';
+    el.innerHTML = `<span>${arrow} ${mo.pct > 0 ? '+' : ''}${mo.pct}%</span>` +
+                   `<span class="lbl">VS PRIOR WK</span>`;
+  } else if (aDaily.length) {
+    const days = Math.min(7, aDaily.length);
+    const avg = aDaily.slice(-days).reduce((s, r) => s + r.views, 0) / days;
+    $('viewsDay').textContent = fmt(Math.round(avg));
+  }
+
+  // Subscriber growth bars
+  const rows = an.daily || [];
+  const nets = rows.map(r => (r.subs_gained || 0) - (r.subs_lost || 0));
+  const maxAbs = Math.max(...nets.map(Math.abs), 1);
+  const bestIdx = nets.indexOf(Math.max(...nets));
+  $('subsChart').innerHTML = rows.map((r, i) => {
+    const n = nets[i];
+    const h = Math.max(2, Math.round(Math.abs(n) / maxAbs * 100));
+    const cls = 'b' + (n < 0 ? ' neg' : '') + (i === bestIdx && n > 0 ? ' best' : '');
+    return `<div class="${cls}" style="height:${h}%"></div>`;
+  }).join('');
+  if (rows.length) {
+    const best = rows[bestIdx];
+    const bd = new Date(best.date + 'T00:00:00');
+    $('bestDay').textContent = bd.toLocaleDateString('en-US',
+      { month: 'short', day: 'numeric' }) + ' +' + nets[bestIdx];
+    const avgNet = nets.reduce((a, b) => a + b, 0) / rows.length;
+    $('dailyAvg').textContent = (avgNet >= 0 ? '+' : '') + avgNet.toFixed(1) + '/day';
+    const cutoff = rows[0].date;
+    $('launched').textContent =
+      yt.videos.filter(v => v.published_at.slice(0, 10) >= cutoff).length;
+  }
+
+  // Launch curves
+  drawCurves(yt, curves);
+
+  // Discovery lists
+  $('searchList').innerHTML = (an.search_terms || []).slice(0, SEARCH_ROWS)
+    .map(s => `<div class="drow"><div class="txt">${esc(s.term)}</div>` +
+              `<div class="n">${fmt(s.views)}<small> VIEWS</small></div></div>`)
+    .join('') || emptyRow('No search data yet');
+  $('suggestList').innerHTML = (an.suggested_by || []).slice(0, SUGGEST_ROWS)
+    .map(s => `<div class="drow"><div class="txt">${esc(s.title || s.video_id)}</div>` +
+              `<div class="n">${fmt(s.views)}<small> VIEWS</small></div></div>`)
+    .join('') || emptyRow('No suggested data yet');
+
+  // Traffic mix
+  const total30 = (an.traffic_sources || []).reduce((s, r) => s + r.views, 0) || 1;
+  const shifts = shareShifts(traffic);
+  $('trafficRows').innerHTML = (an.traffic_sources || []).slice(0, TRAFFIC_ROWS)
+    .map(r => {
+      const pct = Math.round(r.views / total30 * 100);
+      const sh = shifts[r.source];
+      let shiftHtml = '<span class="shift"></span>';
+      if (sh != null && Math.abs(sh) >= 1) {
+        const cls = sh > 0 ? 'up' : 'down';
+        const arrow = sh > 0 ? '&#9650;' : '&#9660;';
+        shiftHtml = `<span class="shift ${cls}">${arrow} ${Math.abs(sh)}pt</span>`;
+      }
+      return `<div class="trow">
+        <div class="name">${srcName(r.source)}</div>
+        <div class="track"><div class="fill" style="width:${pct}%"></div></div>
+        <div class="pct">${pct}%</div>${shiftHtml}</div>`;
+    }).join('');
+
+  // Audience split
+  const sv = t.subscribed_views || 0, nv = t.not_subscribed_views || 0;
+  const tot = sv + nv;
+  if (tot) {
+    const sp = Math.round(sv / tot * 100);
+    $('audBar').innerHTML =
+      `<div class="seg-sub" style="width:${sp}%"></div>` +
+      `<div class="seg-new" style="width:${100 - sp}%"></div>`;
+    $('subPct').textContent = sp + '%';
+    $('newPct').textContent = (100 - sp) + '%';
+  }
+
+  // Freshness
+  const fetchedAt = new Date(Date.parse(an.fetched_at));
+  const ageHours = (Date.now() - fetchedAt) / 3600000;
+  const stamp = $('stamp');
+  stamp.textContent = 'Data as of ' + fetchedAt.toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit' });
+  stamp.classList.toggle('stale', ageHours > STALE_HOURS);
+  if (ageHours > STALE_HOURS)
+    stamp.textContent = 'Data stale: ' + Math.round(ageHours) + 'h old';
+}
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function emptyRow(msg) {
+  return `<div class="drow"><div class="txt" style="color:var(--dim)">${msg}</div></div>`;
+}
+
+/* ---------- launch curve overlay ---------- */
+function drawCurves(yt, curves) {
+  const cv = (curves && curves.videos) || {};
+  const vids = yt.videos.slice(0, CURVE_VIDEOS)
+    .filter(v => cv[v.id] && cv[v.id].daily_views.length >= 2);
+  if (vids.length < 2) {
+    $('curves').innerHTML =
+      '<div class="axis-lbl" style="padding:60px 0;text-align:center">' +
+      'Launch curves appear once at least two recent videos have curve data.</div>';
+    $('curveLegend').innerHTML = '';
+    return;
+  }
+  // Cumulative series, capped at CURVE_DAYS_SHOWN
+  const series = vids.map(v => {
+    const d = cv[v.id].daily_views.slice(0, CURVE_DAYS_SHOWN);
+    const cum = []; let s = 0;
+    for (const x of d) { s += x; cum.push(s); }
+    return { id: v.id, title: v.title, cum };
+  });
+  const maxY = Math.max(...series.map(s => s.cum[s.cum.length - 1]), 1);
+  const W = 940, H = 200, PADX = 8, PADY = 12;
+  const x = i => PADX + i / (CURVE_DAYS_SHOWN - 1) * (W - PADX * 2);
+  const y = v => H - PADY - v / maxY * (H - PADY * 2);
+  const lines = series.map((s, idx) => {
+    const latest = idx === 0;
+    const pts = s.cum.map((v, i) => `${x(i)},${y(v)}`).join(' ');
+    return `<polyline class="curve ${latest ? 'latest' : 'prior'}" points="${pts}"/>`;
+  });
+  // Draw latest last so it sits on top
+  $('curves').innerHTML = `
+    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+      ${lines.slice(1).reverse().join('')}${lines[0]}
+    </svg>
+    <div style="display:flex;justify-content:space-between" class="axis-lbl">
+      <span>Day 0</span><span>Day ${CURVE_DAYS_SHOWN - 1}</span>
+    </div>`;
+  $('curveLegend').innerHTML = series.map((s, idx) => {
+    const latest = idx === 0;
+    const label = s.title.length > 34 ? s.title.slice(0, 33) + '\u2026' : s.title;
+    return `<span class="${latest ? 'latest' : ''}"><span class="sw"></span>${esc(label)}</span>`;
+  }).join('');
+}
+
+/* ---------- milestone takeover ---------- */
+function checkMilestones(m) {
+  const mile = $('mile');
+  if (!m || !m.events || !m.events.length) { mile.classList.remove('active'); return; }
+  const windowMs = (m.display_hours || 72) * 3600000;
+  const active = m.events.filter(e =>
+    Date.now() - Date.parse(e.reached_at) < windowMs);
+  if (!active.length) {
+    mile.classList.remove('active');
+    mile.querySelectorAll('.confetti').forEach(c => c.remove());
+    return;
+  }
+  const e = active[active.length - 1];
+  $('mileNum').textContent = fmt(e.value);
+  $('mileMetric').textContent = e.metric;
+  if (!mile.classList.contains('active')) {
+    mile.classList.add('active');
+    const colors = ['#D84E2A', '#E0A52E', '#F3EDE1'];
+    for (let i = 0; i < 40; i++) {
+      const c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = Math.random() * 100 + '%';
+      c.style.background = colors[i % colors.length];
+      c.style.animationDuration = (3 + Math.random() * 3) + 's';
+      c.style.animationDelay = (Math.random() * 4) + 's';
+      mile.appendChild(c);
+    }
+  }
+}
+
+/* ---------- data cycle ---------- */
+async function refresh() {
+  try {
+    const [an, yt, aDaily, traffic, curves, miles] = await Promise.all([
+      getJSON('latest/analytics.json'),
+      getJSON('latest/youtube.json'),
+      getJSONL('history/analytics_daily.jsonl').catch(() => []),
+      getJSONL('history/traffic_daily.jsonl').catch(() => []),
+      getJSON('history/videos/launch_curves.json').catch(() => null),
+      getJSON('milestones.json').catch(() => null),
+    ]);
+    const sig = JSON.stringify([an.fetched_at, yt.fetched_at,
+      aDaily.length, traffic.length, curves && curves.updated_at,
+      miles && miles.updated_at]);
+    if (sig !== lastSignature) {
+      lastSignature = sig;
+      render(an, yt, aDaily, traffic, curves);
+    }
+    checkMilestones(miles);
+  } catch (err) {
+    console.error('refresh failed:', err);
+    $('stamp').classList.add('stale');
+  }
+  secondsToRefresh = REFRESH_MINUTES * 60;
+}
+
+setInterval(() => {
+  $('clock').textContent = new Date().toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit' });
+  if (--secondsToRefresh <= 0) refresh();
+}, 1000);
+
+refresh();
+</script>
+</body>
+</html>
