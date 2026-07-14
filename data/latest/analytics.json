@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-14T04:01:14Z",
+  "fetched_at": "2026-07-14T16:00:50Z",
   "window_days": 30,
   "totals": {
     "views": 12241,
@@ -355,11 +355,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 3777
+      "views": 3776
     },
     {
       "source": "YT_SEARCH",
-      "views": 3737
+      "views": 3739
     },
     {
       "source": "RELATED_VIDEO",
@@ -383,7 +383,7 @@
     },
     {
       "source": "SHORTS",
-      "views": 184
+      "views": 183
     },
     {
       "source": "PLAYLIST",
@@ -468,11 +468,11 @@
       "views": 33
     },
     {
-      "term": "icom x-026",
-      "views": 23
+      "term": "meshtastic solar node",
+      "views": 24
     },
     {
-      "term": "meshtastic solar node",
+      "term": "icom x-026",
       "views": 23
     },
     {
