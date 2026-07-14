@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-13T20:36:58Z",
+  "fetched_at": "2026-07-14T04:01:14Z",
   "window_days": 30,
   "totals": {
-    "views": 12729,
-    "watch_hours": 878.4,
-    "avg_view_pct": 26.5,
-    "subs_gained": 105,
+    "views": 12241,
+    "watch_hours": 846.0,
+    "avg_view_pct": 26.6,
+    "subs_gained": 101,
     "subs_lost": 24,
-    "subs_net": 81,
-    "likes": 375,
-    "comments": 39,
-    "shares": 75,
-    "subscribed_views": 1547,
-    "not_subscribed_views": 11182
+    "subs_net": 77,
+    "likes": 365,
+    "comments": 38,
+    "shares": 71,
+    "subscribed_views": 1506,
+    "not_subscribed_views": 10717
   },
   "daily": [
-    {
-      "date": "2026-06-13",
-      "views": 506,
-      "watch_minutes": 1911,
-      "avg_view_duration_sec": 250,
-      "avg_view_pct": 25.1,
-      "subs_gained": 4,
-      "subs_lost": 0,
-      "likes": 10,
-      "comments": 1,
-      "shares": 4
-    },
     {
       "date": "2026-06-14",
       "views": 480,
@@ -53,8 +41,8 @@
     },
     {
       "date": "2026-06-16",
-      "views": 325,
-      "watch_minutes": 857,
+      "views": 330,
+      "watch_minutes": 897,
       "avg_view_duration_sec": 173,
       "avg_view_pct": 18.1,
       "subs_gained": 0,
@@ -113,8 +101,8 @@
     },
     {
       "date": "2026-06-21",
-      "views": 297,
-      "watch_minutes": 1031,
+      "views": 299,
+      "watch_minutes": 1032,
       "avg_view_duration_sec": 238,
       "avg_view_pct": 26.3,
       "subs_gained": 2,
@@ -173,8 +161,8 @@
     },
     {
       "date": "2026-06-26",
-      "views": 346,
-      "watch_minutes": 1152,
+      "views": 350,
+      "watch_minutes": 1164,
       "avg_view_duration_sec": 214,
       "avg_view_pct": 21.8,
       "subs_gained": 4,
@@ -185,8 +173,8 @@
     },
     {
       "date": "2026-06-27",
-      "views": 360,
-      "watch_minutes": 1053,
+      "views": 357,
+      "watch_minutes": 995,
       "avg_view_duration_sec": 198,
       "avg_view_pct": 26.5,
       "subs_gained": 3,
@@ -198,7 +186,7 @@
     {
       "date": "2026-06-28",
       "views": 402,
-      "watch_minutes": 1173,
+      "watch_minutes": 1172,
       "avg_view_duration_sec": 193,
       "avg_view_pct": 25.3,
       "subs_gained": 2,
@@ -209,8 +197,8 @@
     },
     {
       "date": "2026-06-29",
-      "views": 468,
-      "watch_minutes": 1525,
+      "views": 469,
+      "watch_minutes": 1526,
       "avg_view_duration_sec": 227,
       "avg_view_pct": 25.4,
       "subs_gained": 2,
@@ -293,8 +281,8 @@
     },
     {
       "date": "2026-07-06",
-      "views": 501,
-      "watch_minutes": 2095,
+      "views": 504,
+      "watch_minutes": 2056,
       "avg_view_duration_sec": 278,
       "avg_view_pct": 26.3,
       "subs_gained": 3,
@@ -305,8 +293,8 @@
     },
     {
       "date": "2026-07-07",
-      "views": 406,
-      "watch_minutes": 1467,
+      "views": 410,
+      "watch_minutes": 1472,
       "avg_view_duration_sec": 241,
       "avg_view_pct": 23.6,
       "subs_gained": 2,
@@ -317,8 +305,8 @@
     },
     {
       "date": "2026-07-08",
-      "views": 394,
-      "watch_minutes": 1511,
+      "views": 396,
+      "watch_minutes": 1516,
       "avg_view_duration_sec": 256,
       "avg_view_pct": 26.8,
       "subs_gained": 4,
@@ -367,39 +355,39 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 3928
+      "views": 3777
     },
     {
       "source": "YT_SEARCH",
-      "views": 3915
+      "views": 3737
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1742
+      "views": 1683
     },
     {
       "source": "EXT_URL",
-      "views": 1584
+      "views": 1507
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 644
+      "views": 624
     },
     {
       "source": "YT_CHANNEL",
-      "views": 302
+      "views": 297
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 210
+      "views": 200
     },
     {
       "source": "SHORTS",
-      "views": 187
+      "views": 184
     },
     {
       "source": "PLAYLIST",
-      "views": 105
+      "views": 103
     },
     {
       "source": "NOTIFICATION",
@@ -411,7 +399,7 @@
     },
     {
       "source": "HASHTAGS",
-      "views": 4
+      "views": 3
     },
     {
       "source": "SHORTS_CONTENT_LINKS",
@@ -425,27 +413,27 @@
   "top_videos": [
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 1235,
-      "watch_hours": 42.8,
-      "likes": 13
+      "views": 1132,
+      "watch_hours": 39.2,
+      "likes": 12
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1064,
-      "watch_hours": 7.2,
+      "views": 1017,
+      "watch_hours": 6.9,
+      "likes": 14
+    },
+    {
+      "video_id": "ZYk8IUSeEHI",
+      "views": 999,
+      "watch_hours": 49.1,
       "likes": 14
     },
     {
       "video_id": "IEwwzO5Uf6Q",
-      "views": 1042,
-      "watch_hours": 39.6,
+      "views": 987,
+      "watch_hours": 37.0,
       "likes": 13
-    },
-    {
-      "video_id": "ZYk8IUSeEHI",
-      "views": 1039,
-      "watch_hours": 51.0,
-      "likes": 14
     },
     {
       "video_id": "hcXOOwiPnr0",
@@ -457,23 +445,23 @@
   "search_terms": [
     {
       "term": "ham radio",
-      "views": 70
+      "views": 69
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 57
+      "views": 53
     },
     {
       "term": "spooltenna",
-      "views": 48
+      "views": 46
     },
     {
       "term": "meshtastic",
-      "views": 43
+      "views": 40
     },
     {
       "term": "icom",
-      "views": 38
+      "views": 35
     },
     {
       "term": "icom x026",
@@ -481,11 +469,11 @@
     },
     {
       "term": "icom x-026",
-      "views": 32
+      "views": 23
     },
     {
       "term": "meshtastic solar node",
-      "views": 24
+      "views": 23
     },
     {
       "term": "ftdx101mp",
@@ -503,14 +491,14 @@
       "views": 74
     },
     {
-      "video_id": "LIM0hjXez1Q",
-      "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 47
-    },
-    {
       "video_id": "ZYk8IUSeEHI",
       "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
       "views": 46
+    },
+    {
+      "video_id": "LIM0hjXez1Q",
+      "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
+      "views": 45
     },
     {
       "video_id": "hcXOOwiPnr0",
@@ -520,32 +508,32 @@
     {
       "video_id": "IEwwzO5Uf6Q",
       "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
-      "views": 29
+      "views": 27
     },
     {
       "video_id": "lAjxGi-Ufa0",
       "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
-      "views": 23
+      "views": 22
     },
     {
       "video_id": "vGctp8_aAmE",
       "title": "Is This the New ICOM X-026? First Look & Speculation",
-      "views": 20
+      "views": 19
     },
     {
       "video_id": "HxiR-i_QUM0",
       "title": "ICOMs 5200 and X-026 Mockup Hamvention Anouncement!",
-      "views": 19
+      "views": 18
     },
     {
       "video_id": "X14fyVU64Wc",
       "title": "ICOM 新型モービル機 ID-5200 まもなく発売へ。",
-      "views": 19
+      "views": 18
     },
     {
       "video_id": "KWipDCzI9k8",
       "title": "Getting hands on with the Icom ID-5200",
-      "views": 18
+      "views": 17
     }
   ]
 }
