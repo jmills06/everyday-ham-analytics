@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T04:00:51Z",
+  "fetched_at": "2026-07-15T16:01:01Z",
   "window_days": 30,
   "totals": {
     "views": 12169,
@@ -11,8 +11,8 @@
     "likes": 364,
     "comments": 38,
     "shares": 73,
-    "subscribed_views": 1507,
-    "not_subscribed_views": 10644
+    "subscribed_views": 1506,
+    "not_subscribed_views": 10629
   },
   "daily": [
     {
@@ -355,15 +355,15 @@
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 3729
+      "views": 3734
     },
     {
       "source": "SUBSCRIBER",
-      "views": 3715
+      "views": 3710
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1691
+      "views": 1690
     },
     {
       "source": "EXT_URL",
@@ -371,11 +371,11 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 626
+      "views": 624
     },
     {
       "source": "YT_CHANNEL",
-      "views": 297
+      "views": 288
     },
     {
       "source": "YT_OTHER_PAGE",
@@ -383,7 +383,7 @@
     },
     {
       "source": "SHORTS",
-      "views": 180
+      "views": 176
     },
     {
       "source": "PLAYLIST",
@@ -453,7 +453,7 @@
     },
     {
       "term": "spooltenna",
-      "views": 43
+      "views": 44
     },
     {
       "term": "icom x026",
