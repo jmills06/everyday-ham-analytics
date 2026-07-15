@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-14T16:00:50Z",
+  "fetched_at": "2026-07-15T04:00:51Z",
   "window_days": 30,
   "totals": {
-    "views": 12241,
-    "watch_hours": 846.0,
-    "avg_view_pct": 26.6,
-    "subs_gained": 101,
-    "subs_lost": 24,
-    "subs_net": 77,
-    "likes": 365,
+    "views": 12169,
+    "watch_hours": 842.3,
+    "avg_view_pct": 26.8,
+    "subs_gained": 103,
+    "subs_lost": 23,
+    "subs_net": 80,
+    "likes": 364,
     "comments": 38,
-    "shares": 71,
-    "subscribed_views": 1506,
-    "not_subscribed_views": 10717
+    "shares": 73,
+    "subscribed_views": 1507,
+    "not_subscribed_views": 10644
   },
   "daily": [
-    {
-      "date": "2026-06-14",
-      "views": 480,
-      "watch_minutes": 1795,
-      "avg_view_duration_sec": 249,
-      "avg_view_pct": 21.6,
-      "subs_gained": 2,
-      "subs_lost": 1,
-      "likes": 7,
-      "comments": 1,
-      "shares": 1
-    },
     {
       "date": "2026-06-15",
       "views": 334,
@@ -350,20 +338,32 @@
       "likes": 8,
       "comments": 0,
       "shares": 1
+    },
+    {
+      "date": "2026-07-12",
+      "views": 408,
+      "watch_minutes": 1576,
+      "avg_view_duration_sec": 267,
+      "avg_view_pct": 27.6,
+      "subs_gained": 4,
+      "subs_lost": 0,
+      "likes": 6,
+      "comments": 1,
+      "shares": 3
     }
   ],
   "traffic_sources": [
     {
-      "source": "SUBSCRIBER",
-      "views": 3776
+      "source": "YT_SEARCH",
+      "views": 3729
     },
     {
-      "source": "YT_SEARCH",
-      "views": 3739
+      "source": "SUBSCRIBER",
+      "views": 3715
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1683
+      "views": 1691
     },
     {
       "source": "EXT_URL",
@@ -371,7 +371,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 624
+      "views": 626
     },
     {
       "source": "YT_CHANNEL",
@@ -383,11 +383,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 183
+      "views": 180
     },
     {
       "source": "PLAYLIST",
-      "views": 103
+      "views": 94
     },
     {
       "source": "NOTIFICATION",
@@ -395,7 +395,7 @@
     },
     {
       "source": "END_SCREEN",
-      "views": 30
+      "views": 31
     },
     {
       "source": "HASHTAGS",
@@ -413,74 +413,74 @@
   "top_videos": [
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 1132,
-      "watch_hours": 39.2,
-      "likes": 12
+      "views": 1084,
+      "watch_hours": 38.2,
+      "likes": 10
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1017,
-      "watch_hours": 6.9,
-      "likes": 14
-    },
-    {
-      "video_id": "ZYk8IUSeEHI",
-      "views": 999,
-      "watch_hours": 49.1,
+      "views": 1001,
+      "watch_hours": 6.8,
       "likes": 14
     },
     {
       "video_id": "IEwwzO5Uf6Q",
-      "views": 987,
-      "watch_hours": 37.0,
-      "likes": 13
+      "views": 989,
+      "watch_hours": 37.4,
+      "likes": 14
+    },
+    {
+      "video_id": "ZYk8IUSeEHI",
+      "views": 986,
+      "watch_hours": 48.1,
+      "likes": 12
     },
     {
       "video_id": "hcXOOwiPnr0",
-      "views": 831,
-      "watch_hours": 81.7,
+      "views": 839,
+      "watch_hours": 82.3,
       "likes": 55
     }
   ],
   "search_terms": [
     {
       "term": "ham radio",
-      "views": 69
+      "views": 73
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 53
+      "views": 54
     },
     {
       "term": "spooltenna",
-      "views": 46
+      "views": 43
+    },
+    {
+      "term": "icom x026",
+      "views": 39
     },
     {
       "term": "meshtastic",
-      "views": 40
+      "views": 37
     },
     {
       "term": "icom",
       "views": 35
     },
     {
-      "term": "icom x026",
-      "views": 33
-    },
-    {
-      "term": "meshtastic solar node",
-      "views": 24
-    },
-    {
       "term": "icom x-026",
       "views": 23
     },
     {
-      "term": "ftdx101mp",
-      "views": 21
+      "term": "meshtastic solar node",
+      "views": 22
     },
     {
-      "term": "ham radio 2026",
+      "term": "ftdx101mp",
+      "views": 19
+    },
+    {
+      "term": "flex radio",
       "views": 18
     }
   ],
@@ -488,32 +488,32 @@
     {
       "video_id": "0oo2I7vziac",
       "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
-      "views": 74
-    },
-    {
-      "video_id": "ZYk8IUSeEHI",
-      "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
-      "views": 46
+      "views": 77
     },
     {
       "video_id": "LIM0hjXez1Q",
       "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 45
+      "views": 43
+    },
+    {
+      "video_id": "ZYk8IUSeEHI",
+      "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
+      "views": 43
     },
     {
       "video_id": "hcXOOwiPnr0",
       "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
-      "views": 37
+      "views": 38
     },
     {
       "video_id": "IEwwzO5Uf6Q",
       "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
-      "views": 27
+      "views": 28
     },
     {
       "video_id": "lAjxGi-Ufa0",
       "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
-      "views": 22
+      "views": 20
     },
     {
       "video_id": "vGctp8_aAmE",
@@ -521,19 +521,19 @@
       "views": 19
     },
     {
-      "video_id": "HxiR-i_QUM0",
-      "title": "ICOMs 5200 and X-026 Mockup Hamvention Anouncement!",
-      "views": 18
+      "video_id": "KWipDCzI9k8",
+      "title": "Getting hands on with the Icom ID-5200",
+      "views": 17
     },
     {
       "video_id": "X14fyVU64Wc",
       "title": "ICOM 新型モービル機 ID-5200 まもなく発売へ。",
-      "views": 18
+      "views": 17
     },
     {
-      "video_id": "KWipDCzI9k8",
-      "title": "Getting hands on with the Icom ID-5200",
-      "views": 17
+      "video_id": "HN3sKVL2DSU",
+      "title": "What Happens When 80 Hams Finally Meet in Person? Michigan POTA Meetup 2026",
+      "views": 15
     }
   ]
 }
