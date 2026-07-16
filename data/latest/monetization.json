@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-07-16T04:00:55Z",
+  "fetched_at": "2026-07-16T16:00:43Z",
   "window_days": 30,
   "totals": {
-    "revenue": 57.44,
+    "revenue": 57.46,
     "monetized_plays": 5561,
     "rpm": 4.71,
-    "daily_avg": 1.91,
+    "daily_avg": 1.92,
     "projected_monthly": 56.4,
     "projection_basis_days": 7
   },
@@ -33,7 +33,7 @@
     },
     {
       "date": "2026-06-18",
-      "revenue": 0.97,
+      "revenue": 0.98,
       "cpm": 3.95,
       "playback_cpm": 10.53,
       "monetized_plays": 145
@@ -54,7 +54,7 @@
     },
     {
       "date": "2026-06-21",
-      "revenue": 1.1,
+      "revenue": 1.09,
       "cpm": 6.12,
       "playback_cpm": 15.56,
       "monetized_plays": 114
@@ -75,14 +75,14 @@
     },
     {
       "date": "2026-06-24",
-      "revenue": 0.97,
+      "revenue": 0.98,
       "cpm": 4.68,
       "playback_cpm": 10.7,
       "monetized_plays": 148
     },
     {
       "date": "2026-06-25",
-      "revenue": 2.19,
+      "revenue": 2.21,
       "cpm": 6.67,
       "playback_cpm": 15.33,
       "monetized_plays": 227
@@ -96,7 +96,7 @@
     },
     {
       "date": "2026-06-27",
-      "revenue": 1.84,
+      "revenue": 1.83,
       "cpm": 10.06,
       "playback_cpm": 16.1,
       "monetized_plays": 190
@@ -270,12 +270,12 @@
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "revenue": 4.52,
+      "revenue": 4.51,
       "views": 991
     },
     {
       "video_id": "HN3sKVL2DSU",
-      "revenue": 3.06,
+      "revenue": 3.07,
       "views": 313
     }
   ]
