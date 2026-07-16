@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-15T16:01:02Z",
-  "total_downloads": 20512,
+  "fetched_at": "2026-07-16T04:00:56Z",
+  "total_downloads": 20536,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,28 +8,28 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 710
+      "plays": 721
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1175
+      "plays": 1177
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1087
+      "plays": 1089
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 923
+      "plays": 925
     },
     {
       "id": 18980854,
@@ -57,14 +57,14 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1198
+      "plays": 1199
     },
     {
       "id": 18470399,
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1226
+      "plays": 1227
     },
     {
       "id": 18296133,
@@ -134,21 +134,21 @@
       "title": "FTX1 Reality Check: Our Honest Review + SteppIR Exit",
       "episode_number": 6,
       "published_at": "2025-06-05T12:00:00.000-04:00",
-      "plays": 640
+      "plays": 641
     },
     {
       "id": 17198150,
       "title": "Hamvention 2025 Breakdown: What We Saw, What We Loved",
       "episode_number": null,
       "published_at": "2025-05-20T15:00:00.000-04:00",
-      "plays": 559
+      "plays": 560
     },
     {
       "id": 17122535,
       "title": "Is the Yaesu FTX1 a True Game Changer? Plus Dayton Hamvention 2025",
       "episode_number": 5,
       "published_at": "2025-05-08T09:00:00.000-04:00",
-      "plays": 521
+      "plays": 522
     },
     {
       "id": 16912708,
@@ -169,14 +169,14 @@
       "title": "Is Yaesu Changing the Game? Exploring the New Mobile Lineup",
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
-      "plays": 539
+      "plays": 540
     },
     {
       "id": 16408083,
       "title": "Hams On the Air: Episode 1 – Every Ham Has a Story",
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
-      "plays": 552
+      "plays": 553
     }
   ]
 }
