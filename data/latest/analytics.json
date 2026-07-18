@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-17T16:00:37Z",
+  "fetched_at": "2026-07-18T04:00:28Z",
   "window_days": 30,
   "totals": {
-    "views": 12262,
-    "watch_hours": 861.6,
-    "avg_view_pct": 27.2,
+    "views": 12312,
+    "watch_hours": 863.3,
+    "avg_view_pct": 27.1,
     "subs_gained": 105,
-    "subs_lost": 23,
-    "subs_net": 82,
-    "likes": 371,
-    "comments": 41,
-    "shares": 83,
-    "subscribed_views": 1581,
-    "not_subscribed_views": 10668
+    "subs_lost": 24,
+    "subs_net": 81,
+    "likes": 373,
+    "comments": 42,
+    "shares": 86,
+    "subscribed_views": 1577,
+    "not_subscribed_views": 10722
   },
   "daily": [
-    {
-      "date": "2026-06-17",
-      "views": 312,
-      "watch_minutes": 1074,
-      "avg_view_duration_sec": 231,
-      "avg_view_pct": 23.6,
-      "subs_gained": 2,
-      "subs_lost": 0,
-      "likes": 5,
-      "comments": 1,
-      "shares": 1
-    },
     {
       "date": "2026-06-18",
       "views": 335,
@@ -350,28 +338,40 @@
       "likes": 11,
       "comments": 2,
       "shares": 3
+    },
+    {
+      "date": "2026-07-15",
+      "views": 362,
+      "watch_minutes": 1176,
+      "avg_view_duration_sec": 214,
+      "avg_view_pct": 21.3,
+      "subs_gained": 2,
+      "subs_lost": 1,
+      "likes": 7,
+      "comments": 2,
+      "shares": 4
     }
   ],
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 3762
+      "views": 3766
     },
     {
       "source": "SUBSCRIBER",
-      "views": 3727
+      "views": 3732
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1711
+      "views": 1712
     },
     {
       "source": "EXT_URL",
-      "views": 1508
+      "views": 1528
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 640
+      "views": 646
     },
     {
       "source": "YT_CHANNEL",
@@ -379,23 +379,23 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 206
+      "views": 208
     },
     {
       "source": "SHORTS",
-      "views": 178
+      "views": 183
     },
     {
       "source": "PLAYLIST",
-      "views": 97
+      "views": 102
     },
     {
       "source": "NOTIFICATION",
-      "views": 84
+      "views": 85
     },
     {
       "source": "END_SCREEN",
-      "views": 30
+      "views": 31
     },
     {
       "source": "HASHTAGS",
@@ -413,51 +413,51 @@
   "top_videos": [
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 1024,
-      "watch_hours": 36.8,
-      "likes": 9
+      "views": 1040,
+      "watch_hours": 37.5,
+      "likes": 10
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 956,
-      "watch_hours": 6.4,
-      "likes": 13
-    },
-    {
-      "video_id": "IEwwzO5Uf6Q",
-      "views": 954,
-      "watch_hours": 36.4,
+      "views": 1002,
+      "watch_hours": 6.7,
       "likes": 14
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 948,
-      "watch_hours": 47.1,
+      "views": 999,
+      "watch_hours": 49.0,
       "likes": 12
     },
     {
+      "video_id": "IEwwzO5Uf6Q",
+      "views": 951,
+      "watch_hours": 36.1,
+      "likes": 13
+    },
+    {
       "video_id": "hcXOOwiPnr0",
-      "views": 843,
-      "watch_hours": 82.9,
-      "likes": 55
+      "views": 852,
+      "watch_hours": 83.7,
+      "likes": 56
     }
   ],
   "search_terms": [
     {
       "term": "ham radio",
-      "views": 74
+      "views": 76
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 49
+      "views": 50
     },
     {
       "term": "spooltenna",
-      "views": 43
+      "views": 49
     },
     {
       "term": "meshtastic",
-      "views": 40
+      "views": 42
     },
     {
       "term": "icom x026",
@@ -468,27 +468,27 @@
       "views": 34
     },
     {
-      "term": "ftdx101mp",
-      "views": 23
+      "term": "flex radio",
+      "views": 22
     },
     {
-      "term": "flex radio",
-      "views": 20
+      "term": "ftdx101mp",
+      "views": 22
     },
     {
       "term": "meshtastic solar node",
-      "views": 20
+      "views": 22
     },
     {
-      "term": "icom x-026",
-      "views": 19
+      "term": "ham radio 2026",
+      "views": 18
     }
   ],
   "suggested_by": [
     {
       "video_id": "0oo2I7vziac",
       "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
-      "views": 78
+      "views": 79
     },
     {
       "video_id": "LIM0hjXez1Q",
@@ -503,7 +503,7 @@
     {
       "video_id": "hcXOOwiPnr0",
       "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
-      "views": 38
+      "views": 40
     },
     {
       "video_id": "IEwwzO5Uf6Q",
@@ -513,12 +513,12 @@
     {
       "video_id": "lAjxGi-Ufa0",
       "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
-      "views": 21
+      "views": 20
     },
     {
       "video_id": "vGctp8_aAmE",
       "title": "Is This the New ICOM X-026? First Look & Speculation",
-      "views": 21
+      "views": 20
     },
     {
       "video_id": "KWipDCzI9k8",
