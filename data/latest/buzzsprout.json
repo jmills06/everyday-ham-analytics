@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-18T04:00:29Z",
-  "total_downloads": 20679,
+  "fetched_at": "2026-07-18T16:00:40Z",
+  "total_downloads": 20697,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,14 +8,14 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 785
+      "plays": 796
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1195
+      "plays": 1197
     },
     {
       "id": 19219333,
@@ -134,35 +134,35 @@
       "title": "FTX1 Reality Check: Our Honest Review + SteppIR Exit",
       "episode_number": 6,
       "published_at": "2025-06-05T12:00:00.000-04:00",
-      "plays": 641
+      "plays": 642
     },
     {
       "id": 17198150,
       "title": "Hamvention 2025 Breakdown: What We Saw, What We Loved",
       "episode_number": null,
       "published_at": "2025-05-20T15:00:00.000-04:00",
-      "plays": 560
+      "plays": 561
     },
     {
       "id": 17122535,
       "title": "Is the Yaesu FTX1 a True Game Changer? Plus Dayton Hamvention 2025",
       "episode_number": 5,
       "published_at": "2025-05-08T09:00:00.000-04:00",
-      "plays": 522
+      "plays": 523
     },
     {
       "id": 16912708,
       "title": "From Scanner to Transmitter: How Everyday Hobbies Lead to Ham Radio",
       "episode_number": 4,
       "published_at": "2025-04-03T20:00:00.000-04:00",
-      "plays": 633
+      "plays": 634
     },
     {
       "id": 16745714,
       "title": "The Good, The Bad, and The Junk – Swap Meet Scores & DXpedition Drama",
       "episode_number": 3,
       "published_at": "2025-03-06T14:00:00.000-05:00",
-      "plays": 536
+      "plays": 537
     },
     {
       "id": 16574585,
