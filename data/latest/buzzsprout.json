@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-18T16:00:40Z",
-  "total_downloads": 20697,
+  "fetched_at": "2026-07-19T04:00:30Z",
+  "total_downloads": 20719,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,14 +8,14 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 796
+      "plays": 809
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1197
+      "plays": 1201
     },
     {
       "id": 19219333,
@@ -57,21 +57,21 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1202
+      "plays": 1203
     },
     {
       "id": 18470399,
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1231
+      "plays": 1232
     },
     {
       "id": 18296133,
       "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
       "episode_number": 12,
       "published_at": "2025-12-04T12:00:00.000-05:00",
-      "plays": 1119
+      "plays": 1120
     },
     {
       "id": 18131359,
@@ -155,14 +155,14 @@
       "title": "From Scanner to Transmitter: How Everyday Hobbies Lead to Ham Radio",
       "episode_number": 4,
       "published_at": "2025-04-03T20:00:00.000-04:00",
-      "plays": 634
+      "plays": 635
     },
     {
       "id": 16745714,
       "title": "The Good, The Bad, and The Junk – Swap Meet Scores & DXpedition Drama",
       "episode_number": 3,
       "published_at": "2025-03-06T14:00:00.000-05:00",
-      "plays": 537
+      "plays": 538
     },
     {
       "id": 16574585,

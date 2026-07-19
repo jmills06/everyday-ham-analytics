@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-18T16:00:40Z",
+  "fetched_at": "2026-07-19T04:00:29Z",
   "window_days": 30,
   "totals": {
-    "views": 12312,
-    "watch_hours": 863.3,
-    "avg_view_pct": 27.1,
-    "subs_gained": 105,
+    "views": 12404,
+    "watch_hours": 865.7,
+    "avg_view_pct": 27.0,
+    "subs_gained": 100,
     "subs_lost": 24,
-    "subs_net": 81,
-    "likes": 373,
+    "subs_net": 76,
+    "likes": 370,
     "comments": 42,
     "shares": 86,
-    "subscribed_views": 1577,
-    "not_subscribed_views": 10717
+    "subscribed_views": 1632,
+    "not_subscribed_views": 10754
   },
   "daily": [
-    {
-      "date": "2026-06-18",
-      "views": 335,
-      "watch_minutes": 1157,
-      "avg_view_duration_sec": 230,
-      "avg_view_pct": 27.4,
-      "subs_gained": 6,
-      "subs_lost": 0,
-      "likes": 11,
-      "comments": 1,
-      "shares": 3
-    },
     {
       "date": "2026-06-19",
       "views": 337,
@@ -350,48 +338,60 @@
       "likes": 7,
       "comments": 2,
       "shares": 4
+    },
+    {
+      "date": "2026-07-16",
+      "views": 427,
+      "watch_minutes": 1305,
+      "avg_view_duration_sec": 213,
+      "avg_view_pct": 25.8,
+      "subs_gained": 1,
+      "subs_lost": 0,
+      "likes": 8,
+      "comments": 1,
+      "shares": 3
     }
   ],
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 3765
+      "views": 3791
     },
     {
       "source": "SUBSCRIBER",
-      "views": 3731
+      "views": 3772
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1712
+      "views": 1699
     },
     {
       "source": "EXT_URL",
-      "views": 1528
+      "views": 1526
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 644
+      "views": 640
     },
     {
       "source": "YT_CHANNEL",
-      "views": 296
+      "views": 327
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 208
+      "views": 207
     },
     {
       "source": "SHORTS",
-      "views": 183
+      "views": 188
     },
     {
       "source": "PLAYLIST",
-      "views": 102
+      "views": 103
     },
     {
       "source": "NOTIFICATION",
-      "views": 85
+      "views": 93
     },
     {
       "source": "END_SCREEN",
@@ -412,48 +412,48 @@
   ],
   "top_videos": [
     {
-      "video_id": "LIM0hjXez1Q",
-      "views": 1040,
-      "watch_hours": 37.5,
-      "likes": 10
-    },
-    {
       "video_id": "CskulzdxXyc",
-      "views": 1002,
-      "watch_hours": 6.7,
+      "views": 1040,
+      "watch_hours": 6.9,
       "likes": 14
     },
     {
+      "video_id": "LIM0hjXez1Q",
+      "views": 1012,
+      "watch_hours": 35.7,
+      "likes": 11
+    },
+    {
       "video_id": "ZYk8IUSeEHI",
-      "views": 999,
-      "watch_hours": 49.0,
-      "likes": 12
+      "views": 984,
+      "watch_hours": 47.9,
+      "likes": 10
     },
     {
       "video_id": "IEwwzO5Uf6Q",
-      "views": 951,
-      "watch_hours": 36.1,
-      "likes": 13
+      "views": 944,
+      "watch_hours": 35.9,
+      "likes": 12
     },
     {
       "video_id": "hcXOOwiPnr0",
-      "views": 852,
-      "watch_hours": 83.7,
+      "views": 854,
+      "watch_hours": 83.8,
       "likes": 56
     }
   ],
   "search_terms": [
     {
       "term": "ham radio",
-      "views": 76
+      "views": 83
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 50
+      "views": 51
     },
     {
       "term": "spooltenna",
-      "views": 49
+      "views": 47
     },
     {
       "term": "meshtastic",
@@ -468,15 +468,15 @@
       "views": 34
     },
     {
+      "term": "meshtastic solar node",
+      "views": 23
+    },
+    {
       "term": "flex radio",
       "views": 22
     },
     {
       "term": "ftdx101mp",
-      "views": 22
-    },
-    {
-      "term": "meshtastic solar node",
       "views": 22
     },
     {
@@ -493,12 +493,7 @@
     {
       "video_id": "LIM0hjXez1Q",
       "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 45
-    },
-    {
-      "video_id": "ZYk8IUSeEHI",
-      "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
-      "views": 42
+      "views": 47
     },
     {
       "video_id": "hcXOOwiPnr0",
@@ -506,9 +501,14 @@
       "views": 40
     },
     {
+      "video_id": "ZYk8IUSeEHI",
+      "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
+      "views": 39
+    },
+    {
       "video_id": "IEwwzO5Uf6Q",
       "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
-      "views": 24
+      "views": 21
     },
     {
       "video_id": "lAjxGi-Ufa0",
@@ -521,11 +521,6 @@
       "views": 20
     },
     {
-      "video_id": "KWipDCzI9k8",
-      "title": "Getting hands on with the Icom ID-5200",
-      "views": 16
-    },
-    {
       "video_id": "X14fyVU64Wc",
       "title": "ICOM 新型モービル機 ID-5200 まもなく発売へ。",
       "views": 16
@@ -533,6 +528,11 @@
     {
       "video_id": "HN3sKVL2DSU",
       "title": "What Happens When 80 Hams Finally Meet in Person? Michigan POTA Meetup 2026",
+      "views": 15
+    },
+    {
+      "video_id": "KWipDCzI9k8",
+      "title": "Getting hands on with the Icom ID-5200",
       "views": 15
     }
   ]
