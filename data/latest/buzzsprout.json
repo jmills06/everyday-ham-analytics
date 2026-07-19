@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-19T04:00:30Z",
-  "total_downloads": 20719,
+  "fetched_at": "2026-07-19T16:00:37Z",
+  "total_downloads": 20740,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,14 +8,14 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 809
+      "plays": 818
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1201
+      "plays": 1205
     },
     {
       "id": 19219333,
@@ -71,49 +71,49 @@
       "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
       "episode_number": 12,
       "published_at": "2025-12-04T12:00:00.000-05:00",
-      "plays": 1120
+      "plays": 1121
     },
     {
       "id": 18131359,
       "title": "Can You Put Up An Antenna? The HOA Bill Fight & IC-7300 Mark II",
       "episode_number": 11,
       "published_at": "2025-11-06T14:00:00.000-05:00",
-      "plays": 889
+      "plays": 890
     },
     {
       "id": 17980624,
       "title": "How Frustration Built the Best Portable Logger: Sebastián KI2D & Ham2K PoLo",
       "episode_number": 10,
       "published_at": "2025-10-09T16:00:00.000-04:00",
-      "plays": 920
+      "plays": 921
     },
     {
       "id": 17915090,
       "title": "Flex Radio's new 200 Dollar SmartSDR Subscription, is this the Future of Ham Radio Software?",
       "episode_number": null,
       "published_at": "2025-09-27T12:00:00.000-04:00",
-      "plays": 730
+      "plays": 731
     },
     {
       "id": 17760784,
       "title": "From Parks to Peaks: How SOTA Differs from POTA",
       "episode_number": 9,
       "published_at": "2025-09-04T17:00:00.000-04:00",
-      "plays": 931
+      "plays": 932
     },
     {
       "id": 17726132,
       "title": "New ICOM Radios Steal the Show - Tokyo Ham Fair Reactions",
       "episode_number": null,
       "published_at": "2025-08-24T21:00:00.000-04:00",
-      "plays": 678
+      "plays": 679
     },
     {
       "id": 17625014,
       "title": "Are We Losing Ham Radio Spectrum? 70cm Band Under Threat",
       "episode_number": 8,
       "published_at": "2025-08-07T17:00:00.000-04:00",
-      "plays": 724
+      "plays": 725
     },
     {
       "id": 17571459,
@@ -127,7 +127,7 @@
       "title": "Field Day Disappointment? Why We Think ARRL Needs to Evolve (+ FTX1 Final Update)",
       "episode_number": 7,
       "published_at": "2025-07-03T12:00:00.000-04:00",
-      "plays": 782
+      "plays": 783
     },
     {
       "id": 17282578,
