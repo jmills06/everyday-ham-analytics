@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-19T16:00:37Z",
-  "total_downloads": 20740,
+  "fetched_at": "2026-07-20T04:00:30Z",
+  "total_downloads": 20763,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,28 +8,28 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 818
+      "plays": 832
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1205
+      "plays": 1207
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1096
+      "plays": 1097
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 936
+      "plays": 937
     },
     {
       "id": 18980854,
@@ -57,7 +57,7 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1203
+      "plays": 1205
     },
     {
       "id": 18470399,
@@ -92,7 +92,7 @@
       "title": "Flex Radio's new 200 Dollar SmartSDR Subscription, is this the Future of Ham Radio Software?",
       "episode_number": null,
       "published_at": "2025-09-27T12:00:00.000-04:00",
-      "plays": 731
+      "plays": 732
     },
     {
       "id": 17760784,
@@ -120,14 +120,14 @@
       "title": "Special Episode: 30 Years in Ham Radio with Ray Novak N9JA",
       "episode_number": null,
       "published_at": "2025-07-28T12:00:00.000-04:00",
-      "plays": 647
+      "plays": 648
     },
     {
       "id": 17441669,
       "title": "Field Day Disappointment? Why We Think ARRL Needs to Evolve (+ FTX1 Final Update)",
       "episode_number": 7,
       "published_at": "2025-07-03T12:00:00.000-04:00",
-      "plays": 783
+      "plays": 784
     },
     {
       "id": 17282578,
