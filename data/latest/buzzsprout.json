@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-20T16:00:36Z",
-  "total_downloads": 20793,
+  "fetched_at": "2026-07-21T04:00:35Z",
+  "total_downloads": 20824,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,35 +8,35 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 840
+      "plays": 855
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1212
+      "plays": 1219
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1099
+      "plays": 1102
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 938
+      "plays": 940
     },
     {
       "id": 18980854,
       "title": "Returning to the Moon: Optimism & Technology that Moves Our Space Needle",
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
-      "plays": 936
+      "plays": 937
     },
     {
       "id": 18903785,
@@ -64,7 +64,7 @@
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1232
+      "plays": 1234
     },
     {
       "id": 18296133,
@@ -162,7 +162,7 @@
       "title": "The Good, The Bad, and The Junk – Swap Meet Scores & DXpedition Drama",
       "episode_number": 3,
       "published_at": "2025-03-06T14:00:00.000-05:00",
-      "plays": 538
+      "plays": 539
     },
     {
       "id": 16574585,
