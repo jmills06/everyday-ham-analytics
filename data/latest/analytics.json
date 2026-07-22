@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-21T16:00:36Z",
+  "fetched_at": "2026-07-22T04:00:35Z",
   "window_days": 30,
   "totals": {
-    "views": 12732,
-    "watch_hours": 882.2,
-    "avg_view_pct": 27.2,
-    "subs_gained": 98,
-    "subs_lost": 26,
-    "subs_net": 72,
-    "likes": 398,
-    "comments": 47,
-    "shares": 88,
-    "subscribed_views": 1791,
-    "not_subscribed_views": 10925
+    "views": 12811,
+    "watch_hours": 882.5,
+    "avg_view_pct": 27.1,
+    "subs_gained": 99,
+    "subs_lost": 25,
+    "subs_net": 74,
+    "likes": 405,
+    "comments": 48,
+    "shares": 89,
+    "subscribed_views": 1811,
+    "not_subscribed_views": 10989
   },
   "daily": [
-    {
-      "date": "2026-06-21",
-      "views": 299,
-      "watch_minutes": 1032,
-      "avg_view_duration_sec": 238,
-      "avg_view_pct": 26.3,
-      "subs_gained": 2,
-      "subs_lost": 1,
-      "likes": 3,
-      "comments": 0,
-      "shares": 0
-    },
     {
       "date": "2026-06-22",
       "views": 369,
@@ -329,8 +317,8 @@
     },
     {
       "date": "2026-07-17",
-      "views": 585,
-      "watch_minutes": 2140,
+      "views": 582,
+      "watch_minutes": 2065,
       "avg_view_duration_sec": 225,
       "avg_view_pct": 27.7,
       "subs_gained": 5,
@@ -350,32 +338,44 @@
       "likes": 5,
       "comments": 0,
       "shares": 2
+    },
+    {
+      "date": "2026-07-19",
+      "views": 381,
+      "watch_minutes": 1125,
+      "avg_view_duration_sec": 205,
+      "avg_view_pct": 24.1,
+      "subs_gained": 3,
+      "subs_lost": 0,
+      "likes": 10,
+      "comments": 1,
+      "shares": 1
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 4009
+      "views": 4062
     },
     {
       "source": "YT_SEARCH",
-      "views": 3817
+      "views": 3848
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1699
+      "views": 1709
     },
     {
       "source": "EXT_URL",
-      "views": 1531
+      "views": 1516
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 669
+      "views": 672
     },
     {
       "source": "YT_CHANNEL",
-      "views": 345
+      "views": 351
     },
     {
       "source": "YT_OTHER_PAGE",
@@ -383,11 +383,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 183
+      "views": 182
     },
     {
       "source": "PLAYLIST",
-      "views": 110
+      "views": 108
     },
     {
       "source": "NOTIFICATION",
@@ -395,7 +395,7 @@
     },
     {
       "source": "END_SCREEN",
-      "views": 33
+      "views": 32
     },
     {
       "source": "HASHTAGS",
@@ -409,32 +409,32 @@
   "top_videos": [
     {
       "video_id": "CskulzdxXyc",
-      "views": 1044,
-      "watch_hours": 6.9,
-      "likes": 14
+      "views": 1066,
+      "watch_hours": 6.3,
+      "likes": 16
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1001,
-      "watch_hours": 48.5,
-      "likes": 9
+      "views": 1003,
+      "watch_hours": 48.8,
+      "likes": 10
     },
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 994,
-      "watch_hours": 35.0,
-      "likes": 13
+      "views": 992,
+      "watch_hours": 35.3,
+      "likes": 14
     },
     {
       "video_id": "IEwwzO5Uf6Q",
-      "views": 932,
-      "watch_hours": 35.4,
+      "views": 926,
+      "watch_hours": 34.8,
       "likes": 11
     },
     {
       "video_id": "hcXOOwiPnr0",
-      "views": 861,
-      "watch_hours": 84.9,
+      "views": 866,
+      "watch_hours": 85.4,
       "likes": 57
     }
   ],
@@ -445,31 +445,31 @@
     },
     {
       "term": "spooltenna",
-      "views": 51
+      "views": 53
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 49
+      "views": 50
     },
     {
       "term": "meshtastic",
-      "views": 42
+      "views": 44
     },
     {
       "term": "icom x026",
-      "views": 39
+      "views": 37
     },
     {
       "term": "icom",
-      "views": 34
-    },
-    {
-      "term": "ftdx101mp",
-      "views": 24
+      "views": 31
     },
     {
       "term": "meshtastic solar node",
-      "views": 22
+      "views": 27
+    },
+    {
+      "term": "ftdx101mp",
+      "views": 25
     },
     {
       "term": "flex radio",
@@ -484,12 +484,12 @@
     {
       "video_id": "0oo2I7vziac",
       "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
-      "views": 80
+      "views": 82
     },
     {
       "video_id": "LIM0hjXez1Q",
       "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 46
+      "views": 48
     },
     {
       "video_id": "hcXOOwiPnr0",
@@ -499,12 +499,12 @@
     {
       "video_id": "ZYk8IUSeEHI",
       "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
-      "views": 38
+      "views": 36
     },
     {
       "video_id": "lAjxGi-Ufa0",
       "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
-      "views": 20
+      "views": 21
     },
     {
       "video_id": "vGctp8_aAmE",
@@ -514,7 +514,7 @@
     {
       "video_id": "KWipDCzI9k8",
       "title": "Getting hands on with the Icom ID-5200",
-      "views": 18
+      "views": 17
     },
     {
       "video_id": "IEwwzO5Uf6Q",

@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-21T16:00:37Z",
-  "total_downloads": 20853,
+  "fetched_at": "2026-07-22T04:00:36Z",
+  "total_downloads": 20885,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,28 +8,28 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 863
+      "plays": 881
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1222
+      "plays": 1229
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1104
+      "plays": 1105
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 941
+      "plays": 944
     },
     {
       "id": 18980854,
@@ -43,21 +43,21 @@
       "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
-      "plays": 862
+      "plays": 863
     },
     {
       "id": 18794950,
       "title": "Are Radio Prices Going Up? Bouvet, Yaesu & HamClock",
       "episode_number": 15,
       "published_at": "2026-03-05T10:00:00.000-05:00",
-      "plays": 1024
+      "plays": 1025
     },
     {
       "id": 18629581,
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1210
+      "plays": 1211
     },
     {
       "id": 18470399,
