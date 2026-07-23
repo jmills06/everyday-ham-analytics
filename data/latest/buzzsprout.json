@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-22T16:00:40Z",
-  "total_downloads": 20907,
+  "fetched_at": "2026-07-23T04:00:34Z",
+  "total_downloads": 20937,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,21 +8,21 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 891
+      "plays": 904
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1231
+      "plays": 1235
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1108
+      "plays": 1111
     },
     {
       "id": 19138519,
@@ -36,14 +36,14 @@
       "title": "Returning to the Moon: Optimism & Technology that Moves Our Space Needle",
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
-      "plays": 940
+      "plays": 941
     },
     {
       "id": 18903785,
       "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
-      "plays": 864
+      "plays": 865
     },
     {
       "id": 18794950,
@@ -57,21 +57,21 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1211
+      "plays": 1212
     },
     {
       "id": 18470399,
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1237
+      "plays": 1238
     },
     {
       "id": 18296133,
       "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
       "episode_number": 12,
       "published_at": "2025-12-04T12:00:00.000-05:00",
-      "plays": 1122
+      "plays": 1123
     },
     {
       "id": 18131359,
@@ -113,7 +113,7 @@
       "title": "Are We Losing Ham Radio Spectrum? 70cm Band Under Threat",
       "episode_number": 8,
       "published_at": "2025-08-07T17:00:00.000-04:00",
-      "plays": 725
+      "plays": 726
     },
     {
       "id": 17571459,
@@ -169,14 +169,14 @@
       "title": "Is Yaesu Changing the Game? Exploring the New Mobile Lineup",
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
-      "plays": 546
+      "plays": 548
     },
     {
       "id": 16408083,
       "title": "Hams On the Air: Episode 1 – Every Ham Has a Story",
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
-      "plays": 562
+      "plays": 564
     }
   ]
 }
