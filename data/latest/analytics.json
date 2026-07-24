@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-23T16:00:38Z",
+  "fetched_at": "2026-07-24T04:00:36Z",
   "window_days": 30,
   "totals": {
-    "views": 12743,
-    "watch_hours": 884.8,
-    "avg_view_pct": 27.3,
-    "subs_gained": 98,
-    "subs_lost": 25,
-    "subs_net": 73,
-    "likes": 404,
-    "comments": 48,
-    "shares": 91,
-    "subscribed_views": 1792,
-    "not_subscribed_views": 10940
+    "views": 14384,
+    "watch_hours": 1003.1,
+    "avg_view_pct": 27.8,
+    "subs_gained": 125,
+    "subs_lost": 30,
+    "subs_net": 95,
+    "likes": 501,
+    "comments": 61,
+    "shares": 118,
+    "subscribed_views": 2136,
+    "not_subscribed_views": 12237
   },
   "daily": [
-    {
-      "date": "2026-06-23",
-      "views": 338,
-      "watch_minutes": 1064,
-      "avg_view_duration_sec": 214,
-      "avg_view_pct": 23.5,
-      "subs_gained": 1,
-      "subs_lost": 1,
-      "likes": 9,
-      "comments": 0,
-      "shares": 0
-    },
     {
       "date": "2026-06-24",
       "views": 318,
@@ -350,52 +338,64 @@
       "likes": 4,
       "comments": 0,
       "shares": 4
+    },
+    {
+      "date": "2026-07-21",
+      "views": 1979,
+      "watch_minutes": 8163,
+      "avg_view_duration_sec": 254,
+      "avg_view_pct": 30.0,
+      "subs_gained": 28,
+      "subs_lost": 6,
+      "likes": 106,
+      "comments": 13,
+      "shares": 27
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 4065
+      "views": 5149
     },
     {
       "source": "YT_SEARCH",
-      "views": 3804
+      "views": 3914
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1689
+      "views": 1949
     },
     {
       "source": "EXT_URL",
-      "views": 1519
+      "views": 1558
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 674
+      "views": 749
     },
     {
       "source": "YT_CHANNEL",
-      "views": 337
+      "views": 372
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 203
+      "views": 216
     },
     {
       "source": "SHORTS",
-      "views": 184
+      "views": 171
     },
     {
       "source": "NOTIFICATION",
-      "views": 108
+      "views": 139
     },
     {
       "source": "PLAYLIST",
-      "views": 106
+      "views": 112
     },
     {
       "source": "END_SCREEN",
-      "views": 34
+      "views": 35
     },
     {
       "source": "HASHTAGS",
@@ -408,48 +408,48 @@
   ],
   "top_videos": [
     {
+      "video_id": "r08dZat4bOU",
+      "views": 1413,
+      "watch_hours": 103.1,
+      "likes": 83
+    },
+    {
       "video_id": "CskulzdxXyc",
-      "views": 1046,
-      "watch_hours": 6.0,
-      "likes": 17
+      "views": 1057,
+      "watch_hours": 6.1,
+      "likes": 15
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1003,
-      "watch_hours": 49.4,
+      "views": 1020,
+      "watch_hours": 50.1,
       "likes": 11
     },
     {
       "video_id": "LIM0hjXez1Q",
       "views": 976,
-      "watch_hours": 35.2,
-      "likes": 14
-    },
-    {
-      "video_id": "IEwwzO5Uf6Q",
-      "views": 908,
-      "watch_hours": 33.7,
-      "likes": 10
+      "watch_hours": 34.9,
+      "likes": 15
     },
     {
       "video_id": "hcXOOwiPnr0",
-      "views": 869,
-      "watch_hours": 85.6,
+      "views": 873,
+      "watch_hours": 85.7,
       "likes": 57
     }
   ],
   "search_terms": [
     {
       "term": "ham radio",
-      "views": 90
+      "views": 95
     },
     {
       "term": "spooltenna",
-      "views": 52
+      "views": 57
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 50
+      "views": 48
     },
     {
       "term": "meshtastic",
@@ -460,27 +460,32 @@
       "views": 37
     },
     {
+      "term": "xiegu g7250",
+      "views": 32
+    },
+    {
       "term": "icom",
-      "views": 31
+      "views": 30
+    },
+    {
+      "term": "ftdx101mp",
+      "views": 25
     },
     {
       "term": "meshtastic solar node",
       "views": 24
     },
     {
-      "term": "ftdx101mp",
-      "views": 23
-    },
-    {
       "term": "flex radio",
-      "views": 20
-    },
-    {
-      "term": "ham radio 2026",
       "views": 18
     }
   ],
   "suggested_by": [
+    {
+      "video_id": "Tw0W7cBtUsg",
+      "title": "Xiegu Just Announced a 100W Monster",
+      "views": 98
+    },
     {
       "video_id": "0oo2I7vziac",
       "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
@@ -502,24 +507,19 @@
       "views": 35
     },
     {
+      "video_id": "YSIlVU6yRBE",
+      "title": "XIEGU G7250 Transceiver. Coming soon.",
+      "views": 31
+    },
+    {
       "video_id": "vGctp8_aAmE",
       "title": "Is This the New ICOM X-026? First Look & Speculation",
-      "views": 19
+      "views": 20
     },
     {
       "video_id": "lAjxGi-Ufa0",
       "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
-      "views": 18
-    },
-    {
-      "video_id": "IEwwzO5Uf6Q",
-      "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
-      "views": 16
-    },
-    {
-      "video_id": "KWipDCzI9k8",
-      "title": "Getting hands on with the Icom ID-5200",
-      "views": 16
+      "views": 19
     },
     {
       "video_id": "HN3sKVL2DSU",
@@ -527,9 +527,9 @@
       "views": 15
     },
     {
-      "video_id": "X14fyVU64Wc",
-      "title": "ICOM 新型モービル機 ID-5200 まもなく発売へ。",
-      "views": 13
+      "video_id": "IEwwzO5Uf6Q",
+      "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
+      "views": 15
     }
   ]
 }
