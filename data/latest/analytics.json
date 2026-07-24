@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-24T04:00:36Z",
+  "fetched_at": "2026-07-24T16:00:43Z",
   "window_days": 30,
   "totals": {
-    "views": 14384,
-    "watch_hours": 1003.1,
-    "avg_view_pct": 27.8,
+    "views": 14368,
+    "watch_hours": 1003.7,
+    "avg_view_pct": 27.7,
     "subs_gained": 125,
     "subs_lost": 30,
     "subs_net": 95,
     "likes": 501,
     "comments": 61,
     "shares": 118,
-    "subscribed_views": 2136,
-    "not_subscribed_views": 12237
+    "subscribed_views": 2135,
+    "not_subscribed_views": 12228
   },
   "daily": [
     {
@@ -41,8 +41,8 @@
     },
     {
       "date": "2026-06-26",
-      "views": 350,
-      "watch_minutes": 1164,
+      "views": 346,
+      "watch_minutes": 1152,
       "avg_view_duration_sec": 214,
       "avg_view_pct": 21.8,
       "subs_gained": 4,
@@ -53,8 +53,8 @@
     },
     {
       "date": "2026-06-27",
-      "views": 357,
-      "watch_minutes": 995,
+      "views": 360,
+      "watch_minutes": 1053,
       "avg_view_duration_sec": 198,
       "avg_view_pct": 26.5,
       "subs_gained": 3,
@@ -66,7 +66,7 @@
     {
       "date": "2026-06-28",
       "views": 402,
-      "watch_minutes": 1172,
+      "watch_minutes": 1173,
       "avg_view_duration_sec": 193,
       "avg_view_pct": 25.3,
       "subs_gained": 2,
@@ -77,8 +77,8 @@
     },
     {
       "date": "2026-06-29",
-      "views": 469,
-      "watch_minutes": 1526,
+      "views": 468,
+      "watch_minutes": 1525,
       "avg_view_duration_sec": 227,
       "avg_view_pct": 25.4,
       "subs_gained": 2,
@@ -161,8 +161,8 @@
     },
     {
       "date": "2026-07-06",
-      "views": 504,
-      "watch_minutes": 2056,
+      "views": 501,
+      "watch_minutes": 2095,
       "avg_view_duration_sec": 278,
       "avg_view_pct": 26.3,
       "subs_gained": 3,
@@ -173,8 +173,8 @@
     },
     {
       "date": "2026-07-07",
-      "views": 410,
-      "watch_minutes": 1472,
+      "views": 406,
+      "watch_minutes": 1467,
       "avg_view_duration_sec": 241,
       "avg_view_pct": 23.6,
       "subs_gained": 2,
@@ -185,8 +185,8 @@
     },
     {
       "date": "2026-07-08",
-      "views": 396,
-      "watch_minutes": 1516,
+      "views": 394,
+      "watch_minutes": 1511,
       "avg_view_duration_sec": 256,
       "avg_view_pct": 26.8,
       "subs_gained": 4,
@@ -198,7 +198,7 @@
     {
       "date": "2026-07-09",
       "views": 508,
-      "watch_minutes": 3648,
+      "watch_minutes": 3649,
       "avg_view_duration_sec": 468,
       "avg_view_pct": 25.1,
       "subs_gained": 4,
@@ -245,8 +245,8 @@
     },
     {
       "date": "2026-07-13",
-      "views": 351,
-      "watch_minutes": 1751,
+      "views": 356,
+      "watch_minutes": 1774,
       "avg_view_duration_sec": 330,
       "avg_view_pct": 29.0,
       "subs_gained": 4,
@@ -317,9 +317,9 @@
     },
     {
       "date": "2026-07-19",
-      "views": 381,
-      "watch_minutes": 1125,
-      "avg_view_duration_sec": 205,
+      "views": 378,
+      "watch_minutes": 1123,
+      "avg_view_duration_sec": 207,
       "avg_view_pct": 24.1,
       "subs_gained": 3,
       "subs_lost": 0,
@@ -329,10 +329,10 @@
     },
     {
       "date": "2026-07-20",
-      "views": 305,
-      "watch_minutes": 1214,
-      "avg_view_duration_sec": 264,
-      "avg_view_pct": 27.4,
+      "views": 298,
+      "watch_minutes": 1154,
+      "avg_view_duration_sec": 258,
+      "avg_view_pct": 27.0,
       "subs_gained": 2,
       "subs_lost": 0,
       "likes": 4,
@@ -355,11 +355,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 5149
+      "views": 5147
     },
     {
       "source": "YT_SEARCH",
-      "views": 3914
+      "views": 3911
     },
     {
       "source": "RELATED_VIDEO",
@@ -371,15 +371,15 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 749
+      "views": 746
     },
     {
       "source": "YT_CHANNEL",
-      "views": 372
+      "views": 373
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 216
+      "views": 213
     },
     {
       "source": "SHORTS",
@@ -476,8 +476,8 @@
       "views": 24
     },
     {
-      "term": "flex radio",
-      "views": 18
+      "term": "kenwood tm-d750a",
+      "views": 21
     }
   ],
   "suggested_by": [
