@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-07-24T16:00:43Z",
+  "fetched_at": "2026-07-25T04:00:33Z",
   "window_days": 30,
   "totals": {
-    "views": 14368,
-    "watch_hours": 1003.7,
-    "avg_view_pct": 27.7,
-    "subs_gained": 125,
-    "subs_lost": 30,
-    "subs_net": 95,
-    "likes": 501,
-    "comments": 61,
-    "shares": 118,
-    "subscribed_views": 2135,
-    "not_subscribed_views": 12228
+    "views": 16752,
+    "watch_hours": 1131.4,
+    "avg_view_pct": 27.1,
+    "subs_gained": 143,
+    "subs_lost": 32,
+    "subs_net": 111,
+    "likes": 557,
+    "comments": 70,
+    "shares": 134,
+    "subscribed_views": 2330,
+    "not_subscribed_views": 14417
   },
   "daily": [
-    {
-      "date": "2026-06-24",
-      "views": 318,
-      "watch_minutes": 1049,
-      "avg_view_duration_sec": 221,
-      "avg_view_pct": 26.1,
-      "subs_gained": 3,
-      "subs_lost": 0,
-      "likes": 7,
-      "comments": 3,
-      "shares": 2
-    },
     {
       "date": "2026-06-25",
       "views": 464,
@@ -350,52 +338,64 @@
       "likes": 106,
       "comments": 13,
       "shares": 27
+    },
+    {
+      "date": "2026-07-22",
+      "views": 2702,
+      "watch_minutes": 8710,
+      "avg_view_duration_sec": 196,
+      "avg_view_pct": 23.6,
+      "subs_gained": 21,
+      "subs_lost": 2,
+      "likes": 63,
+      "comments": 12,
+      "shares": 18
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 5147
+      "views": 6502
     },
     {
       "source": "YT_SEARCH",
-      "views": 3911
+      "views": 4047
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1949
+      "views": 2245
     },
     {
       "source": "EXT_URL",
-      "views": 1558
+      "views": 1914
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 746
+      "views": 918
     },
     {
       "source": "YT_CHANNEL",
-      "views": 373
+      "views": 396
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 213
+      "views": 225
     },
     {
       "source": "SHORTS",
-      "views": 171
+      "views": 172
     },
     {
       "source": "NOTIFICATION",
-      "views": 139
+      "views": 166
     },
     {
       "source": "PLAYLIST",
-      "views": 112
+      "views": 117
     },
     {
       "source": "END_SCREEN",
-      "views": 35
+      "views": 36
     },
     {
       "source": "HASHTAGS",
@@ -409,32 +409,32 @@
   "top_videos": [
     {
       "video_id": "r08dZat4bOU",
-      "views": 1413,
-      "watch_hours": 103.1,
-      "likes": 83
+      "views": 3666,
+      "watch_hours": 227.2,
+      "likes": 142
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1057,
-      "watch_hours": 6.1,
-      "likes": 15
+      "views": 1094,
+      "watch_hours": 6.3,
+      "likes": 16
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1020,
-      "watch_hours": 50.1,
+      "views": 1022,
+      "watch_hours": 50.3,
       "likes": 11
     },
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 976,
-      "watch_hours": 34.9,
-      "likes": 15
+      "views": 986,
+      "watch_hours": 35.6,
+      "likes": 13
     },
     {
       "video_id": "hcXOOwiPnr0",
-      "views": 873,
-      "watch_hours": 85.7,
+      "views": 878,
+      "watch_hours": 85.9,
       "likes": 57
     }
   ],
@@ -444,24 +444,20 @@
       "views": 95
     },
     {
+      "term": "xiegu g7250",
+      "views": 80
+    },
+    {
       "term": "spooltenna",
       "views": 57
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 48
+      "views": 47
     },
     {
       "term": "meshtastic",
-      "views": 45
-    },
-    {
-      "term": "icom x026",
-      "views": 37
-    },
-    {
-      "term": "xiegu g7250",
-      "views": 32
+      "views": 44
     },
     {
       "term": "icom",
@@ -473,7 +469,11 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 24
+      "views": 25
+    },
+    {
+      "term": "icom x026",
+      "views": 22
     },
     {
       "term": "kenwood tm-d750a",
@@ -484,12 +484,17 @@
     {
       "video_id": "Tw0W7cBtUsg",
       "title": "Xiegu Just Announced a 100W Monster",
-      "views": 98
+      "views": 178
     },
     {
       "video_id": "0oo2I7vziac",
       "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
-      "views": 82
+      "views": 84
+    },
+    {
+      "video_id": "YSIlVU6yRBE",
+      "title": "XIEGU G7250 Transceiver. Coming soon.",
+      "views": 60
     },
     {
       "video_id": "LIM0hjXez1Q",
@@ -504,31 +509,26 @@
     {
       "video_id": "ZYk8IUSeEHI",
       "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
-      "views": 35
+      "views": 36
     },
     {
-      "video_id": "YSIlVU6yRBE",
-      "title": "XIEGU G7250 Transceiver. Coming soon.",
-      "views": 31
+      "video_id": "UBrsvKqDLkY",
+      "title": "🚨 BREAKING: Xiegu G7250 Is Coming... Could This Be Amateur Radio's Next Big SDR? #scatteredradio",
+      "views": 20
     },
     {
       "video_id": "vGctp8_aAmE",
       "title": "Is This the New ICOM X-026? First Look & Speculation",
-      "views": 20
+      "views": 19
     },
     {
       "video_id": "lAjxGi-Ufa0",
       "title": "ICOM ID-5200 正式発表 アマチュア無線D-STARトランシーバーがAPRSやミリタリーエアバンド受信に対応！",
-      "views": 19
+      "views": 18
     },
     {
       "video_id": "HN3sKVL2DSU",
       "title": "What Happens When 80 Hams Finally Meet in Person? Michigan POTA Meetup 2026",
-      "views": 15
-    },
-    {
-      "video_id": "IEwwzO5Uf6Q",
-      "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
       "views": 15
     }
   ]
