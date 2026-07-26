@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-26T04:00:35Z",
-  "total_downloads": 21106,
+  "fetched_at": "2026-07-26T16:00:36Z",
+  "total_downloads": 21133,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,35 +8,35 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 983
+      "plays": 997
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1262
+      "plays": 1266
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1130
+      "plays": 1132
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 957
+      "plays": 959
     },
     {
       "id": 18980854,
       "title": "Returning to the Moon: Optimism & Technology that Moves Our Space Needle",
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
-      "plays": 945
+      "plays": 946
     },
     {
       "id": 18903785,
@@ -50,7 +50,7 @@
       "title": "Are Radio Prices Going Up? Bouvet, Yaesu & HamClock",
       "episode_number": 15,
       "published_at": "2026-03-05T10:00:00.000-05:00",
-      "plays": 1026
+      "plays": 1027
     },
     {
       "id": 18629581,
@@ -64,7 +64,7 @@
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1241
+      "plays": 1242
     },
     {
       "id": 18296133,
@@ -99,7 +99,7 @@
       "title": "From Parks to Peaks: How SOTA Differs from POTA",
       "episode_number": 9,
       "published_at": "2025-09-04T17:00:00.000-04:00",
-      "plays": 932
+      "plays": 933
     },
     {
       "id": 17726132,
@@ -113,7 +113,7 @@
       "title": "Are We Losing Ham Radio Spectrum? 70cm Band Under Threat",
       "episode_number": 8,
       "published_at": "2025-08-07T17:00:00.000-04:00",
-      "plays": 726
+      "plays": 727
     },
     {
       "id": 17571459,
