@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-07-27T04:00:35Z",
+  "fetched_at": "2026-07-27T16:00:35Z",
   "window_days": 30,
   "totals": {
-    "views": 17424,
-    "watch_hours": 1148.6,
+    "views": 17427,
+    "watch_hours": 1149.0,
     "avg_view_pct": 26.8,
     "subs_gained": 142,
     "subs_lost": 34,
@@ -209,10 +209,10 @@
     },
     {
       "date": "2026-07-13",
-      "views": 356,
-      "watch_minutes": 1774,
-      "avg_view_duration_sec": 330,
-      "avg_view_pct": 29.0,
+      "views": 351,
+      "watch_minutes": 1751,
+      "avg_view_duration_sec": 331,
+      "avg_view_pct": 28.9,
       "subs_gained": 4,
       "subs_lost": 0,
       "likes": 6,
@@ -281,9 +281,9 @@
     },
     {
       "date": "2026-07-19",
-      "views": 378,
-      "watch_minutes": 1123,
-      "avg_view_duration_sec": 207,
+      "views": 381,
+      "watch_minutes": 1125,
+      "avg_view_duration_sec": 205,
       "avg_view_pct": 24.1,
       "subs_gained": 3,
       "subs_lost": 0,
@@ -306,9 +306,9 @@
     {
       "date": "2026-07-21",
       "views": 1979,
-      "watch_minutes": 8177,
+      "watch_minutes": 8163,
       "avg_view_duration_sec": 254,
-      "avg_view_pct": 30.1,
+      "avg_view_pct": 30.0,
       "subs_gained": 28,
       "subs_lost": 6,
       "likes": 106,
@@ -317,10 +317,10 @@
     },
     {
       "date": "2026-07-22",
-      "views": 2697,
-      "watch_minutes": 8655,
-      "avg_view_duration_sec": 195,
-      "avg_view_pct": 23.5,
+      "views": 2702,
+      "watch_minutes": 8710,
+      "avg_view_duration_sec": 196,
+      "avg_view_pct": 23.6,
       "subs_gained": 21,
       "subs_lost": 2,
       "likes": 63,
@@ -405,32 +405,32 @@
   "top_videos": [
     {
       "video_id": "r08dZat4bOU",
-      "views": 4363,
-      "watch_hours": 254.8,
-      "likes": 157
+      "views": 3850,
+      "watch_hours": 233.4,
+      "likes": 145
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1109,
-      "watch_hours": 6.3,
+      "views": 1057,
+      "watch_hours": 6.0,
       "likes": 14
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1013,
-      "watch_hours": 50.0,
+      "views": 987,
+      "watch_hours": 49.1,
       "likes": 10
     },
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 986,
-      "watch_hours": 36.2,
+      "views": 945,
+      "watch_hours": 34.7,
       "likes": 11
     },
     {
       "video_id": "hcXOOwiPnr0",
-      "views": 881,
-      "watch_hours": 86.4,
+      "views": 880,
+      "watch_hours": 86.2,
       "likes": 57
     }
   ],
