@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-27T16:00:36Z",
-  "total_downloads": 21179,
+  "fetched_at": "2026-07-28T04:00:43Z",
+  "total_downloads": 21195,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,14 +8,14 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 1010
+      "plays": 1017
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1271
+      "plays": 1272
     },
     {
       "id": 19219333,
@@ -85,7 +85,7 @@
       "title": "How Frustration Built the Best Portable Logger: Sebastián KI2D & Ham2K PoLo",
       "episode_number": 10,
       "published_at": "2025-10-09T16:00:00.000-04:00",
-      "plays": 922
+      "plays": 923
     },
     {
       "id": 17915090,
@@ -99,21 +99,21 @@
       "title": "From Parks to Peaks: How SOTA Differs from POTA",
       "episode_number": 9,
       "published_at": "2025-09-04T17:00:00.000-04:00",
-      "plays": 933
+      "plays": 934
     },
     {
       "id": 17726132,
       "title": "New ICOM Radios Steal the Show - Tokyo Ham Fair Reactions",
       "episode_number": null,
       "published_at": "2025-08-24T21:00:00.000-04:00",
-      "plays": 680
+      "plays": 681
     },
     {
       "id": 17625014,
       "title": "Are We Losing Ham Radio Spectrum? 70cm Band Under Threat",
       "episode_number": 8,
       "published_at": "2025-08-07T17:00:00.000-04:00",
-      "plays": 727
+      "plays": 729
     },
     {
       "id": 17571459,
@@ -162,21 +162,21 @@
       "title": "The Good, The Bad, and The Junk – Swap Meet Scores & DXpedition Drama",
       "episode_number": 3,
       "published_at": "2025-03-06T14:00:00.000-05:00",
-      "plays": 542
+      "plays": 543
     },
     {
       "id": 16574585,
       "title": "Is Yaesu Changing the Game? Exploring the New Mobile Lineup",
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
-      "plays": 549
+      "plays": 550
     },
     {
       "id": 16408083,
       "title": "Hams On the Air: Episode 1 – Every Ham Has a Story",
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
-      "plays": 570
+      "plays": 571
     }
   ]
 }
