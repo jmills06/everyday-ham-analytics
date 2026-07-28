@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-28T04:00:43Z",
-  "total_downloads": 21195,
+  "fetched_at": "2026-07-28T16:00:30Z",
+  "total_downloads": 21218,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,28 +8,28 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 1017
+      "plays": 1028
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1272
+      "plays": 1276
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1134
+      "plays": 1137
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 964
+      "plays": 966
     },
     {
       "id": 18980854,
@@ -64,7 +64,7 @@
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1243
+      "plays": 1245
     },
     {
       "id": 18296133,
@@ -176,7 +176,7 @@
       "title": "Hams On the Air: Episode 1 – Every Ham Has a Story",
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
-      "plays": 571
+      "plays": 572
     }
   ]
 }
