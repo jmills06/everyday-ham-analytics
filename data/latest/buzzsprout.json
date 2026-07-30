@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-30T04:00:36Z",
-  "total_downloads": 21295,
+  "fetched_at": "2026-07-30T16:00:42Z",
+  "total_downloads": 21314,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,28 +8,28 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 1053
+      "plays": 1062
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1284
+      "plays": 1285
     },
     {
       "id": 19219333,
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
-      "plays": 1142
+      "plays": 1143
     },
     {
       "id": 19138519,
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 971
+      "plays": 973
     },
     {
       "id": 18980854,
@@ -43,21 +43,21 @@
       "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
-      "plays": 869
+      "plays": 870
     },
     {
       "id": 18794950,
       "title": "Are Radio Prices Going Up? Bouvet, Yaesu & HamClock",
       "episode_number": 15,
       "published_at": "2026-03-05T10:00:00.000-05:00",
-      "plays": 1030
+      "plays": 1031
     },
     {
       "id": 18629581,
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1224
+      "plays": 1227
     },
     {
       "id": 18470399,
@@ -176,7 +176,7 @@
       "title": "Hams On the Air: Episode 1 – Every Ham Has a Story",
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
-      "plays": 573
+      "plays": 574
     }
   ]
 }
