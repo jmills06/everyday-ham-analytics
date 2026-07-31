@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-07-30T16:00:42Z",
-  "total_downloads": 21314,
+  "fetched_at": "2026-07-31T04:00:32Z",
+  "total_downloads": 21327,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,14 +8,14 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 1062
+      "plays": 1068
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1285
+      "plays": 1286
     },
     {
       "id": 19219333,
@@ -29,14 +29,14 @@
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 973
+      "plays": 976
     },
     {
       "id": 18980854,
       "title": "Returning to the Moon: Optimism & Technology that Moves Our Space Needle",
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
-      "plays": 950
+      "plays": 951
     },
     {
       "id": 18903785,
@@ -57,14 +57,14 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1227
+      "plays": 1228
     },
     {
       "id": 18470399,
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1248
+      "plays": 1249
     },
     {
       "id": 18296133,
