@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-02T04:00:35Z",
+  "fetched_at": "2026-08-02T16:00:33Z",
   "window_days": 30,
   "totals": {
     "views": 18756,
@@ -11,8 +11,8 @@
     "likes": 615,
     "comments": 76,
     "shares": 157,
-    "subscribed_views": 2632,
-    "not_subscribed_views": 16116
+    "subscribed_views": 2630,
+    "not_subscribed_views": 16109
   },
   "daily": [
     {
@@ -355,23 +355,23 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7341
+      "views": 7342
     },
     {
       "source": "YT_SEARCH",
-      "views": 4217
+      "views": 4212
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 2428
+      "views": 2429
     },
     {
       "source": "EXT_URL",
-      "views": 2299
+      "views": 2298
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1077
+      "views": 1074
     },
     {
       "source": "YT_CHANNEL",
@@ -379,7 +379,7 @@
     },
     {
       "source": "SHORTS",
-      "views": 378
+      "views": 377
     },
     {
       "source": "YT_OTHER_PAGE",
@@ -387,7 +387,7 @@
     },
     {
       "source": "NOTIFICATION",
-      "views": 182
+      "views": 181
     },
     {
       "source": "PLAYLIST",
@@ -445,7 +445,7 @@
     },
     {
       "term": "ham radio",
-      "views": 91
+      "views": 90
     },
     {
       "term": "spooltenna",
