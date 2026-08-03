@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-08-02T16:00:34Z",
-  "total_downloads": 21405,
+  "fetched_at": "2026-08-03T04:00:35Z",
+  "total_downloads": 21417,
   "episode_count": 25,
   "episodes": [
     {
@@ -8,14 +8,14 @@
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
-      "plays": 1095
+      "plays": 1097
     },
     {
       "id": 19328548,
       "title": "Ep. 18 – Has POTA Peaked? Campfires, Community, and the Future of Parks on the Air",
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
-      "plays": 1295
+      "plays": 1296
     },
     {
       "id": 19219333,
@@ -29,7 +29,7 @@
       "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
-      "plays": 982
+      "plays": 984
     },
     {
       "id": 18980854,
@@ -57,28 +57,28 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
-      "plays": 1233
+      "plays": 1234
     },
     {
       "id": 18470399,
       "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
-      "plays": 1262
+      "plays": 1263
     },
     {
       "id": 18296133,
       "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
       "episode_number": 12,
       "published_at": "2025-12-04T12:00:00.000-05:00",
-      "plays": 1130
+      "plays": 1131
     },
     {
       "id": 18131359,
       "title": "Can You Put Up An Antenna? The HOA Bill Fight & IC-7300 Mark II",
       "episode_number": 11,
       "published_at": "2025-11-06T14:00:00.000-05:00",
-      "plays": 901
+      "plays": 902
     },
     {
       "id": 17980624,
@@ -148,14 +148,14 @@
       "title": "Is the Yaesu FTX1 a True Game Changer? Plus Dayton Hamvention 2025",
       "episode_number": 5,
       "published_at": "2025-05-08T09:00:00.000-04:00",
-      "plays": 529
+      "plays": 530
     },
     {
       "id": 16912708,
       "title": "From Scanner to Transmitter: How Everyday Hobbies Lead to Ham Radio",
       "episode_number": 4,
       "published_at": "2025-04-03T20:00:00.000-04:00",
-      "plays": 643
+      "plays": 645
     },
     {
       "id": 16745714,
