@@ -309,7 +309,7 @@ html += f"""
         <span><span class="dot" style="background:#A89F92"></span>External Links {src_external}%</span>
         <span><span class="dot" style="background:#D6CCBC"></span>Other {src_other}%</span>
       </div>
-      <div class="stat-sub" style="margin-top:8px;"><b>{not_sub_pct}% of monthly views come from non-subscribers</b>, so your brand reaches new hams discovering the content, not just the people already following us.</div>
+      <div class="stat-sub" style="margin-top:8px;"><b>{not_sub_pct}% of monthly views come from non-subscribers</b>, so your brand reaches new hams discovering us, not just the people already following along.</div>
     </div>
   </div>
 
@@ -321,7 +321,7 @@ html += f"""
     </div>
   </div>
 
-  <div class="foot-note" style="margin-top:10px;">YouTube figures from YouTube Analytics, {window_txt}, unless a longer window is stated. Podcast figures from Buzzsprout. No figure in this kit is modelled or estimated.</div>
+  <div class="foot-note" style="margin-top:10px;">YouTube figures from YouTube Analytics, {window_txt}, unless a longer window is stated. Podcast figures from Buzzsprout. Nothing here is estimated or projected.</div>
 
   <div class="footer">
     <div class="foot-sign">Recorded With <span>&hearts;</span> In Michigan</div>
@@ -358,7 +358,7 @@ html += f"""
         <div style="font-size:10.5px;color:var(--text-dim);">United States</div>
       </div>
       <div class="geo">{_geo_html}</div>
-      <div class="stat-sub" style="margin-top:8px;">Shares of views with an attributed country.</div>
+      <div class="stat-sub" style="margin-top:8px;">Top countries after the United States. Based on views with a reported country.</div>
     </div>
     <div class="card">
       <div class="stat-label">Viewer Age &middot; Last 12 Months</div>
@@ -367,7 +367,7 @@ html += f"""
         <div style="font-size:10.5px;color:var(--text-dim);">are 45 or older</div>
       </div>
       <div class="geo">{_age_html}</div>
-      <div class="stat-sub" style="margin-top:8px;">Reported for signed-in viewers, so a sample rather than a headcount.</div>
+      <div class="stat-sub" style="margin-top:8px;">Based on signed-in viewers.</div>
     </div>
   </div>
 
@@ -404,7 +404,7 @@ html += f"""
       <div style="display:flex;gap:16px;margin-top:8px;">
         <div style="flex:1;">
           <div class="stat-num" style="font-size:26px;">{fmt(med_last6)}</div>
-          <div class="stat-sub" style="margin-top:4px;">Median plays, last six episodes, up from {fmt(med_first6)} early on.</div>
+          <div class="stat-sub" style="margin-top:4px;">Median plays across our six most recent episodes, up from {fmt(med_first6)} for our first six.</div>
         </div>
         <div style="flex:1;">
           <div class="stat-num" style="font-size:26px;">+{tot['subs_net']}</div>
@@ -476,19 +476,19 @@ html += f"""
     <div class="grid g2w" style="gap:20px;">
       <div>
         <div class="kicker" style="margin-bottom:6px;">The Hosts</div>
-        <p style="font-size:11px;line-height:1.6;">Jim <span class="callsign">N8JRD</span>, event chair &middot; Rory <span class="callsign">W8KNX</span>, technical chair &middot; James <span class="callsign">K8JKU</span>, club VP<br>
+        <p style="font-size:11px;line-height:1.6;">Jim <span class="callsign">N8JRD</span>, event chair &middot; Rory <span class="callsign">W8KNX</span>, technical chair &middot; James <span class="callsign">K8JKU</span>, vice president<br>
         <span style="color:var(--text-dim);">Three friends who love radio, all three officers of club <span class="callsign">W8EDH</span>. POTA activators and unapologetic gear nerds.</span></p>
         <div class="chips" style="margin-top:9px;">
           <span class="chip"><b>//</b>Discord</span><span class="chip"><b>//</b>Instagram</span><span class="chip"><b>//</b>Facebook</span><span class="chip"><b>//</b>TikTok</span>
         </div>
-        <p style="font-size:10px;line-height:1.5;color:var(--text-dim);margin-top:7px;">The community keeps talking between releases, so a sponsored review keeps getting discussed long after it publishes.</p>
+        <p style="font-size:10px;line-height:1.5;color:var(--text-dim);margin-top:7px;">Our community keeps talking between releases, so a sponsored review stays in the conversation long after it publishes.</p>
       </div>
       <div>
         <div class="kicker" style="margin-bottom:6px;">Let's Talk</div>
         <p style="font-size:11px;line-height:1.6;"><b>CQ@everydayham.com</b><br><b>everydayham.com</b></p>
         <p style="font-size:10.5px;line-height:1.55;color:var(--text-dim);margin-top:7px;">Tell us what you have in mind, we'd rather hear your proposal than guess at it. Reach out early for event coverage.</p>
         <p style="font-size:10px;line-height:1.5;color:var(--text-dim);margin-top:6px;">Everyday Ham &middot; 5799 S Main St #1625<br>Clarkston, MI 48347</p>
-        <div class="pkg-spec" style="margin-top:7px;">// 73, The Everyday Ham Crew</div>
+        <div class="pkg-spec" style="margin-top:7px;">73, The Everyday Ham Crew</div>
       </div>
     </div>
   </div>
