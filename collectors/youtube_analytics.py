@@ -8,6 +8,9 @@ Collects, per UTC day for the trailing window:
 - Subscribed vs non-subscribed viewing per day
 - 30-day detail: top videos by views, top search terms, top suggested-by
   videos, top earning videos, revenue by ad type
+- Long-window detail (365 days): search terms, country breakdown, and viewer
+  demographics. Snapshot only, written to latest/ and never historized,
+  because rolling-window snapshots are not summable across dates.
 - Launch curves (daily views since publish) for videos younger than
   CURVE_DAYS, keeping launch_curves.json current after the one-time backfill
 
@@ -52,6 +55,7 @@ CURVE_DAYS = 40         # keep launch curves fresh for videos younger than this
 RUN_RATE_DAYS = 7       # projection basis: recent complete days
 REVENUE_LAG = 3         # days considered not-yet-final for projections
 DETAIL_MAX = 10         # rows kept for search terms / suggested videos
+YEAR_DAYS = 365         # long-window detail queries for the media kit
 
 
 def get_access_token() -> str:
@@ -142,6 +146,7 @@ def main() -> None:
     start = (today - timedelta(days=WINDOW_DAYS)).isoformat()
     end = today.isoformat()
     board_start = (today - timedelta(days=BOARD_DAYS)).isoformat()
+    year_start = (today - timedelta(days=YEAR_DAYS)).isoformat()
 
     # ---- Daily audience metrics ----
     audience = rows_as_dicts(query(
@@ -254,6 +259,44 @@ def main() -> None:
         key_fields=("date", "video_id"),
     )
 
+    # ---- Long-window (365d) detail for the media kit ----
+    # These are rolling snapshots, so they are written to latest/ ONLY and are
+    # deliberately never historized: snapshot rows cannot be summed by date.
+    search_terms_year = rows_as_dicts(query(
+        token, startDate=year_start, endDate=end,
+        dimensions="insightTrafficSourceDetail",
+        filters="insightTrafficSourceType==YT_SEARCH",
+        metrics="views", sort="-views", maxResults=DETAIL_MAX * 3,
+    ))
+
+    geo_30 = rows_as_dicts(query(
+        token, startDate=board_start, endDate=end,
+        dimensions="country", metrics="views,estimatedMinutesWatched",
+        sort="-views", maxResults=200,
+    ))
+
+    geo_year = rows_as_dicts(query(
+        token, startDate=year_start, endDate=end,
+        dimensions="country", metrics="views",
+        sort="-views", maxResults=200,
+    ))
+
+    # ageGroup/gender REQUIRE the viewerPercentage metric; "views" is not valid
+    # with these dimensions, and sorting is by dimension, not by the metric.
+    # Never add subscribedStatus here: viewerPercentage is not normalized across
+    # it, so the percentages would sum to 200%. Use filters= instead.
+    # Guarded because demographics return empty/error when there is too little
+    # logged-in viewing, and that must not fail an otherwise good run.
+    try:
+        demographics = rows_as_dicts(query(
+            token, startDate=year_start, endDate=end,
+            dimensions="ageGroup,gender", metrics="viewerPercentage",
+            sort="gender,ageGroup",
+        ))
+    except Exception as exc:
+        print(f"WARN: demographics unavailable: {exc}", file=sys.stderr)
+        demographics = []
+
     top_earning = rows_as_dicts(query(
         token, startDate=board_start, endDate=end,
         dimensions="video", metrics="estimatedRevenue,views",
@@ -317,6 +360,25 @@ def main() -> None:
              "title": sug_titles.get(r["insightTrafficSourceDetail"]),
              "views": int(r["views"])}
             for r in suggested
+        ],
+        "search_terms_365": [
+            {"term": r["insightTrafficSourceDetail"], "views": int(r["views"])}
+            for r in search_terms_year
+        ],
+        "geography_30": [
+            {"country": r["country"], "views": int(r["views"]),
+             "watch_hours": round(int(r["estimatedMinutesWatched"]) / 60, 1)}
+            for r in geo_30
+        ],
+        "geography_365": [
+            {"country": r["country"], "views": int(r["views"])}
+            for r in geo_year
+        ],
+        # viewerPercentage covers LOGGED-IN viewers only: a sample, not a census.
+        "demographics_365": [
+            {"age_group": r["ageGroup"], "gender": r["gender"],
+             "viewer_pct": float(r["viewerPercentage"])}
+            for r in demographics
         ],
     })
 
