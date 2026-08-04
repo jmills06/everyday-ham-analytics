@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-08-03T16:00:37Z",
+  "fetched_at": "2026-08-04T04:00:44Z",
   "window_days": 30,
   "totals": {
-    "views": 18416,
-    "watch_hours": 1251.8,
-    "avg_view_pct": 25.6,
-    "subs_gained": 149,
-    "subs_lost": 36,
-    "subs_net": 113,
-    "likes": 583,
-    "comments": 74,
-    "shares": 162,
-    "subscribed_views": 2439,
-    "not_subscribed_views": 15968
+    "views": 18144,
+    "watch_hours": 1214.8,
+    "avg_view_pct": 25.1,
+    "subs_gained": 152,
+    "subs_lost": 34,
+    "subs_net": 118,
+    "likes": 550,
+    "comments": 71,
+    "shares": 159,
+    "subscribed_views": 2316,
+    "not_subscribed_views": 15828
   },
   "daily": [
-    {
-      "date": "2026-07-04",
-      "views": 816,
-      "watch_minutes": 4287,
-      "avg_view_duration_sec": 341,
-      "avg_view_pct": 34.6,
-      "subs_gained": 4,
-      "subs_lost": 3,
-      "likes": 48,
-      "comments": 4,
-      "shares": 10
-    },
     {
       "date": "2026-07-05",
       "views": 668,
@@ -284,7 +272,7 @@
       "views": 565,
       "watch_minutes": 1713,
       "avg_view_duration_sec": 204,
-      "avg_view_pct": 22.8,
+      "avg_view_pct": 22.7,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 13,
@@ -295,8 +283,8 @@
       "date": "2026-07-27",
       "views": 439,
       "watch_minutes": 1505,
-      "avg_view_duration_sec": 222,
-      "avg_view_pct": 23.6,
+      "avg_view_duration_sec": 224,
+      "avg_view_pct": 24.0,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 9,
@@ -350,52 +338,64 @@
       "likes": 19,
       "comments": 1,
       "shares": 11
+    },
+    {
+      "date": "2026-08-01",
+      "views": 544,
+      "watch_minutes": 2066,
+      "avg_view_duration_sec": 254,
+      "avg_view_pct": 20.2,
+      "subs_gained": 7,
+      "subs_lost": 1,
+      "likes": 15,
+      "comments": 1,
+      "shares": 7
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7099
+      "views": 7025
     },
     {
       "source": "YT_SEARCH",
-      "views": 4153
-    },
-    {
-      "source": "RELATED_VIDEO",
-      "views": 2391
+      "views": 4131
     },
     {
       "source": "EXT_URL",
-      "views": 2311
+      "views": 2326
+    },
+    {
+      "source": "RELATED_VIDEO",
+      "views": 2276
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1087
+      "views": 1091
     },
     {
       "source": "SHORTS",
-      "views": 402
+      "views": 412
     },
     {
       "source": "YT_CHANNEL",
-      "views": 391
+      "views": 343
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 249
+      "views": 244
     },
     {
       "source": "NOTIFICATION",
-      "views": 168
+      "views": 150
     },
     {
       "source": "PLAYLIST",
-      "views": 111
+      "views": 105
     },
     {
       "source": "END_SCREEN",
-      "views": 27
+      "views": 23
     },
     {
       "source": "HASHTAGS",
@@ -409,31 +409,31 @@
   "top_videos": [
     {
       "video_id": "r08dZat4bOU",
-      "views": 4843,
-      "watch_hours": 274.6,
-      "likes": 166
+      "views": 4870,
+      "watch_hours": 275.4,
+      "likes": 167
+    },
+    {
+      "video_id": "JivWdc2BbIs",
+      "views": 1206,
+      "watch_hours": 196.1,
+      "likes": 84
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1172,
+      "views": 1176,
       "watch_hours": 6.6,
       "likes": 17
     },
     {
-      "video_id": "JivWdc2BbIs",
-      "views": 1074,
-      "watch_hours": 180.2,
-      "likes": 80
-    },
-    {
       "video_id": "LIM0hjXez1Q",
-      "views": 955,
-      "watch_hours": 35.9,
+      "views": 983,
+      "watch_hours": 36.3,
       "likes": 9
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 882,
+      "views": 888,
       "watch_hours": 40.6,
       "likes": 7
     }
@@ -441,43 +441,43 @@
   "search_terms": [
     {
       "term": "xiegu g7250",
-      "views": 137
+      "views": 138
     },
     {
       "term": "ham radio",
-      "views": 78
+      "views": 72
     },
     {
       "term": "ftdx101mp",
-      "views": 45
+      "views": 46
     },
     {
       "term": "spooltenna",
-      "views": 44
-    },
-    {
-      "term": "meshtastic",
-      "views": 38
+      "views": 45
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 38
+      "views": 40
     },
     {
-      "term": "meshtastic solar node",
-      "views": 28
+      "term": "meshtastic",
+      "views": 37
     },
     {
       "term": "g7250",
       "views": 26
     },
     {
+      "term": "meshtastic solar node",
+      "views": 25
+    },
+    {
       "term": "icom",
       "views": 21
     },
     {
-      "term": "dx commander",
-      "views": 18
+      "term": "icom id-5200",
+      "views": 20
     }
   ],
   "suggested_by": [
@@ -487,29 +487,29 @@
       "views": 196
     },
     {
-      "video_id": "0oo2I7vziac",
-      "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
-      "views": 69
-    },
-    {
       "video_id": "YSIlVU6yRBE",
       "title": "XIEGU G7250 Transceiver. Coming soon.",
       "views": 69
     },
     {
-      "video_id": "LIM0hjXez1Q",
-      "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 45
+      "video_id": "0oo2I7vziac",
+      "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
+      "views": 47
     },
     {
-      "video_id": "hcXOOwiPnr0",
-      "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
-      "views": 34
+      "video_id": "LIM0hjXez1Q",
+      "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
+      "views": 44
     },
     {
       "video_id": "ZYk8IUSeEHI",
       "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
-      "views": 29
+      "views": 30
+    },
+    {
+      "video_id": "hcXOOwiPnr0",
+      "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
+      "views": 24
     },
     {
       "video_id": "UBrsvKqDLkY",
