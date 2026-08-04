@@ -125,6 +125,7 @@ CODES = {"US": "United States", "GB": "United Kingdom", "CA": "Canada", "DE": "G
          "PL": "Poland", "IT": "Italy", "FR": "France", "SE": "Sweden", "BR": "Brazil"}
 geo_rows = [(CODES.get(g["country"], g["country"]), round(100 * g["views"] / geo_total))
             for g in geo[1:5]]
+geo_max = max([p for _, p in geo_rows], default=1)
 
 dem = analytics.get("demographics_365") or []
 OLD = ("age45-54", "age55-64", "age65-")
@@ -148,15 +149,23 @@ for i, d in enumerate(daily):
 chart_w = len(daily) * (bw + gap) - gap
 
 _emax, _ebw, _egap, _ech = max(ep_series), 11.0, 4.2, 44
+ep_gridline = (_emax // 500) * 500 or (_emax // 100) * 100
+ep_gy = round(_ech - _ech * ep_gridline / _emax, 1)
 ep_bars = ""
 for _i, _v in enumerate(ep_series):
     _h = max(3, round(_ech * _v / _emax))
     _hot = ' class="hot"' if _i >= len(ep_series) - 6 else ""
     ep_bars += f'<rect{_hot} x="{_i * (_ebw + _egap)}" y="{_ech - _h}" width="{_ebw}" height="{_h}" rx="2"/>'
 ep_cw = len(ep_series) * (_ebw + _egap) - _egap
+ep_bars += (f'<line x1="0" y1="{ep_gy}" x2="{ep_cw}" y2="{ep_gy}" stroke="rgba(27,25,23,.30)" '
+            f'stroke-width="0.8" stroke-dasharray="4 4" fill="none"/>')
 
 updated = datetime.datetime.fromisoformat(
     analytics["fetched_at"].replace("Z", "+00:00")).strftime("%B %Y").upper()
+
+_w0 = datetime.date.fromisoformat(daily[0]["date"])
+_w1 = datetime.date.fromisoformat(daily[-1]["date"])
+window_txt = f'{_w0.day} {_w0.strftime("%B")} to {_w1.day} {_w1.strftime("%B %Y")}'
 
 def font64(name):
     return base64.b64encode((FONTS / name).read_bytes()).decode()
@@ -237,8 +246,8 @@ svg rect.hot {{ fill:var(--signal); }}
 .geo {{ display:flex; flex-direction:column; gap:5px; margin-top:8px; }}
 .geo-row {{ display:flex; align-items:center; gap:8px; font-size:10px; color:var(--text-dim); }}
 .geo-row .nm {{ width:88px; flex:none; color:var(--text); }}
-.geo-row .tr {{ flex:1; height:7px; background:var(--paper-deep); border-radius:999px; overflow:hidden; }}
-.geo-row .fl {{ height:7px; background:var(--signal); border-radius:999px; }}
+.geo-row .tr {{ display:block; flex:1; height:7px; background:var(--paper-deep); border-radius:999px; overflow:hidden; }}
+.geo-row .fl {{ display:block; height:7px; background:var(--signal); border-radius:999px; }}
 .geo-row .vl {{ width:30px; text-align:right; flex:none; }}
 
 .foot-note {{ font-size:8.5px; color:var(--dim); margin-top:8px; font-style:italic; }}
@@ -312,6 +321,8 @@ html += f"""
     </div>
   </div>
 
+  <div class="foot-note" style="margin-top:10px;">YouTube figures from YouTube Analytics, {window_txt}, unless a longer window is stated. Podcast figures from Buzzsprout. No figure in this kit is modelled or estimated.</div>
+
   <div class="footer">
     <div class="foot-sign">Recorded With <span>&hearts;</span> In Michigan</div>
     <div class="foot-meta">Everyday Ham LLC &middot; everydayham.com &middot; Page 1 of 3</div>
@@ -320,7 +331,7 @@ html += f"""
 """
 
 _geo_html = "".join(
-    f'<div class="geo-row"><span class="nm">{n}</span><span class="tr"><span class="fl" style="width:{max(3, p * 4)}%"></span></span><span class="vl">{p}%</span></div>'
+    f'<div class="geo-row"><span class="nm">{n}</span><span class="tr"><span class="fl" style="width:{max(6, round(100 * p / geo_max))}%"></span></span><span class="vl">{p}%</span></div>'
     for n, p in geo_rows)
 _age_html = "".join(
     f'<div class="geo-row"><span class="nm">{n}</span><span class="tr"><span class="fl" style="width:{round(100 * v / age_max)}%"></span></span><span class="vl">{round(v)}%</span></div>'
@@ -338,7 +349,7 @@ html += f"""
   </div>
 
   <div class="kicker">Who's On The Other End</div>
-  <h2>Licensed, Active, And Mostly American</h2>
+  <h2>Know Who You're Reaching</h2>
   <div class="grid g2">
     <div class="card">
       <div class="stat-label">YouTube Audience &middot; Last 12 Months</div>
@@ -356,7 +367,7 @@ html += f"""
         <div style="font-size:10.5px;color:var(--text-dim);">are 45 or older</div>
       </div>
       <div class="geo">{_age_html}</div>
-      <div class="stat-sub" style="margin-top:8px;">Established operators with the budget to match. Reported for signed-in viewers.</div>
+      <div class="stat-sub" style="margin-top:8px;">Reported for signed-in viewers, so a sample rather than a headcount.</div>
     </div>
   </div>
 
@@ -374,7 +385,6 @@ html += f"""
     <div class="card">
       <div class="stat-label">Two Products, Two Jobs</div>
       <p style="font-size:10.5px;line-height:1.55;color:var(--text-dim);margin-top:4px;">YouTube is reach: {fmt(tot['views'])} views a month, most of them from people who don't subscribe yet. The podcast is attention: an hour in someone's ears on the drive to the hamfest or out on a POTA activation.</p>
-      <p style="font-size:10.5px;line-height:1.55;color:var(--text-dim);margin-top:7px;">That is why we steer mid-roll reads to the podcast and put brands in front of the camera on YouTube.</p>
     </div>
   </div>
 
@@ -382,9 +392,12 @@ html += f"""
   <h2>Momentum</h2>
   <div class="grid g2w">
     <div class="card">
-      <div class="stat-label">Podcast Plays Per Episode &middot; All {buzz['episode_count']}</div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;">
+        <div class="stat-label">Podcast Plays Per Episode &middot; All {buzz['episode_count']}</div>
+        <div style="font-size:8.5px;color:var(--dim);">dashed line = {fmt(ep_gridline)} plays</div>
+      </div>
       <svg viewBox="0 0 {ep_cw} {_ech}" width="100%" height="{_ech}" preserveAspectRatio="none" style="margin-top:6px;">{ep_bars}</svg>
-      <div class="stat-sub">Every episode since January 2025. Orange bars are our six most recent.</div>
+      <div class="stat-sub">Every episode since January 2025, peaking at {fmt(_emax)} plays. Orange bars are our six most recent.</div>
     </div>
     <div class="card">
       <div class="stat-label">The Trend</div>
@@ -441,7 +454,7 @@ html += f"""
       <ul class="tight" style="margin-top:4px;">
         <li><b>Meshtastic solar node build</b> &middot; 17,600+ views</li>
         <li><b>Yaesu FTX-1 honest review</b> &middot; 10,600+ views and 138 comments of real owner discussion</li>
-        <li><b>Xiegu G7250 first review</b> &middot; 4,900+ views in its first fortnight</li>
+        <li><b>Xiegu G7250 first review</b> &middot; 4,900+ views in its first two weeks</li>
         <li>Long shelf life: review content keeps pulling search traffic months after release</li>
       </ul>
     </div>
