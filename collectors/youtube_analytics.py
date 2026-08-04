@@ -59,6 +59,8 @@ REVENUE_LAG = 3         # days considered not-yet-final for projections
 DETAIL_MAX = 10         # rows kept for search terms / suggested videos
 DETAIL_CAP = 25         # API HARD LIMIT: traffic-source-detail reports reject
                         # maxResults > 25 (returns HTTP 500, not 400)
+GEO_MAX = 25            # country rows kept. 200 (the documented ceiling) 500s
+                        # on a 365-day range; we only ever display ~8.
 YEAR_DAYS = 365         # long-window detail queries for the media kit
 
 
@@ -293,14 +295,14 @@ def main() -> None:
         token, "geography_30",
         startDate=board_start, endDate=end,
         dimensions="country", metrics="views,estimatedMinutesWatched",
-        sort="-views", maxResults=200,
+        sort="-views", maxResults=GEO_MAX,
     )
 
     geo_year = optional_query(
         token, "geography_365",
         startDate=year_start, endDate=end,
         dimensions="country", metrics="views",
-        sort="-views", maxResults=200,
+        sort="-views", maxResults=GEO_MAX,
     )
 
     # ageGroup/gender REQUIRE the viewerPercentage metric; "views" is not valid
