@@ -10,7 +10,9 @@ Collects, per UTC day for the trailing window:
   videos, top earning videos, revenue by ad type
 - Long-window detail (365 days): search terms, country breakdown, and viewer
   demographics. Snapshot only, written to latest/ and never historized,
-  because rolling-window snapshots are not summable across dates.
+  because rolling-window snapshots are not summable across dates. These are
+  optional extras for the media kit: each is individually guarded and degrades
+  to an empty list rather than failing the run.
 - Launch curves (daily views since publish) for videos younger than
   CURVE_DAYS, keeping launch_curves.json current after the one-time backfill
 
@@ -55,6 +57,8 @@ CURVE_DAYS = 40         # keep launch curves fresh for videos younger than this
 RUN_RATE_DAYS = 7       # projection basis: recent complete days
 REVENUE_LAG = 3         # days considered not-yet-final for projections
 DETAIL_MAX = 10         # rows kept for search terms / suggested videos
+DETAIL_CAP = 25         # API HARD LIMIT: traffic-source-detail reports reject
+                        # maxResults > 25 (returns HTTP 500, not 400)
 YEAR_DAYS = 365         # long-window detail queries for the media kit
 
 
@@ -82,6 +86,20 @@ def query(token: str, **params) -> dict:
 def rows_as_dicts(resp: dict) -> list[dict]:
     headers = [h["name"] for h in resp.get("columnHeaders", [])]
     return [dict(zip(headers, row)) for row in resp.get("rows", []) or []]
+
+
+def optional_query(token: str, label: str, **params) -> list[dict]:
+    """Query for a non-essential extra; never let it fail the run.
+
+    Used only for the media-kit long-window reports. Core collection stays
+    unguarded so real breakage still fails loudly.
+    """
+    try:
+        return rows_as_dicts(query(token, **params))
+    except Exception as exc:
+        print(f"WARN: optional report '{label}' unavailable: {exc}",
+              file=sys.stderr)
+        return []
 
 
 def resolve_video_titles(video_ids: list[str]) -> dict:
@@ -259,43 +277,42 @@ def main() -> None:
         key_fields=("date", "video_id"),
     )
 
-    # ---- Long-window (365d) detail for the media kit ----
-    # These are rolling snapshots, so they are written to latest/ ONLY and are
-    # deliberately never historized: snapshot rows cannot be summed by date.
-    search_terms_year = rows_as_dicts(query(
-        token, startDate=year_start, endDate=end,
+    # ---- Long-window (365d) extras for the media kit ----
+    # Rolling snapshots: written to latest/ ONLY, never historized, because
+    # snapshot rows cannot be summed by date.
+    # All guarded: a media-kit nicety must never fail a collection run.
+    search_terms_year = optional_query(
+        token, "search_terms_365",
+        startDate=year_start, endDate=end,
         dimensions="insightTrafficSourceDetail",
         filters="insightTrafficSourceType==YT_SEARCH",
-        metrics="views", sort="-views", maxResults=DETAIL_MAX * 3,
-    ))
+        metrics="views", sort="-views", maxResults=DETAIL_CAP,
+    )
 
-    geo_30 = rows_as_dicts(query(
-        token, startDate=board_start, endDate=end,
+    geo_30 = optional_query(
+        token, "geography_30",
+        startDate=board_start, endDate=end,
         dimensions="country", metrics="views,estimatedMinutesWatched",
         sort="-views", maxResults=200,
-    ))
+    )
 
-    geo_year = rows_as_dicts(query(
-        token, startDate=year_start, endDate=end,
+    geo_year = optional_query(
+        token, "geography_365",
+        startDate=year_start, endDate=end,
         dimensions="country", metrics="views",
         sort="-views", maxResults=200,
-    ))
+    )
 
     # ageGroup/gender REQUIRE the viewerPercentage metric; "views" is not valid
     # with these dimensions, and sorting is by dimension, not by the metric.
     # Never add subscribedStatus here: viewerPercentage is not normalized across
     # it, so the percentages would sum to 200%. Use filters= instead.
-    # Guarded because demographics return empty/error when there is too little
-    # logged-in viewing, and that must not fail an otherwise good run.
-    try:
-        demographics = rows_as_dicts(query(
-            token, startDate=year_start, endDate=end,
-            dimensions="ageGroup,gender", metrics="viewerPercentage",
-            sort="gender,ageGroup",
-        ))
-    except Exception as exc:
-        print(f"WARN: demographics unavailable: {exc}", file=sys.stderr)
-        demographics = []
+    demographics = optional_query(
+        token, "demographics_365",
+        startDate=year_start, endDate=end,
+        dimensions="ageGroup,gender", metrics="viewerPercentage",
+        sort="gender,ageGroup",
+    )
 
     top_earning = rows_as_dicts(query(
         token, startDate=board_start, endDate=end,
