@@ -84,6 +84,7 @@ def main() -> None:
             "title": e.get("title", ""),
             "episode_number": e.get("episode_number"),
             "published_at": e.get("published_at", ""),
+            "duration_sec": e.get("duration"),
             "plays": int(e.get("total_plays", 0)),
         } for e in episodes],
     })
