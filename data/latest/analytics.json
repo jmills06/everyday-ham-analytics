@@ -1,36 +1,24 @@
 {
-  "fetched_at": "2026-08-04T16:00:36Z",
+  "fetched_at": "2026-08-05T04:00:39Z",
   "window_days": 30,
   "totals": {
-    "views": 18144,
-    "watch_hours": 1214.8,
-    "avg_view_pct": 25.1,
-    "subs_gained": 152,
-    "subs_lost": 34,
-    "subs_net": 118,
-    "likes": 550,
-    "comments": 71,
-    "shares": 159,
-    "subscribed_views": 2314,
-    "not_subscribed_views": 15821
+    "views": 17984,
+    "watch_hours": 1199.5,
+    "avg_view_pct": 24.9,
+    "subs_gained": 150,
+    "subs_lost": 33,
+    "subs_net": 117,
+    "likes": 538,
+    "comments": 69,
+    "shares": 157,
+    "subscribed_views": 2254,
+    "not_subscribed_views": 15705
   },
   "daily": [
     {
-      "date": "2026-07-05",
-      "views": 668,
-      "watch_minutes": 2644,
-      "avg_view_duration_sec": 261,
-      "avg_view_pct": 27.4,
-      "subs_gained": 7,
-      "subs_lost": 2,
-      "likes": 26,
-      "comments": 4,
-      "shares": 6
-    },
-    {
       "date": "2026-07-06",
-      "views": 504,
-      "watch_minutes": 2056,
+      "views": 501,
+      "watch_minutes": 2095,
       "avg_view_duration_sec": 278,
       "avg_view_pct": 26.3,
       "subs_gained": 3,
@@ -41,8 +29,8 @@
     },
     {
       "date": "2026-07-07",
-      "views": 410,
-      "watch_minutes": 1472,
+      "views": 406,
+      "watch_minutes": 1467,
       "avg_view_duration_sec": 241,
       "avg_view_pct": 23.6,
       "subs_gained": 2,
@@ -53,8 +41,8 @@
     },
     {
       "date": "2026-07-08",
-      "views": 396,
-      "watch_minutes": 1516,
+      "views": 394,
+      "watch_minutes": 1511,
       "avg_view_duration_sec": 256,
       "avg_view_pct": 26.8,
       "subs_gained": 4,
@@ -66,7 +54,7 @@
     {
       "date": "2026-07-09",
       "views": 508,
-      "watch_minutes": 3648,
+      "watch_minutes": 3649,
       "avg_view_duration_sec": 468,
       "avg_view_pct": 25.1,
       "subs_gained": 4,
@@ -185,8 +173,8 @@
     },
     {
       "date": "2026-07-19",
-      "views": 378,
-      "watch_minutes": 1123,
+      "views": 381,
+      "watch_minutes": 1125,
       "avg_view_duration_sec": 205,
       "avg_view_pct": 24.1,
       "subs_gained": 3,
@@ -269,8 +257,8 @@
     },
     {
       "date": "2026-07-26",
-      "views": 565,
-      "watch_minutes": 1713,
+      "views": 570,
+      "watch_minutes": 1730,
       "avg_view_duration_sec": 204,
       "avg_view_pct": 22.8,
       "subs_gained": 3,
@@ -281,8 +269,8 @@
     },
     {
       "date": "2026-07-27",
-      "views": 439,
-      "watch_minutes": 1505,
+      "views": 448,
+      "watch_minutes": 1519,
       "avg_view_duration_sec": 222,
       "avg_view_pct": 23.6,
       "subs_gained": 2,
@@ -293,7 +281,7 @@
     },
     {
       "date": "2026-07-28",
-      "views": 934,
+      "views": 942,
       "watch_minutes": 6642,
       "avg_view_duration_sec": 477,
       "avg_view_pct": 27.7,
@@ -305,8 +293,8 @@
     },
     {
       "date": "2026-07-29",
-      "views": 808,
-      "watch_minutes": 4394,
+      "views": 802,
+      "watch_minutes": 4395,
       "avg_view_duration_sec": 353,
       "avg_view_pct": 22.8,
       "subs_gained": 12,
@@ -317,7 +305,7 @@
     },
     {
       "date": "2026-07-30",
-      "views": 576,
+      "views": 568,
       "watch_minutes": 2449,
       "avg_view_duration_sec": 280,
       "avg_view_pct": 23.2,
@@ -329,10 +317,10 @@
     },
     {
       "date": "2026-07-31",
-      "views": 607,
-      "watch_minutes": 2833,
+      "views": 602,
+      "watch_minutes": 2830,
       "avg_view_duration_sec": 305,
-      "avg_view_pct": 21.7,
+      "avg_view_pct": 21.6,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 19,
@@ -350,52 +338,64 @@
       "likes": 15,
       "comments": 1,
       "shares": 7
+    },
+    {
+      "date": "2026-08-02",
+      "views": 511,
+      "watch_minutes": 1667,
+      "avg_view_duration_sec": 221,
+      "avg_view_pct": 23.5,
+      "subs_gained": 5,
+      "subs_lost": 1,
+      "likes": 14,
+      "comments": 2,
+      "shares": 4
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7026
+      "views": 6908
     },
     {
       "source": "YT_SEARCH",
-      "views": 4126
+      "views": 4107
     },
     {
       "source": "EXT_URL",
-      "views": 2325
+      "views": 2342
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 2277
+      "views": 2225
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1088
+      "views": 1076
     },
     {
       "source": "SHORTS",
-      "views": 411
+      "views": 432
     },
     {
       "source": "YT_CHANNEL",
-      "views": 343
+      "views": 333
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 244
+      "views": 246
     },
     {
       "source": "NOTIFICATION",
-      "views": 149
+      "views": 152
     },
     {
       "source": "PLAYLIST",
-      "views": 105
+      "views": 98
     },
     {
       "source": "END_SCREEN",
-      "views": 23
+      "views": 22
     },
     {
       "source": "HASHTAGS",
@@ -409,43 +409,43 @@
   "top_videos": [
     {
       "video_id": "r08dZat4bOU",
-      "views": 4870,
-      "watch_hours": 275.4,
+      "views": 4894,
+      "watch_hours": 276.3,
       "likes": 167
     },
     {
       "video_id": "JivWdc2BbIs",
-      "views": 1206,
-      "watch_hours": 196.1,
+      "views": 1240,
+      "watch_hours": 200.6,
       "likes": 84
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1176,
-      "watch_hours": 6.6,
-      "likes": 17
+      "views": 1168,
+      "watch_hours": 6.5,
+      "likes": 18
     },
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 983,
-      "watch_hours": 36.3,
-      "likes": 9
+      "views": 996,
+      "watch_hours": 37.3,
+      "likes": 10
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 888,
-      "watch_hours": 40.6,
-      "likes": 7
+      "views": 909,
+      "watch_hours": 42.4,
+      "likes": 6
     }
   ],
   "search_terms": [
     {
       "term": "xiegu g7250",
-      "views": 138
+      "views": 139
     },
     {
       "term": "ham radio",
-      "views": 71
+      "views": 67
     },
     {
       "term": "ftdx101mp",
@@ -453,26 +453,26 @@
     },
     {
       "term": "spooltenna",
-      "views": 45
-    },
-    {
-      "term": "wio tracker l1 pro",
-      "views": 40
+      "views": 43
     },
     {
       "term": "meshtastic",
       "views": 37
     },
     {
+      "term": "wio tracker l1 pro",
+      "views": 37
+    },
+    {
       "term": "g7250",
-      "views": 26
+      "views": 27
     },
     {
       "term": "meshtastic solar node",
       "views": 25
     },
     {
-      "term": "icom",
+      "term": "dx commander",
       "views": 21
     },
     {
@@ -492,14 +492,14 @@
       "views": 69
     },
     {
-      "video_id": "0oo2I7vziac",
-      "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
-      "views": 47
-    },
-    {
       "video_id": "LIM0hjXez1Q",
       "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 44
+      "views": 45
+    },
+    {
+      "video_id": "0oo2I7vziac",
+      "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
+      "views": 37
     },
     {
       "video_id": "ZYk8IUSeEHI",
@@ -507,14 +507,14 @@
       "views": 30
     },
     {
-      "video_id": "hcXOOwiPnr0",
-      "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
-      "views": 24
-    },
-    {
       "video_id": "UBrsvKqDLkY",
       "title": "🚨 BREAKING: Xiegu G7250 Is Coming... Could This Be Amateur Radio's Next Big SDR? #scatteredradio",
       "views": 22
+    },
+    {
+      "video_id": "FQ4sp9J1ksA",
+      "title": "New - Xiegu G7250 Announced - Overview",
+      "views": 18
     },
     {
       "video_id": "irYteTmMpkI",
@@ -522,9 +522,9 @@
       "views": 18
     },
     {
-      "video_id": "FQ4sp9J1ksA",
-      "title": "New - Xiegu G7250 Announced - Overview",
-      "views": 17
+      "video_id": "hcXOOwiPnr0",
+      "title": "Field Day 2026 Setup Walkthrough: BuddiHex, BandHopper & Larry the Vertical",
+      "views": 16
     },
     {
       "video_id": "G9nW8S4y2Xs",
@@ -543,11 +543,11 @@
     },
     {
       "term": "meshtastic",
-      "views": 787
+      "views": 788
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 569
+      "views": 571
     },
     {
       "term": "meshtastic solar node",
@@ -567,11 +567,11 @@
     },
     {
       "term": "atas 120a antenna",
-      "views": 319
+      "views": 321
     },
     {
       "term": "icom 7300 mk2",
-      "views": 282
+      "views": 283
     },
     {
       "term": "hamvention",
@@ -606,11 +606,11 @@
       "views": 199
     },
     {
-      "term": "yaesu ftx-1 optima",
-      "views": 184
+      "term": "icom",
+      "views": 178
     },
     {
-      "term": "icom",
+      "term": "yaesu ftx-1 optima",
       "views": 178
     },
     {
@@ -618,12 +618,12 @@
       "views": 174
     },
     {
-      "term": "icom 5200",
-      "views": 172
+      "term": "dx commander",
+      "views": 173
     },
     {
-      "term": "dx commander",
-      "views": 171
+      "term": "icom 5200",
+      "views": 172
     },
     {
       "term": "yaesu ftdx101mp",
@@ -631,39 +631,39 @@
     },
     {
       "term": "id-5200",
-      "views": 147
+      "views": 149
     }
   ],
   "geography_30": [
     {
       "country": "US",
-      "views": 9920,
-      "watch_hours": 813.3
+      "views": 9774,
+      "watch_hours": 797.4
     },
     {
       "country": "GB",
-      "views": 636,
-      "watch_hours": 53.6
+      "views": 642,
+      "watch_hours": 53.5
     },
     {
       "country": "DE",
-      "views": 561,
-      "watch_hours": 29.1
+      "views": 547,
+      "watch_hours": 28.6
     },
     {
       "country": "CA",
-      "views": 372,
-      "watch_hours": 29.8
+      "views": 367,
+      "watch_hours": 29.4
     },
     {
       "country": "JP",
       "views": 288,
-      "watch_hours": 10.4
+      "watch_hours": 10.2
     },
     {
       "country": "AU",
-      "views": 212,
-      "watch_hours": 19.6
+      "views": 202,
+      "watch_hours": 19.4
     },
     {
       "country": "ES",
@@ -687,8 +687,8 @@
     },
     {
       "country": "FR",
-      "views": 129,
-      "watch_hours": 6.5
+      "views": 139,
+      "watch_hours": 6.7
     },
     {
       "country": "IL",
@@ -764,23 +764,23 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 124362
+      "views": 124559
     },
     {
       "country": "GB",
-      "views": 5311
+      "views": 5331
     },
     {
       "country": "CA",
-      "views": 4766
+      "views": 4782
     },
     {
       "country": "DE",
-      "views": 4413
+      "views": 4426
     },
     {
       "country": "JP",
-      "views": 3642
+      "views": 3654
     },
     {
       "country": "AU",
@@ -804,7 +804,7 @@
     },
     {
       "country": "FR",
-      "views": 647
+      "views": 657
     },
     {
       "country": "SE",
@@ -907,7 +907,7 @@
     {
       "age_group": "age25-34",
       "gender": "male",
-      "viewer_pct": 9.5
+      "viewer_pct": 9.4
     },
     {
       "age_group": "age35-44",
@@ -927,7 +927,7 @@
     {
       "age_group": "age65-",
       "gender": "male",
-      "viewer_pct": 27.5
+      "viewer_pct": 27.6
     }
   ]
 }
