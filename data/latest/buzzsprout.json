@@ -1,15 +1,23 @@
 {
-  "fetched_at": "2026-08-05T16:00:34Z",
-  "total_downloads": 21511,
-  "episode_count": 25,
+  "fetched_at": "2026-08-06T04:00:32Z",
+  "total_downloads": 21526,
+  "episode_count": 26,
   "episodes": [
+    {
+      "id": 19606536,
+      "title": "Ep. 20 – Decoding QSL, From Paper Cards to Digital Confirmation",
+      "episode_number": 20,
+      "published_at": "2026-08-06T08:00:00.000-04:00",
+      "duration_sec": 3740,
+      "plays": 1
+    },
     {
       "id": 19466291,
       "title": "Ep. 19 – How We Made Field Day Our Best One Yet",
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
       "duration_sec": 3912,
-      "plays": 1132
+      "plays": 1138
     },
     {
       "id": 19328548,
@@ -17,7 +25,7 @@
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
       "duration_sec": 3475,
-      "plays": 1306
+      "plays": 1307
     },
     {
       "id": 19219333,
@@ -25,7 +33,7 @@
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
       "duration_sec": 3097,
-      "plays": 1148
+      "plays": 1149
     },
     {
       "id": 19138519,
@@ -41,7 +49,7 @@
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
       "duration_sec": 3285,
-      "plays": 955
+      "plays": 957
     },
     {
       "id": 18903785,
@@ -49,7 +57,7 @@
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
       "duration_sec": 2461,
-      "plays": 872
+      "plays": 873
     },
     {
       "id": 18794950,
@@ -57,7 +65,7 @@
       "episode_number": 15,
       "published_at": "2026-03-05T10:00:00.000-05:00",
       "duration_sec": 3694,
-      "plays": 1033
+      "plays": 1034
     },
     {
       "id": 18629581,
@@ -65,7 +73,7 @@
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
       "duration_sec": 3045,
-      "plays": 1238
+      "plays": 1239
     },
     {
       "id": 18470399,
@@ -105,7 +113,7 @@
       "episode_number": null,
       "published_at": "2025-09-27T12:00:00.000-04:00",
       "duration_sec": 1660,
-      "plays": 735
+      "plays": 736
     },
     {
       "id": 17760784,
