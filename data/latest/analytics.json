@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-07T04:00:37Z",
+  "fetched_at": "2026-08-07T16:00:38Z",
   "window_days": 30,
   "totals": {
     "views": 17935,
@@ -12,7 +12,7 @@
     "comments": 68,
     "shares": 156,
     "subscribed_views": 2235,
-    "not_subscribed_views": 15713
+    "not_subscribed_views": 15697
   },
   "daily": [
     {
@@ -236,7 +236,7 @@
       "views": 565,
       "watch_minutes": 1713,
       "avg_view_duration_sec": 204,
-      "avg_view_pct": 22.7,
+      "avg_view_pct": 22.8,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 13,
@@ -247,8 +247,8 @@
       "date": "2026-07-27",
       "views": 439,
       "watch_minutes": 1505,
-      "avg_view_duration_sec": 224,
-      "avg_view_pct": 24.0,
+      "avg_view_duration_sec": 222,
+      "avg_view_pct": 23.6,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 9,
@@ -296,7 +296,7 @@
       "views": 602,
       "watch_minutes": 2830,
       "avg_view_duration_sec": 305,
-      "avg_view_pct": 21.7,
+      "avg_view_pct": 21.6,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 19,
@@ -307,8 +307,8 @@
       "date": "2026-08-01",
       "views": 529,
       "watch_minutes": 2043,
-      "avg_view_duration_sec": 254,
-      "avg_view_pct": 20.2,
+      "avg_view_duration_sec": 252,
+      "avg_view_pct": 20.1,
       "subs_gained": 7,
       "subs_lost": 1,
       "likes": 15,
@@ -355,11 +355,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6802
+      "views": 6788
     },
     {
       "source": "YT_SEARCH",
-      "views": 4149
+      "views": 4145
     },
     {
       "source": "EXT_URL",
@@ -371,7 +371,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1092
+      "views": 1093
     },
     {
       "source": "SHORTS",
@@ -383,7 +383,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 256
+      "views": 257
     },
     {
       "source": "NOTIFICATION",
@@ -637,12 +637,12 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 9661,
+      "views": 9658,
       "watch_hours": 781.9
     },
     {
       "country": "GB",
-      "views": 635,
+      "views": 634,
       "watch_hours": 52.1
     },
     {
@@ -652,7 +652,7 @@
     },
     {
       "country": "CA",
-      "views": 350,
+      "views": 349,
       "watch_hours": 28.0
     },
     {
@@ -764,15 +764,15 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 124808
+      "views": 124805
     },
     {
       "country": "GB",
-      "views": 5348
+      "views": 5347
     },
     {
       "country": "CA",
-      "views": 4792
+      "views": 4791
     },
     {
       "country": "DE",
@@ -917,7 +917,7 @@
     {
       "age_group": "age45-54",
       "gender": "male",
-      "viewer_pct": 19.8
+      "viewer_pct": 19.7
     },
     {
       "age_group": "age55-64",
