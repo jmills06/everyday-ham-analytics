@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T04:00:40Z",
+  "fetched_at": "2026-08-08T16:00:34Z",
   "window_days": 30,
   "totals": {
     "views": 17962,
@@ -224,7 +224,7 @@
       "views": 565,
       "watch_minutes": 1713,
       "avg_view_duration_sec": 204,
-      "avg_view_pct": 22.8,
+      "avg_view_pct": 22.7,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 13,
@@ -235,8 +235,8 @@
       "date": "2026-07-27",
       "views": 439,
       "watch_minutes": 1505,
-      "avg_view_duration_sec": 222,
-      "avg_view_pct": 23.6,
+      "avg_view_duration_sec": 224,
+      "avg_view_pct": 24.0,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 9,
@@ -284,7 +284,7 @@
       "views": 602,
       "watch_minutes": 2830,
       "avg_view_duration_sec": 305,
-      "avg_view_pct": 21.6,
+      "avg_view_pct": 21.7,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 19,
@@ -295,8 +295,8 @@
       "date": "2026-08-01",
       "views": 529,
       "watch_minutes": 2043,
-      "avg_view_duration_sec": 252,
-      "avg_view_pct": 20.1,
+      "avg_view_duration_sec": 254,
+      "avg_view_pct": 20.2,
       "subs_gained": 7,
       "subs_lost": 1,
       "likes": 15,
@@ -637,12 +637,12 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 9628,
+      "views": 9631,
       "watch_hours": 779.0
     },
     {
       "country": "GB",
-      "views": 660,
+      "views": 661,
       "watch_hours": 53.1
     },
     {
@@ -652,7 +652,7 @@
     },
     {
       "country": "CA",
-      "views": 349,
+      "views": 350,
       "watch_hours": 28.0
     },
     {
@@ -764,15 +764,15 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 124822
+      "views": 124825
     },
     {
       "country": "GB",
-      "views": 5373
+      "views": 5374
     },
     {
       "country": "CA",
-      "views": 4791
+      "views": 4792
     },
     {
       "country": "DE",
