@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T04:00:35Z",
+  "fetched_at": "2026-08-09T16:00:39Z",
   "window_days": 30,
   "totals": {
     "views": 18828,
@@ -12,7 +12,7 @@
     "comments": 70,
     "shares": 156,
     "subscribed_views": 2224,
-    "not_subscribed_views": 16594
+    "not_subscribed_views": 16579
   },
   "daily": [
     {
@@ -331,8 +331,8 @@
       "date": "2026-08-05",
       "views": 424,
       "watch_minutes": 1565,
-      "avg_view_duration_sec": 264,
-      "avg_view_pct": 21.0,
+      "avg_view_duration_sec": 265,
+      "avg_view_pct": 21.2,
       "subs_gained": 5,
       "subs_lost": 0,
       "likes": 6,
@@ -355,11 +355,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6771
+      "views": 6763
     },
     {
       "source": "YT_SEARCH",
-      "views": 4106
+      "views": 4101
     },
     {
       "source": "EXT_URL",
@@ -375,7 +375,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1110
+      "views": 1108
     },
     {
       "source": "YT_CHANNEL",
@@ -383,7 +383,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 303
+      "views": 302
     },
     {
       "source": "NOTIFICATION",
@@ -391,7 +391,7 @@
     },
     {
       "source": "PLAYLIST",
-      "views": 101
+      "views": 102
     },
     {
       "source": "END_SCREEN",
@@ -461,7 +461,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 32
+      "views": 31
     },
     {
       "term": "g7250",
@@ -547,7 +547,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 571
+      "views": 570
     },
     {
       "term": "meshtastic solar node",
@@ -579,7 +579,7 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 264
+      "views": 265
     },
     {
       "term": "pota",
