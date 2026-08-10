@@ -1,32 +1,20 @@
 {
-  "fetched_at": "2026-08-09T16:00:39Z",
+  "fetched_at": "2026-08-10T04:00:33Z",
   "window_days": 30,
   "totals": {
-    "views": 18828,
-    "watch_hours": 1189.7,
-    "avg_view_pct": 24.8,
-    "subs_gained": 155,
+    "views": 18801,
+    "watch_hours": 1175.5,
+    "avg_view_pct": 24.7,
+    "subs_gained": 156,
     "subs_lost": 28,
-    "subs_net": 127,
-    "likes": 547,
-    "comments": 70,
-    "shares": 156,
-    "subscribed_views": 2224,
-    "not_subscribed_views": 16579
+    "subs_net": 128,
+    "likes": 546,
+    "comments": 69,
+    "shares": 155,
+    "subscribed_views": 2229,
+    "not_subscribed_views": 16572
   },
   "daily": [
-    {
-      "date": "2026-07-10",
-      "views": 421,
-      "watch_minutes": 2472,
-      "avg_view_duration_sec": 374,
-      "avg_view_pct": 26.3,
-      "subs_gained": 5,
-      "subs_lost": 2,
-      "likes": 9,
-      "comments": 2,
-      "shares": 2
-    },
     {
       "date": "2026-07-11",
       "views": 443,
@@ -317,8 +305,8 @@
     },
     {
       "date": "2026-08-04",
-      "views": 463,
-      "watch_minutes": 1366,
+      "views": 453,
+      "watch_minutes": 1364,
       "avg_view_duration_sec": 209,
       "avg_view_pct": 20.1,
       "subs_gained": 5,
@@ -329,7 +317,7 @@
     },
     {
       "date": "2026-08-05",
-      "views": 424,
+      "views": 409,
       "watch_minutes": 1565,
       "avg_view_duration_sec": 265,
       "avg_view_pct": 21.2,
@@ -350,52 +338,64 @@
       "likes": 34,
       "comments": 4,
       "shares": 1
+    },
+    {
+      "date": "2026-08-07",
+      "views": 419,
+      "watch_minutes": 1625,
+      "avg_view_duration_sec": 274,
+      "avg_view_pct": 21.1,
+      "subs_gained": 6,
+      "subs_lost": 2,
+      "likes": 8,
+      "comments": 1,
+      "shares": 1
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6763
+      "views": 6728
     },
     {
       "source": "YT_SEARCH",
-      "views": 4101
+      "views": 4088
     },
     {
       "source": "EXT_URL",
-      "views": 2364
+      "views": 2379
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 2156
+      "views": 2120
     },
     {
       "source": "SHORTS",
-      "views": 1355
+      "views": 1415
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1108
+      "views": 1103
     },
     {
       "source": "YT_CHANNEL",
-      "views": 358
+      "views": 370
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 302
+      "views": 300
     },
     {
       "source": "NOTIFICATION",
-      "views": 152
+      "views": 154
     },
     {
       "source": "PLAYLIST",
-      "views": 102
+      "views": 104
     },
     {
       "source": "END_SCREEN",
-      "views": 20
+      "views": 18
     },
     {
       "source": "HASHTAGS",
@@ -409,33 +409,33 @@
   "top_videos": [
     {
       "video_id": "r08dZat4bOU",
-      "views": 4986,
-      "watch_hours": 280.4,
+      "views": 4995,
+      "watch_hours": 280.6,
       "likes": 170
     },
     {
       "video_id": "JivWdc2BbIs",
-      "views": 1406,
-      "watch_hours": 223.1,
+      "views": 1419,
+      "watch_hours": 225.6,
       "likes": 92
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1172,
-      "watch_hours": 6.5,
+      "views": 1142,
+      "watch_hours": 6.3,
       "likes": 18
     },
     {
       "video_id": "LIM0hjXez1Q",
-      "views": 1043,
-      "watch_hours": 38.5,
+      "views": 1045,
+      "watch_hours": 38.4,
       "likes": 11
     },
     {
       "video_id": "VcbRTsjRx28",
-      "views": 908,
-      "watch_hours": 2.3,
-      "likes": 6
+      "views": 948,
+      "watch_hours": 2.4,
+      "likes": 7
     }
   ],
   "search_terms": [
@@ -449,22 +449,26 @@
     },
     {
       "term": "spooltenna",
-      "views": 48
-    },
-    {
-      "term": "meshtastic",
-      "views": 39
+      "views": 47
     },
     {
       "term": "ftdx101mp",
-      "views": 38
+      "views": 42
+    },
+    {
+      "term": "meshtastic",
+      "views": 40
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 31
+      "views": 34
     },
     {
       "term": "g7250",
+      "views": 27
+    },
+    {
+      "term": "icom id-5200",
       "views": 27
     },
     {
@@ -472,12 +476,8 @@
       "views": 25
     },
     {
-      "term": "icom id-5200",
-      "views": 24
-    },
-    {
       "term": "id-5200",
-      "views": 23
+      "views": 24
     }
   ],
   "suggested_by": [
@@ -494,12 +494,12 @@
     {
       "video_id": "LIM0hjXez1Q",
       "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
-      "views": 49
+      "views": 46
     },
     {
       "video_id": "ZYk8IUSeEHI",
       "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
-      "views": 31
+      "views": 33
     },
     {
       "video_id": "UBrsvKqDLkY",
@@ -507,13 +507,13 @@
       "views": 23
     },
     {
-      "video_id": "0oo2I7vziac",
-      "title": "Raising a BuddiHEX Hex Beam at Field Day 2026 | South Lyon Area ARC",
+      "video_id": "j4-xlHybfTk",
+      "title": "Icom ID-5200 First Look - Is This the Best D-STAR Mobile Yet?",
       "views": 20
     },
     {
-      "video_id": "j4-xlHybfTk",
-      "title": "Icom ID-5200 First Look - Is This the Best D-STAR Mobile Yet?",
+      "video_id": "pMtUCuNZoGo",
+      "title": "A Fun & New Way to Learn Morse Code - LICW Presentation to Dayton Hamvention - 2024",
       "views": 20
     },
     {
@@ -522,13 +522,13 @@
       "views": 19
     },
     {
-      "video_id": "pMtUCuNZoGo",
-      "title": "A Fun & New Way to Learn Morse Code - LICW Presentation to Dayton Hamvention - 2024",
-      "views": 19
-    },
-    {
       "video_id": "FQ4sp9J1ksA",
       "title": "New - Xiegu G7250 Announced - Overview",
+      "views": 18
+    },
+    {
+      "video_id": "irYteTmMpkI",
+      "title": "New - Xiegu G7250 100 Watt HF & 6M",
       "views": 18
     }
   ],
@@ -539,19 +539,19 @@
     },
     {
       "term": "ham radio",
-      "views": 894
+      "views": 895
     },
     {
       "term": "meshtastic",
-      "views": 800
+      "views": 801
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 570
+      "views": 573
     },
     {
       "term": "meshtastic solar node",
-      "views": 483
+      "views": 484
     },
     {
       "term": "dayton hamvention 2026",
@@ -559,7 +559,7 @@
     },
     {
       "term": "ftdx101mp",
-      "views": 380
+      "views": 384
     },
     {
       "term": "hamcation 2026",
@@ -607,19 +607,19 @@
     },
     {
       "term": "icom",
-      "views": 179
+      "views": 180
+    },
+    {
+      "term": "icom 5200",
+      "views": 177
     },
     {
       "term": "dx commander",
       "views": 176
     },
     {
-      "term": "icom 5200",
-      "views": 175
-    },
-    {
       "term": "yaesu ftx-1 optima",
-      "views": 171
+      "views": 169
     },
     {
       "term": "ftx-1",
@@ -631,39 +631,39 @@
     },
     {
       "term": "id-5200",
-      "views": 155
+      "views": 156
     }
   ],
   "geography_30": [
     {
       "country": "US",
-      "views": 10108,
-      "watch_hours": 773.4
+      "views": 10031,
+      "watch_hours": 758.1
     },
     {
       "country": "GB",
-      "views": 693,
-      "watch_hours": 54.5
+      "views": 711,
+      "watch_hours": 55.7
     },
     {
       "country": "DE",
-      "views": 586,
-      "watch_hours": 28.4
+      "views": 576,
+      "watch_hours": 27.7
     },
     {
       "country": "CA",
-      "views": 371,
-      "watch_hours": 27.5
+      "views": 370,
+      "watch_hours": 26.9
     },
     {
       "country": "JP",
-      "views": 262,
-      "watch_hours": 8.3
+      "views": 250,
+      "watch_hours": 7.7
     },
     {
       "country": "AU",
-      "views": 229,
-      "watch_hours": 19.5
+      "views": 219,
+      "watch_hours": 17.6
     },
     {
       "country": "ES",
@@ -687,8 +687,8 @@
     },
     {
       "country": "FR",
-      "views": 139,
-      "watch_hours": 6.7
+      "views": 152,
+      "watch_hours": 7.5
     },
     {
       "country": "IL",
@@ -764,15 +764,15 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 125387
+      "views": 125517
     },
     {
       "country": "GB",
-      "views": 5406
+      "views": 5424
     },
     {
       "country": "CA",
-      "views": 4823
+      "views": 4836
     },
     {
       "country": "DE",
@@ -804,7 +804,7 @@
     },
     {
       "country": "FR",
-      "views": 657
+      "views": 670
     },
     {
       "country": "SE",
@@ -922,7 +922,7 @@
     {
       "age_group": "age55-64",
       "gender": "male",
-      "viewer_pct": 25.3
+      "viewer_pct": 25.4
     },
     {
       "age_group": "age65-",
