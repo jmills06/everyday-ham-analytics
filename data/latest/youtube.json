@@ -1,17 +1,26 @@
 {
-  "fetched_at": "2026-08-10T04:00:26Z",
+  "fetched_at": "2026-08-10T16:00:31Z",
   "channel": {
-    "views": 244550,
+    "views": 244698,
     "subscribers": 2240,
-    "videos": 154
+    "videos": 155
   },
   "videos": [
+    {
+      "id": "R1YDR0cqRN8",
+      "title": "QRZ Logbook or Logbook of the World: Where Should a New Ham Start?",
+      "published_at": "2026-08-10T12:00:21Z",
+      "duration": "PT7M57S",
+      "views": 19,
+      "likes": 5,
+      "comments": 2
+    },
     {
       "id": "jEMEbgEv1zM",
       "title": "Clip - \"I've Been a Ham 70 Years, I'm Not QSLing Anymore\"",
       "published_at": "2026-08-08T09:00:16Z",
       "duration": "PT33S",
-      "views": 1227,
+      "views": 1252,
       "likes": 3,
       "comments": 1
     },
@@ -20,7 +29,7 @@
       "title": "Clip - He Waited 42 Years for One QSL Card",
       "published_at": "2026-08-06T12:30:59Z",
       "duration": "PT34S",
-      "views": 923,
+      "views": 925,
       "likes": 8,
       "comments": 0
     },
@@ -29,7 +38,7 @@
       "title": "Decoding QSL, From Paper Cards to Digital Confirmation",
       "published_at": "2026-08-06T12:00:31Z",
       "duration": "PT1H1M56S",
-      "views": 162,
+      "views": 166,
       "likes": 18,
       "comments": 2
     },
@@ -47,7 +56,7 @@
       "title": "Ham2K PoLo Goes Desktop: Windows, Mac and Linux First Look with Sebastián KI2D",
       "published_at": "2026-07-28T12:00:32Z",
       "duration": "PT39M29S",
-      "views": 1446,
+      "views": 1451,
       "likes": 93,
       "comments": 18
     },
@@ -65,7 +74,7 @@
       "title": "Xiegu G7250 just brought some HEAT - New 100w (AFFORDABLE?) Remote HF Rig Incoming",
       "published_at": "2026-07-21T22:52:09Z",
       "duration": "PT14M14S",
-      "views": 5019,
+      "views": 5022,
       "likes": 170,
       "comments": 50
     },
@@ -74,7 +83,7 @@
       "title": "Our First Try With the $1,600 BuddiHEX Hex Beam",
       "published_at": "2026-07-21T12:00:05Z",
       "duration": "PT10M2S",
-      "views": 466,
+      "views": 467,
       "likes": 25,
       "comments": 5
     },
@@ -92,7 +101,7 @@
       "title": "Mirage and Ameritron Live On:  ITU Acquires another 2 Key Brands!",
       "published_at": "2026-07-16T19:06:16Z",
       "duration": "PT1M38S",
-      "views": 128,
+      "views": 129,
       "likes": 6,
       "comments": 0
     },
@@ -164,7 +173,7 @@
       "title": "SpoolTenna Ultra Review: Is the Pocket EFHW Worth the Upgrade?",
       "published_at": "2026-06-04T13:00:14Z",
       "duration": "PT8M10S",
-      "views": 996,
+      "views": 999,
       "likes": 45,
       "comments": 10
     },
@@ -173,7 +182,7 @@
       "title": "Starlink Mounted Diamond X300 Antenna Roof Installation",
       "published_at": "2026-05-28T12:50:03Z",
       "duration": "PT14M57S",
-      "views": 552,
+      "views": 554,
       "likes": 42,
       "comments": 12
     },
@@ -182,7 +191,7 @@
       "title": "Hamvention 2026: Recap, Reactions, and a Brewing Showdown",
       "published_at": "2026-05-22T14:17:43Z",
       "duration": "PT51M12S",
-      "views": 324,
+      "views": 325,
       "likes": 17,
       "comments": 5
     },
@@ -209,7 +218,7 @@
       "title": "The Heil BM-17 is BACK! New Swivel Boom + Pricing | Hamvention 2026",
       "published_at": "2026-05-17T13:00:08Z",
       "duration": "PT1M51S",
-      "views": 511,
+      "views": 512,
       "likes": 22,
       "comments": 5
     },
@@ -218,7 +227,7 @@
       "title": "Icom's \"Concept Car\" - The X-026 with Ray Novak N9JA | Hamvention 2026",
       "published_at": "2026-05-17T04:02:03Z",
       "duration": "PT5M58S",
-      "views": 8794,
+      "views": 8801,
       "likes": 191,
       "comments": 55
     },
@@ -236,7 +245,7 @@
       "title": "Hands All Over the Icom ID-5200! | Hamvention 2026",
       "published_at": "2026-05-16T22:40:08Z",
       "duration": "PT5M46S",
-      "views": 10552,
+      "views": 10567,
       "likes": 189,
       "comments": 54
     },
@@ -245,7 +254,7 @@
       "title": "It's REAL and It Works! Kenwood TM-D750A First Powered-On Look | Hamvention 2026",
       "published_at": "2026-05-16T11:45:04Z",
       "duration": "PT7M43S",
-      "views": 9504,
+      "views": 9525,
       "likes": 238,
       "comments": 54
     },
@@ -299,7 +308,7 @@
       "title": "Cushcraft and Hy-Gain Live On!  MFJ Liquidates Two key Ham Brands",
       "published_at": "2026-04-14T16:16:41Z",
       "duration": "PT1M56S",
-      "views": 358,
+      "views": 359,
       "likes": 13,
       "comments": 0
     },
@@ -398,7 +407,7 @@
       "title": "Ham Radio Repeater Upgrades - Touring a Vintage Motorola Micor Repeater Site",
       "published_at": "2026-02-26T14:08:30Z",
       "duration": "PT8M41S",
-      "views": 1733,
+      "views": 1734,
       "likes": 72,
       "comments": 6
     },
@@ -416,7 +425,7 @@
       "title": "Icom IC-7300MK2: The Upgrade We’ve Been Waiting For?| Hamcation 2026",
       "published_at": "2026-02-14T23:39:30Z",
       "duration": "PT11M2S",
-      "views": 5514,
+      "views": 5515,
       "likes": 187,
       "comments": 25
     },
@@ -497,7 +506,7 @@
       "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
       "published_at": "2026-02-05T15:25:03Z",
       "duration": "PT50M46S",
-      "views": 144,
+      "views": 145,
       "likes": 5,
       "comments": 0
     },
@@ -533,7 +542,7 @@
       "title": "Kenwood TM-D750A FCC Filing Reveals All! First Look at the Specs",
       "published_at": "2026-01-29T23:52:37Z",
       "duration": "PT20M18S",
-      "views": 4334,
+      "views": 4342,
       "likes": 133,
       "comments": 63
     },
@@ -578,8 +587,8 @@
       "title": "Learning CW in 2026: Two Paths to Morse Code Success",
       "published_at": "2026-01-08T15:01:16Z",
       "duration": "PT59M3S",
-      "views": 5251,
-      "likes": 198,
+      "views": 5261,
+      "likes": 199,
       "comments": 24
     },
     {
@@ -596,7 +605,7 @@
       "title": "The DX Commander Signature 9 has my vote as being a durable verticals antenna. #amateurradio￼",
       "published_at": "2026-01-04T18:48:18Z",
       "duration": "PT1M1S",
-      "views": 2265,
+      "views": 2266,
       "likes": 68,
       "comments": 6
     },
@@ -650,7 +659,7 @@
       "title": "Best Ham Radio Backpack of 2025? #shorts",
       "published_at": "2025-12-04T19:58:57Z",
       "duration": "PT35S",
-      "views": 281,
+      "views": 284,
       "likes": 5,
       "comments": 0
     },
@@ -911,7 +920,7 @@
       "title": "FT-891 Radio Setup: Travel-Friendly Battery #shorts",
       "published_at": "2025-11-01T15:21:53Z",
       "duration": "PT1M47S",
-      "views": 1506,
+      "views": 1507,
       "likes": 20,
       "comments": 0
     },
@@ -920,7 +929,7 @@
       "title": "What's in My POTA Bag? Complete Setup for Parks on the Air",
       "published_at": "2025-10-31T21:40:56Z",
       "duration": "PT12M36S",
-      "views": 5517,
+      "views": 5529,
       "likes": 218,
       "comments": 27
     },
@@ -938,7 +947,7 @@
       "title": "CQ WorldWide Contest Weekend!  Fresh DX all weekend long!  #cqdx #cqww #contest #ftdx101mp",
       "published_at": "2025-10-25T14:52:50Z",
       "duration": "PT20S",
-      "views": 12532,
+      "views": 12553,
       "likes": 152,
       "comments": 16
     },
@@ -1001,7 +1010,7 @@
       "title": "How Frustration Built the Best Portable Logger: Sebastián KI2D & Ham2K PoLo",
       "published_at": "2025-10-09T19:05:00Z",
       "duration": "PT1H18M7S",
-      "views": 507,
+      "views": 508,
       "likes": 35,
       "comments": 9
     },
@@ -1037,7 +1046,7 @@
       "title": "Flex Radio's new 200 Dollar SmartSDR Subscription, is this the Future of Ham Radio Software?",
       "published_at": "2025-09-27T16:23:47Z",
       "duration": "PT27M15S",
-      "views": 2759,
+      "views": 2762,
       "likes": 81,
       "comments": 67
     },
@@ -1046,7 +1055,7 @@
       "title": "Setting up the ATAS-120 in the Backyard! #atas120 #yaesu #magiccarpet #ft891 #hamradio",
       "published_at": "2025-09-23T00:36:49Z",
       "duration": "PT26S",
-      "views": 2788,
+      "views": 2791,
       "likes": 33,
       "comments": 3
     },
@@ -1055,8 +1064,8 @@
       "title": "Installing the Nelson EFHW 80–10m Antenna (Rate My Throw!) #shorts",
       "published_at": "2025-09-22T19:55:49Z",
       "duration": "PT1M38S",
-      "views": 626,
-      "likes": 19,
+      "views": 627,
+      "likes": 20,
       "comments": 0
     },
     {
@@ -1109,7 +1118,7 @@
       "title": "Meshtastic Solar Node with Wio Tracker L1 - N8JRD #meshtastic #solarnode #hamradio #amateurradio",
       "published_at": "2025-09-15T22:42:20Z",
       "duration": "PT47S",
-      "views": 17909,
+      "views": 17924,
       "likes": 422,
       "comments": 36
     },
@@ -1163,7 +1172,7 @@
       "title": "Have you tried Summits on the Air? We talk POTA vs SOTA on the new episode!  #sota #pota #hamradio",
       "published_at": "2025-09-03T19:19:20Z",
       "duration": "PT1M11S",
-      "views": 974,
+      "views": 975,
       "likes": 13,
       "comments": 2
     },
@@ -1208,7 +1217,7 @@
       "title": "First Buddipole POTA Setup - Mistakes, Learning & Success",
       "published_at": "2025-08-13T16:00:57Z",
       "duration": "PT15M10S",
-      "views": 2896,
+      "views": 2900,
       "likes": 116,
       "comments": 38
     },
@@ -1262,7 +1271,7 @@
       "title": "Installing a COMET GP-3 Antenna - HOA Stealth Mode!",
       "published_at": "2025-06-24T16:01:34Z",
       "duration": "PT30M23S",
-      "views": 2625,
+      "views": 2631,
       "likes": 76,
       "comments": 30
     },
@@ -1271,7 +1280,7 @@
       "title": "Yaesu FTX1 Reality Check: Our Honest Review and Experiences + SteppIR Exit",
       "published_at": "2025-06-05T16:00:56Z",
       "duration": "PT1H14M15S",
-      "views": 10725,
+      "views": 10726,
       "likes": 260,
       "comments": 138
     },
@@ -1307,7 +1316,7 @@
       "title": "Post Dayton Radio Deliveries!  Yaesu FTX-1 Optima!  more! #hamradio #ftx1 #yaesu #ftx1optima",
       "published_at": "2025-05-21T20:48:14Z",
       "duration": "PT33S",
-      "views": 2994,
+      "views": 2995,
       "likes": 27,
       "comments": 1
     },
@@ -1334,7 +1343,7 @@
       "title": "Is the Yaesu FTX-1 a True Game Changer? Plus Dayton Hamvention 2025",
       "published_at": "2025-05-08T14:09:00Z",
       "duration": "PT1H2M8S",
-      "views": 2225,
+      "views": 2226,
       "likes": 47,
       "comments": 31
     },
