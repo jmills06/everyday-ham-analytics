@@ -57,5 +57,6 @@
 {"date": "2026-08-03", "revenue": 1.21, "cpm": 5.53, "playback_cpm": 10.25, "monetized_plays": 169}
 {"date": "2026-08-04", "revenue": 1.68, "cpm": 9.7, "playback_cpm": 18.89, "monetized_plays": 150}
 {"date": "2026-08-05", "revenue": 0.94, "cpm": 4.86, "playback_cpm": 9.56, "monetized_plays": 151}
-{"date": "2026-08-06", "revenue": 2.55, "cpm": 8.13, "playback_cpm": 19.35, "monetized_plays": 184}
+{"date": "2026-08-06", "revenue": 2.55, "cpm": 8.13, "playback_cpm": 19.25, "monetized_plays": 185}
 {"date": "2026-08-07", "revenue": 1.35, "cpm": 6.78, "playback_cpm": 13.37, "monetized_plays": 144}
+{"date": "2026-08-08", "revenue": 1.36, "cpm": 7.38, "playback_cpm": 13.38, "monetized_plays": 133}
