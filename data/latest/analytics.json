@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-08-15T04:00:42Z",
+  "fetched_at": "2026-08-15T16:00:36Z",
   "window_days": 30,
   "totals": {
-    "views": 20068,
-    "watch_hours": 1157.3,
-    "avg_view_pct": 24.3,
+    "views": 20057,
+    "watch_hours": 1156.9,
+    "avg_view_pct": 24.2,
     "subs_gained": 150,
     "subs_lost": 26,
     "subs_net": 124,
     "likes": 560,
     "comments": 67,
     "shares": 145,
-    "subscribed_views": 2322,
+    "subscribed_views": 2320,
     "not_subscribed_views": 17721
   },
   "daily": [
@@ -281,10 +281,10 @@
     },
     {
       "date": "2026-08-07",
-      "views": 419,
-      "watch_minutes": 1625,
+      "views": 408,
+      "watch_minutes": 1600,
       "avg_view_duration_sec": 274,
-      "avg_view_pct": 21.1,
+      "avg_view_pct": 20.9,
       "subs_gained": 6,
       "subs_lost": 2,
       "likes": 8,
@@ -355,15 +355,15 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6724
+      "views": 6720
     },
     {
       "source": "YT_SEARCH",
-      "views": 4086
+      "views": 4090
     },
     {
       "source": "SHORTS",
-      "views": 2702
+      "views": 2700
     },
     {
       "source": "EXT_URL",
@@ -371,7 +371,7 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 2059
+      "views": 2058
     },
     {
       "source": "NO_LINK_OTHER",
@@ -391,7 +391,7 @@
     },
     {
       "source": "PLAYLIST",
-      "views": 88
+      "views": 89
     },
     {
       "source": "END_SCREEN",
@@ -579,7 +579,7 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 268
+      "views": 270
     },
     {
       "term": "pota",
@@ -587,14 +587,14 @@
     },
     {
       "term": "icom x026",
-      "views": 233
-    },
-    {
-      "term": "amateur radio",
-      "views": 214
+      "views": 234
     },
     {
       "term": "icom x-026",
+      "views": 215
+    },
+    {
+      "term": "amateur radio",
       "views": 214
     },
     {
@@ -615,15 +615,15 @@
     },
     {
       "term": "icom 5200",
-      "views": 178
+      "views": 179
+    },
+    {
+      "term": "yaesu ftdx101mp",
+      "views": 171
     },
     {
       "term": "yaesu ftx-1 optima",
       "views": 167
-    },
-    {
-      "term": "yaesu ftdx101mp",
-      "views": 165
     },
     {
       "term": "ftx-1",
