@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-16T04:00:37Z",
+  "fetched_at": "2026-08-16T16:00:33Z",
   "window_days": 30,
   "totals": {
     "views": 19918,
@@ -11,8 +11,8 @@
     "likes": 555,
     "comments": 66,
     "shares": 142,
-    "subscribed_views": 2271,
-    "not_subscribed_views": 17640
+    "subscribed_views": 2263,
+    "not_subscribed_views": 17620
   },
   "daily": [
     {
@@ -247,8 +247,8 @@
       "date": "2026-08-05",
       "views": 409,
       "watch_minutes": 1565,
-      "avg_view_duration_sec": 264,
-      "avg_view_pct": 21.0,
+      "avg_view_duration_sec": 265,
+      "avg_view_pct": 21.2,
       "subs_gained": 5,
       "subs_lost": 0,
       "likes": 6,
@@ -272,7 +272,7 @@
       "views": 408,
       "watch_minutes": 1600,
       "avg_view_duration_sec": 274,
-      "avg_view_pct": 21.1,
+      "avg_view_pct": 20.9,
       "subs_gained": 6,
       "subs_lost": 2,
       "likes": 8,
@@ -295,8 +295,8 @@
       "date": "2026-08-09",
       "views": 470,
       "watch_minutes": 1260,
-      "avg_view_duration_sec": 196,
-      "avg_view_pct": 22.1,
+      "avg_view_duration_sec": 194,
+      "avg_view_pct": 21.9,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 11,
@@ -355,35 +355,35 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6672
+      "views": 6663
     },
     {
       "source": "YT_SEARCH",
-      "views": 4048
+      "views": 4045
     },
     {
       "source": "SHORTS",
-      "views": 2706
+      "views": 2698
     },
     {
       "source": "EXT_URL",
-      "views": 2365
+      "views": 2364
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 2069
+      "views": 2068
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1110
+      "views": 1105
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 350
+      "views": 348
     },
     {
       "source": "YT_CHANNEL",
-      "views": 308
+      "views": 309
     },
     {
       "source": "NOTIFICATION",
@@ -415,13 +415,13 @@
     },
     {
       "video_id": "JivWdc2BbIs",
-      "views": 1486,
+      "views": 1485,
       "watch_hours": 235.8,
       "likes": 94
     },
     {
       "video_id": "jEMEbgEv1zM",
-      "views": 1348,
+      "views": 1343,
       "watch_hours": 4.0,
       "likes": 3
     },
