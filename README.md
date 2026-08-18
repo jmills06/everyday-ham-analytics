@@ -66,6 +66,11 @@ unreliable at congested times. External trigger only.
   - `compute_milestones.py` ignores a one-day gain that is both many times
     the trailing average and a large share of the total, so a restated
     lifetime count cannot trigger a celebration takeover.
+  - Growth & Audience shows **engaged share** (`engaged_views / views` over
+    the days in the trailing week that carry both) under Views / Day. It is
+    the share of playback starts that became engaged views, and it only
+    exists from 2026-08-24 on: before that the two were the same number.
+    Hidden until at least 3 days of engaged data exist.
 
 ## Secrets (repo Settings > Secrets and variables > Actions)
 

@@ -47,7 +47,7 @@ body::before {
   position: relative; height: 100%;
   display: flex; flex-direction: column;
   padding: 36px 40px 28px;
-  gap: 22px;
+  gap: 18px;
 }
 
 /* ---------- Header ---------- */
@@ -165,12 +165,24 @@ body::before {
 .axis-lbl { font-size: 13px; color: var(--dim); }
 
 /* ---------- Discovery ---------- */
-.disc { display: grid; grid-template-columns: 5fr 4fr; gap: 18px; flex: 1; }
-.disc .card { padding: 22px 26px; display: flex; flex-direction: column; }
-.dlist { display: flex; flex-direction: column; gap: 0; flex: 1; justify-content: space-around; }
+/* flex:1 lets this section take the slack; min-height:0 lets it GIVE
+   slack back, so a taller stat tile squeezes the lists instead of
+   pushing the footer off a screen that cannot scroll. */
+.disc {
+  display: grid; grid-template-columns: 5fr 4fr; gap: 18px;
+  flex: 1; min-height: 0;
+}
+.disc .card {
+  padding: 22px 26px; display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.dlist {
+  display: flex; flex-direction: column; gap: 0;
+  flex: 1; min-height: 0; justify-content: space-around;
+}
 .drow {
   display: flex; align-items: baseline; gap: 14px;
-  padding: 7px 0;
+  padding: 6px 0;
   border-bottom: 1px solid var(--hairline);
 }
 .drow:last-child { border-bottom: none; }
@@ -330,6 +342,7 @@ body::before {
       <div class="lbl">Views / Day</div>
       <div class="val" id="viewsDay">--</div>
       <div class="pill" id="momentumPill"><span>Tracking</span></div>
+      <div class="sub" id="engagedShare" hidden></div>
       <div class="sub" id="viewsNote" hidden>YouTube changed view counting
         Aug 24; change shown on the old basis.</div>
     </div>
@@ -457,6 +470,39 @@ function engagedSeries(rows) {
   return out;
 }
 
+/* Share of playback starts that became engaged views: the pre-change
+   definition over the new one, across the days carrying both. This only
+   exists from the counting change onward - before it the two WERE the same
+   number, so the ratio would be 1.0 by construction and would say nothing.
+   Reads the days in the trailing week that have engaged_views, so a one-day
+   gap in the API costs precision rather than the whole figure. */
+const SHARE_DAYS = 7;       // trailing window
+const SHARE_MIN_DAYS = 3;   // below this the ratio is too jumpy to display
+
+function engagedShare(aDaily) {
+  const rows = aDaily.slice(-SHARE_DAYS).filter(r => r.engaged_views != null);
+  if (rows.length < SHARE_MIN_DAYS) return null;
+  const views = rows.reduce((s, r) => s + (r.views || 0), 0);
+  const engaged = rows.reduce((s, r) => s + r.engaged_views, 0);
+  if (!views) return null;
+  const ratio = engaged / views;
+  // Engaged views are a subset of views, so a ratio above 1 is a data fault.
+  // A blank tile beats a wrong number on a wall nobody is interrogating.
+  if (ratio <= 0 || ratio > 1.05) return null;
+  return { pct: Math.round(Math.min(1, ratio) * 100), days: rows.length };
+}
+
+/* A screen that cannot scroll would show a half-sliced row if a list
+   outgrew its card. Drop whole rows from the bottom until the rest fits -
+   the lists are ranked, so the row that goes is the least interesting one. */
+const FIT_SLACK = 8;   // a few px of overlap is invisible; a cut row is not
+
+function fitRows(list) {
+  while (list.scrollHeight - list.clientHeight > FIT_SLACK &&
+         list.children.length > 1)
+    list.removeChild(list.lastElementChild);
+}
+
 /* ---------- momentum ---------- */
 function momentum(aDaily) {
   if (aDaily.length < 8) return null;
@@ -509,6 +555,10 @@ function render(an, yt, aDaily, traffic, curves) {
   // The note explains a percentage on the old basis, so it only makes sense
   // when there is one; a suppressed comparison leaves the pill on "Tracking".
   $('viewsNote').hidden = !(mo && mo.engaged && mo.pct != null);
+  const share = engagedShare(aDaily);
+  $('engagedShare').hidden = !share;
+  if (share) $('engagedShare').textContent =
+    `${share.pct}% engaged \u00B7 ${share.days} days`;
   if (mo && mo.pct != null) {
     $('viewsDay').textContent = fmt(mo.perDay);
     const el = $('momentumPill');
@@ -598,6 +648,11 @@ function render(an, yt, aDaily, traffic, curves) {
     $('subPct').textContent = sp + '%';
     $('newPct').textContent = (100 - sp) + '%';
   }
+
+  // Trim the discovery lists last: only now does every other section have
+  // its final height, so only now is the space left for them the real one.
+  fitRows($('searchList'));
+  fitRows($('suggestList'));
 
   // Freshness
   const fetchedAt = new Date(Date.parse(an.fetched_at));
