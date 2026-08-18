@@ -330,6 +330,8 @@ body::before {
       <div class="lbl">Views / Day</div>
       <div class="val" id="viewsDay">--</div>
       <div class="pill" id="momentumPill"><span>Tracking</span></div>
+      <div class="sub" id="viewsNote" hidden>YouTube changed view counting
+        Aug 24; change shown on the old basis.</div>
     </div>
   </section>
 
@@ -429,15 +431,51 @@ async function getJSONL(path) {
   return (await r.text()).split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
 }
 
+/* ---------- view-counting change (2026-08-24) ---------- */
+/* YouTube realigned `views` to count from playback start that day, so counts
+   step up for reasons that have nothing to do with the channel. Comparisons
+   whose windows straddle the date run on engaged_views instead: the old
+   definition, collected alongside. See VIEW_METHODOLOGY_CHANGE in common.py. */
+const VIEW_CHANGE = '2026-08-24';
+
+function straddles(rows) {
+  return rows.some(r => r.date < VIEW_CHANGE) &&
+         rows.some(r => r.date >= VIEW_CHANGE);
+}
+
+/* Views on the old definition. Rows before the change need no translation;
+   after it the collector stores engaged_views alongside the larger views
+   number. Returns null if any post-change row lacks it, so callers can drop
+   a comparison rather than quietly mix two definitions. */
+function engagedSeries(rows) {
+  const out = [];
+  for (const r of rows) {
+    if (r.date < VIEW_CHANGE) out.push(r.views || 0);
+    else if (r.engaged_views != null) out.push(r.engaged_views);
+    else return null;
+  }
+  return out;
+}
+
 /* ---------- momentum ---------- */
 function momentum(aDaily) {
   if (aDaily.length < 8) return null;
   const last7 = aDaily.slice(-7), prior7 = aDaily.slice(-14, -7);
   if (!prior7.length) return null;
-  const a = last7.reduce((s, r) => s + r.views, 0) / last7.length;
-  const b = prior7.reduce((s, r) => s + r.views, 0) / prior7.length;
-  if (!b) return null;
-  return { perDay: Math.round(a), pct: Math.round((a - b) / b * 100) };
+  // Views per day is stated in today's currency; the week-over-week change
+  // is not, because the step in `views` would read as a week of growth (and
+  // the week after as a collapse). Compare on engaged views while the two
+  // windows straddle the change, or report no change at all.
+  const window = prior7.concat(last7);
+  const engaged = straddles(window);
+  const vals = engaged ? engagedSeries(window) : window.map(r => r.views || 0);
+  const perDay = Math.round(
+    last7.reduce((s, r) => s + r.views, 0) / last7.length);
+  if (!vals) return { perDay, pct: null, engaged };
+  const a = vals.slice(prior7.length).reduce((s, v) => s + v, 0) / last7.length;
+  const b = vals.slice(0, prior7.length).reduce((s, v) => s + v, 0) / prior7.length;
+  if (!b) return { perDay, pct: null, engaged };
+  return { perDay, pct: Math.round((a - b) / b * 100), engaged };
 }
 
 /* ---------- traffic share shift (points, last 7 vs prior 7) ---------- */
@@ -468,7 +506,10 @@ function render(an, yt, aDaily, traffic, curves) {
   $('avgPct').innerHTML = `${t.avg_view_pct}<small>%</small>`;
   $('netSubs').textContent = (t.subs_net > 0 ? '+' : '') + fmt(t.subs_net);
   const mo = momentum(aDaily);
-  if (mo) {
+  // The note explains a percentage on the old basis, so it only makes sense
+  // when there is one; a suppressed comparison leaves the pill on "Tracking".
+  $('viewsNote').hidden = !(mo && mo.engaged && mo.pct != null);
+  if (mo && mo.pct != null) {
     $('viewsDay').textContent = fmt(mo.perDay);
     const el = $('momentumPill');
     const up = mo.pct > 0, flat = mo.pct === 0;
@@ -476,6 +517,8 @@ function render(an, yt, aDaily, traffic, curves) {
     const arrow = flat ? '&#8226;' : up ? '&#9650;' : '&#9660;';
     el.innerHTML = `<span>${arrow} ${mo.pct > 0 ? '+' : ''}${mo.pct}%</span>` +
                    `<span class="lbl">VS PRIOR WK</span>`;
+  } else if (mo) {
+    $('viewsDay').textContent = fmt(mo.perDay);
   } else if (aDaily.length) {
     const days = Math.min(7, aDaily.length);
     const avg = aDaily.slice(-days).reduce((s, r) => s + r.views, 0) / days;
@@ -575,10 +618,18 @@ function emptyRow(msg) {
 }
 
 /* ---------- launch curve overlay ---------- */
+/* Daily series from a launch curve, on the definition the older curves on the
+   same chart were recorded under. A curve gains daily_engaged_views only once
+   it spans the counting change; curves entirely before it are already on that
+   basis, so plotting them together stays honest. */
+function curveSeries(curve) {
+  return (curve && (curve.daily_engaged_views || curve.daily_views)) || null;
+}
+
 function drawCurves(yt, curves) {
   const cv = (curves && curves.videos) || {};
   const vids = yt.videos.slice(0, CURVE_VIDEOS)
-    .filter(v => cv[v.id] && cv[v.id].daily_views.length >= 2);
+    .filter(v => (curveSeries(cv[v.id]) || []).length >= 2);
   if (vids.length < 2) {
     $('curves').innerHTML =
       '<div class="axis-lbl" style="padding:60px 0;text-align:center">' +
@@ -588,7 +639,7 @@ function drawCurves(yt, curves) {
   }
   // Cumulative series, capped at CURVE_DAYS_SHOWN
   const series = vids.map(v => {
-    const d = cv[v.id].daily_views.slice(0, CURVE_DAYS_SHOWN);
+    const d = curveSeries(cv[v.id]).slice(0, CURVE_DAYS_SHOWN);
     const cum = []; let s = 0;
     for (const x of d) { s += x; cum.push(s); }
     return { id: v.id, title: v.title, cum };

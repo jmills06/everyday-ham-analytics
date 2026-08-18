@@ -3,6 +3,10 @@
 Collects, per UTC day for the trailing window:
 - Audience: views, watch minutes, avg duration, avg percentage viewed,
   subscribers gained/lost, likes, comments, shares
+- Engaged views (`engaged_views`), the pre-2026-08-24 view definition, kept
+  alongside `views` so trailing-window comparisons that straddle YouTube's
+  counting change stay on one basis. Best effort: absent before the change,
+  and never allowed to fail a run. See VIEW_METHODOLOGY_CHANGE in common.py.
 - Revenue: estimated revenue, CPM, playback-based CPM, monetized playbacks
 - Traffic mix per day (historized, so mix *shifts* are trendable)
 - Subscribed vs non-subscribed viewing per day
@@ -14,7 +18,9 @@ Collects, per UTC day for the trailing window:
   optional extras for the media kit: each is individually guarded and degrades
   to an empty list rather than failing the run.
 - Launch curves (daily views since publish) for videos younger than
-  CURVE_DAYS, keeping launch_curves.json current after the one-time backfill
+  CURVE_DAYS, keeping launch_curves.json current after the one-time backfill.
+  Curves spanning the counting change also carry `daily_engaged_views`, the
+  series comparable to the older videos they are benchmarked against.
 
 Writes:
 - data/latest/analytics.json
@@ -42,7 +48,7 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 from common import (
-    HISTORY, LATEST, YT_CHANNEL_ID,
+    HISTORY, LATEST, VIEW_METHODOLOGY_CHANGE, YT_CHANNEL_ID,
     ensure_dirs, read_json, require_env, upsert_daily_rows,
     utc_now_iso, write_json,
 )
@@ -120,6 +126,59 @@ def resolve_video_titles(video_ids: list[str]) -> dict:
         return {}
 
 
+def engaged_total(rows: list[dict]) -> int | None:
+    """Window total on the pre-change view definition, or None if mixed.
+
+    Rows before the change need no translation; rows after it must carry
+    engaged_views. A window missing one is reported as unavailable rather
+    than summed across two definitions.
+    """
+    total = 0
+    for r in rows:
+        if r["date"] < VIEW_METHODOLOGY_CHANGE:
+            total += r.get("views", 0)
+        elif "engaged_views" in r:
+            total += r["engaged_views"]
+        else:
+            return None
+    return total
+
+
+def fetch_engaged_views(token: str, start: str, end: str) -> dict:
+    """Daily engagedViews by date: views on the pre-change definition.
+
+    Only dates from VIEW_METHODOLOGY_CHANGE onward need this column. Before
+    that date `views` already IS the engaged definition, so the start is
+    clamped and consumers fall back to `views` for older rows.
+
+    Best effort: the metric does not exist before the change, and losing it
+    must never cost us a collection run, so it is guarded like the media-kit
+    extras. Losing it only costs comparability across the change.
+    """
+    if end < VIEW_METHODOLOGY_CHANGE:
+        return {}
+    rows = optional_query(
+        token, "engaged_views",
+        startDate=max(start, VIEW_METHODOLOGY_CHANGE), endDate=end,
+        dimensions="day", metrics="engagedViews", sort="day",
+    )
+    return {r["day"]: int(r.get("engagedViews", 0)) for r in rows}
+
+
+def fetch_video_engaged_views(token: str, video_id: str,
+                              start: str, end: str) -> dict:
+    """Per-video daily engagedViews by date. Best effort; see above."""
+    if end < VIEW_METHODOLOGY_CHANGE:
+        return {}
+    rows = optional_query(
+        token, f"engaged_views {video_id}",
+        startDate=max(start, VIEW_METHODOLOGY_CHANGE), endDate=end,
+        dimensions="day", metrics="engagedViews",
+        filters=f"video=={video_id}", sort="day",
+    )
+    return {r["day"]: int(r.get("engagedViews", 0)) for r in rows}
+
+
 def update_launch_curves(token: str) -> int:
     """Refresh launch_curves.json entries for recently published videos."""
     yt = read_json(LATEST / "youtube.json")
@@ -144,13 +203,25 @@ def update_launch_curves(token: str) -> int:
             filters=f"video=={v['id']}", sort="day",
         )
         by_date = {r["day"]: int(r["views"]) for r in rows_as_dicts(resp)}
-        curves[v["id"]] = {
+        days = [(pub + timedelta(days=i)).isoformat() for i in range(age)]
+        curve = {
             "published": pub.isoformat(),
-            "daily_views": [
-                by_date.get((pub + timedelta(days=i)).isoformat(), 0)
-                for i in range(age)
-            ],
+            "daily_views": [by_date.get(d, 0) for d in days],
         }
+        # A curve that spans the counting change is half old basis, half new,
+        # and cannot be compared against the older videos it is benchmarked
+        # against. Carry the engaged series alongside it: post-change days
+        # from the API, earlier days straight from views, which was the same
+        # definition at the time.
+        engaged = fetch_video_engaged_views(
+            token, v["id"], pub.isoformat(), today.isoformat())
+        if engaged:
+            curve["daily_engaged_views"] = [
+                engaged.get(d, by_date.get(d, 0)
+                            if d < VIEW_METHODOLOGY_CHANGE else 0)
+                for d in days
+            ]
+        curves[v["id"]] = curve
         updated += 1
 
     if updated:
@@ -189,6 +260,13 @@ def main() -> None:
         "comments": int(r.get("comments", 0)),
         "shares": int(r.get("shares", 0)),
     } for r in audience]
+
+    # Pre-change rows need no engaged column (views was that definition then),
+    # so only dates the API reports one for get the field.
+    engaged_by_date = fetch_engaged_views(token, start, end)
+    for row in audience_rows:
+        if row["date"] in engaged_by_date:
+            row["engaged_views"] = engaged_by_date[row["date"]]
     upsert_daily_rows(HISTORY / "analytics_daily.jsonl", audience_rows)
 
     # ---- Daily revenue metrics ----
@@ -334,6 +412,7 @@ def main() -> None:
     a30 = [r for r in audience_rows if r["date"] >= board_start]
     r30 = [r for r in revenue_rows if r["date"] >= board_start]
     views_30 = sum(r["views"] for r in a30)
+    engaged_30 = engaged_total(a30)
     revenue_30 = round(sum(r["revenue"] for r in r30), 2)
 
     # Views-weighted average percentage viewed
@@ -346,8 +425,12 @@ def main() -> None:
     write_json(LATEST / "analytics.json", {
         "fetched_at": utc_now_iso(),
         "window_days": BOARD_DAYS,
+        "view_methodology_change": VIEW_METHODOLOGY_CHANGE,
         "totals": {
             "views": views_30,
+            # Same window on the pre-change definition; null once the window
+            # is mixed and cannot be stated on one basis.
+            "engaged_views": engaged_30,
             "watch_hours": round(sum(r["watch_minutes"] for r in a30) / 60, 1),
             "avg_view_pct": avg_view_pct,
             "subs_gained": sum(r["subs_gained"] for r in a30),
@@ -415,6 +498,10 @@ def main() -> None:
             "revenue": revenue_30,
             "monetized_plays": sum(r["monetized_plays"] for r in r30),
             "rpm": round(revenue_30 / views_30 * 1000, 2) if views_30 else 0,
+            # RPM on the pre-change view definition, so the counting change
+            # does not read as a drop in what ads pay.
+            "rpm_engaged": (round(revenue_30 / engaged_30 * 1000, 2)
+                            if engaged_30 else None),
             "daily_avg": round(revenue_30 / BOARD_DAYS, 2),
             "projected_monthly": round(run_rate * 30.44, 2),
             "projection_basis_days": len(basis),

@@ -157,6 +157,9 @@ body::before {
   font-variant-numeric: tabular-nums;
 }
 .stat .pill { margin-top: 12px; font-size: 19px; padding: 4px 13px; }
+.stat .sub {
+  margin-top: 10px; font-size: 13px; line-height: 1.35; color: var(--dim);
+}
 
 /* ---------- Latest video / episode ---------- */
 .latest { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
@@ -325,6 +328,8 @@ body::before {
       <div class="lbl">Channel Views</div>
       <div class="val" id="views">--</div>
       <div class="pill" id="viewsPill"><span>Tracking</span></div>
+      <div class="sub" id="viewsNote" hidden>YouTube changed view counting
+        Aug 24; trend shown on the old basis.</div>
     </div>
     <div class="card stat">
       <div class="lbl">Videos</div>
@@ -420,6 +425,32 @@ async function getJSONL(path) {
   return text.split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
 }
 
+/* ---------- view-counting change (2026-08-24) ---------- */
+/* YouTube realigned `views` to count from playback start that day, so counts
+   step up for reasons that have nothing to do with the channel. Comparisons
+   whose windows straddle the date run on engaged_views instead: the old
+   definition, collected alongside. See VIEW_METHODOLOGY_CHANGE in common.py. */
+const VIEW_CHANGE = '2026-08-24';
+
+function straddles(rows) {
+  return rows.some(r => r.date < VIEW_CHANGE) &&
+         rows.some(r => r.date >= VIEW_CHANGE);
+}
+
+/* Views on the old definition. Rows before the change need no translation;
+   after it the collector stores engaged_views alongside the larger views
+   number. Returns null if any post-change row lacks it, so callers can drop
+   a comparison rather than quietly mix two definitions. */
+function engagedSeries(rows) {
+  const out = [];
+  for (const r of rows) {
+    if (r.date < VIEW_CHANGE) out.push(r.views || 0);
+    else if (r.engaged_views != null) out.push(r.engaged_views);
+    else return null;
+  }
+  return out;
+}
+
 /* ---------- trend math ---------- */
 function trendDelta(rows, field) {
   // Compare newest row against the closest row >= TREND_DAYS older,
@@ -493,10 +524,19 @@ function ageDays(iso) {
   return Math.max(0, Math.floor((Date.now() - Date.parse(iso)) / DAY_MS));
 }
 
+/* Daily series from a launch curve, on the definition the older benchmark
+   curves were recorded under. A curve gains daily_engaged_views only once it
+   spans the counting change; curves entirely before it are already on that
+   basis, so the two are directly comparable. */
+function curveSeries(curve) {
+  return (curve && (curve.daily_engaged_views || curve.daily_views)) || null;
+}
+
 // Cumulative views through age d from a launch curve (needs d+1 complete days)
 function curveCumAt(curve, d) {
-  if (!curve || !curve.daily_views || curve.daily_views.length < d + 1) return null;
-  return curve.daily_views.slice(0, d + 1).reduce((a, b) => a + b, 0);
+  const series = curveSeries(curve);
+  if (!series || series.length < d + 1) return null;
+  return series.slice(0, d + 1).reduce((a, b) => a + b, 0);
 }
 
 // Episode snapshot map: id -> { age(days at snapshot) -> cumulative plays }
@@ -565,11 +605,23 @@ function reconstructSubs(current, aDaily, maxDays = 30) {
   return series;
 }
 
-function sumLast(aDaily, field, days) {
+/* Views added over the trailing window, on a single counting basis. */
+function sumViews(aDaily, days) {
   const rows = aDaily.slice(-days);
   if (rows.length < 2) return null;
-  return { delta: rows.reduce((a, r) => a + (r[field] || 0), 0),
-           days: rows.length };
+  const engaged = straddles(rows);
+  const vals = engaged ? engagedSeries(rows) : rows.map(r => r.views || 0);
+  if (!vals) return null;
+  return { delta: vals.reduce((a, b) => a + b, 0), days: rows.length,
+           engaged };
+}
+
+/* Lifetime-total fallback, used only when analytics history is missing. A
+   window containing the counting change carries YouTube's step, not ours. */
+function lifetimeViewsTrend(ytHist) {
+  const t = trendDelta(ytHist, 'views');
+  if (!t) return null;
+  return straddles(ytHist.slice(-(t.days + 1))) ? null : t;
 }
 
 function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
@@ -592,8 +644,9 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
   $('views').textContent = fmt(yt.channel.views);
   $('videos').textContent = fmt(yt.channel.videos);
   $('downloads').textContent = fmt(bz.total_downloads);
-  setPill('viewsPill',
-    sumLast(aDaily, 'views', TREND_DAYS) || trendDelta(ytHist, 'views'));
+  const viewTrend = sumViews(aDaily, TREND_DAYS) || lifetimeViewsTrend(ytHist);
+  setPill('viewsPill', viewTrend);
+  $('viewsNote').hidden = !(viewTrend && viewTrend.engaged);
   setPill('videosPill', trendDelta(ytHist, 'videos'));
   setPill('downloadsPill', trendDelta(bzHist, 'total_downloads'));
 
@@ -604,8 +657,16 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
     const prior = yt.videos.slice(1, 1 + AVG_WINDOW);
     const d = ageDays(v.published_at);
     const cv = (curves && curves.videos) || {};
-    const cmp = agedComparison(
-      d, v.views,
+    // Past the counting change, v.views (Data API) is on the new basis while
+    // the benchmark curves are on the old one. Compare curve to curve
+    // instead, one day back, so both sides use the same definition; if the
+    // curve is too short, fall through to the lifetime comparison, where both
+    // sides come from the Data API and match each other again.
+    const engaged = !!(cv[v.id] && cv[v.id].daily_engaged_views);
+    const cmpAge = engaged ? Math.max(0, d - 1) : d;
+    const mine = engaged ? curveCumAt(cv[v.id], cmpAge) : v.views;
+    const cmp = mine == null ? null : agedComparison(
+      cmpAge, mine,
       dd => curveCumAt(cv[v.id], dd),
       (id, dd) => curveCumAt(cv[id], dd),
       prior.map(x => x.id));
