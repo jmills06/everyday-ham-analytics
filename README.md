@@ -47,6 +47,25 @@ unreliable at congested times. External trigger only.
   stale data beats no data. Boards flag staleness via `fetched_at`.
 - `content/*.json` preserves the `topics` array across runs; tags added by
   hand or by a future Claude classification pass survive collection.
+- **YouTube changed view counting on 2026-08-24** (`VIEW_METHODOLOGY_CHANGE`
+  in `collectors/common.py`): `views` now counts from the moment playback
+  starts, with no minimum watch time, so every view number steps up on that
+  date for reasons unrelated to the channel. History is not restated, so the
+  break is permanent. The old definition survives in the Analytics API as
+  `engagedViews`, collected as `engaged_views` on `analytics_daily.jsonl` rows
+  and as `daily_engaged_views` on launch curves that span the date. Rows
+  before the change carry no engaged field because `views` *was* that
+  definition then, so consumers read `engaged_views ?? views`.
+  - Boards run any comparison whose window straddles the date on the engaged
+    basis, and suppress it rather than mix definitions if that is missing.
+    The explanatory notes on the boards hide themselves once the trailing
+    window clears the date.
+  - The public Data API only offers the new basis, so lifetime channel views
+    and per-video totals (`youtube.json`, `youtube_daily.jsonl`,
+    `videos_daily.jsonl`) are new-basis from 2026-08-24 onward.
+  - `compute_milestones.py` ignores a one-day gain that is both many times
+    the trailing average and a large share of the total, so a restated
+    lifetime count cannot trigger a celebration takeover.
 
 ## Secrets (repo Settings > Secrets and variables > Actions)
 

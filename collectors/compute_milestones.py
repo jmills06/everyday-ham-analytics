@@ -11,6 +11,8 @@ every screen agrees and cache clears change nothing.
 Run AFTER the other collectors (it reads their history files).
 """
 
+import sys
+
 from common import DATA, HISTORY, read_json, read_jsonl, utc_now_iso, utc_today, write_json
 
 MILESTONES = [
@@ -29,9 +31,34 @@ TRACKED = [
 DISPLAY_HOURS = 72          # boards show events newer than this
 RETENTION_EVENTS = 50       # keep a rolling log of past celebrations
 
+# A metric can be restated overnight rather than earned: YouTube realigned
+# view counting on 2026-08-24 (see VIEW_METHODOLOGY_CHANGE), and a restated
+# lifetime total can clear several thresholds at once, putting a 72-hour
+# celebration on every screen for a milestone nobody reached. A gain has to
+# fail BOTH tests to count as a restatement - a genuinely viral day can beat
+# the trailing average many times over, but it is never a large slice of a
+# lifetime total.
+JUMP_FACTOR = 5             # times the trailing average daily gain
+JUMP_SHARE = 0.10           # and this share of the metric's own size
+JUMP_BASIS_DAYS = 14        # trailing days averaged
+
 
 def crossed(old: int, new: int) -> list[int]:
     return [m for m in MILESTONES if old < m <= new]
+
+
+def looks_restated(prior: list[dict], field: str, old: int, new: int) -> bool:
+    """True if a one-day gain looks like a definition change, not growth."""
+    delta = new - old
+    if delta <= 0 or old <= 0:
+        return False
+    rows = [r for r in prior if r.get(field) is not None][-(JUMP_BASIS_DAYS + 1):]
+    if len(rows) < 3:
+        return False                  # too little history to judge
+    gains = [int(rows[i][field]) - int(rows[i - 1][field])
+             for i in range(1, len(rows))]
+    avg = sum(gains) / len(gains)
+    return avg > 0 and delta > JUMP_FACTOR * avg and delta > JUMP_SHARE * old
 
 
 def main() -> None:
@@ -50,8 +77,16 @@ def main() -> None:
             continue                      # need two days of history to compare
         old_val = int(prior[-1].get(field, 0))
         new_val = int(today_row.get(field, 0))
+        restated = looks_restated(prior, field, old_val, new_val)
         for m in crossed(old_val, new_val):
             if (label, m) in already:
+                continue
+            if restated:
+                # Suppressed for good: tomorrow's comparison starts above the
+                # threshold, so it is never re-detected.
+                print(f"WARN: {label} jumped {old_val:,} -> {new_val:,} in one "
+                      f"day; skipping the {m:,} milestone as a counting change",
+                      file=sys.stderr)
                 continue
             new_events.append({
                 "metric": label,

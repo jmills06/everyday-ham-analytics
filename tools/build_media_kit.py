@@ -138,8 +138,20 @@ AGE_LABEL = {"age13-17": "13-17", "age18-24": "18-24", "age25-34": "25-34",
 age_rows = [(AGE_LABEL.get(k, k), v) for k, v in sorted(_ages.items()) if v >= 1]
 age_max = max([v for _, v in age_rows], default=1)
 
+# ---------- view-counting change ----------
+# YouTube realigned `views` to count from playback start on this date (see
+# VIEW_METHODOLOGY_CHANGE in the collectors). A 30-day window spanning it
+# mixes two definitions and reads high; a sponsor-facing number says so.
+VIEW_METHODOLOGY_CHANGE = "2026-08-24"
+
 # ---------- charts ----------
 daily = analytics["daily"]
+_dates = [d["date"] for d in daily]
+view_change_note = (
+    " &middot; window spans YouTube's Aug 24, 2026 view-counting change"
+    if any(d >= VIEW_METHODOLOGY_CHANGE for d in _dates)
+    and any(d < VIEW_METHODOLOGY_CHANGE for d in _dates) else ""
+)
 maxv = max(d["views"] for d in daily)
 bars, bw, gap, chart_h = "", 8.5, 3.4, 44
 for i, d in enumerate(daily):
@@ -283,7 +295,7 @@ html += f"""
   <div class="kicker" style="margin-top:6px;">By the Numbers</div>
   <div class="grid g3" style="margin-top:6px;">
     <div class="card accent"><div class="stat-label">YouTube Subscribers</div><div class="stat-num">{fmt(ch['subscribers'])}</div><div class="stat-sub">{fmt(ch['videos'])} videos published &middot; {fmt(ch['views'])} lifetime channel views</div></div>
-    <div class="card accent"><div class="stat-label">Views / 30 Days</div><div class="stat-num">{fmt(tot['views'])}</div><div class="stat-sub">{fmt(round(tot['watch_hours']))} watch hours &middot; +{tot['subs_net']} net subscribers in the same window</div></div>
+    <div class="card accent"><div class="stat-label">Views / 30 Days</div><div class="stat-num">{fmt(tot['views'])}</div><div class="stat-sub">{fmt(round(tot['watch_hours']))} watch hours &middot; +{tot['subs_net']} net subscribers in the same window{view_change_note}</div></div>
     <div class="card accent"><div class="stat-label">Podcast Downloads / 30 Days</div><div class="stat-num">{fmt(POD_DL_30D)}</div><div class="stat-sub">{fmt(buzz['total_downloads'])} lifetime across {buzz['episode_count']} episodes</div></div>
   </div>
 

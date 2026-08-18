@@ -24,6 +24,14 @@ CONTENT = DATA / "content"
 # ---- Everyday Ham constants (not secrets) ----
 YT_CHANNEL_ID = "UCK3ct4iOm2HqnOiv8sgMHxA"
 
+# On this UTC date YouTube realigned `views` across all formats to count from
+# the moment playback starts, with no minimum watch time. Counts step up for
+# reasons that have nothing to do with the channel, so any window spanning the
+# date is not self-comparable. The old definition survives in the Analytics
+# API as `engagedViews` (collected as `engaged_views`); the public Data API
+# offers new-basis viewCount only.
+VIEW_METHODOLOGY_CHANGE = "2026-08-24"
+
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

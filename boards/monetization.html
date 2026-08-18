@@ -300,6 +300,8 @@ body::before {
       <div class="lbl">RPM</div>
       <div class="val" id="rpm">--</div>
       <div class="pill" id="rpmPill"><span>Tracking</span></div>
+      <div class="sub" id="rpmNote" hidden>YouTube counts more views since
+        Aug 24, so RPM steps down without ads paying less.</div>
     </div>
     <div class="card stat">
       <div class="lbl">Best Day</div>
@@ -437,6 +439,29 @@ function drawRevTrace(daily, best) {
     </svg>`;
 }
 
+/* ---------- view-counting change (2026-08-24) ---------- */
+/* YouTube realigned `views` to count from playback start that day. Revenue
+   did not change, so RPM (revenue per 1,000 views) steps down on definition
+   alone. The headline stays on the new basis, matching what Studio reports
+   from here on; comparisons run on engaged_views, the old definition. */
+const VIEW_CHANGE = '2026-08-24';
+
+function straddles(rows) {
+  return rows.some(r => r.date < VIEW_CHANGE) &&
+         rows.some(r => r.date >= VIEW_CHANGE);
+}
+
+/* Views on the old definition, or null if a post-change row is missing it. */
+function engagedSeries(rows) {
+  const out = [];
+  for (const r of rows) {
+    if (r.date < VIEW_CHANGE) out.push(r.views || 0);
+    else if (r.engaged_views != null) out.push(r.engaged_views);
+    else return null;
+  }
+  return out;
+}
+
 /* ---------- render ---------- */
 function render(mon, an, yt) {
   const t = mon.totals;
@@ -447,17 +472,26 @@ function render(mon, an, yt) {
   setWowPill('revPill', wow(daily, r => r.revenue), 'VS PRIOR WK');
   $('rpm').textContent = usd(t.rpm);
 
-  // RPM week-over-week: weekly revenue over weekly views
+  // RPM week-over-week: weekly revenue over weekly views. Across the counting
+  // change the denominator steps up on its own, so compare on engaged views;
+  // with none to compare on, show no change rather than a phantom collapse.
   const aDaily = an.daily || [];
   let rpmWow = null;
   if (daily.length >= 14 && aDaily.length >= 14) {
+    const window = aDaily.slice(-14);
+    const vals = straddles(window) ? engagedSeries(window)
+                                   : window.map(r => r.views || 0);
     const rv = w => daily.slice(w[0], w[1]).reduce((s, r) => s + r.revenue, 0);
-    const vw = w => aDaily.slice(w[0], w[1]).reduce((s, r) => s + r.views, 0);
-    const rpmA = vw([-7, undefined]) ? rv([-7, undefined]) / vw([-7, undefined]) * 1000 : null;
-    const rpmB = vw([-14, -7]) ? rv([-14, -7]) / vw([-14, -7]) * 1000 : null;
-    if (rpmA != null && rpmB) rpmWow = Math.round((rpmA - rpmB) / rpmB * 100);
+    const vw = (a, b) => (vals || []).slice(a, b).reduce((s, v) => s + v, 0);
+    if (vals) {
+      const rpmA = vw(7, 14) ? rv([-7, undefined]) / vw(7, 14) * 1000 : null;
+      const rpmB = vw(0, 7) ? rv([-14, -7]) / vw(0, 7) * 1000 : null;
+      if (rpmA != null && rpmB) rpmWow = Math.round((rpmA - rpmB) / rpmB * 100);
+    }
   }
   setWowPill('rpmPill', rpmWow, 'VS PRIOR WK');
+  // The 30-day RPM above spans the change for a month after it.
+  $('rpmNote').hidden = !straddles(aDaily);
 
   if (mon.best_day) {
     $('bestVal').textContent = usd(mon.best_day.revenue);
