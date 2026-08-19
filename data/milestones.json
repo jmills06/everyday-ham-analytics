@@ -1,5 +1,12 @@
 {
-  "updated_at": "2026-08-19T04:00:38Z",
+  "updated_at": "2026-08-19T16:00:47Z",
   "display_hours": 72,
-  "events": []
+  "events": [
+    {
+      "metric": "Channel Views",
+      "value": 250000,
+      "reached_at": "2026-08-19T16:00:47Z",
+      "actual_value": 250078
+    }
+  ]
 }
