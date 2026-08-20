@@ -10,7 +10,7 @@ collectors/            Python collectors (run by the workflow)
 data/latest/           Board-facing snapshots (overwritten each run)
 data/history/          Append-only daily history (JSONL, upserted by date)
 data/content/          Video/episode metadata with a "topics" field
-data/milestones.json   Server-computed milestone events (72h takeover state)
+data/milestones.json   Server-computed milestone events (36h takeover state)
 boards/                Display boards (added in phase 2)
 ```
 
