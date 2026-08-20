@@ -28,12 +28,12 @@ TRACKED = [
     ("buzzsprout_daily.jsonl", "total_downloads", "All-Time Downloads"),
 ]
 
-DISPLAY_HOURS = 72          # boards show events newer than this
+DISPLAY_HOURS = 36          # boards show events newer than this
 RETENTION_EVENTS = 50       # keep a rolling log of past celebrations
 
 # A metric can be restated overnight rather than earned: YouTube realigned
 # view counting on 2026-08-24 (see VIEW_METHODOLOGY_CHANGE), and a restated
-# lifetime total can clear several thresholds at once, putting a 72-hour
+# lifetime total can clear several thresholds at once, putting a 36-hour
 # celebration on every screen for a milestone nobody reached. A gain has to
 # fail BOTH tests to count as a restatement - a genuinely viral day can beat
 # the trailing average many times over, but it is never a large slice of a

@@ -762,7 +762,7 @@ function ago(iso) {
 function checkMilestones(m) {
   const mile = $('mile');
   if (!m || !m.events || !m.events.length) { mile.classList.remove('active'); return; }
-  const windowMs = (m.display_hours || 72) * 3600000;
+  const windowMs = (m.display_hours || 36) * 3600000;
   const active = m.events.filter(e =>
     Date.now() - Date.parse(e.reached_at) < windowMs);
   if (!active.length) {
