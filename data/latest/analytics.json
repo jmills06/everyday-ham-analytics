@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-23T04:00:36Z",
+  "fetched_at": "2026-08-23T16:00:35Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -422,16 +422,16 @@
       "likes": 3
     },
     {
-      "video_id": "bi5ceZWvSfg",
-      "views": 1196,
-      "watch_hours": 2.6,
-      "likes": 12
-    },
-    {
       "video_id": "CskulzdxXyc",
       "views": 1161,
       "watch_hours": 6.8,
       "likes": 21
+    },
+    {
+      "video_id": "bi5ceZWvSfg",
+      "views": 1157,
+      "watch_hours": 2.5,
+      "likes": 12
     },
     {
       "video_id": "ZYk8IUSeEHI",
