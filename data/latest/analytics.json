@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-24T04:00:41Z",
+  "fetched_at": "2026-08-24T16:00:50Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 407,
     "comments": 38,
     "shares": 128,
-    "subscribed_views": 1826,
-    "not_subscribed_views": 15244
+    "subscribed_views": 1824,
+    "not_subscribed_views": 15236
   },
   "daily": [
     {
@@ -333,8 +333,8 @@
       "date": "2026-08-20",
       "views": 431,
       "watch_minutes": 1217,
-      "avg_view_duration_sec": 188,
-      "avg_view_pct": 22.7,
+      "avg_view_duration_sec": 189,
+      "avg_view_pct": 22.8,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 10,
@@ -357,15 +357,15 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 4204
+      "views": 4203
     },
     {
       "source": "YT_SEARCH",
-      "views": 3892
+      "views": 3886
     },
     {
       "source": "SHORTS",
-      "views": 3746
+      "views": 3744
     },
     {
       "source": "EXT_URL",
@@ -373,11 +373,11 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1521
+      "views": 1523
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 890
+      "views": 887
     },
     {
       "source": "YT_OTHER_PAGE",
@@ -447,11 +447,11 @@
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 63
+      "views": 61
     },
     {
       "term": "meshtastic",
-      "views": 46
+      "views": 48
     },
     {
       "term": "xiegu g7250",
@@ -471,7 +471,7 @@
     },
     {
       "term": "icom id-5200",
-      "views": 27
+      "views": 26
     },
     {
       "term": "wio tracker l1 pro",
@@ -545,7 +545,7 @@
     },
     {
       "term": "meshtastic",
-      "views": 826
+      "views": 828
     },
     {
       "term": "wio tracker l1 pro",
@@ -585,7 +585,7 @@
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 257
+      "views": 255
     },
     {
       "term": "pota",
@@ -593,7 +593,7 @@
     },
     {
       "term": "icom x026",
-      "views": 237
+      "views": 240
     },
     {
       "term": "icom x-026",
@@ -629,7 +629,7 @@
     },
     {
       "term": "icom id-5200",
-      "views": 161
+      "views": 160
     },
     {
       "term": "yaesu ftx-1 optima",
@@ -746,7 +746,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 128671
+      "views": 128518
     },
     {
       "country": "GB",
@@ -754,15 +754,15 @@
     },
     {
       "country": "CA",
-      "views": 4885
+      "views": 4874
     },
     {
       "country": "DE",
-      "views": 4665
+      "views": 4654
     },
     {
       "country": "JP",
-      "views": 3751
+      "views": 3733
     },
     {
       "country": "AU",
@@ -894,7 +894,7 @@
     {
       "age_group": "age35-44",
       "gender": "male",
-      "viewer_pct": 15.5
+      "viewer_pct": 15.4
     },
     {
       "age_group": "age45-54",
