@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-08-25T04:00:43Z",
+  "fetched_at": "2026-08-25T16:00:42Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 16967,
-    "engaged_views": 16967,
-    "watch_hours": 940.7,
+    "views": 16958,
+    "engaged_views": 16958,
+    "watch_hours": 940.5,
     "avg_view_pct": 22.8,
     "subs_gained": 120,
     "subs_lost": 21,
@@ -14,7 +14,7 @@
     "comments": 37,
     "shares": 127,
     "subscribed_views": 1788,
-    "not_subscribed_views": 15165
+    "not_subscribed_views": 15162
   },
   "daily": [
     {
@@ -187,8 +187,8 @@
     },
     {
       "date": "2026-08-09",
-      "views": 465,
-      "watch_minutes": 1256,
+      "views": 470,
+      "watch_minutes": 1260,
       "avg_view_duration_sec": 196,
       "avg_view_pct": 22.1,
       "subs_gained": 3,
@@ -247,7 +247,7 @@
     },
     {
       "date": "2026-08-14",
-      "views": 335,
+      "views": 330,
       "watch_minutes": 1103,
       "avg_view_duration_sec": 222,
       "avg_view_pct": 25.7,
@@ -259,8 +259,8 @@
     },
     {
       "date": "2026-08-15",
-      "views": 492,
-      "watch_minutes": 1678,
+      "views": 487,
+      "watch_minutes": 1652,
       "avg_view_duration_sec": 223,
       "avg_view_pct": 19.8,
       "subs_gained": 2,
@@ -271,8 +271,8 @@
     },
     {
       "date": "2026-08-16",
-      "views": 623,
-      "watch_minutes": 2567,
+      "views": 619,
+      "watch_minutes": 2576,
       "avg_view_duration_sec": 274,
       "avg_view_pct": 23.5,
       "subs_gained": 8,
@@ -333,8 +333,8 @@
       "date": "2026-08-21",
       "views": 439,
       "watch_minutes": 1440,
-      "avg_view_duration_sec": 215,
-      "avg_view_pct": 23.9,
+      "avg_view_duration_sec": 216,
+      "avg_view_pct": 24.0,
       "subs_gained": 2,
       "subs_lost": 0,
       "likes": 4,
@@ -361,7 +361,7 @@
     },
     {
       "source": "YT_SEARCH",
-      "views": 3880
+      "views": 3877
     },
     {
       "source": "SHORTS",
@@ -429,14 +429,14 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1176,
+      "views": 1174,
       "watch_hours": 7.0,
       "likes": 21
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1121,
-      "watch_hours": 50.2,
+      "views": 1119,
+      "watch_hours": 50.3,
       "likes": 9
     }
   ],
@@ -447,7 +447,7 @@
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 70
+      "views": 68
     },
     {
       "term": "meshtastic",
@@ -585,7 +585,7 @@
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 264
+      "views": 262
     },
     {
       "term": "pota",

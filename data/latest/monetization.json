@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-08-25T04:00:43Z",
+  "fetched_at": "2026-08-25T16:00:42Z",
   "window_days": 30,
   "totals": {
     "revenue": 58.93,
     "monetized_plays": 5561,
-    "rpm": 3.47,
-    "rpm_engaged": 3.47,
+    "rpm": 3.48,
+    "rpm_engaged": 3.48,
     "daily_avg": 1.96,
     "projected_monthly": 70.19,
     "projection_basis_days": 7
@@ -262,17 +262,17 @@
     {
       "video_id": "cGQR0gc20OY",
       "revenue": 7.46,
-      "views": 724
+      "views": 723
     },
     {
       "video_id": "ZYk8IUSeEHI",
       "revenue": 4.66,
-      "views": 1121
+      "views": 1119
     },
     {
       "video_id": "LIM0hjXez1Q",
       "revenue": 2.44,
-      "views": 978
+      "views": 976
     },
     {
       "video_id": "nYPSyZzZcDY",
