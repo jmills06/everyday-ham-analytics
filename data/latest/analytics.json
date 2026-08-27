@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-08-27T04:00:38Z",
+  "fetched_at": "2026-08-27T16:00:59Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 16874,
-    "engaged_views": 16822,
-    "watch_hours": 934.3,
+    "views": 16860,
+    "engaged_views": 16808,
+    "watch_hours": 934.0,
     "avg_view_pct": 22.8,
     "subs_gained": 121,
     "subs_lost": 21,
@@ -223,7 +223,7 @@
     },
     {
       "date": "2026-08-14",
-      "views": 335,
+      "views": 330,
       "watch_minutes": 1103,
       "avg_view_duration_sec": 222,
       "avg_view_pct": 25.7,
@@ -235,10 +235,10 @@
     },
     {
       "date": "2026-08-15",
-      "views": 492,
-      "watch_minutes": 1678,
-      "avg_view_duration_sec": 223,
-      "avg_view_pct": 19.8,
+      "views": 487,
+      "watch_minutes": 1652,
+      "avg_view_duration_sec": 221,
+      "avg_view_pct": 19.6,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 17,
@@ -247,10 +247,10 @@
     },
     {
       "date": "2026-08-16",
-      "views": 623,
-      "watch_minutes": 2567,
+      "views": 619,
+      "watch_minutes": 2576,
       "avg_view_duration_sec": 274,
-      "avg_view_pct": 23.5,
+      "avg_view_pct": 23.6,
       "subs_gained": 8,
       "subs_lost": 0,
       "likes": 15,
@@ -412,8 +412,8 @@
   "top_videos": [
     {
       "video_id": "JivWdc2BbIs",
-      "views": 1593,
-      "watch_hours": 248.7,
+      "views": 1592,
+      "watch_hours": 248.3,
       "likes": 96
     },
     {
