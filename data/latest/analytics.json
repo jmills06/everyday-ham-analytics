@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-29T04:00:43Z",
+  "fetched_at": "2026-08-29T16:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 30,
     "shares": 106,
     "subscribed_views": 1457,
-    "not_subscribed_views": 14475
+    "not_subscribed_views": 14470
   },
   "daily": [
     {
@@ -360,15 +360,15 @@
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 3838
+      "views": 3837
     },
     {
       "source": "SHORTS",
-      "views": 3599
+      "views": 3597
     },
     {
       "source": "SUBSCRIBER",
-      "views": 3537
+      "views": 3536
     },
     {
       "source": "EXT_URL",
@@ -380,7 +380,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 767
+      "views": 766
     },
     {
       "source": "YT_OTHER_PAGE",
@@ -477,12 +477,12 @@
       "views": 25
     },
     {
-      "term": "icom id-5200",
+      "term": "pota",
       "views": 24
     },
     {
-      "term": "pota",
-      "views": 24
+      "term": "icom id-5200",
+      "views": 23
     }
   ],
   "suggested_by": [
@@ -635,7 +635,7 @@
       "views": 158
     },
     {
-      "term": "xiegu g7250",
+      "term": "ftx-1",
       "views": 153
     }
   ],
