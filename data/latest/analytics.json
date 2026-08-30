@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-30T04:00:39Z",
+  "fetched_at": "2026-08-30T16:00:40Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 34,
     "shares": 108,
     "subscribed_views": 1734,
-    "not_subscribed_views": 15000
+    "not_subscribed_views": 14996
   },
   "daily": [
     {
@@ -361,11 +361,11 @@
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 4041
+      "views": 4038
     },
     {
       "source": "SUBSCRIBER",
-      "views": 4026
+      "views": 4025
     },
     {
       "source": "SHORTS",
@@ -415,7 +415,7 @@
   "top_videos": [
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1361,
+      "views": 1360,
       "watch_hours": 57.4,
       "likes": 15
     },
@@ -447,7 +447,7 @@
   "search_terms": [
     {
       "term": "kenwood tm-d750a",
-      "views": 115
+      "views": 114
     },
     {
       "term": "ham radio",
@@ -577,7 +577,7 @@
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 315
+      "views": 314
     },
     {
       "term": "hamvention",
