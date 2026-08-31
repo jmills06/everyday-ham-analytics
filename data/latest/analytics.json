@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-08-31T04:00:40Z",
+  "fetched_at": "2026-08-31T16:00:48Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 17430,
-    "engaged_views": 15898,
-    "watch_hours": 768.3,
+    "views": 17407,
+    "engaged_views": 15888,
+    "watch_hours": 768.1,
     "avg_view_pct": 22.5,
     "subs_gained": 123,
     "subs_lost": 22,
@@ -14,7 +14,7 @@
     "comments": 35,
     "shares": 99,
     "subscribed_views": 1784,
-    "not_subscribed_views": 15619
+    "not_subscribed_views": 15612
   },
   "daily": [
     {
@@ -283,10 +283,10 @@
     },
     {
       "date": "2026-08-23",
-      "views": 494,
-      "watch_minutes": 1492,
-      "avg_view_duration_sec": 223,
-      "avg_view_pct": 26.0,
+      "views": 484,
+      "watch_minutes": 1484,
+      "avg_view_duration_sec": 225,
+      "avg_view_pct": 26.4,
       "subs_gained": 4,
       "subs_lost": 1,
       "likes": 9,
@@ -295,9 +295,9 @@
     },
     {
       "date": "2026-08-24",
-      "views": 422,
-      "watch_minutes": 1354,
-      "avg_view_duration_sec": 219,
+      "views": 414,
+      "watch_minutes": 1353,
+      "avg_view_duration_sec": 220,
       "avg_view_pct": 21.4,
       "subs_gained": 2,
       "subs_lost": 0,
@@ -308,8 +308,8 @@
     },
     {
       "date": "2026-08-25",
-      "views": 367,
-      "watch_minutes": 1358,
+      "views": 362,
+      "watch_minutes": 1357,
       "avg_view_duration_sec": 260,
       "avg_view_pct": 26.3,
       "subs_gained": 3,
@@ -362,11 +362,11 @@
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 4492
+      "views": 4489
     },
     {
       "source": "SUBSCRIBER",
-      "views": 4198
+      "views": 4195
     },
     {
       "source": "SHORTS",
@@ -378,19 +378,19 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1452
+      "views": 1453
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 793
+      "views": 791
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 401
+      "views": 400
     },
     {
       "source": "YT_CHANNEL",
-      "views": 363
+      "views": 364
     },
     {
       "source": "NOTIFICATION",
@@ -416,7 +416,7 @@
   "top_videos": [
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1415,
+      "views": 1414,
       "watch_hours": 57.5,
       "likes": 18
     },
@@ -440,7 +440,7 @@
     },
     {
       "video_id": "IEwwzO5Uf6Q",
-      "views": 1023,
+      "views": 1022,
       "watch_hours": 33.6,
       "likes": 11
     }
@@ -463,12 +463,12 @@
       "views": 59
     },
     {
-      "term": "icom x-026",
-      "views": 42
+      "term": "tokyo ham fair 2026",
+      "views": 44
     },
     {
-      "term": "tokyo ham fair 2026",
-      "views": 40
+      "term": "icom x-026",
+      "views": 42
     },
     {
       "term": "pota",
@@ -496,7 +496,7 @@
     {
       "video_id": "655zd0ku-R0",
       "title": "Icom ID-5200 vs Kenwood TM-D750: $999 Price, Ship Windows & the TNC Catch",
-      "views": 26
+      "views": 27
     },
     {
       "video_id": "vGctp8_aAmE",
@@ -626,7 +626,7 @@
     },
     {
       "term": "yaesu ftdx101mp",
-      "views": 174
+      "views": 176
     },
     {
       "term": "id-5200",
