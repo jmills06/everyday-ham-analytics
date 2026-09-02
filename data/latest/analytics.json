@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-02T04:00:39Z",
+  "fetched_at": "2026-09-02T16:00:45Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 372,
     "comments": 42,
     "shares": 95,
-    "subscribed_views": 2346,
-    "not_subscribed_views": 18933
+    "subscribed_views": 2349,
+    "not_subscribed_views": 18941
   },
   "daily": [
     {
@@ -364,11 +364,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6263
+      "views": 6272
     },
     {
       "source": "YT_SEARCH",
-      "views": 5854
+      "views": 5856
     },
     {
       "source": "SHORTS",
@@ -380,11 +380,11 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1610
+      "views": 1611
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 848
+      "views": 847
     },
     {
       "source": "YT_CHANNEL",
@@ -458,7 +458,7 @@
     },
     {
       "term": "icom x026",
-      "views": 114
+      "views": 115
     },
     {
       "term": "ic-7110",
@@ -576,7 +576,7 @@
     },
     {
       "term": "icom x026",
-      "views": 344
+      "views": 345
     },
     {
       "term": "atas 120a antenna",

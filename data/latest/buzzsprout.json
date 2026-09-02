@@ -1,15 +1,23 @@
 {
-  "fetched_at": "2026-09-02T04:00:40Z",
-  "total_downloads": 23149,
-  "episode_count": 26,
+  "fetched_at": "2026-09-02T16:00:46Z",
+  "total_downloads": 23157,
+  "episode_count": 27,
   "episodes": [
+    {
+      "id": 19742432,
+      "title": "Ep. 21 – A 210-Foot APRS Digipeater Covering 93 Miles from a Historic Detroit Building",
+      "episode_number": 21,
+      "published_at": "2026-09-03T08:00:00.000-04:00",
+      "duration_sec": 4562,
+      "plays": 1
+    },
     {
       "id": 19606536,
       "title": "Ep. 20 – Decoding QSL, From Paper Cards to Digital Confirmation",
       "episode_number": 20,
       "published_at": "2026-08-06T08:00:00.000-04:00",
       "duration_sec": 3740,
-      "plays": 926
+      "plays": 930
     },
     {
       "id": 19466291,
@@ -33,7 +41,7 @@
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
       "duration_sec": 3097,
-      "plays": 1193
+      "plays": 1194
     },
     {
       "id": 19138519,
@@ -49,7 +57,7 @@
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
       "duration_sec": 3285,
-      "plays": 985
+      "plays": 986
     },
     {
       "id": 18903785,
@@ -73,7 +81,7 @@
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
       "duration_sec": 3045,
-      "plays": 1276
+      "plays": 1277
     },
     {
       "id": 18470399,
