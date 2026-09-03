@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-09-02T16:00:46Z",
-  "total_downloads": 23157,
+  "fetched_at": "2026-09-03T04:00:44Z",
+  "total_downloads": 23174,
   "episode_count": 27,
   "episodes": [
     {
       "id": 19742432,
-      "title": "Ep. 21 – A 210-Foot APRS Digipeater Covering 93 Miles from a Historic Detroit Building",
+      "title": "Ep. 21 – DIY Digipeater at Detroit's Historic Masonic Temple",
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 1
+      "plays": 3
     },
     {
       "id": 19606536,
@@ -17,7 +17,7 @@
       "episode_number": 20,
       "published_at": "2026-08-06T08:00:00.000-04:00",
       "duration_sec": 3740,
-      "plays": 930
+      "plays": 935
     },
     {
       "id": 19466291,
@@ -33,7 +33,7 @@
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
       "duration_sec": 3475,
-      "plays": 1399
+      "plays": 1401
     },
     {
       "id": 19219333,
@@ -41,7 +41,7 @@
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
       "duration_sec": 3097,
-      "plays": 1194
+      "plays": 1195
     },
     {
       "id": 19138519,
@@ -49,7 +49,7 @@
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
       "duration_sec": 3587,
-      "plays": 1037
+      "plays": 1039
     },
     {
       "id": 18980854,
@@ -105,7 +105,7 @@
       "episode_number": 11,
       "published_at": "2025-11-06T14:00:00.000-05:00",
       "duration_sec": 2788,
-      "plays": 924
+      "plays": 926
     },
     {
       "id": 17980624,
@@ -153,7 +153,7 @@
       "episode_number": null,
       "published_at": "2025-07-28T12:00:00.000-04:00",
       "duration_sec": 5032,
-      "plays": 668
+      "plays": 669
     },
     {
       "id": 17441669,
@@ -169,7 +169,7 @@
       "episode_number": 6,
       "published_at": "2025-06-05T12:00:00.000-04:00",
       "duration_sec": 4057,
-      "plays": 656
+      "plays": 657
     },
     {
       "id": 17198150,
@@ -217,7 +217,7 @@
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
       "duration_sec": 3518,
-      "plays": 605
+      "plays": 606
     }
   ]
 }
