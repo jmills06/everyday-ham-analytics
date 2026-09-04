@@ -849,10 +849,10 @@
 {"date": "2026-08-30", "source": "EXT_URL", "views": 73}
 {"date": "2026-08-30", "source": "HASHTAGS", "views": 1}
 {"date": "2026-08-30", "source": "NOTIFICATION", "views": 25}
-{"date": "2026-08-30", "source": "NO_LINK_OTHER", "views": 54}
+{"date": "2026-08-30", "source": "NO_LINK_OTHER", "views": 51}
 {"date": "2026-08-30", "source": "PLAYLIST", "views": 8}
 {"date": "2026-08-30", "source": "RELATED_VIDEO", "views": 102}
-{"date": "2026-08-30", "source": "SHORTS", "views": 30}
+{"date": "2026-08-30", "source": "SHORTS", "views": 29}
 {"date": "2026-08-30", "source": "SUBSCRIBER", "views": 755}
 {"date": "2026-08-30", "source": "YT_CHANNEL", "views": 20}
 {"date": "2026-08-30", "source": "YT_OTHER_PAGE", "views": 15}
@@ -868,3 +868,14 @@
 {"date": "2026-08-31", "source": "YT_CHANNEL", "views": 16}
 {"date": "2026-08-31", "source": "YT_OTHER_PAGE", "views": 15}
 {"date": "2026-08-31", "source": "YT_SEARCH", "views": 472}
+{"date": "2026-09-01", "source": "END_SCREEN", "views": 1}
+{"date": "2026-09-01", "source": "EXT_URL", "views": 44}
+{"date": "2026-09-01", "source": "NOTIFICATION", "views": 3}
+{"date": "2026-09-01", "source": "NO_LINK_OTHER", "views": 15}
+{"date": "2026-09-01", "source": "PLAYLIST", "views": 8}
+{"date": "2026-09-01", "source": "RELATED_VIDEO", "views": 48}
+{"date": "2026-09-01", "source": "SHORTS", "views": 31}
+{"date": "2026-09-01", "source": "SUBSCRIBER", "views": 383}
+{"date": "2026-09-01", "source": "YT_CHANNEL", "views": 23}
+{"date": "2026-09-01", "source": "YT_OTHER_PAGE", "views": 12}
+{"date": "2026-09-01", "source": "YT_SEARCH", "views": 362}
