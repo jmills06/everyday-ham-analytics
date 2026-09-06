@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-06T04:00:36Z",
+  "fetched_at": "2026-09-06T16:00:46Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 366,
     "comments": 42,
     "shares": 90,
-    "subscribed_views": 2848,
-    "not_subscribed_views": 19929
+    "subscribed_views": 2849,
+    "not_subscribed_views": 19906
   },
   "daily": [
     {
@@ -368,27 +368,27 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7547
+      "views": 7541
     },
     {
       "source": "YT_SEARCH",
-      "views": 6759
+      "views": 6753
     },
     {
       "source": "SHORTS",
-      "views": 2992
+      "views": 2990
     },
     {
       "source": "EXT_URL",
-      "views": 1898
+      "views": 1896
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1617
+      "views": 1613
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 847
+      "views": 843
     },
     {
       "source": "YT_CHANNEL",
@@ -396,7 +396,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 405
+      "views": 407
     },
     {
       "source": "NOTIFICATION",
@@ -454,7 +454,7 @@
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 222
+      "views": 223
     },
     {
       "term": "kenwood tm-d750a",
@@ -470,7 +470,7 @@
     },
     {
       "term": "icom x026",
-      "views": 115
+      "views": 113
     },
     {
       "term": "tokyo ham fair 2026",
@@ -482,11 +482,11 @@
     },
     {
       "term": "ic7110",
-      "views": 79
+      "views": 77
     },
     {
       "term": "icom x-026",
-      "views": 66
+      "views": 59
     },
     {
       "term": "meshtastic",
@@ -580,7 +580,7 @@
     },
     {
       "term": "icom x026",
-      "views": 346
+      "views": 344
     },
     {
       "term": "atas 120a antenna",
@@ -600,7 +600,7 @@
     },
     {
       "term": "icom x-026",
-      "views": 280
+      "views": 273
     },
     {
       "term": "pota",
@@ -612,7 +612,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 222
+      "views": 223
     },
     {
       "term": "amateur radio",
@@ -640,7 +640,7 @@
     },
     {
       "term": "yaesu ftdx101mp",
-      "views": 176
+      "views": 177
     },
     {
       "term": "ic-7110",
