@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-08T04:00:44Z",
+  "fetched_at": "2026-09-08T16:00:45Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 42,
     "shares": 89,
     "subscribed_views": 2884,
-    "not_subscribed_views": 19389
+    "not_subscribed_views": 19376
   },
   "daily": [
     {
@@ -370,27 +370,27 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7732
+      "views": 7730
     },
     {
       "source": "YT_SEARCH",
-      "views": 7045
+      "views": 7043
     },
     {
       "source": "SHORTS",
-      "views": 2050
+      "views": 2049
     },
     {
       "source": "EXT_URL",
-      "views": 1898
+      "views": 1897
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1625
+      "views": 1621
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 859
+      "views": 856
     },
     {
       "source": "YT_CHANNEL",
@@ -424,39 +424,39 @@
   "top_videos": [
     {
       "video_id": "FGMP-r6Kwq0",
-      "views": 3535,
-      "watch_hours": 123.6,
-      "likes": 38
+      "views": 4092,
+      "watch_hours": 140.2,
+      "likes": 45
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1537,
-      "watch_hours": 51.3,
+      "views": 1601,
+      "watch_hours": 52.2,
       "likes": 16
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1413,
-      "watch_hours": 7.4,
-      "likes": 20
+      "views": 1475,
+      "watch_hours": 7.7,
+      "likes": 22
     },
     {
       "video_id": "bi5ceZWvSfg",
-      "views": 1262,
+      "views": 1263,
       "watch_hours": 2.9,
       "likes": 15
     },
     {
       "video_id": "IEwwzO5Uf6Q",
-      "views": 1083,
-      "watch_hours": 29.6,
+      "views": 1103,
+      "watch_hours": 29.8,
       "likes": 7
     }
   ],
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 231
+      "views": 232
     },
     {
       "term": "kenwood tm-d750a",
@@ -472,7 +472,7 @@
     },
     {
       "term": "icom x026",
-      "views": 115
+      "views": 113
     },
     {
       "term": "tokyo ham fair 2026",
@@ -484,15 +484,15 @@
     },
     {
       "term": "ic7110",
-      "views": 80
-    },
-    {
-      "term": "icom x-026",
-      "views": 66
+      "views": 78
     },
     {
       "term": "meshtastic",
       "views": 62
+    },
+    {
+      "term": "icom x-026",
+      "views": 59
     }
   ],
   "suggested_by": [
@@ -582,7 +582,7 @@
     },
     {
       "term": "icom x026",
-      "views": 346
+      "views": 344
     },
     {
       "term": "atas 120a antenna",
@@ -602,7 +602,7 @@
     },
     {
       "term": "icom x-026",
-      "views": 280
+      "views": 273
     },
     {
       "term": "pota",
@@ -614,7 +614,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 231
+      "views": 232
     },
     {
       "term": "amateur radio",
@@ -646,7 +646,7 @@
     },
     {
       "term": "yaesu ftdx101mp",
-      "views": 179
+      "views": 180
     }
   ],
   "geography_30": [
