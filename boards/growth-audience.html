@@ -144,17 +144,35 @@ body::before {
 .subs-foot .gold { color: var(--gold); font-weight: 600; }
 
 /* ---------- Launch curves ---------- */
+/* Two panes, one per format, each on its own y-scale: a Short's curve
+   plotted against long-form would either flatten it to the axis or crush
+   the long-form curves, and the two formats are not judged against each
+   other anyway. Each pane prints its own peak so the scales are readable. */
 .curves-card { padding: 24px 30px 16px; }
-.curves-card svg { display: block; width: 100%; height: 210px; }
+.curve-split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 30px; }
+.curve-pane { min-width: 0; }
+.pane-hd {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 10px; margin-bottom: 6px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 18px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--cream);
+}
+.pane-hd .peak {
+  font-size: 15px; letter-spacing: 0.08em; color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+.curves-card svg { display: block; width: 100%; height: 168px; }
 .curve { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
 .curve.prior  { stroke: rgba(243, 237, 225, 0.28); }
 .curve.latest { stroke: var(--signal); stroke-width: 4; }
 .curve-legend {
-  display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 12px;
+  display: flex; flex-direction: column; gap: 4px; margin-top: 10px;
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600; font-size: 17px; letter-spacing: 0.06em;
+  font-weight: 600; font-size: 16px; letter-spacing: 0.06em;
   color: var(--dim); text-transform: uppercase;
 }
+.curve-legend span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .curve-legend .sw {
   display: inline-block; width: 22px; height: 3px;
   border-radius: 2px; vertical-align: middle; margin-right: 8px;
@@ -355,15 +373,28 @@ body::before {
     <div class="subs-foot">
       <span>Best day <span class="gold" id="bestDay">--</span></span>
       <span>Daily avg <b id="dailyAvg">--</b></span>
-      <span>Videos launched <b id="launched">--</b></span>
+      <span>Launched <b id="launched">--</b></span>
     </div>
   </section>
 
   <section class="card curves-card">
     <div class="eyebrow"><span class="kicker">Launch Curves</span>
-      <span class="note">cumulative views &middot; first 14 days</span></div>
-    <div id="curves"></div>
-    <div class="curve-legend" id="curveLegend"></div>
+      <span class="note">cumulative views &middot; first 14 days &middot;
+        each format on its own scale</span></div>
+    <div class="curve-split">
+      <div class="curve-pane">
+        <div class="pane-hd"><span>Long-form</span>
+          <span class="peak" id="curvePeak"></span></div>
+        <div id="curves"></div>
+        <div class="curve-legend" id="curveLegend"></div>
+      </div>
+      <div class="curve-pane">
+        <div class="pane-hd"><span>Shorts</span>
+          <span class="peak" id="curvePeakShorts"></span></div>
+        <div id="curvesShorts"></div>
+        <div class="curve-legend" id="curveLegendShorts"></div>
+      </div>
+    </div>
   </section>
 
   <section class="disc">
@@ -413,7 +444,7 @@ const DATA_BASE       = '../data';
 const REFRESH_MINUTES = 15;
 const STALE_HOURS     = 26;
 const CURVE_DAYS_SHOWN = 14;
-const CURVE_VIDEOS     = 5;
+const CURVE_VIDEOS     = 4;   // per format pane
 const SEARCH_ROWS      = 8;
 const SUGGEST_ROWS     = 5;
 const TRAFFIC_ROWS     = 5;
@@ -594,8 +625,11 @@ function render(an, yt, aDaily, traffic, curves) {
     const avgNet = nets.reduce((a, b) => a + b, 0) / rows.length;
     $('dailyAvg').textContent = (avgNet >= 0 ? '+' : '') + avgNet.toFixed(1) + '/day';
     const cutoff = rows[0].date;
+    const since = yt.videos.filter(v => v.published_at.slice(0, 10) >= cutoff);
+    const newShorts = since.filter(isShort).length;
     $('launched').textContent =
-      yt.videos.filter(v => v.published_at.slice(0, 10) >= cutoff).length;
+      `${since.length - newShorts} video${since.length - newShorts === 1 ? '' : 's'}` +
+      ` \u00B7 ${newShorts} short${newShorts === 1 ? '' : 's'}`;
   }
 
   // Launch curves
@@ -672,6 +706,33 @@ function emptyRow(msg) {
   return `<div class="drow"><div class="txt" style="color:var(--dim)">${msg}</div></div>`;
 }
 
+/* ---------- format split: long-form vs Shorts ---------- */
+/* The Data API exposes no format flag, so the split comes from upload length,
+   which is what decides Shorts eligibility. The collector now writes is_short
+   on every video; the length rule stays here as the fallback so a board served
+   alongside an older snapshot still splits correctly. Ceiling was 60s until
+   YouTube raised it to 3 minutes on 2024-10-15. Mirrors is_short in common.py. */
+const SHORTS_3MIN_DATE = '2024-10-15';
+
+function durationSeconds(iso) {
+  const m = /^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:([\d.]+)S)?)?$/
+    .exec(String(iso || '').trim());
+  if (!m) return null;
+  const [d, h, mi, sec] = m.slice(1).map(x => parseFloat(x || 0));
+  return Math.round(d * 86400 + h * 3600 + mi * 60 + sec);
+}
+
+function isShort(v) {
+  if (!v) return false;
+  if (v.is_short != null) return !!v.is_short;
+  const secs = v.duration_seconds != null ? v.duration_seconds
+                                          : durationSeconds(v.duration);
+  if (!secs) return false;   // 0 / P0D is a live stream, not a Short
+  const limit = String(v.published_at || '').slice(0, 10) >= SHORTS_3MIN_DATE
+    ? 180 : 60;
+  return secs <= limit;
+}
+
 /* ---------- launch curve overlay ---------- */
 /* Daily series from a launch curve, on the definition the older curves on the
    same chart were recorded under. A curve gains daily_engaged_views only once
@@ -683,13 +744,24 @@ function curveSeries(curve) {
 
 function drawCurves(yt, curves) {
   const cv = (curves && curves.videos) || {};
-  const vids = yt.videos.slice(0, CURVE_VIDEOS)
+  drawCurvePane(yt.videos.filter(v => !isShort(v)), cv,
+                'curves', 'curveLegend', 'curvePeak', 'videos');
+  drawCurvePane(yt.videos.filter(v =>  isShort(v)), cv,
+                'curvesShorts', 'curveLegendShorts', 'curvePeakShorts', 'Shorts');
+}
+
+/* One pane: the most recent CURVE_VIDEOS uploads of a single format that have
+   curve data, scaled to that format's own peak. Scales are deliberately not
+   shared between panes, so each pane labels its peak. */
+function drawCurvePane(vidsOfFormat, cv, curvesId, legendId, peakId, noun) {
+  const vids = vidsOfFormat.slice(0, CURVE_VIDEOS)
     .filter(v => (curveSeries(cv[v.id]) || []).length >= 2);
   if (vids.length < 2) {
-    $('curves').innerHTML =
-      '<div class="axis-lbl" style="padding:60px 0;text-align:center">' +
-      'Launch curves appear once at least two recent videos have curve data.</div>';
-    $('curveLegend').innerHTML = '';
+    $(curvesId).innerHTML =
+      '<div class="axis-lbl" style="padding:56px 0;text-align:center">' +
+      `Appears once at least two recent ${esc(noun)} have curve data.</div>`;
+    $(legendId).innerHTML = '';
+    $(peakId).textContent = '';
     return;
   }
   // Cumulative series, capped at CURVE_DAYS_SHOWN
@@ -700,7 +772,7 @@ function drawCurves(yt, curves) {
     return { id: v.id, title: v.title, cum };
   });
   const maxY = Math.max(...series.map(s => s.cum[s.cum.length - 1]), 1);
-  const W = 940, H = 200, PADX = 8, PADY = 12;
+  const W = 460, H = 168, PADX = 6, PADY = 10;
   const x = i => PADX + i / (CURVE_DAYS_SHOWN - 1) * (W - PADX * 2);
   const y = v => H - PADY - v / maxY * (H - PADY * 2);
   const lines = series.map((s, idx) => {
@@ -709,16 +781,17 @@ function drawCurves(yt, curves) {
     return `<polyline class="curve ${latest ? 'latest' : 'prior'}" points="${pts}"/>`;
   });
   // Draw latest last so it sits on top
-  $('curves').innerHTML = `
+  $(curvesId).innerHTML = `
     <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
       ${lines.slice(1).reverse().join('')}${lines[0]}
     </svg>
     <div style="display:flex;justify-content:space-between" class="axis-lbl">
       <span>Day 0</span><span>Day ${CURVE_DAYS_SHOWN - 1}</span>
     </div>`;
-  $('curveLegend').innerHTML = series.map((s, idx) => {
+  $(peakId).textContent = 'peak ' + fmt(maxY);
+  $(legendId).innerHTML = series.map((s, idx) => {
     const latest = idx === 0;
-    const label = s.title.length > 34 ? s.title.slice(0, 33) + '\u2026' : s.title;
+    const label = s.title.length > 30 ? s.title.slice(0, 29) + '\u2026' : s.title;
     return `<span class="${latest ? 'latest' : ''}"><span class="sw"></span>${esc(label)}</span>`;
   }).join('');
 }

@@ -200,6 +200,15 @@ body::before {
   font-weight: 600; font-size: 17px; color: var(--dim);
   letter-spacing: 0.08em;
 }
+/* Shorts earn on a different RPM entirely, so a mixed list is only readable
+   if the format is on the row. */
+.erow .fmt {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 13px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--dim); vertical-align: 2px;
+  border: 1px solid var(--hairline); border-radius: 999px;
+  padding: 1px 8px; margin-left: 8px; white-space: nowrap;
+}
 
 /* ---------- Projection ---------- */
 .predict {
@@ -538,16 +547,18 @@ function render(mon, an, yt) {
       YouTube provides this once volume grows.</div>`;
   }
 
-  // Top earners with titles joined from youtube.json
-  const titleById = {};
-  (yt.videos || []).forEach(v => { titleById[v.id] = v.title; });
+  // Top earners with titles and format joined from youtube.json
+  const videoById = {};
+  (yt.videos || []).forEach(v => { videoById[v.id] = v; });
   $('earnList').innerHTML = (mon.top_earning_videos || []).slice(0, EARN_ROWS)
     .map(e => {
-      const raw = titleById[e.video_id] || e.video_id;
+      const v = videoById[e.video_id];
+      const raw = (v && v.title) || e.video_id;
       const title = String(raw).split('|')[0].trim();
+      const tag = isShort(v) ? '<span class="fmt">Short</span>' : '';
       const per = e.views ? usd(e.revenue / e.views * 1000) + '/1K VIEWS' : '';
       return `<div class="erow">
-        <div class="title">${esc(title)}</div>
+        <div class="title">${esc(title)}${tag}</div>
         <div class="row2"><span class="rev">${usd(e.revenue)}</span>
         <span class="per">${fmt(e.views)} VIEWS &middot; ${per}</span></div></div>`;
     }).join('');
@@ -571,6 +582,33 @@ function render(mon, an, yt) {
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/* ---------- format split: long-form vs Shorts ---------- */
+/* The Data API exposes no format flag, so the split comes from upload length,
+   which is what decides Shorts eligibility. The collector now writes is_short
+   on every video; the length rule stays here as the fallback so a board served
+   alongside an older snapshot still splits correctly. Ceiling was 60s until
+   YouTube raised it to 3 minutes on 2024-10-15. Mirrors is_short in common.py. */
+const SHORTS_3MIN_DATE = '2024-10-15';
+
+function durationSeconds(iso) {
+  const m = /^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:([\d.]+)S)?)?$/
+    .exec(String(iso || '').trim());
+  if (!m) return null;
+  const [d, h, mi, sec] = m.slice(1).map(x => parseFloat(x || 0));
+  return Math.round(d * 86400 + h * 3600 + mi * 60 + sec);
+}
+
+function isShort(v) {
+  if (!v) return false;
+  if (v.is_short != null) return !!v.is_short;
+  const secs = v.duration_seconds != null ? v.duration_seconds
+                                          : durationSeconds(v.duration);
+  if (!secs) return false;   // 0 / P0D is a live stream, not a Short
+  const limit = String(v.published_at || '').slice(0, 10) >= SHORTS_3MIN_DATE
+    ? 180 : 60;
+  return secs <= limit;
 }
 
 /* ---------- milestone takeover ---------- */

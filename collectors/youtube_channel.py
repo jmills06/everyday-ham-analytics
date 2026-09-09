@@ -5,6 +5,9 @@ Collects:
 - Per-video statistics for every upload (views, likes, comments)
 - Video metadata (title, publish date, duration) into content/videos.json,
   preserving any hand-tagged or AI-tagged "topics" field on re-runs
+- Format split: `duration_seconds` and `is_short` on every video, so boards
+  can judge Shorts against Shorts instead of against long-form uploads
+  (see is_short in common.py for the rule)
 
 Writes:
 - data/latest/youtube.json            (board-facing snapshot)
@@ -21,8 +24,8 @@ import requests
 
 from common import (
     CONTENT, HISTORY, LATEST, YT_CHANNEL_ID,
-    ensure_dirs, read_json, require_env, upsert_daily_row,
-    upsert_daily_rows, utc_now_iso, utc_today, write_json,
+    ensure_dirs, is_short, parse_duration_seconds, read_json, require_env,
+    upsert_daily_row, upsert_daily_rows, utc_now_iso, utc_today, write_json,
 )
 
 API = "https://www.googleapis.com/youtube/v3"
@@ -73,11 +76,15 @@ def fetch_videos(video_ids: list[str]) -> list[dict]:
         for v in data.get("items", []):
             st = v.get("statistics", {})
             sn = v.get("snippet", {})
+            duration = v.get("contentDetails", {}).get("duration", "")
+            published_at = sn.get("publishedAt", "")
             videos.append({
                 "id": v["id"],
                 "title": sn.get("title", ""),
-                "published_at": sn.get("publishedAt", ""),
-                "duration": v.get("contentDetails", {}).get("duration", ""),
+                "published_at": published_at,
+                "duration": duration,
+                "duration_seconds": parse_duration_seconds(duration),
+                "is_short": is_short(duration, published_at),
                 "views": int(st.get("viewCount", 0)),
                 "likes": int(st.get("likeCount", 0)),
                 "comments": int(st.get("commentCount", 0)),
@@ -98,6 +105,8 @@ def merge_content_metadata(videos: list[dict]) -> None:
             "title": v["title"],
             "published_at": v["published_at"],
             "duration": v["duration"],
+            "duration_seconds": v["duration_seconds"],
+            "is_short": v["is_short"],
             "topics": prev.get("topics", []),
         })
     write_json(path, merged)
@@ -130,8 +139,10 @@ def main() -> None:
     )
 
     merge_content_metadata(videos)
+    shorts = sum(1 for v in videos if v["is_short"])
     print(f"youtube_channel OK: {channel['subscribers']} subs, "
-          f"{channel['views']} views, {len(videos)} videos")
+          f"{channel['views']} views, {len(videos)} uploads "
+          f"({len(videos) - shorts} long-form, {shorts} shorts)")
 
 
 if __name__ == "__main__":

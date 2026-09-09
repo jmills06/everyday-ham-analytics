@@ -11,6 +11,7 @@ Conventions:
 
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -31,6 +32,43 @@ YT_CHANNEL_ID = "UCK3ct4iOm2HqnOiv8sgMHxA"
 # API as `engagedViews` (collected as `engaged_views`); the public Data API
 # offers new-basis viewCount only.
 VIEW_METHODOLOGY_CHANGE = "2026-08-24"
+
+# Shorts vs long-form. YouTube exposes no format flag on the Data API, so the
+# split is derived from upload length, which is what decides Shorts eligibility
+# in the first place. The ceiling was 60s until 2024-10-15, when YouTube raised
+# it to 3 minutes, so the test is date-aware: a 2-minute upload from 2023 is a
+# regular video, the same length in 2025 is a Short. Boards carry the identical
+# rule so they can classify launch curves, which store no duration.
+SHORTS_MAX_SECONDS = 180
+SHORTS_MAX_SECONDS_LEGACY = 60
+SHORTS_3MIN_DATE = "2024-10-15"
+
+_ISO_DURATION = re.compile(
+    r"^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?$"
+)
+
+
+def parse_duration_seconds(iso: str) -> int | None:
+    """Seconds from an ISO-8601 duration (`PT1M54S`). None if unparseable.
+
+    Live streams and unprocessed uploads report `P0D`, which parses to 0 and
+    is deliberately not treated as a Short.
+    """
+    m = _ISO_DURATION.match((iso or "").strip())
+    if not m:
+        return None
+    days, hours, mins, secs = (float(x or 0) for x in m.groups())
+    return int(days * 86400 + hours * 3600 + mins * 60 + secs)
+
+
+def is_short(duration: str, published_at: str) -> bool:
+    """True when an upload is a Short by length-at-publication."""
+    secs = parse_duration_seconds(duration)
+    if not secs:
+        return False
+    limit = (SHORTS_MAX_SECONDS if (published_at or "")[:10] >= SHORTS_3MIN_DATE
+             else SHORTS_MAX_SECONDS_LEGACY)
+    return secs <= limit
 
 
 def utc_now_iso() -> str:
