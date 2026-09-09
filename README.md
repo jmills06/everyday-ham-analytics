@@ -47,6 +47,30 @@ unreliable at congested times. External trigger only.
   stale data beats no data. Boards flag staleness via `fetched_at`.
 - `content/*.json` preserves the `topics` array across runs; tags added by
   hand or by a future Claude classification pass survive collection.
+- **Shorts are split from long-form** everywhere performance is judged.
+  YouTube exposes no format flag on the Data API, so the split comes from
+  upload length, which is what decides Shorts eligibility: `is_short` in
+  `collectors/common.py` (60s ceiling before 2024-10-15, 180s from then on).
+  `youtube_channel.py` writes `duration_seconds` and `is_short` onto every
+  video in `latest/youtube.json` and `content/videos.json`; each board
+  carries the identical rule as a fallback, so it still splits correctly
+  against an older snapshot and can classify launch curves, which store no
+  duration.
+  - Channel Pulse shows Latest Video and Latest Short as separate cards.
+    Each is benchmarked only against recent uploads of its own format
+    (`VS AVG VIDEO` / `VS AVG SHORT` on the pill), because a Short's view
+    count says nothing next to a long-form upload's.
+  - Growth & Audience draws launch curves in two panes, long-form and
+    Shorts, **each on its own y-scale**. A shared scale would either flatten
+    the Shorts to the axis or crush the long-form curves, so each pane
+    prints its own peak.
+  - Monetization tags Shorts in Top Earning Videos: they earn at a very
+    different RPM, so the $/1K figure is only readable with the format on
+    the row.
+  - Channel-level analytics (watch hours, avg percentage viewed, traffic
+    mix) still mix both formats. Splitting those needs the Analytics API
+    `creatorContentType` dimension, which is not collected yet.
+
 - **YouTube changed view counting on 2026-08-24** (`VIEW_METHODOLOGY_CHANGE`
   in `collectors/common.py`): `views` now counts from the moment playback
   starts, with no minimum watch time, so every view number steps up on that

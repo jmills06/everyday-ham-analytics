@@ -161,35 +161,46 @@ body::before {
   margin-top: 10px; font-size: 13px; line-height: 1.35; color: var(--dim);
 }
 
-/* ---------- Latest video / episode ---------- */
-.latest { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.item { padding: 26px 28px; display: flex; flex-direction: column; }
+/* ---------- Latest video / short / episode ---------- */
+/* Three narrow cards, so the number and its comparison pill stack instead of
+   sitting side by side. Shorts get their own card because a Short's view
+   count says nothing next to a long-form upload's. */
+.latest { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+.item { padding: 22px 22px; display: flex; flex-direction: column; min-width: 0; }
+/* Pills carry a nowrap benchmark label ("VS AVG SHORT - DAY 2"); in a narrow
+   grid track that label would widen the column and push the row off the
+   board, so here the two halves are allowed to stack instead. */
+.item .pill {
+  flex-wrap: wrap; row-gap: 2px; max-width: 100%;
+  font-size: 22px; padding: 6px 14px;
+}
+.item .pill .lbl { font-size: 15px; }
 .item .src {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600; font-size: 19px;
-  text-transform: uppercase; letter-spacing: 0.18em;
+  font-weight: 600; font-size: 18px;
+  text-transform: uppercase; letter-spacing: 0.16em;
   color: var(--signal);
 }
 .item .title {
   margin-top: 10px;
-  font-size: 21px; font-weight: 600; line-height: 1.35;
-  min-height: 58px;
-  display: -webkit-box; -webkit-line-clamp: 2;
+  font-size: 18px; font-weight: 600; line-height: 1.35;
+  min-height: 74px;
+  display: -webkit-box; -webkit-line-clamp: 3;
   -webkit-box-orient: vertical; overflow: hidden;
 }
-.item .meta { margin-top: 4px; font-size: 15px; color: var(--dim); }
+.item .meta { margin-top: 4px; font-size: 14px; color: var(--dim); line-height: 1.35; }
 .item .row {
-  margin-top: auto; padding-top: 16px;
-  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-top: auto; padding-top: 14px;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 9px;
 }
 .item .big {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700; font-size: 62px; line-height: 1;
+  font-weight: 700; font-size: 52px; line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 .item .big small {
-  font-size: 20px; font-weight: 600; color: var(--dim);
-  letter-spacing: 0.12em; margin-left: 8px;
+  font-size: 17px; font-weight: 600; color: var(--dim);
+  letter-spacing: 0.12em; margin-left: 7px;
 }
 .item .big.record { color: var(--gold); }
 
@@ -335,6 +346,7 @@ body::before {
       <div class="lbl">Videos</div>
       <div class="val" id="videos">--</div>
       <div class="pill" id="videosPill"><span>Tracking</span></div>
+      <div class="sub" id="videosSplit"></div>
     </div>
     <div class="card stat">
       <div class="lbl">All-Time Downloads</div>
@@ -351,6 +363,15 @@ body::before {
       <div class="row">
         <div class="big" id="vidViews">--<small>VIEWS</small></div>
         <div class="pill" id="vidPill"><span>--</span></div>
+      </div>
+    </div>
+    <div class="card item">
+      <div class="src">Latest Short</div>
+      <div class="title" id="shortTitle">--</div>
+      <div class="meta" id="shortMeta">--</div>
+      <div class="row">
+        <div class="big" id="shortViews">--<small>VIEWS</small></div>
+        <div class="pill" id="shortPill"><span>--</span></div>
       </div>
     </div>
     <div class="card item">
@@ -449,6 +470,33 @@ function engagedSeries(rows) {
     else return null;
   }
   return out;
+}
+
+/* ---------- format split: long-form vs Shorts ---------- */
+/* The Data API exposes no format flag, so the split comes from upload length,
+   which is what decides Shorts eligibility. The collector now writes is_short
+   on every video; the length rule stays here as the fallback so a board served
+   alongside an older snapshot still splits correctly. Ceiling was 60s until
+   YouTube raised it to 3 minutes on 2024-10-15. Mirrors is_short in common.py. */
+const SHORTS_3MIN_DATE = '2024-10-15';
+
+function durationSeconds(iso) {
+  const m = /^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:([\d.]+)S)?)?$/
+    .exec(String(iso || '').trim());
+  if (!m) return null;
+  const [d, h, mi, sec] = m.slice(1).map(x => parseFloat(x || 0));
+  return Math.round(d * 86400 + h * 3600 + mi * 60 + sec);
+}
+
+function isShort(v) {
+  if (!v) return false;
+  if (v.is_short != null) return !!v.is_short;
+  const secs = v.duration_seconds != null ? v.duration_seconds
+                                          : durationSeconds(v.duration);
+  if (!secs) return false;   // 0 / P0D is a live stream, not a Short
+  const limit = String(v.published_at || '').slice(0, 10) >= SHORTS_3MIN_DATE
+    ? 180 : 60;
+  return secs <= limit;
 }
 
 /* ---------- trend math ---------- */
@@ -556,7 +604,7 @@ function buildEpAges(epSnaps, episodes) {
 
 /* Decide the comparison phase and values.
    Returns { pct, label, lockedVal } or null for lifetime fallback. */
-function agedComparison(d, latestVal, latestAt, priorAt, priorIds) {
+function agedComparison(d, latestVal, latestAt, priorAt, priorIds, basis = 'AVG') {
   if (d < LOCK_DAYS) {
     // Sliding: latest's current total vs priors at the same age
     const vals = priorIds.map(id => priorAt(id, d)).filter(v => v != null);
@@ -564,7 +612,7 @@ function agedComparison(d, latestVal, latestAt, priorAt, priorIds) {
     const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
     if (!avg) return null;
     return { pct: Math.round((latestVal - avg) / avg * 100),
-             label: `VS AVG &middot; DAY ${d}`, lockedVal: null };
+             label: `VS ${basis} &middot; DAY ${d}`, lockedVal: null };
   }
   // Locked: first-7-day totals on both sides
   const mine = latestAt(LOCK_DAYS - 1);
@@ -573,10 +621,10 @@ function agedComparison(d, latestVal, latestAt, priorAt, priorIds) {
   const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
   if (!avg) return null;
   return { pct: Math.round((mine - avg) / avg * 100),
-           label: 'VS AVG &middot; FIRST 7D', lockedVal: mine };
+           label: `VS ${basis} &middot; FIRST 7D`, lockedVal: mine };
 }
 
-function setCompare(id, cmp, val, priorVals) {
+function setCompare(id, cmp, val, priorVals, basis = 'AVG') {
   const el = $(id);
   if (cmp) {
     const up = cmp.pct > 0, flat = cmp.pct === 0;
@@ -587,7 +635,7 @@ function setCompare(id, cmp, val, priorVals) {
     return;
   }
   // Lifetime fallback, honestly labeled
-  vsAvg(id, val, priorVals, 'VS AVG TOTAL');
+  vsAvg(id, val, priorVals, `VS ${basis} TOTAL`);
 }
 
 /* Rebuild a daily subscriber series by anchoring the current total and
@@ -624,6 +672,47 @@ function lifetimeViewsTrend(ytHist) {
   return straddles(ytHist.slice(-(t.days + 1))) ? null : t;
 }
 
+/* Latest upload of one format. `list` is that format's videos, newest first,
+   so the benchmark pool is same-format by construction: a Short is measured
+   against recent Shorts, never against long-form uploads that pull tens of
+   times the views. `basis` names that pool on the pill. */
+function renderLatestUpload(prefix, list, curves, basis, noun) {
+  const title = $(prefix + 'Title'), meta = $(prefix + 'Meta');
+  const big = $(prefix + 'Views'), pill = $(prefix + 'Pill');
+  const v = list[0];
+  if (!v) {
+    title.textContent = `No ${noun} published yet`;
+    meta.textContent = '';
+    big.innerHTML = '--<small>VIEWS</small>';
+    pill.className = 'pill';
+    pill.innerHTML = '<span>--</span>';
+    return;
+  }
+  big.innerHTML = `${fmt(v.views)}<small>VIEWS</small>`;
+  const prior = list.slice(1, 1 + AVG_WINDOW);
+  const d = ageDays(v.published_at);
+  const cv = (curves && curves.videos) || {};
+  // Past the counting change, v.views (Data API) is on the new basis while
+  // the benchmark curves are on the old one. Compare curve to curve
+  // instead, one day back, so both sides use the same definition; if the
+  // curve is too short, fall through to the lifetime comparison, where both
+  // sides come from the Data API and match each other again.
+  const engaged = !!(cv[v.id] && cv[v.id].daily_engaged_views);
+  const cmpAge = engaged ? Math.max(0, d - 1) : d;
+  const mine = engaged ? curveCumAt(cv[v.id], cmpAge) : v.views;
+  const cmp = mine == null ? null : agedComparison(
+    cmpAge, mine,
+    dd => curveCumAt(cv[v.id], dd),
+    (id, dd) => curveCumAt(cv[id], dd),
+    prior.map(x => x.id), basis);
+  setCompare(prefix + 'Pill', cmp, v.views, prior.map(x => x.views), basis);
+  title.textContent = v.title;
+  let m = 'Published ' + ago(v.published_at);
+  if (cmp && cmp.lockedVal != null)
+    m += ' \u00B7 First 7 days: ' + fmt(cmp.lockedVal) + ' views';
+  meta.textContent = m;
+}
+
 function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
   // Hero
   $('subs').textContent = fmt(yt.channel.subscribers);
@@ -650,33 +739,13 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
   setPill('videosPill', trendDelta(ytHist, 'videos'));
   setPill('downloadsPill', trendDelta(bzHist, 'total_downloads'));
 
-  // Latest video
-  const v = yt.videos[0];
-  if (v) {
-    $('vidViews').innerHTML = `${fmt(v.views)}<small>VIEWS</small>`;
-    const prior = yt.videos.slice(1, 1 + AVG_WINDOW);
-    const d = ageDays(v.published_at);
-    const cv = (curves && curves.videos) || {};
-    // Past the counting change, v.views (Data API) is on the new basis while
-    // the benchmark curves are on the old one. Compare curve to curve
-    // instead, one day back, so both sides use the same definition; if the
-    // curve is too short, fall through to the lifetime comparison, where both
-    // sides come from the Data API and match each other again.
-    const engaged = !!(cv[v.id] && cv[v.id].daily_engaged_views);
-    const cmpAge = engaged ? Math.max(0, d - 1) : d;
-    const mine = engaged ? curveCumAt(cv[v.id], cmpAge) : v.views;
-    const cmp = mine == null ? null : agedComparison(
-      cmpAge, mine,
-      dd => curveCumAt(cv[v.id], dd),
-      (id, dd) => curveCumAt(cv[id], dd),
-      prior.map(x => x.id));
-    setCompare('vidPill', cmp, v.views, prior.map(x => x.views));
-    $('vidTitle').textContent = v.title;
-    let meta = 'Published ' + ago(v.published_at);
-    if (cmp && cmp.lockedVal != null)
-      meta += ' \u00B7 First 7 days: ' + fmt(cmp.lockedVal) + ' views';
-    $('vidMeta').textContent = meta;
-  }
+  // Latest upload of each format, each judged only against its own kind
+  const longForm = yt.videos.filter(v => !isShort(v));
+  const shorts   = yt.videos.filter(v =>  isShort(v));
+  $('videosSplit').textContent =
+    `${fmt(longForm.length)} long-form \u00B7 ${fmt(shorts.length)} shorts`;
+  renderLatestUpload('vid',   longForm, curves, 'AVG VIDEO', 'video');
+  renderLatestUpload('short', shorts,   curves, 'AVG SHORT', 'Short');
 
   // Latest episode
   const e = bz.episodes[0];
