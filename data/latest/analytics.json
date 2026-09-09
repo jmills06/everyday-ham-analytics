@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-09-09T04:00:39Z",
+  "fetched_at": "2026-09-09T16:00:43Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
     "views": 22425,
     "engaged_views": 14641,
     "watch_hours": 856.4,
-    "avg_view_pct": 20.9,
+    "avg_view_pct": 21.0,
     "subs_gained": 108,
     "subs_lost": 23,
     "subs_net": 85,
@@ -254,8 +254,8 @@
       "date": "2026-08-29",
       "views": 3223,
       "watch_minutes": 5926,
-      "avg_view_duration_sec": 270,
-      "avg_view_pct": 19.5,
+      "avg_view_duration_sec": 268,
+      "avg_view_pct": 19.4,
       "subs_gained": 4,
       "subs_lost": 1,
       "likes": 45,
@@ -293,8 +293,8 @@
       "date": "2026-09-01",
       "views": 930,
       "watch_minutes": 1999,
-      "avg_view_duration_sec": 286,
-      "avg_view_pct": 23.7,
+      "avg_view_duration_sec": 297,
+      "avg_view_pct": 24.5,
       "subs_gained": 3,
       "subs_lost": 1,
       "likes": 7,
@@ -760,7 +760,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 131720
+      "views": 131576
     },
     {
       "country": "GB",
@@ -918,12 +918,12 @@
     {
       "age_group": "age55-64",
       "gender": "male",
-      "viewer_pct": 25.7
+      "viewer_pct": 25.6
     },
     {
       "age_group": "age65-",
       "gender": "male",
-      "viewer_pct": 27.7
+      "viewer_pct": 27.8
     }
   ]
 }
