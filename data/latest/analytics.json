@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-10T04:00:41Z",
+  "fetched_at": "2026-09-10T16:00:45Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 366,
     "comments": 44,
     "shares": 90,
-    "subscribed_views": 2851,
-    "not_subscribed_views": 19663
+    "subscribed_views": 2849,
+    "not_subscribed_views": 19638
   },
   "daily": [
     {
@@ -242,8 +242,8 @@
       "date": "2026-08-29",
       "views": 3223,
       "watch_minutes": 5926,
-      "avg_view_duration_sec": 270,
-      "avg_view_pct": 19.5,
+      "avg_view_duration_sec": 268,
+      "avg_view_pct": 19.4,
       "subs_gained": 4,
       "subs_lost": 1,
       "likes": 45,
@@ -281,8 +281,8 @@
       "date": "2026-09-01",
       "views": 930,
       "watch_minutes": 1999,
-      "avg_view_duration_sec": 286,
-      "avg_view_pct": 23.7,
+      "avg_view_duration_sec": 297,
+      "avg_view_pct": 24.5,
       "subs_gained": 3,
       "subs_lost": 1,
       "likes": 7,
@@ -372,27 +372,27 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7907
+      "views": 7893
     },
     {
       "source": "YT_SEARCH",
-      "views": 7268
+      "views": 7265
     },
     {
       "source": "SHORTS",
-      "views": 1941
+      "views": 1939
     },
     {
       "source": "EXT_URL",
-      "views": 1888
+      "views": 1887
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1583
+      "views": 1579
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 860
+      "views": 855
     },
     {
       "source": "YT_CHANNEL",
@@ -400,7 +400,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 373
+      "views": 375
     },
     {
       "source": "NOTIFICATION",
@@ -458,7 +458,7 @@
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 239
+      "views": 240
     },
     {
       "term": "kenwood tm-d750a",
@@ -474,7 +474,7 @@
     },
     {
       "term": "icom x026",
-      "views": 114
+      "views": 112
     },
     {
       "term": "tokyo ham fair 2026",
@@ -482,7 +482,7 @@
     },
     {
       "term": "ic7110",
-      "views": 80
+      "views": 79
     },
     {
       "term": "ham radio",
@@ -494,7 +494,7 @@
     },
     {
       "term": "icom x-026",
-      "views": 65
+      "views": 58
     }
   ],
   "suggested_by": [
@@ -583,11 +583,11 @@
       "views": 394
     },
     {
-      "term": "icom x026",
-      "views": 346
+      "term": "atas 120a antenna",
+      "views": 344
     },
     {
-      "term": "atas 120a antenna",
+      "term": "icom x026",
       "views": 344
     },
     {
@@ -604,7 +604,7 @@
     },
     {
       "term": "icom x-026",
-      "views": 280
+      "views": 273
     },
     {
       "term": "pota",
@@ -612,7 +612,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 239
+      "views": 240
     },
     {
       "term": "icom 7300 mk2",
@@ -632,7 +632,7 @@
     },
     {
       "term": "icom",
-      "views": 212
+      "views": 211
     },
     {
       "term": "icom 5200",
@@ -648,7 +648,7 @@
     },
     {
       "term": "yaesu ftdx101mp",
-      "views": 179
+      "views": 181
     }
   ],
   "geography_30": [
