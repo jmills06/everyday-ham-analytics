@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-09-11T04:00:41Z",
+  "fetched_at": "2026-09-11T16:00:42Z",
   "window_days": 30,
   "totals": {
     "revenue": 59.51,
-    "monetized_plays": 5447,
+    "monetized_plays": 5446,
     "rpm": 2.63,
     "rpm_engaged": 4.16,
     "daily_avg": 1.98,
@@ -176,8 +176,8 @@
       "date": "2026-09-03",
       "revenue": 3.12,
       "cpm": 11.18,
-      "playback_cpm": 23.6,
-      "monetized_plays": 214
+      "playback_cpm": 23.71,
+      "monetized_plays": 213
     },
     {
       "date": "2026-09-04",
@@ -257,17 +257,17 @@
     {
       "video_id": "FGMP-r6Kwq0",
       "revenue": 8.63,
-      "views": 4150
+      "views": 4151
     },
     {
       "video_id": "cGQR0gc20OY",
       "revenue": 6.97,
-      "views": 964
+      "views": 962
     },
     {
       "video_id": "ZYk8IUSeEHI",
       "revenue": 5.59,
-      "views": 1606
+      "views": 1605
     },
     {
       "video_id": "FakqdX9c1ac",
