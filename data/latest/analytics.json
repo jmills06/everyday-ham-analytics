@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-12T04:00:44Z",
+  "fetched_at": "2026-09-12T16:00:49Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 359,
     "comments": 44,
     "shares": 87,
-    "subscribed_views": 2819,
-    "not_subscribed_views": 19893
+    "subscribed_views": 2818,
+    "not_subscribed_views": 19881
   },
   "daily": [
     {
@@ -374,15 +374,15 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7999
+      "views": 7997
     },
     {
       "source": "YT_SEARCH",
-      "views": 7496
+      "views": 7494
     },
     {
       "source": "SHORTS",
-      "views": 1878
+      "views": 1871
     },
     {
       "source": "EXT_URL",
@@ -390,19 +390,19 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1555
+      "views": 1554
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 840
+      "views": 839
     },
     {
       "source": "YT_CHANNEL",
-      "views": 438
+      "views": 439
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 373
+      "views": 372
     },
     {
       "source": "NOTIFICATION",
@@ -428,19 +428,19 @@
   "top_videos": [
     {
       "video_id": "FGMP-r6Kwq0",
-      "views": 4172,
+      "views": 4164,
       "watch_hours": 142.3,
       "likes": 45
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1614,
+      "views": 1612,
       "watch_hours": 48.3,
       "likes": 16
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1609,
+      "views": 1604,
       "watch_hours": 8.0,
       "likes": 19
     },
@@ -452,7 +452,7 @@
     },
     {
       "video_id": "6bfpd7tNemg",
-      "views": 1091,
+      "views": 1090,
       "watch_hours": 26.5,
       "likes": 39
     }
