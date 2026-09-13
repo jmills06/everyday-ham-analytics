@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-13T04:00:47Z",
+  "fetched_at": "2026-09-13T16:00:42Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
     "views": 23351,
-    "engaged_views": 14328,
+    "engaged_views": 14326,
     "watch_hours": 851.3,
     "avg_view_pct": 20.8,
     "subs_gained": 106,
@@ -278,7 +278,7 @@
       "likes": 16,
       "comments": 4,
       "shares": 3,
-      "engaged_views": 459
+      "engaged_views": 457
     },
     {
       "date": "2026-09-04",
@@ -435,7 +435,7 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1638,
+      "views": 1637,
       "watch_hours": 8.1,
       "likes": 21
     },
@@ -764,7 +764,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 131696
+      "views": 131396
     },
     {
       "country": "GB",
@@ -922,7 +922,7 @@
     {
       "age_group": "age55-64",
       "gender": "male",
-      "viewer_pct": 25.8
+      "viewer_pct": 25.9
     },
     {
       "age_group": "age65-",
