@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-09-14T04:00:42Z",
+  "fetched_at": "2026-09-14T16:00:50Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 23932,
+    "views": 24004,
     "engaged_views": 14399,
-    "watch_hours": 860.5,
+    "watch_hours": 860.6,
     "avg_view_pct": 20.7,
     "subs_gained": 107,
     "subs_lost": 24,
@@ -13,8 +13,8 @@
     "likes": 378,
     "comments": 50,
     "shares": 84,
-    "subscribed_views": 3039,
-    "not_subscribed_views": 20886
+    "subscribed_views": 3036,
+    "not_subscribed_views": 20880
   },
   "daily": [
     {
@@ -257,8 +257,8 @@
     },
     {
       "date": "2026-09-03",
-      "views": 944,
-      "watch_minutes": 2487,
+      "views": 1003,
+      "watch_minutes": 2496,
       "avg_view_duration_sec": 323,
       "avg_view_pct": 15.6,
       "subs_gained": 2,
@@ -270,8 +270,8 @@
     },
     {
       "date": "2026-09-04",
-      "views": 822,
-      "watch_minutes": 1739,
+      "views": 835,
+      "watch_minutes": 1740,
       "avg_view_duration_sec": 276,
       "avg_view_pct": 19.7,
       "subs_gained": 6,
@@ -376,7 +376,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8803
+      "views": 8799
     },
     {
       "source": "YT_SEARCH",
@@ -384,7 +384,7 @@
     },
     {
       "source": "SHORTS",
-      "views": 1874
+      "views": 1870
     },
     {
       "source": "EXT_URL",
@@ -396,7 +396,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 870
+      "views": 869
     },
     {
       "source": "YT_CHANNEL",
@@ -572,7 +572,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 519
+      "views": 518
     },
     {
       "term": "kenwood tm-d750a",
