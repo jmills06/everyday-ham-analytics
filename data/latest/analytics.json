@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-09-15T04:00:40Z",
+  "fetched_at": "2026-09-15T16:00:46Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 24251,
-    "engaged_views": 14219,
-    "watch_hours": 857.7,
+    "views": 24163,
+    "engaged_views": 14210,
+    "watch_hours": 857.2,
     "avg_view_pct": 20.9,
     "subs_gained": 108,
     "subs_lost": 23,
@@ -245,8 +245,8 @@
     },
     {
       "date": "2026-09-03",
-      "views": 1003,
-      "watch_minutes": 2496,
+      "views": 944,
+      "watch_minutes": 2487,
       "avg_view_duration_sec": 323,
       "avg_view_pct": 15.6,
       "subs_gained": 2,
@@ -258,8 +258,8 @@
     },
     {
       "date": "2026-09-04",
-      "views": 835,
-      "watch_minutes": 1740,
+      "views": 822,
+      "watch_minutes": 1739,
       "avg_view_duration_sec": 276,
       "avg_view_pct": 19.7,
       "subs_gained": 6,
@@ -284,8 +284,8 @@
     },
     {
       "date": "2026-09-06",
-      "views": 629,
-      "watch_minutes": 1420,
+      "views": 626,
+      "watch_minutes": 1418,
       "avg_view_duration_sec": 263,
       "avg_view_pct": 21.5,
       "subs_gained": 4,
@@ -293,12 +293,12 @@
       "likes": 12,
       "comments": 2,
       "shares": 4,
-      "engaged_views": 321
+      "engaged_views": 319
     },
     {
       "date": "2026-09-07",
-      "views": 579,
-      "watch_minutes": 1280,
+      "views": 575,
+      "watch_minutes": 1274,
       "avg_view_duration_sec": 256,
       "avg_view_pct": 20.7,
       "subs_gained": 2,
@@ -306,12 +306,12 @@
       "likes": 11,
       "comments": 4,
       "shares": 0,
-      "engaged_views": 297
+      "engaged_views": 296
     },
     {
       "date": "2026-09-08",
-      "views": 517,
-      "watch_minutes": 691,
+      "views": 508,
+      "watch_minutes": 679,
       "avg_view_duration_sec": 159,
       "avg_view_pct": 13.7,
       "subs_gained": 3,
@@ -319,7 +319,7 @@
       "likes": 4,
       "comments": 0,
       "shares": 0,
-      "engaged_views": 256
+      "engaged_views": 250
     },
     {
       "date": "2026-09-09",
@@ -437,7 +437,7 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1679,
+      "views": 1677,
       "watch_hours": 8.1,
       "likes": 24
     },
