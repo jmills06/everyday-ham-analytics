@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-16T04:00:48Z",
+  "fetched_at": "2026-09-16T16:00:49Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 360,
     "comments": 46,
     "shares": 82,
-    "subscribed_views": 2915,
-    "not_subscribed_views": 21389
+    "subscribed_views": 2911,
+    "not_subscribed_views": 21343
   },
   "daily": [
     {
@@ -378,35 +378,35 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 9101
+      "views": 9067
     },
     {
       "source": "YT_SEARCH",
-      "views": 8055
+      "views": 8054
     },
     {
       "source": "SHORTS",
-      "views": 1872
+      "views": 1865
     },
     {
       "source": "EXT_URL",
-      "views": 1844
+      "views": 1843
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1524
+      "views": 1521
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 821
+      "views": 819
     },
     {
       "source": "YT_CHANNEL",
-      "views": 425
+      "views": 424
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 383
+      "views": 382
     },
     {
       "source": "NOTIFICATION",
@@ -464,7 +464,7 @@
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 263
+      "views": 260
     },
     {
       "term": "kenwood tm-d750a",
@@ -618,7 +618,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 263
+      "views": 260
     },
     {
       "term": "icom 7300 mk2",
@@ -650,7 +650,7 @@
     },
     {
       "term": "id-5200",
-      "views": 203
+      "views": 202
     },
     {
       "term": "icom id-5200",

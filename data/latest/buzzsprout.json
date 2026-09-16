@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-09-16T04:00:49Z",
-  "total_downloads": 24437,
+  "fetched_at": "2026-09-16T16:00:50Z",
+  "total_downloads": 24452,
   "episode_count": 27,
   "episodes": [
     {
@@ -9,7 +9,7 @@
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 766
+      "plays": 772
     },
     {
       "id": 19606536,
@@ -17,7 +17,7 @@
       "episode_number": 20,
       "published_at": "2026-08-06T08:00:00.000-04:00",
       "duration_sec": 3740,
-      "plays": 1022
+      "plays": 1023
     },
     {
       "id": 19466291,
@@ -25,7 +25,7 @@
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
       "duration_sec": 3912,
-      "plays": 1308
+      "plays": 1310
     },
     {
       "id": 19328548,
@@ -33,7 +33,7 @@
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
       "duration_sec": 3475,
-      "plays": 1451
+      "plays": 1452
     },
     {
       "id": 19219333,
@@ -49,7 +49,7 @@
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
       "duration_sec": 3587,
-      "plays": 1056
+      "plays": 1057
     },
     {
       "id": 18980854,
@@ -57,7 +57,7 @@
       "episode_number": 16,
       "published_at": "2026-04-09T09:00:00.000-04:00",
       "duration_sec": 3285,
-      "plays": 1002
+      "plays": 1003
     },
     {
       "id": 18903785,
@@ -193,7 +193,7 @@
       "episode_number": 4,
       "published_at": "2025-04-03T20:00:00.000-04:00",
       "duration_sec": 3787,
-      "plays": 683
+      "plays": 684
     },
     {
       "id": 16745714,
@@ -209,7 +209,7 @@
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
       "duration_sec": 3516,
-      "plays": 584
+      "plays": 585
     },
     {
       "id": 16408083,
@@ -217,7 +217,7 @@
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
       "duration_sec": 3518,
-      "plays": 619
+      "plays": 620
     }
   ]
 }
