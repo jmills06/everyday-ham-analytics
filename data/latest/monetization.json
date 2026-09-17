@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-17T04:00:46Z",
+  "fetched_at": "2026-09-17T16:00:45Z",
   "window_days": 30,
   "totals": {
     "revenue": 58.4,
@@ -257,27 +257,27 @@
     {
       "video_id": "FGMP-r6Kwq0",
       "revenue": 8.76,
-      "views": 4215
+      "views": 4209
     },
     {
       "video_id": "cGQR0gc20OY",
       "revenue": 5.79,
-      "views": 1023
+      "views": 1016
     },
     {
       "video_id": "ZYk8IUSeEHI",
       "revenue": 5.34,
-      "views": 1557
+      "views": 1556
     },
     {
       "video_id": "FakqdX9c1ac",
       "revenue": 3.5,
-      "views": 496
+      "views": 490
     },
     {
       "video_id": "9Wk6JWDHHN4",
       "revenue": 2.96,
-      "views": 1511
+      "views": 1470
     }
   ]
 }
