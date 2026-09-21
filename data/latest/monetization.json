@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-09-20T16:00:42Z",
+  "fetched_at": "2026-09-21T04:00:39Z",
   "window_days": 30,
   "totals": {
-    "revenue": 53.88,
-    "monetized_plays": 5039,
-    "rpm": 2.34,
-    "rpm_engaged": 4.61,
-    "daily_avg": 1.8,
-    "projected_monthly": 39.83,
+    "revenue": 52.95,
+    "monetized_plays": 4980,
+    "rpm": 2.28,
+    "rpm_engaged": 4.89,
+    "daily_avg": 1.77,
+    "projected_monthly": 33.4,
     "projection_basis_days": 7
   },
   "best_day": {
@@ -18,13 +18,6 @@
     "monetized_plays": 543
   },
   "daily": [
-    {
-      "date": "2026-08-21",
-      "revenue": 1.62,
-      "cpm": 8.24,
-      "playback_cpm": 14.09,
-      "monetized_plays": 179
-    },
     {
       "date": "2026-08-22",
       "revenue": 1.79,
@@ -204,8 +197,8 @@
       "date": "2026-09-16",
       "revenue": 1.32,
       "cpm": 7.66,
-      "playback_cpm": 24.4,
-      "monetized_plays": 91
+      "playback_cpm": 23.87,
+      "monetized_plays": 93
     },
     {
       "date": "2026-09-17",
@@ -213,28 +206,35 @@
       "cpm": 6.36,
       "playback_cpm": 17.28,
       "monetized_plays": 85
+    },
+    {
+      "date": "2026-09-18",
+      "revenue": 0.69,
+      "cpm": 5.92,
+      "playback_cpm": 8.53,
+      "monetized_plays": 118
     }
   ],
   "ad_types": [
     {
       "type": "auctionTrueviewInstream",
-      "gross_revenue": 54.66
+      "gross_revenue": 53.38
     },
     {
       "type": "auctionInstream",
-      "gross_revenue": 12.38
+      "gross_revenue": 12.19
     },
     {
       "type": "auctionDisplay",
-      "gross_revenue": 9.94
+      "gross_revenue": 9.9
     },
     {
       "type": "auctionBumperInstream",
-      "gross_revenue": 7.45
+      "gross_revenue": 7.43
     },
     {
       "type": "unknown",
-      "gross_revenue": 0.72
+      "gross_revenue": 0.73
     },
     {
       "type": "reservedInstream",
@@ -257,27 +257,27 @@
     {
       "video_id": "FGMP-r6Kwq0",
       "revenue": 8.87,
-      "views": 4242
+      "views": 4248
     },
     {
       "video_id": "cGQR0gc20OY",
-      "revenue": 5.16,
-      "views": 1015
+      "revenue": 5.12,
+      "views": 1024
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "revenue": 4.16,
-      "views": 1395
+      "revenue": 3.68,
+      "views": 1329
     },
     {
       "video_id": "FakqdX9c1ac",
       "revenue": 3.55,
-      "views": 499
+      "views": 503
     },
     {
       "video_id": "9Wk6JWDHHN4",
-      "revenue": 3.37,
-      "views": 1531
+      "revenue": 3.41,
+      "views": 1549
     }
   ]
 }
