@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-09-21T04:00:39Z",
+  "fetched_at": "2026-09-21T16:00:48Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 23210,
-    "engaged_views": 10829,
-    "watch_hours": 757.8,
+    "views": 22926,
+    "engaged_views": 11476,
+    "watch_hours": 757.0,
     "avg_view_pct": 20.8,
     "subs_gained": 88,
     "subs_lost": 16,
@@ -14,7 +14,7 @@
     "comments": 46,
     "shares": 56,
     "subscribed_views": 2810,
-    "not_subscribed_views": 20166
+    "not_subscribed_views": 20116
   },
   "daily": [
     {
@@ -173,9 +173,9 @@
     },
     {
       "date": "2026-09-03",
-      "views": 1003,
-      "watch_minutes": 2496,
-      "avg_view_duration_sec": 323,
+      "views": 944,
+      "watch_minutes": 2487,
+      "avg_view_duration_sec": 324,
       "avg_view_pct": 15.6,
       "subs_gained": 2,
       "subs_lost": 0,
@@ -186,8 +186,8 @@
     },
     {
       "date": "2026-09-04",
-      "views": 835,
-      "watch_minutes": 1740,
+      "views": 822,
+      "watch_minutes": 1739,
       "avg_view_duration_sec": 276,
       "avg_view_pct": 19.7,
       "subs_gained": 6,
@@ -212,9 +212,9 @@
     },
     {
       "date": "2026-09-06",
-      "views": 629,
-      "watch_minutes": 1420,
-      "avg_view_duration_sec": 263,
+      "views": 626,
+      "watch_minutes": 1418,
+      "avg_view_duration_sec": 265,
       "avg_view_pct": 21.5,
       "subs_gained": 4,
       "subs_lost": 1,
@@ -225,10 +225,10 @@
     },
     {
       "date": "2026-09-07",
-      "views": 579,
-      "watch_minutes": 1280,
+      "views": 575,
+      "watch_minutes": 1274,
       "avg_view_duration_sec": 256,
-      "avg_view_pct": 20.7,
+      "avg_view_pct": 20.9,
       "subs_gained": 2,
       "subs_lost": 1,
       "likes": 11,
@@ -238,10 +238,10 @@
     },
     {
       "date": "2026-09-08",
-      "views": 517,
-      "watch_minutes": 691,
-      "avg_view_duration_sec": 159,
-      "avg_view_pct": 13.7,
+      "views": 508,
+      "watch_minutes": 679,
+      "avg_view_duration_sec": 160,
+      "avg_view_pct": 13.9,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 4,
@@ -251,10 +251,10 @@
     },
     {
       "date": "2026-09-09",
-      "views": 465,
-      "watch_minutes": 823,
+      "views": 450,
+      "watch_minutes": 820,
       "avg_view_duration_sec": 214,
-      "avg_view_pct": 19.2,
+      "avg_view_pct": 19.3,
       "subs_gained": 1,
       "subs_lost": 0,
       "likes": 5,
@@ -264,10 +264,10 @@
     },
     {
       "date": "2026-09-10",
-      "views": 856,
-      "watch_minutes": 2096,
-      "avg_view_duration_sec": 314,
-      "avg_view_pct": 26.2,
+      "views": 827,
+      "watch_minutes": 2114,
+      "avg_view_duration_sec": 317,
+      "avg_view_pct": 26.5,
       "subs_gained": 4,
       "subs_lost": 1,
       "likes": 21,
@@ -277,10 +277,10 @@
     },
     {
       "date": "2026-09-11",
-      "views": 998,
-      "watch_minutes": 1661,
-      "avg_view_duration_sec": 244,
-      "avg_view_pct": 21.6,
+      "views": 948,
+      "watch_minutes": 1645,
+      "avg_view_duration_sec": 245,
+      "avg_view_pct": 21.9,
       "subs_gained": 4,
       "subs_lost": 0,
       "likes": 9,
@@ -290,10 +290,10 @@
     },
     {
       "date": "2026-09-12",
-      "views": 734,
-      "watch_minutes": 1475,
-      "avg_view_duration_sec": 285,
-      "avg_view_pct": 26.3,
+      "views": 682,
+      "watch_minutes": 1473,
+      "avg_view_duration_sec": 286,
+      "avg_view_pct": 26.4,
       "subs_gained": 3,
       "subs_lost": 0,
       "likes": 8,
@@ -351,20 +351,20 @@
       "likes": 6,
       "comments": 0,
       "shares": 1,
-      "engaged_views": 0
+      "engaged_views": 213
     },
     {
       "date": "2026-09-17",
-      "views": 522,
-      "watch_minutes": 634,
+      "views": 472,
+      "watch_minutes": 622,
       "avg_view_duration_sec": 177,
-      "avg_view_pct": 19.1,
+      "avg_view_pct": 18.9,
       "subs_gained": 0,
       "subs_lost": 0,
       "likes": 7,
       "comments": 1,
       "shares": 2,
-      "engaged_views": 0
+      "engaged_views": 208
     },
     {
       "date": "2026-09-18",
@@ -377,33 +377,33 @@
       "likes": 7,
       "comments": 0,
       "shares": 5,
-      "engaged_views": 0
+      "engaged_views": 226
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8927
+      "views": 8916
     },
     {
       "source": "YT_SEARCH",
-      "views": 8502
+      "views": 8470
     },
     {
       "source": "EXT_URL",
-      "views": 1585
+      "views": 1584
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1414
+      "views": 1412
     },
     {
       "source": "SHORTS",
-      "views": 824
+      "views": 823
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 759
+      "views": 758
     },
     {
       "source": "YT_CHANNEL",
@@ -411,7 +411,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 303
+      "views": 301
     },
     {
       "source": "NOTIFICATION",
@@ -437,25 +437,25 @@
   "top_videos": [
     {
       "video_id": "FGMP-r6Kwq0",
-      "views": 4248,
+      "views": 4246,
       "watch_hours": 144.3,
       "likes": 45
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1894,
+      "views": 1888,
       "watch_hours": 8.1,
       "likes": 29
     },
     {
       "video_id": "9Wk6JWDHHN4",
-      "views": 1549,
+      "views": 1579,
       "watch_hours": 45.0,
       "likes": 25
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1329,
+      "views": 1325,
       "watch_hours": 30.0,
       "likes": 13
     },
@@ -469,7 +469,7 @@
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 283
+      "views": 281
     },
     {
       "term": "ic-7110",
@@ -489,7 +489,7 @@
     },
     {
       "term": "meshtastic",
-      "views": 106
+      "views": 105
     },
     {
       "term": "icom x026",
@@ -497,7 +497,7 @@
     },
     {
       "term": "ic7110",
-      "views": 95
+      "views": 92
     },
     {
       "term": "wio tracker l1 pro",
@@ -571,7 +571,7 @@
     },
     {
       "term": "meshtastic",
-      "views": 901
+      "views": 900
     },
     {
       "term": "wio tracker l1 pro",
@@ -610,11 +610,11 @@
       "views": 289
     },
     {
-      "term": "icom 7110",
-      "views": 283
+      "term": "hamvention",
+      "views": 281
     },
     {
-      "term": "hamvention",
+      "term": "icom 7110",
       "views": 281
     },
     {
