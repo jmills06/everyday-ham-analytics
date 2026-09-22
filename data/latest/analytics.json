@@ -1,34 +1,22 @@
 {
-  "fetched_at": "2026-09-21T16:00:48Z",
+  "fetched_at": "2026-09-22T04:00:40Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 22926,
-    "engaged_views": 11476,
-    "watch_hours": 757.0,
-    "avg_view_pct": 20.8,
-    "subs_gained": 88,
-    "subs_lost": 16,
-    "subs_net": 72,
-    "likes": 331,
-    "comments": 46,
-    "shares": 56,
-    "subscribed_views": 2810,
-    "not_subscribed_views": 20116
+    "views": 22936,
+    "engaged_views": 11262,
+    "watch_hours": 743.5,
+    "avg_view_pct": 20.7,
+    "subs_gained": 85,
+    "subs_lost": 17,
+    "subs_net": 68,
+    "likes": 328,
+    "comments": 47,
+    "shares": 55,
+    "subscribed_views": 2809,
+    "not_subscribed_views": 20127
   },
   "daily": [
-    {
-      "date": "2026-08-22",
-      "views": 417,
-      "watch_minutes": 1446,
-      "avg_view_duration_sec": 233,
-      "avg_view_pct": 25.5,
-      "subs_gained": 4,
-      "subs_lost": 0,
-      "likes": 8,
-      "comments": 1,
-      "shares": 1
-    },
     {
       "date": "2026-08-23",
       "views": 484,
@@ -247,7 +235,7 @@
       "likes": 4,
       "comments": 0,
       "shares": 0,
-      "engaged_views": 256
+      "engaged_views": 250
     },
     {
       "date": "2026-09-09",
@@ -260,7 +248,7 @@
       "likes": 5,
       "comments": 0,
       "shares": 0,
-      "engaged_views": 228
+      "engaged_views": 227
     },
     {
       "date": "2026-09-10",
@@ -299,7 +287,7 @@
       "likes": 8,
       "comments": 0,
       "shares": 2,
-      "engaged_views": 307
+      "engaged_views": 306
     },
     {
       "date": "2026-09-13",
@@ -312,7 +300,7 @@
       "likes": 6,
       "comments": 2,
       "shares": 3,
-      "engaged_views": 337
+      "engaged_views": 335
     },
     {
       "date": "2026-09-14",
@@ -364,7 +352,7 @@
       "likes": 7,
       "comments": 1,
       "shares": 2,
-      "engaged_views": 208
+      "engaged_views": 211
     },
     {
       "date": "2026-09-18",
@@ -378,48 +366,61 @@
       "comments": 0,
       "shares": 5,
       "engaged_views": 226
+    },
+    {
+      "date": "2026-09-19",
+      "views": 427,
+      "watch_minutes": 637,
+      "avg_view_duration_sec": 180,
+      "avg_view_pct": 18.0,
+      "subs_gained": 1,
+      "subs_lost": 1,
+      "likes": 5,
+      "comments": 2,
+      "shares": 0,
+      "engaged_views": 210
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8916
+      "views": 8928
     },
     {
       "source": "YT_SEARCH",
-      "views": 8470
+      "views": 8558
     },
     {
       "source": "EXT_URL",
-      "views": 1584
+      "views": 1540
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1412
+      "views": 1381
     },
     {
       "source": "SHORTS",
-      "views": 823
+      "views": 821
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 758
+      "views": 745
     },
     {
       "source": "YT_CHANNEL",
-      "views": 398
+      "views": 411
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 301
+      "views": 295
     },
     {
       "source": "NOTIFICATION",
-      "views": 146
+      "views": 142
     },
     {
       "source": "PLAYLIST",
-      "views": 88
+      "views": 85
     },
     {
       "source": "END_SCREEN",
@@ -437,31 +438,31 @@
   "top_videos": [
     {
       "video_id": "FGMP-r6Kwq0",
-      "views": 4246,
-      "watch_hours": 144.3,
+      "views": 4247,
+      "watch_hours": 144.4,
       "likes": 45
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1888,
+      "views": 1893,
       "watch_hours": 8.1,
-      "likes": 29
+      "likes": 30
     },
     {
       "video_id": "9Wk6JWDHHN4",
-      "views": 1579,
-      "watch_hours": 45.0,
+      "views": 1540,
+      "watch_hours": 45.6,
       "likes": 25
     },
     {
       "video_id": "ZYk8IUSeEHI",
-      "views": 1325,
-      "watch_hours": 30.0,
+      "views": 1268,
+      "watch_hours": 27.6,
       "likes": 13
     },
     {
       "video_id": "6bfpd7tNemg",
-      "views": 1146,
+      "views": 1147,
       "watch_hours": 28.0,
       "likes": 40
     }
@@ -469,31 +470,31 @@
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 281
+      "views": 282
     },
     {
       "term": "ic-7110",
-      "views": 223
+      "views": 224
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 218
+      "views": 211
     },
     {
       "term": "icom ic-7110",
       "views": 141
     },
     {
+      "term": "meshtastic",
+      "views": 111
+    },
+    {
       "term": "tokyo ham fair 2026",
       "views": 111
     },
     {
-      "term": "meshtastic",
-      "views": 105
-    },
-    {
       "term": "icom x026",
-      "views": 104
+      "views": 102
     },
     {
       "term": "ic7110",
@@ -501,7 +502,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 59
+      "views": 63
     },
     {
       "term": "icom x-026",
@@ -512,7 +513,7 @@
     {
       "video_id": "3zu9nPGEzFk",
       "title": "Kenwood TM-D750E – First Impressions - WiMo",
-      "views": 30
+      "views": 32
     },
     {
       "video_id": "onBMk07UHDc",
@@ -520,19 +521,14 @@
       "views": 28
     },
     {
-      "video_id": "655zd0ku-R0",
-      "title": "Icom ID-5200 vs Kenwood TM-D750: $999 Price, Ship Windows & the TNC Catch",
-      "views": 26
-    },
-    {
       "video_id": "TK9enrEHU_0",
       "title": "The NEW Icom IC-7110 (HF-UHF 100W All Mode)",
       "views": 25
     },
     {
-      "video_id": "c3EEs-O3bGE",
-      "title": "Windows Task Manager’s Creator Rebuilt It 30 Years Later | Shop Talk EP 92",
-      "views": 24
+      "video_id": "655zd0ku-R0",
+      "title": "Icom ID-5200 vs Kenwood TM-D750: $999 Price, Ship Windows & the TNC Catch",
+      "views": 23
     },
     {
       "video_id": "0aju9R-lT5s",
@@ -540,9 +536,9 @@
       "views": 21
     },
     {
-      "video_id": "oEAX771Bfwc",
-      "title": "Why I Won't Be Buying the Kenwood TM-D750..",
-      "views": 16
+      "video_id": "c3EEs-O3bGE",
+      "title": "Windows Task Manager’s Creator Rebuilt It 30 Years Later | Shop Talk EP 92",
+      "views": 20
     },
     {
       "video_id": "ZYk8IUSeEHI",
@@ -552,6 +548,11 @@
     {
       "video_id": "6a5WMQ5B1D8",
       "title": "Latest Details on the Kenwood D750",
+      "views": 14
+    },
+    {
+      "video_id": "oEAX771Bfwc",
+      "title": "Why I Won't Be Buying the Kenwood TM-D750..",
       "views": 14
     },
     {
@@ -571,23 +572,23 @@
     },
     {
       "term": "meshtastic",
-      "views": 900
+      "views": 907
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 640
+      "views": 643
     },
     {
       "term": "meshtastic solar node",
-      "views": 520
+      "views": 516
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 469
+      "views": 471
     },
     {
       "term": "ftdx101mp",
-      "views": 429
+      "views": 432
     },
     {
       "term": "dayton hamvention 2026",
@@ -607,14 +608,14 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 289
-    },
-    {
-      "term": "hamvention",
-      "views": 281
+      "views": 286
     },
     {
       "term": "icom 7110",
+      "views": 282
+    },
+    {
+      "term": "hamvention",
       "views": 281
     },
     {
@@ -634,12 +635,12 @@
       "views": 224
     },
     {
-      "term": "icom 7300 mk2",
+      "term": "ic-7110",
       "views": 224
     },
     {
-      "term": "ic-7110",
-      "views": 223
+      "term": "icom 7300 mk2",
+      "views": 222
     },
     {
       "term": "icom",
@@ -651,7 +652,7 @@
     },
     {
       "term": "icom 5200",
-      "views": 212
+      "views": 213
     },
     {
       "term": "id-5200",
@@ -665,13 +666,13 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 12953,
-      "watch_hours": 488.3
+      "views": 12917,
+      "watch_hours": 478.1
     },
     {
       "country": "GB",
-      "views": 868,
-      "watch_hours": 25.6
+      "views": 848,
+      "watch_hours": 24.7
     },
     {
       "country": "JP",
@@ -679,14 +680,14 @@
       "watch_hours": 7.3
     },
     {
-      "country": "CA",
-      "views": 332,
-      "watch_hours": 16.0
-    },
-    {
       "country": "DE",
       "views": 327,
       "watch_hours": 11.3
+    },
+    {
+      "country": "CA",
+      "views": 322,
+      "watch_hours": 14.2
     },
     {
       "country": "AU",
@@ -714,6 +715,11 @@
       "watch_hours": 0.7
     },
     {
+      "country": "BR",
+      "views": 21,
+      "watch_hours": 0.1
+    },
+    {
       "country": "CH",
       "views": 21,
       "watch_hours": 0.7
@@ -732,19 +738,19 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 131902
+      "views": 131498
     },
     {
       "country": "GB",
-      "views": 5938
+      "views": 5912
     },
     {
       "country": "DE",
-      "views": 4848
+      "views": 4825
     },
     {
       "country": "CA",
-      "views": 4659
+      "views": 4561
     },
     {
       "country": "JP",
@@ -752,11 +758,11 @@
     },
     {
       "country": "AU",
-      "views": 1700
+      "views": 1677
     },
     {
       "country": "NL",
-      "views": 1524
+      "views": 1506
     },
     {
       "country": "ES",
@@ -780,7 +786,7 @@
     },
     {
       "country": "BR",
-      "views": 337
+      "views": 358
     },
     {
       "country": "CH",
@@ -875,12 +881,12 @@
     {
       "age_group": "age25-34",
       "gender": "male",
-      "viewer_pct": 8.1
+      "viewer_pct": 8.0
     },
     {
       "age_group": "age35-44",
       "gender": "male",
-      "viewer_pct": 14.9
+      "viewer_pct": 14.8
     },
     {
       "age_group": "age45-54",
@@ -895,7 +901,7 @@
     {
       "age_group": "age65-",
       "gender": "male",
-      "viewer_pct": 28.6
+      "viewer_pct": 28.7
     }
   ]
 }
