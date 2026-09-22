@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-22T04:00:40Z",
+  "fetched_at": "2026-09-22T16:01:03Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
     "views": 22936,
-    "engaged_views": 11262,
+    "engaged_views": 11258,
     "watch_hours": 743.5,
     "avg_view_pct": 20.7,
     "subs_gained": 85,
@@ -14,7 +14,7 @@
     "comments": 47,
     "shares": 55,
     "subscribed_views": 2809,
-    "not_subscribed_views": 20127
+    "not_subscribed_views": 20101
   },
   "daily": [
     {
@@ -326,7 +326,7 @@
       "likes": 4,
       "comments": 0,
       "shares": 1,
-      "engaged_views": 227
+      "engaged_views": 226
     },
     {
       "date": "2026-09-16",
@@ -352,14 +352,14 @@
       "likes": 7,
       "comments": 1,
       "shares": 2,
-      "engaged_views": 211
+      "engaged_views": 208
     },
     {
       "date": "2026-09-18",
       "views": 471,
       "watch_minutes": 770,
-      "avg_view_duration_sec": 202,
-      "avg_view_pct": 21.7,
+      "avg_view_duration_sec": 185,
+      "avg_view_pct": 20.7,
       "subs_gained": 1,
       "subs_lost": 0,
       "likes": 7,
@@ -384,11 +384,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8928
+      "views": 8922
     },
     {
       "source": "YT_SEARCH",
-      "views": 8558
+      "views": 8544
     },
     {
       "source": "EXT_URL",
@@ -396,19 +396,19 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1381
+      "views": 1380
     },
     {
       "source": "SHORTS",
-      "views": 821
+      "views": 819
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 745
+      "views": 744
     },
     {
       "source": "YT_CHANNEL",
-      "views": 411
+      "views": 409
     },
     {
       "source": "YT_OTHER_PAGE",
@@ -485,12 +485,12 @@
       "views": 141
     },
     {
-      "term": "meshtastic",
+      "term": "tokyo ham fair 2026",
       "views": 111
     },
     {
-      "term": "tokyo ham fair 2026",
-      "views": 111
+      "term": "meshtastic",
+      "views": 110
     },
     {
       "term": "icom x026",
@@ -502,7 +502,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 63
+      "views": 62
     },
     {
       "term": "icom x-026",
@@ -572,11 +572,11 @@
     },
     {
       "term": "meshtastic",
-      "views": 907
+      "views": 906
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 643
+      "views": 642
     },
     {
       "term": "meshtastic solar node",
@@ -596,7 +596,7 @@
     },
     {
       "term": "atas 120a antenna",
-      "views": 360
+      "views": 355
     },
     {
       "term": "icom x026",
@@ -608,7 +608,7 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 286
+      "views": 289
     },
     {
       "term": "icom 7110",
@@ -628,7 +628,7 @@
     },
     {
       "term": "dx commander",
-      "views": 233
+      "views": 232
     },
     {
       "term": "amateur radio",
