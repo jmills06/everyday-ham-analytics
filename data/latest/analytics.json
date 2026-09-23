@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T04:00:38Z",
+  "fetched_at": "2026-09-23T16:00:50Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 321,
     "comments": 48,
     "shares": 53,
-    "subscribed_views": 2804,
-    "not_subscribed_views": 20031
+    "subscribed_views": 2802,
+    "not_subscribed_views": 20027
   },
   "daily": [
     {
@@ -359,8 +359,8 @@
       "date": "2026-09-19",
       "views": 427,
       "watch_minutes": 637,
-      "avg_view_duration_sec": 180,
-      "avg_view_pct": 18.0,
+      "avg_view_duration_sec": 173,
+      "avg_view_pct": 17.4,
       "subs_gained": 1,
       "subs_lost": 1,
       "likes": 5,
@@ -385,15 +385,15 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8903
+      "views": 8901
     },
     {
       "source": "YT_SEARCH",
-      "views": 8632
+      "views": 8629
     },
     {
       "source": "EXT_URL",
-      "views": 1502
+      "views": 1501
     },
     {
       "source": "RELATED_VIDEO",
@@ -445,7 +445,7 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1913,
+      "views": 1909,
       "watch_hours": 8.0,
       "likes": 30
     },
