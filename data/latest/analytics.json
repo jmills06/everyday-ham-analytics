@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-24T04:00:37Z",
+  "fetched_at": "2026-09-24T16:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -294,8 +294,8 @@
       "date": "2026-09-15",
       "views": 418,
       "watch_minutes": 780,
-      "avg_view_duration_sec": 204,
-      "avg_view_pct": 18.8,
+      "avg_view_duration_sec": 205,
+      "avg_view_pct": 19.1,
       "subs_gained": 2,
       "subs_lost": 0,
       "likes": 4,
@@ -307,7 +307,7 @@
       "date": "2026-09-16",
       "views": 417,
       "watch_minutes": 869,
-      "avg_view_duration_sec": 241,
+      "avg_view_duration_sec": 243,
       "avg_view_pct": 22.0,
       "subs_gained": 3,
       "subs_lost": 0,
@@ -321,7 +321,7 @@
       "views": 472,
       "watch_minutes": 622,
       "avg_view_duration_sec": 177,
-      "avg_view_pct": 19.1,
+      "avg_view_pct": 18.9,
       "subs_gained": 0,
       "subs_lost": 0,
       "likes": 7,
@@ -333,8 +333,8 @@
       "date": "2026-09-18",
       "views": 445,
       "watch_minutes": 684,
-      "avg_view_duration_sec": 202,
-      "avg_view_pct": 21.7,
+      "avg_view_duration_sec": 185,
+      "avg_view_pct": 20.7,
       "subs_gained": 1,
       "subs_lost": 0,
       "likes": 7,
@@ -445,14 +445,14 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1956,
+      "views": 1955,
       "watch_hours": 8.2,
       "likes": 33
     },
     {
       "video_id": "9Wk6JWDHHN4",
-      "views": 1551,
-      "watch_hours": 45.9,
+      "views": 1549,
+      "watch_hours": 45.3,
       "likes": 25
     },
     {
