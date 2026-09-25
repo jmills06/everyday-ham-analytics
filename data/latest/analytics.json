@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-25T04:00:41Z",
+  "fetched_at": "2026-09-25T16:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 327,
     "comments": 47,
     "shares": 50,
-    "subscribed_views": 2803,
-    "not_subscribed_views": 20146
+    "subscribed_views": 2800,
+    "not_subscribed_views": 20136
   },
   "daily": [
     {
@@ -385,27 +385,27 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8946
+      "views": 8941
     },
     {
       "source": "YT_SEARCH",
-      "views": 8855
+      "views": 8850
     },
     {
       "source": "EXT_URL",
-      "views": 1440
+      "views": 1438
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1293
+      "views": 1294
     },
     {
       "source": "SHORTS",
-      "views": 795
+      "views": 794
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 732
+      "views": 731
     },
     {
       "source": "YT_CHANNEL",
@@ -581,7 +581,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 513
+      "views": 514
     },
     {
       "term": "kenwood tm-d750a",
@@ -613,7 +613,7 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 289
+      "views": 290
     },
     {
       "term": "hamvention",
