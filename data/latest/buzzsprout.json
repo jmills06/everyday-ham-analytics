@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-09-24T16:00:42Z",
-  "total_downloads": 24838,
+  "fetched_at": "2026-09-25T04:00:42Z",
+  "total_downloads": 24853,
   "episode_count": 27,
   "episodes": [
     {
@@ -9,7 +9,7 @@
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 905
+      "plays": 911
     },
     {
       "id": 19606536,
@@ -17,7 +17,7 @@
       "episode_number": 20,
       "published_at": "2026-08-06T08:00:00.000-04:00",
       "duration_sec": 3740,
-      "plays": 1060
+      "plays": 1062
     },
     {
       "id": 19466291,
@@ -25,7 +25,7 @@
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
       "duration_sec": 3912,
-      "plays": 1331
+      "plays": 1332
     },
     {
       "id": 19328548,
@@ -65,7 +65,7 @@
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
       "duration_sec": 2461,
-      "plays": 908
+      "plays": 909
     },
     {
       "id": 18794950,
@@ -89,7 +89,7 @@
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
       "duration_sec": 3568,
-      "plays": 1347
+      "plays": 1348
     },
     {
       "id": 18296133,
@@ -161,7 +161,7 @@
       "episode_number": 7,
       "published_at": "2025-07-03T12:00:00.000-04:00",
       "duration_sec": 3954,
-      "plays": 815
+      "plays": 816
     },
     {
       "id": 17282578,
@@ -177,7 +177,7 @@
       "episode_number": null,
       "published_at": "2025-05-20T15:00:00.000-04:00",
       "duration_sec": 3063,
-      "plays": 600
+      "plays": 601
     },
     {
       "id": 17122535,
@@ -209,7 +209,7 @@
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
       "duration_sec": 3516,
-      "plays": 593
+      "plays": 595
     },
     {
       "id": 16408083,
