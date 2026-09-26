@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-26T04:00:35Z",
+  "fetched_at": "2026-09-26T16:00:40Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -445,7 +445,7 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1971,
+      "views": 1972,
       "watch_hours": 8.3,
       "likes": 33
     },
@@ -734,7 +734,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 131451
+      "views": 131585
     },
     {
       "country": "GB",
@@ -742,7 +742,7 @@
     },
     {
       "country": "DE",
-      "views": 4793
+      "views": 4848
     },
     {
       "country": "CA",
@@ -758,7 +758,7 @@
     },
     {
       "country": "NL",
-      "views": 1493
+      "views": 1506
     },
     {
       "country": "ES",
@@ -766,11 +766,11 @@
     },
     {
       "country": "PL",
-      "views": 968
+      "views": 982
     },
     {
       "country": "IT",
-      "views": 827
+      "views": 847
     },
     {
       "country": "FR",
@@ -877,17 +877,17 @@
     {
       "age_group": "age25-34",
       "gender": "male",
-      "viewer_pct": 7.9
+      "viewer_pct": 8.0
     },
     {
       "age_group": "age35-44",
       "gender": "male",
-      "viewer_pct": 14.6
+      "viewer_pct": 14.7
     },
     {
       "age_group": "age45-54",
       "gender": "male",
-      "viewer_pct": 19.8
+      "viewer_pct": 19.9
     },
     {
       "age_group": "age55-64",
