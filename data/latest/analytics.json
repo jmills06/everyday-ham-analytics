@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-27T04:00:41Z",
+  "fetched_at": "2026-09-27T16:00:43Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
     "views": 21902,
-    "engaged_views": 10038,
+    "engaged_views": 10034,
     "watch_hours": 690.1,
     "avg_view_pct": 20.4,
     "subs_gained": 71,
@@ -340,7 +340,7 @@
       "likes": 12,
       "comments": 1,
       "shares": 0,
-      "engaged_views": 226
+      "engaged_views": 222
     },
     {
       "date": "2026-09-22",
