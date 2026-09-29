@@ -1,35 +1,22 @@
 {
-  "fetched_at": "2026-09-28T16:00:53Z",
+  "fetched_at": "2026-09-29T04:00:35Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 23133,
-    "engaged_views": 10541,
-    "watch_hours": 723.2,
-    "avg_view_pct": 21.4,
-    "subs_gained": 70,
-    "subs_lost": 15,
+    "views": 21275,
+    "engaged_views": 9816,
+    "watch_hours": 657.9,
+    "avg_view_pct": 22.0,
+    "subs_gained": 69,
+    "subs_lost": 14,
     "subs_net": 55,
-    "likes": 321,
-    "comments": 43,
-    "shares": 50,
-    "subscribed_views": 2860,
-    "not_subscribed_views": 20270
+    "likes": 288,
+    "comments": 36,
+    "shares": 43,
+    "subscribed_views": 2579,
+    "not_subscribed_views": 18696
   },
   "daily": [
-    {
-      "date": "2026-08-29",
-      "views": 3223,
-      "watch_minutes": 5926,
-      "avg_view_duration_sec": 268,
-      "avg_view_pct": 19.4,
-      "subs_gained": 4,
-      "subs_lost": 1,
-      "likes": 45,
-      "comments": 8,
-      "shares": 7,
-      "engaged_views": 1308
-    },
     {
       "date": "2026-08-30",
       "views": 1697,
@@ -357,8 +344,8 @@
     },
     {
       "date": "2026-09-24",
-      "views": 414,
-      "watch_minutes": 871,
+      "views": 411,
+      "watch_minutes": 875,
       "avg_view_duration_sec": 237,
       "avg_view_pct": 19.6,
       "subs_gained": 2,
@@ -366,7 +353,7 @@
       "likes": 6,
       "comments": 0,
       "shares": 3,
-      "engaged_views": 219
+      "engaged_views": 218
     },
     {
       "date": "2026-09-25",
@@ -380,52 +367,65 @@
       "comments": 5,
       "shares": 3,
       "engaged_views": 1108
+    },
+    {
+      "date": "2026-09-26",
+      "views": 1368,
+      "watch_minutes": 2001,
+      "avg_view_duration_sec": 203,
+      "avg_view_pct": 25.5,
+      "subs_gained": 3,
+      "subs_lost": 0,
+      "likes": 12,
+      "comments": 1,
+      "shares": 0,
+      "engaged_views": 584
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 9170
+      "views": 8185
     },
     {
       "source": "YT_SEARCH",
-      "views": 8420
+      "views": 7672
     },
     {
       "source": "SHORTS",
-      "views": 1520
+      "views": 1630
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1219
+      "views": 1131
     },
     {
       "source": "EXT_URL",
-      "views": 1168
+      "views": 1126
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 688
+      "views": 634
     },
     {
       "source": "YT_CHANNEL",
-      "views": 373
+      "views": 340
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 312
+      "views": 301
     },
     {
       "source": "NOTIFICATION",
-      "views": 139
+      "views": 136
     },
     {
       "source": "PLAYLIST",
-      "views": 91
+      "views": 92
     },
     {
       "source": "END_SCREEN",
-      "views": 16
+      "views": 14
     },
     {
       "source": "HASHTAGS",
@@ -439,71 +439,71 @@
   "top_videos": [
     {
       "video_id": "FGMP-r6Kwq0",
-      "views": 4285,
-      "watch_hours": 146.0,
-      "likes": 46
+      "views": 2149,
+      "watch_hours": 65.1,
+      "likes": 12
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1960,
-      "watch_hours": 8.3,
-      "likes": 34
-    },
-    {
-      "video_id": "9Wk6JWDHHN4",
-      "views": 1582,
-      "watch_hours": 48.6,
-      "likes": 25
-    },
-    {
-      "video_id": "LwICFz2gx1w",
-      "views": 1211,
-      "watch_hours": 44.9,
+      "views": 1945,
+      "watch_hours": 8.1,
       "likes": 32
     },
     {
-      "video_id": "cGQR0gc20OY",
-      "views": 989,
-      "watch_hours": 86.0,
-      "likes": 16
+      "video_id": "LwICFz2gx1w",
+      "views": 1875,
+      "watch_hours": 64.2,
+      "likes": 39
+    },
+    {
+      "video_id": "9Wk6JWDHHN4",
+      "views": 1587,
+      "watch_hours": 49.4,
+      "likes": 25
+    },
+    {
+      "video_id": "cEPpW0aW-W8",
+      "views": 1186,
+      "watch_hours": 2.8,
+      "likes": 7
     }
   ],
   "search_terms": [
     {
       "term": "icom 7110",
-      "views": 296
+      "views": 217
     },
     {
       "term": "ic-7110",
-      "views": 239
-    },
-    {
-      "term": "kenwood tm-d750a",
-      "views": 148
-    },
-    {
-      "term": "icom ic-7110",
-      "views": 147
+      "views": 159
     },
     {
       "term": "meshtastic",
-      "views": 135
+      "views": 143
     },
     {
-      "term": "ic7110",
-      "views": 98
+      "term": "kenwood tm-d750a",
+      "views": 130
     },
     {
-      "term": "tokyo ham fair 2026",
-      "views": 67
+      "term": "icom ic-7110",
+      "views": 91
     },
     {
       "term": "wio tracker l1 pro",
+      "views": 65
+    },
+    {
+      "term": "ic7110",
       "views": 63
     },
     {
-      "term": "ic 7110",
-      "views": 52
+      "term": "id-5200",
+      "views": 55
+    },
+    {
+      "term": "icom id-5200",
+      "views": 49
     },
     {
       "term": "icom 5200",
@@ -512,54 +512,54 @@
   ],
   "suggested_by": [
     {
-      "video_id": "onBMk07UHDc",
-      "title": "Icom IC-7110: The New 100W HF/VHF/UHF All-Mode Radio",
-      "views": 28
-    },
-    {
-      "video_id": "TK9enrEHU_0",
-      "title": "The NEW Icom IC-7110 (HF-UHF 100W All Mode)",
-      "views": 25
-    },
-    {
-      "video_id": "0aju9R-lT5s",
-      "title": "Icom IC-7110 First Detailed Video",
-      "views": 21
-    },
-    {
       "video_id": "6a5WMQ5B1D8",
       "title": "Latest Details on the Kenwood D750",
       "views": 14
     },
     {
+      "video_id": "0aju9R-lT5s",
+      "title": "Icom IC-7110 First Detailed Video",
+      "views": 10
+    },
+    {
       "video_id": "ksm0EtEjw2Q",
       "title": "27. Icom IC-7110 (X-026) vs IC-705 or IC-7300 or FTX-1. Is there enough features to upgrade?",
-      "views": 13
+      "views": 9
     },
     {
-      "video_id": "655zd0ku-R0",
-      "title": "Icom ID-5200 vs Kenwood TM-D750: $999 Price, Ship Windows & the TNC Catch",
-      "views": 11
+      "video_id": "TK9enrEHU_0",
+      "title": "The NEW Icom IC-7110 (HF-UHF 100W All Mode)",
+      "views": 8
     },
     {
-      "video_id": "3zu9nPGEzFk",
-      "title": "Kenwood TM-D750E – First Impressions - WiMo",
-      "views": 10
-    },
-    {
-      "video_id": "cb8VldedYlg",
-      "title": "ICOM IC-7110 - Should I Buy it ?",
-      "views": 10
+      "video_id": "onBMk07UHDc",
+      "title": "Icom IC-7110: The New 100W HF/VHF/UHF All-Mode Radio",
+      "views": 8
     },
     {
       "video_id": "yPIuwbE6YDk",
       "title": "Best Dual Band Ham Radio VHF/UHF Base Antenna Made: The Diamond X300 WIth Installation Information",
-      "views": 9
+      "views": 8
     },
     {
-      "video_id": "4Cpk-sPkXZ4",
-      "title": "Revealed - ICOM IC-7110  New Generation Shack in Box",
+      "video_id": "3zu9nPGEzFk",
+      "title": "Kenwood TM-D750E – First Impressions - WiMo",
       "views": 7
+    },
+    {
+      "video_id": "655zd0ku-R0",
+      "title": "Icom ID-5200 vs Kenwood TM-D750: $999 Price, Ship Windows & the TNC Catch",
+      "views": 7
+    },
+    {
+      "video_id": "jRoDZ8bODb0",
+      "title": "My Favorite CW Morse Code Only Radios",
+      "views": 7
+    },
+    {
+      "video_id": "JxTK4XSaluU",
+      "title": "I Thought This Facebook Ham Radio Deal Was Going To Be A Scam.",
+      "views": 6
     }
   ],
   "search_terms_365": [
@@ -569,27 +569,27 @@
     },
     {
       "term": "ham radio",
-      "views": 986
+      "views": 990
     },
     {
       "term": "meshtastic",
-      "views": 938
+      "views": 946
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 639
+      "views": 640
     },
     {
       "term": "meshtastic solar node",
-      "views": 514
+      "views": 511
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 477
+      "views": 478
     },
     {
       "term": "ftdx101mp",
-      "views": 440
+      "views": 441
     },
     {
       "term": "dayton hamvention 2026",
@@ -612,12 +612,12 @@
       "views": 296
     },
     {
-      "term": "wio tracker l1",
-      "views": 288
+      "term": "pota",
+      "views": 284
     },
     {
-      "term": "pota",
-      "views": 282
+      "term": "wio tracker l1",
+      "views": 284
     },
     {
       "term": "hamvention",
@@ -629,23 +629,27 @@
     },
     {
       "term": "dx commander",
-      "views": 242
+      "views": 243
     },
     {
       "term": "ic-7110",
-      "views": 239
+      "views": 240
     },
     {
       "term": "icom 5200",
-      "views": 229
+      "views": 234
     },
     {
       "term": "amateur radio",
-      "views": 224
+      "views": 223
     },
     {
       "term": "icom",
       "views": 221
+    },
+    {
+      "term": "id-5200",
+      "views": 220
     },
     {
       "term": "flex radio",
@@ -656,59 +660,45 @@
       "views": 213
     },
     {
-      "term": "id-5200",
-      "views": 208
-    },
-    {
       "term": "icom id-5200",
-      "views": 199
+      "views": 206
     }
   ],
   "geography_30": [
     {
       "country": "US",
-      "views": 13495,
-      "watch_hours": 472.8
+      "views": 12291,
+      "watch_hours": 420.1
     },
     {
       "country": "GB",
-      "views": 784,
-      "watch_hours": 21.6
-    },
-    {
-      "country": "JP",
-      "views": 305,
-      "watch_hours": 6.6
-    },
-    {
-      "country": "DE",
-      "views": 284,
-      "watch_hours": 11.1
+      "views": 619,
+      "watch_hours": 20.9
     },
     {
       "country": "CA",
-      "views": 276,
-      "watch_hours": 11.6
+      "views": 202,
+      "watch_hours": 9.6
+    },
+    {
+      "country": "JP",
+      "views": 175,
+      "watch_hours": 4.2
+    },
+    {
+      "country": "DE",
+      "views": 174,
+      "watch_hours": 8.7
     },
     {
       "country": "AU",
-      "views": 126,
-      "watch_hours": 6.1
+      "views": 91,
+      "watch_hours": 6.6
     },
     {
       "country": "NL",
-      "views": 122,
-      "watch_hours": 4.5
-    },
-    {
-      "country": "PL",
-      "views": 41,
-      "watch_hours": 0.6
-    },
-    {
-      "country": "ES",
-      "views": 40,
-      "watch_hours": 0.8
+      "views": 57,
+      "watch_hours": 2.0
     },
     {
       "country": "BR",
@@ -716,32 +706,32 @@
       "watch_hours": 0.1
     },
     {
-      "country": "CH",
-      "views": 21,
-      "watch_hours": 0.7
+      "country": "ES",
+      "views": 14,
+      "watch_hours": 0.5
     },
     {
-      "country": "RU",
-      "views": 16,
-      "watch_hours": 0.1
+      "country": "PL",
+      "views": 13,
+      "watch_hours": 0.4
     }
   ],
   "geography_365": [
     {
       "country": "US",
-      "views": 133062
+      "views": 133151
     },
     {
       "country": "GB",
-      "views": 5968
+      "views": 5947
     },
     {
       "country": "DE",
-      "views": 4870
+      "views": 4844
     },
     {
       "country": "CA",
-      "views": 4603
+      "views": 4536
     },
     {
       "country": "JP",
@@ -749,11 +739,11 @@
     },
     {
       "country": "AU",
-      "views": 1677
+      "views": 1693
     },
     {
       "country": "NL",
-      "views": 1530
+      "views": 1504
     },
     {
       "country": "ES",
@@ -773,7 +763,7 @@
     },
     {
       "country": "SE",
-      "views": 612
+      "views": 578
     },
     {
       "country": "BR",
@@ -828,5 +818,71 @@
       "views": 117
     }
   ],
-  "demographics_365": []
+  "demographics_365": [
+    {
+      "age_group": "age18-24",
+      "gender": "female",
+      "viewer_pct": 0.0
+    },
+    {
+      "age_group": "age25-34",
+      "gender": "female",
+      "viewer_pct": 0.2
+    },
+    {
+      "age_group": "age35-44",
+      "gender": "female",
+      "viewer_pct": 0.2
+    },
+    {
+      "age_group": "age45-54",
+      "gender": "female",
+      "viewer_pct": 0.2
+    },
+    {
+      "age_group": "age55-64",
+      "gender": "female",
+      "viewer_pct": 0.1
+    },
+    {
+      "age_group": "age65-",
+      "gender": "female",
+      "viewer_pct": 0.2
+    },
+    {
+      "age_group": "age13-17",
+      "gender": "male",
+      "viewer_pct": 0.3
+    },
+    {
+      "age_group": "age18-24",
+      "gender": "male",
+      "viewer_pct": 1.2
+    },
+    {
+      "age_group": "age25-34",
+      "gender": "male",
+      "viewer_pct": 7.8
+    },
+    {
+      "age_group": "age35-44",
+      "gender": "male",
+      "viewer_pct": 14.7
+    },
+    {
+      "age_group": "age45-54",
+      "gender": "male",
+      "viewer_pct": 19.8
+    },
+    {
+      "age_group": "age55-64",
+      "gender": "male",
+      "viewer_pct": 26.3
+    },
+    {
+      "age_group": "age65-",
+      "gender": "male",
+      "viewer_pct": 29.0
+    }
+  ]
 }
