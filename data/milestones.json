@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T04:00:36Z",
+  "updated_at": "2026-09-29T16:00:46Z",
   "display_hours": 36,
   "events": [
     {
@@ -7,6 +7,12 @@
       "value": 250000,
       "reached_at": "2026-08-19T16:00:47Z",
       "actual_value": 250078
+    },
+    {
+      "metric": "All-Time Downloads",
+      "value": 25000,
+      "reached_at": "2026-09-29T16:00:46Z",
+      "actual_value": 25007
     }
   ]
 }
