@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-01T16:00:40Z",
+  "fetched_at": "2026-10-02T04:00:30Z",
   "channel": {
-    "views": 283138,
+    "views": 283578,
     "subscribers": 2370,
     "videos": 169
   },
@@ -13,9 +13,9 @@
       "duration": "PT20M51S",
       "duration_seconds": 1251,
       "is_short": false,
-      "views": 67,
-      "likes": 9,
-      "comments": 4
+      "views": 408,
+      "likes": 28,
+      "comments": 10
     },
     {
       "id": "cEPpW0aW-W8",
@@ -24,7 +24,7 @@
       "duration": "PT24S",
       "duration_seconds": 24,
       "is_short": true,
-      "views": 1503,
+      "views": 1510,
       "likes": 13,
       "comments": 1
     },
@@ -35,7 +35,7 @@
       "duration": "PT17M38S",
       "duration_seconds": 1058,
       "is_short": false,
-      "views": 2732,
+      "views": 2833,
       "likes": 51,
       "comments": 9
     },
@@ -46,7 +46,7 @@
       "duration": "PT19M13S",
       "duration_seconds": 1153,
       "is_short": false,
-      "views": 1630,
+      "views": 1636,
       "likes": 25,
       "comments": 9
     },
@@ -79,7 +79,7 @@
       "duration": "PT1H15M37S",
       "duration_seconds": 4537,
       "is_short": false,
-      "views": 536,
+      "views": 538,
       "likes": 24,
       "comments": 6
     },
@@ -90,7 +90,7 @@
       "duration": "PT1M59S",
       "duration_seconds": 119,
       "is_short": true,
-      "views": 297,
+      "views": 298,
       "likes": 6,
       "comments": 0
     },
@@ -112,7 +112,7 @@
       "duration": "PT29M23S",
       "duration_seconds": 1763,
       "is_short": false,
-      "views": 4313,
+      "views": 4315,
       "likes": 46,
       "comments": 16
     },
@@ -134,7 +134,7 @@
       "duration": "PT32S",
       "duration_seconds": 32,
       "is_short": true,
-      "views": 1297,
+      "views": 1298,
       "likes": 16,
       "comments": 0
     },
@@ -145,7 +145,7 @@
       "duration": "PT26M37S",
       "duration_seconds": 1597,
       "is_short": false,
-      "views": 904,
+      "views": 905,
       "likes": 38,
       "comments": 10
     },
@@ -212,7 +212,7 @@
       "duration_seconds": 55,
       "is_short": true,
       "views": 196,
-      "likes": 0,
+      "likes": 6,
       "comments": 0
     },
     {
@@ -222,7 +222,7 @@
       "duration": "PT39M29S",
       "duration_seconds": 2369,
       "is_short": false,
-      "views": 1965,
+      "views": 1968,
       "likes": 106,
       "comments": 16
     },
@@ -244,7 +244,7 @@
       "duration": "PT14M14S",
       "duration_seconds": 854,
       "is_short": false,
-      "views": 5384,
+      "views": 5388,
       "likes": 172,
       "comments": 50
     },
@@ -299,7 +299,7 @@
       "duration": "PT1H4M48S",
       "duration_seconds": 3888,
       "is_short": false,
-      "views": 289,
+      "views": 290,
       "likes": 18,
       "comments": 1
     },
@@ -365,7 +365,7 @@
       "duration": "PT8M11S",
       "duration_seconds": 491,
       "is_short": false,
-      "views": 1389,
+      "views": 1403,
       "likes": 50,
       "comments": 10
     },
@@ -376,7 +376,7 @@
       "duration": "PT14M57S",
       "duration_seconds": 897,
       "is_short": false,
-      "views": 750,
+      "views": 752,
       "likes": 51,
       "comments": 12
     },
@@ -409,7 +409,7 @@
       "duration": "PT4M36S",
       "duration_seconds": 276,
       "is_short": false,
-      "views": 3515,
+      "views": 3516,
       "likes": 92,
       "comments": 21
     },
@@ -420,7 +420,7 @@
       "duration": "PT1M51S",
       "duration_seconds": 111,
       "is_short": true,
-      "views": 622,
+      "views": 623,
       "likes": 25,
       "comments": 7
     },
@@ -431,7 +431,7 @@
       "duration": "PT5M58S",
       "duration_seconds": 358,
       "is_short": false,
-      "views": 10050,
+      "views": 10056,
       "likes": 197,
       "comments": 58
     },
@@ -442,7 +442,7 @@
       "duration": "PT9M33S",
       "duration_seconds": 573,
       "is_short": false,
-      "views": 2062,
+      "views": 2065,
       "likes": 60,
       "comments": 12
     },
@@ -453,7 +453,7 @@
       "duration": "PT5M46S",
       "duration_seconds": 346,
       "is_short": false,
-      "views": 11971,
+      "views": 11981,
       "likes": 197,
       "comments": 59
     },
@@ -475,7 +475,7 @@
       "duration": "PT6M24S",
       "duration_seconds": 384,
       "is_short": false,
-      "views": 4913,
+      "views": 4917,
       "likes": 137,
       "comments": 26
     },
@@ -486,7 +486,7 @@
       "duration": "PT2M47S",
       "duration_seconds": 167,
       "is_short": true,
-      "views": 1049,
+      "views": 1052,
       "likes": 31,
       "comments": 5
     },
@@ -497,7 +497,7 @@
       "duration": "PT12M49S",
       "duration_seconds": 769,
       "is_short": false,
-      "views": 1699,
+      "views": 1700,
       "likes": 75,
       "comments": 8
     },
@@ -508,7 +508,7 @@
       "duration": "PT1M10S",
       "duration_seconds": 70,
       "is_short": true,
-      "views": 1574,
+      "views": 1575,
       "likes": 20,
       "comments": 5
     },
@@ -557,15 +557,70 @@
       "comments": 2
     },
     {
+      "id": "lmdm14Arg6A",
+      "title": "Is BG2FX Building the Ultimate Portable Radio?",
+      "published_at": "2026-04-01T01:39:05Z",
+      "duration": "PT1M35S",
+      "duration_seconds": 95,
+      "is_short": true,
+      "views": 618,
+      "likes": 5,
+      "comments": 0
+    },
+    {
       "id": "gN1AIV5J-4s",
       "title": "Is BG2FX Building a New 50-Watt Radio? Life after the FX-4CR is QRO!",
       "published_at": "2026-03-31T16:00:29Z",
       "duration": "PT27M18S",
       "duration_seconds": 1638,
       "is_short": false,
-      "views": 2164,
+      "views": 2165,
       "likes": 77,
       "comments": 36
+    },
+    {
+      "id": "_rpb3BFjV-A",
+      "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
+      "published_at": "2026-03-26T13:01:04Z",
+      "duration": "PT41M12S",
+      "duration_seconds": 2472,
+      "is_short": false,
+      "views": 570,
+      "likes": 38,
+      "comments": 6
+    },
+    {
+      "id": "vdaoVJKTXRU",
+      "title": "Stealth Condo Antenna install with a DJI Mini Drone - HOA Hams",
+      "published_at": "2026-03-22T19:08:58Z",
+      "duration": "PT15M4S",
+      "duration_seconds": 904,
+      "is_short": false,
+      "views": 1068,
+      "likes": 24,
+      "comments": 5
+    },
+    {
+      "id": "4dP7kktHK0k",
+      "title": "POTA Roving Florida's Space Coast After Hamcation - Seeing NASA Artemis II Moon Rocket",
+      "published_at": "2026-03-12T14:00:07Z",
+      "duration": "PT15M19S",
+      "duration_seconds": 919,
+      "is_short": false,
+      "views": 191,
+      "likes": 20,
+      "comments": 2
+    },
+    {
+      "id": "6omvDxgOpLc",
+      "title": "Price Increases, Oh My! - Episode 15 is Live Now #hamradio",
+      "published_at": "2026-03-05T23:19:29Z",
+      "duration": "PT32S",
+      "duration_seconds": 32,
+      "is_short": true,
+      "views": 1257,
+      "likes": 16,
+      "comments": 0
     },
     {
       "id": "KJN_OA-oZnQ",
@@ -579,15 +634,235 @@
       "comments": 7
     },
     {
+      "id": "Koz7XST0tKw",
+      "title": "Are Radio Prices Going Up? Bouvet, Yaesu & HamClock",
+      "published_at": "2026-03-05T15:31:48Z",
+      "duration": "PT1H1M35S",
+      "duration_seconds": 3695,
+      "is_short": false,
+      "views": 184,
+      "likes": 13,
+      "comments": 0
+    },
+    {
+      "id": "pn-6WtI41MI",
+      "title": "Ham Radio Repeater Upgrades - Touring a Vintage Motorola Micor Repeater Site",
+      "published_at": "2026-02-26T14:08:30Z",
+      "duration": "PT8M41S",
+      "duration_seconds": 521,
+      "is_short": false,
+      "views": 1865,
+      "likes": 75,
+      "comments": 6
+    },
+    {
+      "id": "r6CgCAViM_c",
+      "title": "Kits 4 Hams SHARI Allstar Node & Mortty V5 | Hamcation 2026",
+      "published_at": "2026-02-15T03:55:46Z",
+      "duration": "PT17M29S",
+      "duration_seconds": 1049,
+      "is_short": false,
+      "views": 710,
+      "likes": 31,
+      "comments": 4
+    },
+    {
+      "id": "_5gsI9KuvEI",
+      "title": "Icom IC-7300MK2: The Upgrade We’ve Been Waiting For?| Hamcation 2026",
+      "published_at": "2026-02-14T23:39:30Z",
+      "duration": "PT11M2S",
+      "duration_seconds": 662,
+      "is_short": false,
+      "views": 5650,
+      "likes": 189,
+      "comments": 25
+    },
+    {
+      "id": "Vqx57KovKXs",
+      "title": "Is the Heil BM-17 Coming Back? Update from Hamcation 2026",
+      "published_at": "2026-02-14T23:21:37Z",
+      "duration": "PT1M34S",
+      "duration_seconds": 94,
+      "is_short": true,
+      "views": 406,
+      "likes": 15,
+      "comments": 2
+    },
+    {
+      "id": "rHev6bDGSWg",
+      "title": "Seeed Studio Mesh Networking: Meshtastic vs Meshcore | Hamcation 2026",
+      "published_at": "2026-02-14T17:27:02Z",
+      "duration": "PT4M39S",
+      "duration_seconds": 279,
+      "is_short": false,
+      "views": 1227,
+      "likes": 40,
+      "comments": 2
+    },
+    {
+      "id": "RpKnlTc2Lo4",
+      "title": "Walking the Hamcation 2026 Flea Market #hamradio #hamcation",
+      "published_at": "2026-02-14T15:36:28Z",
+      "duration": "PT1M45S",
+      "duration_seconds": 105,
+      "is_short": true,
+      "views": 494,
+      "likes": 13,
+      "comments": 2
+    },
+    {
+      "id": "BGiDdHdL7-s",
+      "title": "FlexRadio Aurora AU-510M: 500W SDR Powerhouse | Hamcation 2026",
+      "published_at": "2026-02-14T00:59:14Z",
+      "duration": "PT3M12S",
+      "duration_seconds": 192,
+      "is_short": false,
+      "views": 2759,
+      "likes": 56,
+      "comments": 8
+    },
+    {
+      "id": "d_2-kWWuiaY",
+      "title": "NEW Buddihex Mini & Mastwerks Precision Antenna Rotator | Hamcation 2026",
+      "published_at": "2026-02-14T00:53:21Z",
+      "duration": "PT7M22S",
+      "duration_seconds": 442,
+      "is_short": false,
+      "views": 3291,
+      "likes": 109,
+      "comments": 18
+    },
+    {
+      "id": "1EumigRB1Vg",
+      "title": "The Laser Ham Folding Ground Plane Antenna | Hamcation 2026",
+      "published_at": "2026-02-14T00:47:01Z",
+      "duration": "PT1M24S",
+      "duration_seconds": 84,
+      "is_short": true,
+      "views": 488,
+      "likes": 15,
+      "comments": 2
+    },
+    {
+      "id": "dq8p3Blm4Ts",
+      "title": "Four Hams, One Screen, and Zero Instructions - Upgrading the Club Meeting Space",
+      "published_at": "2026-02-07T19:03:13Z",
+      "duration": "PT2M43S",
+      "duration_seconds": 163,
+      "is_short": true,
+      "views": 3268,
+      "likes": 12,
+      "comments": 1
+    },
+    {
+      "id": "ZScvDM3YLWY",
+      "title": "Do you need that new radio? Episode 14 is Live and we’re taking a critical look! #hamradio #podcast",
+      "published_at": "2026-02-05T16:36:24Z",
+      "duration": "PT52S",
+      "duration_seconds": 52,
+      "is_short": true,
+      "views": 620,
+      "likes": 8,
+      "comments": 1
+    },
+    {
+      "id": "i_55Kt8PtJo",
+      "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
+      "published_at": "2026-02-05T15:25:03Z",
+      "duration": "PT50M46S",
+      "duration_seconds": 3046,
+      "is_short": false,
+      "views": 166,
+      "likes": 5,
+      "comments": 0
+    },
+    {
+      "id": "OhsGTEIVIE8",
+      "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
+      "published_at": "2026-02-05T15:02:11Z",
+      "duration": "PT50M21S",
+      "duration_seconds": 3021,
+      "is_short": false,
+      "views": 614,
+      "likes": 36,
+      "comments": 14
+    },
+    {
+      "id": "XPVfh05ifPI",
+      "title": "Brutal Cold: Winter Field Day at -17°F - Our 2026 WFD Experience | W8EDH",
+      "published_at": "2026-02-03T15:01:03Z",
+      "duration": "PT15M33S",
+      "duration_seconds": 933,
+      "is_short": false,
+      "views": 473,
+      "likes": 32,
+      "comments": 6
+    },
+    {
+      "id": "4xdfHO-DHlo",
+      "title": "TMD750A FCC Filing ! Price Guesses Revealed #shorts",
+      "published_at": "2026-01-30T20:46:17Z",
+      "duration": "PT1M27S",
+      "duration_seconds": 87,
+      "is_short": true,
+      "views": 1023,
+      "likes": 12,
+      "comments": 3
+    },
+    {
       "id": "vGcmAxr-eFM",
       "title": "Kenwood TM-D750A FCC Filing Reveals All! First Look at the Specs",
       "published_at": "2026-01-29T23:52:37Z",
       "duration": "PT20M18S",
       "duration_seconds": 1218,
       "is_short": false,
-      "views": 5017,
+      "views": 5018,
       "likes": 136,
       "comments": 67
+    },
+    {
+      "id": "AXDTXJFOSb0",
+      "title": "Winter Field Day 2026 Walk Around at Island Lake Recreation",
+      "published_at": "2026-01-24T18:52:44Z",
+      "duration": "PT2M51S",
+      "duration_seconds": 171,
+      "is_short": true,
+      "views": 290,
+      "likes": 18,
+      "comments": 1
+    },
+    {
+      "id": "surYSffn1tE",
+      "title": "Ever wonder if an e-ink reader would #pota? #hamradio #amateurradio #boox",
+      "published_at": "2026-01-18T16:25:06Z",
+      "duration": "PT1M20S",
+      "duration_seconds": 80,
+      "is_short": true,
+      "views": 1528,
+      "likes": 20,
+      "comments": 1
+    },
+    {
+      "id": "vXq5KRjkcw8",
+      "title": "#pota Winter Support Your Parks Weekend with the@SouthLyonAmateurRadioClub #amateurradio #hamradio",
+      "published_at": "2026-01-17T22:08:58Z",
+      "duration": "PT47S",
+      "duration_seconds": 47,
+      "is_short": true,
+      "views": 1137,
+      "likes": 22,
+      "comments": 3
+    },
+    {
+      "id": "VOzX6f-vYHk",
+      "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
+      "published_at": "2026-01-08T15:29:09Z",
+      "duration": "PT59M29S",
+      "duration_seconds": 3569,
+      "is_short": false,
+      "views": 238,
+      "likes": 6,
+      "comments": 3
     },
     {
       "id": "cGQR0gc20OY",
@@ -596,9 +871,152 @@
       "duration": "PT59M3S",
       "duration_seconds": 3543,
       "is_short": false,
-      "views": 6972,
+      "views": 7004,
       "likes": 234,
       "comments": 34
+    },
+    {
+      "id": "t5lZVONnmyw",
+      "title": "Quick POTA activation with the Aerial 51 antenna #hamradio #pota #amateurradio",
+      "published_at": "2026-01-05T02:42:29Z",
+      "duration": "PT2M10S",
+      "duration_seconds": 130,
+      "is_short": true,
+      "views": 4574,
+      "likes": 38,
+      "comments": 3
+    },
+    {
+      "id": "bnwByZ9Wjtk",
+      "title": "The DX Commander Signature 9 has my vote as being a durable verticals antenna. #amateurradio￼",
+      "published_at": "2026-01-04T18:48:18Z",
+      "duration": "PT1M1S",
+      "duration_seconds": 61,
+      "is_short": true,
+      "views": 2691,
+      "likes": 72,
+      "comments": 8
+    },
+    {
+      "id": "RMmIbQR7I4g",
+      "title": "You Don't Need HF for POTA — Just a Handheld and Friends",
+      "published_at": "2026-01-03T14:30:32Z",
+      "duration": "PT11M8S",
+      "duration_seconds": 668,
+      "is_short": false,
+      "views": 824,
+      "likes": 40,
+      "comments": 16
+    },
+    {
+      "id": "KnuUhcPZ-0I",
+      "title": "DX Commander Signature 9 vs. 47 MPH Gusts — Still Standing",
+      "published_at": "2025-12-29T19:00:16Z",
+      "duration": "PT56S",
+      "duration_seconds": 56,
+      "is_short": true,
+      "views": 1075,
+      "likes": 31,
+      "comments": 4
+    },
+    {
+      "id": "If9QQ4IMLtE",
+      "title": "Our First Christmas! 🎄 73 from The Everyday Ham Team",
+      "published_at": "2025-12-25T03:48:17Z",
+      "duration": "PT36S",
+      "duration_seconds": 36,
+      "is_short": true,
+      "views": 1482,
+      "likes": 22,
+      "comments": 2
+    },
+    {
+      "id": "k_Le8zbMJT8",
+      "title": "Astron VS-70M LED Backlight Upgrade and Repairing the Voltage Adjustment",
+      "published_at": "2025-12-11T05:01:10Z",
+      "duration": "PT9M55S",
+      "duration_seconds": 595,
+      "is_short": false,
+      "views": 554,
+      "likes": 26,
+      "comments": 1
+    },
+    {
+      "id": "Ov0kVMVcCC8",
+      "title": "Ham Radio Repeaters: Will Activity Rebound by 2026? #shorts",
+      "published_at": "2025-12-05T12:03:41Z",
+      "duration": "PT45S",
+      "duration_seconds": 45,
+      "is_short": true,
+      "views": 1049,
+      "likes": 12,
+      "comments": 1
+    },
+    {
+      "id": "Nrr_Ce10xoA",
+      "title": "Best Ham Radio Backpack of 2025? #shorts",
+      "published_at": "2025-12-04T19:58:57Z",
+      "duration": "PT35S",
+      "duration_seconds": 35,
+      "is_short": true,
+      "views": 292,
+      "likes": 5,
+      "comments": 0
+    },
+    {
+      "id": "id9szJP3ZZQ",
+      "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
+      "published_at": "2025-12-04T17:22:38Z",
+      "duration": "PT50M54S",
+      "duration_seconds": 3054,
+      "is_short": false,
+      "views": 194,
+      "likes": 8,
+      "comments": 1
+    },
+    {
+      "id": "BfnyZLXdTH0",
+      "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
+      "published_at": "2025-12-04T17:15:01Z",
+      "duration": "PT50M29S",
+      "duration_seconds": 3029,
+      "is_short": false,
+      "views": 641,
+      "likes": 23,
+      "comments": 4
+    },
+    {
+      "id": "wlmmJhByEO4",
+      "title": "2025 Ham Radio Favorites: Gear We Actually Use and Love",
+      "published_at": "2025-12-04T17:01:42Z",
+      "duration": "PT19M17S",
+      "duration_seconds": 1157,
+      "is_short": false,
+      "views": 1370,
+      "likes": 50,
+      "comments": 7
+    },
+    {
+      "id": "-OPz7HyW794",
+      "title": "Are There Any Ham Deals for Black Friday 2025?",
+      "published_at": "2025-11-28T16:30:57Z",
+      "duration": "PT12M39S",
+      "duration_seconds": 759,
+      "is_short": false,
+      "views": 1663,
+      "likes": 53,
+      "comments": 5
+    },
+    {
+      "id": "eiH0dJwnhnU",
+      "title": "Can You Put Up An Antenna? The HOA Bill Fight & IC-7300 Mark II",
+      "published_at": "2025-11-27T17:26:52Z",
+      "duration": "PT46M29S",
+      "duration_seconds": 2789,
+      "is_short": false,
+      "views": 40,
+      "likes": 2,
+      "comments": 0
     },
     {
       "id": "2W-dp4mJddU",
@@ -739,9 +1157,97 @@
       "duration": "PT58M37S",
       "duration_seconds": 3517,
       "is_short": false,
-      "views": 92,
+      "views": 93,
       "likes": 0,
       "comments": 0
+    },
+    {
+      "id": "ukBmPLoZ5Z4",
+      "title": "Aerial 51 Antenna: POTA Bands & No Tuner Needed? #shorts",
+      "published_at": "2025-11-20T22:24:07Z",
+      "duration": "PT1M49S",
+      "duration_seconds": 109,
+      "is_short": true,
+      "views": 1022,
+      "likes": 34,
+      "comments": 5
+    },
+    {
+      "id": "NRCz6H0BpZI",
+      "title": "SpiderBeam Aerial 51 - The Best Portable Antenna You Haven't Heard About?",
+      "published_at": "2025-11-20T16:01:16Z",
+      "duration": "PT35M58S",
+      "duration_seconds": 2158,
+      "is_short": false,
+      "views": 1001,
+      "likes": 35,
+      "comments": 13
+    },
+    {
+      "id": "sAGV73vzm24",
+      "title": "First POTA Activation in Canada! #shorts",
+      "published_at": "2025-11-17T01:31:25Z",
+      "duration": "PT52S",
+      "duration_seconds": 52,
+      "is_short": true,
+      "views": 958,
+      "likes": 20,
+      "comments": 1
+    },
+    {
+      "id": "RxgcxKk969g",
+      "title": "POTA Paradise: Ham Radio Beach Setup & Operation #shorts",
+      "published_at": "2025-11-14T00:34:53Z",
+      "duration": "PT34S",
+      "duration_seconds": 34,
+      "is_short": true,
+      "views": 1641,
+      "likes": 18,
+      "comments": 0
+    },
+    {
+      "id": "v0Ln5Q7P4nE",
+      "title": "POTA Road Trip: Arizona to Malibu - 3 Parks, 2 Days",
+      "published_at": "2025-11-13T17:23:26Z",
+      "duration": "PT7M29S",
+      "duration_seconds": 449,
+      "is_short": false,
+      "views": 156,
+      "likes": 14,
+      "comments": 5
+    },
+    {
+      "id": "1T2Ng1Q0WuQ",
+      "title": "Fall FT8 DX on 10m is Excellent #ft8 #hamradio #amateurradio #digitalmode #10meter #dx #dxcc",
+      "published_at": "2025-11-08T15:10:39Z",
+      "duration": "PT49S",
+      "duration_seconds": 49,
+      "is_short": true,
+      "views": 989,
+      "likes": 34,
+      "comments": 3
+    },
+    {
+      "id": "cAWtEZjwwRk",
+      "title": "Michigan's First Snowfall is coming-time to POTA #shorts #automobile #outdoors #hunting",
+      "published_at": "2025-11-07T22:37:56Z",
+      "duration": "PT56S",
+      "duration_seconds": 56,
+      "is_short": true,
+      "views": 1463,
+      "likes": 46,
+      "comments": 6
+    },
+    {
+      "id": "77VS3pzGjCc",
+      "title": "Icom 7300 Mark II: Unveiling the $1499 Launch Price! #shorts",
+      "published_at": "2025-11-07T17:55:54Z",
+      "duration": "PT2M8S",
+      "duration_seconds": 128,
+      "is_short": true,
+      "views": 862,
+      "likes": 18,
+      "comments": 4
     },
     {
       "id": "YbKLH7xdk4Q",
@@ -761,7 +1267,7 @@
       "duration": "PT41S",
       "duration_seconds": 41,
       "is_short": true,
-      "views": 1434,
+      "views": 1435,
       "likes": 20,
       "comments": 6
     },
@@ -783,7 +1289,7 @@
       "duration": "PT12M36S",
       "duration_seconds": 756,
       "is_short": false,
-      "views": 6532,
+      "views": 6546,
       "likes": 234,
       "comments": 29
     },
@@ -805,7 +1311,7 @@
       "duration": "PT20S",
       "duration_seconds": 20,
       "is_short": true,
-      "views": 14105,
+      "views": 14120,
       "likes": 165,
       "comments": 16
     },
@@ -816,7 +1322,7 @@
       "duration": "PT13M15S",
       "duration_seconds": 795,
       "is_short": false,
-      "views": 1101,
+      "views": 1102,
       "likes": 41,
       "comments": 23
     },
@@ -926,7 +1432,7 @@
       "duration": "PT27M15S",
       "duration_seconds": 1635,
       "is_short": false,
-      "views": 3014,
+      "views": 3024,
       "likes": 82,
       "comments": 69
     },
@@ -937,7 +1443,7 @@
       "duration": "PT26S",
       "duration_seconds": 26,
       "is_short": true,
-      "views": 3317,
+      "views": 3324,
       "likes": 36,
       "comments": 4
     },
@@ -1014,8 +1520,8 @@
       "duration": "PT47S",
       "duration_seconds": 47,
       "is_short": true,
-      "views": 21074,
-      "likes": 471,
+      "views": 21135,
+      "likes": 473,
       "comments": 37
     },
     {
@@ -1025,7 +1531,7 @@
       "duration": "PT57S",
       "duration_seconds": 57,
       "is_short": true,
-      "views": 2172,
+      "views": 2174,
       "likes": 19,
       "comments": 2
     },
@@ -1135,7 +1641,7 @@
       "duration": "PT15M10S",
       "duration_seconds": 910,
       "is_short": false,
-      "views": 3377,
+      "views": 3390,
       "likes": 124,
       "comments": 38
     },
@@ -1201,7 +1707,7 @@
       "duration": "PT30M23S",
       "duration_seconds": 1823,
       "is_short": false,
-      "views": 2840,
+      "views": 2841,
       "likes": 80,
       "comments": 30
     },
@@ -1212,7 +1718,7 @@
       "duration": "PT1H14M15S",
       "duration_seconds": 4455,
       "is_short": false,
-      "views": 11403,
+      "views": 11412,
       "likes": 273,
       "comments": 139
     },
@@ -1245,7 +1751,7 @@
       "duration": "PT21M7S",
       "duration_seconds": 1267,
       "is_short": false,
-      "views": 7336,
+      "views": 7337,
       "likes": 271,
       "comments": 42
     },

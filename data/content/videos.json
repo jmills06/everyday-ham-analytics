@@ -450,12 +450,57 @@
     "topics": []
   },
   {
+    "id": "lmdm14Arg6A",
+    "title": "Is BG2FX Building the Ultimate Portable Radio?",
+    "published_at": "2026-04-01T01:39:05Z",
+    "duration": "PT1M35S",
+    "duration_seconds": 95,
+    "is_short": true,
+    "topics": []
+  },
+  {
     "id": "gN1AIV5J-4s",
     "title": "Is BG2FX Building a New 50-Watt Radio? Life after the FX-4CR is QRO!",
     "published_at": "2026-03-31T16:00:29Z",
     "duration": "PT27M18S",
     "duration_seconds": 1638,
     "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "_rpb3BFjV-A",
+    "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
+    "published_at": "2026-03-26T13:01:04Z",
+    "duration": "PT41M12S",
+    "duration_seconds": 2472,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "vdaoVJKTXRU",
+    "title": "Stealth Condo Antenna install with a DJI Mini Drone - HOA Hams",
+    "published_at": "2026-03-22T19:08:58Z",
+    "duration": "PT15M4S",
+    "duration_seconds": 904,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "4dP7kktHK0k",
+    "title": "POTA Roving Florida's Space Coast After Hamcation - Seeing NASA Artemis II Moon Rocket",
+    "published_at": "2026-03-12T14:00:07Z",
+    "duration": "PT15M19S",
+    "duration_seconds": 919,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "6omvDxgOpLc",
+    "title": "Price Increases, Oh My! - Episode 15 is Live Now #hamradio",
+    "published_at": "2026-03-05T23:19:29Z",
+    "duration": "PT32S",
+    "duration_seconds": 32,
+    "is_short": true,
     "topics": []
   },
   {
@@ -468,6 +513,150 @@
     "topics": []
   },
   {
+    "id": "Koz7XST0tKw",
+    "title": "Are Radio Prices Going Up? Bouvet, Yaesu & HamClock",
+    "published_at": "2026-03-05T15:31:48Z",
+    "duration": "PT1H1M35S",
+    "duration_seconds": 3695,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "pn-6WtI41MI",
+    "title": "Ham Radio Repeater Upgrades - Touring a Vintage Motorola Micor Repeater Site",
+    "published_at": "2026-02-26T14:08:30Z",
+    "duration": "PT8M41S",
+    "duration_seconds": 521,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "r6CgCAViM_c",
+    "title": "Kits 4 Hams SHARI Allstar Node & Mortty V5 | Hamcation 2026",
+    "published_at": "2026-02-15T03:55:46Z",
+    "duration": "PT17M29S",
+    "duration_seconds": 1049,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "_5gsI9KuvEI",
+    "title": "Icom IC-7300MK2: The Upgrade We’ve Been Waiting For?| Hamcation 2026",
+    "published_at": "2026-02-14T23:39:30Z",
+    "duration": "PT11M2S",
+    "duration_seconds": 662,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "Vqx57KovKXs",
+    "title": "Is the Heil BM-17 Coming Back? Update from Hamcation 2026",
+    "published_at": "2026-02-14T23:21:37Z",
+    "duration": "PT1M34S",
+    "duration_seconds": 94,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "rHev6bDGSWg",
+    "title": "Seeed Studio Mesh Networking: Meshtastic vs Meshcore | Hamcation 2026",
+    "published_at": "2026-02-14T17:27:02Z",
+    "duration": "PT4M39S",
+    "duration_seconds": 279,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "RpKnlTc2Lo4",
+    "title": "Walking the Hamcation 2026 Flea Market #hamradio #hamcation",
+    "published_at": "2026-02-14T15:36:28Z",
+    "duration": "PT1M45S",
+    "duration_seconds": 105,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "BGiDdHdL7-s",
+    "title": "FlexRadio Aurora AU-510M: 500W SDR Powerhouse | Hamcation 2026",
+    "published_at": "2026-02-14T00:59:14Z",
+    "duration": "PT3M12S",
+    "duration_seconds": 192,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "d_2-kWWuiaY",
+    "title": "NEW Buddihex Mini & Mastwerks Precision Antenna Rotator | Hamcation 2026",
+    "published_at": "2026-02-14T00:53:21Z",
+    "duration": "PT7M22S",
+    "duration_seconds": 442,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "1EumigRB1Vg",
+    "title": "The Laser Ham Folding Ground Plane Antenna | Hamcation 2026",
+    "published_at": "2026-02-14T00:47:01Z",
+    "duration": "PT1M24S",
+    "duration_seconds": 84,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "dq8p3Blm4Ts",
+    "title": "Four Hams, One Screen, and Zero Instructions - Upgrading the Club Meeting Space",
+    "published_at": "2026-02-07T19:03:13Z",
+    "duration": "PT2M43S",
+    "duration_seconds": 163,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "ZScvDM3YLWY",
+    "title": "Do you need that new radio? Episode 14 is Live and we’re taking a critical look! #hamradio #podcast",
+    "published_at": "2026-02-05T16:36:24Z",
+    "duration": "PT52S",
+    "duration_seconds": 52,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "i_55Kt8PtJo",
+    "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
+    "published_at": "2026-02-05T15:25:03Z",
+    "duration": "PT50M46S",
+    "duration_seconds": 3046,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "OhsGTEIVIE8",
+    "title": "Do You Really Need a New Radio? Honest Ham Radio Upgrade Advice",
+    "published_at": "2026-02-05T15:02:11Z",
+    "duration": "PT50M21S",
+    "duration_seconds": 3021,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "XPVfh05ifPI",
+    "title": "Brutal Cold: Winter Field Day at -17°F - Our 2026 WFD Experience | W8EDH",
+    "published_at": "2026-02-03T15:01:03Z",
+    "duration": "PT15M33S",
+    "duration_seconds": 933,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "4xdfHO-DHlo",
+    "title": "TMD750A FCC Filing ! Price Guesses Revealed #shorts",
+    "published_at": "2026-01-30T20:46:17Z",
+    "duration": "PT1M27S",
+    "duration_seconds": 87,
+    "is_short": true,
+    "topics": []
+  },
+  {
     "id": "vGcmAxr-eFM",
     "title": "Kenwood TM-D750A FCC Filing Reveals All! First Look at the Specs",
     "published_at": "2026-01-29T23:52:37Z",
@@ -477,11 +666,164 @@
     "topics": []
   },
   {
+    "id": "AXDTXJFOSb0",
+    "title": "Winter Field Day 2026 Walk Around at Island Lake Recreation",
+    "published_at": "2026-01-24T18:52:44Z",
+    "duration": "PT2M51S",
+    "duration_seconds": 171,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "surYSffn1tE",
+    "title": "Ever wonder if an e-ink reader would #pota? #hamradio #amateurradio #boox",
+    "published_at": "2026-01-18T16:25:06Z",
+    "duration": "PT1M20S",
+    "duration_seconds": 80,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "vXq5KRjkcw8",
+    "title": "#pota Winter Support Your Parks Weekend with the@SouthLyonAmateurRadioClub #amateurradio #hamradio",
+    "published_at": "2026-01-17T22:08:58Z",
+    "duration": "PT47S",
+    "duration_seconds": 47,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "VOzX6f-vYHk",
+    "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
+    "published_at": "2026-01-08T15:29:09Z",
+    "duration": "PT59M29S",
+    "duration_seconds": 3569,
+    "is_short": false,
+    "topics": []
+  },
+  {
     "id": "cGQR0gc20OY",
     "title": "Learning CW in 2026: Two Paths to Morse Code Success",
     "published_at": "2026-01-08T15:01:16Z",
     "duration": "PT59M3S",
     "duration_seconds": 3543,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "t5lZVONnmyw",
+    "title": "Quick POTA activation with the Aerial 51 antenna #hamradio #pota #amateurradio",
+    "published_at": "2026-01-05T02:42:29Z",
+    "duration": "PT2M10S",
+    "duration_seconds": 130,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "bnwByZ9Wjtk",
+    "title": "The DX Commander Signature 9 has my vote as being a durable verticals antenna. #amateurradio￼",
+    "published_at": "2026-01-04T18:48:18Z",
+    "duration": "PT1M1S",
+    "duration_seconds": 61,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "RMmIbQR7I4g",
+    "title": "You Don't Need HF for POTA — Just a Handheld and Friends",
+    "published_at": "2026-01-03T14:30:32Z",
+    "duration": "PT11M8S",
+    "duration_seconds": 668,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "KnuUhcPZ-0I",
+    "title": "DX Commander Signature 9 vs. 47 MPH Gusts — Still Standing",
+    "published_at": "2025-12-29T19:00:16Z",
+    "duration": "PT56S",
+    "duration_seconds": 56,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "If9QQ4IMLtE",
+    "title": "Our First Christmas! 🎄 73 from The Everyday Ham Team",
+    "published_at": "2025-12-25T03:48:17Z",
+    "duration": "PT36S",
+    "duration_seconds": 36,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "k_Le8zbMJT8",
+    "title": "Astron VS-70M LED Backlight Upgrade and Repairing the Voltage Adjustment",
+    "published_at": "2025-12-11T05:01:10Z",
+    "duration": "PT9M55S",
+    "duration_seconds": 595,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "Ov0kVMVcCC8",
+    "title": "Ham Radio Repeaters: Will Activity Rebound by 2026? #shorts",
+    "published_at": "2025-12-05T12:03:41Z",
+    "duration": "PT45S",
+    "duration_seconds": 45,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "Nrr_Ce10xoA",
+    "title": "Best Ham Radio Backpack of 2025? #shorts",
+    "published_at": "2025-12-04T19:58:57Z",
+    "duration": "PT35S",
+    "duration_seconds": 35,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "id9szJP3ZZQ",
+    "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
+    "published_at": "2025-12-04T17:22:38Z",
+    "duration": "PT50M54S",
+    "duration_seconds": 3054,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "BfnyZLXdTH0",
+    "title": "2026 Ham Radio Predictions: New Rigs, Community & What's Next",
+    "published_at": "2025-12-04T17:15:01Z",
+    "duration": "PT50M29S",
+    "duration_seconds": 3029,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "wlmmJhByEO4",
+    "title": "2025 Ham Radio Favorites: Gear We Actually Use and Love",
+    "published_at": "2025-12-04T17:01:42Z",
+    "duration": "PT19M17S",
+    "duration_seconds": 1157,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "-OPz7HyW794",
+    "title": "Are There Any Ham Deals for Black Friday 2025?",
+    "published_at": "2025-11-28T16:30:57Z",
+    "duration": "PT12M39S",
+    "duration_seconds": 759,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "eiH0dJwnhnU",
+    "title": "Can You Put Up An Antenna? The HOA Bill Fight & IC-7300 Mark II",
+    "published_at": "2025-11-27T17:26:52Z",
+    "duration": "PT46M29S",
+    "duration_seconds": 2789,
     "is_short": false,
     "topics": []
   },
@@ -600,6 +942,78 @@
     "duration": "PT58M37S",
     "duration_seconds": 3517,
     "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "ukBmPLoZ5Z4",
+    "title": "Aerial 51 Antenna: POTA Bands & No Tuner Needed? #shorts",
+    "published_at": "2025-11-20T22:24:07Z",
+    "duration": "PT1M49S",
+    "duration_seconds": 109,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "NRCz6H0BpZI",
+    "title": "SpiderBeam Aerial 51 - The Best Portable Antenna You Haven't Heard About?",
+    "published_at": "2025-11-20T16:01:16Z",
+    "duration": "PT35M58S",
+    "duration_seconds": 2158,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "sAGV73vzm24",
+    "title": "First POTA Activation in Canada! #shorts",
+    "published_at": "2025-11-17T01:31:25Z",
+    "duration": "PT52S",
+    "duration_seconds": 52,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "RxgcxKk969g",
+    "title": "POTA Paradise: Ham Radio Beach Setup & Operation #shorts",
+    "published_at": "2025-11-14T00:34:53Z",
+    "duration": "PT34S",
+    "duration_seconds": 34,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "v0Ln5Q7P4nE",
+    "title": "POTA Road Trip: Arizona to Malibu - 3 Parks, 2 Days",
+    "published_at": "2025-11-13T17:23:26Z",
+    "duration": "PT7M29S",
+    "duration_seconds": 449,
+    "is_short": false,
+    "topics": []
+  },
+  {
+    "id": "1T2Ng1Q0WuQ",
+    "title": "Fall FT8 DX on 10m is Excellent #ft8 #hamradio #amateurradio #digitalmode #10meter #dx #dxcc",
+    "published_at": "2025-11-08T15:10:39Z",
+    "duration": "PT49S",
+    "duration_seconds": 49,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "cAWtEZjwwRk",
+    "title": "Michigan's First Snowfall is coming-time to POTA #shorts #automobile #outdoors #hunting",
+    "published_at": "2025-11-07T22:37:56Z",
+    "duration": "PT56S",
+    "duration_seconds": 56,
+    "is_short": true,
+    "topics": []
+  },
+  {
+    "id": "77VS3pzGjCc",
+    "title": "Icom 7300 Mark II: Unveiling the $1499 Launch Price! #shorts",
+    "published_at": "2025-11-07T17:55:54Z",
+    "duration": "PT2M8S",
+    "duration_seconds": 128,
+    "is_short": true,
     "topics": []
   },
   {
