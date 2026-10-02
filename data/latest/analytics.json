@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-02T04:00:45Z",
+  "fetched_at": "2026-10-02T16:00:47Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 274,
     "comments": 34,
     "shares": 42,
-    "subscribed_views": 2253,
-    "not_subscribed_views": 17264
+    "subscribed_views": 2250,
+    "not_subscribed_views": 17229
   },
   "daily": [
     {
@@ -385,19 +385,19 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7352
+      "views": 7337
     },
     {
       "source": "YT_SEARCH",
-      "views": 7000
+      "views": 6990
     },
     {
       "source": "SHORTS",
-      "views": 1646
+      "views": 1636
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1064
+      "views": 1062
     },
     {
       "source": "EXT_URL",
@@ -413,7 +413,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 290
+      "views": 289
     },
     {
       "source": "NOTIFICATION",
@@ -581,7 +581,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 511
+      "views": 512
     },
     {
       "term": "kenwood tm-d750a",
@@ -597,7 +597,7 @@
     },
     {
       "term": "atas 120a antenna",
-      "views": 353
+      "views": 358
     },
     {
       "term": "icom x026",
@@ -653,7 +653,7 @@
     },
     {
       "term": "flex radio",
-      "views": 220
+      "views": 219
     },
     {
       "term": "icom id-5200",
