@@ -62,6 +62,20 @@ body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
 .dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(243,237,225,.18); transition: opacity 600ms ease; }
 .dot.on { background: var(--signal); }
 
+.team-list { display: flex; flex-direction: column; gap: 12px; }
+.team-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center;
+  padding-bottom: 12px; border-bottom: 1px solid var(--hairline); }
+.team-row:last-child { border-bottom: 0; }
+.team-row .t { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 30px; line-height: 1.1; }
+.team-row .m { margin-top: 4px; font-size: 15px; color: var(--dim); }
+.cal { display: flex; flex-direction: column; gap: 10px; }
+.cal-row { display: grid; grid-template-columns: 150px 110px 1fr; gap: 14px; align-items: baseline; }
+.cal-date { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px; }
+.cal-kind { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--gold); }
+.cal-kind.release { color: var(--up); } .cal-kind.record { color: var(--gold); } .cal-kind.event { color: var(--dim); }
+.cal-title { font-size: 19px; line-height: 1.3; }
+.gapnote { margin-top: 12px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px; color: var(--signal); }
 .rising { display: flex; flex-wrap: wrap; gap: 12px; }
 .rise { display: flex; align-items: baseline; gap: 10px; padding: 8px 16px; border-radius: 10px;
   background: rgba(243,237,225,0.03); border: 1px solid var(--hairline); }
@@ -85,6 +99,12 @@ body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
   <div class="dots" id="dots"></div>
 
   <section class="card">
+    <div class="eyebrow"><span class="kicker">Coming up</span></div>
+    <div class="cal" id="cal"><div class="empty">Nothing on the Everyday Ham calendar yet</div></div>
+    <div class="gapnote" id="gapnote"></div>
+  </section>
+
+  <section class="card">
     <div class="eyebrow"><span class="kicker">Rising in the community</span></div>
     <div class="rising" id="rising"><div class="empty">No clear risers this month</div></div>
   </section>
@@ -96,8 +116,8 @@ body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
 const DATA_URL = '../data/k1/ideas.json';
 const REFRESH_MINUTES = 15;
 const STALE_DAYS = 9;          // the brief is weekly (Monday)
-const PER_PAGE = 3;
-const PAGE_SECONDS = 25;
+const PER_PAGE = 2;
+const PAGE_SECONDS = 22;
 const FORMAT_LABEL = { youtube: 'YouTube', podcast: 'Podcast', both: 'YouTube + Podcast', short: 'Short' };
 
 let lastSig = '', secondsToRefresh = 0, pageTick = 0, pageIdx = 0, data = null;
@@ -136,6 +156,22 @@ function render(d) {
     stage.appendChild(page);
     dots.appendChild(el('div', 'dot'));
   }
+  const team = d.team || [];
+  if (team.length) {
+    const page = el('div', 'page'), card = el('div', 'card');
+    const eb = el('div', 'eyebrow'); eb.appendChild(el('span', 'kicker', 'From the team and our listeners'));
+    const list = el('div', 'team-list');
+    for (const t of team.slice(0, 8)) {
+      const row = el('div', 'team-row'), left = el('div');
+      left.append(el('div', 't', t.title), el('div', 'm', (t.source === 'listener' ? 'Listener idea' : 'Host idea')
+        + (t.format ? ' · ' + t.format : '')));
+      row.append(left, el('span', 'chip' + (t.status === 'Scheduled' ? ' fmt' : ''), t.status));
+      list.appendChild(row);
+    }
+    card.append(eb, list); page.appendChild(card);
+    stage.appendChild(page); dots.appendChild(el('div', 'dot'));
+  }
+  renderCalendar(d);
   pageIdx = 0; pageTick = 0;
   if (stage.querySelector('.page')) { stage.children[0].classList.add('on'); dots.children[0].classList.add('on'); }
 
@@ -148,6 +184,20 @@ function render(d) {
   if (!rising.firstChild) rising.appendChild(el('div', 'empty', 'No clear risers this month'));
   $('briefDate').textContent = 'Brief of ' + new Date(d.brief_date + 'T12:00:00Z')
     .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+function renderCalendar(d) {
+  const cal = $('cal'); clear(cal);
+  for (const u of (d.upcoming || []).slice(0, 5)) {
+    const row = el('div', 'cal-row');
+    const day = new Date(u.date + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+    row.append(el('div', 'cal-date', day), el('div', 'cal-kind ' + u.kind, u.kind), el('div', 'cal-title', u.title));
+    cal.appendChild(row);
+  }
+  if (!cal.firstChild) cal.appendChild(el('div', 'empty', 'Nothing on the Everyday Ham calendar yet'));
+  const gaps = d.weeks_without_release || [];
+  $('gapnote').textContent = gaps.length ? 'No release planned: week of ' + gaps.map(g =>
+    new Date(g + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })).join(', ') : '';
 }
 
 function stamp() {
@@ -163,7 +213,7 @@ async function refresh() {
     const r = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
-    const sig = JSON.stringify([d.brief_date, d.ideas, d.rising]);
+    const sig = JSON.stringify([d.brief_date, d.ideas, d.rising, d.team, d.upcoming, d.weeks_without_release]);
     if (sig !== lastSig) { lastSig = sig; data = d; render(d); }
     stamp();
   } catch (err) {
