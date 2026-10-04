@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-04T19:26:38Z",
+ "fetched_at": "2026-10-04T19:47:08Z",
  "brief_date": "2026-10-04",
  "ideas": [
   {
@@ -142,17 +142,21 @@
    "time": "19:00",
    "kind": "record",
    "title": "Episode 22 - WRL + EDH"
-  }
- ],
- "open_slots": [
+  },
   {
    "date": "2026-10-08",
-   "kind": "podcast"
+   "time": null,
+   "kind": "release",
+   "title": "Ep 22 WRL Podcast"
   },
   {
    "date": "2026-10-15",
-   "kind": "youtube"
-  },
+   "time": null,
+   "kind": "release",
+   "title": "Rory California QSO Party"
+  }
+ ],
+ "open_slots": [
   {
    "date": "2026-10-22",
    "kind": "youtube"
@@ -168,6 +172,14 @@
   {
    "date": "2026-11-05",
    "kind": "podcast"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "youtube"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "youtube"
   }
  ]
 }
