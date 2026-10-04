@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Idea Pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   EVERYDAY HAM · IDEA PIPELINE  (k1-ai board)
+   1080x1920 portrait signage · non-interactive · DakBoard
+   Data: ../data/k1/ideas.json (weekly brief, published by k1-ai).
+   Same display rules as the other boards: opacity/transform animation only,
+   one master tick, DOM rebuilt only on data change, never blank on failure.
+   ============================================================ */
+:root {
+  --ink: #1B1917; --ink-soft: #2A2724; --signal: #D84E2A; --cream: #F3EDE1;
+  --dim: #A89F92; --gold: #E0A52E; --up: #7FA86B; --down: #B3564A;
+  --hairline: rgba(243, 237, 225, 0.08); --card-r: 14px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ink);
+  font-family: 'Inter', sans-serif; color: var(--cream); }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 900px 700px at 85% -5%, rgba(216, 78, 42, 0.13), transparent 65%); }
+.board { position: relative; height: 100%; display: flex; flex-direction: column; padding: 36px 40px 28px; gap: 24px; }
+.hdr { display: flex; align-items: center; gap: 24px; }
+.hdr img { height: 104px; width: auto; }
+.hdr-name { flex: 1; }
+.hdr-name h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 54px; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.01em; }
+.kicker { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.22em; color: var(--signal); }
+.hdr-name .kicker { margin-top: 6px; }
+.hdr-time { text-align: right; }
+.clock { font-family: 'Barlow Condensed', sans-serif; font-weight: 300; font-size: 58px; line-height: 1;
+  font-variant-numeric: tabular-nums; }
+.stamp { margin-top: 6px; font-size: 15px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.stamp.stale { color: var(--signal); font-weight: 600; }
+.card { background: var(--ink-soft); border: 1px solid var(--hairline); border-radius: var(--card-r); padding: 26px 30px; }
+.eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.eyebrow::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--hairline), transparent); }
+
+/* rotating idea pages */
+.stage { position: relative; flex: 1; min-height: 0; }
+.page { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 20px;
+  opacity: 0; transition: opacity 900ms ease; }
+.page.on { opacity: 1; }
+.idea { display: grid; grid-template-columns: 96px 1fr; gap: 22px; flex: 1; min-height: 0; overflow: hidden; }
+.rank { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 104px; line-height: .85;
+  color: var(--signal); text-align: center; }
+.idea h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.05; }
+.chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 3px 12px; border-radius: 999px; border: 1px solid var(--hairline); color: var(--dim); }
+.chip.fmt { color: var(--gold); border-color: rgba(224,165,46,.4); }
+.lbl { margin-top: 14px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--signal); }
+.txt { margin-top: 4px; font-size: 19px; line-height: 1.38; color: var(--cream); }
+.dots { display: flex; justify-content: center; gap: 10px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(243,237,225,.18); transition: opacity 600ms ease; }
+.dot.on { background: var(--signal); }
+
+.rising { display: flex; flex-wrap: wrap; gap: 12px; }
+.rise { display: flex; align-items: baseline; gap: 10px; padding: 8px 16px; border-radius: 10px;
+  background: rgba(243,237,225,0.03); border: 1px solid var(--hairline); }
+.rise b { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 24px; }
+.rise span { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 24px; color: var(--up); }
+.foot { display: flex; justify-content: space-between; font-size: 14px; color: var(--dim);
+  text-transform: uppercase; letter-spacing: 0.08em; }
+.empty { font-size: 18px; color: var(--dim); }
+@media (prefers-reduced-motion: reduce) { .page { transition: none; } }
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="hdr">
+    <img src="assets/pig-header.png" alt="">
+    <div class="hdr-name"><h1>Everyday Ham</h1><div class="kicker">Idea Pipeline</div></div>
+    <div class="hdr-time"><div class="clock" id="clock">--:--</div><div class="stamp" id="stamp">Loading</div></div>
+  </header>
+
+  <section class="stage" id="stage"><div class="card"><div class="empty">Waiting for this week's ideas</div></div></section>
+  <div class="dots" id="dots"></div>
+
+  <section class="card">
+    <div class="eyebrow"><span class="kicker">Rising in the community</span></div>
+    <div class="rising" id="rising"><div class="empty">No clear risers this month</div></div>
+  </section>
+
+  <footer class="foot"><span id="briefDate">Weekly brief</span><span>Ranked by k1-ai from channel, competitor and community data</span></footer>
+</div>
+
+<script>
+const DATA_URL = '../data/k1/ideas.json';
+const REFRESH_MINUTES = 15;
+const STALE_DAYS = 9;          // the brief is weekly (Monday)
+const PER_PAGE = 3;
+const PAGE_SECONDS = 25;
+const FORMAT_LABEL = { youtube: 'YouTube', podcast: 'Podcast', both: 'YouTube + Podcast', short: 'Short' };
+
+let lastSig = '', secondsToRefresh = 0, pageTick = 0, pageIdx = 0, data = null;
+const $ = id => document.getElementById(id);
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+
+function ideaCard(i) {
+  const card = el('div', 'card idea');
+  const body = el('div');
+  body.appendChild(el('h2', '', i.title));
+  const chips = el('div', 'chips');
+  chips.appendChild(el('span', 'chip fmt', FORMAT_LABEL[i.format] || i.format));
+  for (const t of i.topics || []) chips.appendChild(el('span', 'chip', t));
+  body.append(chips, el('div', 'lbl', 'Why now'), el('div', 'txt', i.why_now),
+              el('div', 'lbl', 'Angle'), el('div', 'txt', i.angle));
+  card.append(el('div', 'rank', String(i.rank)), body);
+  return card;
+}
+
+function render(d) {
+  const stage = $('stage'), dots = $('dots');
+  clear(stage); clear(dots);
+  const ideas = (d.ideas || []).slice().sort((a, b) => a.rank - b.rank);
+  if (!ideas.length) {
+    const c = el('div', 'card'); c.appendChild(el('div', 'empty', 'No ideas this week')); stage.appendChild(c);
+  }
+  for (let p = 0; p * PER_PAGE < ideas.length; p++) {
+    const page = el('div', 'page');
+    for (const i of ideas.slice(p * PER_PAGE, (p + 1) * PER_PAGE)) page.appendChild(ideaCard(i));
+    stage.appendChild(page);
+    dots.appendChild(el('div', 'dot'));
+  }
+  pageIdx = 0; pageTick = 0;
+  if (stage.querySelector('.page')) { stage.children[0].classList.add('on'); dots.children[0].classList.add('on'); }
+
+  const rising = $('rising'); clear(rising);
+  for (const r of d.rising || []) {
+    const chip = el('div', 'rise');
+    chip.append(el('b', '', r.topic), el('span', '', '+' + Math.round((r.lift - 1) * 100) + '%'));
+    rising.appendChild(chip);
+  }
+  if (!rising.firstChild) rising.appendChild(el('div', 'empty', 'No clear risers this month'));
+  $('briefDate').textContent = 'Brief of ' + new Date(d.brief_date + 'T12:00:00Z')
+    .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+function stamp() {
+  if (!data) return;
+  const at = new Date(data.brief_date + 'T12:00:00Z'), age = (Date.now() - at) / 86400000, s = $('stamp');
+  s.classList.toggle('stale', age > STALE_DAYS);
+  s.textContent = age > STALE_DAYS ? 'Brief stale: ' + Math.round(age) + ' days old'
+    : 'Week of ' + at.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+async function refresh() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    const sig = JSON.stringify([d.brief_date, d.ideas, d.rising]);
+    if (sig !== lastSig) { lastSig = sig; data = d; render(d); }
+    stamp();
+  } catch (err) {
+    console.error('refresh failed:', err);
+    $('stamp').classList.add('stale');
+    if (!data) $('stamp').textContent = 'Data unavailable';
+  }
+  secondsToRefresh = REFRESH_MINUTES * 60;
+}
+
+setInterval(() => {
+  $('clock').textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  const pages = $('stage').querySelectorAll('.page'), dots = $('dots').children;
+  if (pages.length > 1 && ++pageTick >= PAGE_SECONDS) {
+    pageTick = 0;
+    pages[pageIdx].classList.remove('on'); dots[pageIdx].classList.remove('on');
+    pageIdx = (pageIdx + 1) % pages.length;
+    pages[pageIdx].classList.add('on'); dots[pageIdx].classList.add('on');
+  }
+  if (--secondsToRefresh <= 0) refresh();
+}, 1000);
+refresh();
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>What's Working</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   EVERYDAY HAM · WHAT'S WORKING  (k1-ai board)
+   1080x1920 portrait signage · non-interactive · DakBoard
+   Data: ../data/k1/whats_working.json, published by k1-ai.
+   Display rules: no backdrop-filter or shadow blur, animate opacity and
+   transform only, one master tick, DOM rebuilt only when data changes,
+   last good screen kept on fetch failure.
+   ============================================================ */
+:root {
+  --ink: #1B1917; --ink-soft: #2A2724; --signal: #D84E2A; --cream: #F3EDE1;
+  --dim: #A89F92; --gold: #E0A52E; --up: #7FA86B; --down: #B3564A;
+  --hairline: rgba(243, 237, 225, 0.08); --card-r: 14px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ink);
+  font-family: 'Inter', sans-serif; color: var(--cream); }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 900px 700px at 85% -5%, rgba(216, 78, 42, 0.13), transparent 65%); }
+.board { position: relative; height: 100%; display: flex; flex-direction: column; padding: 36px 40px 28px; gap: 24px; }
+.hdr { display: flex; align-items: center; gap: 24px; }
+.hdr img { height: 104px; width: auto; }
+.hdr-name { flex: 1; }
+.hdr-name h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 54px; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.01em; }
+.kicker { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.22em; color: var(--signal); }
+.hdr-name .kicker { margin-top: 6px; }
+.hdr-time { text-align: right; }
+.clock { font-family: 'Barlow Condensed', sans-serif; font-weight: 300; font-size: 58px; line-height: 1;
+  font-variant-numeric: tabular-nums; }
+.stamp { margin-top: 6px; font-size: 15px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.stamp.stale { color: var(--signal); font-weight: 600; }
+.card { background: var(--ink-soft); border: 1px solid var(--hairline); border-radius: var(--card-r); padding: 26px 30px; }
+.eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.eyebrow::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--hairline), transparent); }
+.note { font-size: 14px; color: var(--dim); line-height: 1.4; }
+
+/* topic bars: 1.00x line = your typical */
+.bars { display: flex; flex-direction: column; gap: 12px; }
+.bar-row { display: grid; grid-template-columns: 300px 1fr 92px; align-items: center; gap: 16px; }
+.bar-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 25px; line-height: 1.05; }
+.bar-name small { display: block; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; color: var(--dim); }
+.bar-track { position: relative; height: 26px; background: rgba(243,237,225,0.05); border-radius: 6px; }
+.bar-fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; transform-origin: left center; }
+.bar-fill.up { background: var(--up); } .bar-fill.down { background: var(--down); }
+.bar-mark { position: absolute; top: -6px; bottom: -6px; width: 2px; background: var(--cream); opacity: .55; }
+.bar-val { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 34px; text-align: right;
+  font-variant-numeric: tabular-nums; }
+.bar-val.up { color: var(--up); } .bar-val.down { color: var(--down); }
+.legend { margin-top: 14px; }
+
+/* title lessons */
+.lessons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.lesson { background: rgba(243,237,225,0.03); border: 1px solid var(--hairline); border-radius: 10px; padding: 16px 18px; }
+.lesson .lbl { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px; text-transform: uppercase;
+  letter-spacing: 0.08em; }
+.lesson .vs { margin-top: 8px; display: flex; align-items: baseline; gap: 12px; font-family: 'Barlow Condensed', sans-serif; }
+.lesson .vs b { font-size: 42px; font-weight: 700; }
+.lesson .vs span { font-size: 18px; color: var(--dim); }
+.up-t { color: var(--up); } .down-t { color: var(--down); }
+
+/* best recent list */
+.list { display: flex; flex-direction: column; gap: 12px; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center;
+  padding-bottom: 12px; border-bottom: 1px solid var(--hairline); }
+.row:last-child { border-bottom: 0; padding-bottom: 0; }
+.row .t { font-size: 19px; font-weight: 600; line-height: 1.25; }
+.row .m { margin-top: 4px; font-size: 14px; color: var(--dim); }
+.pill { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; padding: 4px 16px;
+  border-radius: 999px; border: 1px solid var(--hairline); white-space: nowrap; }
+.pill.up { color: var(--up); border-color: rgba(127,168,107,.35); }
+.pill.down { color: var(--down); border-color: rgba(179,86,74,.35); }
+
+/* rotating format panel (Shorts / full episodes) */
+.rot { position: relative; flex: 1; min-height: 0; }
+.rot .page { position: absolute; inset: 26px 30px; opacity: 0; transition: opacity 900ms ease; }
+.rot .page.on { opacity: 1; }
+.foot { display: flex; justify-content: space-between; font-size: 14px; color: var(--dim);
+  text-transform: uppercase; letter-spacing: 0.08em; }
+.empty { font-size: 18px; color: var(--dim); }
+@media (prefers-reduced-motion: reduce) { .rot .page { transition: none; } }
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="hdr">
+    <img src="assets/pig-header.png" alt="">
+    <div class="hdr-name"><h1>Everyday Ham</h1><div class="kicker">What's Working</div></div>
+    <div class="hdr-time"><div class="clock" id="clock">--:--</div><div class="stamp" id="stamp">Loading</div></div>
+  </header>
+
+  <section class="card">
+    <div class="eyebrow"><span class="kicker">Edited videos by topic</span></div>
+    <div class="bars" id="bars"><div class="empty">Waiting for data</div></div>
+    <div class="note legend" id="barsNote">Median first-week views vs your typical upload. The white line is your typical (1.00x).</div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow"><span class="kicker">Title lessons</span></div>
+    <div class="lessons" id="lessons"></div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow"><span class="kicker">Best recent first weeks</span></div>
+    <div class="list" id="best"></div>
+  </section>
+
+  <section class="card rot" id="rot"></section>
+
+  <footer class="foot"><span id="basis">First-week views vs your previous 10 uploads of the same format</span>
+    <span>k1-ai</span></footer>
+</div>
+
+<script>
+const DATA_URL = '../data/k1/whats_working.json';
+const REFRESH_MINUTES = 15;
+const STALE_HOURS = 30;
+const PAGE_SECONDS = 20;
+const MAX_TOPICS = 8;
+const SCALE_MAX = 4;          // bars are drawn on 0x..4x (longer values are capped, label shows the real value)
+
+let lastSig = '', secondsToRefresh = 0, pageTick = 0, pageIdx = 0, data = null;
+const $ = id => document.getElementById(id);
+const fmt = n => Number(n).toLocaleString('en-US');
+const x = r => r.toFixed(2) + 'x';
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+function shortDate(iso) {
+  return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function renderBars(topics) {
+  const box = $('bars'); clear(box);
+  const rows = topics.slice().sort((a, b) => b.median_ratio - a.median_ratio).slice(0, MAX_TOPICS);
+  if (!rows.length) { box.appendChild(el('div', 'empty', 'Not enough uploads per topic yet')); return; }
+  for (const t of rows) {
+    const row = el('div', 'bar-row');
+    const name = el('div', 'bar-name', t.topic);
+    name.appendChild(el('small', '', t.n + ' uploads, ' + Math.round(t.share_above * 100) + '% above typical'));
+    const track = el('div', 'bar-track');
+    const cls = t.median_ratio >= 1 ? 'up' : 'down';
+    const fill = el('div', 'bar-fill ' + cls);
+    fill.style.width = '100%';
+    fill.style.transform = 'scaleX(' + Math.min(t.median_ratio, SCALE_MAX) / SCALE_MAX + ')';
+    const mark = el('div', 'bar-mark'); mark.style.left = (100 / SCALE_MAX) + '%';
+    track.append(fill, mark);
+    row.append(name, track, el('div', 'bar-val ' + cls, x(t.median_ratio)));
+    box.appendChild(row);
+  }
+}
+
+const LESSONS = [
+  ['brand', 'Brand name in the title'], ['question', 'Question in the title'],
+  ['number_or_price', 'Number or price in the title'], ['all_caps_word', 'ALL-CAPS word in the title'],
+];
+function renderLessons(titles) {
+  const box = $('lessons'); clear(box);
+  const by = Object.fromEntries(titles.map(t => [t.feature, t]));
+  for (const [key, label] of LESSONS) {
+    const yes = by[key + '=yes'], no = by[key + '=no'];
+    if (!yes || !no) continue;
+    const card = el('div', 'lesson');
+    card.appendChild(el('div', 'lbl', label));
+    const vs = el('div', 'vs');
+    vs.append(el('b', yes.median_ratio >= no.median_ratio ? 'up-t' : 'down-t', x(yes.median_ratio)),
+              el('span', '', 'with (' + yes.n + ')  vs  ' + x(no.median_ratio) + ' without (' + no.n + ')'));
+    card.appendChild(vs);
+    box.appendChild(card);
+  }
+  if (!box.firstChild) box.appendChild(el('div', 'empty', 'Not enough uploads yet'));
+}
+
+function listRows(box, vids) {
+  clear(box);
+  if (!vids.length) { box.appendChild(el('div', 'empty', 'No uploads with a full first week yet')); return; }
+  for (const v of vids) {
+    const row = el('div', 'row');
+    const left = el('div');
+    left.append(el('div', 't', v.title), el('div', 'm', shortDate(v.published) + ' · ' + fmt(v.first_week) + ' first-week views'));
+    row.append(left, el('div', 'pill ' + (v.ratio >= 1 ? 'up' : 'down'), x(v.ratio)));
+    box.appendChild(row);
+  }
+}
+
+function renderPages(formats) {
+  const rot = $('rot'); clear(rot);
+  const pages = [['short', 'Shorts: best recent first weeks'], ['episode', 'Full episodes on YouTube: best recent first weeks']];
+  for (const [key, label] of pages) {
+    const f = formats[key]; if (!f) continue;
+    const page = el('div', 'page');
+    const eb = el('div', 'eyebrow'); eb.appendChild(el('span', 'kicker', label));
+    const list = el('div', 'list');
+    listRows(list, f.best_recent.slice(0, 3));
+    page.append(eb, list);
+    rot.appendChild(page);
+  }
+  pageIdx = 0;
+  if (rot.firstChild) rot.firstChild.classList.add('on');
+}
+
+function render(d) {
+  const v = d.formats.video || { topics: [], titles: [], best_recent: [] };
+  renderBars(v.topics);
+  renderLessons(v.titles);
+  listRows($('best'), v.best_recent.slice(0, 4));
+  renderPages(d.formats);
+  if (d.basis) $('basis').textContent = d.basis;
+}
+
+function stamp() {
+  if (!data) return;
+  const at = new Date(data.fetched_at), age = (Date.now() - at) / 3600000, s = $('stamp');
+  s.classList.toggle('stale', age > STALE_HOURS);
+  s.textContent = age > STALE_HOURS ? 'Data stale: ' + Math.round(age) + 'h old'
+    : 'Data as of ' + at.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+async function refresh() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    const sig = JSON.stringify(d);
+    if (sig !== lastSig) { lastSig = sig; data = d; render(d); }
+    stamp();
+  } catch (err) {
+    console.error('refresh failed:', err);      // keep the last good screen
+    $('stamp').classList.add('stale');
+    if (!data) $('stamp').textContent = 'Data unavailable';
+  }
+  secondsToRefresh = REFRESH_MINUTES * 60;
+}
+
+/* master tick: clock, page rotation, refresh */
+setInterval(() => {
+  $('clock').textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  const pages = $('rot').children;
+  if (pages.length > 1 && ++pageTick >= PAGE_SECONDS) {
+    pageTick = 0;
+    pages[pageIdx].classList.remove('on');
+    pageIdx = (pageIdx + 1) % pages.length;
+    pages[pageIdx].classList.add('on');
+  }
+  if (--secondsToRefresh <= 0) refresh();
+}, 1000);
+refresh();
+</script>
+</body>
+</html>

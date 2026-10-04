@@ -1,0 +1,131 @@
+{
+ "fetched_at": "2026-10-04T17:50:29Z",
+ "brief_date": "2026-10-04",
+ "ideas": [
+  {
+   "rank": 1,
+   "title": "Xiegu G7250 Hands-On: Our First Contacts With Xiegu's New 100W Remote HF Rig",
+   "format": "youtube",
+   "topics": [
+    "New Radio Announcements",
+    "HF Radios"
+   ],
+   "why_now": "Units are reaching hams now. Another channel's unboxing-to-on-air video is the second biggest competitor breakout this month, and HF Radios discussion is up 2.16x over the last 30 days.",
+   "angle": "Our announcement video was the channel's best edited first week. This is the follow-up: real QSOs from the Michigan shack, remote setup tried for real, and plain talk on what an everyday ham gets for the money. New angle: the actual radio on the air, not the reveal."
+  },
+  {
+   "rank": 2,
+   "title": "Kenwood TM-D750A Goes in the Truck: Install, APRS, and First Month Impressions",
+   "format": "youtube",
+   "topics": [
+    "VHF/UHF and Handhelds",
+    "APRS"
+   ],
+   "why_now": "The TM-D750 is driving three competitor breakouts in 30 days (two long-form, one Short). Viewers who saw our Hamvention powered-on look now want production-unit install and APRS results.",
+   "angle": "Move past the booth demo. Do a real mobile install, show the D-STAR and APRS features in Michigan driving, and include our APRS lessons from the FTM-500 GPS build. New angle: production unit in daily use, not a show-floor first look."
+  },
+  {
+   "rank": 3,
+   "title": "When Amplifiers Go Pop: Cheap Amps, the Elecraft KPA500, and Running Power Safely",
+   "format": "both",
+   "topics": [
+    "Field Day and Contests",
+    "HF Radios",
+    "Budget Radios"
+   ],
+   "why_now": "Another channel's cheap amplifier video is the top competitor breakout of the month, and an Elecraft group thread about a KPA500 failing mid-contest during CQ WW RTTY is drawing lots of replies this week.",
+   "angle": "A practical podcast segment with a cut-down edited video: what usually fails in an amp, the warning signs, what to check before you buy used or cheap, and why matching and coax matter before you add power. Talk to everyday hams thinking about their first amp, not contest superstations."
+  },
+  {
+   "rank": 4,
+   "title": "kv4p HT 2.0e Build: The ESP32 Radio That Turns Your Phone Into a 2 Meter Handheld",
+   "format": "youtube",
+   "topics": [
+    "VHF/UHF and Handhelds",
+    "Homebrew and Kits",
+    "SDR and Scanning"
+   ],
+   "why_now": "An Hacker News story on hidden SDR capabilities in ESP32 chips was the most discussed item this week (270 points). SDR and Scanning discussion is up 2.88x, the largest lift in the data, and Homebrew is up 1.64x.",
+   "angle": "Build or assemble a kv4p HT, get it on a local repeater, then explain in plain language why the ESP32 SDR discovery matters for cheap ham gadgets. This exceeds our usual SDR coverage on purpose because of the timely hook, and it is anchored in VHF/UHF handhelds, one of our strongest topics."
+  },
+  {
+   "rank": 5,
+   "title": "Your HT Can't Hit a Repeater 1/3 Mile Away: 3 Cheap Fixes",
+   "format": "short",
+   "topics": [
+    "VHF/UHF and Handhelds",
+    "Nets and Repeaters",
+    "Budget Radios"
+   ],
+   "why_now": "A new ham posted this week that two nice HTs could not reliably open a repeater a third of a mile away. That is the most common beginner frustration, and another channel's quick 2 meter antenna Short just hit 3.99x.",
+   "angle": "Sixty seconds: swap the rubber duck, use a roll-up or quick wire antenna, and get height (a window or the car roof). Show a before and after signal report on a Michigan repeater. Plain statement title with a number, no question mark."
+  },
+  {
+   "rank": 6,
+   "title": "Winlink for Everyday Hams: Checking Into a Weekly Winlink Net by HF, VHF, and APRS",
+   "format": "both",
+   "topics": [
+    "Digital Modes",
+    "HF Radios",
+    "VHF/UHF and Handhelds"
+   ],
+   "why_now": "The weekly FediFriday Winlink Net is active in the community feed (including APRS check-ins), Digirig users are working through Xiegu G90 Winlink and VARA setups, and another channel is calling off-grid comms 'exploding'.",
+   "angle": "Walk through one real net check-in three ways: an HF rig with a Digirig, a 2 meter packet setup, and APRS. Keep it focused on the first message, not a full ARES lecture. A podcast discussion pairs well, covering why a club should run its own Winlink net."
+  },
+  {
+   "rank": 7,
+   "title": "WRTC 2026 Disqualification and Ham Radio Dirty Tricks: Where Everyday Hams Draw the Line",
+   "format": "podcast",
+   "topics": [
+    "Field Day and Contests",
+    "Ham Radio News and FCC"
+   ],
+   "why_now": "The E77DX and DJ4MX team spoke publicly about their WRTC 2026 disqualification for having starting frequencies held, and another channel's fraud story is a fresh 2.73x breakout. Ham Radio News discussion is up 1.37x.",
+   "angle": "A hosts' roundtable, not a pile-on. What the team admitted, why frequency holding matters, and how the same ethics show up at everyday scale: spotting yourself, POTA pileup manners, club contest logging. Exception note: contest topics break out for competitors 0% of the time, but this runs as news and ethics (31% competitor 2x+ rate), and contest season gives it a hook."
+  },
+  {
+   "rank": 8,
+   "title": "Quansheng UV-K5 CW Firmware: Flashing It Without the Cable and Chrome Headaches",
+   "format": "short",
+   "topics": [
+    "Budget Radios",
+    "VHF/UHF and Handhelds",
+    "Logging and Software"
+   ],
+   "why_now": "A community CW firmware for Quansheng radios is circulating, and the same operator posted this week about Chrome-only web flashing and programming cables that don't work. Budget Radios discussion is up 1.33x.",
+   "angle": "A quick how-to Short covering which cable works, the browser requirement, and a few seconds of CW coming out of a $-cheap HT. New angle versus the earlier SSB mod pitch: this is CW firmware plus the flashing pitfalls, not a hardware mod."
+  }
+ ],
+ "rising": [
+  {
+   "topic": "SDR and Scanning",
+   "lift": 2.88,
+   "recent_posts": 21
+  },
+  {
+   "topic": "HF Radios",
+   "lift": 2.16,
+   "recent_posts": 111
+  },
+  {
+   "topic": "Logging and Software",
+   "lift": 1.7,
+   "recent_posts": 51
+  },
+  {
+   "topic": "Homebrew and Kits",
+   "lift": 1.64,
+   "recent_posts": 42
+  },
+  {
+   "topic": "APRS",
+   "lift": 1.38,
+   "recent_posts": 10
+  },
+  {
+   "topic": "Ham Radio News and FCC",
+   "lift": 1.37,
+   "recent_posts": 24
+  }
+ ]
+}

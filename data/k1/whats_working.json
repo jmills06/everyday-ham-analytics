@@ -1,0 +1,396 @@
+{
+ "fetched_at": "2026-10-04T17:50:29Z",
+ "generated_at": "2026-10-04T17:36:48Z",
+ "basis": "First-week views vs the median of the previous 10 uploads of the same format",
+ "formats": {
+  "video": {
+   "topics": [
+    {
+     "topic": "New Radio Announcements",
+     "n": 9,
+     "median_ratio": 3.09,
+     "share_above": 0.78
+    },
+    {
+     "topic": "VHF/UHF and Handhelds",
+     "n": 10,
+     "median_ratio": 2.38,
+     "share_above": 0.8
+    },
+    {
+     "topic": "HF Radios",
+     "n": 6,
+     "median_ratio": 1.93,
+     "share_above": 0.83
+    },
+    {
+     "topic": "Hamfests and Hamvention",
+     "n": 14,
+     "median_ratio": 1.51,
+     "share_above": 0.64
+    },
+    {
+     "topic": "Antennas",
+     "n": 9,
+     "median_ratio": 0.82,
+     "share_above": 0.33
+    },
+    {
+     "topic": "POTA/SOTA and Parks",
+     "n": 8,
+     "median_ratio": 0.28,
+     "share_above": 0.25
+    }
+   ],
+   "titles": [
+    {
+     "feature": "brand=yes",
+     "n": 27,
+     "median_ratio": 2.19
+    },
+    {
+     "feature": "hamvention=yes",
+     "n": 7,
+     "median_ratio": 1.89
+    },
+    {
+     "feature": "number_or_price=yes",
+     "n": 38,
+     "median_ratio": 1.25
+    },
+    {
+     "feature": "question=no",
+     "n": 36,
+     "median_ratio": 1.18
+    },
+    {
+     "feature": "all_caps_word=no",
+     "n": 40,
+     "median_ratio": 1.09
+    },
+    {
+     "feature": "hamvention=no",
+     "n": 45,
+     "median_ratio": 0.88
+    },
+    {
+     "feature": "question=yes",
+     "n": 16,
+     "median_ratio": 0.57
+    },
+    {
+     "feature": "number_or_price=no",
+     "n": 14,
+     "median_ratio": 0.51
+    },
+    {
+     "feature": "all_caps_word=yes",
+     "n": 12,
+     "median_ratio": 0.48
+    },
+    {
+     "feature": "brand=no",
+     "n": 25,
+     "median_ratio": 0.38
+    }
+   ],
+   "best_recent": [
+    {
+     "title": "Xiegu G7250 just brought some HEAT - New 100w (AFFORDABLE?) Remote HF Rig Incoming",
+     "published": "2026-07-21",
+     "first_week": 4726,
+     "ratio": 11.84
+    },
+    {
+     "title": "Icom IC-7110 Revealed: Our Live Reaction to the X-026 Unveiling",
+     "published": "2026-08-29",
+     "first_week": 1506,
+     "ratio": 3.79
+    },
+    {
+     "title": "Ham2K PoLo Goes Desktop: Windows, Mac and Linux First Look with Sebastián KI2D",
+     "published": "2026-07-28",
+     "first_week": 1283,
+     "ratio": 3.23
+    },
+    {
+     "title": "Unboxing the Icom ID-5200: A $999 Successor to W8KNX's Favorite Radio",
+     "published": "2026-09-25",
+     "first_week": 1166,
+     "ratio": 2.41
+    },
+    {
+     "title": "Alinco was Weird: Peak Ham Radio Oddware a Credit Card HT",
+     "published": "2026-08-15",
+     "first_week": 774,
+     "ratio": 2.35
+    }
+   ],
+   "weakest_recent": [
+    {
+     "title": "What Happens When 80 Hams Finally Meet in Person? Michigan POTA Meetup 2026",
+     "published": "2026-06-25",
+     "first_week": 230,
+     "ratio": 0.11
+    },
+    {
+     "title": "Field Day Reinvented: How to Boost Club Engagement and Community Outreach",
+     "published": "2026-07-14",
+     "first_week": 102,
+     "ratio": 0.16
+    },
+    {
+     "title": "Paper QSL Cards: Still Worth Sending?",
+     "published": "2026-08-14",
+     "first_week": 69,
+     "ratio": 0.17
+    }
+   ],
+   "uploads": 52
+  },
+  "episode": {
+   "topics": [],
+   "titles": [
+    {
+     "feature": "brand=yes",
+     "n": 6,
+     "median_ratio": 1.46
+    },
+    {
+     "feature": "number_or_price=yes",
+     "n": 13,
+     "median_ratio": 1.43
+    },
+    {
+     "feature": "question=yes",
+     "n": 7,
+     "median_ratio": 1.07
+    },
+    {
+     "feature": "question=no",
+     "n": 14,
+     "median_ratio": 0.72
+    },
+    {
+     "feature": "all_caps_word=no",
+     "n": 17,
+     "median_ratio": 0.67
+    },
+    {
+     "feature": "brand=no",
+     "n": 15,
+     "median_ratio": 0.67
+    },
+    {
+     "feature": "hamvention=no",
+     "n": 18,
+     "median_ratio": 0.65
+    },
+    {
+     "feature": "number_or_price=no",
+     "n": 8,
+     "median_ratio": 0.6
+    }
+   ],
+   "best_recent": [
+    {
+     "title": "Yaesu FTX1 Reality Check: Our Honest Review and Experiences + SteppIR Exit",
+     "published": "2025-06-05",
+     "first_week": 4605,
+     "ratio": 5.49
+    },
+    {
+     "title": "Learning CW in 2026: Two Paths to Morse Code Success",
+     "published": "2026-01-08",
+     "first_week": 1803,
+     "ratio": 5.33
+    },
+    {
+     "title": "Hamvention 2026 Survival Guide: Strategy, Gear & The ICOM X-026 Reveal",
+     "published": "2026-05-07",
+     "first_week": 707,
+     "ratio": 3.05
+    },
+    {
+     "title": "Field Day Disappointment? Why We Think ARRL Needs to Evolve (+ FTX1 Final Update)",
+     "published": "2025-07-03",
+     "first_week": 2136,
+     "ratio": 1.53
+    },
+    {
+     "title": "Ham2K PoLo Cloud Sync Is Live and It's Just the Beginning",
+     "published": "2026-03-26",
+     "first_week": 349,
+     "ratio": 1.5
+    }
+   ],
+   "weakest_recent": [
+    {
+     "title": "From Parks to Peaks: How SOTA Differs from POTA",
+     "published": "2025-09-04",
+     "first_week": 179,
+     "ratio": 0.13
+    },
+    {
+     "title": "How to Learn CW in 2026: Two Paths to Morse Code Success",
+     "published": "2026-01-08",
+     "first_week": 51,
+     "ratio": 0.14
+    },
+    {
+     "title": "Can YOU Put Up An Antenna? The HOA Bill Fight, CQ Worldwide & IC-7300 Mark II",
+     "published": "2025-11-06",
+     "first_week": 205,
+     "ratio": 0.22
+    }
+   ],
+   "uploads": 21
+  },
+  "short": {
+   "topics": [
+    {
+     "topic": "DX and DXpeditions",
+     "n": 6,
+     "median_ratio": 1.32,
+     "share_above": 1.0
+    },
+    {
+     "topic": "HF Radios",
+     "n": 9,
+     "median_ratio": 1.08,
+     "share_above": 0.56
+    },
+    {
+     "topic": "POTA/SOTA and Parks",
+     "n": 15,
+     "median_ratio": 1.02,
+     "share_above": 0.6
+    },
+    {
+     "topic": "New Radio Announcements",
+     "n": 5,
+     "median_ratio": 1.02,
+     "share_above": 0.6
+    },
+    {
+     "topic": "(unlabelled)",
+     "n": 9,
+     "median_ratio": 0.78,
+     "share_above": 0.44
+    },
+    {
+     "topic": "Antennas",
+     "n": 7,
+     "median_ratio": 0.69,
+     "share_above": 0.43
+    },
+    {
+     "topic": "Hamfests and Hamvention",
+     "n": 6,
+     "median_ratio": 0.49,
+     "share_above": 0.33
+    }
+   ],
+   "titles": [
+    {
+     "feature": "number_or_price=no",
+     "n": 17,
+     "median_ratio": 1.24
+    },
+    {
+     "feature": "all_caps_word=no",
+     "n": 47,
+     "median_ratio": 1.08
+    },
+    {
+     "feature": "brand=no",
+     "n": 52,
+     "median_ratio": 1.05
+    },
+    {
+     "feature": "hamvention=no",
+     "n": 62,
+     "median_ratio": 1.02
+    },
+    {
+     "feature": "question=no",
+     "n": 50,
+     "median_ratio": 1.02
+    },
+    {
+     "feature": "question=yes",
+     "n": 14,
+     "median_ratio": 0.85
+    },
+    {
+     "feature": "number_or_price=yes",
+     "n": 47,
+     "median_ratio": 0.69
+    },
+    {
+     "feature": "all_caps_word=yes",
+     "n": 17,
+     "median_ratio": 0.69
+    },
+    {
+     "feature": "brand=yes",
+     "n": 12,
+     "median_ratio": 0.6
+    }
+   ],
+   "best_recent": [
+    {
+     "title": "Your New Radio is Delivered to the Office: Icom Id-5200 makes an entrance! #hamradio #icom #id5200",
+     "published": "2026-09-25",
+     "first_week": 684,
+     "ratio": 4.61
+    },
+    {
+     "title": "Clip - He Waited 42 Years for One QSL Card",
+     "published": "2026-08-06",
+     "first_week": 934,
+     "ratio": 3.21
+    },
+    {
+     "title": "Clip - \"I've Been a Ham 70 Years, I'm Not QSLing Anymore\"",
+     "published": "2026-08-08",
+     "first_week": 1338,
+     "ratio": 3.2
+    },
+    {
+     "title": "A Tiny Credit Card Ham Radio: Alinco Weirdness #hamradio #alinco #djc5",
+     "published": "2026-08-18",
+     "first_week": 1234,
+     "ratio": 2.96
+    },
+    {
+     "title": "When you accidentally receive signals from space and feel weird about it 😂",
+     "published": "2026-04-09",
+     "first_week": 1333,
+     "ratio": 2.79
+    }
+   ],
+   "weakest_recent": [
+    {
+     "title": "Detroit Ham Builds APRS Digipeater 210 Feet Up #shorts",
+     "published": "2026-09-04",
+     "first_week": 59,
+     "ratio": 0.16
+    },
+    {
+     "title": "Detroit Masonic Temple Digipeater: 93 Miles from 30 Watts #shorts",
+     "published": "2026-09-05",
+     "first_week": 40,
+     "ratio": 0.19
+    },
+    {
+     "title": "The Laser Ham Folding Ground Plane Antenna | Hamcation 2026",
+     "published": "2026-02-14",
+     "first_week": 156,
+     "ratio": 0.2
+    }
+   ],
+   "uploads": 64
+  }
+ }
+}

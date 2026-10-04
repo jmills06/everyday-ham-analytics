@@ -1,0 +1,250 @@
+{
+ "fetched_at": "2026-10-04T17:50:29Z",
+ "generated_at": "2026-10-04T17:36:48Z",
+ "base_2x": 0.215,
+ "base_n": 1234,
+ "topics": [
+  {
+   "topic": "POTA/SOTA and Parks",
+   "competitor_share": 0.063,
+   "competitor_2x": 0.07,
+   "competitor_n": 71,
+   "own_share": 0.138,
+   "own_ratio": 0.28
+  },
+  {
+   "topic": "Field Day and Contests",
+   "competitor_share": 0.012,
+   "competitor_2x": 0.0,
+   "competitor_n": 14,
+   "own_share": 0.077,
+   "own_ratio": null
+  },
+  {
+   "topic": "DX and DXpeditions",
+   "competitor_share": 0.027,
+   "competitor_2x": 0.23,
+   "competitor_n": 31,
+   "own_share": 0.0,
+   "own_ratio": null
+  },
+  {
+   "topic": "Nets and Repeaters",
+   "competitor_share": 0.035,
+   "competitor_2x": 0.34,
+   "competitor_n": 44,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "Emergency Comms and ARES",
+   "competitor_share": 0.026,
+   "competitor_2x": 0.3,
+   "competitor_n": 33,
+   "own_share": 0.015,
+   "own_ratio": null
+  },
+  {
+   "topic": "Digital Modes",
+   "competitor_share": 0.036,
+   "competitor_2x": 0.2,
+   "competitor_n": 45,
+   "own_share": 0.015,
+   "own_ratio": null
+  },
+  {
+   "topic": "APRS",
+   "competitor_share": 0.009,
+   "competitor_2x": 0.12,
+   "competitor_n": 26,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "CW/Morse",
+   "competitor_share": 0.02,
+   "competitor_2x": 0.22,
+   "competitor_n": 23,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "SSTV and Satellites",
+   "competitor_share": 0.017,
+   "competitor_2x": 0.12,
+   "competitor_n": 16,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "HF Radios",
+   "competitor_share": 0.072,
+   "competitor_2x": 0.28,
+   "competitor_n": 104,
+   "own_share": 0.092,
+   "own_ratio": 1.93
+  },
+  {
+   "topic": "VHF/UHF and Handhelds",
+   "competitor_share": 0.083,
+   "competitor_2x": 0.31,
+   "competitor_n": 108,
+   "own_share": 0.154,
+   "own_ratio": 2.38
+  },
+  {
+   "topic": "New Radio Announcements",
+   "competitor_share": 0.03,
+   "competitor_2x": 0.57,
+   "competitor_n": 35,
+   "own_share": 0.154,
+   "own_ratio": 3.09
+  },
+  {
+   "topic": "Budget Radios",
+   "competitor_share": 0.065,
+   "competitor_2x": 0.38,
+   "competitor_n": 81,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "Used and Vintage Gear",
+   "competitor_share": 0.006,
+   "competitor_2x": null,
+   "competitor_n": 6,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "Antennas",
+   "competitor_share": 0.182,
+   "competitor_2x": 0.21,
+   "competitor_n": 228,
+   "own_share": 0.169,
+   "own_ratio": 0.82
+  },
+  {
+   "topic": "Portable Power and Batteries",
+   "competitor_share": 0.043,
+   "competitor_2x": 0.21,
+   "competitor_n": 63,
+   "own_share": 0.0,
+   "own_ratio": null
+  },
+  {
+   "topic": "Station Setup and Coax",
+   "competitor_share": 0.043,
+   "competitor_2x": 0.2,
+   "competitor_n": 49,
+   "own_share": 0.031,
+   "own_ratio": null
+  },
+  {
+   "topic": "SDR and Scanning",
+   "competitor_share": 0.004,
+   "competitor_2x": null,
+   "competitor_n": 4,
+   "own_share": 0.015,
+   "own_ratio": null
+  },
+  {
+   "topic": "Meshtastic and Mesh Networks",
+   "competitor_share": 0.056,
+   "competitor_2x": 0.43,
+   "competitor_n": 63,
+   "own_share": 0.015,
+   "own_ratio": null
+  },
+  {
+   "topic": "Logging and Software",
+   "competitor_share": 0.036,
+   "competitor_2x": 0.28,
+   "competitor_n": 43,
+   "own_share": 0.108,
+   "own_ratio": null
+  },
+  {
+   "topic": "Homebrew and Kits",
+   "competitor_share": 0.063,
+   "competitor_2x": 0.26,
+   "competitor_n": 72,
+   "own_share": 0.077,
+   "own_ratio": null
+  },
+  {
+   "topic": "Getting Licensed and New Hams",
+   "competitor_share": 0.025,
+   "competitor_2x": 0.26,
+   "competitor_n": 27,
+   "own_share": 0.015,
+   "own_ratio": null
+  },
+  {
+   "topic": "Clubs",
+   "competitor_share": 0.008,
+   "competitor_2x": 0.0,
+   "competitor_n": 10,
+   "own_share": 0.015,
+   "own_ratio": null
+  },
+  {
+   "topic": "Hamfests and Hamvention",
+   "competitor_share": 0.058,
+   "competitor_2x": 0.19,
+   "competitor_n": 67,
+   "own_share": 0.231,
+   "own_ratio": 1.51
+  },
+  {
+   "topic": "QSL Cards",
+   "competitor_share": 0.0,
+   "competitor_2x": null,
+   "competitor_n": 0,
+   "own_share": 0.046,
+   "own_ratio": null
+  },
+  {
+   "topic": "Ham Radio News and FCC",
+   "competitor_share": 0.028,
+   "competitor_2x": 0.31,
+   "competitor_n": 35,
+   "own_share": 0.046,
+   "own_ratio": null
+  },
+  {
+   "topic": "Interviews",
+   "competitor_share": 0.012,
+   "competitor_2x": 0.21,
+   "competitor_n": 14,
+   "own_share": 0.046,
+   "own_ratio": null
+  }
+ ],
+ "competitor_rising": [
+  {
+   "topic": "Homebrew and Kits",
+   "lift": 1.88
+  },
+  {
+   "topic": "Budget Radios",
+   "lift": 1.64
+  },
+  {
+   "topic": "VHF/UHF and Handhelds",
+   "lift": 1.8
+  },
+  {
+   "topic": "New Radio Announcements",
+   "lift": 2.19
+  },
+  {
+   "topic": "Meshtastic and Mesh Networks",
+   "lift": 1.91
+  },
+  {
+   "topic": "POTA/SOTA and Parks",
+   "lift": 2.16
+  }
+ ]
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Competitor Pulse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   EVERYDAY HAM · COMPETITOR PULSE  (k1-ai board)
+   1080x1920 portrait signage · non-interactive · DakBoard
+   Data: ../data/k1/pulse.json. Topic level only: no channel names.
+   Same display rules as the other boards.
+   ============================================================ */
+:root {
+  --ink: #1B1917; --ink-soft: #2A2724; --signal: #D84E2A; --cream: #F3EDE1;
+  --dim: #A89F92; --gold: #E0A52E; --up: #7FA86B; --down: #B3564A;
+  --hairline: rgba(243, 237, 225, 0.08); --card-r: 14px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ink);
+  font-family: 'Inter', sans-serif; color: var(--cream); }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 900px 700px at 85% -5%, rgba(216, 78, 42, 0.13), transparent 65%); }
+.board { position: relative; height: 100%; display: flex; flex-direction: column; padding: 36px 40px 28px; gap: 24px; }
+.hdr { display: flex; align-items: center; gap: 24px; }
+.hdr img { height: 104px; width: auto; }
+.hdr-name { flex: 1; }
+.hdr-name h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 54px; line-height: 1;
+  text-transform: uppercase; letter-spacing: 0.01em; }
+.kicker { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px;
+  text-transform: uppercase; letter-spacing: 0.22em; color: var(--signal); }
+.hdr-name .kicker { margin-top: 6px; }
+.hdr-time { text-align: right; }
+.clock { font-family: 'Barlow Condensed', sans-serif; font-weight: 300; font-size: 58px; line-height: 1;
+  font-variant-numeric: tabular-nums; }
+.stamp { margin-top: 6px; font-size: 15px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.stamp.stale { color: var(--signal); font-weight: 600; }
+.card { background: var(--ink-soft); border: 1px solid var(--hairline); border-radius: var(--card-r); padding: 26px 30px; }
+.eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.eyebrow::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--hairline), transparent); }
+.note { font-size: 14px; color: var(--dim); line-height: 1.4; margin-top: 14px; }
+
+.bars { display: flex; flex-direction: column; gap: 12px; }
+.bar-row { display: grid; grid-template-columns: 300px 1fr 84px 110px; align-items: center; gap: 14px; }
+.bar-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 25px; line-height: 1.05; }
+.bar-track { position: relative; height: 26px; background: rgba(243,237,225,0.05); border-radius: 6px; }
+.bar-fill { position: absolute; inset: 0; border-radius: 6px; background: var(--gold); transform-origin: left center; }
+.bar-mark { position: absolute; top: -6px; bottom: -6px; width: 2px; background: var(--cream); opacity: .55; }
+.bar-val { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 32px; text-align: right;
+  font-variant-numeric: tabular-nums; }
+.you { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; color: var(--dim); text-align: right; }
+.you b { color: var(--cream); font-weight: 600; }
+.hdrrow { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--dim); }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.tile { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0;
+  border-bottom: 1px solid var(--hairline); }
+.tile:last-child { border-bottom: 0; }
+.tile b { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 26px; }
+.tile span { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px; }
+.gap span { color: var(--gold); } .strong span { color: var(--up); }
+.sub { font-size: 13px; color: var(--dim); margin-top: 2px; }
+.rising { display: flex; flex-wrap: wrap; gap: 12px; }
+.rise { display: flex; align-items: baseline; gap: 10px; padding: 8px 16px; border-radius: 10px;
+  background: rgba(243,237,225,0.03); border: 1px solid var(--hairline); }
+.rise b { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 24px; }
+.rise span { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 24px; color: var(--up); }
+.foot { margin-top: auto; display: flex; justify-content: space-between; font-size: 14px; color: var(--dim);
+  text-transform: uppercase; letter-spacing: 0.08em; }
+.empty { font-size: 18px; color: var(--dim); }
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="hdr">
+    <img src="assets/pig-header.png" alt="">
+    <div class="hdr-name"><h1>Everyday Ham</h1><div class="kicker">Competitor Pulse</div></div>
+    <div class="hdr-time"><div class="clock" id="clock">--:--</div><div class="stamp" id="stamp">Loading</div></div>
+  </header>
+
+  <section class="card">
+    <div class="eyebrow"><span class="kicker">Topics that break out</span></div>
+    <div class="bar-row hdrrow"><span>Topic</span><span>Competitor uploads at 2x their typical</span><span></span><span>Your share</span></div>
+    <div class="bars" id="bars"><div class="empty">Waiting for data</div></div>
+    <div class="note" id="barsNote">Last 12 months of tracked channels. The white line is the average for all topics.</div>
+  </section>
+
+  <section class="two">
+    <div class="card gap">
+      <div class="eyebrow"><span class="kicker">Open lanes</span></div>
+      <div class="sub" style="margin:-6px 0 8px">They break out often, you rarely cover it</div>
+      <div id="gaps"></div>
+    </div>
+    <div class="card strong">
+      <div class="eyebrow"><span class="kicker">Your strengths</span></div>
+      <div class="sub" style="margin:-6px 0 8px">Your first weeks vs your typical</div>
+      <div id="strengths"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="eyebrow"><span class="kicker">More uploads lately</span></div>
+    <div class="sub" style="margin:-6px 0 12px">Topic share of competitor uploads, last 30 days vs the 90 before</div>
+    <div class="rising" id="rising"></div>
+  </section>
+
+  <footer class="foot"><span id="baseNote">Tracked YouTube channels and podcasts</span><span>k1-ai</span></footer>
+</div>
+
+<script>
+const DATA_URL = '../data/k1/pulse.json';
+const REFRESH_MINUTES = 15;
+const STALE_HOURS = 30;
+const MAX_BARS = 10;
+const SCALE_MAX = 0.6;        // bars drawn on 0..60%
+const GAP_OWN_MAX = 0.04;     // "rarely cover" = under 4% of your uploads
+const GAP_FACTOR = 1.5;       // "break out often" = 1.5x the all-topic rate or more
+const STRONG_MIN = 1.5;
+
+let lastSig = '', secondsToRefresh = 0, data = null;
+const $ = id => document.getElementById(id);
+const pct = v => Math.round(v * 100) + '%';
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
+
+function tile(name, value, sub) {
+  const t = el('div', 'tile'), left = el('div');
+  left.appendChild(el('b', '', name));
+  if (sub) left.appendChild(el('div', 'sub', sub));
+  t.append(left, el('span', '', value));
+  return t;
+}
+
+function render(d) {
+  const rows = d.topics.filter(t => t.competitor_2x !== null).sort((a, b) => b.competitor_2x - a.competitor_2x);
+  const bars = $('bars'); clear(bars);
+  for (const t of rows.slice(0, MAX_BARS)) {
+    const row = el('div', 'bar-row');
+    const track = el('div', 'bar-track'), fill = el('div', 'bar-fill'), mark = el('div', 'bar-mark');
+    fill.style.transform = 'scaleX(' + Math.min(t.competitor_2x, SCALE_MAX) / SCALE_MAX + ')';
+    mark.style.left = (Math.min(d.base_2x, SCALE_MAX) / SCALE_MAX * 100) + '%';
+    track.append(fill, mark);
+    const you = el('div', 'you'); you.appendChild(el('b', '', pct(t.own_share || 0)));
+    row.append(el('div', 'bar-name', t.topic), track, el('div', 'bar-val', pct(t.competitor_2x)), you);
+    bars.appendChild(row);
+  }
+  if (!bars.firstChild) bars.appendChild(el('div', 'empty', 'Not enough uploads yet'));
+  $('barsNote').textContent = 'Last 12 months of tracked channels (' + Number(d.base_n).toLocaleString('en-US')
+    + ' long-form uploads). The white line is the average for all topics: ' + pct(d.base_2x) + '.';
+
+  const gaps = $('gaps'); clear(gaps);
+  rows.filter(t => (t.own_share || 0) <= GAP_OWN_MAX && t.competitor_2x >= d.base_2x * GAP_FACTOR).slice(0, 5)
+    .forEach(t => gaps.appendChild(tile(t.topic, pct(t.competitor_2x), 'You: ' + pct(t.own_share || 0) + ' of uploads')));
+  if (!gaps.firstChild) gaps.appendChild(el('div', 'empty', 'No open lanes right now'));
+
+  const strong = $('strengths'); clear(strong);
+  d.topics.filter(t => t.own_ratio !== null && t.own_ratio >= STRONG_MIN).sort((a, b) => b.own_ratio - a.own_ratio).slice(0, 5)
+    .forEach(t => strong.appendChild(tile(t.topic, t.own_ratio.toFixed(2) + 'x',
+      t.competitor_2x !== null ? 'Competitors at 2x: ' + pct(t.competitor_2x) : '')));
+  if (!strong.firstChild) strong.appendChild(el('div', 'empty', 'Not enough uploads yet'));
+
+  const rising = $('rising'); clear(rising);
+  for (const r of (d.competitor_rising || []).sort((a, b) => b.lift - a.lift).slice(0, 8)) {
+    const chip = el('div', 'rise');
+    chip.append(el('b', '', r.topic), el('span', '', '+' + Math.round((r.lift - 1) * 100) + '%'));
+    rising.appendChild(chip);
+  }
+  if (!rising.firstChild) rising.appendChild(el('div', 'empty', 'No clear shifts this month'));
+}
+
+function stamp() {
+  if (!data) return;
+  const at = new Date(data.fetched_at), age = (Date.now() - at) / 3600000, s = $('stamp');
+  s.classList.toggle('stale', age > STALE_HOURS);
+  s.textContent = age > STALE_HOURS ? 'Data stale: ' + Math.round(age) + 'h old'
+    : 'Data as of ' + at.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+async function refresh() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    const sig = JSON.stringify([d.topics, d.competitor_rising, d.base_2x]);
+    if (sig !== lastSig) { lastSig = sig; data = d; render(d); }
+    data = d; stamp();
+  } catch (err) {
+    console.error('refresh failed:', err);
+    $('stamp').classList.add('stale');
+    if (!data) $('stamp').textContent = 'Data unavailable';
+  }
+  secondsToRefresh = REFRESH_MINUTES * 60;
+}
+
+setInterval(() => {
+  $('clock').textContent = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  if (--secondsToRefresh <= 0) refresh();
+}, 1000);
+refresh();
+</script>
+</body>
+</html>
