@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-10-04T17:50:29Z",
- "generated_at": "2026-10-04T17:36:48Z",
+ "fetched_at": "2026-10-04T18:50:17Z",
+ "generated_at": "2026-10-04T18:50:17Z",
  "base_2x": 0.215,
  "base_n": 1234,
  "topics": [
@@ -227,12 +227,12 @@
    "lift": 1.88
   },
   {
-   "topic": "Budget Radios",
-   "lift": 1.64
-  },
-  {
    "topic": "VHF/UHF and Handhelds",
    "lift": 1.8
+  },
+  {
+   "topic": "Budget Radios",
+   "lift": 1.64
   },
   {
    "topic": "New Radio Announcements",

@@ -201,9 +201,10 @@ function renderCalendar(d) {
     cal.appendChild(row);
   }
   if (!cal.firstChild) cal.appendChild(el('div', 'empty', 'Nothing on the Everyday Ham calendar yet'));
-  const gaps = d.weeks_without_release || [];
-  $('gapnote').textContent = gaps.length ? 'No release planned: week of ' + gaps.map(g =>
-    new Date(g + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })).join(', ') : '';
+  const open = (d.open_slots || []).slice(0, 4);
+  $('gapnote').textContent = open.length ? 'Open release slots: ' + open.map(o =>
+    new Date(o.date + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+    + (o.kind === 'podcast' ? ' podcast' : ' YouTube')).join(' · ') : 'Every release slot in the next 8 weeks is planned';
 }
 
 function stamp() {
@@ -219,7 +220,7 @@ async function refresh() {
     const r = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
-    const sig = JSON.stringify([d.brief_date, d.ideas, d.rising, d.team, d.upcoming, d.weeks_without_release]);
+    const sig = JSON.stringify([d.brief_date, d.ideas, d.rising, d.team, d.upcoming, d.open_slots]);
     if (sig !== lastSig) { lastSig = sig; data = d; render(d); }
     stamp();
   } catch (err) {
