@@ -202,9 +202,10 @@ function renderCalendar(d) {
   }
   if (!cal.firstChild) cal.appendChild(el('div', 'empty', 'Nothing on the Everyday Ham calendar yet'));
   const open = (d.open_slots || []).slice(0, 4);
-  $('gapnote').textContent = open.length ? 'Open release slots: ' + open.map(o =>
+  const LBL = { podcast: ' podcast', youtube: ' YouTube', record: ' recording' };
+  $('gapnote').textContent = open.length ? 'Not on the calendar yet: ' + open.map(o =>
     new Date(o.date + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-    + (o.kind === 'podcast' ? ' podcast' : ' YouTube')).join(' · ') : 'Every release slot in the next 8 weeks is planned';
+    + (LBL[o.kind] || '')).join(' · ') : 'Everything in the next 8 weeks is on the calendar';
 }
 
 function stamp() {

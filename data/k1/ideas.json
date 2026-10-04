@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-04T18:50:17Z",
+ "fetched_at": "2026-10-04T18:55:53Z",
  "brief_date": "2026-10-04",
  "ideas": [
   {
@@ -162,12 +162,12 @@
    "kind": "youtube"
   },
   {
-   "date": "2026-11-05",
-   "kind": "podcast"
+   "date": "2026-11-03",
+   "kind": "record"
   },
   {
-   "date": "2026-11-12",
-   "kind": "youtube"
+   "date": "2026-11-05",
+   "kind": "podcast"
   }
  ]
 }
