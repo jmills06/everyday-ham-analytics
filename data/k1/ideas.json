@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-04T18:33:44Z",
+ "fetched_at": "2026-10-04T18:41:40Z",
  "brief_date": "2026-10-04",
  "ideas": [
   {
@@ -128,7 +128,14 @@
    "recent_posts": 24
   }
  ],
- "team": [],
+ "team": [
+  {
+   "title": "A walkthrough of NEXT.POTA.APP with Mike W8MSC",
+   "format": "YouTube video",
+   "source": "host",
+   "status": "New"
+  }
+ ],
  "upcoming": [],
  "weeks_without_release": [
   "2026-10-05",
