@@ -49,6 +49,17 @@ jobs:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python collectors/youtube_analytics.py
 
+      - name: YouTube reach collector (impressions, CTR)
+        if: ${{ inputs.collectors == 'all' || inputs.collectors == 'analytics' }}
+        # Additive and new: a failure here must never block the core collectors
+        # or the commit below. It writes nothing when it fails.
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python collectors/youtube_reach.py
+
       - name: Buzzsprout collector
         if: ${{ inputs.collectors == 'all' || inputs.collectors == 'buzzsprout' }}
         env:

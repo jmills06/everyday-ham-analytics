@@ -96,6 +96,24 @@ unreliable at congested times. External trigger only.
     exists from 2026-08-24 on: before that the two were the same number.
     Hidden until at least 3 days of engaged data exist.
 
+## Reach: impressions and click-through rate
+
+Thumbnail impressions and impressions CTR are not in the YouTube Analytics
+API. They come from the **YouTube Reporting API** (bulk daily CSV reports,
+report type `channel_reach_basic_a1`), collected by
+`collectors/youtube_reach.py` into `data/history/videos/reach_daily.jsonl`
+(`date` + `video_id` key; `ctr` is a fraction, 0.078 = 7.8%).
+
+- The first run creates a reporting job (once). YouTube backfills the 30
+  days before that, and new days arrive with a lag of about 2 days.
+- Report files expire after 30 to 60 days, so the collector fetches every
+  report not yet ingested on each run. Ingested report ids are kept in
+  `data/history/videos/reach_reports.json`.
+- A re-issued day (backfill report) replaces the earlier rows.
+- The workflow step runs with `continue-on-error`: it never blocks the core
+  collectors, and it writes nothing when it fails.
+- Uses the same OAuth secrets and scope as the Analytics collector.
+
 ## Secrets (repo Settings > Secrets and variables > Actions)
 
 | Secret | What it is |
