@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-10-05T09:31:26Z",
- "generated_at": "2026-10-05T09:30:08Z",
+ "fetched_at": "2026-10-05T11:42:59Z",
+ "generated_at": "2026-10-05T11:42:59Z",
  "base_2x": 0.218,
- "base_n": 1378,
+ "base_n": 1379,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
@@ -30,7 +30,7 @@
   },
   {
    "topic": "Nets and Repeaters",
-   "competitor_share": 0.043,
+   "competitor_share": 0.042,
    "competitor_2x": 0.28,
    "competitor_n": 53,
    "own_share": 0.031,
@@ -78,7 +78,7 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.083,
+   "competitor_share": 0.082,
    "competitor_2x": 0.29,
    "competitor_n": 127,
    "own_share": 0.092,
@@ -151,8 +151,8 @@
   {
    "topic": "Meshtastic and Mesh Networks",
    "competitor_share": 0.054,
-   "competitor_2x": 0.41,
-   "competitor_n": 69,
+   "competitor_2x": 0.4,
+   "competitor_n": 70,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -166,7 +166,7 @@
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.089,
+   "competitor_share": 0.088,
    "competitor_2x": 0.24,
    "competitor_n": 107,
    "own_share": 0.077,
@@ -224,39 +224,39 @@
  "competitor_rising": [
   {
    "topic": "Budget Radios",
-   "lift": 1.41
+   "lift": 1.39
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.88
+   "lift": 1.86
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.72
+   "lift": 1.7
   },
   {
    "topic": "CW/Morse",
-   "lift": 3.46
+   "lift": 3.38
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 2.45
+   "lift": 2.42
   },
   {
    "topic": "Meshtastic and Mesh Networks",
-   "lift": 1.83
+   "lift": 1.8
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "lift": 3.58
+   "lift": 3.53
   },
   {
    "topic": "POTA/SOTA and Parks",
-   "lift": 1.44
+   "lift": 1.41
   },
   {
    "topic": "Emergency Comms and ARES",
-   "lift": 1.55
+   "lift": 1.52
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-05T09:31:26Z",
+ "fetched_at": "2026-10-05T11:42:59Z",
  "brief_date": "2026-10-05",
  "ideas": [
   {
@@ -96,18 +96,8 @@
  "rising": [
   {
    "topic": "HF Radios",
-   "lift": 1.59,
-   "recent_posts": 110
-  },
-  {
-   "topic": "APRS",
-   "lift": 1.22,
-   "recent_posts": 10
-  },
-  {
-   "topic": "Budget Radios",
-   "lift": 1.2,
-   "recent_posts": 11
+   "lift": 1.49,
+   "recent_posts": 109
   }
  ],
  "team": [
