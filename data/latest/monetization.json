@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T04:00:36Z",
+  "fetched_at": "2026-10-06T16:00:58Z",
   "window_days": 30,
   "totals": {
     "revenue": 47.93,
@@ -262,7 +262,7 @@
     {
       "video_id": "jn6-BdDVQzI",
       "revenue": 4.59,
-      "views": 2019
+      "views": 2018
     },
     {
       "video_id": "cGQR0gc20OY",
@@ -277,7 +277,7 @@
     {
       "video_id": "JTFErg-neu8",
       "revenue": 2.9,
-      "views": 617
+      "views": 616
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T04:00:36Z",
+  "fetched_at": "2026-10-06T16:00:58Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -445,7 +445,7 @@
     },
     {
       "video_id": "jn6-BdDVQzI",
-      "views": 2019,
+      "views": 2018,
       "watch_hours": 64.0,
       "likes": 51
     },
@@ -723,7 +723,7 @@
     },
     {
       "country": "GB",
-      "views": 6224
+      "views": 6223
     },
     {
       "country": "DE",
