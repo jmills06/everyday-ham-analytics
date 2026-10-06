@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-05T11:42:59Z",
+ "fetched_at": "2026-10-06T11:43:03Z",
  "brief_date": "2026-10-05",
  "ideas": [
   {
@@ -95,9 +95,34 @@
  ],
  "rising": [
   {
+   "topic": "Used and Vintage Gear",
+   "lift": 2.06,
+   "recent_posts": 32
+  },
+  {
+   "topic": "SDR and Scanning",
+   "lift": 1.91,
+   "recent_posts": 120
+  },
+  {
+   "topic": "Portable Power and Batteries",
+   "lift": 1.67,
+   "recent_posts": 29
+  },
+  {
    "topic": "HF Radios",
-   "lift": 1.49,
-   "recent_posts": 109
+   "lift": 1.58,
+   "recent_posts": 121
+  },
+  {
+   "topic": "Logging and Software",
+   "lift": 1.41,
+   "recent_posts": 94
+  },
+  {
+   "topic": "APRS",
+   "lift": 1.33,
+   "recent_posts": 12
   }
  ],
  "team": [
