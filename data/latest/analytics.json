@@ -1,35 +1,22 @@
 {
-  "fetched_at": "2026-10-06T16:00:58Z",
+  "fetched_at": "2026-10-07T04:00:47Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 20560,
-    "engaged_views": 9649,
-    "watch_hours": 626.3,
-    "avg_view_pct": 23.0,
-    "subs_gained": 68,
-    "subs_lost": 14,
+    "views": 20748,
+    "engaged_views": 9744,
+    "watch_hours": 636.4,
+    "avg_view_pct": 23.1,
+    "subs_gained": 67,
+    "subs_lost": 13,
     "subs_net": 54,
-    "likes": 292,
-    "comments": 38,
-    "shares": 41,
-    "subscribed_views": 2392,
-    "not_subscribed_views": 18115
+    "likes": 290,
+    "comments": 36,
+    "shares": 39,
+    "subscribed_views": 2410,
+    "not_subscribed_views": 18285
   },
   "daily": [
-    {
-      "date": "2026-09-06",
-      "views": 626,
-      "watch_minutes": 1418,
-      "avg_view_duration_sec": 265,
-      "avg_view_pct": 21.5,
-      "subs_gained": 4,
-      "subs_lost": 1,
-      "likes": 12,
-      "comments": 2,
-      "shares": 4,
-      "engaged_views": 319
-    },
     {
       "date": "2026-09-07",
       "views": 575,
@@ -380,40 +367,53 @@
       "comments": 1,
       "shares": 0,
       "engaged_views": 346
+    },
+    {
+      "date": "2026-10-04",
+      "views": 814,
+      "watch_minutes": 2026,
+      "avg_view_duration_sec": 291,
+      "avg_view_pct": 24.6,
+      "subs_gained": 3,
+      "subs_lost": 0,
+      "likes": 10,
+      "comments": 0,
+      "shares": 2,
+      "engaged_views": 414
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8802
+      "views": 9058
     },
     {
       "source": "YT_SEARCH",
-      "views": 6918
+      "views": 6854
     },
     {
       "source": "SHORTS",
-      "views": 1397
+      "views": 1394
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1052
+      "views": 1066
     },
     {
       "source": "EXT_URL",
-      "views": 946
+      "views": 935
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 555
+      "views": 567
     },
     {
       "source": "YT_CHANNEL",
-      "views": 361
+      "views": 358
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 270
+      "views": 262
     },
     {
       "source": "PLAYLIST",
@@ -421,7 +421,7 @@
     },
     {
       "source": "NOTIFICATION",
-      "views": 84
+      "views": 79
     },
     {
       "source": "HASHTAGS",
@@ -439,31 +439,31 @@
   "top_videos": [
     {
       "video_id": "LwICFz2gx1w",
-      "views": 3038,
-      "watch_hours": 101.4,
+      "views": 3101,
+      "watch_hours": 104.6,
       "likes": 53
     },
     {
       "video_id": "jn6-BdDVQzI",
-      "views": 2018,
-      "watch_hours": 64.0,
-      "likes": 51
+      "views": 2371,
+      "watch_hours": 72.0,
+      "likes": 52
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1923,
-      "watch_hours": 8.3,
-      "likes": 30
+      "views": 1889,
+      "watch_hours": 8.2,
+      "likes": 31
     },
     {
       "video_id": "9Wk6JWDHHN4",
-      "views": 1665,
-      "watch_hours": 52.7,
+      "views": 1674,
+      "watch_hours": 52.9,
       "likes": 25
     },
     {
       "video_id": "cEPpW0aW-W8",
-      "views": 1526,
+      "views": 1532,
       "watch_hours": 3.9,
       "likes": 13
     }
@@ -471,43 +471,43 @@
   "search_terms": [
     {
       "term": "meshtastic",
-      "views": 173
+      "views": 175
     },
     {
       "term": "icom 7110",
-      "views": 78
-    },
-    {
-      "term": "ic-7110",
-      "views": 75
+      "views": 77
     },
     {
       "term": "id-5200",
-      "views": 73
+      "views": 75
     },
     {
-      "term": "kenwood tm-d750a",
-      "views": 69
+      "term": "ic-7110",
+      "views": 72
     },
     {
       "term": "icom 5200",
+      "views": 71
+    },
+    {
+      "term": "icom id-5200",
       "views": 66
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 65
+      "views": 64
     },
     {
-      "term": "icom id-5200",
-      "views": 63
-    },
-    {
-      "term": "dx commander",
-      "views": 38
+      "term": "kenwood tm-d750a",
+      "views": 59
     },
     {
       "term": "ham radio",
-      "views": 38
+      "views": 40
+    },
+    {
+      "term": "meshtastic solar node",
+      "views": 39
     }
   ],
   "suggested_by": [
@@ -517,13 +517,8 @@
       "views": 11
     },
     {
-      "video_id": "yPIuwbE6YDk",
-      "title": "Best Dual Band Ham Radio VHF/UHF Base Antenna Made: The Diamond X300 WIth Installation Information",
-      "views": 9
-    },
-    {
-      "video_id": "z8m7VT7RCE0",
-      "title": "Step-By-Step Guide to Learning CW Morse Code | Specific steps, tips, and our journey!",
+      "video_id": "cGQR0gc20OY",
+      "title": "Learning CW in 2026: Two Paths to Morse Code Success",
       "views": 8
     },
     {
@@ -537,13 +532,18 @@
       "views": 7
     },
     {
-      "video_id": "cGQR0gc20OY",
-      "title": "Learning CW in 2026: Two Paths to Morse Code Success",
+      "video_id": "rWXBIMS0Rew",
+      "title": "Beginner POTA Gear Guide: What to Bring & Why",
       "views": 7
     },
     {
-      "video_id": "rWXBIMS0Rew",
-      "title": "Beginner POTA Gear Guide: What to Bring & Why",
+      "video_id": "yPIuwbE6YDk",
+      "title": "Best Dual Band Ham Radio VHF/UHF Base Antenna Made: The Diamond X300 WIth Installation Information",
+      "views": 7
+    },
+    {
+      "video_id": "z8m7VT7RCE0",
+      "title": "Step-By-Step Guide to Learning CW Morse Code | Specific steps, tips, and our journey!",
       "views": 7
     },
     {
@@ -569,27 +569,27 @@
     },
     {
       "term": "ham radio",
-      "views": 998
+      "views": 1000
     },
     {
       "term": "meshtastic",
-      "views": 977
+      "views": 985
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 654
+      "views": 657
     },
     {
       "term": "meshtastic solar node",
-      "views": 515
+      "views": 516
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 486
+      "views": 487
     },
     {
       "term": "ftdx101mp",
-      "views": 449
+      "views": 450
     },
     {
       "term": "dayton hamvention 2026",
@@ -609,7 +609,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 310
+      "views": 311
     },
     {
       "term": "pota",
@@ -621,7 +621,7 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 278
+      "views": 277
     },
     {
       "term": "icom x-026",
@@ -629,15 +629,15 @@
     },
     {
       "term": "icom 5200",
-      "views": 262
+      "views": 269
     },
     {
       "term": "ic-7110",
-      "views": 256
+      "views": 257
     },
     {
       "term": "id-5200",
-      "views": 253
+      "views": 257
     },
     {
       "term": "dx commander",
@@ -645,7 +645,7 @@
     },
     {
       "term": "icom id-5200",
-      "views": 235
+      "views": 239
     },
     {
       "term": "amateur radio",
@@ -657,33 +657,33 @@
     },
     {
       "term": "flex radio",
-      "views": 221
+      "views": 222
     },
     {
       "term": "icom 7300 mk2",
-      "views": 210
+      "views": 209
     }
   ],
   "geography_30": [
     {
       "country": "US",
-      "views": 11950,
-      "watch_hours": 393.9
+      "views": 12071,
+      "watch_hours": 399.9
     },
     {
       "country": "GB",
-      "views": 641,
-      "watch_hours": 22.6
+      "views": 650,
+      "watch_hours": 21.5
     },
     {
       "country": "CA",
-      "views": 254,
-      "watch_hours": 15.9
+      "views": 283,
+      "watch_hours": 16.5
     },
     {
       "country": "DE",
-      "views": 104,
-      "watch_hours": 4.0
+      "views": 134,
+      "watch_hours": 5.1
     },
     {
       "country": "AU",
@@ -719,19 +719,19 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 135869
+      "views": 136215
     },
     {
       "country": "GB",
-      "views": 6223
+      "views": 6260
     },
     {
       "country": "DE",
-      "views": 4882
+      "views": 4912
     },
     {
       "country": "CA",
-      "views": 4694
+      "views": 4696
     },
     {
       "country": "JP",

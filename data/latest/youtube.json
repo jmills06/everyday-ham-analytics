@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T16:00:45Z",
+  "fetched_at": "2026-10-07T04:00:32Z",
   "channel": {
     "views": 288434,
     "subscribers": 2380,
@@ -13,9 +13,9 @@
       "duration": "PT13M33S",
       "duration_seconds": 813,
       "is_short": false,
-      "views": 52,
-      "likes": 12,
-      "comments": 2
+      "views": 286,
+      "likes": 17,
+      "comments": 7
     },
     {
       "id": "jn6-BdDVQzI",
@@ -24,8 +24,8 @@
       "duration": "PT20M51S",
       "duration_seconds": 1251,
       "is_short": false,
-      "views": 2490,
-      "likes": 53,
+      "views": 2512,
+      "likes": 54,
       "comments": 12
     },
     {
@@ -46,8 +46,8 @@
       "duration": "PT17M38S",
       "duration_seconds": 1058,
       "is_short": false,
-      "views": 3218,
-      "likes": 56,
+      "views": 3284,
+      "likes": 58,
       "comments": 9
     },
     {
@@ -57,8 +57,8 @@
       "duration": "PT19M13S",
       "duration_seconds": 1153,
       "is_short": false,
-      "views": 1678,
-      "likes": 25,
+      "views": 1685,
+      "likes": 26,
       "comments": 10
     },
     {
@@ -90,7 +90,7 @@
       "duration": "PT1H15M37S",
       "duration_seconds": 4537,
       "is_short": false,
-      "views": 554,
+      "views": 555,
       "likes": 24,
       "comments": 6
     },
@@ -101,7 +101,7 @@
       "duration": "PT1M59S",
       "duration_seconds": 119,
       "is_short": true,
-      "views": 315,
+      "views": 316,
       "likes": 6,
       "comments": 0
     },
@@ -123,7 +123,7 @@
       "duration": "PT29M23S",
       "duration_seconds": 1763,
       "is_short": false,
-      "views": 4327,
+      "views": 4330,
       "likes": 46,
       "comments": 16
     },
@@ -134,7 +134,7 @@
       "duration": "PT11M42S",
       "duration_seconds": 702,
       "is_short": false,
-      "views": 1213,
+      "views": 1216,
       "likes": 40,
       "comments": 11
     },
@@ -178,7 +178,7 @@
       "duration": "PT7M57S",
       "duration_seconds": 477,
       "is_short": false,
-      "views": 262,
+      "views": 264,
       "likes": 12,
       "comments": 6
     },
@@ -211,7 +211,7 @@
       "duration": "PT1H1M56S",
       "duration_seconds": 3716,
       "is_short": false,
-      "views": 289,
+      "views": 290,
       "likes": 18,
       "comments": 4
     },
@@ -233,7 +233,7 @@
       "duration": "PT39M29S",
       "duration_seconds": 2369,
       "is_short": false,
-      "views": 1996,
+      "views": 2000,
       "likes": 106,
       "comments": 16
     },
@@ -255,7 +255,7 @@
       "duration": "PT14M14S",
       "duration_seconds": 854,
       "is_short": false,
-      "views": 5405,
+      "views": 5411,
       "likes": 172,
       "comments": 50
     },
@@ -266,7 +266,7 @@
       "duration": "PT10M2S",
       "duration_seconds": 602,
       "is_short": false,
-      "views": 588,
+      "views": 589,
       "likes": 29,
       "comments": 7
     },
@@ -277,7 +277,7 @@
       "duration": "PT10M40S",
       "duration_seconds": 640,
       "is_short": false,
-      "views": 690,
+      "views": 692,
       "likes": 30,
       "comments": 6
     },
@@ -321,7 +321,7 @@
       "duration": "PT16M8S",
       "duration_seconds": 968,
       "is_short": false,
-      "views": 336,
+      "views": 337,
       "likes": 32,
       "comments": 5
     },
@@ -365,7 +365,7 @@
       "duration": "PT57M30S",
       "duration_seconds": 3450,
       "is_short": false,
-      "views": 450,
+      "views": 448,
       "likes": 31,
       "comments": 17
     },
@@ -376,7 +376,7 @@
       "duration": "PT8M11S",
       "duration_seconds": 491,
       "is_short": false,
-      "views": 1457,
+      "views": 1468,
       "likes": 50,
       "comments": 10
     },
@@ -387,7 +387,7 @@
       "duration": "PT14M57S",
       "duration_seconds": 897,
       "is_short": false,
-      "views": 772,
+      "views": 774,
       "likes": 51,
       "comments": 12
     },
@@ -420,7 +420,7 @@
       "duration": "PT4M36S",
       "duration_seconds": 276,
       "is_short": false,
-      "views": 3523,
+      "views": 3524,
       "likes": 92,
       "comments": 21
     },
@@ -431,7 +431,7 @@
       "duration": "PT1M51S",
       "duration_seconds": 111,
       "is_short": true,
-      "views": 637,
+      "views": 638,
       "likes": 25,
       "comments": 7
     },
@@ -442,7 +442,7 @@
       "duration": "PT5M58S",
       "duration_seconds": 358,
       "is_short": false,
-      "views": 10081,
+      "views": 10092,
       "likes": 197,
       "comments": 58
     },
@@ -453,7 +453,7 @@
       "duration": "PT9M33S",
       "duration_seconds": 573,
       "is_short": false,
-      "views": 2079,
+      "views": 2092,
       "likes": 60,
       "comments": 12
     },
@@ -464,7 +464,7 @@
       "duration": "PT5M46S",
       "duration_seconds": 346,
       "is_short": false,
-      "views": 12036,
+      "views": 12043,
       "likes": 197,
       "comments": 59
     },
@@ -475,7 +475,7 @@
       "duration": "PT7M43S",
       "duration_seconds": 463,
       "is_short": false,
-      "views": 11595,
+      "views": 11607,
       "likes": 257,
       "comments": 56
     },
@@ -486,8 +486,8 @@
       "duration": "PT6M24S",
       "duration_seconds": 384,
       "is_short": false,
-      "views": 4969,
-      "likes": 139,
+      "views": 4976,
+      "likes": 140,
       "comments": 26
     },
     {
@@ -497,7 +497,7 @@
       "duration": "PT2M47S",
       "duration_seconds": 167,
       "is_short": true,
-      "views": 1067,
+      "views": 1072,
       "likes": 31,
       "comments": 5
     },
@@ -585,7 +585,7 @@
       "duration": "PT27M18S",
       "duration_seconds": 1638,
       "is_short": false,
-      "views": 2178,
+      "views": 2180,
       "likes": 78,
       "comments": 36
     },
@@ -607,7 +607,7 @@
       "duration": "PT15M4S",
       "duration_seconds": 904,
       "is_short": false,
-      "views": 1078,
+      "views": 1083,
       "likes": 25,
       "comments": 5
     },
@@ -728,7 +728,7 @@
       "duration": "PT3M12S",
       "duration_seconds": 192,
       "is_short": false,
-      "views": 2791,
+      "views": 2794,
       "likes": 56,
       "comments": 8
     },
@@ -739,7 +739,7 @@
       "duration": "PT7M22S",
       "duration_seconds": 442,
       "is_short": false,
-      "views": 3316,
+      "views": 3319,
       "likes": 109,
       "comments": 18
     },
@@ -750,7 +750,7 @@
       "duration": "PT1M24S",
       "duration_seconds": 84,
       "is_short": true,
-      "views": 489,
+      "views": 488,
       "likes": 15,
       "comments": 2
     },
@@ -805,7 +805,7 @@
       "duration": "PT15M33S",
       "duration_seconds": 933,
       "is_short": false,
-      "views": 473,
+      "views": 474,
       "likes": 32,
       "comments": 6
     },
@@ -827,7 +827,7 @@
       "duration": "PT20M18S",
       "duration_seconds": 1218,
       "is_short": false,
-      "views": 5035,
+      "views": 5037,
       "likes": 136,
       "comments": 67
     },
@@ -871,7 +871,7 @@
       "duration": "PT59M29S",
       "duration_seconds": 3569,
       "is_short": false,
-      "views": 240,
+      "views": 241,
       "likes": 6,
       "comments": 3
     },
@@ -882,7 +882,7 @@
       "duration": "PT59M3S",
       "duration_seconds": 3543,
       "is_short": false,
-      "views": 7185,
+      "views": 7214,
       "likes": 239,
       "comments": 34
     },
@@ -904,7 +904,7 @@
       "duration": "PT1M1S",
       "duration_seconds": 61,
       "is_short": true,
-      "views": 2710,
+      "views": 2711,
       "likes": 72,
       "comments": 8
     },
@@ -948,7 +948,7 @@
       "duration": "PT9M55S",
       "duration_seconds": 595,
       "is_short": false,
-      "views": 564,
+      "views": 565,
       "likes": 26,
       "comments": 1
     },
@@ -1179,7 +1179,7 @@
       "duration": "PT1M49S",
       "duration_seconds": 109,
       "is_short": true,
-      "views": 1027,
+      "views": 1030,
       "likes": 34,
       "comments": 5
     },
@@ -1190,7 +1190,7 @@
       "duration": "PT35M58S",
       "duration_seconds": 2158,
       "is_short": false,
-      "views": 1009,
+      "views": 1010,
       "likes": 35,
       "comments": 13
     },
@@ -1300,8 +1300,8 @@
       "duration": "PT12M36S",
       "duration_seconds": 756,
       "is_short": false,
-      "views": 6642,
-      "likes": 237,
+      "views": 6650,
+      "likes": 238,
       "comments": 29
     },
     {
@@ -1322,7 +1322,7 @@
       "duration": "PT20S",
       "duration_seconds": 20,
       "is_short": true,
-      "views": 14218,
+      "views": 14232,
       "likes": 165,
       "comments": 16
     },
@@ -1443,7 +1443,7 @@
       "duration": "PT27M15S",
       "duration_seconds": 1635,
       "is_short": false,
-      "views": 3039,
+      "views": 3044,
       "likes": 82,
       "comments": 69
     },
@@ -1454,7 +1454,7 @@
       "duration": "PT26S",
       "duration_seconds": 26,
       "is_short": true,
-      "views": 3375,
+      "views": 3379,
       "likes": 37,
       "comments": 4
     },
@@ -1465,7 +1465,7 @@
       "duration": "PT1M38S",
       "duration_seconds": 98,
       "is_short": true,
-      "views": 721,
+      "views": 723,
       "likes": 20,
       "comments": 0
     },
@@ -1531,8 +1531,8 @@
       "duration": "PT47S",
       "duration_seconds": 47,
       "is_short": true,
-      "views": 21353,
-      "likes": 475,
+      "views": 21384,
+      "likes": 476,
       "comments": 37
     },
     {
@@ -1542,7 +1542,7 @@
       "duration": "PT57S",
       "duration_seconds": 57,
       "is_short": true,
-      "views": 2185,
+      "views": 2186,
       "likes": 19,
       "comments": 2
     },
@@ -1652,7 +1652,7 @@
       "duration": "PT15M10S",
       "duration_seconds": 910,
       "is_short": false,
-      "views": 3436,
+      "views": 3440,
       "likes": 125,
       "comments": 38
     },
@@ -1718,7 +1718,7 @@
       "duration": "PT30M23S",
       "duration_seconds": 1823,
       "is_short": false,
-      "views": 2853,
+      "views": 2854,
       "likes": 80,
       "comments": 30
     },
@@ -1729,7 +1729,7 @@
       "duration": "PT1H14M15S",
       "duration_seconds": 4455,
       "is_short": false,
-      "views": 11460,
+      "views": 11469,
       "likes": 273,
       "comments": 137
     },
@@ -1740,7 +1740,7 @@
       "duration": "PT1M",
       "duration_seconds": 60,
       "is_short": true,
-      "views": 2340,
+      "views": 2341,
       "likes": 25,
       "comments": 5
     },
@@ -1751,7 +1751,7 @@
       "duration": "PT2M4S",
       "duration_seconds": 124,
       "is_short": true,
-      "views": 2688,
+      "views": 2689,
       "likes": 74,
       "comments": 5
     },
@@ -1773,7 +1773,7 @@
       "duration": "PT33S",
       "duration_seconds": 33,
       "is_short": true,
-      "views": 3109,
+      "views": 3110,
       "likes": 27,
       "comments": 1
     },
@@ -1861,7 +1861,7 @@
       "duration": "PT54M31S",
       "duration_seconds": 3271,
       "is_short": false,
-      "views": 4570,
+      "views": 4571,
       "likes": 127,
       "comments": 71
     },
