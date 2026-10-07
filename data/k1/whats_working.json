@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-10-06T11:43:03Z",
- "generated_at": "2026-10-06T11:43:03Z",
+ "fetched_at": "2026-10-07T01:39:46Z",
+ "generated_at": "2026-10-07T01:39:46Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -149,7 +149,14 @@
    "uploads": 52
   },
   "episode": {
-   "topics": [],
+   "topics": [
+    {
+     "topic": "Ham Radio News and FCC",
+     "n": 6,
+     "median_ratio": 1.03,
+     "share_above": 0.5
+    }
+   ],
    "titles": [
     {
      "feature": "brand=yes",
@@ -256,39 +263,33 @@
     },
     {
      "topic": "HF Radios",
-     "n": 9,
-     "median_ratio": 1.08,
-     "share_above": 0.56
+     "n": 10,
+     "median_ratio": 1.04,
+     "share_above": 0.6
     },
     {
      "topic": "POTA/SOTA and Parks",
-     "n": 16,
+     "n": 15,
      "median_ratio": 1.02,
-     "share_above": 0.56
+     "share_above": 0.6
     },
     {
      "topic": "New Radio Announcements",
-     "n": 7,
-     "median_ratio": 1.02,
-     "share_above": 0.71
-    },
-    {
-     "topic": "Hamfests and Hamvention",
-     "n": 9,
-     "median_ratio": 0.55,
-     "share_above": 0.33
-    },
-    {
-     "topic": "Ham Radio News and FCC",
      "n": 5,
-     "median_ratio": 0.54,
-     "share_above": 0.2
+     "median_ratio": 1.02,
+     "share_above": 0.6
     },
     {
      "topic": "Antennas",
      "n": 8,
      "median_ratio": 0.52,
      "share_above": 0.38
+    },
+    {
+     "topic": "Hamfests and Hamvention",
+     "n": 6,
+     "median_ratio": 0.49,
+     "share_above": 0.33
     }
    ],
    "titles": [

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-06T11:43:03Z",
+ "fetched_at": "2026-10-07T01:39:46Z",
  "brief_date": "2026-10-05",
  "ideas": [
   {
@@ -95,34 +95,34 @@
  ],
  "rising": [
   {
-   "topic": "Used and Vintage Gear",
-   "lift": 2.06,
-   "recent_posts": 32
-  },
-  {
    "topic": "SDR and Scanning",
-   "lift": 1.91,
-   "recent_posts": 120
+   "lift": 4.78,
+   "recent_posts": 41
   },
   {
-   "topic": "Portable Power and Batteries",
-   "lift": 1.67,
-   "recent_posts": 29
+   "topic": "Used and Vintage Gear",
+   "lift": 2.21,
+   "recent_posts": 30
   },
   {
    "topic": "HF Radios",
-   "lift": 1.58,
-   "recent_posts": 121
+   "lift": 2.01,
+   "recent_posts": 134
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.41,
+   "lift": 1.66,
    "recent_posts": 94
   },
   {
-   "topic": "APRS",
-   "lift": 1.33,
-   "recent_posts": 12
+   "topic": "Homebrew and Kits",
+   "lift": 1.58,
+   "recent_posts": 99
+  },
+  {
+   "topic": "SSTV and Satellites",
+   "lift": 1.38,
+   "recent_posts": 35
   }
  ],
  "team": [
@@ -152,12 +152,6 @@
   }
  ],
  "upcoming": [
-  {
-   "date": "2026-10-06",
-   "time": "19:00",
-   "kind": "record",
-   "title": "Episode 22 - WRL + EDH"
-  },
   {
    "date": "2026-10-08",
    "time": null,
