@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-07T11:44:00Z",
+ "fetched_at": "2026-10-08T11:42:59Z",
  "brief_date": "2026-10-05",
  "ideas": [
   {
@@ -96,8 +96,8 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 4.56,
-   "recent_posts": 41
+   "lift": 4.89,
+   "recent_posts": 45
   },
   {
    "topic": "Used and Vintage Gear",
@@ -106,23 +106,23 @@
   },
   {
    "topic": "HF Radios",
-   "lift": 1.99,
-   "recent_posts": 135
+   "lift": 1.85,
+   "recent_posts": 133
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.58,
-   "recent_posts": 93
+   "lift": 1.54,
+   "recent_posts": 95
+  },
+  {
+   "topic": "APRS",
+   "lift": 1.44,
+   "recent_posts": 13
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.45,
-   "recent_posts": 96
-  },
-  {
-   "topic": "SSTV and Satellites",
-   "lift": 1.31,
-   "recent_posts": 34
+   "lift": 1.37,
+   "recent_posts": 94
   }
  ],
  "team": [
@@ -152,12 +152,6 @@
   }
  ],
  "upcoming": [
-  {
-   "date": "2026-10-08",
-   "time": null,
-   "kind": "release",
-   "title": "Ep 22 WRL Podcast"
-  },
   {
    "date": "2026-10-15",
    "time": null,
