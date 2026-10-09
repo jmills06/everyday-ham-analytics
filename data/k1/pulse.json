@@ -1,23 +1,23 @@
 {
- "fetched_at": "2026-10-08T11:42:59Z",
- "generated_at": "2026-10-08T11:42:59Z",
- "base_2x": 0.215,
+ "fetched_at": "2026-10-09T11:43:59Z",
+ "generated_at": "2026-10-09T11:43:59Z",
+ "base_2x": 0.214,
  "base_n": 1382,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
-   "competitor_share": 0.074,
+   "competitor_share": 0.073,
    "competitor_2x": 0.09,
-   "competitor_n": 97,
-   "own_share": 0.136,
+   "competitor_n": 98,
+   "own_share": 0.134,
    "own_ratio": 0.28
   },
   {
    "topic": "Field Day and Contests",
    "competitor_share": 0.02,
-   "competitor_2x": 0.1,
-   "competitor_n": 91,
-   "own_share": 0.091,
+   "competitor_2x": 0.09,
+   "competitor_n": 90,
+   "own_share": 0.09,
    "own_ratio": null
   },
   {
@@ -79,9 +79,9 @@
   {
    "topic": "HF Radios",
    "competitor_share": 0.09,
-   "competitor_2x": 0.3,
-   "competitor_n": 138,
-   "own_share": 0.091,
+   "competitor_2x": 0.29,
+   "competitor_n": 139,
+   "own_share": 0.09,
    "own_ratio": 1.93
   },
   {
@@ -89,15 +89,15 @@
    "competitor_share": 0.097,
    "competitor_2x": 0.29,
    "competitor_n": 133,
-   "own_share": 0.152,
+   "own_share": 0.149,
    "own_ratio": 2.38
   },
   {
    "topic": "New Radio Announcements",
    "competitor_share": 0.044,
-   "competitor_2x": 0.51,
-   "competitor_n": 55,
-   "own_share": 0.167,
+   "competitor_2x": 0.49,
+   "competitor_n": 57,
+   "own_share": 0.164,
    "own_ratio": 3.09
   },
   {
@@ -121,7 +121,7 @@
    "competitor_share": 0.177,
    "competitor_2x": 0.2,
    "competitor_n": 246,
-   "own_share": 0.167,
+   "own_share": 0.164,
    "own_ratio": 0.82
   },
   {
@@ -134,7 +134,7 @@
   },
   {
    "topic": "Station Setup and Coax",
-   "competitor_share": 0.063,
+   "competitor_share": 0.062,
    "competitor_2x": 0.21,
    "competitor_n": 70,
    "own_share": 0.03,
@@ -161,15 +161,15 @@
    "competitor_share": 0.048,
    "competitor_2x": 0.31,
    "competitor_n": 61,
-   "own_share": 0.106,
+   "own_share": 0.104,
    "own_ratio": null
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.102,
+   "competitor_share": 0.103,
    "competitor_2x": 0.24,
-   "competitor_n": 125,
-   "own_share": 0.076,
+   "competitor_n": 126,
+   "own_share": 0.075,
    "own_ratio": null
   },
   {
@@ -193,7 +193,7 @@
    "competitor_share": 0.068,
    "competitor_2x": 0.17,
    "competitor_n": 87,
-   "own_share": 0.227,
+   "own_share": 0.224,
    "own_ratio": 1.51
   },
   {
@@ -206,10 +206,10 @@
   },
   {
    "topic": "Ham Radio News and FCC",
-   "competitor_share": 0.039,
+   "competitor_share": 0.04,
    "competitor_2x": 0.28,
-   "competitor_n": 57,
-   "own_share": 0.061,
+   "competitor_n": 58,
+   "own_share": 0.06,
    "own_ratio": null
   },
   {
@@ -223,24 +223,24 @@
  ],
  "competitor_rising": [
   {
-   "topic": "Homebrew and Kits",
-   "lift": 1.66
+   "topic": "Budget Radios",
+   "lift": 1.35
   },
   {
-   "topic": "Budget Radios",
-   "lift": 1.43
+   "topic": "Homebrew and Kits",
+   "lift": 1.59
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.42
+   "lift": 1.39
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 1.96
+   "lift": 1.88
   },
   {
    "topic": "Meshtastic and Mesh Networks",
-   "lift": 1.45
+   "lift": 1.48
   }
  ]
 }
