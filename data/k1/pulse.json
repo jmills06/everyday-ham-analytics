@@ -1,23 +1,23 @@
 {
- "fetched_at": "2026-10-09T11:43:59Z",
- "generated_at": "2026-10-09T11:43:59Z",
- "base_2x": 0.214,
- "base_n": 1382,
+ "fetched_at": "2026-10-10T11:42:59Z",
+ "generated_at": "2026-10-10T11:42:59Z",
+ "base_2x": 0.213,
+ "base_n": 1383,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
    "competitor_share": 0.073,
    "competitor_2x": 0.09,
    "competitor_n": 98,
-   "own_share": 0.134,
-   "own_ratio": 0.28
+   "own_share": 0.136,
+   "own_ratio": 0.38
   },
   {
    "topic": "Field Day and Contests",
    "competitor_share": 0.02,
    "competitor_2x": 0.09,
-   "competitor_n": 90,
-   "own_share": 0.09,
+   "competitor_n": 91,
+   "own_share": 0.091,
    "own_ratio": null
   },
   {
@@ -54,7 +54,7 @@
   },
   {
    "topic": "APRS",
-   "competitor_share": 0.009,
+   "competitor_share": 0.008,
    "competitor_2x": 0.12,
    "competitor_n": 33,
    "own_share": 0.03,
@@ -65,7 +65,7 @@
    "competitor_share": 0.02,
    "competitor_2x": 0.23,
    "competitor_n": 43,
-   "own_share": 0.03,
+   "own_share": 0.045,
    "own_ratio": null
   },
   {
@@ -80,16 +80,16 @@
    "topic": "HF Radios",
    "competitor_share": 0.09,
    "competitor_2x": 0.29,
-   "competitor_n": 139,
-   "own_share": 0.09,
+   "competitor_n": 140,
+   "own_share": 0.091,
    "own_ratio": 1.93
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "competitor_share": 0.097,
+   "competitor_share": 0.098,
    "competitor_2x": 0.29,
    "competitor_n": 133,
-   "own_share": 0.149,
+   "own_share": 0.152,
    "own_ratio": 2.38
   },
   {
@@ -97,14 +97,14 @@
    "competitor_share": 0.044,
    "competitor_2x": 0.49,
    "competitor_n": 57,
-   "own_share": 0.164,
+   "own_share": 0.167,
    "own_ratio": 3.09
   },
   {
    "topic": "Budget Radios",
    "competitor_share": 0.086,
-   "competitor_2x": 0.34,
-   "competitor_n": 114,
+   "competitor_2x": 0.35,
+   "competitor_n": 113,
    "own_share": 0.045,
    "own_ratio": null
   },
@@ -118,17 +118,17 @@
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.177,
+   "competitor_share": 0.178,
    "competitor_2x": 0.2,
    "competitor_n": 246,
-   "own_share": 0.164,
-   "own_ratio": 0.82
+   "own_share": 0.167,
+   "own_ratio": 0.85
   },
   {
    "topic": "Portable Power and Batteries",
-   "competitor_share": 0.047,
+   "competitor_share": 0.046,
    "competitor_2x": 0.18,
-   "competitor_n": 73,
+   "competitor_n": 72,
    "own_share": 0.0,
    "own_ratio": null
   },
@@ -161,22 +161,22 @@
    "competitor_share": 0.048,
    "competitor_2x": 0.31,
    "competitor_n": 61,
-   "own_share": 0.104,
+   "own_share": 0.091,
    "own_ratio": null
   },
   {
    "topic": "Homebrew and Kits",
    "competitor_share": 0.103,
-   "competitor_2x": 0.24,
-   "competitor_n": 126,
-   "own_share": 0.075,
+   "competitor_2x": 0.23,
+   "competitor_n": 128,
+   "own_share": 0.076,
    "own_ratio": null
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "competitor_share": 0.029,
+   "competitor_share": 0.028,
    "competitor_2x": 0.29,
-   "competitor_n": 35,
+   "competitor_n": 34,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -193,7 +193,7 @@
    "competitor_share": 0.068,
    "competitor_2x": 0.17,
    "competitor_n": 87,
-   "own_share": 0.224,
+   "own_share": 0.227,
    "own_ratio": 1.51
   },
   {
@@ -206,10 +206,10 @@
   },
   {
    "topic": "Ham Radio News and FCC",
-   "competitor_share": 0.04,
-   "competitor_2x": 0.28,
+   "competitor_share": 0.039,
+   "competitor_2x": 0.26,
    "competitor_n": 58,
-   "own_share": 0.06,
+   "own_share": 0.061,
    "own_ratio": null
   },
   {
@@ -217,7 +217,7 @@
    "competitor_share": 0.031,
    "competitor_2x": 0.19,
    "competitor_n": 58,
-   "own_share": 0.045,
+   "own_share": 0.03,
    "own_ratio": null
   }
  ],
@@ -228,19 +228,15 @@
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.59
-  },
-  {
-   "topic": "VHF/UHF and Handhelds",
-   "lift": 1.39
+   "lift": 1.58
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 1.88
+   "lift": 2.02
   },
   {
    "topic": "Meshtastic and Mesh Networks",
-   "lift": 1.48
+   "lift": 1.51
   }
  ]
 }

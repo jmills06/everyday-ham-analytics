@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-10-09T11:43:59Z",
- "generated_at": "2026-10-09T11:43:58Z",
+ "fetched_at": "2026-10-10T11:42:59Z",
+ "generated_at": "2026-10-10T11:42:59Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -31,15 +31,15 @@
     },
     {
      "topic": "Antennas",
-     "n": 9,
-     "median_ratio": 0.82,
-     "share_above": 0.33
+     "n": 10,
+     "median_ratio": 0.85,
+     "share_above": 0.4
     },
     {
      "topic": "POTA/SOTA and Parks",
-     "n": 8,
-     "median_ratio": 0.28,
-     "share_above": 0.25
+     "n": 9,
+     "median_ratio": 0.38,
+     "share_above": 0.33
     }
    ],
    "titles": [
@@ -60,8 +60,8 @@
     },
     {
      "feature": "question=no",
-     "n": 36,
-     "median_ratio": 1.18
+     "n": 37,
+     "median_ratio": 1.23
     },
     {
      "feature": "all_caps_word=no",
@@ -70,8 +70,18 @@
     },
     {
      "feature": "hamvention=no",
-     "n": 45,
-     "median_ratio": 0.88
+     "n": 46,
+     "median_ratio": 0.96
+    },
+    {
+     "feature": "all_caps_word=yes",
+     "n": 13,
+     "median_ratio": 0.7
+    },
+    {
+     "feature": "number_or_price=no",
+     "n": 15,
+     "median_ratio": 0.64
     },
     {
      "feature": "question=yes",
@@ -79,19 +89,9 @@
      "median_ratio": 0.57
     },
     {
-     "feature": "number_or_price=no",
-     "n": 14,
-     "median_ratio": 0.51
-    },
-    {
-     "feature": "all_caps_word=yes",
-     "n": 12,
-     "median_ratio": 0.48
-    },
-    {
      "feature": "brand=no",
-     "n": 25,
-     "median_ratio": 0.38
+     "n": 26,
+     "median_ratio": 0.4
     }
    ],
    "best_recent": [
@@ -114,16 +114,16 @@
      "ratio": 3.23
     },
     {
+     "title": "Inflatable HF Antenna at a POTA Park: Reliance InflaTenna",
+     "published": "2026-10-01",
+     "first_week": 1181,
+     "ratio": 2.44
+    },
+    {
      "title": "Unboxing the Icom ID-5200: A $999 Successor to W8KNX's Favorite Radio",
      "published": "2026-09-25",
      "first_week": 1166,
      "ratio": 2.41
-    },
-    {
-     "title": "Alinco was Weird: Peak Ham Radio Oddware a Credit Card HT",
-     "published": "2026-08-15",
-     "first_week": 774,
-     "ratio": 2.35
     }
    ],
    "weakest_recent": [
@@ -146,7 +146,7 @@
      "ratio": 0.17
     }
    ],
-   "uploads": 52
+   "uploads": 53
   },
   "episode": {
    "topics": [
