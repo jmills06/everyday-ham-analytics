@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-11T04:00:35Z",
+  "fetched_at": "2026-10-11T16:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 21983,
-    "engaged_views": 10171,
-    "watch_hours": 709.9,
+    "views": 21972,
+    "engaged_views": 10160,
+    "watch_hours": 708.8,
     "avg_view_pct": 23.5,
     "subs_gained": 72,
     "subs_lost": 11,
@@ -344,8 +344,8 @@
     },
     {
       "date": "2026-10-06",
-      "views": 937,
-      "watch_minutes": 2314,
+      "views": 926,
+      "watch_minutes": 2253,
       "avg_view_duration_sec": 290,
       "avg_view_pct": 29.4,
       "subs_gained": 3,
@@ -353,7 +353,7 @@
       "likes": 24,
       "comments": 5,
       "shares": 3,
-      "engaged_views": 475
+      "engaged_views": 464
     },
     {
       "date": "2026-10-07",
@@ -446,7 +446,7 @@
     {
       "video_id": "jn6-BdDVQzI",
       "views": 2592,
-      "watch_hours": 80.7,
+      "watch_hours": 81.1,
       "likes": 56
     },
     {
@@ -474,10 +474,6 @@
       "views": 171
     },
     {
-      "term": "icom 5200",
-      "views": 76
-    },
-    {
       "term": "id-5200",
       "views": 76
     },
@@ -488,6 +484,10 @@
     {
       "term": "icom 7110",
       "views": 68
+    },
+    {
+      "term": "icom 5200",
+      "views": 67
     },
     {
       "term": "wio tracker l1 pro",
@@ -620,16 +620,16 @@
       "views": 281
     },
     {
-      "term": "icom 5200",
-      "views": 279
-    },
-    {
       "term": "wio tracker l1",
       "views": 279
     },
     {
       "term": "icom x-026",
       "views": 273
+    },
+    {
+      "term": "icom 5200",
+      "views": 270
     },
     {
       "term": "id-5200",
