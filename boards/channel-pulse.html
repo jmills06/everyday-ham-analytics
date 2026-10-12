@@ -223,6 +223,14 @@ body::before {
 }
 .bar.is-latest { outline: 1px solid rgba(243,237,225,.25); }
 .bar.is-record { background: linear-gradient(to top, #9a6f1c, var(--gold)); }
+/* Still inside its first 30 days: outlined, so it never reads as a weak episode */
+.bar.is-partial {
+  background: transparent; border: 2px dashed rgba(243,237,225,.35); border-bottom: 0;
+}
+.bar-val small {
+  display: block; text-align: center;
+  font-size: 15px; letter-spacing: 0.12em; color: var(--dim);
+}
 .bar-lbl {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600; font-size: 19px; letter-spacing: 0.1em;
@@ -455,7 +463,7 @@ body::before {
   </section>
 
   <section class="card chart-card">
-    <div class="eyebrow"><span class="kicker">Downloads by Episode</span></div>
+    <div class="eyebrow"><span class="kicker" id="chartTitle">Downloads by Episode</span></div>
     <div class="chart" id="chart"></div>
   </section>
 
@@ -508,6 +516,7 @@ const REFRESH_MINUTES = 15;          // re-fetch cadence (collection is 12h)
 const TREND_DAYS      = 7;           // trend pill comparison window
 const STALE_HOURS     = 26;          // flag data older than this
 const CHART_EPISODES  = 6;           // bars shown
+const FIRST_DAYS      = 30;          // per-episode comparison window
 const AVG_WINDOW      = 5;           // episodes/videos in "vs avg"
 const DAILY_DAYS      = 30;          // days in the downloads-per-day strip
 const TREND_MONTHS    = 18;          // months in the show-trend bars
@@ -708,6 +717,34 @@ function drawDaily(stats, episodes) {
   } else {
     pill.hidden = true;
   }
+}
+
+/* ---------- per-episode first-N-days ----------
+   From Buzzsprout's per-episode daily stats, keyed on the podcast's local
+   date. published_at carries the local offset, so its date part is day 0.
+   Downloads dated before day 0 (an episode re-dated after release) count
+   toward day 0 rather than being dropped. */
+function buildEpDaily(rows) {
+  const byId = {};
+  rows.forEach(r => { (byId[r.episode_id] = byId[r.episode_id] || {})[r.date] = r.downloads; });
+  return byId;
+}
+
+// { sum, days } over the first n complete days on file, or null without data
+function firstDays(epDaily, ep, n, lastDate) {
+  const daily = epDaily[ep.id];
+  const d0 = (ep.published_at || '').slice(0, 10);
+  if (!daily || !d0 || d0 > lastDate) return null;
+  const start = Date.parse(d0 + 'T00:00:00Z');
+  let sum = 0, days = 0;
+  for (const [d, v] of Object.entries(daily)) if (d < d0) sum += v;
+  for (let i = 0; i < n; i++) {
+    const d = dayKey(start + i * DAY_MS);
+    if (d > lastDate) break;
+    sum += daily[d] || 0;
+    days++;
+  }
+  return { sum, days };
 }
 
 /* ---------- show trend ----------
@@ -935,7 +972,22 @@ function renderLatestUpload(prefix, list, curves, basis, noun) {
   meta.textContent = m;
 }
 
-function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats) {
+function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats, bzEpStats) {
+  const epDaily = buildEpDaily(bzEpStats);
+  const statsLast = bzEpStats.length ? bzStats.length && bzStats[bzStats.length - 1].date : null;
+  // Latest episode vs the priors over the same number of complete days
+  const dailyComparison = (e, fd, priorEps) => {
+    const vals = priorEps.map(x => firstDays(epDaily, x, fd.days, statsLast))
+      .filter(v => v && v.days === fd.days).map(v => v.sum);
+    if (vals.length < 2) return null;
+    const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+    if (!avg) return null;
+    const done = fd.days >= FIRST_DAYS;
+    return { pct: Math.round((fd.sum - avg) / avg * 100),
+             label: done ? `VS AVG &middot; FIRST ${FIRST_DAYS}D` : `VS AVG &middot; DAY ${fd.days}`,
+             lockedVal: done ? fd.sum : null, lockedDays: FIRST_DAYS };
+  };
+
   // Hero
   $('subs').textContent = fmt(yt.channel.subscribers);
   const netSubs = aDaily.length >= 2
@@ -977,9 +1029,12 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats) {
     const isRecord = bz.episodes.slice(1).every(x => e.plays > x.plays) && bz.episodes.length > 1;
     $('epPlays').innerHTML = `${fmt(e.plays)}<small>DOWNLOADS</small>`;
     $('epPlays').classList.toggle('record', isRecord);
+    // Prefer Buzzsprout's daily stats: same-age totals over complete days.
+    // Fall back to the snapshot-based estimate when they aren't available.
+    const fd = statsLast ? firstDays(epDaily, e, FIRST_DAYS, statsLast) : null;
     const epAges = buildEpAges(epSnaps, bz.episodes);
     const d = ageDays(e.published_at);
-    const cmp = agedComparison(
+    const cmp = fd && fd.days ? dailyComparison(e, fd, priorEps) : agedComparison(
       d, e.plays,
       dd => (epAges[e.id] || {})[dd] ?? null,
       (id, dd) => (epAges[id] || {})[dd] ?? null,
@@ -987,23 +1042,40 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats) {
     setCompare('epPill', cmp, e.plays, priorEps.map(x => x.plays));
     let meta = 'Published ' + ago(e.published_at);
     if (cmp && cmp.lockedVal != null)
-      meta += ' \u00B7 First 7 days: ' + fmt(cmp.lockedVal) + ' downloads';
+      meta += ` \u00B7 First ${cmp.lockedDays || 7} days: ` + fmt(cmp.lockedVal) + ' downloads';
     $('epMeta').textContent = meta;
   }
 
-  // Chart: last N episodes, oldest to newest
+  // Chart: last N episodes, oldest to newest. With daily stats, each bar is
+  // the episode's first 30 days so old and new episodes compare fairly;
+  // without them, lifetime totals as before.
   const eps = bz.episodes.slice(0, CHART_EPISODES).reverse();
-  const maxPlays = Math.max(...eps.map(x => x.plays), 1);
-  const allTimeMax = Math.max(...bz.episodes.map(x => x.plays), 1);
+  const useFirst = !!statsLast;
+  const valOf = ep => {
+    if (!useFirst) return { v: ep.plays, partial: false };
+    const fd = firstDays(epDaily, ep, FIRST_DAYS, statsLast);
+    return fd ? { v: fd.sum, partial: fd.days < FIRST_DAYS, days: fd.days }
+              : { v: 0, partial: true, days: 0 };
+  };
+  $('chartTitle').textContent = useFirst
+    ? `First ${FIRST_DAYS} Days by Episode` : 'Downloads by Episode';
+  const vals = eps.map(valOf);
+  const maxPlays = Math.max(...vals.map(x => x.v), 1);
+  const complete = useFirst
+    ? bz.episodes.map(valOf).filter(x => !x.partial).map(x => x.v)
+    : bz.episodes.map(x => x.plays);
+  const allTimeMax = complete.length > 1 ? Math.max(...complete) : null;
   $('chart').innerHTML = eps.map((ep, i) => {
+    const { v, partial, days } = vals[i];
     const isLatest = i === eps.length - 1;
-    const isRecord = ep.plays === allTimeMax && bz.episodes.length > 1;
-    const hPct = Math.max(4, Math.round(ep.plays / maxPlays * 100));
+    const isRecord = !partial && v === allTimeMax;
+    const hPct = Math.max(4, Math.round(v / maxPlays * 100));
     const lbl = ep.episode_number != null ? 'EP ' + ep.episode_number
               : (ep.title || '').slice(0, 8);
+    const note = partial && useFirst ? `<small>DAY ${days}</small>` : '';
     return `<div class="bar-col">
-      <div class="bar-val">${fmt(ep.plays)}</div>
-      <div class="bar ${isLatest ? 'is-latest' : ''} ${isRecord ? 'is-record' : ''}"
+      <div class="bar-val">${fmt(v)}${note}</div>
+      <div class="bar ${isLatest ? 'is-latest' : ''} ${isRecord ? 'is-record' : ''} ${partial ? 'is-partial' : ''}"
            style="height:${hPct}%"></div>
       <div class="bar-lbl ${isLatest ? 'is-latest' : ''}">${lbl}</div>
     </div>`;
@@ -1077,7 +1149,7 @@ function checkMilestones(m) {
 /* ---------- data cycle ---------- */
 async function refresh() {
   try {
-    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily, bzStats] = await Promise.all([
+    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily, bzStats, bzEpStats] = await Promise.all([
       getJSON('latest/youtube.json'),
       getJSON('latest/buzzsprout.json'),
       getJSONL('history/youtube_daily.jsonl'),
@@ -1087,14 +1159,15 @@ async function refresh() {
       getJSONL('history/episodes_daily.jsonl').catch(() => []),
       getJSONL('history/analytics_daily.jsonl').catch(() => []),
       getJSONL('history/buzzsprout_stats_daily.jsonl').catch(() => []),
+      getJSONL('history/buzzsprout_downloads_daily.jsonl').catch(() => []),
     ]);
     const sig = JSON.stringify([yt.fetched_at, bz.fetched_at,
       ytHist.length, bzHist.length, miles && miles.updated_at,
       curves && curves.updated_at, epSnaps.length, aDaily.length,
-      bzStats.length && bzStats[bzStats.length - 1]]);
+      bzStats.length && bzStats[bzStats.length - 1], bzEpStats.length]);
     if (sig !== lastSignature) {
       lastSignature = sig;
-      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats);
+      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats, bzEpStats);
     }
     checkMilestones(miles);
   } catch (err) {
