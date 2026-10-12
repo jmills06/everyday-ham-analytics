@@ -230,6 +230,46 @@ body::before {
 }
 .bar-lbl.is-latest { color: var(--cream); }
 
+/* ---------- Downloads per day (Buzzsprout daily stats) ---------- */
+.daily-card { padding: 20px 30px 14px; }
+.daily-card .pill[hidden] { display: none; }
+.daily-card .eyebrow { margin-bottom: 10px; }
+.daily-sum {
+  margin-left: auto; order: 2;
+  display: flex; align-items: center; gap: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 22px; letter-spacing: 0.08em;
+  color: var(--cream); font-variant-numeric: tabular-nums;
+}
+.daily-sum .lbl { font-size: 17px; color: var(--dim); letter-spacing: 0.14em; }
+.daily-card .pill { font-size: 19px; padding: 3px 12px; }
+.daily-card .eyebrow::after { order: 1; }
+.daily { display: flex; align-items: flex-end; gap: 2px; height: 104px; }
+.d-col {
+  flex: 1; height: 100%; position: relative;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.d-bar {
+  width: 100%; min-height: 3px; border-radius: 4px 4px 0 0;
+  background: var(--signal); opacity: .55;
+}
+.d-col.release .d-bar { opacity: 1; }
+.d-col.missing .d-bar { display: none; }
+.d-tag {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 18px; letter-spacing: 0.08em;
+  color: var(--cream); font-variant-numeric: tabular-nums;
+}
+.d-tag small { color: var(--dim); font-size: 16px; margin-right: 5px; }
+.daily-axis {
+  display: flex; justify-content: space-between; margin-top: 6px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 16px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--dim);
+}
+
 /* ---------- Prediction ---------- */
 .predict {
   border-color: rgba(216, 78, 42, 0.45);
@@ -390,6 +430,16 @@ body::before {
     <div class="chart" id="chart"></div>
   </section>
 
+  <section class="card daily-card" id="dailyCard" hidden>
+    <div class="eyebrow">
+      <span class="kicker">Downloads per Day</span>
+      <span class="daily-sum"><span class="lbl">LAST 7 DAYS</span>
+        <span id="daily7">--</span><span class="pill" id="dailyPill"></span></span>
+    </div>
+    <div class="daily" id="daily"></div>
+    <div class="daily-axis"><span id="dailyStart"></span><span id="dailyEnd"></span></div>
+  </section>
+
   <section class="card predict">
     <div>
       <div class="lbl">Next Episode Prediction</div>
@@ -423,6 +473,7 @@ const TREND_DAYS      = 7;           // trend pill comparison window
 const STALE_HOURS     = 26;          // flag data older than this
 const CHART_EPISODES  = 6;           // bars shown
 const AVG_WINDOW      = 5;           // episodes/videos in "vs avg" + prediction
+const DAILY_DAYS      = 30;          // days in the downloads-per-day strip
 
 /* ============================================================
    State
@@ -561,6 +612,64 @@ function drawTrace(rows) {
       <circle class="trace-halo" cx="${ex}" cy="${ey}" r="9"/>
       <circle class="trace-dot"  cx="${ex}" cy="${ey}" r="7"/>
     </svg>`;
+}
+
+/* ---------- downloads per day ----------
+   Rows are Buzzsprout's per-day totals keyed on the podcast's local date.
+   A day with no row was never fetched, so it draws as a gap, not a zero. */
+const dayKey = t => new Date(t).toISOString().slice(0, 10);
+
+function drawDaily(stats, episodes) {
+  const card = $('dailyCard');
+  if (!stats.length) { card.hidden = true; return; }
+  card.hidden = false;
+  const byDate = {};
+  stats.forEach(r => { byDate[r.date] = r.downloads; });
+  const last = Date.parse(stats[stats.length - 1].date + 'T00:00:00Z');
+  const days = [];
+  for (let i = DAILY_DAYS - 1; i >= 0; i--) days.push(dayKey(last - i * DAY_MS));
+
+  // Release days: published_at carries the podcast's local offset, so its
+  // date part is already the local calendar date the stats are keyed on
+  const releases = {};
+  episodes.forEach(e => {
+    const d = (e.published_at || '').slice(0, 10);
+    if (d) releases[d] = e.episode_number != null ? 'EP ' + e.episode_number : 'NEW';
+  });
+
+  const max = Math.max(1, ...days.map(d => byDate[d] || 0));
+  $('daily').innerHTML = days.map(d => {
+    const v = byDate[d];
+    const missing = v == null;
+    const rel = releases[d];
+    const h = missing ? 0 : Math.max(2, v / max * 82);   // headroom for tags
+    const tag = rel && !missing
+      ? `<div class="d-tag" style="bottom:calc(${h}% + 6px)"><small>${rel}</small>${fmt(v)}</div>`
+      : '';
+    return `<div class="d-col${missing ? ' missing' : ''}${rel ? ' release' : ''}">
+      ${tag}<div class="d-bar" style="height:${h}%"></div></div>`;
+  }).join('');
+
+  const label = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US',
+    { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  $('dailyStart').textContent = label(days[0]);
+  $('dailyEnd').textContent = label(days[days.length - 1]);
+
+  const sumOf = list => list.reduce((a, d) => a + (byDate[d] || 0), 0);
+  const known = list => list.every(d => byDate[d] != null);
+  const cur = days.slice(-7), prev = days.slice(-14, -7);
+  $('daily7').textContent = known(cur) ? fmt(sumOf(cur)) : '--';
+  const pill = $('dailyPill');
+  if (known(cur) && known(prev) && sumOf(prev)) {
+    const pct = Math.round((sumOf(cur) - sumOf(prev)) / sumOf(prev) * 100);
+    const up = pct > 0, flat = pct === 0;
+    pill.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
+    pill.innerHTML = `<span>${flat ? '&#8226;' : up ? '&#9650;' : '&#9660;'} ` +
+      `${up ? '+' : ''}${pct}%</span><span class="lbl">VS PRIOR 7D</span>`;
+    pill.hidden = false;
+  } else {
+    pill.hidden = true;
+  }
 }
 
 /* ---------- render ---------- */
@@ -713,7 +822,7 @@ function renderLatestUpload(prefix, list, curves, basis, noun) {
   meta.textContent = m;
 }
 
-function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
+function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats) {
   // Hero
   $('subs').textContent = fmt(yt.channel.subscribers);
   const netSubs = aDaily.length >= 2
@@ -786,6 +895,8 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
       <div class="bar-lbl ${isLatest ? 'is-latest' : ''}">${lbl}</div>
     </div>`;
   }).join('');
+
+  drawDaily(bzStats, bz.episodes);
 
   // Prediction: average of the AVG_WINDOW episodes before the latest
   const basis = bz.episodes.slice(1, 1 + AVG_WINDOW).map(x => x.plays);
@@ -860,7 +971,7 @@ function checkMilestones(m) {
 /* ---------- data cycle ---------- */
 async function refresh() {
   try {
-    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily] = await Promise.all([
+    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily, bzStats] = await Promise.all([
       getJSON('latest/youtube.json'),
       getJSON('latest/buzzsprout.json'),
       getJSONL('history/youtube_daily.jsonl'),
@@ -869,13 +980,15 @@ async function refresh() {
       getJSON('history/videos/launch_curves.json').catch(() => null),
       getJSONL('history/episodes_daily.jsonl').catch(() => []),
       getJSONL('history/analytics_daily.jsonl').catch(() => []),
+      getJSONL('history/buzzsprout_stats_daily.jsonl').catch(() => []),
     ]);
     const sig = JSON.stringify([yt.fetched_at, bz.fetched_at,
       ytHist.length, bzHist.length, miles && miles.updated_at,
-      curves && curves.updated_at, epSnaps.length, aDaily.length]);
+      curves && curves.updated_at, epSnaps.length, aDaily.length,
+      bzStats.length && bzStats[bzStats.length - 1]]);
     if (sig !== lastSignature) {
       lastSignature = sig;
-      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily);
+      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats);
     }
     checkMilestones(miles);
   } catch (err) {
