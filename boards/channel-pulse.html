@@ -50,7 +50,7 @@ body::before {
   height: 100%;
   display: flex; flex-direction: column;
   padding: 36px 40px 28px;
-  gap: 26px;
+  gap: 18px;
 }
 
 /* ---------- Header ---------- */
@@ -123,8 +123,8 @@ body::before {
 .hero-side .sub {
   margin-top: 12px; font-size: 16px; color: var(--dim);
 }
-.trace-wrap { margin-top: 24px; }
-.trace-wrap svg { display: block; width: 100%; height: 96px; }
+.trace-wrap { margin-top: 16px; }
+.trace-wrap svg { display: block; width: 100%; height: 72px; }
 .trace-line {
   fill: none; stroke: var(--signal); stroke-width: 3;
   stroke-linejoin: round; stroke-linecap: round;
@@ -166,7 +166,7 @@ body::before {
    sitting side by side. Shorts get their own card because a Short's view
    count says nothing next to a long-form upload's. */
 .latest { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
-.item { padding: 22px 22px; display: flex; flex-direction: column; min-width: 0; }
+.item { padding: 18px 22px; display: flex; flex-direction: column; min-width: 0; }
 /* Pills carry a nowrap benchmark label ("VS AVG SHORT - DAY 2"); in a narrow
    grid track that label would widen the column and push the row off the
    board, so here the two halves are allowed to stack instead. */
@@ -230,24 +230,93 @@ body::before {
 }
 .bar-lbl.is-latest { color: var(--cream); }
 
-/* ---------- Prediction ---------- */
-.predict {
-  border-color: rgba(216, 78, 42, 0.45);
-  padding: 20px 30px;
-  display: flex; align-items: center; justify-content: space-between;
+/* ---------- Downloads per day (Buzzsprout daily stats) ---------- */
+.daily-card { padding: 20px 30px 14px; }
+.daily-card .pill[hidden] { display: none; }
+.daily-card .eyebrow { margin-bottom: 10px; }
+.daily-sum {
+  margin-left: auto; order: 2;
+  display: flex; align-items: center; gap: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 22px; letter-spacing: 0.08em;
+  color: var(--cream); font-variant-numeric: tabular-nums;
 }
-.predict .lbl {
+.daily-sum .lbl { font-size: 17px; color: var(--dim); letter-spacing: 0.14em; }
+.daily-card .pill { font-size: 19px; padding: 3px 12px; }
+.daily-card .eyebrow::after { order: 1; }
+.daily { display: flex; align-items: flex-end; gap: 2px; height: 88px; }
+.d-col {
+  flex: 1; height: 100%; position: relative;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.d-bar {
+  width: 100%; min-height: 3px; border-radius: 4px 4px 0 0;
+  background: var(--signal); opacity: .55;
+}
+.d-col.release .d-bar { opacity: 1; }
+.d-col.missing .d-bar { display: none; }
+.d-tag {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 18px; letter-spacing: 0.08em;
+  color: var(--cream); font-variant-numeric: tabular-nums;
+}
+.d-tag small { color: var(--dim); font-size: 16px; margin-right: 5px; }
+.daily-axis {
+  display: flex; justify-content: space-between; margin-top: 6px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 16px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--dim);
+}
+
+/* ---------- Show trend (monthly downloads, YoY) ---------- */
+.trend { border-color: rgba(216, 78, 42, 0.45); padding: 20px 30px 14px; }
+.trend-top { display: flex; align-items: flex-start; justify-content: space-between; }
+.trend .t-lbl {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600; font-size: 22px;
   text-transform: uppercase; letter-spacing: 0.18em;
   color: var(--signal);
 }
-.predict .why { margin-top: 4px; font-size: 15px; color: var(--dim); }
-.predict .val {
+.trend .why { margin-top: 4px; font-size: 15px; color: var(--dim); }
+.trend-num { display: flex; align-items: center; gap: 14px; }
+.trend-num .val {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700; font-size: 72px; line-height: 1;
+  font-weight: 700; font-size: 56px; line-height: 1;
   font-variant-numeric: tabular-nums;
 }
+.trend .pill { font-size: 20px; padding: 4px 13px; }
+.trend .pill[hidden] { display: none; }
+.months { display: flex; align-items: flex-end; gap: 6px; height: 84px; margin-top: 8px; }
+.m-col {
+  flex: 1; height: 100%; position: relative;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.m-bar {
+  width: 100%; min-height: 3px; border-radius: 4px 4px 0 0;
+  background: var(--signal);
+}
+.m-col.record .m-bar { background: var(--gold); }
+/* Month not fully on file (or still in progress): outline, never a solid
+   bar that would read as a real drop */
+.m-col.partial .m-bar {
+  background: transparent; border: 2px dashed rgba(243,237,225,.3); border-bottom: 0;
+}
+.m-tag {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 18px; color: var(--cream);
+  font-variant-numeric: tabular-nums;
+}
+.m-axis { display: flex; gap: 6px; margin-top: 6px; }
+.m-axis span {
+  flex: 1; text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600; font-size: 15px; letter-spacing: 0.06em; color: var(--dim);
+}
+.m-axis span.yr { color: var(--cream); }
 
 /* ---------- Footer ---------- */
 .foot {
@@ -390,12 +459,29 @@ body::before {
     <div class="chart" id="chart"></div>
   </section>
 
-  <section class="card predict">
-    <div>
-      <div class="lbl">Next Episode Prediction</div>
-      <div class="why" id="predictWhy">Average of recent episodes</div>
+  <section class="card daily-card" id="dailyCard" hidden>
+    <div class="eyebrow">
+      <span class="kicker">Downloads per Day</span>
+      <span class="daily-sum"><span class="lbl">LAST 7 DAYS</span>
+        <span id="daily7">--</span><span class="pill" id="dailyPill"></span></span>
     </div>
-    <div class="val" id="predictVal">--</div>
+    <div class="daily" id="daily"></div>
+    <div class="daily-axis"><span id="dailyStart"></span><span id="dailyEnd"></span></div>
+  </section>
+
+  <section class="card trend" id="trendCard" hidden>
+    <div class="trend-top">
+      <div>
+        <div class="t-lbl">Show Trend</div>
+        <div class="why" id="trendWhy">Monthly downloads</div>
+      </div>
+      <div class="trend-num">
+        <div class="val" id="trend30">--</div>
+        <span class="pill" id="trendPill" hidden></span>
+      </div>
+    </div>
+    <div class="months" id="months"></div>
+    <div class="m-axis" id="monthAxis"></div>
   </section>
 
   <footer class="foot">
@@ -422,7 +508,10 @@ const REFRESH_MINUTES = 15;          // re-fetch cadence (collection is 12h)
 const TREND_DAYS      = 7;           // trend pill comparison window
 const STALE_HOURS     = 26;          // flag data older than this
 const CHART_EPISODES  = 6;           // bars shown
-const AVG_WINDOW      = 5;           // episodes/videos in "vs avg" + prediction
+const AVG_WINDOW      = 5;           // episodes/videos in "vs avg"
+const DAILY_DAYS      = 30;          // days in the downloads-per-day strip
+const TREND_MONTHS    = 18;          // months in the show-trend bars
+const YOY_DAYS        = 30;          // window compared year over year
 
 /* ============================================================
    State
@@ -535,7 +624,7 @@ function setPill(id, t) {
 /* ---------- signal trace (signature element) ---------- */
 function drawTrace(rows) {
   const wrap = $('trace');
-  const W = 920, H = 96, PAD = 8;
+  const W = 920, H = 72, PAD = 8;
   const pts = rows.slice(-30).map(r => r.subscribers);
   if (pts.length === 1) pts.push(pts[0]);           // flat line on day one
   const min = Math.min(...pts), max = Math.max(...pts);
@@ -561,6 +650,139 @@ function drawTrace(rows) {
       <circle class="trace-halo" cx="${ex}" cy="${ey}" r="9"/>
       <circle class="trace-dot"  cx="${ex}" cy="${ey}" r="7"/>
     </svg>`;
+}
+
+/* ---------- downloads per day ----------
+   Rows are Buzzsprout's per-day totals keyed on the podcast's local date.
+   A day with no row was never fetched, so it draws as a gap, not a zero. */
+const dayKey = t => new Date(t).toISOString().slice(0, 10);
+
+function drawDaily(stats, episodes) {
+  const card = $('dailyCard');
+  if (!stats.length) { card.hidden = true; return; }
+  card.hidden = false;
+  const byDate = {};
+  stats.forEach(r => { byDate[r.date] = r.downloads; });
+  const last = Date.parse(stats[stats.length - 1].date + 'T00:00:00Z');
+  const days = [];
+  for (let i = DAILY_DAYS - 1; i >= 0; i--) days.push(dayKey(last - i * DAY_MS));
+
+  // Release days: published_at carries the podcast's local offset, so its
+  // date part is already the local calendar date the stats are keyed on
+  const releases = {};
+  episodes.forEach(e => {
+    const d = (e.published_at || '').slice(0, 10);
+    if (d) releases[d] = e.episode_number != null ? 'EP ' + e.episode_number : 'NEW';
+  });
+
+  const max = Math.max(1, ...days.map(d => byDate[d] || 0));
+  $('daily').innerHTML = days.map(d => {
+    const v = byDate[d];
+    const missing = v == null;
+    const rel = releases[d];
+    const h = missing ? 0 : Math.max(2, v / max * 82);   // headroom for tags
+    const tag = rel && !missing
+      ? `<div class="d-tag" style="bottom:calc(${h}% + 6px)"><small>${rel}</small>${fmt(v)}</div>`
+      : '';
+    return `<div class="d-col${missing ? ' missing' : ''}${rel ? ' release' : ''}">
+      ${tag}<div class="d-bar" style="height:${h}%"></div></div>`;
+  }).join('');
+
+  const label = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US',
+    { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  $('dailyStart').textContent = label(days[0]);
+  $('dailyEnd').textContent = label(days[days.length - 1]);
+
+  const sumOf = list => list.reduce((a, d) => a + (byDate[d] || 0), 0);
+  const known = list => list.every(d => byDate[d] != null);
+  const cur = days.slice(-7), prev = days.slice(-14, -7);
+  $('daily7').textContent = known(cur) ? fmt(sumOf(cur)) : '--';
+  const pill = $('dailyPill');
+  if (known(cur) && known(prev) && sumOf(prev)) {
+    const pct = Math.round((sumOf(cur) - sumOf(prev)) / sumOf(prev) * 100);
+    const up = pct > 0, flat = pct === 0;
+    pill.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
+    pill.innerHTML = `<span>${flat ? '&#8226;' : up ? '&#9650;' : '&#9660;'} ` +
+      `${up ? '+' : ''}${pct}%</span><span class="lbl">VS PRIOR 7D</span>`;
+    pill.hidden = false;
+  } else {
+    pill.hidden = true;
+  }
+}
+
+/* ---------- show trend ----------
+   Monthly totals from the same per-day stats. The show releases about once
+   a month, so the headline compares the last 30 days with the same 30 days
+   a year earlier (364 days back, keeping weekdays aligned) instead of the
+   previous 30 days, which mostly measures whether a release fell inside. */
+function drawTrend(stats) {
+  const card = $('trendCard');
+  if (!stats.length) { card.hidden = true; return; }
+  card.hidden = false;
+  const byDate = {};
+  stats.forEach(r => { byDate[r.date] = r.downloads; });
+  const lastDate = stats[stats.length - 1].date;
+  const last = Date.parse(lastDate + 'T00:00:00Z');
+
+  // Month buckets, oldest first, ending with the month of the latest data
+  const months = [];
+  const end = new Date(last);
+  for (let i = TREND_MONTHS - 1; i >= 0; i--) {
+    const m = new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth() - i, 1));
+    const key = m.toISOString().slice(0, 7);
+    const dim = new Date(Date.UTC(m.getUTCFullYear(), m.getUTCMonth() + 1, 0)).getUTCDate();
+    let sum = 0, have = 0;
+    for (let d = 1; d <= dim; d++) {
+      const v = byDate[`${key}-${String(d).padStart(2, '0')}`];
+      if (v != null) { sum += v; have++; }
+    }
+    months.push({ key, month: m.getUTCMonth(), year: m.getUTCFullYear(),
+                  sum, have, full: have === dim });
+  }
+  const full = months.filter(m => m.full);
+  const max = Math.max(1, ...months.map(m => m.sum));
+  const best = full.length > 1 ? Math.max(...full.map(m => m.sum)) : null;
+  const lastFull = full[full.length - 1];
+
+  $('months').innerHTML = months.map(m => {
+    if (!m.have) return '<div class="m-col"></div>';
+    const h = Math.max(2, m.sum / max * 76);              // headroom for tags
+    const isBest = m.full && m.sum === best;
+    const tagged = m.full && (isBest || m === lastFull);
+    const tag = tagged
+      ? `<div class="m-tag" style="bottom:calc(${h}% + 4px)">${fmt(m.sum)}</div>` : '';
+    return `<div class="m-col${m.full ? '' : ' partial'}${isBest ? ' record' : ''}">
+      ${tag}<div class="m-bar" style="height:${h}%"></div></div>`;
+  }).join('');
+  $('monthAxis').innerHTML = months.map(m => m.month === 0
+    ? `<span class="yr">'${String(m.year).slice(2)}</span>`
+    : `<span>${'JFMAMJJASOND'[m.month]}</span>`).join('');
+
+  // Headline: last 30 days, and the same 30 days a year earlier
+  const win = [], prior = [];
+  for (let i = 0; i < YOY_DAYS; i++) {
+    win.push(dayKey(last - i * DAY_MS));
+    prior.push(dayKey(last - (i + 364) * DAY_MS));
+  }
+  const known = list => list.every(d => byDate[d] != null);
+  const sumOf = list => list.reduce((a, d) => a + (byDate[d] || 0), 0);
+  const pill = $('trendPill');
+  pill.hidden = true;
+  if (known(win)) {
+    $('trend30').textContent = fmt(sumOf(win));
+    $('trendWhy').textContent = 'Downloads in the last 30 days · bars are monthly totals';
+    if (known(prior) && sumOf(prior)) {
+      const pct = Math.round((sumOf(win) - sumOf(prior)) / sumOf(prior) * 100);
+      const up = pct > 0, flat = pct === 0;
+      pill.className = 'pill ' + (flat ? '' : up ? 'up' : 'down');
+      pill.innerHTML = `<span>${flat ? '&#8226;' : up ? '&#9650;' : '&#9660;'} ` +
+        `${up ? '+' : ''}${pct}%</span><span class="lbl">VS LAST YEAR</span>`;
+      pill.hidden = false;
+    }
+  } else {
+    $('trend30').textContent = '--';
+    $('trendWhy').textContent = 'Building history · bars are monthly totals';
+  }
 }
 
 /* ---------- render ---------- */
@@ -713,7 +935,7 @@ function renderLatestUpload(prefix, list, curves, basis, noun) {
   meta.textContent = m;
 }
 
-function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
+function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats) {
   // Hero
   $('subs').textContent = fmt(yt.channel.subscribers);
   const netSubs = aDaily.length >= 2
@@ -787,14 +1009,9 @@ function render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily) {
     </div>`;
   }).join('');
 
-  // Prediction: average of the AVG_WINDOW episodes before the latest
-  const basis = bz.episodes.slice(1, 1 + AVG_WINDOW).map(x => x.plays);
-  if (basis.length) {
-    const pred = Math.round(basis.reduce((a, b) => a + b, 0) / basis.length);
-    $('predictVal').textContent = fmt(pred);
-    $('predictWhy').textContent =
-      `Average of the previous ${basis.length} episodes`;
-  }
+  drawDaily(bzStats, bz.episodes);
+
+  drawTrend(bzStats);
 
   // Freshness stamp
   const fetchedAt = new Date(Math.max(
@@ -860,7 +1077,7 @@ function checkMilestones(m) {
 /* ---------- data cycle ---------- */
 async function refresh() {
   try {
-    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily] = await Promise.all([
+    const [yt, bz, ytHist, bzHist, miles, curves, epSnaps, aDaily, bzStats] = await Promise.all([
       getJSON('latest/youtube.json'),
       getJSON('latest/buzzsprout.json'),
       getJSONL('history/youtube_daily.jsonl'),
@@ -869,13 +1086,15 @@ async function refresh() {
       getJSON('history/videos/launch_curves.json').catch(() => null),
       getJSONL('history/episodes_daily.jsonl').catch(() => []),
       getJSONL('history/analytics_daily.jsonl').catch(() => []),
+      getJSONL('history/buzzsprout_stats_daily.jsonl').catch(() => []),
     ]);
     const sig = JSON.stringify([yt.fetched_at, bz.fetched_at,
       ytHist.length, bzHist.length, miles && miles.updated_at,
-      curves && curves.updated_at, epSnaps.length, aDaily.length]);
+      curves && curves.updated_at, epSnaps.length, aDaily.length,
+      bzStats.length && bzStats[bzStats.length - 1]]);
     if (sig !== lastSignature) {
       lastSignature = sig;
-      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily);
+      render(yt, bz, ytHist, bzHist, curves, epSnaps, aDaily, bzStats);
     }
     checkMilestones(miles);
   } catch (err) {
