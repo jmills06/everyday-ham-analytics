@@ -1,14 +1,14 @@
 {
- "fetched_at": "2026-10-11T11:41:58Z",
- "generated_at": "2026-10-11T11:41:58Z",
+ "fetched_at": "2026-10-12T09:31:50Z",
+ "generated_at": "2026-10-12T09:30:09Z",
  "base_2x": 0.213,
- "base_n": 1380,
+ "base_n": 1378,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
-   "competitor_share": 0.073,
+   "competitor_share": 0.072,
    "competitor_2x": 0.09,
-   "competitor_n": 98,
+   "competitor_n": 97,
    "own_share": 0.136,
    "own_ratio": 0.38
   },
@@ -63,8 +63,8 @@
   {
    "topic": "CW/Morse",
    "competitor_share": 0.02,
-   "competitor_2x": 0.23,
-   "competitor_n": 43,
+   "competitor_2x": 0.24,
+   "competitor_n": 42,
    "own_share": 0.045,
    "own_ratio": null
   },
@@ -78,7 +78,7 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.089,
+   "competitor_share": 0.09,
    "competitor_2x": 0.29,
    "competitor_n": 139,
    "own_share": 0.091,
@@ -158,15 +158,15 @@
   },
   {
    "topic": "Logging and Software",
-   "competitor_share": 0.048,
-   "competitor_2x": 0.31,
-   "competitor_n": 61,
+   "competitor_share": 0.047,
+   "competitor_2x": 0.32,
+   "competitor_n": 60,
    "own_share": 0.091,
    "own_ratio": null
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.103,
+   "competitor_share": 0.105,
    "competitor_2x": 0.23,
    "competitor_n": 128,
    "own_share": 0.076,
@@ -224,23 +224,23 @@
  "competitor_rising": [
   {
    "topic": "Budget Radios",
-   "lift": 1.68
+   "lift": 1.74
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.52
-  },
-  {
-   "topic": "VHF/UHF and Handhelds",
-   "lift": 1.26
+   "lift": 1.4
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 2.23
+   "lift": 2.13
+  },
+  {
+   "topic": "VHF/UHF and Handhelds",
+   "lift": 1.32
   },
   {
    "topic": "Meshtastic and Mesh Networks",
-   "lift": 1.56
+   "lift": 1.46
   }
  ]
 }

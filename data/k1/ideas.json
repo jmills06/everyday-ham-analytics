@@ -1,128 +1,122 @@
 {
- "fetched_at": "2026-10-11T11:41:58Z",
- "brief_date": "2026-10-05",
+ "fetched_at": "2026-10-12T09:31:50Z",
+ "brief_date": "2026-10-12",
  "ideas": [
   {
    "rank": 1,
-   "title": "Icom IC-7300MK2 vs Yaesu FTX-1 vs Xiegu G7250: Which HF Rig in Fall 2026",
+   "title": "Icom ID-5200 on D-STAR: Programming, Reflectors and Our First Net Check-ins",
    "format": "youtube",
    "topics": [
-    "HF Radios",
-    "New Radio Announcements"
+    "VHF/UHF and Handhelds",
+    "Nets and Repeaters"
    ],
-   "why_now": "HF radio discussion is up sharply this month, and three of the most talked-about rigs of the year are now in hams' hands. Plenty of people are deciding what to buy before winter operating season.",
-   "angle": "A side-by-side buyer's take from hosts who have run all three. It covers who each rig suits (home station, portable, remote), what we liked and what bugged us, and one recommendation per type of operator. This is new because our earlier coverage reviewed each radio on its own and the pending G7250 pitch is a first-contacts video, not a comparison. Fits the OPEN 2026-10-22 YouTube slot."
+   "why_now": "VHF/UHF is one of our strongest topics (median 2.38x, 80% of uploads above typical), and brand names in titles roughly double first-week views. Our ID-5200 Hamvention hands-on hit 7.11x and the delivery Short hit 4.61x, so viewers want the next chapter. Nets and repeaters are a gap for us (3% of uploads) even though 32% of competitor uploads on that topic double their typical.",
+   "angle": "Fits the OPEN YouTube slot on 2026-10-22. This is new compared with the unboxing: a practical setup video covering programming, linking to reflectors, and checking into real nets on air, with the honest frustrations included. Close with a quick verdict on whether it lives up to being a successor to W8KNX's favorite radio."
   },
   {
    "rank": 2,
-   "title": "FreeDV RADE vs SSB: Digital Voice in Half the Bandwidth, Tested On Air",
+   "title": "RTL-SDR Dongle in the Junk Drawer: ADS-B, APRS and Airband in One Evening",
+   "format": "youtube",
+   "topics": [
+    "SDR and Scanning",
+    "APRS",
+    "Getting Licensed and New Hams"
+   ],
+   "why_now": "SDR and scanning is the fastest rising discussion topic by far (lift 6.22x, 57 recent posts). The most discussed community post this week was about getting an unused RTL-SDR dongle on the air, and new free tools for SDRs keep showing up. This is a timely exception: we have little track record on SDR, but the community spike justifies a test.",
+   "angle": "Fits the OPEN YouTube slot on 2026-10-29. Pull a dongle out of a drawer and in one evening get aircraft tracking, APRS decoding, and airband listening running, using a live dashboard tool for the APRS and ADS-B part. Different from the ESP32 SDR pitch: this is the cheap hardware most hams already own, aimed at beginners and non-licensed listeners."
+  },
+  {
+   "rank": 3,
+   "title": "FreeDV RADE and WSJT-X JTTY: Two New HF Modes Put to the Test",
    "format": "podcast",
    "topics": [
     "Digital Modes",
     "HF Radios",
-    "Ham Radio News and FCC"
-   ],
-   "why_now": "RADE is the biggest HF voice story right now. A national league write-up asked whether it will be the next SSB, FlexRadio integration is shipping, and RADE v2 is in testing.",
-   "angle": "A hands-on podcast episode. It explains what a machine-learning vocoder is in plain language, shows how RADE fits voice into about 1.5 kHz, and includes recorded on-air comparisons of RADE and SSB on the same path so listeners can hear the difference. It closes with how an everyday ham with a laptop and a rig gets on RADE this winter. Record 2026-11-03 for the OPEN 2026-11-05 podcast slot."
-  },
-  {
-   "rank": 3,
-   "title": "WSJT-X 3.2 Adds JTTY: First Contacts With the New Mode",
-   "format": "both",
-   "topics": [
-    "Digital Modes",
     "Logging and Software"
    ],
-   "why_now": "JTTY just arrived in WSJT-X 3.2 and is a trending term in community discussion this week. Early adopters are figuring out settings in public right now.",
-   "angle": "Setup through first QSO. It covers what JTTY is (RTTY-like and not locked to UTC time slots like FT8), radio and software settings, and what it feels like compared with FT8 and classic RTTY. It also includes a quick test on a QRP rig, since QMX owners are already asking about it. Edited video for the OPEN 2026-10-29 YouTube slot, plus a Short of the first decode."
+   "why_now": "Both new HF modes are moving fast this month. JTTY got updates in WSJT-X v3.3.0-beta1, and its author posted single-page instructions. RADE is getting attention after a national article asked whether it could become the next SSB. Digital modes discussion is up (lift 1.24x) and HF radio talk is up 1.60x.",
+   "angle": "Fits the OPEN podcast slot (record 2026-11-03, release 2026-11-05). This combines the hosts' two Hot ideas into one sit-down episode instead of two separate videos. The new angle versus earlier pitches: first-time setup gotchas (being heard is harder than hearing), what changed in the 3.3.0 beta, RADE v2 aiming under 1 kHz, and on-air clips of each mode. End with a plain verdict on which one an everyday ham should try first."
   },
   {
    "rank": 4,
-   "title": "Building a Solar MeshCore Repeater for Our Club: Parts, Placement, and Range",
-   "format": "youtube",
+   "title": "Ham Radio Gift Guide 2026: From Quansheng HTs to the $999 Icom ID-5200",
+   "format": "podcast",
    "topics": [
-    "Meshtastic and Mesh Networks",
-    "Clubs",
-    "Emergency Comms and ARES"
+    "Budget Radios",
+    "VHF/UHF and Handhelds",
+    "HF Radios",
+    "New Radio Announcements"
    ],
-   "why_now": "Off-grid mesh messaging is surging, and competitors are putting out episode after episode on MeshCore repeaters. Michigan clubs are asking whether it is worth adding to their toolkit.",
-   "angle": "An everyday-ham build of a ready-to-deploy solar node set up as a MeshCore repeater. It covers what you buy, how to configure it, where to mount it, and a drive test around the area to see real coverage. It frames mesh as a club and ARES companion to ham radio, not a replacement. Fits the OPEN 2026-11-12 YouTube slot."
+   "why_now": "Budget radios are underserved by us (4% of uploads vs 9% for competitors) and 34% of competitor budget radio uploads double their typical. Budget and HF radio discussion are both rising (lift 1.50x and 1.60x). A gift guide is also the perfect home for our best topics: new radios and handhelds.",
+   "angle": "Fits the OPEN podcast slot (record 2026-12-01, release 2026-12-03), timed for holiday shopping. Walk the price ladder from cheap handhelds and stocking stuffers up through mobiles and HF rigs, using radios we have actually touched this year. Brands and prices go in the title and chapters because both lift our numbers."
   },
   {
    "rank": 5,
-   "title": "Working SO-50 With a Handheld: Our First FM Satellite Contacts",
-   "format": "youtube",
+   "title": "Hurricane Watch Net on 14.325 MHz: How to Listen Without Getting in the Way",
+   "format": "short",
    "topics": [
-    "SSTV and Satellites",
-    "VHF/UHF and Handhelds"
+    "Emergency Comms and ARES",
+    "Nets and Repeaters",
+    "HF Radios"
    ],
-   "why_now": "Satellite listening is having a moment. Another channel's 'anyone can listen' video broke out, and hams are posting SO-50 and RS-44 passes every week. Fall evenings make good pass-chasing weather.",
-   "angle": "Take an HT people already own, add a handheld Yagi, and try to make contacts on an FM bird. It covers pass prediction apps, Doppler tuning in plain terms, and the honest misses along with the wins. This is different from the pending SSTV pitches because it is about two-way voice contacts, not receiving images. Fits the OPEN 2026-11-19 YouTube slot."
+   "why_now": "The Hurricane Watch Net is active for Hurricane Isaias on 14.325 MHz by day and 7.268 MHz at night. Emergency comms is barely on our channel (2%) but 27% of competitor uploads on it double their typical. This one is time sensitive, so it should go out as a Short right away.",
+   "angle": "Short, no release slot needed, so it can post this week. Tune the net live in the shack, show the frequencies on screen, and give one simple rule: listen and keep the frequency clear unless you have traffic. A frequency in the title follows our numbers lesson."
   },
   {
    "rank": 6,
-   "title": "Retevis and Radioddity Just Filed New Radios With the FCC",
-   "format": "short",
+   "title": "Listening to the ISS on a Handheld: School Contacts, FM Satellites and New Launches",
+   "format": "youtube",
    "topics": [
-    "Budget Radios",
-    "New Radio Announcements"
+    "SSTV and Satellites",
+    "VHF/UHF and Handhelds",
+    "Getting Licensed and New Hams"
    ],
-   "why_now": "Four new budget-maker filings landed in the last 45 days, and budget radio discussion is rising. Filings often show up before an announcement.",
-   "angle": "A quick Short that explains what an FCC ID filing is, shows the new Retevis and Radioddity entries, and says clearly that a filing is not a product yet. It ends by asking viewers what they hope these turn out to be. Shorts are not tied to the release plan, so this can post any week."
+   "why_now": "Satellite discussion is up 1.88x, a competitor's 'anyone can listen to satellites' video recently doubled its typical, and new amateur satellites just went up. Hams are also posting about hearing astronaut school contacts on simple handhelds, which is exactly our everyday ham audience.",
+   "angle": "Fits the OPEN YouTube slot on 2026-11-12. Receive only, no license needed for the listening part: catch an ARISS school contact and an FM satellite pass on a handheld from Michigan, show the free tracking tools, and point to which of the newly launched satellites are worth watching. This is new compared with the pitched SO-50 contacts video (transmitting) and ISS SSTV video (images): it is about listening first, with a handheld."
   },
   {
    "rank": 7,
-   "title": "NEXT.POTA.APP Walkthrough With Mike W8MSC: What Changed and Why",
-   "format": "youtube",
-   "topics": [
-    "Logging and Software",
-    "POTA/SOTA and Parks"
-   ],
-   "why_now": "The new POTA site has been adding features steadily based on user feedback. After a year of debate about where POTA is headed, it helps to show the organization listening.",
-   "angle": "A short, practical screen-and-camera walkthrough with Mike W8MSC: the new features, what came from activator feedback, and three things to try on your next activation. Framed as a software walkthrough, not a park trip. This is a deliberate exception because park videos have underperformed here, but the software framing and the host's direct access justify one try. Fits the OPEN 2026-11-26 YouTube slot (a holiday week, which suits a lighter-lift video)."
-  },
-  {
-   "rank": 8,
-   "title": "Your ESP32 Has a Hidden SDR Inside",
+   "title": "CQ WorldWide Weekend on the FTDX101MP: Fresh DX From Michigan",
    "format": "short",
    "topics": [
-    "SDR and Scanning",
-    "Homebrew and Kits"
+    "DX and DXpeditions",
+    "Field Day and Contests",
+    "HF Radios"
    ],
-   "why_now": "The most discussed item in the community this week is several projects independently finding SDR capabilities hiding in cheap ESP32 chips, the same chip family inside some newer ham gadgets.",
-   "angle": "A 45-second explainer: what was found, why it matters for cheap homebrew receivers and direction finding, and a pointer to the write-up. It can post as a standalone Short any week and doubles as a podcast news segment for the 2026-11-05 episode."
+   "why_now": "Our best Short ever was a CQ WorldWide contest weekend clip at 11.79x. DX is a big topic in community discussion (12% of items) and we have posted 0% on it in the past year. A repeat of that format for this fall's contest weekend is a cheap, proven bet.",
+   "angle": "Short, no release slot needed, posted during CQ WorldWide weekend. Quick clips of the band full of DX on the FTDX101MP, a couple of rare ones in the log, and the rig name in the title since brands lift our numbers. It also gives a low-effort bridge from the California QSO Party video in the 2026-10-15 slot."
   }
  ],
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 5.2,
-   "recent_posts": 55
-  },
-  {
-   "topic": "Used and Vintage Gear",
-   "lift": 1.75,
-   "recent_posts": 29
-  },
-  {
-   "topic": "HF Radios",
-   "lift": 1.64,
-   "recent_posts": 131
+   "lift": 6.22,
+   "recent_posts": 57
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.62,
-   "recent_posts": 41
+   "lift": 1.88,
+   "recent_posts": 46
   },
   {
-   "topic": "Logging and Software",
-   "lift": 1.56,
-   "recent_posts": 102
+   "topic": "Used and Vintage Gear",
+   "lift": 1.71,
+   "recent_posts": 30
+  },
+  {
+   "topic": "HF Radios",
+   "lift": 1.6,
+   "recent_posts": 127
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.4,
+   "lift": 1.5,
    "recent_posts": 15
+  },
+  {
+   "topic": "Logging and Software",
+   "lift": 1.46,
+   "recent_posts": 97
   }
  ],
  "team": [
