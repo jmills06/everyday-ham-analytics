@@ -62,6 +62,20 @@ def merge_content_metadata(episodes: list[dict]) -> None:
     write_json(path, merged)
 
 
+def episode_downloads(e: dict) -> int:
+    """Lifetime downloads for one episode.
+
+    Buzzsprout renamed `total_plays` to `total_downloads` around 2026-10-10.
+    Read the new name, fall back to the old one, and fail loudly if neither
+    is present so a future rename can't silently record zeros again.
+    """
+    for field in ("total_downloads", "total_plays"):
+        if e.get(field) is not None:
+            return int(e[field])
+    raise KeyError(f"episode {e.get('id')} has no download count field; "
+                   f"keys: {sorted(e)}")
+
+
 def main() -> None:
     ensure_dirs()
     token = require_env("BUZZSPROUT_TOKEN")
@@ -73,7 +87,7 @@ def main() -> None:
     episodes = [e for e in raw if not e.get("private") and e.get("published_at")]
     episodes.sort(key=lambda e: e.get("published_at", ""), reverse=True)
 
-    total = sum(int(e.get("total_plays", 0)) for e in episodes)
+    total = sum(episode_downloads(e) for e in episodes)
 
     write_json(LATEST / "buzzsprout.json", {
         "fetched_at": utc_now_iso(),
@@ -85,7 +99,7 @@ def main() -> None:
             "episode_number": e.get("episode_number"),
             "published_at": e.get("published_at", ""),
             "duration_sec": e.get("duration"),
-            "plays": int(e.get("total_plays", 0)),
+            "plays": episode_downloads(e),
         } for e in episodes],
     })
 
@@ -97,7 +111,7 @@ def main() -> None:
 
     upsert_daily_rows(
         HISTORY / "episodes_daily.jsonl",
-        [{"date": today, "id": e["id"], "plays": int(e.get("total_plays", 0))}
+        [{"date": today, "id": e["id"], "plays": episode_downloads(e)}
          for e in episodes],
         key_fields=("date", "id"),
     )

@@ -7,6 +7,10 @@ on:
         description: "Which collectors to run (all | youtube | analytics | buzzsprout)"
         required: false
         default: "all"
+      buzzsprout_stats_from:
+        description: "Backfill Buzzsprout daily stats from this date (YYYY-MM-DD). Blank = last 7 days."
+        required: false
+        default: ""
 
 # Never let two collection runs race each other
 concurrency:
@@ -66,6 +70,17 @@ jobs:
           BUZZSPROUT_TOKEN: ${{ secrets.BUZZSPROUT_TOKEN }}
           BUZZSPROUT_PODCAST_ID: ${{ secrets.BUZZSPROUT_PODCAST_ID }}
         run: python collectors/buzzsprout.py
+
+      - name: Buzzsprout daily stats collector
+        if: ${{ inputs.collectors == 'all' || inputs.collectors == 'buzzsprout' }}
+        # Additive and new: a failure here must never block the core collectors
+        # or the commit below. It writes nothing when it fails.
+        continue-on-error: true
+        env:
+          BUZZSPROUT_TOKEN: ${{ secrets.BUZZSPROUT_TOKEN }}
+          BUZZSPROUT_PODCAST_ID: ${{ secrets.BUZZSPROUT_PODCAST_ID }}
+          BUZZSPROUT_STATS_FROM: ${{ inputs.buzzsprout_stats_from }}
+        run: python collectors/buzzsprout_stats.py
 
       - name: Compute milestones
         if: ${{ inputs.collectors == 'all' }}

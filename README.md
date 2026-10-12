@@ -16,8 +16,9 @@ boards/                Display boards (added in phase 2)
 
 ## Why history matters
 
-The APIs only tell you *now*. Buzzsprout has no daily-downloads endpoint,
-YouTube trend deltas need a stored yesterday, and topic analytics need
+The APIs mostly tell you *now*. Buzzsprout's episode list only has lifetime
+totals (its per-day `/downloads?date=` endpoint is collected separately by
+`buzzsprout_stats.py`, keyed on the podcast's local date), YouTube trend deltas need a stored yesterday, and topic analytics need
 per-video launch curves. Every day the collectors run is a row of history
 that cannot be reconstructed later.
 
