@@ -8,7 +8,9 @@ collector missed.
 
 Each run re-fetches a trailing window (late-arriving downloads can still
 change recent days). Set BUZZSPROUT_STATS_FROM=YYYY-MM-DD to backfill from
-that date instead.
+that date: days already on file are skipped and each run fetches at most
+MAX_BACKFILL_DAYS of them (oldest first), so a long backfill is finished
+by dispatching the same date again until the log says nothing is left.
 
 NOTE: `date` here is the podcast's local calendar date, as Buzzsprout
 defines it, not a UTC date like the rest of data/history.
@@ -31,6 +33,8 @@ from common import HISTORY, ensure_dirs, read_jsonl, require_env, write_jsonl
 
 TIMEOUT = 30
 TRAILING_DAYS = 7
+# Keeps one run well inside the workflow's 15-minute timeout
+MAX_BACKFILL_DAYS = 400
 # Documented limit is 60 requests/minute per token
 REQUEST_GAP_SEC = 1.1
 
@@ -52,17 +56,29 @@ def fetch_day(token: str, podcast_id: str, day: str) -> list[dict]:
     return []
 
 
+def span(start: date, end: date) -> list[str]:
+    return [(start + timedelta(days=i)).isoformat()
+            for i in range((end - start).days + 1)]
+
+
 def date_range() -> list[str]:
     # End at yesterday (UTC) so a partial day is never recorded as final
     end = date.today() - timedelta(days=1)
+    trailing = span(end - timedelta(days=TRAILING_DAYS - 1), end)
     start_env = os.environ.get("BUZZSPROUT_STATS_FROM", "").strip()
-    start = (date.fromisoformat(start_env) if start_env
-             else end - timedelta(days=TRAILING_DAYS - 1))
+    if not start_env:
+        return trailing
+    start = date.fromisoformat(start_env)
     if start > end:
         print(f"ERROR: BUZZSPROUT_STATS_FROM {start} is after {end}", file=sys.stderr)
         sys.exit(1)
-    return [(start + timedelta(days=i)).isoformat()
-            for i in range((end - start).days + 1)]
+    have = {r["date"] for r in read_jsonl(HISTORY / "buzzsprout_stats_daily.jsonl")}
+    missing = [d for d in span(start, end) if d not in have and d not in trailing]
+    todo = missing[:MAX_BACKFILL_DAYS]
+    left = len(missing) - len(todo)
+    print(f"backfill: {len(todo)} missing days this run, {left} left after it"
+          + (" (dispatch again with the same date to continue)" if left else ""))
+    return sorted(set(todo) | set(trailing))
 
 
 def replace_days(path, days: set[str], new_rows: list[dict]) -> None:
