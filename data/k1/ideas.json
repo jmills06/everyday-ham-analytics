@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-14T11:43:58Z",
+ "fetched_at": "2026-10-14T22:52:32Z",
  "brief_date": "2026-10-12",
  "ideas": [
   {
@@ -95,28 +95,28 @@
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.75,
+   "lift": 1.71,
    "recent_posts": 46
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.5,
+   "lift": 1.4,
    "recent_posts": 16
   },
   {
-   "topic": "HF Radios",
-   "lift": 1.43,
-   "recent_posts": 129
-  },
-  {
    "topic": "Logging and Software",
-   "lift": 1.43,
-   "recent_posts": 106
+   "lift": 1.37,
+   "recent_posts": 103
   },
   {
-   "topic": "Homebrew and Kits",
-   "lift": 1.33,
-   "recent_posts": 101
+   "topic": "HF Radios",
+   "lift": 1.35,
+   "recent_posts": 125
+  },
+  {
+   "topic": "Antennas",
+   "lift": 1.31,
+   "recent_posts": 85
   }
  ],
  "team": [
