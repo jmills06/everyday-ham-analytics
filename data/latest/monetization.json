@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-14T04:00:38Z",
+  "fetched_at": "2026-10-14T16:00:41Z",
   "window_days": 30,
   "totals": {
     "revenue": 52.98,
@@ -256,7 +256,7 @@
   "top_earning_videos": [
     {
       "video_id": "LwICFz2gx1w",
-      "revenue": 10.05,
+      "revenue": 10.06,
       "views": 3487
     },
     {
