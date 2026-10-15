@@ -1,35 +1,22 @@
 {
-  "fetched_at": "2026-10-14T16:00:41Z",
+  "fetched_at": "2026-10-15T04:00:39Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 21098,
-    "engaged_views": 9841,
-    "watch_hours": 700.4,
-    "avg_view_pct": 23.3,
-    "subs_gained": 71,
-    "subs_lost": 10,
-    "subs_net": 61,
-    "likes": 330,
+    "views": 21066,
+    "engaged_views": 9822,
+    "watch_hours": 698.7,
+    "avg_view_pct": 23.2,
+    "subs_gained": 70,
+    "subs_lost": 11,
+    "subs_net": 59,
+    "likes": 326,
     "comments": 33,
-    "shares": 41,
-    "subscribed_views": 2754,
-    "not_subscribed_views": 18284
+    "shares": 43,
+    "subscribed_views": 2748,
+    "not_subscribed_views": 18254
   },
   "daily": [
-    {
-      "date": "2026-09-14",
-      "views": 545,
-      "watch_minutes": 1006,
-      "avg_view_duration_sec": 245,
-      "avg_view_pct": 23.1,
-      "subs_gained": 3,
-      "subs_lost": 0,
-      "likes": 8,
-      "comments": 1,
-      "shares": 0,
-      "engaged_views": 244
-    },
     {
       "date": "2026-09-15",
       "views": 418,
@@ -380,48 +367,61 @@
       "comments": 0,
       "shares": 1,
       "engaged_views": 253
+    },
+    {
+      "date": "2026-10-12",
+      "views": 513,
+      "watch_minutes": 905,
+      "avg_view_duration_sec": 239,
+      "avg_view_pct": 19.3,
+      "subs_gained": 2,
+      "subs_lost": 1,
+      "likes": 4,
+      "comments": 1,
+      "shares": 2,
+      "engaged_views": 225
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 9704
+      "views": 9659
     },
     {
       "source": "YT_SEARCH",
-      "views": 6706
+      "views": 6699
     },
     {
       "source": "SHORTS",
-      "views": 1356
+      "views": 1412
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1068
+      "views": 1049
     },
     {
       "source": "EXT_URL",
-      "views": 832
+      "views": 823
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 560
+      "views": 553
     },
     {
       "source": "YT_CHANNEL",
-      "views": 374
+      "views": 364
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 244
+      "views": 247
     },
     {
       "source": "PLAYLIST",
-      "views": 85
+      "views": 84
     },
     {
       "source": "NOTIFICATION",
-      "views": 80
+      "views": 83
     },
     {
       "source": "HASHTAGS",
@@ -439,59 +439,59 @@
   "top_videos": [
     {
       "video_id": "LwICFz2gx1w",
-      "views": 3487,
-      "watch_hours": 117.0,
+      "views": 3505,
+      "watch_hours": 117.5,
       "likes": 59
     },
     {
       "video_id": "jn6-BdDVQzI",
-      "views": 2608,
-      "watch_hours": 81.5,
+      "views": 2612,
+      "watch_hours": 81.6,
       "likes": 56
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1780,
-      "watch_hours": 7.8,
+      "views": 1783,
+      "watch_hours": 7.9,
       "likes": 30
     },
     {
       "video_id": "cEPpW0aW-W8",
-      "views": 1542,
+      "views": 1543,
       "watch_hours": 3.9,
       "likes": 13
     },
     {
       "video_id": "h8PsigNNfuk",
-      "views": 1036,
-      "watch_hours": 29.5,
+      "views": 1054,
+      "watch_hours": 29.8,
       "likes": 27
     }
   ],
   "search_terms": [
     {
       "term": "meshtastic",
-      "views": 178
+      "views": 183
     },
     {
       "term": "id-5200",
-      "views": 74
-    },
-    {
-      "term": "icom 7110",
-      "views": 72
-    },
-    {
-      "term": "icom id-5200",
-      "views": 72
+      "views": 75
     },
     {
       "term": "ic-7110",
-      "views": 66
+      "views": 73
+    },
+    {
+      "term": "icom 7110",
+      "views": 73
+    },
+    {
+      "term": "icom id-5200",
+      "views": 73
     },
     {
       "term": "icom 5200",
-      "views": 65
+      "views": 64
     },
     {
       "term": "wio tracker l1 pro",
@@ -499,15 +499,15 @@
     },
     {
       "term": "ham radio",
-      "views": 54
+      "views": 56
     },
     {
       "term": "jtty",
-      "views": 46
+      "views": 52
     },
     {
-      "term": "kenwood tm-d750a",
-      "views": 35
+      "term": "meshtastic solar node",
+      "views": 38
     }
   ],
   "suggested_by": [
@@ -522,28 +522,23 @@
       "views": 9
     },
     {
+      "video_id": "rWXBIMS0Rew",
+      "title": "Beginner POTA Gear Guide: What to Bring & Why",
+      "views": 9
+    },
+    {
       "video_id": "SJAjQAegqRc",
       "title": "Diamond X300 Antenna - Build & Installation",
       "views": 8
     },
     {
-      "video_id": "rWXBIMS0Rew",
-      "title": "Beginner POTA Gear Guide: What to Bring & Why",
+      "video_id": "yPIuwbE6YDk",
+      "title": "Best Dual Band Ham Radio VHF/UHF Base Antenna Made: The Diamond X300 WIth Installation Information",
       "views": 8
-    },
-    {
-      "video_id": "F9caD5NX7VM",
-      "title": "Special Episode - Yaesu System Fusion 3 & DR-3X series",
-      "views": 7
     },
     {
       "video_id": "nwvE1BhGl6I",
       "title": "Simple HF Truck Antenna That Just Works: 17' Whip + Radials + G90",
-      "views": 7
-    },
-    {
-      "video_id": "yPIuwbE6YDk",
-      "title": "Best Dual Band Ham Radio VHF/UHF Base Antenna Made: The Diamond X300 WIth Installation Information",
       "views": 7
     },
     {
@@ -560,12 +555,17 @@
       "video_id": "0zlPCTxDbIs",
       "title": "Test Run - The Perfect HF Beach Kit",
       "views": 6
+    },
+    {
+      "video_id": "F9caD5NX7VM",
+      "title": "Special Episode - Yaesu System Fusion 3 & DR-3X series",
+      "views": 6
     }
   ],
   "search_terms_365": [
     {
       "term": "ham radio",
-      "views": 1017
+      "views": 1019
     },
     {
       "term": "hamvention 2026",
@@ -573,15 +573,15 @@
     },
     {
       "term": "meshtastic",
-      "views": 1005
+      "views": 1006
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 657
+      "views": 656
     },
     {
       "term": "meshtastic solar node",
-      "views": 509
+      "views": 514
     },
     {
       "term": "kenwood tm-d750a",
@@ -609,11 +609,15 @@
     },
     {
       "term": "icom 7110",
-      "views": 331
+      "views": 333
     },
     {
       "term": "pota",
-      "views": 296
+      "views": 297
+    },
+    {
+      "term": "ic-7110",
+      "views": 285
     },
     {
       "term": "hamvention",
@@ -621,18 +625,14 @@
     },
     {
       "term": "wio tracker l1",
-      "views": 278
-    },
-    {
-      "term": "ic-7110",
-      "views": 275
-    },
-    {
-      "term": "icom x-026",
-      "views": 273
+      "views": 280
     },
     {
       "term": "id-5200",
+      "views": 274
+    },
+    {
+      "term": "icom x-026",
       "views": 273
     },
     {
@@ -645,7 +645,7 @@
     },
     {
       "term": "icom id-5200",
-      "views": 252
+      "views": 253
     },
     {
       "term": "icom",
@@ -653,7 +653,7 @@
     },
     {
       "term": "amateur radio",
-      "views": 226
+      "views": 225
     },
     {
       "term": "flex radio",
@@ -667,18 +667,18 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 12434,
-      "watch_hours": 456.9
+      "views": 12325,
+      "watch_hours": 452.6
     },
     {
       "country": "GB",
-      "views": 621,
-      "watch_hours": 20.8
+      "views": 618,
+      "watch_hours": 21.5
     },
     {
       "country": "CA",
-      "views": 287,
-      "watch_hours": 18.0
+      "views": 269,
+      "watch_hours": 17.4
     },
     {
       "country": "DE",
@@ -719,11 +719,11 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 138499
+      "views": 138685
     },
     {
       "country": "GB",
-      "views": 6371
+      "views": 6390
     },
     {
       "country": "DE",
@@ -882,7 +882,7 @@
     {
       "age_group": "age65-",
       "gender": "male",
-      "viewer_pct": 29.6
+      "viewer_pct": 29.7
     }
   ]
 }

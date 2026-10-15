@@ -1269,11 +1269,11 @@
 {"date": "2026-10-10", "source": "END_SCREEN", "views": 1}
 {"date": "2026-10-10", "source": "EXT_URL", "views": 37}
 {"date": "2026-10-10", "source": "NOTIFICATION", "views": 1}
-{"date": "2026-10-10", "source": "NO_LINK_OTHER", "views": 18}
+{"date": "2026-10-10", "source": "NO_LINK_OTHER", "views": 15}
 {"date": "2026-10-10", "source": "PLAYLIST", "views": 2}
 {"date": "2026-10-10", "source": "RELATED_VIDEO", "views": 27}
 {"date": "2026-10-10", "source": "SHORTS", "views": 6}
-{"date": "2026-10-10", "source": "SUBSCRIBER", "views": 148}
+{"date": "2026-10-10", "source": "SUBSCRIBER", "views": 147}
 {"date": "2026-10-10", "source": "YT_CHANNEL", "views": 7}
 {"date": "2026-10-10", "source": "YT_OTHER_PAGE", "views": 5}
 {"date": "2026-10-10", "source": "YT_SEARCH", "views": 264}
@@ -1287,3 +1287,13 @@
 {"date": "2026-10-11", "source": "YT_CHANNEL", "views": 16}
 {"date": "2026-10-11", "source": "YT_OTHER_PAGE", "views": 6}
 {"date": "2026-10-11", "source": "YT_SEARCH", "views": 263}
+{"date": "2026-10-12", "source": "EXT_URL", "views": 19}
+{"date": "2026-10-12", "source": "NOTIFICATION", "views": 3}
+{"date": "2026-10-12", "source": "NO_LINK_OTHER", "views": 12}
+{"date": "2026-10-12", "source": "PLAYLIST", "views": 2}
+{"date": "2026-10-12", "source": "RELATED_VIDEO", "views": 28}
+{"date": "2026-10-12", "source": "SHORTS", "views": 63}
+{"date": "2026-10-12", "source": "SUBSCRIBER", "views": 114}
+{"date": "2026-10-12", "source": "YT_CHANNEL", "views": 2}
+{"date": "2026-10-12", "source": "YT_OTHER_PAGE", "views": 15}
+{"date": "2026-10-12", "source": "YT_SEARCH", "views": 255}
