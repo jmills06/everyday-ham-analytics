@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-10-15T04:00:39Z",
+  "fetched_at": "2026-10-15T16:00:43Z",
   "window_days": 30,
   "totals": {
     "revenue": 52.89,
-    "monetized_plays": 3990,
+    "monetized_plays": 3992,
     "rpm": 2.51,
     "rpm_engaged": 5.38,
     "daily_avg": 1.76,
@@ -197,8 +197,8 @@
       "date": "2026-10-10",
       "revenue": 1.06,
       "cpm": 7.88,
-      "playback_cpm": 14.65,
-      "monetized_plays": 99
+      "playback_cpm": 14.36,
+      "monetized_plays": 101
     },
     {
       "date": "2026-10-11",
