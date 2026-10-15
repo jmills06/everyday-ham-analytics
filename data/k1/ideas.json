@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-14T22:52:32Z",
+ "fetched_at": "2026-10-15T11:43:00Z",
  "brief_date": "2026-10-12",
  "ideas": [
   {
@@ -90,33 +90,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 5.4,
-   "recent_posts": 60
+   "lift": 6.33,
+   "recent_posts": 64
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.71,
-   "recent_posts": 46
+   "lift": 1.56,
+   "recent_posts": 44
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.4,
-   "recent_posts": 16
+   "lift": 1.5,
+   "recent_posts": 17
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.37,
-   "recent_posts": 103
+   "lift": 1.38,
+   "recent_posts": 105
   },
   {
    "topic": "HF Radios",
-   "lift": 1.35,
-   "recent_posts": 125
+   "lift": 1.36,
+   "recent_posts": 131
   },
   {
-   "topic": "Antennas",
-   "lift": 1.31,
-   "recent_posts": 85
+   "topic": "Used and Vintage Gear",
+   "lift": 1.33,
+   "recent_posts": 27
   }
  ],
  "team": [
@@ -145,14 +145,7 @@
    "status": "New"
   }
  ],
- "upcoming": [
-  {
-   "date": "2026-10-15",
-   "time": null,
-   "kind": "release",
-   "title": "Rory California QSO Party"
-  }
- ],
+ "upcoming": [],
  "open_slots": [
   {
    "date": "2026-10-22",

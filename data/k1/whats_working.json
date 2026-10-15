@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-10-14T22:52:32Z",
- "generated_at": "2026-10-14T22:52:32Z",
+ "fetched_at": "2026-10-15T11:43:00Z",
+ "generated_at": "2026-10-15T11:43:00Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -36,6 +36,12 @@
      "share_above": 0.4
     },
     {
+     "topic": "Field Day and Contests",
+     "n": 5,
+     "median_ratio": 0.42,
+     "share_above": 0.0
+    },
+    {
      "topic": "POTA/SOTA and Parks",
      "n": 9,
      "median_ratio": 0.38,
@@ -55,23 +61,23 @@
     },
     {
      "feature": "number_or_price=yes",
-     "n": 38,
-     "median_ratio": 1.25
-    },
-    {
-     "feature": "question=no",
-     "n": 37,
+     "n": 39,
      "median_ratio": 1.23
     },
     {
+     "feature": "question=no",
+     "n": 38,
+     "median_ratio": 1.18
+    },
+    {
      "feature": "all_caps_word=no",
-     "n": 40,
-     "median_ratio": 1.09
+     "n": 41,
+     "median_ratio": 1.05
     },
     {
      "feature": "hamvention=no",
-     "n": 46,
-     "median_ratio": 0.96
+     "n": 47,
+     "median_ratio": 0.88
     },
     {
      "feature": "all_caps_word=yes",
@@ -90,8 +96,8 @@
     },
     {
      "feature": "brand=no",
-     "n": 26,
-     "median_ratio": 0.4
+     "n": 27,
+     "median_ratio": 0.42
     }
    ],
    "best_recent": [
@@ -146,7 +152,7 @@
      "ratio": 0.17
     }
    ],
-   "uploads": 53
+   "uploads": 54
   },
   "episode": {
    "topics": [
