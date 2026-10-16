@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-16T04:00:38Z",
+  "fetched_at": "2026-10-16T16:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 21157,
-    "engaged_views": 9869,
-    "watch_hours": 703.5,
+    "views": 21217,
+    "engaged_views": 9870,
+    "watch_hours": 704.5,
     "avg_view_pct": 23.2,
     "subs_gained": 69,
     "subs_lost": 11,
@@ -149,8 +149,8 @@
     },
     {
       "date": "2026-09-26",
-      "views": 1365,
-      "watch_minutes": 1999,
+      "views": 1368,
+      "watch_minutes": 2001,
       "avg_view_duration_sec": 203,
       "avg_view_pct": 25.6,
       "subs_gained": 3,
@@ -162,8 +162,8 @@
     },
     {
       "date": "2026-09-27",
-      "views": 979,
-      "watch_minutes": 1445,
+      "views": 982,
+      "watch_minutes": 1472,
       "avg_view_duration_sec": 207,
       "avg_view_pct": 25.2,
       "subs_gained": 3,
@@ -175,8 +175,8 @@
     },
     {
       "date": "2026-09-28",
-      "views": 732,
-      "watch_minutes": 1341,
+      "views": 770,
+      "watch_minutes": 1357,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 27.0,
       "subs_gained": 1,
@@ -188,7 +188,7 @@
     },
     {
       "date": "2026-09-29",
-      "views": 666,
+      "views": 673,
       "watch_minutes": 1246,
       "avg_view_duration_sec": 242,
       "avg_view_pct": 25.8,
@@ -214,8 +214,8 @@
     },
     {
       "date": "2026-10-01",
-      "views": 1209,
-      "watch_minutes": 2973,
+      "views": 1211,
+      "watch_minutes": 2986,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.3,
       "subs_gained": 3,
@@ -240,8 +240,8 @@
     },
     {
       "date": "2026-10-03",
-      "views": 719,
-      "watch_minutes": 1371,
+      "views": 722,
+      "watch_minutes": 1370,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 19.3,
       "subs_gained": 4,
@@ -253,7 +253,7 @@
     },
     {
       "date": "2026-10-04",
-      "views": 810,
+      "views": 814,
       "watch_minutes": 2026,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.6,
@@ -340,7 +340,7 @@
       "likes": 6,
       "comments": 0,
       "shares": 1,
-      "engaged_views": 253
+      "engaged_views": 254
     },
     {
       "date": "2026-10-11",
@@ -719,7 +719,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 138957
+      "views": 138955
     },
     {
       "country": "GB",
@@ -735,7 +735,7 @@
     },
     {
       "country": "JP",
-      "views": 4038
+      "views": 4036
     },
     {
       "country": "AU",
