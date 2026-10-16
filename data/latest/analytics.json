@@ -1,35 +1,22 @@
 {
-  "fetched_at": "2026-10-15T16:00:43Z",
+  "fetched_at": "2026-10-16T04:00:38Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 21066,
-    "engaged_views": 9822,
-    "watch_hours": 698.7,
+    "views": 21157,
+    "engaged_views": 9869,
+    "watch_hours": 703.5,
     "avg_view_pct": 23.2,
-    "subs_gained": 70,
+    "subs_gained": 69,
     "subs_lost": 11,
-    "subs_net": 59,
-    "likes": 326,
-    "comments": 33,
-    "shares": 43,
-    "subscribed_views": 2748,
-    "not_subscribed_views": 18254
+    "subs_net": 58,
+    "likes": 331,
+    "comments": 35,
+    "shares": 47,
+    "subscribed_views": 2849,
+    "not_subscribed_views": 18308
   },
   "daily": [
-    {
-      "date": "2026-09-15",
-      "views": 418,
-      "watch_minutes": 780,
-      "avg_view_duration_sec": 205,
-      "avg_view_pct": 19.1,
-      "subs_gained": 2,
-      "subs_lost": 0,
-      "likes": 4,
-      "comments": 0,
-      "shares": 1,
-      "engaged_views": 226
-    },
     {
       "date": "2026-09-16",
       "views": 417,
@@ -162,8 +149,8 @@
     },
     {
       "date": "2026-09-26",
-      "views": 1368,
-      "watch_minutes": 2001,
+      "views": 1365,
+      "watch_minutes": 1999,
       "avg_view_duration_sec": 203,
       "avg_view_pct": 25.6,
       "subs_gained": 3,
@@ -175,8 +162,8 @@
     },
     {
       "date": "2026-09-27",
-      "views": 982,
-      "watch_minutes": 1472,
+      "views": 979,
+      "watch_minutes": 1445,
       "avg_view_duration_sec": 207,
       "avg_view_pct": 25.2,
       "subs_gained": 3,
@@ -188,8 +175,8 @@
     },
     {
       "date": "2026-09-28",
-      "views": 770,
-      "watch_minutes": 1357,
+      "views": 732,
+      "watch_minutes": 1341,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 27.0,
       "subs_gained": 1,
@@ -201,7 +188,7 @@
     },
     {
       "date": "2026-09-29",
-      "views": 673,
+      "views": 666,
       "watch_minutes": 1246,
       "avg_view_duration_sec": 242,
       "avg_view_pct": 25.8,
@@ -227,8 +214,8 @@
     },
     {
       "date": "2026-10-01",
-      "views": 1211,
-      "watch_minutes": 2986,
+      "views": 1209,
+      "watch_minutes": 2973,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.3,
       "subs_gained": 3,
@@ -253,8 +240,8 @@
     },
     {
       "date": "2026-10-03",
-      "views": 722,
-      "watch_minutes": 1370,
+      "views": 719,
+      "watch_minutes": 1371,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 19.3,
       "subs_gained": 4,
@@ -266,7 +253,7 @@
     },
     {
       "date": "2026-10-04",
-      "views": 814,
+      "views": 810,
       "watch_minutes": 2026,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.6,
@@ -320,8 +307,8 @@
       "date": "2026-10-08",
       "views": 1130,
       "watch_minutes": 4130,
-      "avg_view_duration_sec": 532,
-      "avg_view_pct": 20.2,
+      "avg_view_duration_sec": 534,
+      "avg_view_pct": 20.3,
       "subs_gained": 5,
       "subs_lost": 0,
       "likes": 41,
@@ -344,8 +331,8 @@
     },
     {
       "date": "2026-10-10",
-      "views": 516,
-      "watch_minutes": 1357,
+      "views": 512,
+      "watch_minutes": 1359,
       "avg_view_duration_sec": 319,
       "avg_view_pct": 22.3,
       "subs_gained": 2,
@@ -380,52 +367,65 @@
       "comments": 1,
       "shares": 2,
       "engaged_views": 225
+    },
+    {
+      "date": "2026-10-13",
+      "views": 573,
+      "watch_minutes": 1121,
+      "avg_view_duration_sec": 244,
+      "avg_view_pct": 19.1,
+      "subs_gained": 1,
+      "subs_lost": 0,
+      "likes": 9,
+      "comments": 2,
+      "shares": 5,
+      "engaged_views": 273
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 9659
+      "views": 9767
     },
     {
       "source": "YT_SEARCH",
-      "views": 6699
+      "views": 6725
     },
     {
       "source": "SHORTS",
-      "views": 1412
+      "views": 1439
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1049
+      "views": 1042
     },
     {
       "source": "EXT_URL",
-      "views": 823
+      "views": 810
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 553
+      "views": 554
     },
     {
       "source": "YT_CHANNEL",
-      "views": 364
+      "views": 370
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 247
-    },
-    {
-      "source": "PLAYLIST",
-      "views": 84
+      "views": 251
     },
     {
       "source": "NOTIFICATION",
+      "views": 86
+    },
+    {
+      "source": "PLAYLIST",
       "views": 83
     },
     {
       "source": "HASHTAGS",
-      "views": 16
+      "views": 17
     },
     {
       "source": "END_SCREEN",
@@ -439,59 +439,63 @@
   "top_videos": [
     {
       "video_id": "LwICFz2gx1w",
-      "views": 3505,
-      "watch_hours": 117.5,
-      "likes": 59
+      "views": 3527,
+      "watch_hours": 119.0,
+      "likes": 60
     },
     {
       "video_id": "jn6-BdDVQzI",
-      "views": 2612,
-      "watch_hours": 81.6,
+      "views": 2618,
+      "watch_hours": 81.9,
       "likes": 56
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1783,
-      "watch_hours": 7.9,
-      "likes": 30
+      "views": 1761,
+      "watch_hours": 7.8,
+      "likes": 28
     },
     {
       "video_id": "cEPpW0aW-W8",
-      "views": 1543,
+      "views": 1545,
       "watch_hours": 3.9,
       "likes": 13
     },
     {
       "video_id": "h8PsigNNfuk",
-      "views": 1054,
-      "watch_hours": 29.8,
-      "likes": 27
+      "views": 1079,
+      "watch_hours": 30.3,
+      "likes": 28
     }
   ],
   "search_terms": [
     {
       "term": "meshtastic",
-      "views": 183
+      "views": 178
     },
     {
       "term": "id-5200",
-      "views": 75
-    },
-    {
-      "term": "ic-7110",
-      "views": 73
-    },
-    {
-      "term": "icom 7110",
-      "views": 73
+      "views": 74
     },
     {
       "term": "icom id-5200",
       "views": 73
     },
     {
+      "term": "ic-7110",
+      "views": 72
+    },
+    {
+      "term": "icom 7110",
+      "views": 72
+    },
+    {
       "term": "icom 5200",
-      "views": 64
+      "views": 67
+    },
+    {
+      "term": "jtty",
+      "views": 62
     },
     {
       "term": "wio tracker l1 pro",
@@ -502,12 +506,8 @@
       "views": 56
     },
     {
-      "term": "jtty",
-      "views": 52
-    },
-    {
       "term": "meshtastic solar node",
-      "views": 38
+      "views": 36
     }
   ],
   "suggested_by": [
@@ -517,33 +517,23 @@
       "views": 11
     },
     {
-      "video_id": "cGQR0gc20OY",
-      "title": "Learning CW in 2026: Two Paths to Morse Code Success",
-      "views": 9
+      "video_id": "SJAjQAegqRc",
+      "title": "Diamond X300 Antenna - Build & Installation",
+      "views": 10
     },
     {
       "video_id": "rWXBIMS0Rew",
       "title": "Beginner POTA Gear Guide: What to Bring & Why",
-      "views": 9
+      "views": 10
     },
     {
-      "video_id": "SJAjQAegqRc",
-      "title": "Diamond X300 Antenna - Build & Installation",
+      "video_id": "cGQR0gc20OY",
+      "title": "Learning CW in 2026: Two Paths to Morse Code Success",
       "views": 8
     },
     {
       "video_id": "yPIuwbE6YDk",
       "title": "Best Dual Band Ham Radio VHF/UHF Base Antenna Made: The Diamond X300 WIth Installation Information",
-      "views": 8
-    },
-    {
-      "video_id": "nwvE1BhGl6I",
-      "title": "Simple HF Truck Antenna That Just Works: 17' Whip + Radials + G90",
-      "views": 7
-    },
-    {
-      "video_id": "z8m7VT7RCE0",
-      "title": "Step-By-Step Guide to Learning CW Morse Code | Specific steps, tips, and our journey!",
       "views": 7
     },
     {
@@ -560,6 +550,16 @@
       "video_id": "F9caD5NX7VM",
       "title": "Special Episode - Yaesu System Fusion 3 & DR-3X series",
       "views": 6
+    },
+    {
+      "video_id": "NvsAoxY_tHo",
+      "title": "You've Never Seen a Hexbeam Like THIS!",
+      "views": 6
+    },
+    {
+      "video_id": "ODYyAxe3gMo",
+      "title": "A Beginners Guide to Hunting POTA with CW",
+      "views": 6
     }
   ],
   "search_terms_365": [
@@ -573,15 +573,15 @@
     },
     {
       "term": "meshtastic",
-      "views": 1006
+      "views": 1001
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 656
+      "views": 655
     },
     {
       "term": "meshtastic solar node",
-      "views": 514
+      "views": 512
     },
     {
       "term": "kenwood tm-d750a",
@@ -589,7 +589,7 @@
     },
     {
       "term": "ftdx101mp",
-      "views": 456
+      "views": 459
     },
     {
       "term": "dayton hamvention 2026",
@@ -597,27 +597,27 @@
     },
     {
       "term": "atas 120a antenna",
-      "views": 360
+      "views": 359
     },
     {
       "term": "icom x026",
       "views": 344
     },
     {
+      "term": "icom 7110",
+      "views": 339
+    },
+    {
       "term": "hamcation 2026",
       "views": 333
     },
     {
-      "term": "icom 7110",
-      "views": 333
-    },
-    {
       "term": "pota",
-      "views": 297
+      "views": 298
     },
     {
       "term": "ic-7110",
-      "views": 285
+      "views": 287
     },
     {
       "term": "hamvention",
@@ -628,16 +628,16 @@
       "views": 280
     },
     {
+      "term": "icom 5200",
+      "views": 275
+    },
+    {
       "term": "id-5200",
       "views": 274
     },
     {
       "term": "icom x-026",
       "views": 273
-    },
-    {
-      "term": "icom 5200",
-      "views": 272
     },
     {
       "term": "dx commander",
@@ -653,7 +653,7 @@
     },
     {
       "term": "amateur radio",
-      "views": 225
+      "views": 224
     },
     {
       "term": "flex radio",
@@ -667,13 +667,13 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 12325,
-      "watch_hours": 452.6
+      "views": 12480,
+      "watch_hours": 457.9
     },
     {
       "country": "GB",
-      "views": 618,
-      "watch_hours": 21.5
+      "views": 612,
+      "watch_hours": 21.6
     },
     {
       "country": "CA",
@@ -719,11 +719,11 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 138685
+      "views": 138957
     },
     {
       "country": "GB",
-      "views": 6390
+      "views": 6411
     },
     {
       "country": "DE",
@@ -832,7 +832,7 @@
     {
       "age_group": "age35-44",
       "gender": "female",
-      "viewer_pct": 0.2
+      "viewer_pct": 0.1
     },
     {
       "age_group": "age45-54",
@@ -877,7 +877,7 @@
     {
       "age_group": "age55-64",
       "gender": "male",
-      "viewer_pct": 26.7
+      "viewer_pct": 26.6
     },
     {
       "age_group": "age65-",
