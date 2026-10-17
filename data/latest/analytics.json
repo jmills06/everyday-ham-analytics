@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-17T04:00:34Z",
+  "fetched_at": "2026-10-17T16:00:37Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -459,8 +459,8 @@
     },
     {
       "video_id": "h8PsigNNfuk",
-      "views": 1083,
-      "watch_hours": 30.3,
+      "views": 1082,
+      "watch_hours": 30.1,
       "likes": 28
     }
   ],
@@ -663,7 +663,7 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 12521,
+      "views": 12520,
       "watch_hours": 462.5
     },
     {
@@ -715,7 +715,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 138819
+      "views": 138818
     },
     {
       "country": "GB",
