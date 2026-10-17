@@ -1,15 +1,15 @@
 {
- "fetched_at": "2026-10-16T11:44:02Z",
- "generated_at": "2026-10-16T11:44:02Z",
- "base_2x": 0.213,
- "base_n": 1372,
+ "fetched_at": "2026-10-17T11:42:59Z",
+ "generated_at": "2026-10-17T11:42:59Z",
+ "base_2x": 0.214,
+ "base_n": 1374,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
-   "competitor_share": 0.072,
+   "competitor_share": 0.071,
    "competitor_2x": 0.1,
-   "competitor_n": 94,
-   "own_share": 0.136,
+   "competitor_n": 93,
+   "own_share": 0.123,
    "own_ratio": 0.38
   },
   {
@@ -17,12 +17,12 @@
    "competitor_share": 0.02,
    "competitor_2x": 0.09,
    "competitor_n": 90,
-   "own_share": 0.091,
+   "own_share": 0.092,
    "own_ratio": 0.42
   },
   {
    "topic": "DX and DXpeditions",
-   "competitor_share": 0.04,
+   "competitor_share": 0.041,
    "competitor_2x": 0.15,
    "competitor_n": 60,
    "own_share": 0.0,
@@ -33,7 +33,7 @@
    "competitor_share": 0.036,
    "competitor_2x": 0.31,
    "competitor_n": 45,
-   "own_share": 0.03,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
@@ -57,7 +57,7 @@
    "competitor_share": 0.009,
    "competitor_2x": 0.12,
    "competitor_n": 34,
-   "own_share": 0.03,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
@@ -65,15 +65,15 @@
    "competitor_share": 0.02,
    "competitor_2x": 0.24,
    "competitor_n": 41,
-   "own_share": 0.045,
+   "own_share": 0.046,
    "own_ratio": null
   },
   {
    "topic": "SSTV and Satellites",
    "competitor_share": 0.018,
-   "competitor_2x": 0.18,
-   "competitor_n": 17,
-   "own_share": 0.03,
+   "competitor_2x": 0.22,
+   "competitor_n": 18,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
@@ -81,31 +81,31 @@
    "competitor_share": 0.091,
    "competitor_2x": 0.31,
    "competitor_n": 141,
-   "own_share": 0.091,
+   "own_share": 0.077,
    "own_ratio": 1.93
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "competitor_share": 0.1,
-   "competitor_2x": 0.27,
-   "competitor_n": 133,
-   "own_share": 0.152,
+   "competitor_share": 0.101,
+   "competitor_2x": 0.28,
+   "competitor_n": 134,
+   "own_share": 0.154,
    "own_ratio": 2.38
   },
   {
    "topic": "New Radio Announcements",
-   "competitor_share": 0.044,
+   "competitor_share": 0.043,
    "competitor_2x": 0.52,
    "competitor_n": 56,
-   "own_share": 0.167,
+   "own_share": 0.169,
    "own_ratio": 3.09
   },
   {
    "topic": "Budget Radios",
-   "competitor_share": 0.085,
+   "competitor_share": 0.084,
    "competitor_2x": 0.32,
-   "competitor_n": 113,
-   "own_share": 0.045,
+   "competitor_n": 112,
+   "own_share": 0.046,
    "own_ratio": null
   },
   {
@@ -113,15 +113,15 @@
    "competitor_share": 0.017,
    "competitor_2x": 0.14,
    "competitor_n": 22,
-   "own_share": 0.03,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.181,
+   "competitor_share": 0.18,
    "competitor_2x": 0.21,
    "competitor_n": 246,
-   "own_share": 0.167,
+   "own_share": 0.169,
    "own_ratio": 0.85
   },
   {
@@ -134,10 +134,10 @@
   },
   {
    "topic": "Station Setup and Coax",
-   "competitor_share": 0.062,
-   "competitor_2x": 0.21,
-   "competitor_n": 70,
-   "own_share": 0.03,
+   "competitor_share": 0.061,
+   "competitor_2x": 0.22,
+   "competitor_n": 69,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
@@ -158,10 +158,10 @@
   },
   {
    "topic": "Logging and Software",
-   "competitor_share": 0.048,
-   "competitor_2x": 0.33,
-   "competitor_n": 60,
-   "own_share": 0.076,
+   "competitor_share": 0.049,
+   "competitor_2x": 0.34,
+   "competitor_n": 61,
+   "own_share": 0.077,
    "own_ratio": null
   },
   {
@@ -169,7 +169,7 @@
    "competitor_share": 0.104,
    "competitor_2x": 0.22,
    "competitor_n": 129,
-   "own_share": 0.076,
+   "own_share": 0.077,
    "own_ratio": null
   },
   {
@@ -193,7 +193,7 @@
    "competitor_share": 0.069,
    "competitor_2x": 0.17,
    "competitor_n": 87,
-   "own_share": 0.227,
+   "own_share": 0.231,
    "own_ratio": 1.51
   },
   {
@@ -201,7 +201,7 @@
    "competitor_share": 0.003,
    "competitor_2x": null,
    "competitor_n": 0,
-   "own_share": 0.045,
+   "own_share": 0.046,
    "own_ratio": null
   },
   {
@@ -209,7 +209,7 @@
    "competitor_share": 0.038,
    "competitor_2x": 0.26,
    "competitor_n": 58,
-   "own_share": 0.061,
+   "own_share": 0.062,
    "own_ratio": null
   },
   {
@@ -217,18 +217,22 @@
    "competitor_share": 0.032,
    "competitor_2x": 0.19,
    "competitor_n": 59,
-   "own_share": 0.03,
+   "own_share": 0.031,
    "own_ratio": null
   }
  ],
  "competitor_rising": [
   {
    "topic": "Budget Radios",
-   "lift": 1.55
+   "lift": 1.59
   },
   {
    "topic": "New Radio Announcements",
    "lift": 2.02
+  },
+  {
+   "topic": "DX and DXpeditions",
+   "lift": 1.39
   }
  ]
 }

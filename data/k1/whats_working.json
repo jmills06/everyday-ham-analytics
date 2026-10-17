@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-10-16T11:44:02Z",
- "generated_at": "2026-10-16T11:44:02Z",
+ "fetched_at": "2026-10-17T11:42:59Z",
+ "generated_at": "2026-10-17T11:42:59Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -171,7 +171,12 @@
     },
     {
      "feature": "number_or_price=yes",
-     "n": 13,
+     "n": 14,
+     "median_ratio": 1.43
+    },
+    {
+     "feature": "all_caps_word=yes",
+     "n": 5,
      "median_ratio": 1.43
     },
     {
@@ -181,23 +186,23 @@
     },
     {
      "feature": "question=no",
-     "n": 14,
+     "n": 15,
+     "median_ratio": 0.77
+    },
+    {
+     "feature": "brand=no",
+     "n": 16,
      "median_ratio": 0.72
+    },
+    {
+     "feature": "hamvention=no",
+     "n": 19,
+     "median_ratio": 0.67
     },
     {
      "feature": "all_caps_word=no",
      "n": 17,
      "median_ratio": 0.67
-    },
-    {
-     "feature": "brand=no",
-     "n": 15,
-     "median_ratio": 0.67
-    },
-    {
-     "feature": "hamvention=no",
-     "n": 18,
-     "median_ratio": 0.65
     },
     {
      "feature": "number_or_price=no",
@@ -206,12 +211,6 @@
     }
    ],
    "best_recent": [
-    {
-     "title": "Yaesu FTX1 Reality Check: Our Honest Review and Experiences + SteppIR Exit",
-     "published": "2025-06-05",
-     "first_week": 4605,
-     "ratio": 5.49
-    },
     {
      "title": "Learning CW in 2026: Two Paths to Morse Code Success",
      "published": "2026-01-08",
@@ -235,6 +234,12 @@
      "published": "2026-03-26",
      "first_week": 349,
      "ratio": 1.5
+    },
+    {
+     "title": "World Radio League Founders: 100,000 Users, JTTY and Morse Mastery",
+     "published": "2026-10-08",
+     "first_week": 340,
+     "ratio": 1.43
     }
    ],
    "weakest_recent": [
@@ -257,7 +262,7 @@
      "ratio": 0.22
     }
    ],
-   "uploads": 21
+   "uploads": 22
   },
   "short": {
    "topics": [
