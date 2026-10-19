@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-10-19T09:32:05Z",
- "generated_at": "2026-10-19T09:30:09Z",
+ "fetched_at": "2026-10-19T11:42:59Z",
+ "generated_at": "2026-10-19T11:42:59Z",
  "base_2x": 0.213,
- "base_n": 1366,
+ "base_n": 1367,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
@@ -88,7 +88,7 @@
    "topic": "VHF/UHF and Handhelds",
    "competitor_share": 0.102,
    "competitor_2x": 0.27,
-   "competitor_n": 136,
+   "competitor_n": 137,
    "own_share": 0.154,
    "own_ratio": 2.38
   },
@@ -224,19 +224,15 @@
  "competitor_rising": [
   {
    "topic": "Budget Radios",
-   "lift": 1.98
-  },
-  {
-   "topic": "Homebrew and Kits",
-   "lift": 1.22
+   "lift": 1.94
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 1.92
+   "lift": 1.89
   },
   {
    "topic": "DX and DXpeditions",
-   "lift": 1.52
+   "lift": 1.48
   }
  ]
 }
