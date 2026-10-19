@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19T04:00:35Z",
+  "fetched_at": "2026-10-19T16:00:36Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 35,
     "shares": 42,
     "subscribed_views": 2903,
-    "not_subscribed_views": 18289
+    "not_subscribed_views": 18288
   },
   "daily": [
     {
@@ -333,8 +333,8 @@
       "date": "2026-10-13",
       "views": 573,
       "watch_minutes": 1142,
-      "avg_view_duration_sec": 244,
-      "avg_view_pct": 19.1,
+      "avg_view_duration_sec": 249,
+      "avg_view_pct": 19.4,
       "subs_gained": 1,
       "subs_lost": 0,
       "likes": 9,
@@ -405,7 +405,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 547
+      "views": 546
     },
     {
       "source": "YT_CHANNEL",

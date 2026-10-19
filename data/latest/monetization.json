@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-10-19T04:00:35Z",
+  "fetched_at": "2026-10-19T16:00:36Z",
   "window_days": 30,
   "totals": {
     "revenue": 54.53,
-    "monetized_plays": 4036,
+    "monetized_plays": 4037,
     "rpm": 2.57,
     "rpm_engaged": 5.54,
     "daily_avg": 1.82,
@@ -204,8 +204,8 @@
       "date": "2026-10-15",
       "revenue": 0.94,
       "cpm": 8.45,
-      "playback_cpm": 14.33,
-      "monetized_plays": 99
+      "playback_cpm": 14.19,
+      "monetized_plays": 100
     },
     {
       "date": "2026-10-16",
@@ -272,7 +272,7 @@
     {
       "video_id": "MhjirNwRR7A",
       "revenue": 4.58,
-      "views": 1007
+      "views": 1005
     },
     {
       "video_id": "h8PsigNNfuk",
