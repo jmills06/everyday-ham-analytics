@@ -1,122 +1,111 @@
 {
- "fetched_at": "2026-10-18T11:42:10Z",
- "brief_date": "2026-10-12",
+ "fetched_at": "2026-10-19T09:32:05Z",
+ "brief_date": "2026-10-19",
  "ideas": [
   {
    "rank": 1,
-   "title": "Icom ID-5200 on D-STAR: Programming, Reflectors and Our First Net Check-ins",
+   "title": "Icom Just Filed Two New VHF Digital Radios With the FCC: What We Know",
    "format": "youtube",
    "topics": [
+    "New Radio Announcements",
     "VHF/UHF and Handhelds",
-    "Nets and Repeaters"
+    "Ham Radio News and FCC"
    ],
-   "why_now": "VHF/UHF is one of our strongest topics (median 2.38x, 80% of uploads above typical), and brand names in titles roughly double first-week views. Our ID-5200 Hamvention hands-on hit 7.11x and the delivery Short hit 4.61x, so viewers want the next chapter. Nets and repeaters are a gap for us (3% of uploads) even though 32% of competitor uploads on that topic double their typical.",
-   "angle": "Fits the OPEN YouTube slot on 2026-10-22. This is new compared with the unboxing: a practical setup video covering programming, linking to reflectors, and checking into real nets on air, with the honest frustrations included. Close with a quick verdict on whether it lives up to being a successor to W8KNX's favorite radio."
+   "why_now": "Icom filed two VHF digital transceivers with the FCC on 2026-10-14, plus a VHF air band transceiver on 2026-10-08. Filings often show up before an announcement, and our audience follows Icom closely after the ID-5200.",
+   "angle": "Fits the 2026-10-22 YouTube slot, the most time-sensitive opening. Walk through what is actually public in the filings, compare it to the ID-5200 we already covered, and clearly label anything speculative (a filing is not a product yet). New angle versus the earlier Retevis and Radioddity filing pitch: this is Icom, the brand behind most of our best results. Cut a Short with the one most interesting detail."
   },
   {
    "rank": 2,
-   "title": "RTL-SDR Dongle in the Junk Drawer: ADS-B, APRS and Airband in One Evening",
-   "format": "youtube",
+   "title": "eBay's New Radio Listing Rules: Buying and Selling Ham Gear After the FCC Change",
+   "format": "podcast",
    "topics": [
-    "SDR and Scanning",
-    "APRS",
-    "Getting Licensed and New Hams"
+    "Ham Radio News and FCC",
+    "Used and Vintage Gear",
+    "Hamfests and Hamvention"
    ],
-   "why_now": "SDR and scanning is the fastest rising discussion topic by far (lift 6.22x, 57 recent posts). The most discussed community post this week was about getting an unused RTL-SDR dongle on the air, and new free tools for SDRs keep showing up. This is a timely exception: we have little track record on SDR, but the community spike justifies a test.",
-   "angle": "Fits the OPEN YouTube slot on 2026-10-29. Pull a dongle out of a drawer and in one evening get aircraft tracking, APRS decoding, and airband listening running, using a live dashboard tool for the APRS and ADS-B part. Different from the ESP32 SDR pitch: this is the cheap hardware most hams already own, aimed at beginners and non-licensed listeners."
+   "why_now": "New FCC rules on online electronics sales took effect, and eBay responded by restricting radio transmitter listings while exempting ham-band-only gear. It lands right before holiday buying season and winter hamfest swap tables.",
+   "angle": "Record 2026-11-03 for the 2026-11-05 podcast slot. Segments: what changed and what is exempt, what it means for used and vintage gear, how to vet a used or returned radio before you pay, swap meets and auctions as alternatives, and listener questions. Practical buyer and seller advice, not legal hand-wringing. Exception note: used gear alone has a low competitor breakout rate, so the timely FCC and eBay hook carries this, with brand names up front in the title."
   },
   {
    "rank": 3,
-   "title": "FreeDV RADE and WSJT-X JTTY: Two New HF Modes Put to the Test",
-   "format": "podcast",
+   "title": "New Shack PC, Silent IC-7300: Getting Audio and WSJT-X Working on Windows 11",
+   "format": "youtube",
    "topics": [
-    "Digital Modes",
     "HF Radios",
-    "Logging and Software"
+    "Logging and Software",
+    "Digital Modes",
+    "Station Setup and Coax"
    ],
-   "why_now": "Both new HF modes are moving fast this month. JTTY got updates in WSJT-X v3.3.0-beta1, and its author posted single-page instructions. RADE is getting attention after a national article asked whether it could become the next SSB. Digital modes discussion is up (lift 1.24x) and HF radio talk is up 1.60x.",
-   "angle": "Fits the OPEN podcast slot (record 2026-11-03, release 2026-11-05). This combines the hosts' two Hot ideas into one sit-down episode instead of two separate videos. The new angle versus earlier pitches: first-time setup gotchas (being heard is harder than hearing), what changed in the 3.3.0 beta, RADE v2 aiming under 1 kHz, and on-air clips of each mode. End with a plain verdict on which one an everyday ham should try first."
+   "why_now": "Logging and software talk is up 1.54x in the last 30 days, and hams upgrading shack computers are hitting missing USB audio devices and broken digital mode setups.",
+   "angle": "Fits the 2026-10-29 YouTube slot. Start from a fresh Windows 11 machine, plug in an IC-7300, and show every step: drivers, audio devices, CAT control, WSJT-X, logging hand-off. Show the common failure and the fix on screen. Evergreen how-to with a popular brand in the title, a format we have not done."
   },
   {
    "rank": 4,
-   "title": "Ham Radio Gift Guide 2026: From Quansheng HTs to the $999 Icom ID-5200",
-   "format": "podcast",
+   "title": "Building the QRP Labs QMX+: Toroids, Firmware, and the Mistakes to Avoid",
+   "format": "youtube",
    "topics": [
-    "Budget Radios",
-    "VHF/UHF and Handhelds",
+    "Homebrew and Kits",
     "HF Radios",
-    "New Radio Announcements"
+    "CW/Morse"
    ],
-   "why_now": "Budget radios are underserved by us (4% of uploads vs 9% for competitors) and 34% of competitor budget radio uploads double their typical. Budget and HF radio discussion are both rising (lift 1.50x and 1.60x). A gift guide is also the perfect home for our best topics: new radios and handhelds.",
-   "angle": "Fits the OPEN podcast slot (record 2026-12-01, release 2026-12-03), timed for holiday shopping. Walk the price ladder from cheap handhelds and stocking stuffers up through mobiles and HF rigs, using radios we have actually touched this year. Brands and prices go in the title and chapters because both lift our numbers."
+   "why_now": "Homebrew discussion is up 1.36x with 110 recent posts, and QMX+ builders are asking the same questions this week: how much solder, how to wind T507, firmware loading, and dead-on-arrival builds.",
+   "angle": "Fits the 2026-11-12 YouTube slot, good bench content as weather turns. Build the kit on camera, answer the common forum questions as we hit them (T507 windings, solder, firmware), then take it on the air for a first QRP contact. Mention the ferrite bead tip for portable use, but keep the title off POTA since park content underperforms for us."
   },
   {
    "rank": 5,
-   "title": "Hurricane Watch Net on 14.325 MHz: How to Listen Without Getting in the Way",
-   "format": "short",
+   "title": "HTCommander First Look: Testing the Free App on Our Handhelds",
+   "format": "youtube",
    "topics": [
-    "Emergency Comms and ARES",
-    "Nets and Repeaters",
-    "HF Radios"
+    "VHF/UHF and Handhelds",
+    "Logging and Software",
+    "APRS"
    ],
-   "why_now": "The Hurricane Watch Net is active for Hurricane Isaias on 14.325 MHz by day and 7.268 MHz at night. Emergency comms is barely on our channel (2%) but 27% of competitor uploads on it double their typical. This one is time sensitive, so it should go out as a Short right away.",
-   "angle": "Short, no release slot needed, so it can post this week. Tune the net live in the shack, show the frequencies on screen, and give one simple rule: listen and keep the frequency clear unless you have traffic. A frequency in the title follows our numbers lesson."
+   "why_now": "A video on this free app just hit nearly 4x its channel's typical views, and handheld plus software interest are both rising.",
+   "angle": "Fits the 2026-11-19 YouTube slot. Set it up from scratch with one of our handhelds, test which everyday tasks it really handles for us, note setup snags, and say who it is for. Different from the earlier Winlink net pitch: this is a single-app hands-on aimed at handheld owners, including people getting new HTs for the holidays."
   },
   {
    "rank": 6,
-   "title": "Listening to the ISS on a Handheld: School Contacts, FM Satellites and New Launches",
-   "format": "youtube",
+   "title": "Keeping New Hams on the Air: Gatekeeping, Elmers, and That First Contact",
+   "format": "podcast",
    "topics": [
-    "SSTV and Satellites",
-    "VHF/UHF and Handhelds",
-    "Getting Licensed and New Hams"
+    "Getting Licensed and New Hams",
+    "Clubs",
+    "Nets and Repeaters"
    ],
-   "why_now": "Satellite discussion is up 1.88x, a competitor's 'anyone can listen to satellites' video recently doubled its typical, and new amateur satellites just went up. Hams are also posting about hearing astronaut school contacts on simple handhelds, which is exactly our everyday ham audience.",
-   "angle": "Fits the OPEN YouTube slot on 2026-11-12. Receive only, no license needed for the listening part: catch an ARISS school contact and an FM satellite pass on a handheld from Michigan, show the free tracking tools, and point to which of the newly launched satellites are worth watching. This is new compared with the pitched SO-50 contacts video (transmitting) and ISS SSTV video (images): it is about listening first, with a handheld."
-  },
-  {
-   "rank": 7,
-   "title": "CQ WorldWide Weekend on the FTDX101MP: Fresh DX From Michigan",
-   "format": "short",
-   "topics": [
-    "DX and DXpeditions",
-    "Field Day and Contests",
-    "HF Radios"
-   ],
-   "why_now": "Our best Short ever was a CQ WorldWide contest weekend clip at 11.79x. DX is a big topic in community discussion (12% of items) and we have posted 0% on it in the past year. A repeat of that format for this fall's contest weekend is a cheap, proven bet.",
-   "angle": "Short, no release slot needed, posted during CQ WorldWide weekend. Quick clips of the band full of DX on the FTDX101MP, a couple of rare ones in the log, and the rig name in the title since brands lift our numbers. It also gives a low-effort bridge from the California QSO Party video in the 2026-10-15 slot."
+   "why_now": "New-ham talk is up 1.31x, a gatekeeping debate is running hot this week, another podcast just covered online negativity, and ARRL is surveying former members about why they left. New radios under the tree make December the right time.",
+   "angle": "Record 2026-12-01 for the 2026-12-03 podcast slot. Fits our non-elitist identity: bring in a recently licensed club member, talk about what actually helped them get on the air, how to answer a nervous first call on a repeater, and how clubs can mentor without scolding. Exception note: Clubs has a low breakout rate, so lead with the new ham framing, which breaks out much more often."
   }
  ],
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 8.38,
-   "recent_posts": 80
+   "lift": 7.89,
+   "recent_posts": 83
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.54,
-   "recent_posts": 48
-  },
-  {
-   "topic": "Budget Radios",
-   "lift": 1.5,
-   "recent_posts": 18
+   "lift": 1.72,
+   "recent_posts": 50
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.47,
-   "recent_posts": 119
+   "lift": 1.54,
+   "recent_posts": 122
+  },
+  {
+   "topic": "Budget Radios",
+   "lift": 1.36,
+   "recent_posts": 17
   },
   {
    "topic": "Homebrew and Kits",
    "lift": 1.36,
-   "recent_posts": 112
+   "recent_posts": 110
   },
   {
-   "topic": "Used and Vintage Gear",
-   "lift": 1.32,
-   "recent_posts": 30
+   "topic": "Getting Licensed and New Hams",
+   "lift": 1.31,
+   "recent_posts": 69
   }
  ],
  "team": [
