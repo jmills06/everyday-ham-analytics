@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-10-20T11:44:00Z",
- "generated_at": "2026-10-20T11:44:00Z",
+ "fetched_at": "2026-10-21T11:43:02Z",
+ "generated_at": "2026-10-21T11:43:02Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -285,6 +285,12 @@
      "share_above": 0.6
     },
     {
+     "topic": "New Radio Announcements",
+     "n": 5,
+     "median_ratio": 1.02,
+     "share_above": 0.6
+    },
+    {
      "topic": "Antennas",
      "n": 8,
      "median_ratio": 0.52,
@@ -300,27 +306,27 @@
    "titles": [
     {
      "feature": "number_or_price=no",
-     "n": 17,
-     "median_ratio": 1.24
-    },
-    {
-     "feature": "brand=no",
-     "n": 52,
-     "median_ratio": 1.05
+     "n": 18,
+     "median_ratio": 1.21
     },
     {
      "feature": "all_caps_word=no",
-     "n": 46,
-     "median_ratio": 1.05
+     "n": 47,
+     "median_ratio": 1.08
+    },
+    {
+     "feature": "brand=no",
+     "n": 53,
+     "median_ratio": 1.02
     },
     {
      "feature": "question=no",
-     "n": 49,
+     "n": 51,
      "median_ratio": 1.02
     },
     {
      "feature": "hamvention=no",
-     "n": 61,
+     "n": 63,
      "median_ratio": 1.01
     },
     {
@@ -329,27 +335,27 @@
      "median_ratio": 0.85
     },
     {
-     "feature": "all_caps_word=yes",
-     "n": 17,
+     "feature": "number_or_price=yes",
+     "n": 47,
      "median_ratio": 0.69
     },
     {
-     "feature": "number_or_price=yes",
-     "n": 46,
-     "median_ratio": 0.66
+     "feature": "all_caps_word=yes",
+     "n": 18,
+     "median_ratio": 0.62
     },
     {
      "feature": "brand=yes",
-     "n": 11,
-     "median_ratio": 0.57
+     "n": 12,
+     "median_ratio": 0.6
     }
    ],
    "best_recent": [
     {
-     "title": "Four Hams, One Screen, and Zero Instructions - Upgrading the Club Meeting Space",
-     "published": "2026-02-07",
-     "first_week": 3194,
-     "ratio": 3.45
+     "title": "Your New Radio is Delivered to the Office: Icom Id-5200 makes an entrance! #hamradio #icom #id5200",
+     "published": "2026-09-25",
+     "first_week": 684,
+     "ratio": 4.61
     },
     {
      "title": "Clip - He Waited 42 Years for One QSL Card",
@@ -390,13 +396,13 @@
      "ratio": 0.19
     },
     {
-     "title": "The Laser Ham Folding Ground Plane Antenna | Hamcation 2026",
-     "published": "2026-02-14",
-     "first_week": 156,
-     "ratio": 0.2
+     "title": "The IC-7110 Is Not For Everyone",
+     "published": "2026-08-30",
+     "first_week": 123,
+     "ratio": 0.21
     }
    ],
-   "uploads": 63
+   "uploads": 65
   }
  }
 }
