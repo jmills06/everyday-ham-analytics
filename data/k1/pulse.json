@@ -1,21 +1,21 @@
 {
- "fetched_at": "2026-10-21T11:43:02Z",
- "generated_at": "2026-10-21T11:43:02Z",
+ "fetched_at": "2026-10-22T11:43:58Z",
+ "generated_at": "2026-10-22T11:43:58Z",
  "base_2x": 0.21,
- "base_n": 1370,
+ "base_n": 1368,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
    "competitor_share": 0.071,
    "competitor_2x": 0.1,
-   "competitor_n": 92,
+   "competitor_n": 93,
    "own_share": 0.123,
    "own_ratio": 0.38
   },
   {
    "topic": "Field Day and Contests",
    "competitor_share": 0.021,
-   "competitor_2x": 0.09,
+   "competitor_2x": 0.08,
    "competitor_n": 89,
    "own_share": 0.092,
    "own_ratio": 0.42
@@ -78,17 +78,17 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.092,
+   "competitor_share": 0.091,
    "competitor_2x": 0.3,
-   "competitor_n": 142,
+   "competitor_n": 141,
    "own_share": 0.077,
    "own_ratio": 1.93
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "competitor_share": 0.101,
+   "competitor_share": 0.099,
    "competitor_2x": 0.27,
-   "competitor_n": 135,
+   "competitor_n": 132,
    "own_share": 0.154,
    "own_ratio": 2.38
   },
@@ -110,16 +110,16 @@
   },
   {
    "topic": "Used and Vintage Gear",
-   "competitor_share": 0.018,
-   "competitor_2x": 0.09,
-   "competitor_n": 22,
+   "competitor_share": 0.017,
+   "competitor_2x": 0.1,
+   "competitor_n": 21,
    "own_share": 0.031,
    "own_ratio": null
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.178,
-   "competitor_2x": 0.2,
+   "competitor_share": 0.177,
+   "competitor_2x": 0.21,
    "competitor_n": 242,
    "own_share": 0.169,
    "own_ratio": 0.85
@@ -134,9 +134,9 @@
   },
   {
    "topic": "Station Setup and Coax",
-   "competitor_share": 0.062,
-   "competitor_2x": 0.22,
-   "competitor_n": 69,
+   "competitor_share": 0.063,
+   "competitor_2x": 0.21,
+   "competitor_n": 70,
    "own_share": 0.031,
    "own_ratio": null
   },
@@ -166,9 +166,9 @@
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.104,
-   "competitor_2x": 0.2,
-   "competitor_n": 128,
+   "competitor_share": 0.105,
+   "competitor_2x": 0.19,
+   "competitor_n": 127,
    "own_share": 0.077,
    "own_ratio": null
   },
@@ -182,9 +182,9 @@
   },
   {
    "topic": "Clubs",
-   "competitor_share": 0.013,
+   "competitor_share": 0.012,
    "competitor_2x": 0.06,
-   "competitor_n": 18,
+   "competitor_n": 17,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -223,24 +223,16 @@
  ],
  "competitor_rising": [
   {
-   "topic": "Logging and Software",
-   "lift": 1.21
-  },
-  {
    "topic": "Budget Radios",
-   "lift": 1.76
-  },
-  {
-   "topic": "VHF/UHF and Handhelds",
-   "lift": 1.21
+   "lift": 1.86
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 1.85
+   "lift": 1.74
   },
   {
    "topic": "DX and DXpeditions",
-   "lift": 1.5
+   "lift": 1.46
   }
  ]
 }

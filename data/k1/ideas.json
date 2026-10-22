@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-21T11:43:02Z",
+ "fetched_at": "2026-10-22T11:43:58Z",
  "brief_date": "2026-10-19",
  "ideas": [
   {
@@ -80,17 +80,17 @@
   {
    "topic": "SDR and Scanning",
    "lift": 8.78,
-   "recent_posts": 95
+   "recent_posts": 98
   },
   {
    "topic": "SSTV and Satellites",
    "lift": 1.54,
-   "recent_posts": 48
+   "recent_posts": 49
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.49,
-   "recent_posts": 126
+   "lift": 1.43,
+   "recent_posts": 128
   },
   {
    "topic": "Budget Radios",
@@ -99,13 +99,13 @@
   },
   {
    "topic": "Nets and Repeaters",
-   "lift": 1.37,
+   "lift": 1.39,
    "recent_posts": 31
   },
   {
-   "topic": "Homebrew and Kits",
-   "lift": 1.34,
-   "recent_posts": 113
+   "topic": "Antennas",
+   "lift": 1.33,
+   "recent_posts": 95
   }
  ],
  "team": [
