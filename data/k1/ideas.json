@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-22T11:43:58Z",
+ "fetched_at": "2026-10-23T11:43:03Z",
  "brief_date": "2026-10-19",
  "ideas": [
   {
@@ -79,33 +79,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 8.78,
-   "recent_posts": 98
+   "lift": 9.22,
+   "recent_posts": 104
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.54,
-   "recent_posts": 49
+   "lift": 1.62,
+   "recent_posts": 53
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.43,
-   "recent_posts": 128
+   "lift": 1.48,
+   "recent_posts": 131
+  },
+  {
+   "topic": "Nets and Repeaters",
+   "lift": 1.44,
+   "recent_posts": 32
   },
   {
    "topic": "Budget Radios",
    "lift": 1.4,
-   "recent_posts": 17
-  },
-  {
-   "topic": "Nets and Repeaters",
-   "lift": 1.39,
-   "recent_posts": 31
+   "recent_posts": 18
   },
   {
    "topic": "Antennas",
-   "lift": 1.33,
-   "recent_posts": 95
+   "lift": 1.37,
+   "recent_posts": 97
   }
  ],
  "team": [
@@ -143,10 +143,6 @@
  "upcoming": [],
  "open_slots": [
   {
-   "date": "2026-10-22",
-   "kind": "youtube"
-  },
-  {
    "date": "2026-10-29",
    "kind": "youtube"
   },
@@ -164,6 +160,10 @@
   },
   {
    "date": "2026-11-19",
+   "kind": "youtube"
+  },
+  {
+   "date": "2026-11-26",
    "kind": "youtube"
   }
  ]
