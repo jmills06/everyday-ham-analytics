@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-23T04:00:38Z",
+  "fetched_at": "2026-10-23T16:00:42Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 31,
     "shares": 47,
     "subscribed_views": 2967,
-    "not_subscribed_views": 18227
+    "not_subscribed_views": 18225
   },
   "daily": [
     {
@@ -385,7 +385,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 10078
+      "views": 10079
     },
     {
       "source": "YT_SEARCH",
@@ -393,11 +393,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 1451
+      "views": 1450
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1093
+      "views": 1094
     },
     {
       "source": "EXT_URL",
@@ -405,7 +405,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 560
+      "views": 558
     },
     {
       "source": "YT_CHANNEL",
@@ -413,7 +413,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 247
+      "views": 246
     },
     {
       "source": "NOTIFICATION",
@@ -503,11 +503,11 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 53
+      "views": 54
     },
     {
       "term": "atas 120a antenna",
-      "views": 27
+      "views": 29
     }
   ],
   "suggested_by": [
@@ -577,7 +577,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 663
+      "views": 664
     },
     {
       "term": "meshtastic solar node",
@@ -585,7 +585,7 @@
     },
     {
       "term": "kenwood tm-d750a",
-      "views": 495
+      "views": 496
     },
     {
       "term": "ftdx101mp",
@@ -601,7 +601,7 @@
     },
     {
       "term": "atas 120a antenna",
-      "views": 358
+      "views": 360
     },
     {
       "term": "icom x026",

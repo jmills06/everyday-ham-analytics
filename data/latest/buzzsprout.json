@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-10-23T04:00:40Z",
-  "total_downloads": 26903,
+  "fetched_at": "2026-10-23T16:00:48Z",
+  "total_downloads": 26915,
   "episode_count": 28,
   "episodes": [
     {
@@ -9,7 +9,7 @@
       "episode_number": 22,
       "published_at": "2026-10-08T08:00:00.000-04:00",
       "duration_sec": 4319,
-      "plays": 925
+      "plays": 929
     },
     {
       "id": 19742432,
@@ -17,7 +17,7 @@
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 1187
+      "plays": 1188
     },
     {
       "id": 19606536,
@@ -41,7 +41,7 @@
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
       "duration_sec": 3475,
-      "plays": 1566
+      "plays": 1567
     },
     {
       "id": 19219333,
@@ -49,7 +49,7 @@
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
       "duration_sec": 3097,
-      "plays": 1260
+      "plays": 1261
     },
     {
       "id": 19138519,
@@ -73,7 +73,7 @@
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
       "duration_sec": 2461,
-      "plays": 937
+      "plays": 938
     },
     {
       "id": 18794950,
@@ -81,7 +81,7 @@
       "episode_number": 15,
       "published_at": "2026-03-05T10:00:00.000-05:00",
       "duration_sec": 3694,
-      "plays": 1108
+      "plays": 1109
     },
     {
       "id": 18629581,
@@ -97,7 +97,7 @@
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
       "duration_sec": 3568,
-      "plays": 1411
+      "plays": 1412
     },
     {
       "id": 18296133,
@@ -153,7 +153,7 @@
       "episode_number": 8,
       "published_at": "2025-08-07T17:00:00.000-04:00",
       "duration_sec": 3433,
-      "plays": 775
+      "plays": 776
     },
     {
       "id": 17571459,
@@ -161,7 +161,7 @@
       "episode_number": null,
       "published_at": "2025-07-28T12:00:00.000-04:00",
       "duration_sec": 5032,
-      "plays": 699
+      "plays": 700
     },
     {
       "id": 17441669,
