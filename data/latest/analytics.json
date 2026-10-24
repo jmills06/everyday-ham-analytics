@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-24T04:00:31Z",
+  "fetched_at": "2026-10-24T16:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 21331,
+    "views": 21271,
     "engaged_views": 9921,
-    "watch_hours": 738.4,
+    "watch_hours": 737.5,
     "avg_view_pct": 23.0,
     "subs_gained": 80,
     "subs_lost": 11,
@@ -14,7 +14,7 @@
     "comments": 31,
     "shares": 43,
     "subscribed_views": 2976,
-    "not_subscribed_views": 18295
+    "not_subscribed_views": 18289
   },
   "daily": [
     {
@@ -45,8 +45,8 @@
     },
     {
       "date": "2026-09-26",
-      "views": 1368,
-      "watch_minutes": 2001,
+      "views": 1365,
+      "watch_minutes": 1999,
       "avg_view_duration_sec": 203,
       "avg_view_pct": 25.6,
       "subs_gained": 3,
@@ -58,8 +58,8 @@
     },
     {
       "date": "2026-09-27",
-      "views": 982,
-      "watch_minutes": 1472,
+      "views": 979,
+      "watch_minutes": 1445,
       "avg_view_duration_sec": 207,
       "avg_view_pct": 25.2,
       "subs_gained": 3,
@@ -71,8 +71,8 @@
     },
     {
       "date": "2026-09-28",
-      "views": 770,
-      "watch_minutes": 1357,
+      "views": 732,
+      "watch_minutes": 1341,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 27.0,
       "subs_gained": 1,
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-09-29",
-      "views": 673,
+      "views": 666,
       "watch_minutes": 1246,
       "avg_view_duration_sec": 242,
       "avg_view_pct": 25.8,
@@ -110,8 +110,8 @@
     },
     {
       "date": "2026-10-01",
-      "views": 1211,
-      "watch_minutes": 2986,
+      "views": 1209,
+      "watch_minutes": 2973,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.3,
       "subs_gained": 3,
@@ -136,8 +136,8 @@
     },
     {
       "date": "2026-10-03",
-      "views": 722,
-      "watch_minutes": 1370,
+      "views": 719,
+      "watch_minutes": 1371,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 19.3,
       "subs_gained": 4,
@@ -149,7 +149,7 @@
     },
     {
       "date": "2026-10-04",
-      "views": 814,
+      "views": 810,
       "watch_minutes": 2026,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.6,
@@ -393,11 +393,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 1454
+      "views": 1452
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1094
+      "views": 1093
     },
     {
       "source": "EXT_URL",
@@ -405,7 +405,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 566
+      "views": 564
     },
     {
       "source": "YT_CHANNEL",
@@ -413,7 +413,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 244
+      "views": 243
     },
     {
       "source": "NOTIFICATION",
@@ -479,7 +479,7 @@
     },
     {
       "term": "id-5200",
-      "views": 81
+      "views": 77
     },
     {
       "term": "icom 7110",
@@ -506,8 +506,8 @@
       "views": 53
     },
     {
-      "term": "atas 120a antenna",
-      "views": 28
+      "term": "meshtastic solar node",
+      "views": 27
     }
   ],
   "suggested_by": [
@@ -581,7 +581,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 503
+      "views": 505
     },
     {
       "term": "kenwood tm-d750a",
@@ -601,7 +601,7 @@
     },
     {
       "term": "atas 120a antenna",
-      "views": 360
+      "views": 358
     },
     {
       "term": "icom x026",
@@ -620,11 +620,11 @@
       "views": 300
     },
     {
-      "term": "id-5200",
-      "views": 285
+      "term": "hamvention",
+      "views": 281
     },
     {
-      "term": "hamvention",
+      "term": "id-5200",
       "views": 281
     },
     {
