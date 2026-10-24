@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-23T11:43:03Z",
+ "fetched_at": "2026-10-24T11:42:59Z",
  "brief_date": "2026-10-19",
  "ideas": [
   {
@@ -79,33 +79,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 9.22,
-   "recent_posts": 104
+   "lift": 9.56,
+   "recent_posts": 108
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.62,
-   "recent_posts": 53
-  },
-  {
-   "topic": "Logging and Software",
-   "lift": 1.48,
-   "recent_posts": 131
-  },
-  {
-   "topic": "Nets and Repeaters",
-   "lift": 1.44,
-   "recent_posts": 32
+   "lift": 1.63,
+   "recent_posts": 55
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.4,
-   "recent_posts": 18
+   "lift": 1.6,
+   "recent_posts": 20
   },
   {
    "topic": "Antennas",
-   "lift": 1.37,
-   "recent_posts": 97
+   "lift": 1.39,
+   "recent_posts": 99
+  },
+  {
+   "topic": "Logging and Software",
+   "lift": 1.38,
+   "recent_posts": 129
+  },
+  {
+   "topic": "Used and Vintage Gear",
+   "lift": 1.35,
+   "recent_posts": 34
   }
  ],
  "team": [
@@ -129,6 +129,12 @@
   },
   {
    "title": "A walkthrough of NEXT.POTA.APP with Mike W8MSC",
+   "format": "YouTube video",
+   "source": "host",
+   "status": "New"
+  },
+  {
+   "title": "QRV App",
    "format": "YouTube video",
    "source": "host",
    "status": "New"
