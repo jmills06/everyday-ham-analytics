@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26T04:00:37Z",
+  "fetched_at": "2026-10-26T16:00:46Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 307,
     "comments": 30,
     "shares": 44,
-    "subscribed_views": 2794,
-    "not_subscribed_views": 17036
+    "subscribed_views": 2789,
+    "not_subscribed_views": 17029
   },
   "daily": [
     {
@@ -385,15 +385,15 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 9435
+      "views": 9425
     },
     {
       "source": "YT_SEARCH",
-      "views": 6441
+      "views": 6438
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1072
+      "views": 1073
     },
     {
       "source": "EXT_URL",
@@ -401,11 +401,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 734
+      "views": 733
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 542
+      "views": 541
     },
     {
       "source": "YT_CHANNEL",
@@ -413,7 +413,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 221
+      "views": 222
     },
     {
       "source": "NOTIFICATION",
@@ -425,7 +425,7 @@
     },
     {
       "source": "HASHTAGS",
-      "views": 12
+      "views": 13
     },
     {
       "source": "END_SCREEN",
@@ -479,7 +479,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 78
+      "views": 77
     },
     {
       "term": "id-5200",
@@ -506,8 +506,8 @@
       "views": 44
     },
     {
-      "term": "meshtastic solar node",
-      "views": 27
+      "term": "atas 120a antenna",
+      "views": 28
     }
   ],
   "suggested_by": [
@@ -589,7 +589,7 @@
     },
     {
       "term": "ftdx101mp",
-      "views": 462
+      "views": 463
     },
     {
       "term": "dayton hamvention 2026",
@@ -597,11 +597,11 @@
     },
     {
       "term": "icom 7110",
-      "views": 374
+      "views": 373
     },
     {
       "term": "atas 120a antenna",
-      "views": 355
+      "views": 357
     },
     {
       "term": "icom x026",
@@ -719,7 +719,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 136210
+      "views": 136191
     },
     {
       "country": "GB",
