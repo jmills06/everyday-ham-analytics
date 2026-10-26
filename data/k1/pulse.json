@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-10-26T09:31:38Z",
- "generated_at": "2026-10-26T09:30:09Z",
+ "fetched_at": "2026-10-26T11:43:07Z",
+ "generated_at": "2026-10-26T11:43:07Z",
  "base_2x": 0.209,
- "base_n": 1362,
+ "base_n": 1363,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
@@ -126,7 +126,7 @@
   },
   {
    "topic": "Portable Power and Batteries",
-   "competitor_share": 0.046,
+   "competitor_share": 0.045,
    "competitor_2x": 0.18,
    "competitor_n": 72,
    "own_share": 0.0,
@@ -151,8 +151,8 @@
   {
    "topic": "Meshtastic and Mesh Networks",
    "competitor_share": 0.057,
-   "competitor_2x": 0.41,
-   "competitor_n": 71,
+   "competitor_2x": 0.4,
+   "competitor_n": 72,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -206,7 +206,7 @@
   },
   {
    "topic": "Ham Radio News and FCC",
-   "competitor_share": 0.04,
+   "competitor_share": 0.039,
    "competitor_2x": 0.27,
    "competitor_n": 59,
    "own_share": 0.062,
@@ -224,27 +224,27 @@
  "competitor_rising": [
   {
    "topic": "Budget Radios",
-   "lift": 1.9
+   "lift": 1.88
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.42
+   "lift": 1.38
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.25
+   "lift": 1.22
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.25
+   "lift": 1.22
   },
   {
    "topic": "Interviews",
-   "lift": 1.3
+   "lift": 1.28
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 1.29
+   "lift": 1.27
   }
  ]
 }
