@@ -1,91 +1,109 @@
 {
- "fetched_at": "2026-10-25T11:44:05Z",
- "brief_date": "2026-10-19",
+ "fetched_at": "2026-10-26T09:31:38Z",
+ "brief_date": "2026-10-26",
  "ideas": [
   {
    "rank": 1,
-   "title": "Icom Just Filed Two New VHF Digital Radios With the FCC: What We Know",
+   "title": "Icom Filed Four New VHF and UHF Digital Radios With the FCC: What the Paperwork Shows",
    "format": "youtube",
    "topics": [
     "New Radio Announcements",
-    "VHF/UHF and Handhelds",
-    "Ham Radio News and FCC"
+    "VHF/UHF and Handhelds"
    ],
-   "why_now": "Icom filed two VHF digital transceivers with the FCC on 2026-10-14, plus a VHF air band transceiver on 2026-10-08. Filings often show up before an announcement, and our audience follows Icom closely after the ID-5200.",
-   "angle": "Fits the 2026-10-22 YouTube slot, the most time-sensitive opening. Walk through what is actually public in the filings, compare it to the ID-5200 we already covered, and clearly label anything speculative (a filing is not a product yet). New angle versus the earlier Retevis and Radioddity filing pitch: this is Icom, the brand behind most of our best results. Cut a Short with the one most interesting detail."
+   "why_now": "Icom filed two VHF digital transceivers on Oct 14, then two UHF digital transceivers on Oct 20 and Oct 23, plus a VHF air band radio on Oct 8. Four matched filings in nine days looks like a product family. A filing is not a product yet, and the video should say so plainly.",
+   "angle": "New angle on a past pitch: that pitch covered only the two VHF filings, and the matching UHF pair plus the air band unit now changes the story. Quick-turn edited video for the OPEN 2026-10-29 YouTube slot: walk through each filing, what the paperwork can and cannot tell us, and how this fits Icom's busy year (ID-5200 pricing and pre-orders, the X-026 concept). Cut a Short from the reveal."
   },
   {
    "rank": 2,
-   "title": "eBay's New Radio Listing Rules: Buying and Selling Ham Gear After the FCC Change",
-   "format": "podcast",
+   "title": "Ham Radio Gift Guide 2026: Battery Cases, Solar Adapters and Radios at Every Price",
+   "format": "youtube",
    "topics": [
-    "Ham Radio News and FCC",
-    "Used and Vintage Gear",
-    "Hamfests and Hamvention"
+    "Portable Power and Batteries",
+    "Budget Radios",
+    "VHF/UHF and Handhelds"
    ],
-   "why_now": "New FCC rules on online electronics sales took effect, and eBay responded by restricting radio transmitter listings while exempting ham-band-only gear. It lands right before holiday buying season and winter hamfest swap tables.",
-   "angle": "Record 2026-11-03 for the 2026-11-05 podcast slot. Segments: what changed and what is exempt, what it means for used and vintage gear, how to vet a used or returned radio before you pay, swap meets and auctions as alternatives, and listener questions. Practical buyer and seller advice, not legal hand-wringing. Exception note: used gear alone has a low competitor breakout rate, so the timely FCC and eBay hook carries this, with brand names up front in the title."
+   "why_now": "Holiday shopping starts the week of Thanksgiving. The most discussed community post this week was advice to always buy the AA battery case for your radio, and portable power talk is rising.",
+   "angle": "Host idea (James K8JKU) for the OPEN 2026-11-26 YouTube slot. New angle on the earlier gift guide pitch: organize by price tier, and give the cheap tier mostly to portable power (AA battery cases, solar go-bag adapters, travel batteries). The channel has not covered that topic in a year, and it suits the practical everyday ham. Top tier: the $999 ID-5200 and HF rigs. Name brands and prices in every segment."
   },
   {
    "rank": 3,
-   "title": "New Shack PC, Silent IC-7300: Getting Audio and WSJT-X Working on Windows 11",
+   "title": "CW on a Quansheng Handheld: We Tried the New Firmware",
    "format": "youtube",
    "topics": [
-    "HF Radios",
-    "Logging and Software",
-    "Digital Modes",
-    "Station Setup and Coax"
+    "Budget Radios",
+    "CW/Morse",
+    "VHF/UHF and Handhelds"
    ],
-   "why_now": "Logging and software talk is up 1.54x in the last 30 days, and hams upgrading shack computers are hitting missing USB audio devices and broken digital mode setups.",
-   "angle": "Fits the 2026-10-29 YouTube slot. Start from a fresh Windows 11 machine, plug in an IC-7300, and show every step: drivers, audio devices, CAT control, WSJT-X, logging hand-off. Show the common failure and the fix on screen. Evergreen how-to with a popular brand in the title, a format we have not done."
+   "why_now": "New community firmware lets an inexpensive Quansheng FM handheld send and receive CW, and a competitor podcast just interviewed the firmware author. Budget radio discussion is rising.",
+   "angle": "Edited video for the OPEN 2026-11-12 YouTube slot. Flash the firmware on a Quansheng, make a CW contact on 2 meters, and show who it is for: new hams learning Morse without buying an HF rig. This ties back to the channel's Learning CW episode, and it is a fun, cheap weekend project."
   },
   {
    "rank": 4,
-   "title": "Building the QRP Labs QMX+: Toroids, Firmware, and the Mistakes to Avoid",
-   "format": "youtube",
+   "title": "RADE and JTTY Land on Budget Radios and Phones: The New HF Modes Episode",
+   "format": "podcast",
    "topics": [
+    "Digital Modes",
     "Homebrew and Kits",
-    "HF Radios",
-    "CW/Morse"
+    "Logging and Software"
    ],
-   "why_now": "Homebrew discussion is up 1.36x with 110 recent posts, and QMX+ builders are asking the same questions this week: how much solder, how to wind T507, firmware loading, and dead-on-arrival builds.",
-   "angle": "Fits the 2026-11-12 YouTube slot, good bench content as weather turns. Build the kit on camera, answer the common forum questions as we hit them (T507 windings, solder, firmware), then take it on the air for a first QRP contact. Mention the ferrite bead tip for portable use, but keep the title off POTA since park content underperforms for us."
+   "why_now": "In the last week the rewritten zBitx software added FreeDV RADE1, RADE2 and JTTY, and an updated Android FT8 app added JTTY and POTA/SOTA activation support. Hams are asking what JTTY feels like on the air.",
+   "angle": "Host idea (James K8JKU, 'Will RADE Be the Next SSB'), recorded 2026-11-03 for the OPEN 2026-11-05 podcast slot, with a non-question title. Earlier pitches were bench tests on the shack rig. The new angle: these modes are reaching low-cost kit radios and phones. Play RADE vs SSB audio, do a JTTY on-air demo, and talk through what it means for portable operators."
   },
   {
    "rank": 5,
-   "title": "HTCommander First Look: Testing the Free App on Our Handhelds",
+   "title": "QRV App With Adam K2CAT: A New Tool for Getting on the Air",
    "format": "youtube",
    "topics": [
-    "VHF/UHF and Handhelds",
     "Logging and Software",
-    "APRS"
+    "Interviews"
    ],
-   "why_now": "A video on this free app just hit nearly 4x its channel's typical views, and handheld plus software interest are both rising.",
-   "angle": "Fits the 2026-11-19 YouTube slot. Set it up from scratch with one of our handhelds, test which everyday tasks it really handles for us, note setup snags, and say who it is for. Different from the earlier Winlink net pitch: this is a single-app hands-on aimed at handheld owners, including people getting new HTs for the holidays."
+   "why_now": "Host Jim N8JRD flagged the QRV app as news. Ham software and app videos are breaking out for competitors this month, and logging and software discussion is rising.",
+   "angle": "Host idea (Jim N8JRD) for the OPEN 2026-11-19 YouTube slot. Keep it a screen-led walkthrough with Adam K2CAT on camera, not a talking-head clip: the problem the app solves, a live demo, and what is coming next. Use the app name prominently in the title, the way app videos that break out do."
   },
   {
    "rank": 6,
-   "title": "Keeping New Hams on the Air: Gatekeeping, Elmers, and That First Contact",
+   "title": "Always Buy the AA Battery Case for Your Handheld",
+   "format": "short",
+   "topics": [
+    "Portable Power and Batteries",
+    "VHF/UHF and Handhelds"
+   ],
+   "why_now": "This was the most discussed piece of ham advice this week, and go-bag power Shorts are breaking out right now.",
+   "angle": "Short, which needs no release slot. Post it the week of 2026-11-12 to warm up the gift guide. In under a minute: a dead OEM battery, the AA case clicked on, the handheld back on the air. Name the radio brand on screen."
+  },
+  {
+   "rank": 7,
+   "title": "HOA Lobbyists vs the Antenna Bill: Getting on the Air With Restrictions",
    "format": "podcast",
    "topics": [
-    "Getting Licensed and New Hams",
-    "Clubs",
-    "Nets and Repeaters"
+    "Ham Radio News and FCC",
+    "Antennas"
    ],
-   "why_now": "New-ham talk is up 1.31x, a gatekeeping debate is running hot this week, another podcast just covered online negativity, and ARRL is surveying former members about why they left. New radios under the tree make December the right time.",
-   "angle": "Record 2026-12-01 for the 2026-12-03 podcast slot. Fits our non-elitist identity: bring in a recently licensed club member, talk about what actually helped them get on the air, how to answer a nervous first call on a repeater, and how clubs can mentor without scolding. Exception note: Clubs has a low breakout rate, so lead with the new ham framing, which breaks out much more often."
+   "why_now": "This week's news reports that HOA lobbyists are making it a top priority to stop the antenna bill. Antenna fights with local governments are pulling big views for a competitor.",
+   "angle": "Recorded 2026-12-01 for the OPEN 2026-12-03 podcast slot. Explain plainly what the bill would do and why HOAs oppose it. Then spend the second half on practical stealth and restricted-lot options listeners can use today. The tone stays encouraging, not angry. This is an exception to the weak own-antenna numbers, justified by the news hook and competitor results."
+  },
+  {
+   "rank": 8,
+   "title": "RTL-SDR on an iPad and an Android Phone: Decoding FT8 With No Radio",
+   "format": "youtube",
+   "topics": [
+    "SDR and Scanning",
+    "Digital Modes"
+   ],
+   "why_now": "SDR discussion jumped sharply this month. New releases let an RTL-SDR run on an iPad without jailbreak and on Android, and new SDR++ plugins decode FT8, CW, RTTY and more.",
+   "angle": "Edited video for the OPEN 2026-12-10 YouTube slot. New angle on the earlier RTL-SDR junk drawer pitch: go fully mobile. Plug a dongle into a tablet and a phone, then decode FT8 and CW with the new plugins. This gives new and licensing-curious hams a cheap way to hear HF digital activity. It is an exception on the data (competitor sample too small), justified by the discussion surge."
   }
  ],
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 10.62,
-   "recent_posts": 109
+   "lift": 11.38,
+   "recent_posts": 114
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.63,
-   "recent_posts": 56
+   "lift": 1.78,
+   "recent_posts": 60
   },
   {
    "topic": "Budget Radios",
@@ -94,18 +112,18 @@
   },
   {
    "topic": "Antennas",
-   "lift": 1.4,
-   "recent_posts": 103
+   "lift": 1.46,
+   "recent_posts": 104
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.39,
-   "recent_posts": 131
+   "lift": 1.43,
+   "recent_posts": 133
   },
   {
-   "topic": "Portable Power and Batteries",
-   "lift": 1.38,
-   "recent_posts": 23
+   "topic": "Used and Vintage Gear",
+   "lift": 1.4,
+   "recent_posts": 35
   }
  ],
  "team": [

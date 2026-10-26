@@ -1,15 +1,15 @@
 {
- "fetched_at": "2026-10-25T11:44:05Z",
- "generated_at": "2026-10-25T11:44:05Z",
+ "fetched_at": "2026-10-26T09:31:38Z",
+ "generated_at": "2026-10-26T09:30:09Z",
  "base_2x": 0.209,
- "base_n": 1366,
+ "base_n": 1362,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
    "competitor_share": 0.071,
    "competitor_2x": 0.1,
    "competitor_n": 93,
-   "own_share": 0.138,
+   "own_share": 0.123,
    "own_ratio": 0.38
   },
   {
@@ -46,9 +46,9 @@
   },
   {
    "topic": "Digital Modes",
-   "competitor_share": 0.043,
+   "competitor_share": 0.044,
    "competitor_2x": 0.2,
-   "competitor_n": 60,
+   "competitor_n": 61,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -78,7 +78,7 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.092,
+   "competitor_share": 0.093,
    "competitor_2x": 0.29,
    "competitor_n": 142,
    "own_share": 0.077,
@@ -87,8 +87,8 @@
   {
    "topic": "VHF/UHF and Handhelds",
    "competitor_share": 0.1,
-   "competitor_2x": 0.26,
-   "competitor_n": 133,
+   "competitor_2x": 0.27,
+   "competitor_n": 132,
    "own_share": 0.138,
    "own_ratio": 2.38
   },
@@ -102,9 +102,9 @@
   },
   {
    "topic": "Budget Radios",
-   "competitor_share": 0.084,
-   "competitor_2x": 0.32,
-   "competitor_n": 110,
+   "competitor_share": 0.083,
+   "competitor_2x": 0.31,
+   "competitor_n": 109,
    "own_share": 0.046,
    "own_ratio": null
   },
@@ -118,15 +118,15 @@
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.176,
+   "competitor_share": 0.177,
    "competitor_2x": 0.2,
-   "competitor_n": 240,
+   "competitor_n": 239,
    "own_share": 0.185,
    "own_ratio": 0.85
   },
   {
    "topic": "Portable Power and Batteries",
-   "competitor_share": 0.045,
+   "competitor_share": 0.046,
    "competitor_2x": 0.18,
    "competitor_n": 72,
    "own_share": 0.0,
@@ -137,7 +137,7 @@
    "competitor_share": 0.062,
    "competitor_2x": 0.22,
    "competitor_n": 69,
-   "own_share": 0.046,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
@@ -158,9 +158,9 @@
   },
   {
    "topic": "Logging and Software",
-   "competitor_share": 0.051,
-   "competitor_2x": 0.34,
-   "competitor_n": 65,
+   "competitor_share": 0.052,
+   "competitor_2x": 0.33,
+   "competitor_n": 66,
    "own_share": 0.077,
    "own_ratio": null
   },
@@ -168,8 +168,8 @@
    "topic": "Homebrew and Kits",
    "competitor_share": 0.106,
    "competitor_2x": 0.19,
-   "competitor_n": 127,
-   "own_share": 0.077,
+   "competitor_n": 126,
+   "own_share": 0.092,
    "own_ratio": null
   },
   {
@@ -190,7 +190,7 @@
   },
   {
    "topic": "Hamfests and Hamvention",
-   "competitor_share": 0.069,
+   "competitor_share": 0.07,
    "competitor_2x": 0.17,
    "competitor_n": 87,
    "own_share": 0.231,
@@ -206,7 +206,7 @@
   },
   {
    "topic": "Ham Radio News and FCC",
-   "competitor_share": 0.039,
+   "competitor_share": 0.04,
    "competitor_2x": 0.27,
    "competitor_n": 59,
    "own_share": 0.062,
@@ -224,19 +224,27 @@
  "competitor_rising": [
   {
    "topic": "Budget Radios",
-   "lift": 1.83
+   "lift": 1.9
   },
   {
    "topic": "Logging and Software",
+   "lift": 1.42
+  },
+  {
+   "topic": "Homebrew and Kits",
    "lift": 1.25
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.29
+   "lift": 1.25
+  },
+  {
+   "topic": "Interviews",
+   "lift": 1.3
   },
   {
    "topic": "New Radio Announcements",
-   "lift": 1.34
+   "lift": 1.29
   }
  ]
 }
