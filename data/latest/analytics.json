@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-27T04:00:40Z",
+  "fetched_at": "2026-10-27T16:00:40Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 18956,
-    "engaged_views": 8900,
-    "watch_hours": 690.7,
+    "views": 18944,
+    "engaged_views": 8879,
+    "watch_hours": 690.4,
     "avg_view_pct": 22.4,
     "subs_gained": 79,
     "subs_lost": 11,
@@ -13,8 +13,8 @@
     "likes": 298,
     "comments": 30,
     "shares": 45,
-    "subscribed_views": 2638,
-    "not_subscribed_views": 16306
+    "subscribed_views": 2639,
+    "not_subscribed_views": 16299
   },
   "daily": [
     {
@@ -28,7 +28,7 @@
       "likes": 17,
       "comments": 1,
       "shares": 0,
-      "engaged_views": 415
+      "engaged_views": 412
     },
     {
       "date": "2026-09-28",
@@ -41,7 +41,7 @@
       "likes": 4,
       "comments": 1,
       "shares": 1,
-      "engaged_views": 343
+      "engaged_views": 339
     },
     {
       "date": "2026-09-29",
@@ -80,7 +80,7 @@
       "likes": 34,
       "comments": 6,
       "shares": 1,
-      "engaged_views": 610
+      "engaged_views": 608
     },
     {
       "date": "2026-10-02",
@@ -314,7 +314,7 @@
       "likes": 4,
       "comments": 0,
       "shares": 1,
-      "engaged_views": 216
+      "engaged_views": 210
     },
     {
       "date": "2026-10-20",
@@ -344,16 +344,16 @@
     },
     {
       "date": "2026-10-22",
-      "views": 893,
-      "watch_minutes": 1844,
-      "avg_view_duration_sec": 256,
+      "views": 881,
+      "watch_minutes": 1825,
+      "avg_view_duration_sec": 257,
       "avg_view_pct": 27.6,
       "subs_gained": 3,
       "subs_lost": 1,
       "likes": 24,
       "comments": 1,
       "shares": 5,
-      "engaged_views": 427
+      "engaged_views": 421
     },
     {
       "date": "2026-10-23",
@@ -389,11 +389,11 @@
     },
     {
       "source": "YT_SEARCH",
-      "views": 6406
+      "views": 6403
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1038
+      "views": 1037
     },
     {
       "source": "EXT_URL",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 534
+      "views": 532
     },
     {
       "source": "SHORTS",
@@ -445,8 +445,8 @@
     },
     {
       "video_id": "LwICFz2gx1w",
-      "views": 1897,
-      "watch_hours": 65.1,
+      "views": 1895,
+      "watch_hours": 64.8,
       "likes": 22
     },
     {
@@ -503,7 +503,7 @@
     },
     {
       "term": "ham radio",
-      "views": 37
+      "views": 36
     },
     {
       "term": "atas 120a antenna",
@@ -565,7 +565,7 @@
   "search_terms_365": [
     {
       "term": "ham radio",
-      "views": 1023
+      "views": 1022
     },
     {
       "term": "hamvention 2026",
@@ -581,7 +581,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 500
+      "views": 501
     },
     {
       "term": "kenwood tm-d750a",
@@ -589,7 +589,7 @@
     },
     {
       "term": "ftdx101mp",
-      "views": 463
+      "views": 464
     },
     {
       "term": "dayton hamvention 2026",
