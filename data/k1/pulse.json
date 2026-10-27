@@ -1,14 +1,14 @@
 {
- "fetched_at": "2026-10-26T11:43:07Z",
- "generated_at": "2026-10-26T11:43:07Z",
- "base_2x": 0.209,
+ "fetched_at": "2026-10-27T11:42:28Z",
+ "generated_at": "2026-10-27T11:42:28Z",
+ "base_2x": 0.208,
  "base_n": 1363,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
    "competitor_share": 0.071,
    "competitor_2x": 0.1,
-   "competitor_n": 93,
+   "competitor_n": 94,
    "own_share": 0.123,
    "own_ratio": 0.38
   },
@@ -118,9 +118,9 @@
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.177,
+   "competitor_share": 0.176,
    "competitor_2x": 0.2,
-   "competitor_n": 239,
+   "competitor_n": 238,
    "own_share": 0.185,
    "own_ratio": 0.85
   },
@@ -152,7 +152,7 @@
    "topic": "Meshtastic and Mesh Networks",
    "competitor_share": 0.057,
    "competitor_2x": 0.4,
-   "competitor_n": 72,
+   "competitor_n": 73,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -166,9 +166,9 @@
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.106,
-   "competitor_2x": 0.19,
-   "competitor_n": 126,
+   "competitor_share": 0.105,
+   "competitor_2x": 0.18,
+   "competitor_n": 125,
    "own_share": 0.092,
    "own_ratio": null
   },
@@ -228,23 +228,23 @@
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.38
+   "lift": 1.27
+  },
+  {
+   "topic": "Used and Vintage Gear",
+   "lift": 4.88
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.22
+   "lift": 1.2
   },
   {
-   "topic": "VHF/UHF and Handhelds",
-   "lift": 1.22
+   "topic": "DX and DXpeditions",
+   "lift": 1.62
   },
   {
    "topic": "Interviews",
-   "lift": 1.28
-  },
-  {
-   "topic": "New Radio Announcements",
-   "lift": 1.27
+   "lift": 1.33
   }
  ]
 }
