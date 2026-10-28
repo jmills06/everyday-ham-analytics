@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-28T04:00:40Z",
+  "fetched_at": "2026-10-28T16:00:43Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 18553,
+    "views": 18487,
     "engaged_views": 8683,
-    "watch_hours": 680.4,
+    "watch_hours": 679.0,
     "avg_view_pct": 22.3,
     "subs_gained": 78,
     "subs_lost": 11,
@@ -14,13 +14,13 @@
     "comments": 29,
     "shares": 46,
     "subscribed_views": 2567,
-    "not_subscribed_views": 15920
+    "not_subscribed_views": 15918
   },
   "daily": [
     {
       "date": "2026-09-28",
-      "views": 770,
-      "watch_minutes": 1357,
+      "views": 732,
+      "watch_minutes": 1341,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 27.0,
       "subs_gained": 1,
@@ -32,7 +32,7 @@
     },
     {
       "date": "2026-09-29",
-      "views": 673,
+      "views": 666,
       "watch_minutes": 1246,
       "avg_view_duration_sec": 242,
       "avg_view_pct": 25.8,
@@ -58,8 +58,8 @@
     },
     {
       "date": "2026-10-01",
-      "views": 1211,
-      "watch_minutes": 2986,
+      "views": 1209,
+      "watch_minutes": 2973,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.3,
       "subs_gained": 3,
@@ -84,8 +84,8 @@
     },
     {
       "date": "2026-10-03",
-      "views": 722,
-      "watch_minutes": 1370,
+      "views": 719,
+      "watch_minutes": 1371,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 19.3,
       "subs_gained": 4,
@@ -97,7 +97,7 @@
     },
     {
       "date": "2026-10-04",
-      "views": 814,
+      "views": 810,
       "watch_minutes": 2026,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.6,
@@ -292,8 +292,8 @@
     },
     {
       "date": "2026-10-19",
-      "views": 409,
-      "watch_minutes": 906,
+      "views": 403,
+      "watch_minutes": 875,
       "avg_view_duration_sec": 248,
       "avg_view_pct": 20.9,
       "subs_gained": 3,
@@ -344,10 +344,10 @@
     },
     {
       "date": "2026-10-23",
-      "views": 466,
-      "watch_minutes": 678,
-      "avg_view_duration_sec": 180,
-      "avg_view_pct": 16.7,
+      "views": 460,
+      "watch_minutes": 654,
+      "avg_view_duration_sec": 176,
+      "avg_view_pct": 16.4,
       "subs_gained": 2,
       "subs_lost": 0,
       "likes": 8,
@@ -385,7 +385,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8662
+      "views": 8661
     },
     {
       "source": "YT_SEARCH",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 531
+      "views": 530
     },
     {
       "source": "YT_CHANNEL",
@@ -409,11 +409,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 393
+      "views": 392
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 192
+      "views": 193
     },
     {
       "source": "PLAYLIST",
@@ -439,7 +439,7 @@
   "top_videos": [
     {
       "video_id": "jn6-BdDVQzI",
-      "views": 2660,
+      "views": 2659,
       "watch_hours": 83.1,
       "likes": 57
     },
