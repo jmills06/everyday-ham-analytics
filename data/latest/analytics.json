@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-29T04:00:34Z",
+  "fetched_at": "2026-10-29T16:00:39Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 18259,
+    "views": 18235,
     "engaged_views": 8556,
-    "watch_hours": 675.5,
+    "watch_hours": 674.8,
     "avg_view_pct": 22.1,
     "subs_gained": 77,
     "subs_lost": 10,
@@ -14,12 +14,12 @@
     "comments": 28,
     "shares": 45,
     "subscribed_views": 2546,
-    "not_subscribed_views": 15689
+    "not_subscribed_views": 15688
   },
   "daily": [
     {
       "date": "2026-09-29",
-      "views": 673,
+      "views": 666,
       "watch_minutes": 1246,
       "avg_view_duration_sec": 242,
       "avg_view_pct": 25.8,
@@ -45,8 +45,8 @@
     },
     {
       "date": "2026-10-01",
-      "views": 1211,
-      "watch_minutes": 2986,
+      "views": 1209,
+      "watch_minutes": 2973,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.3,
       "subs_gained": 3,
@@ -71,8 +71,8 @@
     },
     {
       "date": "2026-10-03",
-      "views": 722,
-      "watch_minutes": 1370,
+      "views": 719,
+      "watch_minutes": 1371,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 19.3,
       "subs_gained": 4,
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-10-04",
-      "views": 814,
+      "views": 810,
       "watch_minutes": 2026,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.6,
@@ -279,8 +279,8 @@
     },
     {
       "date": "2026-10-19",
-      "views": 409,
-      "watch_minutes": 906,
+      "views": 403,
+      "watch_minutes": 875,
       "avg_view_duration_sec": 248,
       "avg_view_pct": 20.9,
       "subs_gained": 3,
@@ -344,9 +344,9 @@
     },
     {
       "date": "2026-10-24",
-      "views": 491,
+      "views": 489,
       "watch_minutes": 1106,
-      "avg_view_duration_sec": 291,
+      "avg_view_duration_sec": 293,
       "avg_view_pct": 26.1,
       "subs_gained": 3,
       "subs_lost": 1,
@@ -385,7 +385,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8482
+      "views": 8481
     },
     {
       "source": "YT_SEARCH",
@@ -445,7 +445,7 @@
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1425,
+      "views": 1423,
       "watch_hours": 8.0,
       "likes": 18
     },
