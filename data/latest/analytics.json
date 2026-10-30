@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-10-30T04:00:39Z",
+  "fetched_at": "2026-10-30T16:00:44Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 17989,
+    "views": 17971,
     "engaged_views": 8450,
-    "watch_hours": 669.5,
+    "watch_hours": 668.8,
     "avg_view_pct": 22.0,
     "subs_gained": 80,
     "subs_lost": 12,
@@ -13,8 +13,8 @@
     "likes": 277,
     "comments": 28,
     "shares": 40,
-    "subscribed_views": 2512,
-    "not_subscribed_views": 15459
+    "subscribed_views": 2511,
+    "not_subscribed_views": 15456
   },
   "daily": [
     {
@@ -32,8 +32,8 @@
     },
     {
       "date": "2026-10-01",
-      "views": 1211,
-      "watch_minutes": 2986,
+      "views": 1209,
+      "watch_minutes": 2973,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.3,
       "subs_gained": 3,
@@ -58,8 +58,8 @@
     },
     {
       "date": "2026-10-03",
-      "views": 722,
-      "watch_minutes": 1370,
+      "views": 719,
+      "watch_minutes": 1371,
       "avg_view_duration_sec": 235,
       "avg_view_pct": 19.3,
       "subs_gained": 4,
@@ -71,7 +71,7 @@
     },
     {
       "date": "2026-10-04",
-      "views": 814,
+      "views": 810,
       "watch_minutes": 2026,
       "avg_view_duration_sec": 291,
       "avg_view_pct": 24.6,
@@ -266,8 +266,8 @@
     },
     {
       "date": "2026-10-19",
-      "views": 409,
-      "watch_minutes": 906,
+      "views": 403,
+      "watch_minutes": 875,
       "avg_view_duration_sec": 248,
       "avg_view_pct": 20.9,
       "subs_gained": 3,
@@ -331,7 +331,7 @@
     },
     {
       "date": "2026-10-24",
-      "views": 491,
+      "views": 489,
       "watch_minutes": 1106,
       "avg_view_duration_sec": 293,
       "avg_view_pct": 26.1,
@@ -344,7 +344,7 @@
     },
     {
       "date": "2026-10-25",
-      "views": 528,
+      "views": 527,
       "watch_minutes": 787,
       "avg_view_duration_sec": 228,
       "avg_view_pct": 21.8,
@@ -385,11 +385,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 8381
+      "views": 8380
     },
     {
       "source": "YT_SEARCH",
-      "views": 6366
+      "views": 6363
     },
     {
       "source": "RELATED_VIDEO",
@@ -487,7 +487,7 @@
     },
     {
       "term": "id-5200",
-      "views": 54
+      "views": 55
     },
     {
       "term": "wio tracker l1 pro",
@@ -581,7 +581,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 500
+      "views": 497
     },
     {
       "term": "kenwood tm-d750a",
@@ -621,7 +621,7 @@
     },
     {
       "term": "id-5200",
-      "views": 283
+      "views": 284
     },
     {
       "term": "hamvention",
