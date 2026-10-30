@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-29T11:44:04Z",
+ "fetched_at": "2026-10-30T11:43:09Z",
  "brief_date": "2026-10-26",
  "ideas": [
   {
@@ -97,33 +97,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 9.6,
-   "recent_posts": 126
+   "lift": 8.17,
+   "recent_posts": 128
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.89,
-   "recent_posts": 23
+   "lift": 1.8,
+   "recent_posts": 24
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.69,
-   "recent_posts": 64
+   "lift": 1.72,
+   "recent_posts": 65
   },
   {
    "topic": "Antennas",
-   "lift": 1.47,
-   "recent_posts": 115
+   "lift": 1.41,
+   "recent_posts": 113
   },
   {
-   "topic": "Emergency Comms and ARES",
-   "lift": 1.42,
-   "recent_posts": 22
+   "topic": "Logging and Software",
+   "lift": 1.41,
+   "recent_posts": 138
   },
   {
-   "topic": "Nets and Repeaters",
-   "lift": 1.32,
-   "recent_posts": 33
+   "topic": "Used and Vintage Gear",
+   "lift": 1.29,
+   "recent_posts": 35
   }
  ],
  "team": [
@@ -167,10 +167,6 @@
  "upcoming": [],
  "open_slots": [
   {
-   "date": "2026-10-29",
-   "kind": "youtube"
-  },
-  {
    "date": "2026-11-03",
    "kind": "record"
   },
@@ -189,6 +185,10 @@
   {
    "date": "2026-11-26",
    "kind": "youtube"
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "record"
   }
  ]
 }
