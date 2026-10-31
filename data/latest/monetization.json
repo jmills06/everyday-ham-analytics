@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-10-30T16:00:44Z",
+  "fetched_at": "2026-10-31T04:00:42Z",
   "window_days": 30,
   "totals": {
-    "revenue": 48.09,
-    "monetized_plays": 3562,
-    "rpm": 2.68,
-    "rpm_engaged": 5.69,
-    "daily_avg": 1.6,
-    "projected_monthly": 32.31,
+    "revenue": 47.32,
+    "monetized_plays": 3516,
+    "rpm": 2.67,
+    "rpm_engaged": 5.68,
+    "daily_avg": 1.58,
+    "projected_monthly": 32.61,
     "projection_basis_days": 7
   },
   "best_day": {
@@ -18,13 +18,6 @@
     "monetized_plays": 250
   },
   "daily": [
-    {
-      "date": "2026-09-30",
-      "revenue": 1.66,
-      "cpm": 12.19,
-      "playback_cpm": 23.57,
-      "monetized_plays": 120
-    },
     {
       "date": "2026-10-01",
       "revenue": 3.04,
@@ -213,36 +206,43 @@
       "cpm": 11.6,
       "playback_cpm": 23.34,
       "monetized_plays": 83
+    },
+    {
+      "date": "2026-10-28",
+      "revenue": 0.89,
+      "cpm": 9.89,
+      "playback_cpm": 21.78,
+      "monetized_plays": 74
     }
   ],
   "ad_types": [
     {
       "type": "auctionTrueviewInstream",
-      "gross_revenue": 42.0
+      "gross_revenue": 41.41
     },
     {
       "type": "auctionInstream",
-      "gross_revenue": 19.39
+      "gross_revenue": 18.99
     },
     {
       "type": "auctionBumperInstream",
-      "gross_revenue": 7.79
+      "gross_revenue": 7.71
     },
     {
       "type": "auctionDisplay",
-      "gross_revenue": 6.0
+      "gross_revenue": 6.03
     },
     {
       "type": "unknown",
-      "gross_revenue": 0.96
+      "gross_revenue": 0.97
     },
     {
       "type": "reservedInstream",
-      "gross_revenue": 0.73
+      "gross_revenue": 0.79
     },
     {
       "type": "reservedInstreamSelect",
-      "gross_revenue": 0.32
+      "gross_revenue": 0.08
     },
     {
       "type": "reservedBumperInstream",
@@ -250,34 +250,34 @@
     },
     {
       "type": "reservedDisplay",
-      "gross_revenue": 0.01
+      "gross_revenue": 0.0
     }
   ],
   "top_earning_videos": [
     {
       "video_id": "jn6-BdDVQzI",
-      "revenue": 6.46,
-      "views": 2663
+      "revenue": 6.49,
+      "views": 2666
     },
     {
       "video_id": "cGQR0gc20OY",
       "revenue": 5.46,
-      "views": 1026
+      "views": 1034
     },
     {
       "video_id": "MhjirNwRR7A",
       "revenue": 5.13,
-      "views": 1161
+      "views": 1163
     },
     {
       "video_id": "LwICFz2gx1w",
-      "revenue": 4.34,
-      "views": 1157
+      "revenue": 3.82,
+      "views": 1065
     },
     {
       "video_id": "h8PsigNNfuk",
-      "revenue": 3.68,
-      "views": 1131
+      "revenue": 3.71,
+      "views": 1132
     }
   ]
 }
