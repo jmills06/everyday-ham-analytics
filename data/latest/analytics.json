@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-02T05:00:35Z",
+  "fetched_at": "2026-11-02T17:00:44Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 20,
     "shares": 35,
     "subscribed_views": 2016,
-    "not_subscribed_views": 13581
+    "not_subscribed_views": 13579
   },
   "daily": [
     {
@@ -389,7 +389,7 @@
     },
     {
       "source": "YT_SEARCH",
-      "views": 6117
+      "views": 6116
     },
     {
       "source": "RELATED_VIDEO",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 491
+      "views": 490
     },
     {
       "source": "YT_CHANNEL",
@@ -494,12 +494,12 @@
       "views": 38
     },
     {
-      "term": "cqww 2026",
+      "term": "id-5200",
       "views": 38
     },
     {
-      "term": "id-5200",
-      "views": 38
+      "term": "cqww 2026",
+      "views": 36
     },
     {
       "term": "spooltenna",
