@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-02T10:31:46Z",
+ "fetched_at": "2026-11-02T12:44:03Z",
  "brief_date": "2026-11-02",
  "ideas": [
   {
@@ -86,33 +86,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 5.21,
+   "lift": 5.11,
    "recent_posts": 124
   },
   {
    "topic": "SSTV and Satellites",
-   "lift": 1.52,
+   "lift": 1.48,
    "recent_posts": 59
   },
   {
+   "topic": "Antennas",
+   "lift": 1.33,
+   "recent_posts": 109
+  },
+  {
    "topic": "Emergency Comms and ARES",
-   "lift": 1.38,
+   "lift": 1.31,
    "recent_posts": 22
   },
   {
-   "topic": "Antennas",
-   "lift": 1.38,
-   "recent_posts": 110
-  },
-  {
    "topic": "Used and Vintage Gear",
-   "lift": 1.33,
+   "lift": 1.29,
    "recent_posts": 35
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.3,
-   "recent_posts": 129
+   "lift": 1.27,
+   "recent_posts": 128
   }
  ],
  "team": [
