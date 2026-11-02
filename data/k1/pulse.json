@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-11-01T12:43:03Z",
- "generated_at": "2026-11-01T12:43:03Z",
- "base_2x": 0.208,
- "base_n": 1358,
+ "fetched_at": "2026-11-02T10:31:46Z",
+ "generated_at": "2026-11-02T10:30:09Z",
+ "base_2x": 0.209,
+ "base_n": 1357,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
@@ -49,7 +49,7 @@
    "competitor_share": 0.042,
    "competitor_2x": 0.19,
    "competitor_n": 59,
-   "own_share": 0.015,
+   "own_share": 0.031,
    "own_ratio": null
   },
   {
@@ -81,7 +81,7 @@
    "competitor_share": 0.094,
    "competitor_2x": 0.29,
    "competitor_n": 144,
-   "own_share": 0.077,
+   "own_share": 0.092,
    "own_ratio": 1.93
   },
   {
@@ -102,9 +102,9 @@
   },
   {
    "topic": "Budget Radios",
-   "competitor_share": 0.081,
+   "competitor_share": 0.08,
    "competitor_2x": 0.3,
-   "competitor_n": 105,
+   "competitor_n": 104,
    "own_share": 0.046,
    "own_ratio": null
   },
@@ -168,7 +168,7 @@
    "topic": "Homebrew and Kits",
    "competitor_share": 0.105,
    "competitor_2x": 0.18,
-   "competitor_n": 126,
+   "competitor_n": 125,
    "own_share": 0.092,
    "own_ratio": 0.49
   },
@@ -190,7 +190,7 @@
   },
   {
    "topic": "Hamfests and Hamvention",
-   "competitor_share": 0.069,
+   "competitor_share": 0.07,
    "competitor_2x": 0.17,
    "competitor_n": 87,
    "own_share": 0.231,
@@ -223,24 +223,24 @@
  ],
  "competitor_rising": [
   {
-   "topic": "Budget Radios",
-   "lift": 1.77
+   "topic": "Used and Vintage Gear",
+   "lift": 3.5
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.56
+   "lift": 1.59
   },
   {
-   "topic": "Used and Vintage Gear",
-   "lift": 3.33
+   "topic": "Budget Radios",
+   "lift": 2.0
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.32
+   "lift": 1.37
   },
   {
    "topic": "Interviews",
-   "lift": 1.39
+   "lift": 1.45
   }
  ]
 }
