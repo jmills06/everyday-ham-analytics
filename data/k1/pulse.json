@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-02T12:44:03Z",
- "generated_at": "2026-11-02T12:44:03Z",
+ "fetched_at": "2026-11-03T12:43:01Z",
+ "generated_at": "2026-11-03T12:43:01Z",
  "base_2x": 0.209,
  "base_n": 1361,
  "topics": [
@@ -23,8 +23,8 @@
   {
    "topic": "DX and DXpeditions",
    "competitor_share": 0.042,
-   "competitor_2x": 0.18,
-   "competitor_n": 62,
+   "competitor_2x": 0.17,
+   "competitor_n": 63,
    "own_share": 0.0,
    "own_ratio": null
   },
@@ -40,13 +40,13 @@
    "topic": "Emergency Comms and ARES",
    "competitor_share": 0.033,
    "competitor_2x": 0.24,
-   "competitor_n": 41,
+   "competitor_n": 42,
    "own_share": 0.015,
    "own_ratio": null
   },
   {
    "topic": "Digital Modes",
-   "competitor_share": 0.042,
+   "competitor_share": 0.043,
    "competitor_2x": 0.19,
    "competitor_n": 59,
    "own_share": 0.031,
@@ -78,7 +78,7 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.094,
+   "competitor_share": 0.093,
    "competitor_2x": 0.29,
    "competitor_n": 144,
    "own_share": 0.092,
@@ -118,7 +118,7 @@
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.175,
+   "competitor_share": 0.174,
    "competitor_2x": 0.21,
    "competitor_n": 237,
    "own_share": 0.185,
@@ -128,15 +128,15 @@
    "topic": "Portable Power and Batteries",
    "competitor_share": 0.046,
    "competitor_2x": 0.18,
-   "competitor_n": 72,
+   "competitor_n": 73,
    "own_share": 0.0,
    "own_ratio": null
   },
   {
    "topic": "Station Setup and Coax",
-   "competitor_share": 0.064,
+   "competitor_share": 0.063,
    "competitor_2x": 0.22,
-   "competitor_n": 69,
+   "competitor_n": 68,
    "own_share": 0.031,
    "own_ratio": null
   },
@@ -151,8 +151,8 @@
   {
    "topic": "Meshtastic and Mesh Networks",
    "competitor_share": 0.058,
-   "competitor_2x": 0.41,
-   "competitor_n": 74,
+   "competitor_2x": 0.4,
+   "competitor_n": 75,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -214,7 +214,7 @@
   },
   {
    "topic": "Interviews",
-   "competitor_share": 0.035,
+   "competitor_share": 0.036,
    "competitor_2x": 0.21,
    "competitor_n": 57,
    "own_share": 0.031,
@@ -224,23 +224,23 @@
  "competitor_rising": [
   {
    "topic": "Used and Vintage Gear",
-   "lift": 3.42
+   "lift": 3.33
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.54
+   "lift": 1.6
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.95
+   "lift": 1.64
   },
   {
    "topic": "Homebrew and Kits",
-   "lift": 1.33
+   "lift": 1.26
   },
   {
    "topic": "Interviews",
-   "lift": 1.41
+   "lift": 1.3
   }
  ]
 }
