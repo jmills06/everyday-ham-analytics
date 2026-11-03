@@ -1,15 +1,23 @@
 {
-  "fetched_at": "2026-11-02T17:00:47Z",
-  "total_downloads": 27440,
-  "episode_count": 28,
+  "fetched_at": "2026-11-03T05:00:53Z",
+  "total_downloads": 27469,
+  "episode_count": 29,
   "episodes": [
+    {
+      "id": 20063496,
+      "title": "23 – eBay's FCC Rule, Buying Used Ham Gear and Icom ID-5200A After a Month",
+      "episode_number": 23,
+      "published_at": "2026-11-05T09:00:00.000-05:00",
+      "duration_sec": 3482,
+      "plays": 2
+    },
     {
       "id": 19925344,
       "title": "Ep. 22 – World Radio League Founders: 100,000 Users, JTTY and Morse Mastery",
       "episode_number": 22,
       "published_at": "2026-10-08T08:00:00.000-04:00",
       "duration_sec": 4319,
-      "plays": 1095
+      "plays": 1111
     },
     {
       "id": 19742432,
@@ -17,7 +25,7 @@
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 1234
+      "plays": 1240
     },
     {
       "id": 19606536,
@@ -25,7 +33,7 @@
       "episode_number": 20,
       "published_at": "2026-08-06T08:00:00.000-04:00",
       "duration_sec": 3740,
-      "plays": 1177
+      "plays": 1180
     },
     {
       "id": 19466291,
@@ -89,7 +97,7 @@
       "episode_number": 14,
       "published_at": "2026-02-05T10:00:00.000-05:00",
       "duration_sec": 3045,
-      "plays": 1355
+      "plays": 1356
     },
     {
       "id": 18470399,
@@ -217,7 +225,7 @@
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
       "duration_sec": 3516,
-      "plays": 641
+      "plays": 642
     },
     {
       "id": 16408083,
