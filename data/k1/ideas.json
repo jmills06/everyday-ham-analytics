@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-04T12:43:04Z",
+ "fetched_at": "2026-11-05T12:44:03Z",
  "brief_date": "2026-11-02",
  "ideas": [
   {
@@ -86,23 +86,18 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 4.41,
-   "recent_posts": 124
+   "lift": 4.17,
+   "recent_posts": 127
   },
   {
-   "topic": "Logging and Software",
-   "lift": 1.28,
-   "recent_posts": 132
+   "topic": "Getting Licensed and New Hams",
+   "lift": 1.31,
+   "recent_posts": 80
   },
   {
    "topic": "SSTV and Satellites",
    "lift": 1.24,
-   "recent_posts": 54
-  },
-  {
-   "topic": "Used and Vintage Gear",
-   "lift": 1.24,
-   "recent_posts": 33
+   "recent_posts": 53
   },
   {
    "topic": "Antennas",
@@ -113,6 +108,11 @@
    "topic": "Emergency Comms and ARES",
    "lift": 1.23,
    "recent_posts": 20
+  },
+  {
+   "topic": "Logging and Software",
+   "lift": 1.22,
+   "recent_posts": 128
   }
  ],
  "team": [
