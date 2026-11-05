@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T05:00:38Z",
+  "fetched_at": "2026-11-05T17:00:36Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 24,
     "shares": 37,
     "subscribed_views": 2129,
-    "not_subscribed_views": 13696
+    "not_subscribed_views": 13687
   },
   "daily": [
     {
@@ -385,7 +385,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 6443
+      "views": 6440
     },
     {
       "source": "YT_SEARCH",
@@ -393,7 +393,7 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 884
+      "views": 882
     },
     {
       "source": "EXT_URL",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 507
+      "views": 504
     },
     {
       "source": "YT_CHANNEL",
@@ -409,11 +409,11 @@
     },
     {
       "source": "SHORTS",
-      "views": 283
+      "views": 281
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 171
+      "views": 172
     },
     {
       "source": "PLAYLIST",
@@ -487,7 +487,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 48
+      "views": 49
     },
     {
       "term": "cq ww ssb 2026",
@@ -503,7 +503,7 @@
     },
     {
       "term": "cqww 2026",
-      "views": 36
+      "views": 37
     },
     {
       "term": "xiegu x6100",
@@ -557,9 +557,9 @@
       "views": 5
     },
     {
-      "video_id": "z8m7VT7RCE0",
-      "title": "Step-By-Step Guide to Learning CW Morse Code | Specific steps, tips, and our journey!",
-      "views": 5
+      "video_id": "2X77dP5LSRk",
+      "title": "LICW Quick-Start Guide",
+      "views": 4
     }
   ],
   "search_terms_365": [
@@ -577,7 +577,7 @@
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 678
+      "views": 679
     },
     {
       "term": "kenwood tm-d750a",
@@ -585,7 +585,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 490
+      "views": 491
     },
     {
       "term": "ftdx101mp",
@@ -660,8 +660,8 @@
       "views": 210
     },
     {
-      "term": "xiegu g7250",
-      "views": 201
+      "term": "yaesu ftdx101mp",
+      "views": 205
     }
   ],
   "geography_30": [
