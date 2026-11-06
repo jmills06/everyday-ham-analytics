@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-11-05T17:00:38Z",
-  "total_downloads": 27699,
+  "fetched_at": "2026-11-06T05:00:38Z",
+  "total_downloads": 27791,
   "episode_count": 29,
   "episodes": [
     {
       "id": 20063496,
-      "title": "23 – eBay's FCC Rule, Buying Used Ham Gear and Icom ID-5200A After a Month",
+      "title": "Ep. 23 – eBay's FCC Rule, Buying Used Ham Gear and Icom ID-5200A After a Month",
       "episode_number": 23,
       "published_at": "2026-11-05T09:00:00.000-05:00",
       "duration_sec": 3482,
-      "plays": 88
+      "plays": 154
     },
     {
       "id": 19925344,
@@ -17,7 +17,7 @@
       "episode_number": 22,
       "published_at": "2026-10-08T08:00:00.000-04:00",
       "duration_sec": 4319,
-      "plays": 1157
+      "plays": 1164
     },
     {
       "id": 19742432,
@@ -25,7 +25,7 @@
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 1247
+      "plays": 1250
     },
     {
       "id": 19606536,
@@ -33,7 +33,7 @@
       "episode_number": 20,
       "published_at": "2026-08-06T08:00:00.000-04:00",
       "duration_sec": 3740,
-      "plays": 1186
+      "plays": 1188
     },
     {
       "id": 19466291,
@@ -41,7 +41,7 @@
       "episode_number": 19,
       "published_at": "2026-07-09T08:00:00.000-04:00",
       "duration_sec": 3912,
-      "plays": 1415
+      "plays": 1416
     },
     {
       "id": 19328548,
@@ -49,7 +49,7 @@
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
       "duration_sec": 3475,
-      "plays": 1599
+      "plays": 1602
     },
     {
       "id": 19219333,
@@ -57,7 +57,7 @@
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
       "duration_sec": 3097,
-      "plays": 1273
+      "plays": 1274
     },
     {
       "id": 19138519,
@@ -65,7 +65,7 @@
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
       "duration_sec": 3587,
-      "plays": 1101
+      "plays": 1102
     },
     {
       "id": 18980854,
@@ -81,7 +81,7 @@
       "episode_number": null,
       "published_at": "2026-03-26T10:00:00.000-04:00",
       "duration_sec": 2461,
-      "plays": 947
+      "plays": 949
     },
     {
       "id": 18794950,
@@ -105,7 +105,7 @@
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
       "duration_sec": 3568,
-      "plays": 1430
+      "plays": 1431
     },
     {
       "id": 18296133,
@@ -193,7 +193,7 @@
       "episode_number": null,
       "published_at": "2025-05-20T15:00:00.000-04:00",
       "duration_sec": 3063,
-      "plays": 623
+      "plays": 624
     },
     {
       "id": 17122535,
@@ -209,7 +209,7 @@
       "episode_number": 4,
       "published_at": "2025-04-03T20:00:00.000-04:00",
       "duration_sec": 3787,
-      "plays": 739
+      "plays": 740
     },
     {
       "id": 16745714,
@@ -217,7 +217,7 @@
       "episode_number": 3,
       "published_at": "2025-03-06T14:00:00.000-05:00",
       "duration_sec": 3825,
-      "plays": 628
+      "plays": 629
     },
     {
       "id": 16574585,
@@ -225,7 +225,7 @@
       "episode_number": 2,
       "published_at": "2025-02-06T11:00:00.000-05:00",
       "duration_sec": 3516,
-      "plays": 648
+      "plays": 649
     },
     {
       "id": 16408083,
@@ -233,7 +233,7 @@
       "episode_number": 1,
       "published_at": "2025-01-09T11:00:00.000-05:00",
       "duration_sec": 3518,
-      "plays": 684
+      "plays": 685
     }
   ]
 }
