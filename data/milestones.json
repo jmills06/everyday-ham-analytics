@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T17:00:45Z",
+  "updated_at": "2026-11-07T05:00:43Z",
   "display_hours": 36,
   "events": [
     {
@@ -13,6 +13,12 @@
       "value": 25000,
       "reached_at": "2026-09-29T16:00:46Z",
       "actual_value": 25007
+    },
+    {
+      "metric": "Subscribers",
+      "value": 2500,
+      "reached_at": "2026-11-07T05:00:43Z",
+      "actual_value": 2500
     }
   ]
 }
