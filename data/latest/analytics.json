@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-07T05:00:34Z",
+  "fetched_at": "2026-11-07T17:00:36Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 211,
     "comments": 22,
     "shares": 34,
-    "subscribed_views": 1913,
-    "not_subscribed_views": 13066
+    "subscribed_views": 1911,
+    "not_subscribed_views": 13051
   },
   "daily": [
     {
@@ -385,11 +385,11 @@
   "traffic_sources": [
     {
       "source": "YT_SEARCH",
-      "views": 6363
+      "views": 6357
     },
     {
       "source": "SUBSCRIBER",
-      "views": 5647
+      "views": 5639
     },
     {
       "source": "RELATED_VIDEO",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 477
+      "views": 476
     },
     {
       "source": "YT_CHANNEL",
@@ -413,7 +413,7 @@
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 175
+      "views": 173
     },
     {
       "source": "PLAYLIST",
