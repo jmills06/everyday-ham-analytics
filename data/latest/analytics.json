@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-08T05:00:33Z",
+  "fetched_at": "2026-11-08T17:00:35Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -13,8 +13,8 @@
     "likes": 256,
     "comments": 31,
     "shares": 43,
-    "subscribed_views": 2167,
-    "not_subscribed_views": 15351
+    "subscribed_views": 2164,
+    "not_subscribed_views": 15346
   },
   "daily": [
     {
@@ -385,7 +385,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 7650
+      "views": 7648
     },
     {
       "source": "YT_SEARCH",
@@ -393,7 +393,7 @@
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 1032
+      "views": 1030
     },
     {
       "source": "EXT_URL",
@@ -401,11 +401,11 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 533
+      "views": 531
     },
     {
       "source": "YT_CHANNEL",
-      "views": 378
+      "views": 376
     },
     {
       "source": "SHORTS",
@@ -769,7 +769,7 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 134030
+      "views": 134015
     },
     {
       "country": "GB",
