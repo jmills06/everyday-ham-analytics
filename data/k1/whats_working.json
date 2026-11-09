@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-09T10:32:09Z",
- "generated_at": "2026-11-09T10:30:08Z",
+ "fetched_at": "2026-11-09T12:42:59Z",
+ "generated_at": "2026-11-09T12:42:59Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -18,16 +18,16 @@
      "share_above": 0.8
     },
     {
-     "topic": "HF Radios",
-     "n": 6,
-     "median_ratio": 1.93,
-     "share_above": 0.83
-    },
-    {
      "topic": "Hamfests and Hamvention",
      "n": 14,
      "median_ratio": 1.51,
      "share_above": 0.64
+    },
+    {
+     "topic": "HF Radios",
+     "n": 7,
+     "median_ratio": 1.48,
+     "share_above": 0.71
     },
     {
      "topic": "Antennas",
@@ -57,8 +57,8 @@
    "titles": [
     {
      "feature": "brand=yes",
-     "n": 27,
-     "median_ratio": 2.19
+     "n": 28,
+     "median_ratio": 2.04
     },
     {
      "feature": "hamvention=yes",
@@ -67,13 +67,13 @@
     },
     {
      "feature": "number_or_price=yes",
-     "n": 40,
-     "median_ratio": 1.18
+     "n": 41,
+     "median_ratio": 1.13
     },
     {
      "feature": "question=no",
-     "n": 40,
-     "median_ratio": 1.09
+     "n": 41,
+     "median_ratio": 1.05
     },
     {
      "feature": "all_caps_word=no",
@@ -82,13 +82,13 @@
     },
     {
      "feature": "hamvention=no",
-     "n": 49,
-     "median_ratio": 0.82
+     "n": 50,
+     "median_ratio": 0.84
     },
     {
      "feature": "all_caps_word=yes",
-     "n": 13,
-     "median_ratio": 0.7
+     "n": 14,
+     "median_ratio": 0.78
     },
     {
      "feature": "question=yes",
@@ -158,7 +158,7 @@
      "ratio": 0.17
     }
    ],
-   "uploads": 56
+   "uploads": 57
   },
   "episode": {
    "topics": [

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-09T10:32:09Z",
+ "fetched_at": "2026-11-09T12:42:59Z",
  "brief_date": "2026-11-09",
  "ideas": [
   {
@@ -89,33 +89,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 3.59,
-   "recent_posts": 125
+   "lift": 3.33,
+   "recent_posts": 124
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "lift": 1.38,
+   "lift": 1.34,
    "recent_posts": 78
   },
   {
-   "topic": "Budget Radios",
-   "lift": 1.31,
-   "recent_posts": 20
-  },
-  {
-   "topic": "Station Setup and Coax",
-   "lift": 1.29,
-   "recent_posts": 37
-  },
-  {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.28,
+   "lift": 1.26,
    "recent_posts": 60
   },
   {
-   "topic": "Antennas",
+   "topic": "Station Setup and Coax",
+   "lift": 1.25,
+   "recent_posts": 37
+  },
+  {
+   "topic": "Budget Radios",
    "lift": 1.23,
-   "recent_posts": 103
+   "recent_posts": 20
+  },
+  {
+   "topic": "Portable Power and Batteries",
+   "lift": 1.21,
+   "recent_posts": 21
   }
  ],
  "team": [
