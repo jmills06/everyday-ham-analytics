@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-08T12:42:59Z",
- "generated_at": "2026-11-08T12:42:59Z",
+ "fetched_at": "2026-11-09T10:32:09Z",
+ "generated_at": "2026-11-09T10:30:08Z",
  "base_2x": 0.211,
  "base_n": 1357,
  "topics": [
@@ -22,7 +22,7 @@
   },
   {
    "topic": "DX and DXpeditions",
-   "competitor_share": 0.042,
+   "competitor_share": 0.043,
    "competitor_2x": 0.17,
    "competitor_n": 63,
    "own_share": 0.0,
@@ -223,16 +223,20 @@
  ],
  "competitor_rising": [
   {
-   "topic": "Logging and Software",
-   "lift": 1.89
+   "topic": "Station Setup and Coax",
+   "lift": 1.26
   },
   {
-   "topic": "Station Setup and Coax",
-   "lift": 1.2
+   "topic": "Logging and Software",
+   "lift": 1.97
   },
   {
    "topic": "POTA/SOTA and Parks",
-   "lift": 1.54
+   "lift": 1.44
+  },
+  {
+   "topic": "Interviews",
+   "lift": 1.37
   }
  ]
 }

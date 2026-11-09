@@ -1,113 +1,121 @@
 {
- "fetched_at": "2026-11-08T12:42:59Z",
- "brief_date": "2026-11-02",
+ "fetched_at": "2026-11-09T10:32:09Z",
+ "brief_date": "2026-11-09",
  "ideas": [
   {
    "rank": 1,
-   "title": "Picking a First DMR Handheld: AnyTone, Ailunce and Alinco Side by Side",
+   "title": "Icom's New Amateur Transceiver FCC Filing and the IC-7110: What We Know",
    "format": "youtube",
    "topics": [
-    "VHF/UHF and Handhelds",
-    "Budget Radios",
-    "Nets and Repeaters"
+    "New Radio Announcements",
+    "HF Radios",
+    "Ham Radio News and FCC"
    ],
-   "why_now": "A listener-style question about which DMR radio to buy is circulating this week, and handhelds and repeater content are among the strongest performers for us and for other channels.",
-   "angle": "Fits the OPEN YouTube slot on 2026-11-12. Compare the three brands on price, codeplug programming, talkgroup setup and real check-ins on local Michigan repeaters. Brand names and prices go in the title, with no question mark, because those patterns test best on this channel."
+   "why_now": "Icom filed an FCC application for an amateur transceiver on November 6. The IC-7110 (the former X-026) was just revealed overseas, and US hams want to know when it arrives. A filing is not a product yet, so this is a careful look at what the paperwork shows.",
+   "angle": "Fits the OPEN 2026-11-12 YouTube slot. This is a new angle on the earlier Icom filing pitches. Those covered VHF and UHF digital transceivers, which may be commercial gear. This filing is labeled amateur. Walk through the filing, compare it to what we saw of the X-026 at Hamvention, and be clear about what is confirmed and what is guesswork. Cut a Short from the filing reveal."
   },
   {
    "rank": 2,
-   "title": "Open Firmware on HF Rigs: Xiegu X6100 and sBitx V3 Get Hacker Upgrades",
+   "title": "The FCC Test Lab Ruling: What It Means for Your Next Xiegu, Quansheng or Wouxun",
+   "format": "youtube",
+   "topics": [
+    "Ham Radio News and FCC",
+    "Budget Radios",
+    "HF Radios"
+   ],
+   "why_now": "The FCC voted to end certification through non-reciprocal foreign test labs, and radio listings without a valid FCC ID are now banned at the point of sale. Budget radio buyers want to know whether the imports they like will keep coming, especially heading into holiday shopping.",
+   "angle": "Fits the OPEN 2026-11-19 YouTube slot, before Black Friday. The earlier eBay pitch and Ep. 23 were about selling used gear on eBay. This one is about certification: how radios get approved, what happens to brands that rely on overseas labs, and what to check before you buy. Use our own Xiegu G7250 as the example. Also note the recent Wouxun and Retevis filings as proof that new FCC IDs are still being granted."
+  },
+  {
+   "rank": 3,
+   "title": "RADE vs SSB On the Air: FreeDV Digital Voice in Half the Bandwidth",
    "format": "podcast",
    "topics": [
-    "HF Radios",
-    "Homebrew and Kits",
-    "Logging and Software"
+    "Digital Modes",
+    "HF Radios"
    ],
-   "why_now": "New open-source firmware for the Xiegu X6100 just added birdie calibration, sBitx owners are writing their own GPS time and grid tools, and ham radio is showing up at hacker conferences this fall.",
-   "angle": "Record 2026-11-03, release in the OPEN podcast slot 2026-11-05. A conversation episode on why tinkering with radio firmware is the modern version of homebrew: what changes on the X6100, what new sBitx users are building, and how a newcomer can try it without bricking a rig. New angle vs our earlier native FT8 on the X6100 video: this is about community firmware, not the factory feature."
+   "why_now": "RADE is the biggest HF voice story right now. It fits voice into about 1.5 kHz, works down to -2 dB SNR, has FlexRadio integration shipping, and v2 in testing aims for under 1 kHz.",
+   "angle": "Record at the OPEN 2026-12-01 session for release in the OPEN 2026-12-03 podcast slot. The earlier pitch bundled RADE with JTTY on budget radios and phones. This is the hosts' dedicated hands-on episode instead: what RADE is, a live on-air A/B of RADE and SSB audio, and plain talk about whether everyday hams should try it this winter. The title is a statement, not the host's question, because question titles underperform. Clip the A/B audio into a Short."
   },
   {
    "rank": 4,
-   "title": "Building a Club Meshtastic Network in Michigan: Nodes, Range and What Worked",
-   "format": "youtube",
+   "title": "CQ WW CW Weekend From the Shack: Fresh DX on the FTdx101MP #cqww #contest",
+   "format": "short",
    "topics": [
-    "Meshtastic and Mesh Networks",
-    "Clubs",
-    "Emergency Comms and ARES"
+    "Field Day and Contests",
+    "CW/Morse",
+    "DX and DXpeditions"
    ],
-   "why_now": "Off-grid and mesh talk is everywhere this fall, emergency comms discussion is rising, and mesh videos are breaking out at a high rate on other channels while we have barely touched it.",
-   "angle": "Fits the OPEN YouTube slot on 2026-11-19. Set up a few nodes with club members, test range across town, and show how mesh complements (not replaces) ham radio. Keep it hands-on and beginner friendly, with node prices in the title."
+   "why_now": "CQ World Wide CW runs November 28 and 29. The 2026 rules require a human to start frequency changes, station calls and QSO logging, and that rule applies to assisted entries too.",
+   "angle": "A Short shot live during contest weekend, shown in the days after Thanksgiving. It doesn't use a YouTube slot. Repeat last year's winning format: the band full of DX, a few quick contacts, and one line on the new human-in-the-loop rule. Contest content is weak as edited video for this channel, so keep it short-form only."
   },
   {
    "rank": 5,
-   "title": "The New POTA Website Walkthrough With Mike W8MSC: Spotting, Logs and New Features",
+   "title": "POTACAT on an Icom IC-7300: Hunting Parks From Home With a Free App",
    "format": "youtube",
    "topics": [
     "Logging and Software",
+    "HF Radios",
     "POTA/SOTA and Parks"
    ],
-   "why_now": "The new POTA site has been adding features steadily based on user feedback, and a clear tour shows activators and hunters what changed and that the organization is listening.",
-   "angle": "Fits the OPEN YouTube slot on 2026-12-10. Frame it as a software walkthrough first (screen recording plus Mike explaining the why behind each feature), not a park trip. Exception note: POTA videos underperform here, but free-app and logging walkthroughs are breaking out elsewhere, so lead with the software."
+   "why_now": "A free app for remote park hunting is breaking out on another channel right now. Winter is when Michigan hams hunt parks from the shack instead of activating.",
+   "angle": "Fits the OPEN 2026-12-10 YouTube slot. It's framed as software plus a branded HF rig, not a POTA trip, because park content underperforms here. Set it up on our shack IC-7300, hunt a handful of parks, and show what it does compared with PoLo and the POTA site. This is a new tool, separate from the QRV app, HTCommander and POTA website pitches."
   },
   {
    "rank": 6,
-   "title": "Radioddity HF-010 vs SpoolTenna Ultra: Vertical or EFHW for Portable 20m",
+   "title": "Free Browser Decoders for SSTV, APRS and Weather Fax With an RTL-SDR",
    "format": "youtube",
    "topics": [
-    "Antennas",
-    "HF Radios"
+    "SDR and Scanning",
+    "SSTV and Satellites",
+    "Digital Modes"
    ],
-   "why_now": "Antenna talk is rising in the community, including a popular question about whether a 20m vertical or an end-fed half wave is the better first portable antenna, and we already own both.",
-   "angle": "Fits the OPEN YouTube slot on 2026-12-17. Same location, same radio, same hour: swap antennas and compare FT8 reports and setup time. New angle vs our earlier single-product reviews: a direct head to head that answers the vertical vs EFHW question."
+   "why_now": "SDR talk is the fastest rising discussion topic. New free decoders now run entirely in a web browser, so you can try SSTV, APRS, RTTY and weather fax with nothing to install.",
+   "angle": "Fits the OPEN 2026-12-17 YouTube slot, a good low-cost holiday project. This is a new angle on the iPad and Android FT8 pitch: browser-only tools and several modes. Plug in a dongle, open a page, and decode real signals. Include an ISS pass if one lines up, and cut that into a Short."
   },
   {
    "rank": 7,
-   "title": "Name That Signal: What Is This on the Waterfall?",
-   "format": "short",
+   "title": "New Baofeng or Quansheng Under the Tree: Your First Week on the Local Repeater",
+   "format": "youtube",
    "topics": [
-    "SDR and Scanning",
-    "Digital Modes"
+    "Getting Licensed and New Hams",
+    "VHF/UHF and Handhelds",
+    "Nets and Repeaters"
    ],
-   "why_now": "SDR and scanning is by far the fastest rising discussion topic right now, and a weekly ham challenge this month is all about finding and identifying an unknown signal.",
-   "angle": "A recurring Shorts series posted between the long-form slots (start after the 2026-11-12 video). Show a waterfall clip, pause, then reveal the mode and how we identified it. New angle vs earlier SDR pitches: no setup tutorial, just quick signal identification that works as a repeatable format."
-  },
-  {
-   "rank": 8,
-   "title": "Icom Keeps Filing: Two More UHF Digital Radios Hit the FCC",
-   "format": "short",
-   "topics": [
-    "New Radio Announcements",
-    "VHF/UHF and Handhelds"
-   ],
-   "why_now": "Icom filed two additional UHF digital transceivers on 2026-10-28 and 2026-10-30, after the batch we already discussed, plus new Wouxun GMRS filings.",
-   "angle": "Quick Short posted the week of the 2026-11-05 podcast, outside the long-form slot plan. New angle vs the earlier filing pitches: the update on the latest filings and what a run of this many digital transceivers could mean, with a clear note that a filing is not a product yet. Tease it in the 2026-12-03 Radios of the Year episode."
+   "why_now": "Lots of new handhelds get unwrapped at Christmas, and new ham discussion is already climbing. This is a practical first-week guide for when the box gets opened.",
+   "angle": "Fits the OPEN 2026-12-24 YouTube slot, or 2026-12-31 if the gift guide takes the earlier dates. Cover programming a Michigan repeater, checking into a first net, and the beginner mistakes to skip. This is a how-to, unlike the earlier 'Keeping New Hams on the Air' discussion pitch and the DMR handheld comparison."
   }
  ],
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 3.61,
-   "recent_posts": 126
+   "lift": 3.59,
+   "recent_posts": 125
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "lift": 1.41,
-   "recent_posts": 81
-  },
-  {
-   "topic": "SSTV and Satellites",
-   "lift": 1.23,
-   "recent_posts": 54
+   "lift": 1.38,
+   "recent_posts": 78
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.23,
+   "lift": 1.31,
    "recent_posts": 20
   },
   {
+   "topic": "Station Setup and Coax",
+   "lift": 1.29,
+   "recent_posts": 37
+  },
+  {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.21,
-   "recent_posts": 59
+   "lift": 1.28,
+   "recent_posts": 60
+  },
+  {
+   "topic": "Antennas",
+   "lift": 1.23,
+   "recent_posts": 103
   }
  ],
  "team": [
