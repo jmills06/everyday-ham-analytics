@@ -147,6 +147,7 @@
 {"date": "2026-11-01", "views": 839, "watch_minutes": 1125, "avg_view_duration_sec": 180, "avg_view_pct": 21.7, "subs_gained": 3, "subs_lost": 3, "likes": 8, "comments": 2, "shares": 0, "engaged_views": 369}
 {"date": "2026-11-02", "views": 661, "watch_minutes": 882, "avg_view_duration_sec": 169, "avg_view_pct": 18.6, "subs_gained": 2, "subs_lost": 0, "likes": 7, "comments": 0, "shares": 4, "engaged_views": 309}
 {"date": "2026-11-03", "views": 504, "watch_minutes": 794, "avg_view_duration_sec": 199, "avg_view_pct": 20.7, "subs_gained": 2, "subs_lost": 2, "likes": 7, "comments": 0, "shares": 0, "engaged_views": 236}
-{"date": "2026-11-04", "views": 530, "watch_minutes": 1625, "avg_view_duration_sec": 367, "avg_view_pct": 35.6, "subs_gained": 3, "subs_lost": 2, "likes": 13, "comments": 4, "shares": 1, "engaged_views": 272}
-{"date": "2026-11-05", "views": 3686, "watch_minutes": 10256, "avg_view_duration_sec": 349, "avg_view_pct": 28.2, "subs_gained": 35, "subs_lost": 3, "likes": 86, "comments": 12, "shares": 10, "engaged_views": 1746}
+{"date": "2026-11-04", "views": 530, "watch_minutes": 1625, "avg_view_duration_sec": 356, "avg_view_pct": 35.3, "subs_gained": 3, "subs_lost": 2, "likes": 13, "comments": 4, "shares": 1, "engaged_views": 272}
+{"date": "2026-11-05", "views": 3669, "watch_minutes": 10222, "avg_view_duration_sec": 350, "avg_view_pct": 28.3, "subs_gained": 35, "subs_lost": 3, "likes": 86, "comments": 12, "shares": 10, "engaged_views": 1739}
 {"date": "2026-11-06", "views": 3031, "watch_minutes": 8089, "avg_view_duration_sec": 325, "avg_view_pct": 22.5, "subs_gained": 20, "subs_lost": 2, "likes": 68, "comments": 4, "shares": 7, "engaged_views": 1482}
+{"date": "2026-11-07", "views": 3544, "watch_minutes": 6983, "avg_view_duration_sec": 232, "avg_view_pct": 20.9, "subs_gained": 18, "subs_lost": 0, "likes": 47, "comments": 4, "shares": 5, "engaged_views": 1785}
