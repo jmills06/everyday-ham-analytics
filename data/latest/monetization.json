@@ -1,30 +1,23 @@
 {
-  "fetched_at": "2026-11-10T17:00:42Z",
+  "fetched_at": "2026-11-11T05:00:38Z",
   "window_days": 30,
   "totals": {
-    "revenue": 55.73,
-    "monetized_plays": 4523,
-    "rpm": 2.42,
-    "rpm_engaged": 5.04,
-    "daily_avg": 1.86,
-    "projected_monthly": 129.98,
+    "revenue": 72.07,
+    "monetized_plays": 6569,
+    "rpm": 2.2,
+    "rpm_engaged": 4.46,
+    "daily_avg": 2.4,
+    "projected_monthly": 200.03,
     "projection_basis_days": 7
   },
   "best_day": {
-    "date": "2026-11-05",
-    "revenue": 9.52,
-    "cpm": 8.71,
-    "playback_cpm": 17.54,
-    "monetized_plays": 834
+    "date": "2026-11-08",
+    "revenue": 17.76,
+    "cpm": 9.01,
+    "playback_cpm": 13.86,
+    "monetized_plays": 2144
   },
   "daily": [
-    {
-      "date": "2026-10-11",
-      "revenue": 1.42,
-      "cpm": 11.14,
-      "playback_cpm": 22.16,
-      "monetized_plays": 98
-    },
     {
       "date": "2026-10-12",
       "revenue": 1.14,
@@ -175,8 +168,8 @@
     {
       "date": "2026-11-02",
       "revenue": 1.35,
-      "cpm": 11.46,
-      "playback_cpm": 17.87,
+      "cpm": 11.43,
+      "playback_cpm": 17.83,
       "monetized_plays": 127
     },
     {
@@ -213,71 +206,78 @@
       "cpm": 7.29,
       "playback_cpm": 18.77,
       "monetized_plays": 499
+    },
+    {
+      "date": "2026-11-08",
+      "revenue": 17.76,
+      "cpm": 9.01,
+      "playback_cpm": 13.86,
+      "monetized_plays": 2144
     }
   ],
   "ad_types": [
     {
       "type": "auctionTrueviewInstream",
-      "gross_revenue": 54.89
+      "gross_revenue": 72.47
     },
     {
       "type": "auctionInstream",
-      "gross_revenue": 17.45
+      "gross_revenue": 21.09
     },
     {
       "type": "auctionBumperInstream",
-      "gross_revenue": 8.36
+      "gross_revenue": 11.57
     },
     {
       "type": "auctionDisplay",
-      "gross_revenue": 6.29
+      "gross_revenue": 9.12
     },
     {
       "type": "unknown",
-      "gross_revenue": 1.06
+      "gross_revenue": 1.04
     },
     {
       "type": "reservedInstream",
-      "gross_revenue": 0.75
+      "gross_revenue": 0.86
     },
     {
       "type": "reservedInstreamSelect",
-      "gross_revenue": 0.21
+      "gross_revenue": 0.32
     },
     {
       "type": "reservedDisplay",
-      "gross_revenue": 0.03
+      "gross_revenue": 0.08
     },
     {
       "type": "reservedBumperInstream",
-      "gross_revenue": 0.0
+      "gross_revenue": 0.05
     }
   ],
   "top_earning_videos": [
     {
+      "video_id": "kuN7OPls0W0",
+      "revenue": 13.64,
+      "views": 9010
+    },
+    {
       "video_id": "o3IvIljMYcA",
-      "revenue": 11.56,
-      "views": 4372
+      "revenue": 11.87,
+      "views": 4515
     },
     {
       "video_id": "JV4nTSKaWgY",
-      "revenue": 7.34,
-      "views": 2759
+      "revenue": 10.12,
+      "views": 3366
     },
     {
       "video_id": "cGQR0gc20OY",
-      "revenue": 5.1,
-      "views": 976
+      "revenue": 4.92,
+      "views": 960
     },
     {
       "video_id": "UtSuCqs9p74",
-      "revenue": 2.3,
-      "views": 352
-    },
-    {
-      "video_id": "JTFErg-neu8",
-      "revenue": 2.13,
-      "views": 614
+      "revenue": 2.27,
+      "views": 351
     }
   ]
 }
