@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-11-11T05:00:38Z",
+  "fetched_at": "2026-11-11T17:00:34Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 32791,
+    "views": 32783,
     "engaged_views": 16164,
-    "watch_hours": 1028.8,
+    "watch_hours": 1028.3,
     "avg_view_pct": 26.0,
     "subs_gained": 163,
     "subs_lost": 26,
@@ -14,7 +14,7 @@
     "comments": 53,
     "shares": 76,
     "subscribed_views": 3415,
-    "not_subscribed_views": 29374
+    "not_subscribed_views": 29368
   },
   "daily": [
     {
@@ -110,8 +110,8 @@
     },
     {
       "date": "2026-10-19",
-      "views": 409,
-      "watch_minutes": 906,
+      "views": 403,
+      "watch_minutes": 875,
       "avg_view_duration_sec": 248,
       "avg_view_pct": 20.9,
       "subs_gained": 3,
@@ -175,7 +175,7 @@
     },
     {
       "date": "2026-10-24",
-      "views": 491,
+      "views": 489,
       "watch_minutes": 1106,
       "avg_view_duration_sec": 293,
       "avg_view_pct": 26.1,
@@ -385,11 +385,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 19434
+      "views": 19430
     },
     {
       "source": "YT_SEARCH",
-      "views": 7367
+      "views": 7368
     },
     {
       "source": "RELATED_VIDEO",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1029
+      "views": 1026
     },
     {
       "source": "EXT_URL",
@@ -445,14 +445,14 @@
     },
     {
       "video_id": "o3IvIljMYcA",
-      "views": 4515,
+      "views": 4516,
       "watch_hours": 178.2,
       "likes": 97
     },
     {
       "video_id": "JV4nTSKaWgY",
       "views": 3366,
-      "watch_hours": 190.6,
+      "watch_hours": 191.5,
       "likes": 77
     },
     {
