@@ -135,7 +135,7 @@
 {"date": "2026-10-20", "revenue": 1.89, "cpm": 14.77, "playback_cpm": 31.86, "monetized_plays": 102}
 {"date": "2026-10-21", "revenue": 0.82, "cpm": 8.16, "playback_cpm": 13.03, "monetized_plays": 92}
 {"date": "2026-10-22", "revenue": 1.11, "cpm": 9.76, "playback_cpm": 20.09, "monetized_plays": 86}
-{"date": "2026-10-23", "revenue": 0.8, "cpm": 8.6, "playback_cpm": 15.77, "monetized_plays": 84}
+{"date": "2026-10-23", "revenue": 0.79, "cpm": 8.6, "playback_cpm": 15.77, "monetized_plays": 84}
 {"date": "2026-10-24", "revenue": 1.13, "cpm": 11.19, "playback_cpm": 19.52, "monetized_plays": 94}
 {"date": "2026-10-25", "revenue": 0.84, "cpm": 13.38, "playback_cpm": 19.97, "monetized_plays": 65}
 {"date": "2026-10-26", "revenue": 1.62, "cpm": 11.72, "playback_cpm": 26.36, "monetized_plays": 104}
@@ -152,3 +152,4 @@
 {"date": "2026-11-06", "revenue": 8.03, "cpm": 8.43, "playback_cpm": 18.53, "monetized_plays": 675}
 {"date": "2026-11-07", "revenue": 5.95, "cpm": 7.29, "playback_cpm": 18.77, "monetized_plays": 499}
 {"date": "2026-11-08", "revenue": 17.76, "cpm": 9.01, "playback_cpm": 13.86, "monetized_plays": 2144}
+{"date": "2026-11-09", "revenue": 7.01, "cpm": 8.96, "playback_cpm": 14.81, "monetized_plays": 785}
