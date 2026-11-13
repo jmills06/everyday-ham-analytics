@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-11-13T05:00:32Z",
+  "fetched_at": "2026-11-13T17:00:41Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 36749,
-    "engaged_views": 18051,
-    "watch_hours": 1111.1,
+    "views": 36741,
+    "engaged_views": 18044,
+    "watch_hours": 1110.5,
     "avg_view_pct": 26.2,
     "subs_gained": 173,
     "subs_lost": 27,
@@ -14,7 +14,7 @@
     "comments": 57,
     "shares": 88,
     "subscribed_views": 3545,
-    "not_subscribed_views": 33196
+    "not_subscribed_views": 33202
   },
   "daily": [
     {
@@ -84,8 +84,8 @@
     },
     {
       "date": "2026-10-19",
-      "views": 409,
-      "watch_minutes": 906,
+      "views": 403,
+      "watch_minutes": 875,
       "avg_view_duration_sec": 248,
       "avg_view_pct": 20.9,
       "subs_gained": 3,
@@ -93,7 +93,7 @@
       "likes": 4,
       "comments": 0,
       "shares": 1,
-      "engaged_views": 216
+      "engaged_views": 210
     },
     {
       "date": "2026-10-20",
@@ -149,7 +149,7 @@
     },
     {
       "date": "2026-10-24",
-      "views": 491,
+      "views": 489,
       "watch_minutes": 1106,
       "avg_view_duration_sec": 293,
       "avg_view_pct": 26.1,
@@ -158,7 +158,7 @@
       "likes": 3,
       "comments": 1,
       "shares": 1,
-      "engaged_views": 226
+      "engaged_views": 225
     },
     {
       "date": "2026-10-25",
@@ -385,11 +385,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 22343
+      "views": 22347
     },
     {
       "source": "YT_SEARCH",
-      "views": 7749
+      "views": 7748
     },
     {
       "source": "RELATED_VIDEO",
@@ -401,7 +401,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1216
+      "views": 1219
     },
     {
       "source": "EXT_URL",
