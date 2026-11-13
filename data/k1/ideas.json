@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-12T12:43:01Z",
+ "fetched_at": "2026-11-13T12:43:03Z",
  "brief_date": "2026-11-09",
  "ideas": [
   {
@@ -89,33 +89,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 3.16,
-   "recent_posts": 124
-  },
-  {
-   "topic": "Getting Licensed and New Hams",
-   "lift": 1.31,
-   "recent_posts": 77
+   "lift": 3.03,
+   "recent_posts": 126
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.23,
-   "recent_posts": 20
+   "lift": 1.5,
+   "recent_posts": 22
+  },
+  {
+   "topic": "Getting Licensed and New Hams",
+   "lift": 1.35,
+   "recent_posts": 79
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.21,
-   "recent_posts": 56
-  },
-  {
-   "topic": "Portable Power and Batteries",
-   "lift": 1.21,
-   "recent_posts": 21
+   "lift": 1.26,
+   "recent_posts": 58
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.2,
-   "recent_posts": 126
+   "lift": 1.23,
+   "recent_posts": 130
+  },
+  {
+   "topic": "Antennas",
+   "lift": 1.22,
+   "recent_posts": 103
   }
  ],
  "team": [
@@ -159,10 +159,6 @@
  "upcoming": [],
  "open_slots": [
   {
-   "date": "2026-11-12",
-   "kind": "youtube"
-  },
-  {
    "date": "2026-11-19",
    "kind": "youtube"
   },
@@ -180,6 +176,10 @@
   },
   {
    "date": "2026-12-10",
+   "kind": "youtube"
+  },
+  {
+   "date": "2026-12-17",
    "kind": "youtube"
   }
  ]
