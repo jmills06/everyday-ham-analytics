@@ -1,23 +1,23 @@
 {
- "fetched_at": "2026-11-13T12:43:03Z",
- "generated_at": "2026-11-13T12:43:03Z",
- "base_2x": 0.208,
- "base_n": 1357,
+ "fetched_at": "2026-11-14T12:44:01Z",
+ "generated_at": "2026-11-14T12:44:01Z",
+ "base_2x": 0.209,
+ "base_n": 1361,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
    "competitor_share": 0.072,
    "competitor_2x": 0.08,
-   "competitor_n": 96,
-   "own_share": 0.101,
+   "competitor_n": 95,
+   "own_share": 0.088,
    "own_ratio": 0.38
   },
   {
    "topic": "Field Day and Contests",
-   "competitor_share": 0.021,
+   "competitor_share": 0.02,
    "competitor_2x": 0.07,
-   "competitor_n": 83,
-   "own_share": 0.087,
+   "competitor_n": 80,
+   "own_share": 0.088,
    "own_ratio": 0.42
   },
   {
@@ -38,10 +38,10 @@
   },
   {
    "topic": "Emergency Comms and ARES",
-   "competitor_share": 0.038,
-   "competitor_2x": 0.21,
+   "competitor_share": 0.039,
+   "competitor_2x": 0.23,
    "competitor_n": 47,
-   "own_share": 0.014,
+   "own_share": 0.015,
    "own_ratio": null
   },
   {
@@ -65,7 +65,7 @@
    "competitor_share": 0.017,
    "competitor_2x": 0.21,
    "competitor_n": 38,
-   "own_share": 0.043,
+   "own_share": 0.044,
    "own_ratio": null
   },
   {
@@ -80,16 +80,16 @@
    "topic": "HF Radios",
    "competitor_share": 0.094,
    "competitor_2x": 0.31,
-   "competitor_n": 143,
-   "own_share": 0.087,
+   "competitor_n": 144,
+   "own_share": 0.088,
    "own_ratio": 1.48
   },
   {
    "topic": "VHF/UHF and Handhelds",
    "competitor_share": 0.099,
    "competitor_2x": 0.26,
-   "competitor_n": 132,
-   "own_share": 0.145,
+   "competitor_n": 133,
+   "own_share": 0.147,
    "own_ratio": 2.38
   },
   {
@@ -97,15 +97,15 @@
    "competitor_share": 0.044,
    "competitor_2x": 0.52,
    "competitor_n": 58,
-   "own_share": 0.188,
-   "own_ratio": 3.09
+   "own_share": 0.191,
+   "own_ratio": 3.16
   },
   {
    "topic": "Budget Radios",
-   "competitor_share": 0.082,
+   "competitor_share": 0.083,
    "competitor_2x": 0.31,
-   "competitor_n": 106,
-   "own_share": 0.043,
+   "competitor_n": 107,
+   "own_share": 0.044,
    "own_ratio": null
   },
   {
@@ -113,7 +113,7 @@
    "competitor_share": 0.019,
    "competitor_2x": 0.08,
    "competitor_n": 24,
-   "own_share": 0.043,
+   "own_share": 0.044,
    "own_ratio": null
   },
   {
@@ -121,31 +121,31 @@
    "competitor_share": 0.169,
    "competitor_2x": 0.21,
    "competitor_n": 234,
-   "own_share": 0.159,
+   "own_share": 0.162,
    "own_ratio": 0.82
   },
   {
    "topic": "Portable Power and Batteries",
    "competitor_share": 0.047,
    "competitor_2x": 0.19,
-   "competitor_n": 74,
+   "competitor_n": 75,
    "own_share": 0.0,
    "own_ratio": null
   },
   {
    "topic": "Station Setup and Coax",
-   "competitor_share": 0.063,
+   "competitor_share": 0.062,
    "competitor_2x": 0.22,
-   "competitor_n": 69,
-   "own_share": 0.014,
+   "competitor_n": 68,
+   "own_share": 0.015,
    "own_ratio": null
   },
   {
    "topic": "SDR and Scanning",
-   "competitor_share": 0.007,
+   "competitor_share": 0.008,
    "competitor_2x": null,
    "competitor_n": 6,
-   "own_share": 0.014,
+   "own_share": 0.015,
    "own_ratio": null
   },
   {
@@ -153,7 +153,7 @@
    "competitor_share": 0.058,
    "competitor_2x": 0.4,
    "competitor_n": 75,
-   "own_share": 0.014,
+   "own_share": 0.015,
    "own_ratio": null
   },
   {
@@ -161,23 +161,23 @@
    "competitor_share": 0.053,
    "competitor_2x": 0.3,
    "competitor_n": 67,
-   "own_share": 0.087,
+   "own_share": 0.103,
    "own_ratio": null
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.103,
+   "competitor_share": 0.102,
    "competitor_2x": 0.19,
    "competitor_n": 123,
-   "own_share": 0.087,
+   "own_share": 0.088,
    "own_ratio": 0.49
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "competitor_share": 0.027,
+   "competitor_share": 0.026,
    "competitor_2x": 0.29,
    "competitor_n": 31,
-   "own_share": 0.014,
+   "own_share": 0.015,
    "own_ratio": null
   },
   {
@@ -185,7 +185,7 @@
    "competitor_share": 0.012,
    "competitor_2x": 0.06,
    "competitor_n": 16,
-   "own_share": 0.014,
+   "own_share": 0.015,
    "own_ratio": null
   },
   {
@@ -193,7 +193,7 @@
    "competitor_share": 0.07,
    "competitor_2x": 0.17,
    "competitor_n": 87,
-   "own_share": 0.217,
+   "own_share": 0.221,
    "own_ratio": 1.51
   },
   {
@@ -201,22 +201,22 @@
    "competitor_share": 0.002,
    "competitor_2x": null,
    "competitor_n": 1,
-   "own_share": 0.043,
+   "own_share": 0.044,
    "own_ratio": null
   },
   {
    "topic": "Ham Radio News and FCC",
    "competitor_share": 0.039,
-   "competitor_2x": 0.28,
+   "competitor_2x": 0.3,
    "competitor_n": 57,
-   "own_share": 0.087,
+   "own_share": 0.088,
    "own_ratio": null
   },
   {
    "topic": "Interviews",
    "competitor_share": 0.038,
-   "competitor_2x": 0.19,
-   "competitor_n": 57,
+   "competitor_2x": 0.2,
+   "competitor_n": 56,
    "own_share": 0.029,
    "own_ratio": null
   }
@@ -224,23 +224,19 @@
  "competitor_rising": [
   {
    "topic": "Logging and Software",
-   "lift": 1.51
+   "lift": 1.52
   },
   {
    "topic": "Station Setup and Coax",
-   "lift": 1.5
+   "lift": 1.29
   },
   {
    "topic": "Emergency Comms and ARES",
-   "lift": 2.0
+   "lift": 2.14
   },
   {
    "topic": "POTA/SOTA and Parks",
-   "lift": 1.33
-  },
-  {
-   "topic": "Interviews",
-   "lift": 1.33
+   "lift": 1.26
   }
  ]
 }

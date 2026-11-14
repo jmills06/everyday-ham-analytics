@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-13T12:43:03Z",
+ "fetched_at": "2026-11-14T12:44:01Z",
  "brief_date": "2026-11-09",
  "ideas": [
   {
@@ -89,13 +89,13 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 3.03,
+   "lift": 2.94,
    "recent_posts": 126
   },
   {
    "topic": "Budget Radios",
-   "lift": 1.5,
-   "recent_posts": 22
+   "lift": 1.42,
+   "recent_posts": 21
   },
   {
    "topic": "Getting Licensed and New Hams",
@@ -104,18 +104,18 @@
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "lift": 1.26,
+   "lift": 1.24,
    "recent_posts": 58
   },
   {
    "topic": "Logging and Software",
-   "lift": 1.23,
-   "recent_posts": 130
+   "lift": 1.24,
+   "recent_posts": 133
   },
   {
-   "topic": "Antennas",
+   "topic": "SSTV and Satellites",
    "lift": 1.22,
-   "recent_posts": 103
+   "recent_posts": 54
   }
  ],
  "team": [
