@@ -1,12 +1,12 @@
 {
- "fetched_at": "2026-11-15T12:42:59Z",
- "generated_at": "2026-11-15T12:42:59Z",
+ "fetched_at": "2026-11-16T10:31:56Z",
+ "generated_at": "2026-11-16T10:30:08Z",
  "base_2x": 0.208,
- "base_n": 1358,
+ "base_n": 1356,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
-   "competitor_share": 0.072,
+   "competitor_share": 0.073,
    "competitor_2x": 0.08,
    "competitor_n": 95,
    "own_share": 0.088,
@@ -15,8 +15,8 @@
   {
    "topic": "Field Day and Contests",
    "competitor_share": 0.02,
-   "competitor_2x": 0.07,
-   "competitor_n": 80,
+   "competitor_2x": 0.08,
+   "competitor_n": 79,
    "own_share": 0.088,
    "own_ratio": 0.42
   },
@@ -86,7 +86,7 @@
   },
   {
    "topic": "VHF/UHF and Handhelds",
-   "competitor_share": 0.098,
+   "competitor_share": 0.099,
    "competitor_2x": 0.26,
    "competitor_n": 132,
    "own_share": 0.147,
@@ -208,7 +208,7 @@
    "topic": "Ham Radio News and FCC",
    "competitor_share": 0.039,
    "competitor_2x": 0.3,
-   "competitor_n": 57,
+   "competitor_n": 56,
    "own_share": 0.088,
    "own_ratio": null
   },
@@ -224,15 +224,23 @@
  "competitor_rising": [
   {
    "topic": "Logging and Software",
-   "lift": 1.58
+   "lift": 1.46
   },
   {
    "topic": "Station Setup and Coax",
-   "lift": 1.37
+   "lift": 1.41
   },
   {
    "topic": "Emergency Comms and ARES",
-   "lift": 2.38
+   "lift": 2.45
+  },
+  {
+   "topic": "POTA/SOTA and Parks",
+   "lift": 1.29
+  },
+  {
+   "topic": "Interviews",
+   "lift": 1.3
   }
  ]
 }

@@ -1,121 +1,118 @@
 {
- "fetched_at": "2026-11-15T12:42:59Z",
- "brief_date": "2026-11-09",
+ "fetched_at": "2026-11-16T10:31:56Z",
+ "brief_date": "2026-11-16",
  "ideas": [
   {
    "rank": 1,
-   "title": "Icom's New Amateur Transceiver FCC Filing and the IC-7110: What We Know",
+   "title": "Living With the Xiegu G7250: Our Long-Term 100w Remote Rig Review",
    "format": "youtube",
    "topics": [
-    "New Radio Announcements",
     "HF Radios",
-    "Ham Radio News and FCC"
+    "New Radio Announcements"
    ],
-   "why_now": "Icom filed an FCC application for an amateur transceiver on November 6. The IC-7110 (the former X-026) was just revealed overseas, and US hams want to know when it arrives. A filing is not a product yet, so this is a careful look at what the paperwork shows.",
-   "angle": "Fits the OPEN 2026-11-12 YouTube slot. This is a new angle on the earlier Icom filing pitches. Those covered VHF and UHF digital transceivers, which may be commercial gear. This filing is labeled amateur. Walk through the filing, compare it to what we saw of the X-026 at Hamvention, and be clear about what is confirmed and what is guesswork. Cut a Short from the filing reveal."
+   "why_now": "The G7250 is still the hottest HF rig in the hobby. Owners now want to know how it holds up after release-day excitement fades, and HF discussion is rising.",
+   "angle": "Fits the 2026-11-19 YouTube slot. This is a new angle: our unboxing, Day 1 menus and firmware 1.0.1 networking videos covered first impressions. This one is the honest verdict after real use: on-air audio reports, how the remote head works in daily life, quirks we found, and who should buy it. The format mirrors our ID-5200 'after a month' segment. Brand and number in the title, no question mark."
   },
   {
    "rank": 2,
-   "title": "The FCC Test Lab Ruling: What It Means for Your Next Xiegu, Quansheng or Wouxun",
-   "format": "youtube",
-   "topics": [
-    "Ham Radio News and FCC",
-    "Budget Radios",
-    "HF Radios"
-   ],
-   "why_now": "The FCC voted to end certification through non-reciprocal foreign test labs, and radio listings without a valid FCC ID are now banned at the point of sale. Budget radio buyers want to know whether the imports they like will keep coming, especially heading into holiday shopping.",
-   "angle": "Fits the OPEN 2026-11-19 YouTube slot, before Black Friday. The earlier eBay pitch and Ep. 23 were about selling used gear on eBay. This one is about certification: how radios get approved, what happens to brands that rely on overseas labs, and what to check before you buy. Use our own Xiegu G7250 as the example. Also note the recent Wouxun and Retevis filings as proof that new FCC IDs are still being granted."
-  },
-  {
-   "rank": 3,
-   "title": "RADE vs SSB On the Air: FreeDV Digital Voice in Half the Bandwidth",
+   "title": "VARA Locks Out Open Source Modems: What Winlink Users Should Know",
    "format": "podcast",
    "topics": [
     "Digital Modes",
-    "HF Radios"
+    "Logging and Software",
+    "Emergency Comms and ARES"
    ],
-   "why_now": "RADE is the biggest HF voice story right now. It fits voice into about 1.5 kHz, works down to -2 dB SNR, has FlexRadio integration shipping, and v2 in testing aims for under 1 kHz.",
-   "angle": "Record at the OPEN 2026-12-01 session for release in the OPEN 2026-12-03 podcast slot. The earlier pitch bundled RADE with JTTY on budget radios and phones. This is the hosts' dedicated hands-on episode instead: what RADE is, a live on-air A/B of RADE and SSB audio, and plain talk about whether everyday hams should try it this winter. The title is a statement, not the host's question, because question titles underperform. Clip the A/B audio into a Short."
+   "why_now": "This is the most heated story in the hobby this week. The VARA developer is updating the software to block open-source compatible alternatives, while a native Linux clone and fully open HF messaging projects are appearing at the same time.",
+   "angle": "Record 2026-12-01 for the 2026-12-03 podcast slot. We stay plainspoken and non-elitist: what VARA and Winlink are, what actually changed, and why people are upset. Then we cover the open options that exist today (XARA, FreeDATA, the newly open-source HERMES and Mercury modem) and what a club EmComm group should do now. We do not repeat anything from past episodes. Digital modes are only 3% of our coverage."
   },
   {
    "rank": 4,
-   "title": "CQ WW CW Weekend From the Shack: Fresh DX on the FTdx101MP #cqww #contest",
-   "format": "short",
+   "title": "Free Morse Code Trainers Tested: Phone Apps, Browser Tools and the Morserino M32",
+   "format": "youtube",
    "topics": [
-    "Field Day and Contests",
     "CW/Morse",
-    "DX and DXpeditions"
+    "Logging and Software",
+    "Getting Licensed and New Hams"
    ],
-   "why_now": "CQ World Wide CW runs November 28 and 29. The 2026 rules require a human to start frequency changes, station calls and QSO logging, and that rule applies to assisted entries too.",
-   "angle": "A Short shot live during contest weekend, shown in the days after Thanksgiving. It doesn't use a YouTube slot. Repeat last year's winning format: the band full of DX, a few quick contacts, and one line on the new human-in-the-loop rule. Contest content is weak as edited video for this channel, so keep it short-form only."
+   "why_now": "Winter is CW-learning season, and new free Morse apps and browser trainers are appearing almost weekly. One was built entirely with an AI prompt.",
+   "angle": "Fits the 2026-12-10 YouTube slot. This is a hands-on follow-up to our popular two-paths CW episode. We try the new free trainers side by side and send real practice with each, then rate which suits a brand new learner and which suits someone stuck at slow speed. We also cover the Morserino M32 Pocket's new Vail and VBand keying. The episode closes with an on-air invite to the AWA 1929 QSO Party weekends."
   },
   {
    "rank": 5,
-   "title": "POTACAT on an Icom IC-7300: Hunting Parks From Home With a Free App",
-   "format": "youtube",
+   "title": "Hamvention 2027 Tickets Are On Sale: May 21 to 23 in Xenia #shorts",
+   "format": "short",
    "topics": [
-    "Logging and Software",
-    "HF Radios",
-    "POTA/SOTA and Parks"
+    "Hamfests and Hamvention"
    ],
-   "why_now": "A free app for remote park hunting is breaking out on another channel right now. Winter is when Michigan hams hunt parks from the shack instead of activating.",
-   "angle": "Fits the OPEN 2026-12-10 YouTube slot. It's framed as software plus a branded HF rig, not a POTA trip, because park content underperforms here. Set it up on our shack IC-7300, hunt a handful of parks, and show what it does compared with PoLo and the POTA site. This is a new tool, separate from the QRV app, HTCommander and POTA website pitches."
+   "why_now": "Early bird Hamvention 2027 tickets just went on sale, and tickets are virtual this year.",
+   "angle": "A Short published this week; it needs no calendar slot, so post it before the 2026-11-19 video. We give the dates, explain what virtual tickets mean, and tease our plan for a 2027 survival guide. The Short also seeds a Hamvention planning segment for the 2027-01-07 podcast. Using 'Hamvention' in the title is a proven lift for us."
   },
   {
    "rank": 6,
-   "title": "Free Browser Decoders for SSTV, APRS and Weather Fax With an RTL-SDR",
-   "format": "youtube",
+   "title": "Watch ISS Tones Turn Into a Picture in One Minute #shorts",
+   "format": "short",
    "topics": [
-    "SDR and Scanning",
     "SSTV and Satellites",
-    "Digital Modes"
+    "SDR and Scanning"
    ],
-   "why_now": "SDR talk is the fastest rising discussion topic. New free decoders now run entirely in a web browser, so you can try SSTV, APRS, RTTY and weather fax with nothing to install.",
-   "angle": "Fits the OPEN 2026-12-17 YouTube slot, a good low-cost holiday project. This is a new angle on the iPad and Android FT8 pitch: browser-only tools and several modes. Plug in a dongle, open a page, and decode real signals. Include an ISS pass if one lines up, and cut that into a Short."
+   "why_now": "Hams are pulling ISS SSTV images on simple vertical antennas this month, and SDR and satellite chatter is surging.",
+   "angle": "A Short with no slot needed; post it alongside the 2026-12-10 Morse video. It builds on a listener suggestion: play the raw SSTV audio and let the image paint on screen in real time. We would capture it with a handheld or RTL-SDR from Michigan. The suggester works on an SSTV decoder product, so we pick the decoding tool on our own and disclose any we feature."
   },
   {
    "rank": 7,
-   "title": "New Baofeng or Quansheng Under the Tree: Your First Week on the Local Repeater",
+   "title": "When the Internet Goes Down: A Michigan Ham's Winter Plan B",
    "format": "youtube",
    "topics": [
-    "Getting Licensed and New Hams",
-    "VHF/UHF and Handhelds",
-    "Nets and Repeaters"
+    "Emergency Comms and ARES",
+    "Nets and Repeaters",
+    "Portable Power and Batteries"
    ],
-   "why_now": "Lots of new handhelds get unwrapped at Christmas, and new ham discussion is already climbing. This is a practical first-week guide for when the box gets opened.",
-   "angle": "Fits the OPEN 2026-12-24 YouTube slot, or 2026-12-31 if the gift guide takes the earlier dates. Cover programming a Michigan repeater, checking into a first net, and the beginner mistakes to skip. This is a how-to, unlike the earlier 'Keeping New Hams on the Air' discussion pitch and the DMR handheld comparison."
+   "why_now": "A major Microsoft outage and a nationwide flight grounding this week had people asking what still works when the internet does not. Michigan winter storms are coming.",
+   "angle": "Fits the 2026-12-17 YouTube slot. This is an exception to our usual topic data: we have few uploads here, but the timely hook and strong competitor rates justify it. The plan is practical and gear-light. We cover which local repeater and net to know, a charged handheld with a battery case, one HF option for the house, and a family check-in plan. We build on the trust from our tornado siren video rather than going doom-and-gloom."
+  },
+  {
+   "rank": 8,
+   "title": "MultiPSK Goes Free in 2027 and the SDR Apps Worth Your Time",
+   "format": "podcast",
+   "topics": [
+    "SDR and Scanning",
+    "Logging and Software",
+    "Digital Modes"
+   ],
+   "why_now": "MultiPSK stops selling keys and becomes free in January 2027. SDR is the fastest-rising discussion topic, with new phone, Mac and satellite-hunting apps out this month.",
+   "angle": "Record 2027-01-05 for the 2027-01-07 podcast slot, the week MultiPSK goes free. This angle is new compared with our earlier RTL-SDR on iPad and browser decoder pitches. It is a news-driven roundup: what the free MultiPSK unlocks, plus SatHunterSDR for CubeSats, the macOS SDR-Receiver app, and MultiScan SDR. Hosts share which ones they kept installed. It is also an exception, since our own SDR data is thin, justified by the dated hook and the 2.84x discussion lift."
   }
  ],
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 2.81,
+   "lift": 2.84,
    "recent_posts": 125
   },
   {
-   "topic": "Budget Radios",
-   "lift": 1.5,
-   "recent_posts": 22
-  },
-  {
-   "topic": "Getting Licensed and New Hams",
-   "lift": 1.33,
-   "recent_posts": 78
-  },
-  {
-   "topic": "Antennas",
-   "lift": 1.28,
-   "recent_posts": 104
-  },
-  {
    "topic": "Logging and Software",
-   "lift": 1.26,
+   "lift": 1.33,
    "recent_posts": 134
   },
   {
+   "topic": "Antennas",
+   "lift": 1.31,
+   "recent_posts": 103
+  },
+  {
+   "topic": "Getting Licensed and New Hams",
+   "lift": 1.3,
+   "recent_posts": 75
+  },
+  {
+   "topic": "CW/Morse",
+   "lift": 1.29,
+   "recent_posts": 51
+  },
+  {
    "topic": "Station Setup and Coax",
-   "lift": 1.25,
-   "recent_posts": 36
+   "lift": 1.28,
+   "recent_posts": 37
   }
  ],
  "team": [
