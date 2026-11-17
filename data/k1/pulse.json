@@ -1,14 +1,14 @@
 {
- "fetched_at": "2026-11-16T12:43:02Z",
- "generated_at": "2026-11-16T12:43:02Z",
+ "fetched_at": "2026-11-17T12:43:02Z",
+ "generated_at": "2026-11-17T12:43:02Z",
  "base_2x": 0.209,
- "base_n": 1359,
+ "base_n": 1358,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
    "competitor_share": 0.072,
-   "competitor_2x": 0.08,
-   "competitor_n": 95,
+   "competitor_2x": 0.09,
+   "competitor_n": 94,
    "own_share": 0.088,
    "own_ratio": 0.38
   },
@@ -22,9 +22,9 @@
   },
   {
    "topic": "DX and DXpeditions",
-   "competitor_share": 0.042,
-   "competitor_2x": 0.17,
-   "competitor_n": 63,
+   "competitor_share": 0.04,
+   "competitor_2x": 0.16,
+   "competitor_n": 61,
    "own_share": 0.0,
    "own_ratio": null
   },
@@ -38,9 +38,9 @@
   },
   {
    "topic": "Emergency Comms and ARES",
-   "competitor_share": 0.039,
-   "competitor_2x": 0.23,
-   "competitor_n": 47,
+   "competitor_share": 0.038,
+   "competitor_2x": 0.24,
+   "competitor_n": 45,
    "own_share": 0.015,
    "own_ratio": null
   },
@@ -78,27 +78,27 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.095,
-   "competitor_2x": 0.3,
-   "competitor_n": 145,
+   "competitor_share": 0.096,
+   "competitor_2x": 0.31,
+   "competitor_n": 146,
    "own_share": 0.088,
-   "own_ratio": 1.48
+   "own_ratio": 1.93
   },
   {
    "topic": "VHF/UHF and Handhelds",
    "competitor_share": 0.099,
-   "competitor_2x": 0.26,
+   "competitor_2x": 0.27,
    "competitor_n": 132,
    "own_share": 0.147,
    "own_ratio": 2.38
   },
   {
    "topic": "New Radio Announcements",
-   "competitor_share": 0.043,
+   "competitor_share": 0.044,
    "competitor_2x": 0.53,
    "competitor_n": 57,
    "own_share": 0.191,
-   "own_ratio": 3.16
+   "own_ratio": 3.23
   },
   {
    "topic": "Budget Radios",
@@ -118,8 +118,8 @@
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.171,
-   "competitor_2x": 0.21,
+   "competitor_share": 0.17,
+   "competitor_2x": 0.2,
    "competitor_n": 234,
    "own_share": 0.162,
    "own_ratio": 0.82
@@ -158,7 +158,7 @@
   },
   {
    "topic": "Logging and Software",
-   "competitor_share": 0.053,
+   "competitor_share": 0.054,
    "competitor_2x": 0.31,
    "competitor_n": 68,
    "own_share": 0.103,
@@ -166,7 +166,7 @@
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.101,
+   "competitor_share": 0.102,
    "competitor_2x": 0.19,
    "competitor_n": 123,
    "own_share": 0.088,
@@ -174,7 +174,7 @@
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "competitor_share": 0.026,
+   "competitor_share": 0.027,
    "competitor_2x": 0.29,
    "competitor_n": 31,
    "own_share": 0.015,
@@ -182,7 +182,7 @@
   },
   {
    "topic": "Clubs",
-   "competitor_share": 0.012,
+   "competitor_share": 0.013,
    "competitor_2x": 0.06,
    "competitor_n": 16,
    "own_share": 0.015,
@@ -190,7 +190,7 @@
   },
   {
    "topic": "Hamfests and Hamvention",
-   "competitor_share": 0.07,
+   "competitor_share": 0.071,
    "competitor_2x": 0.17,
    "competitor_n": 88,
    "own_share": 0.221,
@@ -223,24 +223,24 @@
  ],
  "competitor_rising": [
   {
-   "topic": "Station Setup and Coax",
-   "lift": 1.37
-  },
-  {
    "topic": "Logging and Software",
-   "lift": 1.41
+   "lift": 1.53
   },
   {
-   "topic": "Emergency Comms and ARES",
-   "lift": 2.38
+   "topic": "HF Radios",
+   "lift": 1.26
+  },
+  {
+   "topic": "Station Setup and Coax",
+   "lift": 1.36
   },
   {
    "topic": "POTA/SOTA and Parks",
    "lift": 1.25
   },
   {
-   "topic": "Interviews",
-   "lift": 1.26
+   "topic": "Emergency Comms and ARES",
+   "lift": 2.46
   }
  ]
 }
