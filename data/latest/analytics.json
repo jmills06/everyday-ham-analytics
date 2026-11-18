@@ -1,35 +1,22 @@
 {
-  "fetched_at": "2026-11-17T17:00:40Z",
+  "fetched_at": "2026-11-18T05:00:36Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 41156,
-    "engaged_views": 19976,
-    "watch_hours": 1222.3,
+    "views": 41812,
+    "engaged_views": 20216,
+    "watch_hours": 1233.0,
     "avg_view_pct": 26.3,
-    "subs_gained": 183,
+    "subs_gained": 188,
     "subs_lost": 28,
-    "subs_net": 155,
-    "likes": 610,
+    "subs_net": 160,
+    "likes": 622,
     "comments": 69,
-    "shares": 98,
-    "subscribed_views": 4120,
-    "not_subscribed_views": 37034
+    "shares": 95,
+    "subscribed_views": 4178,
+    "not_subscribed_views": 37626
   },
   "daily": [
-    {
-      "date": "2026-10-18",
-      "views": 448,
-      "watch_minutes": 1228,
-      "avg_view_duration_sec": 294,
-      "avg_view_pct": 20.9,
-      "subs_gained": 0,
-      "subs_lost": 1,
-      "likes": 3,
-      "comments": 0,
-      "shares": 4,
-      "engaged_views": 249
-    },
     {
       "date": "2026-10-19",
       "views": 409,
@@ -41,7 +28,7 @@
       "likes": 4,
       "comments": 0,
       "shares": 1,
-      "engaged_views": 210
+      "engaged_views": 216
     },
     {
       "date": "2026-10-20",
@@ -106,7 +93,7 @@
       "likes": 3,
       "comments": 1,
       "shares": 1,
-      "engaged_views": 225
+      "engaged_views": 226
     },
     {
       "date": "2026-10-25",
@@ -380,44 +367,57 @@
       "comments": 1,
       "shares": 2,
       "engaged_views": 633
+    },
+    {
+      "date": "2026-11-15",
+      "views": 1104,
+      "watch_minutes": 1867,
+      "avg_view_duration_sec": 229,
+      "avg_view_pct": 23.9,
+      "subs_gained": 5,
+      "subs_lost": 1,
+      "likes": 15,
+      "comments": 0,
+      "shares": 1,
+      "engaged_views": 482
     }
   ],
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 25434
+      "views": 25863
     },
     {
       "source": "YT_SEARCH",
-      "views": 8510
+      "views": 8671
     },
     {
       "source": "RELATED_VIDEO",
-      "views": 2244
-    },
-    {
-      "source": "NO_LINK_OTHER",
-      "views": 1343
+      "views": 2273
     },
     {
       "source": "SHORTS",
-      "views": 1339
+      "views": 1357
+    },
+    {
+      "source": "NO_LINK_OTHER",
+      "views": 1354
     },
     {
       "source": "EXT_URL",
-      "views": 1026
+      "views": 1028
     },
     {
       "source": "YT_CHANNEL",
-      "views": 491
+      "views": 496
     },
     {
       "source": "YT_OTHER_PAGE",
-      "views": 429
+      "views": 422
     },
     {
       "source": "NOTIFICATION",
-      "views": 228
+      "views": 230
     },
     {
       "source": "PLAYLIST",
@@ -435,55 +435,55 @@
   "top_videos": [
     {
       "video_id": "kuN7OPls0W0",
-      "views": 13122,
-      "watch_hours": 198.7,
-      "likes": 162
+      "views": 13331,
+      "watch_hours": 201.7,
+      "likes": 163
     },
     {
       "video_id": "o3IvIljMYcA",
-      "views": 4752,
-      "watch_hours": 187.6,
-      "likes": 97
+      "views": 4768,
+      "watch_hours": 188.6,
+      "likes": 99
     },
     {
       "video_id": "JV4nTSKaWgY",
-      "views": 4215,
-      "watch_hours": 238.0,
-      "likes": 85
+      "views": 4252,
+      "watch_hours": 242.4,
+      "likes": 89
     },
     {
       "video_id": "bdy9Dgqr4Uw",
-      "views": 2961,
-      "watch_hours": 85.7,
-      "likes": 54
+      "views": 3254,
+      "watch_hours": 90.5,
+      "likes": 55
     },
     {
       "video_id": "CskulzdxXyc",
-      "views": 1567,
-      "watch_hours": 8.6,
+      "views": 1624,
+      "watch_hours": 8.8,
       "likes": 29
     }
   ],
   "search_terms": [
     {
       "term": "xiegu g7250",
-      "views": 393
+      "views": 401
     },
     {
       "term": "g7250",
-      "views": 148
+      "views": 150
     },
     {
       "term": "icom 7110",
-      "views": 143
+      "views": 149
     },
     {
       "term": "ham radio",
-      "views": 125
+      "views": 126
     },
     {
       "term": "ic-7110",
-      "views": 90
+      "views": 92
     },
     {
       "term": "icom ic-7110",
@@ -491,46 +491,46 @@
     },
     {
       "term": "meshtastic",
-      "views": 79
+      "views": 78
     },
     {
       "term": "wio tracker l1 pro",
-      "views": 67
+      "views": 66
     },
     {
       "term": "g7250 xiegu",
-      "views": 62
+      "views": 64
     },
     {
       "term": "jtty",
-      "views": 62
+      "views": 61
     }
   ],
   "suggested_by": [
     {
       "video_id": "DPrKacavk4A",
       "title": "FIRST LOOK! Xiegu G7250 100 Watt HF/6M Transceiver",
-      "views": 88
+      "views": 89
     },
     {
       "video_id": "1V_Ny4b8gNo",
       "title": "Xiegu G7250: The NEW 100W Radio You Need to See",
-      "views": 75
+      "views": 77
     },
     {
       "video_id": "w2JAsgXf4lI",
       "title": "UNBOX OVERVIEW XIEGU G7250",
-      "views": 52
+      "views": 54
     },
     {
       "video_id": "o3IvIljMYcA",
       "title": "Xiegu G7250 Unboxing: Gimmick or Game Changer? 100w, Remote Head?",
-      "views": 23
+      "views": 24
     },
     {
       "video_id": "soBZhb56ODc",
       "title": "The Xiegu G7250 Just Got a LOT More Interesting!",
-      "views": 21
+      "views": 23
     },
     {
       "video_id": "rmey8augfl0",
@@ -538,34 +538,34 @@
       "views": 17
     },
     {
+      "video_id": "bdy9Dgqr4Uw",
+      "title": "System Online: Networking the Xiegu G7250 with WFView and HDSDR in Firmware 1.0.1",
+      "views": 15
+    },
+    {
       "video_id": "XDsiLcUidkw",
       "title": "PART 1: Xiegu G7250 was Live - Unboxing, First Contacts & Viewer Q&A",
       "views": 14
     },
     {
-      "video_id": "bdy9Dgqr4Uw",
-      "title": "System Online: Networking the Xiegu G7250 with WFView and HDSDR in Firmware 1.0.1",
+      "video_id": "b-wNnkOicmQ",
+      "title": "FIRMWARE UPDATE - Xiegu G7250 v1.01",
       "views": 14
     },
     {
       "video_id": "9_N8MkmVnZc",
       "title": "NEW ICOM IC-7110 – First Look & Hands-On Test | Multiband Transceiver | BCI Communications",
       "views": 13
-    },
-    {
-      "video_id": "b-wNnkOicmQ",
-      "title": "FIRMWARE UPDATE - Xiegu G7250 v1.01",
-      "views": 13
     }
   ],
   "search_terms_365": [
     {
       "term": "ham radio",
-      "views": 1131
+      "views": 1129
     },
     {
       "term": "meshtastic",
-      "views": 1026
+      "views": 1027
     },
     {
       "term": "hamvention 2026",
@@ -577,7 +577,7 @@
     },
     {
       "term": "xiegu g7250",
-      "views": 594
+      "views": 602
     },
     {
       "term": "kenwood tm-d750a",
@@ -585,7 +585,7 @@
     },
     {
       "term": "icom 7110",
-      "views": 499
+      "views": 510
     },
     {
       "term": "ftdx101mp",
@@ -593,7 +593,7 @@
     },
     {
       "term": "meshtastic solar node",
-      "views": 483
+      "views": 484
     },
     {
       "term": "dayton hamvention 2026",
@@ -601,7 +601,7 @@
     },
     {
       "term": "ic-7110",
-      "views": 383
+      "views": 385
     },
     {
       "term": "icom x026",
@@ -621,11 +621,11 @@
     },
     {
       "term": "icom 5200",
-      "views": 298
+      "views": 301
     },
     {
       "term": "dx commander",
-      "views": 293
+      "views": 297
     },
     {
       "term": "id-5200",
@@ -645,46 +645,46 @@
     },
     {
       "term": "amateur radio",
-      "views": 269
+      "views": 271
     },
     {
       "term": "wio tracker l1",
-      "views": 261
+      "views": 263
+    },
+    {
+      "term": "icom",
+      "views": 252
     },
     {
       "term": "icom ic-7110",
       "views": 252
-    },
-    {
-      "term": "icom",
-      "views": 250
     }
   ],
   "geography_30": [
     {
       "country": "US",
-      "views": 20661,
-      "watch_hours": 715.1
+      "views": 20991,
+      "watch_hours": 721.7
     },
     {
       "country": "GB",
-      "views": 2269,
-      "watch_hours": 70.3
+      "views": 2290,
+      "watch_hours": 72.3
     },
     {
       "country": "DE",
-      "views": 1362,
-      "watch_hours": 25.4
+      "views": 1392,
+      "watch_hours": 26.6
     },
     {
       "country": "CA",
-      "views": 1037,
-      "watch_hours": 40.1
+      "views": 1058,
+      "watch_hours": 37.3
     },
     {
       "country": "PL",
-      "views": 662,
-      "watch_hours": 17.7
+      "views": 649,
+      "watch_hours": 17.4
     },
     {
       "country": "JP",
@@ -693,7 +693,7 @@
     },
     {
       "country": "IT",
-      "views": 568,
+      "views": 584,
       "watch_hours": 15.6
     },
     {
@@ -702,14 +702,14 @@
       "watch_hours": 14.0
     },
     {
+      "country": "AU",
+      "views": 544,
+      "watch_hours": 15.8
+    },
+    {
       "country": "NL",
       "views": 540,
       "watch_hours": 14.4
-    },
-    {
-      "country": "AU",
-      "views": 526,
-      "watch_hours": 15.6
     },
     {
       "country": "RU",
@@ -790,19 +790,19 @@
   "geography_365": [
     {
       "country": "US",
-      "views": 144766
+      "views": 145039
     },
     {
       "country": "GB",
-      "views": 8302
+      "views": 8328
     },
     {
       "country": "DE",
-      "views": 5920
+      "views": 5950
     },
     {
       "country": "CA",
-      "views": 5143
+      "views": 5125
     },
     {
       "country": "JP",
@@ -810,7 +810,7 @@
     },
     {
       "country": "AU",
-      "views": 2096
+      "views": 2093
     },
     {
       "country": "NL",
@@ -826,7 +826,7 @@
     },
     {
       "country": "IT",
-      "views": 1415
+      "views": 1431
     },
     {
       "country": "FR",
@@ -933,17 +933,17 @@
     {
       "age_group": "age35-44",
       "gender": "male",
-      "viewer_pct": 12.5
+      "viewer_pct": 12.4
     },
     {
       "age_group": "age45-54",
       "gender": "male",
-      "viewer_pct": 19.5
+      "viewer_pct": 19.4
     },
     {
       "age_group": "age55-64",
       "gender": "male",
-      "viewer_pct": 28.0
+      "viewer_pct": 28.1
     },
     {
       "age_group": "age65-",
