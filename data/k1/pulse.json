@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-11-17T12:43:02Z",
- "generated_at": "2026-11-17T12:43:02Z",
- "base_2x": 0.209,
- "base_n": 1358,
+ "fetched_at": "2026-11-18T12:43:12Z",
+ "generated_at": "2026-11-18T12:43:12Z",
+ "base_2x": 0.21,
+ "base_n": 1360,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
@@ -22,9 +22,9 @@
   },
   {
    "topic": "DX and DXpeditions",
-   "competitor_share": 0.04,
-   "competitor_2x": 0.16,
-   "competitor_n": 61,
+   "competitor_share": 0.039,
+   "competitor_2x": 0.17,
+   "competitor_n": 60,
    "own_share": 0.0,
    "own_ratio": null
   },
@@ -39,16 +39,16 @@
   {
    "topic": "Emergency Comms and ARES",
    "competitor_share": 0.038,
-   "competitor_2x": 0.24,
-   "competitor_n": 45,
+   "competitor_2x": 0.26,
+   "competitor_n": 46,
    "own_share": 0.015,
    "own_ratio": null
   },
   {
    "topic": "Digital Modes",
-   "competitor_share": 0.04,
-   "competitor_2x": 0.21,
-   "competitor_n": 57,
+   "competitor_share": 0.041,
+   "competitor_2x": 0.22,
+   "competitor_n": 58,
    "own_share": 0.029,
    "own_ratio": null
   },
@@ -79,8 +79,8 @@
   {
    "topic": "HF Radios",
    "competitor_share": 0.096,
-   "competitor_2x": 0.31,
-   "competitor_n": 146,
+   "competitor_2x": 0.3,
+   "competitor_n": 145,
    "own_share": 0.088,
    "own_ratio": 1.93
   },
@@ -94,17 +94,17 @@
   },
   {
    "topic": "New Radio Announcements",
-   "competitor_share": 0.044,
-   "competitor_2x": 0.53,
-   "competitor_n": 57,
+   "competitor_share": 0.043,
+   "competitor_2x": 0.52,
+   "competitor_n": 56,
    "own_share": 0.191,
    "own_ratio": 3.23
   },
   {
    "topic": "Budget Radios",
-   "competitor_share": 0.082,
-   "competitor_2x": 0.3,
-   "competitor_n": 106,
+   "competitor_share": 0.08,
+   "competitor_2x": 0.31,
+   "competitor_n": 104,
    "own_share": 0.044,
    "own_ratio": null
   },
@@ -158,9 +158,9 @@
   },
   {
    "topic": "Logging and Software",
-   "competitor_share": 0.054,
-   "competitor_2x": 0.31,
-   "competitor_n": 68,
+   "competitor_share": 0.055,
+   "competitor_2x": 0.3,
+   "competitor_n": 69,
    "own_share": 0.103,
    "own_ratio": 1.48
   },
@@ -223,24 +223,24 @@
  ],
  "competitor_rising": [
   {
-   "topic": "Logging and Software",
-   "lift": 1.53
-  },
-  {
    "topic": "HF Radios",
-   "lift": 1.26
-  },
-  {
-   "topic": "Station Setup and Coax",
    "lift": 1.36
   },
   {
+   "topic": "Logging and Software",
+   "lift": 1.54
+  },
+  {
+   "topic": "Station Setup and Coax",
+   "lift": 1.37
+  },
+  {
    "topic": "POTA/SOTA and Parks",
-   "lift": 1.25
+   "lift": 1.38
   },
   {
    "topic": "Emergency Comms and ARES",
-   "lift": 2.46
+   "lift": 2.38
   }
  ]
 }
