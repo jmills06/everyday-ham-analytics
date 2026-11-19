@@ -141,7 +141,7 @@
 {"date": "2026-10-26", "revenue": 1.62, "cpm": 11.72, "playback_cpm": 26.36, "monetized_plays": 104}
 {"date": "2026-10-27", "revenue": 1.12, "cpm": 11.6, "playback_cpm": 23.06, "monetized_plays": 84}
 {"date": "2026-10-28", "revenue": 0.89, "cpm": 9.89, "playback_cpm": 21.78, "monetized_plays": 74}
-{"date": "2026-10-29", "revenue": 1.72, "cpm": 11.5, "playback_cpm": 23.74, "monetized_plays": 126}
+{"date": "2026-10-29", "revenue": 1.73, "cpm": 11.5, "playback_cpm": 23.74, "monetized_plays": 126}
 {"date": "2026-10-30", "revenue": 0.82, "cpm": 13.03, "playback_cpm": 21.48, "monetized_plays": 71}
 {"date": "2026-10-31", "revenue": 1.55, "cpm": 9.84, "playback_cpm": 16.53, "monetized_plays": 150}
 {"date": "2026-11-01", "revenue": 1.65, "cpm": 9.75, "playback_cpm": 17.49, "monetized_plays": 160}
@@ -155,7 +155,8 @@
 {"date": "2026-11-09", "revenue": 7.01, "cpm": 8.96, "playback_cpm": 14.74, "monetized_plays": 789}
 {"date": "2026-11-10", "revenue": 4.24, "cpm": 11.15, "playback_cpm": 19.0, "monetized_plays": 386}
 {"date": "2026-11-11", "revenue": 2.23, "cpm": 9.22, "playback_cpm": 18.39, "monetized_plays": 206}
-{"date": "2026-11-12", "revenue": 2.44, "cpm": 7.41, "playback_cpm": 13.95, "monetized_plays": 274}
-{"date": "2026-11-13", "revenue": 7.35, "cpm": 12.82, "playback_cpm": 27.19, "monetized_plays": 442}
+{"date": "2026-11-12", "revenue": 2.44, "cpm": 7.41, "playback_cpm": 13.8, "monetized_plays": 277}
+{"date": "2026-11-13", "revenue": 7.35, "cpm": 12.82, "playback_cpm": 26.82, "monetized_plays": 448}
 {"date": "2026-11-14", "revenue": 3.15, "cpm": 10.04, "playback_cpm": 18.62, "monetized_plays": 276}
 {"date": "2026-11-15", "revenue": 3.12, "cpm": 11.81, "playback_cpm": 22.48, "monetized_plays": 239}
+{"date": "2026-11-16", "revenue": 1.53, "cpm": 10.53, "playback_cpm": 23.69, "monetized_plays": 108}
