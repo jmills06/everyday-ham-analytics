@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-18T12:43:12Z",
+ "fetched_at": "2026-11-19T12:44:04Z",
  "brief_date": "2026-11-16",
  "ideas": [
   {
@@ -86,13 +86,13 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 2.41,
-   "recent_posts": 119
+   "lift": 2.26,
+   "recent_posts": 116
   },
   {
    "topic": "CW/Morse",
-   "lift": 1.42,
-   "recent_posts": 56
+   "lift": 1.45,
+   "recent_posts": 57
   },
   {
    "topic": "Budget Radios",
@@ -100,19 +100,19 @@
    "recent_posts": 20
   },
   {
-   "topic": "HF Radios",
-   "lift": 1.33,
-   "recent_posts": 178
-  },
-  {
    "topic": "SSTV and Satellites",
-   "lift": 1.31,
+   "lift": 1.27,
    "recent_posts": 56
   },
   {
-   "topic": "VHF/UHF and Handhelds",
-   "lift": 1.29,
-   "recent_posts": 59
+   "topic": "HF Radios",
+   "lift": 1.26,
+   "recent_posts": 173
+  },
+  {
+   "topic": "Antennas",
+   "lift": 1.23,
+   "recent_posts": 101
   }
  ],
  "team": [
