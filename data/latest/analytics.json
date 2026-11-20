@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T05:00:35Z",
+  "fetched_at": "2026-11-20T17:00:42Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -14,7 +14,7 @@
     "comments": 69,
     "shares": 95,
     "subscribed_views": 4169,
-    "not_subscribed_views": 37773
+    "not_subscribed_views": 37779
   },
   "daily": [
     {
@@ -385,7 +385,7 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 26008
+      "views": 26012
     },
     {
       "source": "YT_SEARCH",
@@ -396,12 +396,12 @@
       "views": 2285
     },
     {
-      "source": "SHORTS",
+      "source": "NO_LINK_OTHER",
       "views": 1278
     },
     {
-      "source": "NO_LINK_OTHER",
-      "views": 1275
+      "source": "SHORTS",
+      "views": 1277
     },
     {
       "source": "EXT_URL",
@@ -447,13 +447,13 @@
     },
     {
       "video_id": "JV4nTSKaWgY",
-      "views": 4310,
+      "views": 4309,
       "watch_hours": 247.5,
       "likes": 89
     },
     {
       "video_id": "bdy9Dgqr4Uw",
-      "views": 3346,
+      "views": 3342,
       "watch_hours": 93.1,
       "likes": 56
     },
@@ -663,22 +663,22 @@
   "geography_30": [
     {
       "country": "US",
-      "views": 21253,
-      "watch_hours": 727.7
+      "views": 21200,
+      "watch_hours": 727.2
     },
     {
       "country": "GB",
-      "views": 2331,
+      "views": 2330,
       "watch_hours": 74.1
     },
     {
       "country": "DE",
-      "views": 1392,
-      "watch_hours": 26.6
+      "views": 1390,
+      "watch_hours": 26.7
     },
     {
       "country": "CA",
-      "views": 1045,
+      "views": 1041,
       "watch_hours": 36.0
     },
     {
@@ -698,13 +698,13 @@
     },
     {
       "country": "FR",
-      "views": 572,
+      "views": 570,
       "watch_hours": 14.2
     },
     {
       "country": "AU",
-      "views": 544,
-      "watch_hours": 15.8
+      "views": 543,
+      "watch_hours": 15.9
     },
     {
       "country": "NL",
@@ -718,12 +718,12 @@
     },
     {
       "country": "ES",
-      "views": 489,
+      "views": 488,
       "watch_hours": 11.8
     },
     {
       "country": "SE",
-      "views": 176,
+      "views": 175,
       "watch_hours": 4.5
     },
     {
@@ -738,7 +738,7 @@
     },
     {
       "country": "KR",
-      "views": 161,
+      "views": 158,
       "watch_hours": 2.6
     },
     {
@@ -758,7 +758,7 @@
     },
     {
       "country": "GR",
-      "views": 72,
+      "views": 70,
       "watch_hours": 2.5
     },
     {
@@ -773,7 +773,7 @@
     },
     {
       "country": "AT",
-      "views": 48,
+      "views": 47,
       "watch_hours": 0.7
     },
     {
@@ -783,26 +783,26 @@
     },
     {
       "country": "AR",
-      "views": 46,
+      "views": 45,
       "watch_hours": 0.5
     }
   ],
   "geography_365": [
     {
       "country": "US",
-      "views": 145611
+      "views": 145558
     },
     {
       "country": "GB",
-      "views": 8386
+      "views": 8385
     },
     {
       "country": "DE",
-      "views": 5950
+      "views": 5948
     },
     {
       "country": "CA",
-      "views": 5125
+      "views": 5121
     },
     {
       "country": "JP",
@@ -810,7 +810,7 @@
     },
     {
       "country": "AU",
-      "views": 2093
+      "views": 2092
     },
     {
       "country": "NL",
@@ -822,7 +822,7 @@
     },
     {
       "country": "ES",
-      "views": 1523
+      "views": 1522
     },
     {
       "country": "IT",
@@ -830,7 +830,7 @@
     },
     {
       "country": "FR",
-      "views": 1309
+      "views": 1307
     },
     {
       "country": "RU",
@@ -838,7 +838,7 @@
     },
     {
       "country": "SE",
-      "views": 600
+      "views": 599
     },
     {
       "country": "BR",
@@ -858,7 +858,7 @@
     },
     {
       "country": "KR",
-      "views": 274
+      "views": 271
     },
     {
       "country": "FI",
@@ -866,19 +866,19 @@
     },
     {
       "country": "IN",
-      "views": 213
+      "views": 214
     },
     {
       "country": "AR",
-      "views": 189
+      "views": 188
     },
     {
       "country": "GR",
-      "views": 189
+      "views": 187
     },
     {
       "country": "AT",
-      "views": 176
+      "views": 175
     },
     {
       "country": "ZA",
@@ -943,7 +943,7 @@
     {
       "age_group": "age55-64",
       "gender": "male",
-      "viewer_pct": 28.0
+      "viewer_pct": 28.1
     },
     {
       "age_group": "age65-",
