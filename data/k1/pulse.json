@@ -1,12 +1,12 @@
 {
- "fetched_at": "2026-11-21T12:43:00Z",
- "generated_at": "2026-11-21T12:43:00Z",
- "base_2x": 0.206,
- "base_n": 1357,
+ "fetched_at": "2026-11-22T12:43:20Z",
+ "generated_at": "2026-11-22T12:43:20Z",
+ "base_2x": 0.208,
+ "base_n": 1354,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
-   "competitor_share": 0.074,
+   "competitor_share": 0.075,
    "competitor_2x": 0.08,
    "competitor_n": 97,
    "own_share": 0.086,
@@ -23,22 +23,22 @@
   {
    "topic": "DX and DXpeditions",
    "competitor_share": 0.039,
-   "competitor_2x": 0.16,
+   "competitor_2x": 0.17,
    "competitor_n": 58,
    "own_share": 0.0,
    "own_ratio": null
   },
   {
    "topic": "Nets and Repeaters",
-   "competitor_share": 0.035,
-   "competitor_2x": 0.34,
-   "competitor_n": 44,
+   "competitor_share": 0.036,
+   "competitor_2x": 0.36,
+   "competitor_n": 45,
    "own_share": 0.029,
    "own_ratio": null
   },
   {
    "topic": "Emergency Comms and ARES",
-   "competitor_share": 0.038,
+   "competitor_share": 0.039,
    "competitor_2x": 0.26,
    "competitor_n": 47,
    "own_share": 0.014,
@@ -63,25 +63,25 @@
   {
    "topic": "CW/Morse",
    "competitor_share": 0.017,
-   "competitor_2x": 0.21,
-   "competitor_n": 38,
+   "competitor_2x": 0.22,
+   "competitor_n": 37,
    "own_share": 0.043,
    "own_ratio": null
   },
   {
    "topic": "SSTV and Satellites",
-   "competitor_share": 0.018,
-   "competitor_2x": 0.22,
-   "competitor_n": 18,
+   "competitor_share": 0.017,
+   "competitor_2x": 0.18,
+   "competitor_n": 17,
    "own_share": 0.029,
    "own_ratio": null
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.098,
+   "competitor_share": 0.099,
    "competitor_2x": 0.29,
-   "competitor_n": 147,
-   "own_share": 0.086,
+   "competitor_n": 148,
+   "own_share": 0.114,
    "own_ratio": 1.93
   },
   {
@@ -97,28 +97,28 @@
    "competitor_share": 0.044,
    "competitor_2x": 0.52,
    "competitor_n": 56,
-   "own_share": 0.186,
+   "own_share": 0.2,
    "own_ratio": 3.23
   },
   {
    "topic": "Budget Radios",
-   "competitor_share": 0.079,
-   "competitor_2x": 0.28,
-   "competitor_n": 102,
+   "competitor_share": 0.078,
+   "competitor_2x": 0.29,
+   "competitor_n": 101,
    "own_share": 0.043,
    "own_ratio": null
   },
   {
    "topic": "Used and Vintage Gear",
-   "competitor_share": 0.019,
-   "competitor_2x": 0.08,
-   "competitor_n": 24,
+   "competitor_share": 0.018,
+   "competitor_2x": 0.09,
+   "competitor_n": 23,
    "own_share": 0.043,
    "own_ratio": null
   },
   {
    "topic": "Antennas",
-   "competitor_share": 0.168,
+   "competitor_share": 0.169,
    "competitor_2x": 0.2,
    "competitor_n": 232,
    "own_share": 0.143,
@@ -128,15 +128,15 @@
    "topic": "Portable Power and Batteries",
    "competitor_share": 0.045,
    "competitor_2x": 0.18,
-   "competitor_n": 74,
+   "competitor_n": 72,
    "own_share": 0.0,
    "own_ratio": null
   },
   {
    "topic": "Station Setup and Coax",
-   "competitor_share": 0.061,
-   "competitor_2x": 0.21,
-   "competitor_n": 67,
+   "competitor_share": 0.059,
+   "competitor_2x": 0.2,
+   "competitor_n": 66,
    "own_share": 0.014,
    "own_ratio": null
   },
@@ -162,13 +162,13 @@
    "competitor_2x": 0.3,
    "competitor_n": 69,
    "own_share": 0.114,
-   "own_ratio": 1.48
+   "own_ratio": 1.44
   },
   {
    "topic": "Homebrew and Kits",
    "competitor_share": 0.101,
    "competitor_2x": 0.19,
-   "competitor_n": 122,
+   "competitor_n": 121,
    "own_share": 0.086,
    "own_ratio": 0.49
   },
@@ -224,27 +224,27 @@
  "competitor_rising": [
   {
    "topic": "HF Radios",
-   "lift": 1.35
+   "lift": 1.31
   },
   {
    "topic": "Digital Modes",
-   "lift": 1.84
+   "lift": 2.04
   },
   {
    "topic": "Station Setup and Coax",
-   "lift": 1.24
+   "lift": 1.36
   },
   {
    "topic": "Used and Vintage Gear",
-   "lift": 2.71
+   "lift": 2.65
   },
   {
    "topic": "Emergency Comms and ARES",
-   "lift": 2.38
+   "lift": 2.55
   },
   {
    "topic": "POTA/SOTA and Parks",
-   "lift": 1.69
+   "lift": 1.78
   }
  ]
 }

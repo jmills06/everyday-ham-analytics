@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-21T12:43:00Z",
- "generated_at": "2026-11-21T12:43:00Z",
+ "fetched_at": "2026-11-22T12:43:20Z",
+ "generated_at": "2026-11-22T12:43:20Z",
  "basis": "First-week views vs the median of the previous 10 uploads of the same format",
  "formats": {
   "video": {
@@ -31,9 +31,9 @@
     },
     {
      "topic": "Logging and Software",
-     "n": 5,
-     "median_ratio": 1.48,
-     "share_above": 0.6
+     "n": 6,
+     "median_ratio": 1.44,
+     "share_above": 0.67
     },
     {
      "topic": "Antennas",
@@ -63,8 +63,8 @@
    "titles": [
     {
      "feature": "brand=yes",
-     "n": 31,
-     "median_ratio": 2.35
+     "n": 32,
+     "median_ratio": 2.27
     },
     {
      "feature": "hamvention=yes",
@@ -73,13 +73,13 @@
     },
     {
      "feature": "number_or_price=yes",
-     "n": 44,
-     "median_ratio": 1.25
+     "n": 45,
+     "median_ratio": 1.28
     },
     {
      "feature": "question=no",
-     "n": 43,
-     "median_ratio": 1.13
+     "n": 44,
+     "median_ratio": 1.18
     },
     {
      "feature": "all_caps_word=no",
@@ -88,13 +88,13 @@
     },
     {
      "feature": "hamvention=no",
-     "n": 53,
-     "median_ratio": 0.88
+     "n": 54,
+     "median_ratio": 0.96
     },
     {
      "feature": "all_caps_word=yes",
-     "n": 14,
-     "median_ratio": 0.78
+     "n": 15,
+     "median_ratio": 0.86
     },
     {
      "feature": "question=yes",
@@ -164,7 +164,7 @@
      "ratio": 0.38
     }
    ],
-   "uploads": 60
+   "uploads": 61
   },
   "episode": {
    "topics": [
