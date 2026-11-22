@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T05:00:38Z",
+  "fetched_at": "2026-11-22T17:00:39Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
@@ -435,7 +435,7 @@
   "top_videos": [
     {
       "video_id": "kuN7OPls0W0",
-      "views": 13507,
+      "views": 13506,
       "watch_hours": 204.8,
       "likes": 164
     },
@@ -447,7 +447,7 @@
     },
     {
       "video_id": "JV4nTSKaWgY",
-      "views": 4394,
+      "views": 4395,
       "watch_hours": 253.1,
       "likes": 91
     },
