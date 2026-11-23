@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-11-23T05:00:45Z",
+  "fetched_at": "2026-11-23T17:00:37Z",
   "window_days": 30,
   "view_methodology_change": "2026-08-24",
   "totals": {
-    "views": 47659,
-    "engaged_views": 23373,
-    "watch_hours": 1545.8,
+    "views": 47641,
+    "engaged_views": 23362,
+    "watch_hours": 1545.7,
     "avg_view_pct": 28.1,
     "subs_gained": 224,
     "subs_lost": 30,
@@ -14,7 +14,7 @@
     "comments": 89,
     "shares": 121,
     "subscribed_views": 5148,
-    "not_subscribed_views": 42491
+    "not_subscribed_views": 42497
   },
   "daily": [
     {
@@ -344,8 +344,8 @@
     },
     {
       "date": "2026-11-18",
-      "views": 546,
-      "watch_minutes": 991,
+      "views": 541,
+      "watch_minutes": 987,
       "avg_view_duration_sec": 223,
       "avg_view_pct": 21.0,
       "subs_gained": 2,
@@ -353,12 +353,12 @@
       "likes": 2,
       "comments": 0,
       "shares": 0,
-      "engaged_views": 257
+      "engaged_views": 253
     },
     {
       "date": "2026-11-19",
-      "views": 834,
-      "watch_minutes": 1891,
+      "views": 821,
+      "watch_minutes": 1887,
       "avg_view_duration_sec": 280,
       "avg_view_pct": 24.4,
       "subs_gained": 8,
@@ -366,7 +366,7 @@
       "likes": 24,
       "comments": 4,
       "shares": 2,
-      "engaged_views": 386
+      "engaged_views": 379
     },
     {
       "date": "2026-11-20",
@@ -385,11 +385,11 @@
   "traffic_sources": [
     {
       "source": "SUBSCRIBER",
-      "views": 30488
+      "views": 30492
     },
     {
       "source": "YT_SEARCH",
-      "views": 9507
+      "views": 9506
     },
     {
       "source": "RELATED_VIDEO",
@@ -397,7 +397,7 @@
     },
     {
       "source": "NO_LINK_OTHER",
-      "views": 1424
+      "views": 1427
     },
     {
       "source": "SHORTS",
@@ -604,12 +604,12 @@
       "views": 394
     },
     {
-      "term": "icom x026",
-      "views": 344
+      "term": "atas 120a antenna",
+      "views": 345
     },
     {
-      "term": "atas 120a antenna",
-      "views": 343
+      "term": "icom x026",
+      "views": 344
     },
     {
       "term": "hamcation 2026",
