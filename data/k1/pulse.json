@@ -1,8 +1,8 @@
 {
- "fetched_at": "2026-11-22T12:43:20Z",
- "generated_at": "2026-11-22T12:43:20Z",
+ "fetched_at": "2026-11-23T10:31:40Z",
+ "generated_at": "2026-11-23T10:30:09Z",
  "base_2x": 0.208,
- "base_n": 1354,
+ "base_n": 1352,
  "topics": [
   {
    "topic": "POTA/SOTA and Parks",
@@ -16,7 +16,7 @@
    "topic": "Field Day and Contests",
    "competitor_share": 0.02,
    "competitor_2x": 0.08,
-   "competitor_n": 79,
+   "competitor_n": 78,
    "own_share": 0.086,
    "own_ratio": 0.42
   },
@@ -39,16 +39,16 @@
   {
    "topic": "Emergency Comms and ARES",
    "competitor_share": 0.039,
-   "competitor_2x": 0.26,
-   "competitor_n": 47,
+   "competitor_2x": 0.25,
+   "competitor_n": 48,
    "own_share": 0.014,
    "own_ratio": null
   },
   {
    "topic": "Digital Modes",
-   "competitor_share": 0.042,
+   "competitor_share": 0.044,
    "competitor_2x": 0.21,
-   "competitor_n": 61,
+   "competitor_n": 62,
    "own_share": 0.029,
    "own_ratio": null
   },
@@ -64,7 +64,7 @@
    "topic": "CW/Morse",
    "competitor_share": 0.017,
    "competitor_2x": 0.22,
-   "competitor_n": 37,
+   "competitor_n": 36,
    "own_share": 0.043,
    "own_ratio": null
   },
@@ -78,7 +78,7 @@
   },
   {
    "topic": "HF Radios",
-   "competitor_share": 0.099,
+   "competitor_share": 0.1,
    "competitor_2x": 0.29,
    "competitor_n": 148,
    "own_share": 0.114,
@@ -150,7 +150,7 @@
   },
   {
    "topic": "Meshtastic and Mesh Networks",
-   "competitor_share": 0.057,
+   "competitor_share": 0.058,
    "competitor_2x": 0.41,
    "competitor_n": 74,
    "own_share": 0.014,
@@ -166,7 +166,7 @@
   },
   {
    "topic": "Homebrew and Kits",
-   "competitor_share": 0.101,
+   "competitor_share": 0.102,
    "competitor_2x": 0.19,
    "competitor_n": 121,
    "own_share": 0.086,
@@ -174,7 +174,7 @@
   },
   {
    "topic": "Getting Licensed and New Hams",
-   "competitor_share": 0.027,
+   "competitor_share": 0.028,
    "competitor_2x": 0.28,
    "competitor_n": 32,
    "own_share": 0.014,
@@ -224,27 +224,31 @@
  "competitor_rising": [
   {
    "topic": "HF Radios",
-   "lift": 1.31
+   "lift": 1.4
   },
   {
    "topic": "Digital Modes",
-   "lift": 2.04
+   "lift": 2.6
   },
   {
    "topic": "Station Setup and Coax",
-   "lift": 1.36
+   "lift": 1.4
+  },
+  {
+   "topic": "Getting Licensed and New Hams",
+   "lift": 3.62
   },
   {
    "topic": "Used and Vintage Gear",
-   "lift": 2.65
+   "lift": 2.76
   },
   {
    "topic": "Emergency Comms and ARES",
-   "lift": 2.55
+   "lift": 2.96
   },
   {
    "topic": "POTA/SOTA and Parks",
-   "lift": 1.78
+   "lift": 1.68
   }
  ]
 }
