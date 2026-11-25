@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-11-25T05:00:42Z",
-  "total_downloads": 29428,
+  "fetched_at": "2026-11-25T17:00:48Z",
+  "total_downloads": 29446,
   "episode_count": 29,
   "episodes": [
     {
@@ -9,7 +9,7 @@
       "episode_number": 23,
       "published_at": "2026-11-05T09:00:00.000-05:00",
       "duration_sec": 3482,
-      "plays": 1093
+      "plays": 1098
     },
     {
       "id": 19925344,
@@ -25,7 +25,7 @@
       "episode_number": 21,
       "published_at": "2026-09-03T08:00:00.000-04:00",
       "duration_sec": 4562,
-      "plays": 1303
+      "plays": 1304
     },
     {
       "id": 19606536,
@@ -49,7 +49,7 @@
       "episode_number": 18,
       "published_at": "2026-06-11T09:00:00.000-04:00",
       "duration_sec": 3475,
-      "plays": 1653
+      "plays": 1655
     },
     {
       "id": 19219333,
@@ -57,7 +57,7 @@
       "episode_number": null,
       "published_at": "2026-05-22T09:00:00.000-04:00",
       "duration_sec": 3097,
-      "plays": 1300
+      "plays": 1301
     },
     {
       "id": 19138519,
@@ -65,7 +65,7 @@
       "episode_number": 17,
       "published_at": "2026-05-07T10:00:00.000-04:00",
       "duration_sec": 3587,
-      "plays": 1126
+      "plays": 1129
     },
     {
       "id": 18980854,
@@ -105,7 +105,7 @@
       "episode_number": 13,
       "published_at": "2026-01-08T10:00:00.000-05:00",
       "duration_sec": 3568,
-      "plays": 1493
+      "plays": 1494
     },
     {
       "id": 18296133,
@@ -113,7 +113,7 @@
       "episode_number": 12,
       "published_at": "2025-12-04T12:00:00.000-05:00",
       "duration_sec": 3053,
-      "plays": 1223
+      "plays": 1225
     },
     {
       "id": 18131359,
@@ -145,7 +145,7 @@
       "episode_number": 9,
       "published_at": "2025-09-04T17:00:00.000-04:00",
       "duration_sec": 3170,
-      "plays": 1021
+      "plays": 1022
     },
     {
       "id": 17726132,
@@ -153,7 +153,7 @@
       "episode_number": null,
       "published_at": "2025-08-24T21:00:00.000-04:00",
       "duration_sec": 1661,
-      "plays": 748
+      "plays": 749
     },
     {
       "id": 17625014,
@@ -161,7 +161,7 @@
       "episode_number": 8,
       "published_at": "2025-08-07T17:00:00.000-04:00",
       "duration_sec": 3433,
-      "plays": 799
+      "plays": 800
     },
     {
       "id": 17571459,
