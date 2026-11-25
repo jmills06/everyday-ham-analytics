@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T12:43:02Z",
+ "fetched_at": "2026-11-25T12:42:26Z",
  "brief_date": "2026-11-23",
  "ideas": [
   {
@@ -64,8 +64,8 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 1.98,
-   "recent_posts": 106
+   "lift": 1.88,
+   "recent_posts": 105
   },
   {
    "topic": "CW/Morse",
@@ -74,13 +74,13 @@
   },
   {
    "topic": "HF Radios",
-   "lift": 1.31,
-   "recent_posts": 176
+   "lift": 1.26,
+   "recent_posts": 173
   },
   {
-   "topic": "Station Setup and Coax",
-   "lift": 1.21,
-   "recent_posts": 33
+   "topic": "Digital Modes",
+   "lift": 1.22,
+   "recent_posts": 82
   }
  ],
  "team": [
