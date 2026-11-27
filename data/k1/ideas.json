@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T12:44:01Z",
+ "fetched_at": "2026-11-27T12:44:01Z",
  "brief_date": "2026-11-23",
  "ideas": [
   {
@@ -64,28 +64,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 1.67,
-   "recent_posts": 96
+   "lift": 1.65,
+   "recent_posts": 97
   },
   {
    "topic": "CW/Morse",
    "lift": 1.49,
-   "recent_posts": 58
+   "recent_posts": 59
+  },
+  {
+   "topic": "Digital Modes",
+   "lift": 1.32,
+   "recent_posts": 88
   },
   {
    "topic": "HF Radios",
    "lift": 1.31,
-   "recent_posts": 177
+   "recent_posts": 178
   },
   {
-   "topic": "Digital Modes",
-   "lift": 1.28,
-   "recent_posts": 83
+   "topic": "New Radio Announcements",
+   "lift": 1.22,
+   "recent_posts": 12
   },
   {
    "topic": "Ham Radio News and FCC",
-   "lift": 1.21,
-   "recent_posts": 77
+   "lift": 1.2,
+   "recent_posts": 75
   }
  ],
  "team": [
@@ -129,10 +134,6 @@
  "upcoming": [],
  "open_slots": [
   {
-   "date": "2026-11-26",
-   "kind": "youtube"
-  },
-  {
    "date": "2026-12-01",
    "kind": "record"
   },
@@ -150,6 +151,10 @@
   },
   {
    "date": "2026-12-24",
+   "kind": "youtube"
+  },
+  {
+   "date": "2026-12-31",
    "kind": "youtube"
   }
  ]
