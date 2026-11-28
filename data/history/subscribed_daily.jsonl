@@ -144,7 +144,7 @@
 {"date": "2026-10-29", "subscribed": 35, "not_subscribed": 371}
 {"date": "2026-10-30", "subscribed": 14, "not_subscribed": 349}
 {"date": "2026-10-31", "subscribed": 139, "not_subscribed": 614}
-{"date": "2026-11-01", "subscribed": 53, "not_subscribed": 792}
+{"date": "2026-11-01", "subscribed": 53, "not_subscribed": 786}
 {"date": "2026-11-02", "subscribed": 74, "not_subscribed": 587}
 {"date": "2026-11-03", "subscribed": 47, "not_subscribed": 457}
 {"date": "2026-11-04", "subscribed": 73, "not_subscribed": 457}
@@ -167,4 +167,5 @@
 {"date": "2026-11-21", "subscribed": 697, "not_subscribed": 5324}
 {"date": "2026-11-22", "subscribed": 358, "not_subscribed": 6391}
 {"date": "2026-11-23", "subscribed": 232, "not_subscribed": 4784}
-{"date": "2026-11-24", "subscribed": 147, "not_subscribed": 2755}
+{"date": "2026-11-24", "subscribed": 147, "not_subscribed": 2759}
+{"date": "2026-11-25", "subscribed": 93, "not_subscribed": 1619}
