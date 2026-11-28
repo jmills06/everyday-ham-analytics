@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-27T12:44:01Z",
+ "fetched_at": "2026-11-28T12:44:00Z",
  "brief_date": "2026-11-23",
  "ideas": [
   {
@@ -64,33 +64,33 @@
  "rising": [
   {
    "topic": "SDR and Scanning",
-   "lift": 1.65,
+   "lift": 1.63,
    "recent_posts": 97
   },
   {
    "topic": "CW/Morse",
-   "lift": 1.49,
-   "recent_posts": 59
-  },
-  {
-   "topic": "Digital Modes",
-   "lift": 1.32,
-   "recent_posts": 88
+   "lift": 1.44,
+   "recent_posts": 58
   },
   {
    "topic": "HF Radios",
-   "lift": 1.31,
-   "recent_posts": 178
+   "lift": 1.38,
+   "recent_posts": 184
   },
   {
-   "topic": "New Radio Announcements",
-   "lift": 1.22,
-   "recent_posts": 12
+   "topic": "Digital Modes",
+   "lift": 1.31,
+   "recent_posts": 85
   },
   {
    "topic": "Ham Radio News and FCC",
-   "lift": 1.2,
-   "recent_posts": 75
+   "lift": 1.29,
+   "recent_posts": 78
+  },
+  {
+   "topic": "Station Setup and Coax",
+   "lift": 1.25,
+   "recent_posts": 33
   }
  ],
  "team": [
